@@ -1,0 +1,583 @@
+<title>Detector de metales — mapa de componentes de la placa</title>
+<style>
+  :root {
+    --bg: #EFF2EE;
+    --surface: #FFFFFF;
+    --surface-2: #E5EBE5;
+    --ink: #131A16;
+    --muted: #5A6862;
+    --line: #C8D2CA;
+    --board: #0F6144;
+    --board-deep: #0A4A34;
+    --board-line: #E8F1EA;
+    --accent: #A8801A;
+    --accent-soft: #F0E4BE;
+    --warn: #A9342A;
+    --warn-soft: #F6E2DE;
+    --shadow: 0 1px 2px rgba(19,26,22,.08), 0 8px 24px -12px rgba(19,26,22,.22);
+
+    --mono: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0F1412;
+      --surface: #161D1A;
+      --surface-2: #1E2723;
+      --ink: #E4ECE7;
+      --muted: #92A199;
+      --line: #2B3632;
+      --board: #0D573D;
+      --board-deep: #08402D;
+      --accent: #D9B441;
+      --accent-soft: #37301A;
+      --warn: #E08B7E;
+      --warn-soft: #3A211D;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.7);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0F1412;
+    --surface: #161D1A;
+    --surface-2: #1E2723;
+    --ink: #E4ECE7;
+    --muted: #92A199;
+    --line: #2B3632;
+    --board: #0D573D;
+    --board-deep: #08402D;
+    --accent: #D9B441;
+    --accent-soft: #37301A;
+    --warn: #E08B7E;
+    --warn-soft: #3A211D;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.7);
+  }
+  :root[data-theme="light"] {
+    --bg: #EFF2EE;
+    --surface: #FFFFFF;
+    --surface-2: #E5EBE5;
+    --ink: #131A16;
+    --muted: #5A6862;
+    --line: #C8D2CA;
+    --board: #0F6144;
+    --board-deep: #0A4A34;
+    --accent: #A8801A;
+    --accent-soft: #F0E4BE;
+    --warn: #A9342A;
+    --warn-soft: #F6E2DE;
+    --shadow: 0 1px 2px rgba(19,26,22,.08), 0 8px 24px -12px rgba(19,26,22,.22);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html, body { max-width: 100%; overflow-x: clip; }
+
+  .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 32px 20px 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+  /* los contenedores con scroll propio no deben ensanchar la página */
+  .wrap > section, .board-card, .table-wrap, #tables { min-width: 0; }
+
+  /* ---------- masthead ---------- */
+  .masthead { display: flex; flex-direction: column; gap: 14px; }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0;
+  }
+  h1 {
+    font-family: var(--mono);
+    font-size: clamp(26px, 5vw, 40px);
+    line-height: 1.12;
+    letter-spacing: -.01em;
+    font-weight: 700;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .lede {
+    margin: 0;
+    max-width: 62ch;
+    font-size: 17px;
+    color: var(--muted);
+  }
+  .lede strong { color: var(--ink); font-weight: 600; }
+
+  h2 {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--muted);
+    margin: 0 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  h3 {
+    font-family: var(--mono);
+    font-size: 14px;
+    letter-spacing: .06em;
+    margin: 0 0 8px;
+    font-weight: 700;
+  }
+  p { margin: 0 0 12px; max-width: 66ch; }
+  p:last-child { margin-bottom: 0; }
+
+  /* ---------- board ---------- */
+  .board-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .board-scroll { overflow-x: auto; padding: 14px; }
+  svg.board { display: block; min-width: 720px; width: 100%; height: auto; }
+
+  .fp { cursor: pointer; }
+  .fp .body { transition: filter .12s ease; }
+  .fp:hover .body, .fp:focus-visible .body { filter: brightness(1.35); }
+  .fp .halo { fill: none; stroke: var(--accent); stroke-width: 5; opacity: 0; }
+  .fp.lit .halo { opacity: 1; }
+  .fp:focus-visible { outline: none; }
+  .fp:focus-visible .halo { opacity: 1; }
+
+  .ref { font-family: var(--mono); font-weight: 700; font-size: 17px; fill: #fff; }
+  .ref.dark { fill: #10201A; }
+  .val { font-family: var(--mono); font-size: 15px; fill: #BFE0CE; }
+  .val.inner { fill: #E9F3EC; }
+  .silk { fill: none; stroke: #DCE9E0; stroke-width: 2; }
+
+  .board-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    padding: 12px 16px 14px;
+    border-top: 1px solid var(--line);
+    background: var(--surface-2);
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .board-legend span { display: inline-flex; align-items: center; gap: 7px; }
+  .sw { width: 13px; height: 13px; border-radius: 2px; border: 1px solid rgba(0,0,0,.28); }
+
+  .hint {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: .04em;
+    margin: 10px 0 0;
+  }
+
+  /* ---------- tables ---------- */
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 15px; }
+  caption {
+    text-align: left;
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 12px 14px 10px;
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--line);
+  }
+  th {
+    text-align: left;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--muted);
+    padding: 8px 14px;
+    border-bottom: 1px solid var(--line);
+    white-space: nowrap;
+  }
+  td { padding: 9px 14px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+  tr:last-child td { border-bottom: none; }
+  tbody tr { transition: background-color .15s ease; }
+  tbody tr:hover { background: var(--surface-2); }
+  tbody tr.lit { background: var(--accent-soft); }
+  td.r { font-family: var(--mono); font-weight: 700; white-space: nowrap; }
+  td.v { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td.n { color: var(--muted); font-size: 14px; }
+
+  .bands { display: inline-flex; gap: 3px; align-items: center; padding: 3px 5px; background: #D6C7A2; border-radius: 3px; }
+  .band { width: 5px; height: 17px; border-radius: 1px; }
+  .code-note { font-family: var(--mono); font-size: 12px; color: var(--muted); display: block; margin-top: 3px; }
+
+  /* ---------- notes ---------- */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 4px;
+    padding: 14px 16px;
+  }
+  .card.alert { border-left-color: var(--warn); background: var(--warn-soft); }
+  .card p { font-size: 15px; color: var(--muted); }
+  .card.alert p { color: var(--ink); }
+  .card strong { color: var(--ink); }
+  code {
+    font-family: var(--mono);
+    font-size: .92em;
+    background: var(--surface-2);
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+
+  ol.steps { margin: 0; padding: 0; list-style: none; counter-reset: s; display: flex; flex-direction: column; gap: 10px; }
+  ol.steps li {
+    counter-increment: s;
+    position: relative;
+    padding: 0 0 10px 44px;
+    border-bottom: 1px dashed var(--line);
+    max-width: 72ch;
+  }
+  ol.steps li:last-child { border-bottom: none; padding-bottom: 0; }
+  ol.steps li::before {
+    content: counter(s, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 1.75;
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: .06em;
+  }
+  ol.steps b { font-family: var(--mono); font-size: .95em; }
+
+  dl.blocks { margin: 0; display: flex; flex-direction: column; gap: 12px; }
+  dl.blocks div { display: grid; grid-template-columns: 132px 1fr; gap: 14px; align-items: baseline; }
+  dl.blocks dt { font-family: var(--mono); font-size: 13px; font-weight: 700; letter-spacing: .02em; }
+  dl.blocks dd { margin: 0; color: var(--muted); font-size: 15px; }
+
+  @media (max-width: 620px) {
+    dl.blocks div { grid-template-columns: 1fr; gap: 2px; }
+    .wrap { gap: 36px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">Detector de metales por pulsos · NE555 + TL072</p>
+    <h1>Qué va en cada hueco de la placa verde</h1>
+    <p class="lede">Este es el <strong>diagrama de montaje</strong>: la vista de la cara de componentes, con cada nombre de la serigrafía (<code>U2</code>, <code>C5</code>, <code>C7</code>, <code>R17</code>, <code>R13</code>…) traducido a la pieza real que le toca. Toca cualquier componente del dibujo y se marca su fila en la lista de abajo.</p>
+  </header>
+
+  <section>
+    <h2>Mapa de la placa · cara de componentes</h2>
+    <div class="board-card">
+      <div class="board-scroll">
+        <svg class="board" id="board" viewBox="-30 -30 1170 930" role="img" aria-label="Mapa de montaje de la placa con cada componente identificado"></svg>
+      </div>
+      <div class="board-legend">
+        <span><i class="sw" style="background:#D6C7A2"></i>Resistencia</span>
+        <span><i class="sw" style="background:#E08A2E"></i>Cerámico</span>
+        <span><i class="sw" style="background:#26355F"></i>Electrolítico (+)</span>
+        <span><i class="sw" style="background:#1C1C1C"></i>Integrado / transistor</span>
+        <span><i class="sw" style="background:#7E1A16"></i>Diodo</span>
+        <span><i class="sw" style="background:#2A62B0"></i>Potenciómetro</span>
+        <span><i class="sw" style="background:#C9A227"></i>Conector</span>
+      </div>
+    </div>
+    <p class="hint">Dibujo redibujado a partir de tu hoja impresa. Es una guía de posiciones: antes de soldar, confirma cada hueco contra la serigrafía real de tu placa.</p>
+  </section>
+
+  <section>
+    <h2>Lista completa de componentes</h2>
+    <div id="tables" style="display:flex;flex-direction:column;gap:18px"></div>
+  </section>
+
+  <section>
+    <h2>Ojo con estos tres puntos</h2>
+    <div class="cards">
+      <div class="card alert">
+        <h3>ERRATA en Q1</h3>
+        <p>Una de tus fotos marca con flecha roja el transistor <strong>Q1 (BC547)</strong>, y ahí está montado <strong>girado</strong> respecto al dibujo de la serigrafía, con las patas dobladas. Antes de soldarlo, mira ese punto del video: la serigrafía de Q1 parece estar mal impresa.</p>
+      </div>
+      <div class="card alert">
+        <h3>C4 no existe en la placa</h3>
+        <p>El esquema lista <code>C4 = 10 µF</code>, pero <strong>la placa no tiene hueco para C4</strong>. Va en paralelo con la alimentación, igual que C6 y C7, así que simplemente no la montes.</p>
+      </div>
+      <div class="card">
+        <h3>Resistencias de 5 bandas</h3>
+        <p>En tus fotos hay resistencias azules de <strong>5 bandas</strong> (1 %). Los códigos de color de la tabla son de 4 bandas. Si las tuyas son azules, mídelas con el multímetro en vez de fiarte del color.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Orden para soldar</h2>
+    <ol class="steps">
+      <li>Las <b>18 resistencias</b> primero: son las más planas y luego no estorban. No tienen polaridad, entran en cualquier sentido.</li>
+      <li>Los <b>diodos D2 y D3</b> (1N4148, cuerpo de cristal). La <b>banda negra</b> del diodo va del lado que marca la rayita de la serigrafía.</li>
+      <li>Los <b>zócalos de U1 y U2</b> si los tienes (muy recomendable). La <b>muesca</b> del zócalo va hacia la muesca dibujada en la placa.</li>
+      <li>Los <b>cerámicos C1, C2 y C8</b> (los planitos marrones/naranjas). Sin polaridad.</li>
+      <li>Los <b>transistores Q3 (BC557), Q1 (BC547)</b> y luego <b>Q2 (IRF840)</b>. La cara plana del transistor va donde el dibujo tiene el lado recto.</li>
+      <li>Los <b>electrolíticos C3, C5, C6 y C7</b>. Estos <b>sí tienen polaridad</b>: la pata larga es el <b>+</b>, y la raya del cuerpo es el <b>−</b>. El <b>+</b> va donde la placa dibuja el <b>+</b>.</li>
+      <li>El <b>preset R2</b> (el cuadradito azul de 10 k) y por último los <b>conectores P1, P2, P3</b> y el <b>potenciómetro R13</b> de 50 k con eje.</li>
+      <li>Al final metes <b>U1 (NE555)</b> y <b>U2 (TL072)</b> en sus zócalos, con la muesca del chip mirando hacia la muesca del zócalo.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Para qué sirve cada bloque</h2>
+    <dl class="blocks">
+      <div><dt>U1 · NE555</dt><dd>Genera los pulsos que disparan la bobina. R1, R2, C1 y C2 fijan cada cuánto y cuánto duran esos pulsos.</dd></div>
+      <div><dt>Q2 · IRF840</dt><dd>El transistor de potencia: cada pulso del 555 lo abre y descarga corriente por la bobina. Es el que más calienta.</dd></div>
+      <div><dt>P1 · bobina</dt><dd>La bobina de búsqueda. Al cortar el pulso genera un pico de tensión que cambia si hay metal cerca.</dd></div>
+      <div><dt>D2 · D3</dt><dd>Recortan ese pico para que la parte de amplificación no se queme.</dd></div>
+      <div><dt>U2 · TL072</dt><dd>Doble amplificador operacional: amplifica la señal débil de la bobina y la compara con un nivel de referencia.</dd></div>
+      <div><dt>R13 · 50 k</dt><dd>El mando de <strong>sensibilidad</strong>: mueve ese nivel de referencia. Es el potenciómetro de eje que sacas al panel.</dd></div>
+      <div><dt>Q1 · BC547</dt><dd>Excita el parlante de P2 para que suene el pitido cuando detecta.</dd></div>
+      <div><dt>C7 · 1000 µF</dt><dd>Filtra la alimentación de 12 V que entra por P3, para que los pulsos de la bobina no ensucien el resto.</dd></div>
+    </dl>
+  </section>
+
+</div>
+
+<script>
+(function () {
+  var B = {
+    res:   "#D6C7A2",  // resistencia
+    cer:   "#E08A2E",  // cerámico
+    ele:   "#26355F",  // electrolítico
+    ic:    "#1C1C1C",  // integrado / transistor
+    dio:   "#7E1A16",  // diodo
+    pot:   "#2A62B0",  // potenciómetro
+    con:   "#C9A227"   // conector
+  };
+
+  // ref, valor, familia, geometría, nota, código de bandas
+  var P = [
+    // --- resistencias fijas ---
+    {r:"R1",  v:"47 k",   f:"res", x:270, y:300, w:75,  h:26, n:"Temporización del NE555", c:["yellow","violet","orange"]},
+    {r:"R3",  v:"220 Ω",  f:"res", x:550, y:495, w:85,  h:30, n:"Va a la bobina P1", c:["red","red","brown"]},
+    {r:"R4",  v:"390 Ω",  f:"res", x:550, y:575, w:85,  h:30, n:"Entrada del amplificador", c:["orange","white","brown"]},
+    {r:"R5",  v:"47 k",   f:"res", x:245, y:720, w:80,  h:30, n:"Divisor de alimentación", c:["yellow","violet","orange"]},
+    {r:"R6",  v:"62 k",   f:"res", x:400, y:670, w:80,  h:30, n:"Referencia del TL072", c:["blue","red","orange"]},
+    {r:"R7",  v:"1.2 M",  f:"res", x:135, y:790, w:80,  h:30, n:"Realimentación, 1er operacional", c:["brown","red","green"]},
+    {r:"R8",  v:"10 Ω",   f:"res", x:445, y:405, w:25,  h:90, n:"En serie con el parlante", c:["brown","black","black"]},
+    {r:"R9",  v:"4.7 k",  f:"res", x:550, y:655, w:85,  h:30, n:"Va al pot. R13 de sensibilidad", c:["yellow","violet","red"]},
+    {r:"R10", v:"62 k",   f:"res", x:550, y:725, w:85,  h:30, n:"Realimentación, 2º operacional", c:["blue","red","orange"]},
+    {r:"R11", v:"120 k",  f:"res", x:725, y:645, w:25,  h:120, n:"Divisor del comparador", c:["brown","red","yellow"]},
+    {r:"R12", v:"470 k",  f:"res", x:780, y:222, w:75,  h:28, n:"Base de Q1", c:["yellow","violet","yellow"]},
+    {r:"R14", v:"10 k",   f:"res", x:780, y:152, w:75,  h:28, n:"Base de Q3", c:["brown","black","orange"]},
+    {r:"R15", v:"100 Ω",  f:"res", x:950, y:655, w:85,  h:30, n:"Limitadora", c:["brown","black","brown"]},
+    {r:"R16", v:"10 k",   f:"res", x:375, y:405, w:25,  h:90, n:"Base de Q3", c:["brown","black","orange"]},
+    {r:"R17", v:"150 Ω",  f:"res", x:950, y:565, w:85,  h:30, n:"Limitadora de puerta", c:["brown","green","brown"]},
+    {r:"R18", v:"1 k",    f:"res", x:95,  y:410, w:95,  h:30, n:"Junto al preset R2", c:["brown","black","red"]},
+
+    // --- ajustables ---
+    {r:"R2",  v:"10 k",   f:"pot", x:15,  y:65,  w:180, h:200, n:"PRESET (cuadradito azul) — ajusta el pulso", big:true},
+    {r:"R13", v:"50 k",   f:"pot", x:920, y:295, w:135, h:185, n:"POTENCIÓMETRO de eje — SENSIBILIDAD", big:true},
+
+    // --- condensadores ---
+    {r:"C1",  v:"100 nF", f:"cer", x:400, y:165, w:70, h:45, n:"Cerámico, marcado 104"},
+    {r:"C2",  v:"100 nF", f:"cer", x:400, y:285, w:70, h:45, n:"Cerámico, marcado 104"},
+    {r:"C8",  v:"1 nF",   f:"cer", x:545, y:415, w:80, h:40, n:"Cerámico, marcado 102"},
+    {r:"C3",  v:"1 µF",   f:"ele", cx:322, cy:605, rr:24, n:"Electrolítico — respeta el +"},
+    {r:"C5",  v:"1 µF",   f:"ele", cx:125, cy:325, rr:24, n:"Electrolítico — respeta el +"},
+    {r:"C6",  v:"10 µF",  f:"ele", cx:807, cy:515, rr:24, n:"Electrolítico — respeta el +"},
+    {r:"C7",  v:"1000 µF",f:"ele", cx:867, cy:740, rr:27, n:"El más grande — filtro de los 12 V"},
+
+    // --- semiconductores ---
+    {r:"U1",  v:"NE555P", f:"ic",  x:250, y:60,  w:90,  h:210, n:"Temporizador, 8 patas — muesca ARRIBA", big:true, notch:"top"},
+    {r:"U2",  v:"TL072",  f:"ic",  x:110, y:535, w:155, h:115, n:"Doble amplificador, 8 patas — muesca IZQUIERDA", big:true, notch:"left"},
+    {r:"Q1",  v:"BC547",  f:"ic",  cx:457, cy:82,  rr:29, to92:true, n:"NPN — ver ERRATA del video"},
+    {r:"Q3",  v:"BC557",  f:"ic",  cx:272, cy:380, rr:29, to92:true, n:"PNP (¡no confundir con el BC547!)"},
+    {r:"Q2",  v:"IRF840", f:"ic",  x:590, y:80,  w:65,  h:190, n:"MOSFET de potencia TO-220 — chapa metálica arriba", big:true, tab:true},
+    {r:"D2",  v:"1N4148", f:"dio", x:690, y:365, w:85, h:35, n:"La banda va a la izquierda", band:true},
+    {r:"D3",  v:"1N4148", f:"dio", x:690, y:438, w:85, h:35, n:"La banda va a la izquierda", band:true},
+
+    // --- conectores ---
+    {r:"P1",  v:"BOBINA",      f:"con", x:745, y:55,  w:85, h:40, n:"Salen los 2 hilos de la bobina de búsqueda"},
+    {r:"P2",  v:"PARLANTE",    f:"con", x:890, y:55,  w:85, h:40, n:"Parlante o audífono"},
+    {r:"P3",  v:"BATERÍA 12V", f:"con", x:390, y:780, w:70, h:40, n:"Rojo = +12 V, negro = masa"}
+  ];
+
+  var BAND = {
+    black:"#1A1A1A", brown:"#6B4A2B", red:"#B7342A", orange:"#DC7A20",
+    yellow:"#E2BE33", green:"#2C8355", blue:"#2A5AA0", violet:"#75459A",
+    grey:"#8A8A8A", white:"#F2F2F2", gold:"#C9A227"
+  };
+  var BANDNAME = {
+    black:"negro", brown:"café", red:"rojo", orange:"naranja", yellow:"amarillo",
+    green:"verde", blue:"azul", violet:"violeta", grey:"gris", white:"blanco", gold:"dorado"
+  };
+
+  var NS = "http://www.w3.org/2000/svg";
+  function el(t, a) {
+    var e = document.createElementNS(NS, t);
+    for (var k in a) e.setAttribute(k, a[k]);
+    return e;
+  }
+  function txt(x, y, s, cls, anchor) {
+    var e = el("text", {x: x, y: y, class: cls, "text-anchor": anchor || "middle"});
+    e.textContent = s;
+    return e;
+  }
+
+  var svg = document.getElementById("board");
+
+  // sustrato
+  svg.appendChild(el("rect", {x:-30, y:-30, width:1170, height:930, rx:10, fill:"var(--board)"}));
+  svg.appendChild(el("rect", {x:-18, y:-18, width:1146, height:906, rx:6, fill:"none",
+                              stroke:"var(--board-deep)", "stroke-width":3}));
+
+  P.forEach(function (p) {
+    var g = el("g", {class:"fp", tabindex:"0", role:"button",
+                     "aria-label": p.r + ", " + p.v + ", " + p.n, "data-ref": p.r});
+    var fill = B[p.f];
+
+    if (p.rr && p.to92) {
+      // transistor TO-92: círculo con un lado plano
+      var R = p.rr, cx = p.cx, cy = p.cy;
+      var d = "M " + (cx - R * 0.55) + " " + (cy - R * 0.84) +
+              " A " + R + " " + R + " 0 1 1 " + (cx - R * 0.55) + " " + (cy + R * 0.84) + " Z";
+      g.appendChild(el("path", {class:"halo", d:d, "stroke-linejoin":"round"}));
+      g.appendChild(el("path", {class:"body", d:d, fill:fill, stroke:"#DCE9E0", "stroke-width":2}));
+      g.appendChild(txt(cx + 4, cy + 6, p.r, "ref"));
+      g.appendChild(txt(cx + R + 11, cy + 6, p.v, "val", "start"));
+
+    } else if (p.rr) {
+      // electrolítico: cilindro visto desde arriba
+      g.appendChild(el("circle", {class:"halo", cx:p.cx, cy:p.cy, r:p.rr + 4}));
+      g.appendChild(el("circle", {class:"body", cx:p.cx, cy:p.cy, r:p.rr, fill:fill,
+                                  stroke:"#DCE9E0", "stroke-width":2}));
+      // media luna del lado negativo
+      g.appendChild(el("path", {d:"M " + (p.cx - p.rr) + " " + p.cy +
+                                  " A " + p.rr + " " + p.rr + " 0 0 0 " + (p.cx + p.rr) + " " + p.cy + " Z",
+                                fill:"#0E1526", opacity:".85"}));
+      var plus = el("text", {x:p.cx, y:p.cy - 6, class:"ref", "text-anchor":"middle"});
+      plus.setAttribute("font-size", "20");
+      plus.textContent = "+";
+      g.appendChild(plus);
+      g.appendChild(txt(p.cx, p.cy + p.rr + 18, p.r + " " + p.v, "val"));
+
+    } else {
+      var vert = p.h > p.w * 1.6;
+      g.appendChild(el("rect", {class:"halo", x:p.x - 4, y:p.y - 4, width:p.w + 8, height:p.h + 8, rx:4}));
+      g.appendChild(el("rect", {class:"body", x:p.x, y:p.y, width:p.w, height:p.h, rx:3,
+                                fill:fill, stroke:"#DCE9E0", "stroke-width":2}));
+
+      if (p.notch === "top")
+        g.appendChild(el("path", {d:"M " + (p.x + p.w/2 - 11) + " " + p.y +
+                                     " a 11 11 0 0 0 22 0", fill:"var(--board)", stroke:"#DCE9E0", "stroke-width":2}));
+      if (p.notch === "left")
+        g.appendChild(el("path", {d:"M " + p.x + " " + (p.y + p.h/2 - 11) +
+                                     " a 11 11 0 0 0 0 22", fill:"var(--board)", stroke:"#DCE9E0", "stroke-width":2}));
+      if (p.tab) {
+        g.appendChild(el("rect", {x:p.x + 5, y:p.y + 5, width:p.w - 10, height:26, rx:2, fill:"#8E9AA0"}));
+        g.appendChild(el("circle", {cx:p.x + p.w/2, cy:p.y + 18, r:6, fill:"var(--board)"}));
+      }
+      if (p.band)
+        g.appendChild(el("rect", {x:p.x + 7, y:p.y + 4, width:8, height:p.h - 8, rx:1, fill:"#E9F3EC"}));
+
+      if (p.big) {
+        g.appendChild(txt(p.x + p.w/2, p.y + p.h/2 - 2, p.r, "ref"));
+        g.appendChild(txt(p.x + p.w/2, p.y + p.h/2 + 20, p.v, "val inner"));
+      } else if (vert) {
+        g.appendChild(txt(p.x + p.w/2, p.y - 8, p.r, "ref"));
+        g.appendChild(txt(p.x + p.w/2, p.y + p.h + 20, p.v, "val"));
+      } else if (p.f === "con") {
+        g.appendChild(txt(p.x + p.w/2, p.y + p.h/2 + 6, p.r, "ref dark"));
+        g.appendChild(txt(p.x + p.w/2, p.y + p.h + 20, p.v, "val"));
+      } else {
+        g.appendChild(txt(p.x + p.w/2, p.y + p.h/2 + 6, p.r, p.f === "res" || p.f === "cer" ? "ref dark" : "ref"));
+        g.appendChild(txt(p.x + p.w/2, p.y + p.h + 19, p.v, "val"));
+      }
+    }
+    svg.appendChild(g);
+  });
+
+  // ---------- tablas ----------
+  var GROUPS = [
+    {t:"Resistencias fijas · 1/4 W", rows:["R1","R3","R4","R5","R6","R7","R8","R9","R10","R11","R12","R14","R15","R16","R17","R18"], bands:true},
+    {t:"Ajustables", rows:["R2","R13"]},
+    {t:"Condensadores", rows:["C1","C2","C3","C5","C6","C7","C8"]},
+    {t:"Semiconductores", rows:["U1","U2","Q1","Q2","Q3","D2","D3"]},
+    {t:"Conectores · van cables, no componentes", rows:["P1","P2","P3"]}
+  ];
+  var byRef = {};
+  P.forEach(function (p) { byRef[p.r] = p; });
+
+  var host = document.getElementById("tables");
+  GROUPS.forEach(function (grp) {
+    var wrap = document.createElement("div");
+    wrap.className = "table-wrap";
+    var html = '<table><caption>' + grp.t + '</caption><thead><tr>' +
+               '<th>En la placa</th><th>Es esto</th>' +
+               (grp.bands ? '<th>Colores</th>' : '') +
+               '<th>Para qué</th></tr></thead><tbody>';
+    grp.rows.forEach(function (ref) {
+      var p = byRef[ref];
+      var cells = '<td class="r">' + p.r + '</td><td class="v">' + p.v + '</td>';
+      if (grp.bands) {
+        var b = p.c.concat(["gold"]);
+        var sw = b.map(function (c) {
+          return '<i class="band" style="background:' + BAND[c] + '"></i>';
+        }).join("");
+        var names = p.c.map(function (c) { return BANDNAME[c]; }).join(" · ");
+        cells += '<td><span class="bands">' + sw + '</span>' +
+                 '<span class="code-note">' + names + ' · dorado</span></td>';
+      }
+      cells += '<td class="n">' + p.n + '</td>';
+      html += '<tr data-ref="' + p.r + '">' + cells + '</tr>';
+    });
+    html += '</tbody></table>';
+    wrap.innerHTML = html;
+    host.appendChild(wrap);
+  });
+
+  // ---------- resaltado cruzado ----------
+  function lit(ref, on) {
+    document.querySelectorAll('[data-ref="' + ref + '"]').forEach(function (n) {
+      n.classList.toggle("lit", on);
+    });
+  }
+  document.querySelectorAll("[data-ref]").forEach(function (n) {
+    var ref = n.getAttribute("data-ref");
+    n.addEventListener("mouseenter", function () { lit(ref, true); });
+    n.addEventListener("mouseleave", function () { lit(ref, false); });
+    n.addEventListener("focus", function () { lit(ref, true); });
+    n.addEventListener("blur", function () { lit(ref, false); });
+    n.addEventListener("click", function () {
+      var row = document.querySelector('tr[data-ref="' + ref + '"]');
+      if (row && n.tagName.toLowerCase() === "g") {
+        row.scrollIntoView({block:"center", behavior:"smooth"});
+        lit(ref, true);
+        setTimeout(function () { lit(ref, false); }, 1800);
+      }
+    });
+  });
+})();
+</script>
