@@ -23,7 +23,15 @@
   p{margin:0 0 12px;max-width:70ch}
   code{font-family:var(--mono);font-size:.9em;background:var(--surface2);padding:1px 5px;border-radius:3px}
 
-  .board-card{background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);overflow:hidden}
+  .board-card{background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);overflow:hidden;position:relative}
+  .tip{position:absolute;z-index:5;pointer-events:none;min-width:158px;max-width:236px;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:9px;box-shadow:var(--shadow);padding:9px 12px;font-family:var(--sans);font-size:13px;opacity:0;transform:translateY(4px);transition:opacity .1s,transform .1s}
+  .tip.show{opacity:1;transform:none}
+  .tip .r{font-family:var(--mono);font-weight:700;font-size:15px;display:flex;gap:7px;align-items:baseline}
+  .tip .r span{font-size:12px;color:var(--muted);font-weight:400}
+  .tip .ty{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:3px 0 5px}
+  .tip .fn{color:var(--muted);line-height:1.45}
+  .tip .pn{margin-top:7px;padding-top:6px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11px;color:var(--muted);line-height:1.5}
+  .tip.pinned{outline:2px solid var(--accent);outline-offset:-1px}
   .board-scroll{overflow-x:auto;padding:0;background:var(--board)}
   svg.board{display:block;min-width:820px;width:100%;height:auto}
 
@@ -139,6 +147,43 @@
   "QCOL":{"c":"#7D8F2A","d":"Colector del BC547 al parlante"},
   "SPK":{"c":"#1ABC9C","d":"Parlante hacia +12 por R8"}
  },
+ "info":{
+  "R2":"Preset de ajuste — fija la frecuencia de los pulsos del 555.",
+  "U1":"Temporizador 555 — genera los pulsos que disparan la bobina.",
+  "Q1":"Transistor NPN — excita el parlante para el pitido.",
+  "C1":"Cerámico — fija el tiempo del 555.",
+  "Q2":"MOSFET de potencia — conmuta la corriente por la bobina.",
+  "P1":"Conector de la bobina de búsqueda.",
+  "P2":"Conector del parlante o audífono.",
+  "R14":"A la base del transistor Q3.",
+  "C2":"Cerámico — filtro de la pata de control del 555.",
+  "R12":"Polariza la base del BC547 (Q1).",
+  "C5":"Electrolítico — acopla la salida del TL072 a la base de Q1.",
+  "R1":"Temporización del 555.",
+  "Q3":"Transistor PNP — acelera el flanco hacia la puerta del MOSFET.",
+  "R16":"Base de Q3 hacia +12 V.",
+  "R8":"En serie con el parlante (limita la corriente).",
+  "C8":"Cerámico — filtro del comparador.",
+  "D2":"Diodo — recorta el pico de tensión de la bobina.",
+  "R13":"Potenciómetro de SENSIBILIDAD.",
+  "R18":"Ajuste fino junto al preset R2.",
+  "C6":"Electrolítico — filtro de alimentación.",
+  "U2":"Doble amplificador operacional — amplifica y compara la señal.",
+  "C3":"Electrolítico — acopla la señal al amplificador.",
+  "D3":"Diodo — recorta el pico de tensión de la bobina.",
+  "R3":"Amortigua y alimenta la bobina desde +12 V.",
+  "R4":"Entrada del amplificador.",
+  "R9":"Lleva la señal amplificada al pot R13.",
+  "R11":"Divisor del comparador (2ª etapa).",
+  "R17":"Limita la puerta del MOSFET.",
+  "C7":"Electrolítico grande — filtro principal de los 12 V.",
+  "R6":"Referencia media del TL072 (divisor con R5).",
+  "R10":"Realimentación de la 2ª etapa.",
+  "R15":"En el camino hacia la puerta del MOSFET.",
+  "R5":"Referencia media (divisor con R6).",
+  "P3":"Conector de la batería de 12 V.",
+  "R7":"Realimentación de la 1ª etapa."
+ },
  "components":[
   {"ref":"R2","sub":"10k pre","cx":105,"cy":130,"w":150,"h":150,"kind":"pot",
    "pins":[{"n":"1","net":"TIM","s":"B","at":0.2,"r":"pas"},{"n":"w","net":"RT","s":"B","at":0.5,"r":"pas"},{"n":"3","net":"RT","s":"B","at":0.8,"r":"pas"}]},
@@ -227,6 +272,28 @@ function txt(x,y,s,cls,anchor,fill){const e=el("text",{x,y,class:cls,"text-ancho
 const svg=document.getElementById("board");
 svg.setAttribute("viewBox",`-6 -6 ${V.w+12} ${V.h+12}`);
 
+// tooltip -----------------------------------------------------
+const TYPE={ic:"Circuito integrado",mos:"MOSFET de potencia",tr:"Transistor",elec:"Condensador electrolítico (+)",cap:"Condensador cerámico",res:"Resistencia",dio:"Diodo",pot:"Potenciómetro / preset",conn:"Conector"};
+const INFO=D.info||{};
+const card=svg.closest('.board-card');
+const tip=document.createElement('div');tip.className='tip';card.appendChild(tip);
+let pinnedRef=null;
+function fillTip(c){
+  tip.innerHTML=`<div class="r">${c.ref}<span>${c.sub||''}</span></div>`+
+    `<div class="ty">${TYPE[c.kind]||''}</div>`+
+    (INFO[c.ref]?`<div class="fn">${INFO[c.ref]}</div>`:'')+
+    `<div class="pn">Patas: ${c.pins.map(p=>(p.n||'·')+'→'+p.net).join('   ')}</div>`;
+}
+function placeTip(ev){
+  const r=card.getBoundingClientRect();
+  tip.style.left='0px';tip.style.top='0px';
+  const tw=tip.offsetWidth,th=tip.offsetHeight;
+  let x=ev.clientX-r.left+15,y=ev.clientY-r.top+15;
+  x=Math.max(8,Math.min(x,r.width-tw-8));y=Math.max(8,Math.min(y,r.height-th-8));
+  tip.style.left=x+'px';tip.style.top=y+'px';
+}
+function unpinTip(){pinnedRef=null;tip.classList.remove('show','pinned');}
+
 // pin geometry ------------------------------------------------
 function pinGeom(c,p){
   const x=c.cx-c.w/2, y=c.cy-c.h/2;
@@ -296,6 +363,11 @@ COMP.forEach(c=>{
   const ry=big?c.cy-3:(c.cy+ (c.kind==="tr"||c.kind==="elec"? c.h/2+12 : c.h/2+13));
   g.appendChild(txt(c.cx,ry,c.ref,"ref"));
   g.appendChild(txt(c.cx,ry+11,c.sub,"sub"));
+  g.setAttribute("data-ref",c.ref);g.style.cursor="pointer";
+  g.addEventListener("mouseenter",e=>{if(pinnedRef)return;fillTip(c);tip.classList.add("show");placeTip(e);});
+  g.addEventListener("mousemove",e=>{if(pinnedRef)return;placeTip(e);});
+  g.addEventListener("mouseleave",()=>{if(pinnedRef)return;tip.classList.remove("show");});
+  g.addEventListener("click",e=>{e.stopPropagation();if(pinnedRef===c.ref){unpinTip();}else{pinnedRef=c.ref;fillTip(c);tip.classList.add("show","pinned");placeTip(e);}});
   gComp.appendChild(g);
 });
 
@@ -344,7 +416,7 @@ function focus(net){
   document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('off',active&&c.dataset.net!==active));
 }
 function clear(){svg.classList.remove("iso");svg.querySelectorAll('.hot').forEach(n=>n.classList.remove('hot'));document.querySelectorAll('#nettable tbody tr.hot').forEach(r=>r.classList.remove('hot'));document.querySelectorAll('.chip.off').forEach(c=>c.classList.remove('off'));}
-svg.addEventListener("click",e=>{const t=e.target.closest('[data-net]');if(!t)return;const net=t.getAttribute('data-net');active=active===net?null:net;active?focus(active):clear();});
+svg.addEventListener("click",e=>{if(e.target.closest('[data-ref]'))return;if(pinnedRef)unpinTip();const t=e.target.closest('[data-net]');if(!t)return;const net=t.getAttribute('data-net');active=active===net?null:net;active?focus(active):clear();});
 
 // table ------------------------------------------------------
 const tb=document.querySelector('#nettable tbody');

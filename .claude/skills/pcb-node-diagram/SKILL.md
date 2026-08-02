@@ -56,6 +56,9 @@ Editá el bloque `<script id="netdata" type="application/json">` del template.
    "GND":{"c":"#5C7186","d":"Masa","rail":"bot"},
    "DRAIN":{"c":"#D64550","d":"Drenaje + bobina + diodos"}         // nodo normal (sin rail)
  },
+ "info":{                                                          // panel emergente por componente
+   "U1":"Temporizador 555 — genera los pulsos."                   // clave = ref; valor = qué hace
+ },
  "components":[
    {"ref":"U1","sub":"NE555","cx":253,"cy":130,"w":66,"h":172,"kind":"ic",
     "pins":[
@@ -87,6 +90,11 @@ Editá el bloque `<script id="netdata" type="application/json">` del template.
   usá tonos distintos y saturados; evitá que dos nodos vecinos compartan color.
 - **Nodos de 1 sola pata**: no existen; cada nodo debe tener ≥2 patas. Si te queda uno,
   te falta una conexión.
+- **`info`** (objeto opcional al nivel raíz, keyed por `ref`): frase corta de qué hace
+  cada componente. Alimenta el **panel emergente**: al pasar el mouse o tocar/clic sobre
+  un componente aparece una tarjeta con su `ref`, valor (`sub`), tipo (derivado del
+  `kind`) y esta descripción, más la lista de sus patas y nodos. Clic fija el panel; clic
+  en vacío lo cierra. Completá `info` para todos los componentes.
 
 ### 3. Generar el HTML
 - Copiá `assets/diagram-template.html` al destino (p. ej. `<proyecto>/conexiones.html`).

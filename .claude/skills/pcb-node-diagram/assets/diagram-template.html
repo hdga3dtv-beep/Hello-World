@@ -31,7 +31,15 @@
   h3{font-family:var(--mono);font-size:14px;margin:0 0 6px}
   p{margin:0 0 12px;max-width:70ch}
   code{font-family:var(--mono);font-size:.9em;background:var(--surface2);padding:1px 5px;border-radius:3px}
-  .board-card{background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);overflow:hidden}
+  .board-card{background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);overflow:hidden;position:relative}
+  .tip{position:absolute;z-index:5;pointer-events:none;min-width:158px;max-width:236px;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:9px;box-shadow:var(--shadow);padding:9px 12px;font-family:var(--sans);font-size:13px;opacity:0;transform:translateY(4px);transition:opacity .1s,transform .1s}
+  .tip.show{opacity:1;transform:none}
+  .tip .r{font-family:var(--mono);font-weight:700;font-size:15px;display:flex;gap:7px;align-items:baseline}
+  .tip .r span{font-size:12px;color:var(--muted);font-weight:400}
+  .tip .ty{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:3px 0 5px}
+  .tip .fn{color:var(--muted);line-height:1.45}
+  .tip .pn{margin-top:7px;padding-top:6px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11px;color:var(--muted);line-height:1.5}
+  .tip.pinned{outline:2px solid var(--accent);outline-offset:-1px}
   .board-scroll{overflow-x:auto;padding:0;background:var(--board)}
   svg.board{display:block;min-width:820px;width:100%;height:auto}
   .toolbar{display:flex;flex-wrap:wrap;gap:8px 9px;align-items:center;padding:12px 14px;border-top:1px solid var(--line);background:var(--surface2)}
@@ -109,6 +117,10 @@
   "GND":{"c":"#5C7186","d":"Masa","rail":"bot"},
   "OUT":{"c":"#2E8B7A","d":"Salida del chip a la carga"}
  },
+ "info":{
+  "U1":"Circuito de ejemplo — reemplazá por el tuyo.",
+  "R1":"Resistencia de carga de ejemplo."
+ },
  "components":[
   {"ref":"U1","sub":"CHIP","cx":120,"cy":120,"w":60,"h":90,"kind":"ic",
    "pins":[{"n":"1","net":"GND","s":"L","at":0.25,"r":"pwr"},{"n":"3","net":"OUT","s":"R","at":0.5,"r":"out"},{"n":"8","net":"+12","s":"R","at":0.15,"r":"pwr"}]},
@@ -128,6 +140,14 @@ function el(t,a){const e=document.createElementNS(NS,t);for(const k in a)e.setAt
 function txt(x,y,s,cls,anchor,fill){const e=el("text",{x,y,class:cls,"text-anchor":anchor||"middle"});if(fill)e.setAttribute("fill",fill);e.textContent=s;return e;}
 const svg=document.getElementById("board");
 svg.setAttribute("viewBox",`-6 -6 ${V.w+12} ${V.h+12}`);
+const TYPE={ic:"Circuito integrado",mos:"MOSFET de potencia",tr:"Transistor",elec:"Condensador electrolítico (+)",cap:"Condensador cerámico",res:"Resistencia",dio:"Diodo",pot:"Potenciómetro / preset",conn:"Conector"};
+const INFO=D.info||{};
+const card=svg.closest('.board-card');
+const tip=document.createElement('div');tip.className='tip';card.appendChild(tip);
+let pinnedRef=null;
+function fillTip(c){tip.innerHTML=`<div class="r">${c.ref}<span>${c.sub||''}</span></div><div class="ty">${TYPE[c.kind]||''}</div>`+(INFO[c.ref]?`<div class="fn">${INFO[c.ref]}</div>`:'')+`<div class="pn">Patas: ${c.pins.map(p=>(p.n||'·')+'→'+p.net).join('   ')}</div>`;}
+function placeTip(ev){const r=card.getBoundingClientRect();tip.style.left='0px';tip.style.top='0px';const tw=tip.offsetWidth,th=tip.offsetHeight;let x=ev.clientX-r.left+15,y=ev.clientY-r.top+15;x=Math.max(8,Math.min(x,r.width-tw-8));y=Math.max(8,Math.min(y,r.height-th-8));tip.style.left=x+'px';tip.style.top=y+'px';}
+function unpinTip(){pinnedRef=null;tip.classList.remove('show','pinned');}
 function pinGeom(c,p){
   const x=c.cx-c.w/2,y=c.cy-c.h/2;let px,py,dx,dy;
   if(p.s==="L"){px=x;py=y+p.at*c.h;dx=-1;dy=0;}
@@ -174,6 +194,11 @@ COMP.forEach(c=>{
   const big=(c.kind==="ic"||c.kind==="mos"||c.kind==="pot");
   const ry=big?c.cy-3:(c.cy+(c.kind==="tr"||c.kind==="elec"?c.h/2+12:c.h/2+13));
   g.appendChild(txt(c.cx,ry,c.ref,"ref"));g.appendChild(txt(c.cx,ry+11,c.sub,"sub"));
+  g.setAttribute("data-ref",c.ref);g.style.cursor="pointer";
+  g.addEventListener("mouseenter",e=>{if(pinnedRef)return;fillTip(c);tip.classList.add("show");placeTip(e);});
+  g.addEventListener("mousemove",e=>{if(pinnedRef)return;placeTip(e);});
+  g.addEventListener("mouseleave",()=>{if(pinnedRef)return;tip.classList.remove("show");});
+  g.addEventListener("click",e=>{e.stopPropagation();if(pinnedRef===c.ref){unpinTip();}else{pinnedRef=c.ref;fillTip(c);tip.classList.add("show","pinned");placeTip(e);}});
   gComp.appendChild(g);
 });
 const gPin=el("g",{});svg.appendChild(gPin);
@@ -201,7 +226,7 @@ Object.keys(NETS).forEach(net=>{
 });
 function focus(net){svg.classList.add("iso");svg.querySelectorAll('[data-net]').forEach(n=>n.classList.toggle('hot',n.getAttribute('data-net')===net));document.querySelectorAll('#nettable tbody tr').forEach(r=>r.classList.toggle('hot',r.dataset.net===net));document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('off',active&&c.dataset.net!==active));}
 function clear(){svg.classList.remove("iso");svg.querySelectorAll('.hot').forEach(n=>n.classList.remove('hot'));document.querySelectorAll('#nettable tbody tr.hot').forEach(r=>r.classList.remove('hot'));document.querySelectorAll('.chip.off').forEach(c=>c.classList.remove('off'));}
-svg.addEventListener("click",e=>{const t=e.target.closest('[data-net]');if(!t)return;const net=t.getAttribute('data-net');active=active===net?null:net;active?focus(active):clear();});
+svg.addEventListener("click",e=>{if(e.target.closest('[data-ref]'))return;if(pinnedRef)unpinTip();const t=e.target.closest('[data-net]');if(!t)return;const net=t.getAttribute('data-net');active=active===net?null:net;active?focus(active):clear();});
 const tb=document.querySelector('#nettable tbody');
 Object.keys(NETS).forEach(net=>{
   const mem=netPins[net].map(p=>`${p.ref}${p.pin?'·'+p.pin:''}`).join("   ");
