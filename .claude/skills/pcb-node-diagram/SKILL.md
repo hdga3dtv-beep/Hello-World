@@ -73,10 +73,15 @@ Editá el bloque `<script id="netdata" type="application/json">` del template.
 **Reglas del modelo:**
 - **Posición (`cx,cy`)**: colocá cada componente donde va físicamente en la placa real.
   Copiá las posiciones de la foto de montaje / serigrafía. No reordenar por señal.
-- **`kind`** (define forma y estilo): `ic` (DIP, con muesca), `mos` (TO-220), `tr`
-  (transistor, círculo), `elec` (electrolítico, círculo con +), `cap` (cerámico,
-  rectángulo), `res` (resistencia), `dio` (diodo), `pot` (potenciómetro/preset, azul),
-  `conn` (conector/terminal, amarillo).
+- **`kind`**: define el **dibujo realista** del componente (cada uno parece lo que es,
+  sin texto encima — la identidad se ve en el panel emergente):
+  `res` (cuerpo beige con **bandas de color** calculadas desde `sub`), `dio` (cuerpo
+  oscuro con **banda de cátodo** del lado del pin `k`), `cap` (disco cerámico naranja),
+  `elec` (electrolítico: círculo con **+** y franja del lado `−`), `ic` (DIP negro con
+  **muesca** y punto de pata 1), `mos` (TO-220 con chapa metálica y agujero), `tr`
+  (transistor TO-92 en forma de D), `pot` (potenciómetro/preset azul con tornillo de
+  ajuste), `conn` (conector ámbar con sus pines). Para que las bandas de `res` salgan
+  bien, poné el valor en `sub` como `"47k"`, `"1.2M"`, `"220"`, `"4.7k"`, etc.
 - **`w,h`**: tamaño en px del lienzo. Resistencia horizontal ~66×24; vertical ~24×66.
   Elegí orientación acorde a cómo caen las patas en la placa.
 - **Patas (`pins`)**: cada una lleva

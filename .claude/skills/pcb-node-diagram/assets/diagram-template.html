@@ -184,16 +184,71 @@ Object.keys(NETS).forEach(net=>{
     }
   }
 });
+// component symbols: cada dibujo parece el componente real
+const BANDCOL=["#1a1a1a","#6b4a2b","#b7342a","#dc7a20","#e2be33","#2c8355","#2a5aa0","#75459a","#8a8a8a","#f2f2f2"],GOLD="#c9a227";
+function ohmsOf(s){const m=(s||'').match(/^([\d.]+)\s*([kM]?)/);if(!m)return null;let v=parseFloat(m[1]);if(m[2]==='k')v*=1e3;else if(m[2]==='M')v*=1e6;return v;}
+function bandsOf(v){if(!(v>0))return null;let mult=Math.floor(Math.log10(v))-1;let two=Math.round(v/Math.pow(10,mult));if(two>=100){two=Math.round(two/10);mult++;}if(mult<0)mult=0;return [BANDCOL[Math.floor(two/10)],BANDCOL[two%10],BANDCOL[Math.min(mult,9)],GOLD];}
+function drawSymbol(g,c){
+  const x=c.cx-c.w/2,y=c.cy-c.h/2,cx=c.cx,cy=c.cy,horiz=c.w>=c.h;
+  const A=(n,a)=>g.appendChild(el(n,a));
+  const lead=(x1,y1,x2,y2)=>A("line",{x1,y1,x2,y2,stroke:"#c9d3cb","stroke-width":1.6,"stroke-linecap":"round"});
+  if(c.kind==="res"){
+    const b=bandsOf(ohmsOf(c.sub));
+    if(horiz){const bx=x+10,bx2=x+c.w-10,bh=Math.min(c.h,17),L=bx2-bx;
+      lead(x,cy,bx,cy);lead(bx2,cy,x+c.w,cy);
+      A("rect",{x:bx,y:cy-bh/2,width:L,height:bh,rx:3.5,fill:"#dcc79c",stroke:"#b39a68","stroke-width":1});
+      if(b)[0.24,0.4,0.56,0.8].forEach((p,i)=>A("rect",{x:bx+L*p-1.7,y:cy-bh/2,width:3.4,height:bh,fill:b[i]}));
+    }else{const by=y+10,by2=y+c.h-10,bw=Math.min(c.w,17),L=by2-by;
+      lead(cx,y,cx,by);lead(cx,by2,cx,y+c.h);
+      A("rect",{x:cx-bw/2,y:by,width:bw,height:L,rx:3.5,fill:"#dcc79c",stroke:"#b39a68","stroke-width":1});
+      if(b)[0.24,0.4,0.56,0.8].forEach((p,i)=>A("rect",{x:cx-bw/2,y:by+L*p-1.7,width:bw,height:3.4,fill:b[i]}));}
+  }else if(c.kind==="dio"){
+    const kp=c.pins.find(p=>p.n==='k'),ks=kp?kp.s:'R';
+    if(horiz){const bx=x+8,bx2=x+c.w-8,bh=Math.min(c.h,18);
+      lead(x,cy,bx,cy);lead(bx2,cy,x+c.w,cy);
+      A("rect",{x:bx,y:cy-bh/2,width:bx2-bx,height:bh,rx:2,fill:"#2b3037",stroke:"#191d22"});
+      A("rect",{x:(ks==='R'?bx2-5:bx+2),y:cy-bh/2,width:3,height:bh,fill:"#eef2f3"});
+    }else{const by=y+8,by2=y+c.h-8,bw=Math.min(c.w,18);
+      lead(cx,y,cx,by);lead(cx,by2,cx,y+c.h);
+      A("rect",{x:cx-bw/2,y:by,width:bw,height:by2-by,rx:2,fill:"#2b3037",stroke:"#191d22"});
+      A("rect",{x:cx-bw/2,y:(ks==='B'?by2-5:by+2),width:bw,height:3,fill:"#eef2f3"});}
+  }else if(c.kind==="cap"){
+    const rx=Math.min(c.w,30)/2,ry=Math.min(c.h,26)/2;
+    if(horiz){lead(x,cy,cx-rx,cy);lead(cx+rx,cy,x+c.w,cy);}else{lead(cx,y,cx,cy-ry);lead(cx,cy+ry,cx,y+c.h);}
+    A("ellipse",{cx,cy,rx,ry,fill:"#e2913a",stroke:"#b26e22","stroke-width":1});
+  }else if(c.kind==="elec"){
+    const r=Math.min(c.w,c.h)/2;
+    A("circle",{cx,cy,r,fill:"#26365f",stroke:"#16233f","stroke-width":1.4});
+    A("circle",{cx,cy,r:r*0.6,fill:"none",stroke:"#3a4f80","stroke-width":1});
+    const pp=c.pins.find(p=>p.n==='+'),mp=c.pins.find(p=>p.n==='-');
+    if(pp){const gp=pinGeom(c,pp);const t=el("text",{x:cx+(gp.px-cx)*0.5,y:cy+(gp.py-cy)*0.5+3.6,"text-anchor":"middle","font-family":"var(--mono)","font-weight":"700","font-size":"12"});t.style.fill="#e8eef6";t.textContent="+";g.appendChild(t);}
+    if(mp){const gm=pinGeom(c,mp),dx=gm.px-cx,dy=gm.py-cy,L=Math.hypot(dx,dy)||1,nx=dx/L,ny=dy/L,ex=cx+nx*r*0.72,ey=cy+ny*r*0.72;
+      A("line",{x1:ex-ny*r*0.42,y1:ey+nx*r*0.42,x2:ex+ny*r*0.42,y2:ey-nx*r*0.42,stroke:"#aebbd8","stroke-width":3,"stroke-linecap":"round"});}
+  }else if(c.kind==="ic"){
+    A("rect",{x,y,width:c.w,height:c.h,rx:5,fill:"#20262d",stroke:"#0f1216"});
+    A("path",{d:`M ${cx-9} ${y} a 9 9 0 0 0 18 0`,fill:"var(--board)"});
+    A("circle",{cx:x+9,cy:y+11,r:2,fill:"#7d8894"});
+  }else if(c.kind==="mos"){
+    A("rect",{x,y,width:c.w,height:c.h,rx:5,fill:"#22282f",stroke:"#0f1216"});
+    A("rect",{x:x+4,y:y+4,width:c.w-8,height:c.h*0.2,rx:2,fill:"#8b97a0"});
+    A("circle",{cx,cy:y+4+c.h*0.1,r:3,fill:"#20262d"});
+  }else if(c.kind==="tr"){
+    const r=Math.min(c.w,c.h)/2;
+    A("path",{d:`M ${cx-r*0.5} ${cy-r*0.87} A ${r} ${r} 0 1 1 ${cx-r*0.5} ${cy+r*0.87} Z`,fill:"#1c2127",stroke:"#0f1216"});
+  }else if(c.kind==="pot"){
+    const m=Math.min(c.w,c.h);
+    A("rect",{x,y,width:c.w,height:c.h,rx:5,fill:"#2f6fb0",stroke:"#22537f"});
+    A("circle",{cx,cy,r:m*0.24,fill:"#e9eef4",stroke:"#b9c4d2"});
+    A("line",{x1:cx-m*0.19,y1:cy,x2:cx+m*0.19,y2:cy,stroke:"#2f6fb0","stroke-width":2.6,"stroke-linecap":"round"});
+  }else if(c.kind==="conn"){
+    A("rect",{x,y,width:c.w,height:c.h,rx:4,fill:"#caa53a",stroke:"#9c7d1e"});
+    c.pins.forEach(p=>{const gp=pinGeom(c,p);A("circle",{cx:cx+(gp.px-cx)*0.55,cy:cy+(gp.py-cy)*0.55,r:3,fill:"#5a4a10"});});
+  }else{A("rect",{x,y,width:c.w,height:c.h,rx:3,fill:"var(--surface)",stroke:"var(--ink)"});}
+}
 const gComp=el("g",{});svg.appendChild(gComp);
 COMP.forEach(c=>{
-  const g=el("g",{class:"comp "+c.kind}),x=c.cx-c.w/2,y=c.cy-c.h/2;
-  if(c.kind==="tr"||c.kind==="elec")g.appendChild(el("circle",{class:"body",cx:c.cx,cy:c.cy,r:Math.min(c.w,c.h)/2}));
-  else g.appendChild(el("rect",{class:"body",x,y,width:c.w,height:c.h,rx:c.kind==="ic"||c.kind==="mos"?5:3}));
-  if(c.kind==="ic"||c.kind==="mos")g.appendChild(el("path",{d:`M ${c.cx-8} ${y} a 8 8 0 0 0 16 0`,fill:"var(--board)"}));
-  if(c.kind==="elec")g.appendChild(txt(c.cx-1,c.cy+4,"+","ref","middle","#fff"));
-  const big=(c.kind==="ic"||c.kind==="mos"||c.kind==="pot");
-  const ry=big?c.cy-3:(c.cy+(c.kind==="tr"||c.kind==="elec"?c.h/2+12:c.h/2+13));
-  g.appendChild(txt(c.cx,ry,c.ref,"ref"));g.appendChild(txt(c.cx,ry+11,c.sub,"sub"));
+  const g=el("g",{class:"comp "+c.kind});
+  drawSymbol(g,c);
   g.setAttribute("data-ref",c.ref);g.style.cursor="pointer";
   g.addEventListener("mouseenter",e=>{if(pinnedRef)return;fillTip(c);tip.classList.add("show");placeTip(e);});
   g.addEventListener("mousemove",e=>{if(pinnedRef)return;placeTip(e);});
