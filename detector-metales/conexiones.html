@@ -1,64 +1,59 @@
-<title>Detector de metales — mapa de conexiones (qué pata va con qué pata)</title>
+<title>Detector de metales — mapa de conexiones por nodos</title>
 <style>
   :root{
-    --bg:#EEF1EC; --surface:#fff; --surface2:#E6EBE4; --ink:#141b16; --muted:#5a6862;
-    --line:#c7d1c9; --accent:#0f6144; --warn:#a9342a; --warnbg:#f6e2de;
+    --bg:#EEF1EC;--surface:#fff;--surface2:#E6EBE4;--ink:#141b16;--muted:#5a6862;
+    --line:#c7d1c9;--accent:#0f6144;--warn:#a9342a;--warnbg:#f6e2de;--board:#0d4f38;--boardln:#e8f1ea;
     --mono:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
     --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
     --shadow:0 1px 2px rgba(20,27,22,.08),0 10px 28px -14px rgba(20,27,22,.25);
   }
-  @media (prefers-color-scheme:dark){:root{
-    --bg:#0f1412; --surface:#161d1a; --surface2:#1e2723; --ink:#e4ece7; --muted:#93a29a;
-    --line:#2b3632; --accent:#4fd0a0; --warn:#e08b7e; --warnbg:#3a211d;
-    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);}}
-  :root[data-theme="dark"]{--bg:#0f1412;--surface:#161d1a;--surface2:#1e2723;--ink:#e4ece7;--muted:#93a29a;--line:#2b3632;--accent:#4fd0a0;--warn:#e08b7e;--warnbg:#3a211d;--shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);}
-  :root[data-theme="light"]{--bg:#EEF1EC;--surface:#fff;--surface2:#E6EBE4;--ink:#141b16;--muted:#5a6862;--line:#c7d1c9;--accent:#0f6144;--warn:#a9342a;--warnbg:#f6e2de;--shadow:0 1px 2px rgba(20,27,22,.08),0 10px 28px -14px rgba(20,27,22,.25);}
+  @media (prefers-color-scheme:dark){:root{--bg:#0f1412;--surface:#161d1a;--surface2:#1e2723;--ink:#e4ece7;--muted:#93a29a;--line:#2b3632;--accent:#4fd0a0;--warn:#e08b7e;--warnbg:#3a211d;--board:#0c4230;--boardln:#dbeadf;--shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);}}
+  :root[data-theme="dark"]{--bg:#0f1412;--surface:#161d1a;--surface2:#1e2723;--ink:#e4ece7;--muted:#93a29a;--line:#2b3632;--accent:#4fd0a0;--warn:#e08b7e;--warnbg:#3a211d;--board:#0c4230;--boardln:#dbeadf;--shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);}
+  :root[data-theme="light"]{--bg:#EEF1EC;--surface:#fff;--surface2:#E6EBE4;--ink:#141b16;--muted:#5a6862;--line:#c7d1c9;--accent:#0f6144;--warn:#a9342a;--warnbg:#f6e2de;--board:#0d4f38;--boardln:#e8f1ea;--shadow:0 1px 2px rgba(20,27,22,.08),0 10px 28px -14px rgba(20,27,22,.25);}
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;font-size:16px}
   html,body{max-width:100%;overflow-x:clip}
-  .wrap{max-width:1120px;margin:0 auto;padding:30px 18px 90px;display:flex;flex-direction:column;gap:40px}
+  .wrap{max-width:1120px;margin:0 auto;padding:30px 18px 90px;display:flex;flex-direction:column;gap:38px}
   .wrap>section{min-width:0}
   .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0}
   h1{font-family:var(--mono);font-size:clamp(24px,4.6vw,38px);line-height:1.14;margin:.35rem 0 0;letter-spacing:-.01em;text-wrap:balance}
-  .lede{margin:.7rem 0 0;max-width:64ch;color:var(--muted);font-size:17px}
-  .lede b{color:var(--ink)}
+  .lede{margin:.7rem 0 0;max-width:65ch;color:var(--muted);font-size:17px}.lede b{color:var(--ink)}
   h2{font-family:var(--mono);font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
   h3{font-family:var(--mono);font-size:14px;margin:0 0 6px}
   p{margin:0 0 12px;max-width:70ch}
   code{font-family:var(--mono);font-size:.9em;background:var(--surface2);padding:1px 5px;border-radius:3px}
 
   .board-card{background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);overflow:hidden}
-  .board-scroll{overflow-x:auto;padding:12px}
-  svg.board{display:block;min-width:900px;width:100%;height:auto}
+  .board-scroll{overflow-x:auto;padding:0;background:var(--board)}
+  svg.board{display:block;min-width:820px;width:100%;height:auto}
 
-  .toolbar{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;padding:12px 14px;border-top:1px solid var(--line);background:var(--surface2)}
-  .toolbar .hint{font-family:var(--mono);font-size:11px;color:var(--muted);margin-right:auto;letter-spacing:.03em}
-  .chip{font-family:var(--mono);font-size:11px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:20px;padding:4px 10px 4px 8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:transform .08s ease}
-  .chip:hover{transform:translateY(-1px)}
+  .toolbar{display:flex;flex-wrap:wrap;gap:8px 9px;align-items:center;padding:12px 14px;border-top:1px solid var(--line);background:var(--surface2)}
+  .toolbar .hint{font-family:var(--mono);font-size:11px;color:var(--muted);margin-right:auto;letter-spacing:.02em}
+  .chip{font-family:var(--mono);font-size:11px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:20px;padding:4px 10px 4px 8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
   .chip .dot{width:11px;height:11px;border-radius:50%;flex:none}
-  .chip.off{opacity:.4}
+  .chip.off{opacity:.35}
 
-  /* svg element states */
-  .netline{fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:.9;transition:opacity .12s,stroke-width .12s}
-  .pindot{stroke:#fff;stroke-width:1.4}
-  @media (prefers-color-scheme:dark){.pindot{stroke:#161d1a}}
-  .comp .body{fill:var(--surface);stroke:var(--ink);stroke-width:2}
-  .comp.ic .body{fill:#22272e;stroke:#22272e}
-  .comp .ref{font-family:var(--mono);font-weight:700;font-size:15px;fill:var(--ink)}
-  .comp.ic .ref{fill:#fff}
-  .comp .sub{font-family:var(--mono);font-size:11px;fill:var(--muted)}
-  .comp.ic .sub{fill:#aab4bd}
-  .pinlbl{font-family:var(--mono);font-size:10px;fill:var(--muted)}
-  .rail-lbl{font-family:var(--mono);font-weight:700;font-size:13px}
-  svg.dim .netline{opacity:.08}
-  svg.dim .pindot{opacity:.14}
-  svg.dim .netline.hot{opacity:1;stroke-width:5}
-  svg.dim .pindot.hot{opacity:1}
-  svg.dim .nettag.hot{opacity:1}
-  svg.dim .nettag{opacity:.12}
-  .nettag{font-family:var(--mono);font-size:9.5px;font-weight:700}
-
-  .legend-note{font-family:var(--mono);font-size:11px;color:var(--muted);margin:10px 2px 0;letter-spacing:.03em}
+  /* svg */
+  .netseg{fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:.5;transition:opacity .1s,stroke-width .1s}
+  .comp .body{fill:var(--surface);stroke:var(--ink);stroke-width:1.8}
+  .comp.ic .body,.comp.mos .body{fill:#20262d;stroke:#20262d}
+  .comp.pot .body{fill:#2f6fb0;stroke:#24537f}
+  .comp.conn .body{fill:#caa53a;stroke:#a07f1f}
+  .comp .ref{font-family:var(--mono);font-weight:700;font-size:12px;fill:var(--ink)}
+  .comp.ic .ref,.comp.mos .ref,.comp.pot .ref{fill:#fff}.comp.conn .ref{fill:#241c08}
+  .comp .sub{font-family:var(--mono);font-size:9.5px;fill:var(--muted)}
+  .comp.ic .sub,.comp.mos .sub,.comp.pot .sub{fill:#aeb8c0}.comp.conn .sub{fill:#4a3c10}
+  .pinmark{stroke:var(--board);stroke-width:1}
+  .pinnum{font-family:var(--mono);font-size:8px;fill:var(--boardln);opacity:.8}
+  .nettag{font-family:var(--mono);font-size:9px;font-weight:700;opacity:0}
+  svg.iso .netseg{opacity:.05}
+  svg.iso .netseg.hot{opacity:1;stroke-width:3.4}
+  svg.iso .pinmark{opacity:.12}
+  svg.iso .pinmark.hot{opacity:1}
+  svg.iso .pinnum{opacity:0}
+  svg.iso .nettag.hot{opacity:1}
+  .legend-note{font-family:var(--mono);font-size:11px;color:var(--muted);margin:10px 2px 0;display:flex;flex-wrap:wrap;gap:6px 16px}
+  .legend-note .k{display:inline-flex;align-items:center;gap:5px}
 
   .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
   table{border-collapse:collapse;width:100%;min-width:600px;font-size:14.5px}
@@ -66,294 +61,300 @@
   th{text-align:left;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:8px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
   td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
   tr:last-child td{border-bottom:none}
-  tbody tr{transition:background-color .12s}
-  tbody tr:hover{background:var(--surface2)}
-  tbody tr.hot{background:var(--surface2)}
+  tbody tr{transition:background-color .12s;cursor:pointer}
+  tbody tr:hover,tbody tr.hot{background:var(--surface2)}
   td.net{font-family:var(--mono);font-weight:700;white-space:nowrap}
   td.net .dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:7px;vertical-align:-1px}
-  td.mem{font-family:var(--mono);font-size:13px;color:var(--ink)}
+  td.mem{font-family:var(--mono);font-size:13px}
   td.desc{color:var(--muted);font-size:13.5px}
 
   .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:13px}
   .card{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:5px;padding:13px 15px}
   .card.warn{border-left-color:var(--warn);background:var(--warnbg)}
-  .card p{font-size:14px;color:var(--muted);margin:0}
-  .card.warn p{color:var(--ink)}
-  .card b{color:var(--ink)}
-  ol.steps{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:9px}
-  ol.steps li{counter-increment:s;position:relative;padding:0 0 9px 40px;border-bottom:1px dashed var(--line);max-width:74ch}
-  ol.steps li:last-child{border-bottom:none;padding-bottom:0}
-  ol.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:0;line-height:1.7;font-family:var(--mono);font-size:12px;font-weight:700;color:var(--accent)}
-  ol.steps b{font-family:var(--mono)}
+  .card p{font-size:14px;color:var(--muted);margin:0}.card.warn p{color:var(--ink)}.card b{color:var(--ink)}
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
 <div class="wrap">
   <header>
-    <p class="eyebrow">Detector de metales · mapa de conexiones para armar en placa virgen</p>
-    <h1>Qué pata va unida con qué pata</h1>
-    <p class="lede">Es el mismo dibujo de tu placa, pero ahora cada componente muestra <b>sus patas</b> y una <b>línea de color</b> une todo lo que va al mismo punto. Cada pata lleva además una <b>etiqueta de nodo</b> (un nombre corto): <b>mismo nombre = van conectadas</b>, aunque estén lejos. Pasá el mouse (o tocá) un color en la lista para que se resalte solo ese grupo.</p>
+    <p class="eyebrow">Detector de metales · mapa de conexiones para placa virgen</p>
+    <h1>De dónde sale y a dónde va cada pata</h1>
+    <p class="lede">Cada componente está en su <b>posición real</b> sobre la placa. En cada pata se marca si es <b>entrada</b> (◂), <b>salida</b> (▸) o <b>alimentación</b> (▪), con su número. Las pistas se dibujan en <b>ángulo recto</b> y agrupadas por nodo. Tocá un nodo en la lista o cualquier pata para <b>aislarlo</b>: se apaga el resto y ves su recorrido limpio.</p>
   </header>
 
   <section>
     <h2>Diagrama de conexiones</h2>
     <div class="board-card">
-      <div class="board-scroll">
-        <svg class="board" id="board" viewBox="0 0 1200 900" role="img" aria-label="Mapa de conexiones entre componentes"></svg>
-      </div>
-      <div class="toolbar" id="legend">
-        <span class="hint">Tocá un nodo para resaltarlo · tocá de nuevo para soltar</span>
-      </div>
+      <div class="board-scroll"><svg class="board" id="board" role="img" aria-label="Mapa de conexiones por nodos"></svg></div>
+      <div class="toolbar" id="legend"><span class="hint">Tocá un nodo para aislarlo · de nuevo para soltar</span></div>
     </div>
-    <p class="legend-note">Escala del dibujo: es un esquema de conexión, no un plano a medida. Las patas de cada integrado/transistor están numeradas igual que en el chip real.</p>
+    <div class="legend-note">
+      <span class="k"><b>◂</b> entrada</span><span class="k"><b>▸</b> salida</span>
+      <span class="k"><b>▪</b> alimentación (+12 / GND)</span><span class="k"><b>●</b> pata sin polaridad</span>
+    </div>
   </section>
 
   <section>
     <h2>Tabla de nodos — la lista definitiva</h2>
-    <p style="color:var(--muted);font-size:14.5px;margin-bottom:14px">Cada fila es un punto eléctrico. Todo lo que aparece en la misma fila va <b>soldado/unido entre sí</b>. Si en el dibujo una línea se te pierde, guiate por esta tabla.</p>
-    <div class="table-wrap"><table id="nettable">
-      <caption>Nodos y qué patas los forman</caption>
-      <thead><tr><th>Nodo</th><th>Patas que se unen</th><th>Qué es</th></tr></thead>
-      <tbody></tbody>
-    </table></div>
+    <p style="color:var(--muted);font-size:14.5px;margin-bottom:14px">Cada fila es un punto eléctrico: todo lo que figura ahí va <b>unido entre sí</b>. Es la referencia segura si una línea se te pierde en el dibujo.</p>
+    <div class="table-wrap"><table id="nettable"><caption>Nodos y qué patas los forman</caption>
+      <thead><tr><th>Nodo</th><th>Patas que se unen</th><th>Qué es</th></tr></thead><tbody></tbody></table></div>
   </section>
 
   <section>
     <h2>Antes de empezar</h2>
     <div class="cards">
-      <div class="card warn"><h3>Verificá el bloque del pot R13</h3><p>La foto del esquema en la zona del <b>comparador</b> (R9, R10, R11, R13 y las patas 5 y 6 del TL072) sale borrosa. Dibujé lo más probable, pero <b>confirmá esas uniones con el multímetro en continuidad</b> siguiendo el cobre de tu placa impresa.</p></div>
-      <div class="card warn"><h3>C4 no se monta</h3><p>El esquema lista <code>C4 10µF</code> pero <b>la placa no tiene lugar para C4</b>. Va en paralelo con la alimentación igual que C6/C7, así que lo dejás afuera. No aparece en este mapa.</p></div>
-      <div class="card"><h3>Polaridades</h3><p>Electrolíticos <b>C3, C5, C6, C7</b>: la pata larga es <b>+</b>. Diodos <b>D2, D3</b>: la banda es el cátodo. Transistores y chips: respetá la pata 1 / la cara plana.</p></div>
+      <div class="card warn"><h3>Verificá el bloque del pot R13</h3><p>La zona del comparador (R9, R10, R11, R13 y patas 5/6 del TL072) sale borrosa en el esquema original. Dibujé lo más probable: <b>confirmá esas uniones con el multímetro en continuidad</b> siguiendo el cobre.</p></div>
+      <div class="card warn"><h3>C4 no se monta</h3><p>El esquema lista <code>C4 10µF</code> pero la placa no tiene lugar. Va en paralelo con la alimentación como C6/C7, así que queda afuera y no aparece acá.</p></div>
+      <div class="card"><h3>Polaridades</h3><p>Electrolíticos C3, C5, C6, C7: pata larga = <b>+</b>. Diodos D2, D3: la banda es el cátodo (k). Chips y transistores: respetá pata 1 / cara plana.</p></div>
     </div>
   </section>
-
-  <section>
-    <h2>Cómo usarlo para dibujar el cobre</h2>
-    <ol class="steps">
-      <li>Colocá primero los componentes en la posición del dibujo y marcá con un punto dónde cae <b>cada pata</b> sobre el cobre.</li>
-      <li>Tomá un nodo de la tabla (por ejemplo <b>GND</b>) y con el marcador uní <b>todas</b> las patas que figuran en esa fila con una pista de cobre. No importa el camino que elijas mientras toque todas.</li>
-      <li>Los nodos <b>+12</b> y <b>GND</b> conviene hacerlos como dos pistas anchas (tipo "riel"), uno arriba y otro abajo, y colgar de ahí lo que corresponda.</li>
-      <li>Repetí nodo por nodo. Cuando una pista tendría que cruzar a otra, dejá un <b>puente de alambre</b> por encima (en placa de una cara es normal necesitar varios).</li>
-      <li>Al terminar, revisá con el multímetro: cada fila de la tabla debe dar <b>continuidad</b> entre sus patas, y filas distintas <b>no</b> deben tener continuidad entre sí.</li>
-    </ol>
-  </section>
 </div>
+
+<script id="netdata" type="application/json">
+{
+ "view":{"w":912,"h":703,"railTop":16,"railBot":690},
+ "nets":{
+  "+12":{"c":"#E4572E","d":"Alimentación +12 V (riel de arriba)","rail":"top"},
+  "GND":{"c":"#5C7186","d":"Negativo / masa (riel de abajo)","rail":"bot"},
+  "TIM":{"c":"#C9A227","d":"Red de tiempo del 555 (patas 2 y 6)"},
+  "DISCH":{"c":"#B5651D","d":"Descarga del 555 (pata 7)"},
+  "RT":{"c":"#9A7B1F","d":"Unión del preset R2 con R18"},
+  "CONT":{"c":"#8E7CC3","d":"Control del 555 (pata 5) a C2"},
+  "OUT5":{"c":"#2E8B7A","d":"Salida del 555 (pata 3)"},
+  "QB":{"c":"#C56BA3","d":"Base del BC557 (Q3)"},
+  "QC":{"c":"#7BA23C","d":"Colector del BC557 (Q3)"},
+  "GATE":{"c":"#3E8EED","d":"Puerta del MOSFET IRF840"},
+  "DRAIN":{"c":"#D64550","d":"Drenaje del MOSFET + bobina + diodos"},
+  "CLAMP":{"c":"#E08A2E","d":"Nodo de recorte (cátodos de D2/D3)"},
+  "SAMP":{"c":"#C77D3A","d":"Muestra hacia el amplificador (R4/C3)"},
+  "VREF":{"c":"#9B59B6","d":"Referencia media (R5/R6) a pata 3"},
+  "AIN":{"c":"#17A589","d":"Entrada − 1ª etapa (pata 2)"},
+  "AOUT":{"c":"#2E86C1","d":"Salida 1ª etapa (pata 1)"},
+  "POT":{"c":"#DC7633","d":"Señal hacia el pot de sensibilidad R13"},
+  "BINp":{"c":"#28B463","d":"Entrada + 2ª etapa (pata 5)"},
+  "BINn":{"c":"#CB4335","d":"Entrada − 2ª etapa (pata 6)"},
+  "BOUT":{"c":"#2874A6","d":"Salida 2ª etapa (pata 7)"},
+  "QBAS":{"c":"#B7519B","d":"Base del BC547 (Q1)"},
+  "QCOL":{"c":"#7D8F2A","d":"Colector del BC547 al parlante"},
+  "SPK":{"c":"#1ABC9C","d":"Parlante hacia +12 por R8"}
+ },
+ "components":[
+  {"ref":"R2","sub":"10k pre","cx":105,"cy":130,"w":150,"h":150,"kind":"pot",
+   "pins":[{"n":"1","net":"TIM","s":"B","at":0.2,"r":"pas"},{"n":"w","net":"RT","s":"B","at":0.5,"r":"pas"},{"n":"3","net":"RT","s":"B","at":0.8,"r":"pas"}]},
+  {"ref":"U1","sub":"NE555","cx":253,"cy":130,"w":66,"h":172,"kind":"ic",
+   "pins":[{"n":"1","net":"GND","s":"L","at":0.12,"r":"pwr"},{"n":"2","net":"TIM","s":"L","at":0.37,"r":"in"},{"n":"3","net":"OUT5","s":"L","at":0.62,"r":"out"},{"n":"4","net":"+12","s":"L","at":0.88,"r":"pwr"},
+           {"n":"8","net":"+12","s":"R","at":0.12,"r":"pwr"},{"n":"7","net":"DISCH","s":"R","at":0.37,"r":"out"},{"n":"6","net":"TIM","s":"R","at":0.62,"r":"in"},{"n":"5","net":"CONT","s":"R","at":0.88,"r":"in"}]},
+  {"ref":"Q1","sub":"BC547","cx":378,"cy":70,"w":46,"h":46,"kind":"tr",
+   "pins":[{"n":"C","net":"QCOL","s":"T","at":0.5,"r":"out"},{"n":"B","net":"QBAS","s":"L","at":0.5,"r":"in"},{"n":"E","net":"GND","s":"B","at":0.5,"r":"pwr"}]},
+  {"ref":"C1","sub":"100n","cx":361,"cy":150,"w":48,"h":40,"kind":"cap",
+   "pins":[{"n":"","net":"TIM","s":"T","at":0.5,"r":"pas"},{"n":"","net":"GND","s":"B","at":0.5,"r":"pas"}]},
+  {"ref":"Q2","sub":"IRF840","cx":508,"cy":140,"w":58,"h":150,"kind":"mos",
+   "pins":[{"n":"G","net":"GATE","s":"L","at":0.5,"r":"in"},{"n":"D","net":"DRAIN","s":"T","at":0.5,"r":"out"},{"n":"S","net":"GND","s":"B","at":0.5,"r":"pwr"}]},
+  {"ref":"P1","sub":"bobina","cx":635,"cy":62,"w":52,"h":44,"kind":"conn",
+   "pins":[{"n":"1","net":"+12","s":"L","at":0.32,"r":"pwr"},{"n":"2","net":"DRAIN","s":"L","at":0.75,"r":"out"}]},
+  {"ref":"P2","sub":"parlante","cx":748,"cy":62,"w":52,"h":44,"kind":"conn",
+   "pins":[{"n":"1","net":"SPK","s":"L","at":0.32,"r":"out"},{"n":"2","net":"QCOL","s":"L","at":0.75,"r":"out"}]},
+  {"ref":"R14","sub":"10k","cx":658,"cy":132,"w":66,"h":24,"kind":"res",
+   "pins":[{"n":"","net":"OUT5","s":"L","at":0.5,"r":"pas"},{"n":"","net":"QB","s":"R","at":0.5,"r":"pas"}]},
+  {"ref":"C2","sub":"100n","cx":361,"cy":242,"w":48,"h":40,"kind":"cap",
+   "pins":[{"n":"","net":"CONT","s":"T","at":0.5,"r":"pas"},{"n":"","net":"GND","s":"B","at":0.5,"r":"pas"}]},
+  {"ref":"R12","sub":"470k","cx":658,"cy":186,"w":66,"h":24,"kind":"res",
+   "pins":[{"n":"","net":"QBAS","s":"L","at":0.5,"r":"pas"},{"n":"","net":"GND","s":"R","at":0.5,"r":"pas"}]},
+  {"ref":"C5","sub":"1µF","cx":120,"cy":256,"w":44,"h":44,"kind":"elec",
+   "pins":[{"n":"+","net":"BOUT","s":"T","at":0.5,"r":"pas"},{"n":"-","net":"QBAS","s":"B","at":0.5,"r":"pas"}]},
+  {"ref":"R1","sub":"47k","cx":262,"cy":246,"w":66,"h":24,"kind":"res",
+   "pins":[{"n":"","net":"DISCH","s":"L","at":0.5,"r":"pas"},{"n":"","net":"+12","s":"R","at":0.5,"r":"pwr"}]},
+  {"ref":"Q3","sub":"BC557","cx":238,"cy":300,"w":44,"h":44,"kind":"tr",
+   "pins":[{"n":"E","net":"+12","s":"T","at":0.5,"r":"pwr"},{"n":"B","net":"QB","s":"L","at":0.5,"r":"in"},{"n":"C","net":"QC","s":"B","at":0.5,"r":"out"}]},
+  {"ref":"R16","sub":"10k","cx":325,"cy":356,"w":24,"h":66,"kind":"res",
+   "pins":[{"n":"","net":"QB","s":"T","at":0.5,"r":"pas"},{"n":"","net":"+12","s":"B","at":0.5,"r":"pwr"}]},
+  {"ref":"R8","sub":"10","cx":378,"cy":356,"w":24,"h":66,"kind":"res",
+   "pins":[{"n":"","net":"+12","s":"T","at":0.5,"r":"pwr"},{"n":"","net":"SPK","s":"B","at":0.5,"r":"pas"}]},
+  {"ref":"C8","sub":"1n","cx":478,"cy":341,"w":48,"h":40,"kind":"cap",
+   "pins":[{"n":"","net":"BINn","s":"T","at":0.5,"r":"pas"},{"n":"","net":"GND","s":"B","at":0.5,"r":"pas"}]},
+  {"ref":"D2","sub":"1N4148","cx":592,"cy":300,"w":52,"h":26,"kind":"dio",
+   "pins":[{"n":"k","net":"DRAIN","s":"L","at":0.5,"r":"pas"},{"n":"a","net":"CLAMP","s":"R","at":0.5,"r":"pas"}]},
+  {"ref":"R13","sub":"50k pot","cx":790,"cy":304,"w":148,"h":150,"kind":"pot",
+   "pins":[{"n":"1","net":"POT","s":"B","at":0.2,"r":"in"},{"n":"w","net":"BINp","s":"B","at":0.5,"r":"out"},{"n":"3","net":"VREF","s":"B","at":0.8,"r":"pas"}]},
+  {"ref":"R18","sub":"1k","cx":135,"cy":333,"w":66,"h":24,"kind":"res",
+   "pins":[{"n":"","net":"RT","s":"L","at":0.5,"r":"pas"},{"n":"","net":"DISCH","s":"R","at":0.5,"r":"pas"}]},
+  {"ref":"C6","sub":"10µF","cx":650,"cy":405,"w":44,"h":44,"kind":"elec",
+   "pins":[{"n":"+","net":"+12","s":"T","at":0.5,"r":"pwr"},{"n":"-","net":"GND","s":"B","at":0.5,"r":"pwr"}]},
+  {"ref":"U2","sub":"TL072","cx":170,"cy":463,"w":135,"h":96,"kind":"ic",
+   "pins":[{"n":"1","net":"AOUT","s":"L","at":0.15,"r":"out"},{"n":"2","net":"AIN","s":"L","at":0.38,"r":"in"},{"n":"3","net":"VREF","s":"L","at":0.62,"r":"in"},{"n":"4","net":"GND","s":"L","at":0.85,"r":"pwr"},
+           {"n":"8","net":"+12","s":"R","at":0.15,"r":"pwr"},{"n":"7","net":"BOUT","s":"R","at":0.38,"r":"out"},{"n":"6","net":"BINn","s":"R","at":0.62,"r":"in"},{"n":"5","net":"BINp","s":"R","at":0.85,"r":"in"}]},
+  {"ref":"C3","sub":"1µF","cx":273,"cy":472,"w":44,"h":44,"kind":"elec",
+   "pins":[{"n":"+","net":"SAMP","s":"L","at":0.5,"r":"pas"},{"n":"-","net":"AIN","s":"R","at":0.5,"r":"pas"}]},
+  {"ref":"D3","sub":"1N4148","cx":592,"cy":357,"w":52,"h":26,"kind":"dio",
+   "pins":[{"n":"a","net":"DRAIN","s":"L","at":0.5,"r":"pas"},{"n":"k","net":"CLAMP","s":"R","at":0.5,"r":"pas"}]},
+  {"ref":"R3","sub":"220","cx":484,"cy":400,"w":66,"h":24,"kind":"res",
+   "pins":[{"n":"","net":"DRAIN","s":"L","at":0.5,"r":"pas"},{"n":"","net":"+12","s":"R","at":0.5,"r":"pwr"}]},
+  {"ref":"R4","sub":"390","cx":484,"cy":461,"w":66,"h":24,"kind":"res",
+   "pins":[{"n":"","net":"CLAMP","s":"L","at":0.5,"r":"pas"},{"n":"","net":"SAMP","s":"R","at":0.5,"r":"pas"}]},
+  {"ref":"R9","sub":"4.7k","cx":484,"cy":523,"w":66,"h":24,"kind":"res",
+   "pins":[{"n":"","net":"AOUT","s":"L","at":0.5,"r":"pas"},{"n":"","net":"POT","s":"R","at":0.5,"r":"pas"}]},
+  {"ref":"R11","sub":"120k","cx":597,"cy":558,"w":24,"h":66,"kind":"res",
+   "pins":[{"n":"","net":"BINn","s":"T","at":0.5,"r":"pas"},{"n":"","net":"GND","s":"B","at":0.5,"r":"pas"}]},
+  {"ref":"R17","sub":"150","cx":795,"cy":454,"w":66,"h":24,"kind":"res",
+   "pins":[{"n":"","net":"GATE","s":"L","at":0.5,"r":"pas"},{"n":"","net":"GND","s":"R","at":0.5,"r":"pas"}]},
+  {"ref":"C7","sub":"1000µF","cx":698,"cy":578,"w":48,"h":48,"kind":"elec",
+   "pins":[{"n":"+","net":"+12","s":"T","at":0.5,"r":"pwr"},{"n":"-","net":"GND","s":"B","at":0.5,"r":"pwr"}]},
+  {"ref":"R6","sub":"62k","cx":366,"cy":536,"w":66,"h":24,"kind":"res",
+   "pins":[{"n":"","net":"VREF","s":"L","at":0.5,"r":"pas"},{"n":"","net":"GND","s":"R","at":0.5,"r":"pas"}]},
+  {"ref":"R10","sub":"62k","cx":484,"cy":578,"w":66,"h":24,"kind":"res",
+   "pins":[{"n":"","net":"BOUT","s":"L","at":0.5,"r":"pas"},{"n":"","net":"BINn","s":"R","at":0.5,"r":"pas"}]},
+  {"ref":"R15","sub":"100","cx":795,"cy":524,"w":66,"h":24,"kind":"res",
+   "pins":[{"n":"","net":"QC","s":"L","at":0.5,"r":"pas"},{"n":"","net":"GATE","s":"R","at":0.5,"r":"pas"}]},
+  {"ref":"R5","sub":"47k","cx":245,"cy":574,"w":66,"h":24,"kind":"res",
+   "pins":[{"n":"","net":"+12","s":"L","at":0.5,"r":"pwr"},{"n":"","net":"VREF","s":"R","at":0.5,"r":"pas"}]},
+  {"ref":"P3","sub":"batería 12V","cx":353,"cy":624,"w":52,"h":44,"kind":"conn",
+   "pins":[{"n":"1","net":"+12","s":"T","at":0.32,"r":"pwr"},{"n":"2","net":"GND","s":"T","at":0.75,"r":"pwr"}]},
+  {"ref":"R7","sub":"1.2M","cx":160,"cy":629,"w":66,"h":24,"kind":"res",
+   "pins":[{"n":"","net":"AOUT","s":"L","at":0.5,"r":"pas"},{"n":"","net":"AIN","s":"R","at":0.5,"r":"pas"}]}
+ ]
+}
+</script>
 
 <script>
 (function(){
 const NS="http://www.w3.org/2000/svg";
+const D=JSON.parse(document.getElementById("netdata").textContent);
+const V=D.view, NETS=D.nets, COMP=D.components;
+const STUB=12;
 function el(t,a){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;}
-function txt(x,y,s,cls,anchor){const e=el("text",{x,y,class:cls,"text-anchor":anchor||"middle"});e.textContent=s;return e;}
-
-// ---------- NET metadata ----------
-const NETS={
-  "+12":{c:"#E4572E",d:"Alimentación +12 V (riel de arriba)"},
-  "GND":{c:"#4A5A6E",d:"Negativo / masa (riel de abajo)"},
-  "TIM":{c:"#C9A227",d:"Red de tiempo del 555 (patas 2 y 6)"},
-  "DISCH":{c:"#B5651D",d:"Descarga del 555 (pata 7)"},
-  "RT":{c:"#9A7B1F",d:"Unión preset R2 con R18"},
-  "CONT":{c:"#7E6BB5",d:"Control del 555 (pata 5) a C2"},
-  "OUT5":{c:"#2E8B7A",d:"Salida del 555 (pata 3)"},
-  "QB":{c:"#C56BA3",d:"Base del BC557 (Q3)"},
-  "QC":{c:"#6C8E23",d:"Colector del BC557 (Q3)"},
-  "GATE":{c:"#2E7BE4",d:"Puerta del MOSFET IRF840"},
-  "DRAIN":{c:"#D64550",d:"Drenaje del MOSFET + bobina + diodos"},
-  "CLAMP":{c:"#E08A2E",d:"Nodo de recorte (cátodos de D2/D3)"},
-  "SAMP":{c:"#C77D3A",d:"Muestra hacia el amplificador (R4/C3)"},
-  "VREF":{c:"#8E44AD",d:"Referencia media (R5/R6) a pata 3"},
-  "AIN":{c:"#16A085",d:"Entrada − 1ª etapa (pata 2)"},
-  "AOUT":{c:"#2980B9",d:"Salida 1ª etapa (pata 1)"},
-  "POT":{c:"#D35400",d:"Señal hacia el pot de sensibilidad R13"},
-  "BINp":{c:"#27AE60",d:"Entrada + 2ª etapa (pata 5)"},
-  "BINn":{c:"#C0392B",d:"Entrada − 2ª etapa (pata 6)"},
-  "BOUT":{c:"#2C82C9",d:"Salida 2ª etapa (pata 7)"},
-  "QBAS":{c:"#B7519B",d:"Base del BC547 (Q1)"},
-  "QCOL":{c:"#7D8F2A",d:"Colector del BC547 a parlante"},
-  "SPK":{c:"#1F9E89",d:"Parlante hacia +12 por R8"}
-};
-
-// ---------- component + pin layout ----------
-// each pin: {n:label, net, x, y}
-const RAILT=70, RAILB=852;
-const COMP=[];
-function C(ref,sub,x,y,w,h,kind,pins){COMP.push({ref,sub,x,y,w,h,kind,pins});}
-
-// 555 oscillator (left)
-C("U1","NE555",120,300,120,150,"ic",[
-  {n:"1",net:"GND",x:120,y:326},{n:"2",net:"TIM",x:120,y:366},
-  {n:"3",net:"OUT5",x:120,y:406},{n:"4",net:"+12",x:120,y:440,side:"L"},
-  {n:"8",net:"+12",x:240,y:326},{n:"7",net:"DISCH",x:240,y:366},
-  {n:"6",net:"TIM",x:240,y:406},{n:"5",net:"CONT",x:240,y:440}]);
-C("C1","100n",60,470,0,0,"cap",[{n:"",net:"TIM",x:60,y:452},{n:"",net:"GND",x:60,y:492}]);
-C("C2","100n",300,470,0,0,"cap",[{n:"",net:"CONT",x:300,y:452},{n:"",net:"GND",x:300,y:492}]);
-C("R1","47k",300,250,0,0,"res",[{n:"",net:"DISCH",x:300,y:230},{n:"",net:"+12",x:300,y:120}]);
-C("R2","10k pre",40,250,0,0,"pot",[{n:"A",net:"TIM",x:22,y:250},{n:"W",net:"RT",x:40,y:230},{n:"B",net:"RT",x:58,y:250}]);
-C("R18","1k",150,235,0,0,"res",[{n:"",net:"RT",x:110,y:235},{n:"",net:"DISCH",x:210,y:235}]);
-
-// gate driver (center-left)
-C("R14","10k",360,406,0,0,"res",[{n:"",net:"OUT5",x:340,y:406},{n:"",net:"QB",x:430,y:406}]);
-C("Q3","BC557",470,360,54,44,"tr",[{n:"E",net:"+12",x:452,y:360},{n:"B",net:"QB",x:470,y:342},{n:"C",net:"QC",x:488,y:360}]);
-C("R16","10k",560,300,0,0,"res",[{n:"",net:"QB",x:560,y:340},{n:"",net:"+12",x:560,y:120}]);
-C("R15","100",470,470,0,0,"res",[{n:"",net:"QC",x:470,y:450},{n:"",net:"GATE",x:560,y:470}]);
-C("R17","150",470,560,0,0,"res",[{n:"",net:"GATE",x:470,y:540},{n:"",net:"GND",x:470,y:640}]);
-
-// power switch (center)
-C("Q2","IRF840",600,470,60,60,"tr",[{n:"G",net:"GATE",x:582,y:500},{n:"D",net:"DRAIN",x:630,y:452},{n:"S",net:"GND",x:660,y:530}]);
-C("P1","bobina",630,150,60,44,"conn",[{n:"1",net:"+12",x:630,y:150},{n:"2",net:"DRAIN",x:630,y:194}]);
-C("R3","220",700,220,0,0,"res",[{n:"",net:"DRAIN",x:700,y:260},{n:"",net:"+12",x:700,y:120}]);
-C("D2","1N4148",700,470,0,0,"dio",[{n:"k",net:"DRAIN",x:700,y:452},{n:"a",net:"CLAMP",x:760,y:452}]);
-C("D3","1N4148",700,510,0,0,"dio",[{n:"a",net:"DRAIN",x:700,y:510},{n:"k",net:"CLAMP",x:760,y:510}]);
-
-// stage 1 amplifier (center-right)
-C("R4","390",790,481,0,0,"res",[{n:"",net:"CLAMP",x:770,y:481},{n:"",net:"SAMP",x:840,y:481}]);
-C("C3","1u",870,481,0,0,"cap",[{n:"+",net:"SAMP",x:852,y:481},{n:"-",net:"AIN",x:892,y:481}]);
-C("R5","47k",760,240,0,0,"res",[{n:"",net:"+12",x:760,y:120},{n:"",net:"VREF",x:760,y:340}]);
-C("R6","62k",760,560,0,0,"res",[{n:"",net:"VREF",x:760,y:540},{n:"",net:"GND",x:760,y:640}]);
-C("R7","1.2M",850,410,0,0,"res",[{n:"",net:"AOUT",x:850,y:390},{n:"",net:"AIN",x:940,y:390}]);
-C("U2","TL072",960,420,130,150,"ic",[
-  {n:"1",net:"AOUT",x:960,y:446},{n:"2",net:"AIN",x:960,y:486},
-  {n:"3",net:"VREF",x:960,y:520,side:"L"},{n:"4",net:"GND",x:960,y:560,side:"L"},
-  {n:"8",net:"+12",x:1090,y:446},{n:"7",net:"BOUT",x:1090,y:486},
-  {n:"6",net:"BINn",x:1090,y:520},{n:"5",net:"BINp",x:1090,y:560}]);
-
-// stage 2 comparator (right)
-C("R9","4k7",900,300,0,0,"res",[{n:"",net:"AOUT",x:900,y:340},{n:"",net:"POT",x:900,y:230}]);
-C("R13","50k pot",980,250,0,0,"pot",[{n:"1",net:"POT",x:962,y:250},{n:"W",net:"BINp",x:980,y:230},{n:"3",net:"VREF",x:998,y:250}]);
-C("R10","62k",1120,600,0,0,"res",[{n:"",net:"BOUT",x:1120,y:600},{n:"",net:"BINn",x:1120,y:520}]);
-C("R11","120k",1160,640,0,0,"res",[{n:"",net:"BINn",x:1160,y:620},{n:"",net:"GND",x:1160,y:700}]);
-C("C8","1n",1080,660,0,0,"cap",[{n:"",net:"BINn",x:1080,y:640},{n:"",net:"GND",x:1080,y:700}]);
-
-// output (far right)
-C("C5","1u",1130,486,0,0,"cap",[{n:"+",net:"BOUT",x:1110,y:486},{n:"-",net:"QBAS",x:1150,y:486}]);
-C("Q1","BC547",1150,430,54,44,"tr",[{n:"C",net:"QCOL",x:1150,y:412},{n:"B",net:"QBAS",x:1132,y:430},{n:"E",net:"GND",x:1150,y:470}]);
-C("R12","470k",1180,540,0,0,"res",[{n:"",net:"QBAS",x:1180,y:500},{n:"",net:"GND",x:1180,y:640}]);
-C("R8","10",1150,220,0,0,"res",[{n:"",net:"+12",x:1150,y:120},{n:"",net:"SPK",x:1150,y:300}]);
-C("P2","parlante",1150,330,60,44,"conn",[{n:"1",net:"SPK",x:1150,y:330},{n:"2",net:"QCOL",x:1150,y:374}]);
-
-// power caps + battery
-C("C6","10u",860,150,0,0,"cap",[{n:"+",net:"+12",x:860,y:120},{n:"-",net:"GND",x:860,y:640}]);
-C("C7","1000u",1040,150,0,0,"cap",[{n:"+",net:"+12",x:1040,y:120},{n:"-",net:"GND",x:1040,y:640}]);
-C("P3","12v",500,150,60,44,"conn",[{n:"1",net:"+12",x:500,y:150},{n:"2",net:"GND",x:500,y:194}]);
-
-// ---------- render ----------
+function txt(x,y,s,cls,anchor,fill){const e=el("text",{x,y,class:cls,"text-anchor":anchor||"middle"});if(fill)e.setAttribute("fill",fill);e.textContent=s;return e;}
 const svg=document.getElementById("board");
-// rails
-svg.appendChild(el("line",{x1:40,y1:RAILT,x2:1170,y2:RAILT,stroke:NETS["+12"].c,"stroke-width":7,"stroke-linecap":"round"}));
-svg.appendChild(el("line",{x1:40,y1:RAILB,x2:1170,y2:RAILB,stroke:NETS["GND"].c,"stroke-width":7,"stroke-linecap":"round"}));
-svg.appendChild(txt(1176,RAILT+5,"+12V","rail-lbl","start")).setAttribute("fill",NETS["+12"].c);
-svg.appendChild(txt(1176,RAILB+5,"GND","rail-lbl","start")).setAttribute("fill",NETS["GND"].c);
+svg.setAttribute("viewBox",`-6 -6 ${V.w+12} ${V.h+12}`);
 
-// gather pins per net (absolute)
+// pin geometry ------------------------------------------------
+function pinGeom(c,p){
+  const x=c.cx-c.w/2, y=c.cy-c.h/2;
+  let px,py,dx,dy;
+  if(p.s==="L"){px=x;py=y+p.at*c.h;dx=-1;dy=0;}
+  else if(p.s==="R"){px=x+c.w;py=y+p.at*c.h;dx=1;dy=0;}
+  else if(p.s==="T"){px=x+p.at*c.w;py=y;dx=0;dy=-1;}
+  else {px=x+p.at*c.w;py=y+c.h;dx=0;dy=1;}
+  return {px,py,dx,dy};
+}
+// collect pins per net
 const netPins={};
 COMP.forEach(c=>c.pins.forEach(p=>{
-  (netPins[p.net]=netPins[p.net]||[]).push({x:p.x,y:p.y,ref:c.ref,pin:p.n});
+  const g=pinGeom(c,p);
+  (netPins[p.net]=netPins[p.net]||[]).push({...g,ref:c.ref,pin:p.n,role:p.r});
 }));
+function hash(s){let h=0;for(let i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))|0;return h;}
 
-// draw connection lines: chain pins ordered by x then y; rails handled specially
-const layerLines=el("g",{});svg.appendChild(layerLines);
-function chain(net,pts){
-  const col=NETS[net].c;
-  const s=pts.slice().sort((a,b)=>a.x-b.x||a.y-b.y);
-  for(let i=0;i<s.length-1;i++){
-    const a=s[i],b=s[i+1];
-    const midx=(a.x+b.x)/2;
-    const d=`M ${a.x} ${a.y} C ${midx} ${a.y}, ${midx} ${b.y}, ${b.x} ${b.y}`;
-    const ln=el("path",{d,class:"netline","data-net":net,stroke:col,"stroke-width":2.6});
-    layerLines.appendChild(ln);
-  }
+// draw rails --------------------------------------------------
+const gWire=el("g",{});svg.appendChild(gWire);
+function seg(net,pts,w){
+  let d="M "+pts[0][0]+" "+pts[0][1];
+  for(let i=1;i<pts.length;i++)d+=" L "+pts[i][0]+" "+pts[i][1];
+  gWire.appendChild(el("path",{d,class:"netseg","data-net":net,stroke:NETS[net].c,"stroke-width":w||2}));
 }
-for(const net in netPins){
-  if(net==="+12"){ // connect each pin vertically to top rail
-    netPins[net].forEach(p=>layerLines.appendChild(el("path",{d:`M ${p.x} ${p.y} L ${p.x} ${RAILT}`,class:"netline","data-net":net,stroke:NETS[net].c,"stroke-width":2.6})));
-  }else if(net==="GND"){
-    netPins[net].forEach(p=>layerLines.appendChild(el("path",{d:`M ${p.x} ${p.y} L ${p.x} ${RAILB}`,class:"netline","data-net":net,stroke:NETS[net].c,"stroke-width":2.6})));
-  }else chain(net,netPins[net]);
-}
-
-// draw components
-const layerComp=el("g",{});svg.appendChild(layerComp);
-function compG(c){
-  const g=el("g",{class:"comp "+(c.kind==="ic"?"ic":"")});
-  if(c.kind==="ic"){
-    g.appendChild(el("rect",{class:"body",x:c.x,y:c.y,width:c.w,height:c.h,rx:6}));
-    g.appendChild(el("path",{d:`M ${c.x+c.w/2-10} ${c.y} a 10 10 0 0 0 20 0`,fill:"var(--bg)",stroke:"#22272e"}));
-    g.appendChild(txt(c.x+c.w/2,c.y+c.h/2-4,c.ref,"ref"));
-    g.appendChild(txt(c.x+c.w/2,c.y+c.h/2+14,c.sub,"sub"));
+Object.keys(NETS).forEach(net=>{
+  const info=NETS[net], pts=netPins[net]; if(!pts)return;
+  if(info.rail){
+    const ry=info.rail==="top"?V.railTop:V.railBot;
+    const xs=pts.map(p=>p.px);
+    seg(net,[[Math.min(...xs),ry],[Math.max(...xs),ry]],3.4);        // bus
+    pts.forEach(p=>seg(net,[[p.px,p.py],[p.px,ry]],2));               // drops
   }else{
-    // small marker at centroid of pins
-    let cx=0,cy=0;c.pins.forEach(p=>{cx+=p.x;cy+=p.y});cx/=c.pins.length;cy/=c.pins.length;
-    let shape;
-    if(c.kind==="res"){shape=el("rect",{class:"body",x:cx-20,y:cy-10,width:40,height:20,rx:3});}
-    else if(c.kind==="cap"){shape=el("rect",{class:"body",x:cx-13,y:cy-13,width:26,height:26,rx:4});}
-    else if(c.kind==="dio"){shape=el("rect",{class:"body",x:cx-16,y:cy-9,width:32,height:18,rx:2});}
-    else if(c.kind==="tr"){shape=el("circle",{class:"body",cx:cx,cy:cy,r:19});}
-    else if(c.kind==="pot"){shape=el("rect",{class:"body",x:cx-22,y:cy-11,width:44,height:22,rx:3});}
-    else if(c.kind==="conn"){shape=el("rect",{class:"body",x:cx-20,y:cy-4,width:40,height:44,rx:4});}
-    g.appendChild(shape);
-    const lx=(c.kind==="conn")?cx+30:cx;const anch=(c.kind==="conn")?"start":"middle";
-    const ty=(c.kind==="tr")? cy+34 : cy+ (c.kind==="conn"?14:24);
-    const t1=txt((c.kind==="conn")?cx+30:cx, (c.kind==="tr")?cy-26:ty, c.ref,"ref",anch);g.appendChild(t1);
-    const t2=txt((c.kind==="conn")?cx+30:cx, (c.kind==="tr")?cy-12:ty+13, c.sub,"sub",anch);g.appendChild(t2);
+    const off=((hash(net)%9)-4)*2.4;
+    const xs=pts.map(p=>p.px), ys=pts.map(p=>p.py);
+    const spanx=Math.max(...xs)-Math.min(...xs), spany=Math.max(...ys)-Math.min(...ys);
+    // stub each pin outward first
+    const anch=pts.map(p=>({...p,ax:p.px+p.dx*STUB,ay:p.py+p.dy*STUB}));
+    anch.forEach(p=>seg(net,[[p.px,p.py],[p.ax,p.ay]],2));
+    if(spanx>=spany){
+      const ty=(Math.min(...anch.map(p=>p.ay))+Math.max(...anch.map(p=>p.ay)))/2+off;
+      seg(net,[[Math.min(...anch.map(p=>p.ax)),ty],[Math.max(...anch.map(p=>p.ax)),ty]],2);
+      anch.forEach(p=>seg(net,[[p.ax,p.ay],[p.ax,ty]],2));
+    }else{
+      const tx=(Math.min(...anch.map(p=>p.ax))+Math.max(...anch.map(p=>p.ax)))/2+off;
+      seg(net,[[tx,Math.min(...anch.map(p=>p.ay))],[tx,Math.max(...anch.map(p=>p.ay))]],2);
+      anch.forEach(p=>seg(net,[[p.ax,p.ay],[tx,p.ay]],2));
+    }
   }
-  layerComp.appendChild(g);
-}
-COMP.forEach(compG);
+});
 
-// draw pins (dots + net tags)
-const layerPins=el("g",{});svg.appendChild(layerPins);
-COMP.forEach(c=>c.pins.forEach(p=>{
-  const col=NETS[p.net].c;
-  layerPins.appendChild(el("circle",{class:"pindot","data-net":p.net,cx:p.x,cy:p.y,r:4.5,fill:col}));
-  if(p.n){ // pin number near dot
-    layerPins.appendChild(txt(p.x+(p.side==="L"?-9:9),p.y+3,p.n,"pinlbl",p.side==="L"?"end":"start"));
+// draw components --------------------------------------------
+const gComp=el("g",{});svg.appendChild(gComp);
+COMP.forEach(c=>{
+  const g=el("g",{class:"comp "+c.kind});
+  const x=c.cx-c.w/2,y=c.cy-c.h/2;
+  if(c.kind==="tr"||c.kind==="elec"){
+    g.appendChild(el("circle",{class:"body",cx:c.cx,cy:c.cy,r:Math.min(c.w,c.h)/2}));
+  }else{
+    g.appendChild(el("rect",{class:"body",x,y,width:c.w,height:c.h,rx:c.kind==="ic"||c.kind==="mos"?5:3}));
   }
-  // net tag pill text
-  const tag=txt(p.x,p.y-8,p.net,"nettag");tag.setAttribute("data-net",p.net);tag.setAttribute("fill",col);
-  layerPins.appendChild(tag);
+  if(c.kind==="ic"||c.kind==="mos")
+    g.appendChild(el("path",{d:`M ${c.cx-8} ${y} a 8 8 0 0 0 16 0`,fill:"var(--board)"}));
+  if(c.kind==="elec")
+    g.appendChild(txt(c.cx-1,c.cy+4,"+","ref","middle","#fff"));
+  const big=(c.kind==="ic"||c.kind==="mos"||c.kind==="pot");
+  const ry=big?c.cy-3:(c.cy+ (c.kind==="tr"||c.kind==="elec"? c.h/2+12 : c.h/2+13));
+  g.appendChild(txt(c.cx,ry,c.ref,"ref"));
+  g.appendChild(txt(c.cx,ry+11,c.sub,"sub"));
+  gComp.appendChild(g);
+});
+
+// draw pins (markers + numbers + tags) -----------------------
+const gPin=el("g",{});svg.appendChild(gPin);
+COMP.forEach(c=>c.pins.forEach(p=>{
+  const {px,py,dx,dy}=pinGeom(c,p), col=NETS[p.net].c;
+  const perp=[-dy,dx];
+  let mk;
+  if(p.r==="out"||p.r==="in"){
+    // triangle. out: tip outward. in: tip inward (base outward)
+    const s=(p.r==="out")?1:-1;
+    const tip=[px+dx*7*s, py+dy*7*s];
+    const bx=(p.r==="out")?[px,py]:[px+dx*7,py+dy*7];
+    const b1=[bx[0]+perp[0]*4,bx[1]+perp[1]*4], b2=[bx[0]-perp[0]*4,bx[1]-perp[1]*4];
+    mk=el("path",{class:"pinmark","data-net":p.net,d:`M ${tip[0]} ${tip[1]} L ${b1[0]} ${b1[1]} L ${b2[0]} ${b2[1]} Z`,fill:col});
+  }else if(p.r==="pwr"){
+    mk=el("rect",{class:"pinmark","data-net":p.net,x:px-3.4,y:py-3.4,width:6.8,height:6.8,fill:col});
+  }else{
+    mk=el("circle",{class:"pinmark","data-net":p.net,cx:px,cy:py,r:3.4,fill:col});
+  }
+  gPin.appendChild(mk);
+  if(p.n){
+    const lx=px+dx*(STUB+3)+perp[0]*5, ly=py+dy*(STUB+3)+perp[1]*5+3;
+    gPin.appendChild(txt(px+ (dx!==0?dx*10:0), py+(dy!==0?dy*11:3)-(dy<0?4:0), p.n,"pinnum", dx>0?"start":dx<0?"end":"middle"));
+  }
+  const tag=txt(px+dx*(STUB+4), py+dy*(STUB+4)+(dy===0?3:(dy<0?-2:9)), p.net,"nettag", dx>0?"start":dx<0?"end":"middle", col);
+  tag.setAttribute("data-net",p.net); gPin.appendChild(tag);
 }));
 
-// ---------- legend chips ----------
-const legend=document.getElementById("legend");
-const order=Object.keys(NETS);
+// interaction ------------------------------------------------
 let active=null;
-order.forEach(net=>{
-  const b=document.createElement("button");
-  b.className="chip";b.dataset.net=net;
+const legend=document.getElementById("legend");
+Object.keys(NETS).forEach(net=>{
+  const b=document.createElement("button");b.className="chip";b.dataset.net=net;
   b.innerHTML=`<span class="dot" style="background:${NETS[net].c}"></span>${net}`;
-  b.addEventListener("mouseenter",()=>hover(net));
-  b.addEventListener("mouseleave",()=>{if(!active)clear();else focus(active);});
-  b.addEventListener("click",()=>{active=(active===net)?null:net;active?focus(active):clear();});
+  b.addEventListener("mouseenter",()=>{if(!active)focus(net);});
+  b.addEventListener("mouseleave",()=>{if(!active)clear();});
+  b.addEventListener("click",()=>{active=active===net?null:net;active?focus(active):clear();});
   legend.appendChild(b);
 });
-function hover(net){if(!active)focus(net);}
 function focus(net){
-  svg.classList.add("dim");
+  svg.classList.add("iso");
   svg.querySelectorAll('[data-net]').forEach(n=>n.classList.toggle('hot',n.getAttribute('data-net')===net));
   document.querySelectorAll('#nettable tbody tr').forEach(r=>r.classList.toggle('hot',r.dataset.net===net));
   document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('off',active&&c.dataset.net!==active));
 }
-function clear(){
-  svg.classList.remove("dim");
-  svg.querySelectorAll('.hot').forEach(n=>n.classList.remove('hot'));
-  document.querySelectorAll('#nettable tbody tr.hot').forEach(r=>r.classList.remove('hot'));
-  document.querySelectorAll('.chip.off').forEach(c=>c.classList.remove('off'));
-}
-// clicking a pin/line highlights too
-svg.addEventListener("click",e=>{
-  const t=e.target.closest('[data-net]');if(!t)return;
-  const net=t.getAttribute('data-net');active=(active===net)?null:net;active?focus(active):clear();
-});
+function clear(){svg.classList.remove("iso");svg.querySelectorAll('.hot').forEach(n=>n.classList.remove('hot'));document.querySelectorAll('#nettable tbody tr.hot').forEach(r=>r.classList.remove('hot'));document.querySelectorAll('.chip.off').forEach(c=>c.classList.remove('off'));}
+svg.addEventListener("click",e=>{const t=e.target.closest('[data-net]');if(!t)return;const net=t.getAttribute('data-net');active=active===net?null:net;active?focus(active):clear();});
 
-// ---------- net table ----------
+// table ------------------------------------------------------
 const tb=document.querySelector('#nettable tbody');
-order.forEach(net=>{
+Object.keys(NETS).forEach(net=>{
   const mem=netPins[net].map(p=>`${p.ref}${p.pin?'·'+p.pin:''}`).join("   ");
   const tr=document.createElement('tr');tr.dataset.net=net;
-  tr.innerHTML=`<td class="net"><span class="dot" style="background:${NETS[net].c}"></span>${net}</td>`+
-               `<td class="mem">${mem}</td><td class="desc">${NETS[net].d}</td>`;
+  tr.innerHTML=`<td class="net"><span class="dot" style="background:${NETS[net].c}"></span>${net}</td><td class="mem">${mem}</td><td class="desc">${NETS[net].d}</td>`;
   tr.addEventListener("mouseenter",()=>{if(!active)focus(net);});
   tr.addEventListener("mouseleave",()=>{if(!active)clear();});
-  tr.addEventListener("click",()=>{active=(active===net)?null:net;active?focus(active):clear();});
+  tr.addEventListener("click",()=>{active=active===net?null:net;active?focus(active):clear();});
   tb.appendChild(tr);
 });
 })();

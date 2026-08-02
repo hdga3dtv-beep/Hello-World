@@ -1,0 +1,216 @@
+<!-- ===================================================================
+  MOTOR DE DIAGRAMA DE CONEXIONES POR NODOS  ·  skill: pcb-node-diagram
+  Cómo usar:
+   1) Reemplazá el <title> y el texto del <header>/notas por los del circuito.
+   2) Reemplazá SOLO el contenido de <script id="netdata"> por tu netlist
+      (ver references/example-detector.json para uno completo).
+   3) No toques el <script> del motor (al final) salvo para agregar un "kind" nuevo.
+   El archivo se publica con la herramienta Artifact (es autocontenido, sin CDN).
+==================================================================== -->
+<title>Circuito — mapa de conexiones por nodos</title>
+<style>
+  :root{
+    --bg:#EEF1EC;--surface:#fff;--surface2:#E6EBE4;--ink:#141b16;--muted:#5a6862;
+    --line:#c7d1c9;--accent:#0f6144;--warn:#a9342a;--warnbg:#f6e2de;--board:#0d4f38;--boardln:#e8f1ea;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    --shadow:0 1px 2px rgba(20,27,22,.08),0 10px 28px -14px rgba(20,27,22,.25);
+  }
+  @media (prefers-color-scheme:dark){:root{--bg:#0f1412;--surface:#161d1a;--surface2:#1e2723;--ink:#e4ece7;--muted:#93a29a;--line:#2b3632;--accent:#4fd0a0;--warn:#e08b7e;--warnbg:#3a211d;--board:#0c4230;--boardln:#dbeadf;--shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);}}
+  :root[data-theme="dark"]{--bg:#0f1412;--surface:#161d1a;--surface2:#1e2723;--ink:#e4ece7;--muted:#93a29a;--line:#2b3632;--accent:#4fd0a0;--warn:#e08b7e;--warnbg:#3a211d;--board:#0c4230;--boardln:#dbeadf;--shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);}
+  :root[data-theme="light"]{--bg:#EEF1EC;--surface:#fff;--surface2:#E6EBE4;--ink:#141b16;--muted:#5a6862;--line:#c7d1c9;--accent:#0f6144;--warn:#a9342a;--warnbg:#f6e2de;--board:#0d4f38;--boardln:#e8f1ea;--shadow:0 1px 2px rgba(20,27,22,.08),0 10px 28px -14px rgba(20,27,22,.25);}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;font-size:16px}
+  html,body{max-width:100%;overflow-x:clip}
+  .wrap{max-width:1120px;margin:0 auto;padding:30px 18px 90px;display:flex;flex-direction:column;gap:38px}
+  .wrap>section{min-width:0}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0}
+  h1{font-family:var(--mono);font-size:clamp(24px,4.6vw,38px);line-height:1.14;margin:.35rem 0 0;letter-spacing:-.01em;text-wrap:balance}
+  .lede{margin:.7rem 0 0;max-width:65ch;color:var(--muted);font-size:17px}.lede b{color:var(--ink)}
+  h2{font-family:var(--mono);font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  h3{font-family:var(--mono);font-size:14px;margin:0 0 6px}
+  p{margin:0 0 12px;max-width:70ch}
+  code{font-family:var(--mono);font-size:.9em;background:var(--surface2);padding:1px 5px;border-radius:3px}
+  .board-card{background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);overflow:hidden}
+  .board-scroll{overflow-x:auto;padding:0;background:var(--board)}
+  svg.board{display:block;min-width:820px;width:100%;height:auto}
+  .toolbar{display:flex;flex-wrap:wrap;gap:8px 9px;align-items:center;padding:12px 14px;border-top:1px solid var(--line);background:var(--surface2)}
+  .toolbar .hint{font-family:var(--mono);font-size:11px;color:var(--muted);margin-right:auto;letter-spacing:.02em}
+  .chip{font-family:var(--mono);font-size:11px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:20px;padding:4px 10px 4px 8px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+  .chip .dot{width:11px;height:11px;border-radius:50%;flex:none}
+  .chip.off{opacity:.35}
+  .netseg{fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:.5;transition:opacity .1s,stroke-width .1s}
+  .comp .body{fill:var(--surface);stroke:var(--ink);stroke-width:1.8}
+  .comp.ic .body,.comp.mos .body{fill:#20262d;stroke:#20262d}
+  .comp.pot .body{fill:#2f6fb0;stroke:#24537f}
+  .comp.conn .body{fill:#caa53a;stroke:#a07f1f}
+  .comp .ref{font-family:var(--mono);font-weight:700;font-size:12px;fill:var(--ink)}
+  .comp.ic .ref,.comp.mos .ref,.comp.pot .ref{fill:#fff}.comp.conn .ref{fill:#241c08}
+  .comp .sub{font-family:var(--mono);font-size:9.5px;fill:var(--muted)}
+  .comp.ic .sub,.comp.mos .sub,.comp.pot .sub{fill:#aeb8c0}.comp.conn .sub{fill:#4a3c10}
+  .pinmark{stroke:var(--board);stroke-width:1}
+  .pinnum{font-family:var(--mono);font-size:8px;fill:var(--boardln);opacity:.8}
+  .nettag{font-family:var(--mono);font-size:9px;font-weight:700;opacity:0}
+  svg.iso .netseg{opacity:.05}
+  svg.iso .netseg.hot{opacity:1;stroke-width:3.4}
+  svg.iso .pinmark{opacity:.12}svg.iso .pinmark.hot{opacity:1}
+  svg.iso .pinnum{opacity:0}svg.iso .nettag.hot{opacity:1}
+  .legend-note{font-family:var(--mono);font-size:11px;color:var(--muted);margin:10px 2px 0;display:flex;flex-wrap:wrap;gap:6px 16px}
+  .legend-note .k{display:inline-flex;align-items:center;gap:5px}
+  .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;min-width:600px;font-size:14.5px}
+  caption{text-align:left;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:12px 14px 10px;background:var(--surface2);border-bottom:1px solid var(--line)}
+  th{text-align:left;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:8px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+  td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  tbody tr{transition:background-color .12s;cursor:pointer}
+  tbody tr:hover,tbody tr.hot{background:var(--surface2)}
+  td.net{font-family:var(--mono);font-weight:700;white-space:nowrap}
+  td.net .dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:7px;vertical-align:-1px}
+  td.mem{font-family:var(--mono);font-size:13px}
+  td.desc{color:var(--muted);font-size:13.5px}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">REEMPLAZAR · subtítulo del circuito</p>
+    <h1>De dónde sale y a dónde va cada pata</h1>
+    <p class="lede">Cada componente está en su <b>posición real</b>. En cada pata se marca si es
+    <b>entrada</b> (◂), <b>salida</b> (▸) o <b>alimentación</b> (▪), con su número. Las pistas van en
+    <b>ángulo recto</b> agrupadas por nodo. Tocá un nodo (o una pata) para <b>aislarlo</b>.</p>
+  </header>
+
+  <section>
+    <h2>Diagrama de conexiones</h2>
+    <div class="board-card">
+      <div class="board-scroll"><svg class="board" id="board" role="img" aria-label="Mapa de conexiones por nodos"></svg></div>
+      <div class="toolbar" id="legend"><span class="hint">Tocá un nodo para aislarlo · de nuevo para soltar</span></div>
+    </div>
+    <div class="legend-note">
+      <span class="k"><b>◂</b> entrada</span><span class="k"><b>▸</b> salida</span>
+      <span class="k"><b>▪</b> alimentación</span><span class="k"><b>●</b> pata sin polaridad</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tabla de nodos</h2>
+    <div class="table-wrap"><table id="nettable"><caption>Nodos y qué patas los forman</caption>
+      <thead><tr><th>Nodo</th><th>Patas que se unen</th><th>Qué es</th></tr></thead><tbody></tbody></table></div>
+  </section>
+</div>
+
+<!-- ======= DATOS: reemplazar SOLO este bloque (ejemplo mínimo abajo) ======= -->
+<script id="netdata" type="application/json">
+{
+ "view":{"w":360,"h":240,"railTop":16,"railBot":224},
+ "nets":{
+  "+12":{"c":"#E4572E","d":"Alimentación +12 V","rail":"top"},
+  "GND":{"c":"#5C7186","d":"Masa","rail":"bot"},
+  "OUT":{"c":"#2E8B7A","d":"Salida del chip a la carga"}
+ },
+ "components":[
+  {"ref":"U1","sub":"CHIP","cx":120,"cy":120,"w":60,"h":90,"kind":"ic",
+   "pins":[{"n":"1","net":"GND","s":"L","at":0.25,"r":"pwr"},{"n":"3","net":"OUT","s":"R","at":0.5,"r":"out"},{"n":"8","net":"+12","s":"R","at":0.15,"r":"pwr"}]},
+  {"ref":"R1","sub":"1k","cx":240,"cy":120,"w":60,"h":24,"kind":"res",
+   "pins":[{"n":"","net":"OUT","s":"L","at":0.5,"r":"pas"},{"n":"","net":"GND","s":"R","at":0.5,"r":"pas"}]}
+ ]
+}
+</script>
+
+<!-- ================== MOTOR (no editar) ================== -->
+<script>
+(function(){
+const NS="http://www.w3.org/2000/svg";
+const D=JSON.parse(document.getElementById("netdata").textContent);
+const V=D.view, NETS=D.nets, COMP=D.components, STUB=12;
+function el(t,a){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;}
+function txt(x,y,s,cls,anchor,fill){const e=el("text",{x,y,class:cls,"text-anchor":anchor||"middle"});if(fill)e.setAttribute("fill",fill);e.textContent=s;return e;}
+const svg=document.getElementById("board");
+svg.setAttribute("viewBox",`-6 -6 ${V.w+12} ${V.h+12}`);
+function pinGeom(c,p){
+  const x=c.cx-c.w/2,y=c.cy-c.h/2;let px,py,dx,dy;
+  if(p.s==="L"){px=x;py=y+p.at*c.h;dx=-1;dy=0;}
+  else if(p.s==="R"){px=x+c.w;py=y+p.at*c.h;dx=1;dy=0;}
+  else if(p.s==="T"){px=x+p.at*c.w;py=y;dx=0;dy=-1;}
+  else{px=x+p.at*c.w;py=y+c.h;dx=0;dy=1;}
+  return {px,py,dx,dy};
+}
+const netPins={};
+COMP.forEach(c=>c.pins.forEach(p=>{const g=pinGeom(c,p);(netPins[p.net]=netPins[p.net]||[]).push({...g,ref:c.ref,pin:p.n,role:p.r});}));
+function hash(s){let h=0;for(let i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))|0;return h;}
+const gWire=el("g",{});svg.appendChild(gWire);
+function seg(net,pts,w){let d="M "+pts[0][0]+" "+pts[0][1];for(let i=1;i<pts.length;i++)d+=" L "+pts[i][0]+" "+pts[i][1];gWire.appendChild(el("path",{d,class:"netseg","data-net":net,stroke:NETS[net].c,"stroke-width":w||2}));}
+Object.keys(NETS).forEach(net=>{
+  const info=NETS[net],pts=netPins[net];if(!pts)return;
+  if(info.rail){
+    const ry=info.rail==="top"?V.railTop:V.railBot,xs=pts.map(p=>p.px);
+    seg(net,[[Math.min(...xs),ry],[Math.max(...xs),ry]],3.4);
+    pts.forEach(p=>seg(net,[[p.px,p.py],[p.px,ry]],2));
+  }else{
+    const off=((hash(net)%9)-4)*2.4;
+    const xs=pts.map(p=>p.px),ys=pts.map(p=>p.py);
+    const spanx=Math.max(...xs)-Math.min(...xs),spany=Math.max(...ys)-Math.min(...ys);
+    const anch=pts.map(p=>({...p,ax:p.px+p.dx*STUB,ay:p.py+p.dy*STUB}));
+    anch.forEach(p=>seg(net,[[p.px,p.py],[p.ax,p.ay]],2));
+    if(spanx>=spany){
+      const ty=(Math.min(...anch.map(p=>p.ay))+Math.max(...anch.map(p=>p.ay)))/2+off;
+      seg(net,[[Math.min(...anch.map(p=>p.ax)),ty],[Math.max(...anch.map(p=>p.ax)),ty]],2);
+      anch.forEach(p=>seg(net,[[p.ax,p.ay],[p.ax,ty]],2));
+    }else{
+      const tx=(Math.min(...anch.map(p=>p.ax))+Math.max(...anch.map(p=>p.ax)))/2+off;
+      seg(net,[[tx,Math.min(...anch.map(p=>p.ay))],[tx,Math.max(...anch.map(p=>p.ay))]],2);
+      anch.forEach(p=>seg(net,[[p.ax,p.ay],[tx,p.ay]],2));
+    }
+  }
+});
+const gComp=el("g",{});svg.appendChild(gComp);
+COMP.forEach(c=>{
+  const g=el("g",{class:"comp "+c.kind}),x=c.cx-c.w/2,y=c.cy-c.h/2;
+  if(c.kind==="tr"||c.kind==="elec")g.appendChild(el("circle",{class:"body",cx:c.cx,cy:c.cy,r:Math.min(c.w,c.h)/2}));
+  else g.appendChild(el("rect",{class:"body",x,y,width:c.w,height:c.h,rx:c.kind==="ic"||c.kind==="mos"?5:3}));
+  if(c.kind==="ic"||c.kind==="mos")g.appendChild(el("path",{d:`M ${c.cx-8} ${y} a 8 8 0 0 0 16 0`,fill:"var(--board)"}));
+  if(c.kind==="elec")g.appendChild(txt(c.cx-1,c.cy+4,"+","ref","middle","#fff"));
+  const big=(c.kind==="ic"||c.kind==="mos"||c.kind==="pot");
+  const ry=big?c.cy-3:(c.cy+(c.kind==="tr"||c.kind==="elec"?c.h/2+12:c.h/2+13));
+  g.appendChild(txt(c.cx,ry,c.ref,"ref"));g.appendChild(txt(c.cx,ry+11,c.sub,"sub"));
+  gComp.appendChild(g);
+});
+const gPin=el("g",{});svg.appendChild(gPin);
+COMP.forEach(c=>c.pins.forEach(p=>{
+  const {px,py,dx,dy}=pinGeom(c,p),col=NETS[p.net].c,perp=[-dy,dx];let mk;
+  if(p.r==="out"||p.r==="in"){
+    const s=(p.r==="out")?1:-1,tip=[px+dx*7*s,py+dy*7*s],bx=(p.r==="out")?[px,py]:[px+dx*7,py+dy*7];
+    const b1=[bx[0]+perp[0]*4,bx[1]+perp[1]*4],b2=[bx[0]-perp[0]*4,bx[1]-perp[1]*4];
+    mk=el("path",{class:"pinmark","data-net":p.net,d:`M ${tip[0]} ${tip[1]} L ${b1[0]} ${b1[1]} L ${b2[0]} ${b2[1]} Z`,fill:col});
+  }else if(p.r==="pwr"){mk=el("rect",{class:"pinmark","data-net":p.net,x:px-3.4,y:py-3.4,width:6.8,height:6.8,fill:col});}
+  else{mk=el("circle",{class:"pinmark","data-net":p.net,cx:px,cy:py,r:3.4,fill:col});}
+  gPin.appendChild(mk);
+  if(p.n)gPin.appendChild(txt(px+(dx!==0?dx*10:0),py+(dy!==0?dy*11:3)-(dy<0?4:0),p.n,"pinnum",dx>0?"start":dx<0?"end":"middle"));
+  const tag=txt(px+dx*(STUB+4),py+dy*(STUB+4)+(dy===0?3:(dy<0?-2:9)),p.net,"nettag",dx>0?"start":dx<0?"end":"middle",col);
+  tag.setAttribute("data-net",p.net);gPin.appendChild(tag);
+}));
+let active=null;const legend=document.getElementById("legend");
+Object.keys(NETS).forEach(net=>{
+  const b=document.createElement("button");b.className="chip";b.dataset.net=net;
+  b.innerHTML=`<span class="dot" style="background:${NETS[net].c}"></span>${net}`;
+  b.addEventListener("mouseenter",()=>{if(!active)focus(net);});
+  b.addEventListener("mouseleave",()=>{if(!active)clear();});
+  b.addEventListener("click",()=>{active=active===net?null:net;active?focus(active):clear();});
+  legend.appendChild(b);
+});
+function focus(net){svg.classList.add("iso");svg.querySelectorAll('[data-net]').forEach(n=>n.classList.toggle('hot',n.getAttribute('data-net')===net));document.querySelectorAll('#nettable tbody tr').forEach(r=>r.classList.toggle('hot',r.dataset.net===net));document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('off',active&&c.dataset.net!==active));}
+function clear(){svg.classList.remove("iso");svg.querySelectorAll('.hot').forEach(n=>n.classList.remove('hot'));document.querySelectorAll('#nettable tbody tr.hot').forEach(r=>r.classList.remove('hot'));document.querySelectorAll('.chip.off').forEach(c=>c.classList.remove('off'));}
+svg.addEventListener("click",e=>{const t=e.target.closest('[data-net]');if(!t)return;const net=t.getAttribute('data-net');active=active===net?null:net;active?focus(active):clear();});
+const tb=document.querySelector('#nettable tbody');
+Object.keys(NETS).forEach(net=>{
+  const mem=netPins[net].map(p=>`${p.ref}${p.pin?'·'+p.pin:''}`).join("   ");
+  const tr=document.createElement('tr');tr.dataset.net=net;
+  tr.innerHTML=`<td class="net"><span class="dot" style="background:${NETS[net].c}"></span>${net}</td><td class="mem">${mem}</td><td class="desc">${NETS[net].d}</td>`;
+  tr.addEventListener("mouseenter",()=>{if(!active)focus(net);});
+  tr.addEventListener("mouseleave",()=>{if(!active)clear();});
+  tr.addEventListener("click",()=>{active=active===net?null:net;active?focus(active):clear();});
+  tb.appendChild(tr);
+});
+})();
+</script>
