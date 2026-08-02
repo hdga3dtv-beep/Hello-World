@@ -314,10 +314,22 @@ function hash(s){let h=0;for(let i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))|0;r
 
 // draw rails --------------------------------------------------
 const gWire=el("g",{});svg.appendChild(gWire);
+function roundedPath(pts,r){
+  if(pts.length<2)return "";
+  if(pts.length===2)return `M ${pts[0][0]} ${pts[0][1]} L ${pts[1][0]} ${pts[1][1]}`;
+  let d=`M ${pts[0][0]} ${pts[0][1]}`;
+  for(let i=1;i<pts.length-1;i++){
+    const p0=pts[i-1],p1=pts[i],p2=pts[i+1];
+    const l1=Math.hypot(p0[0]-p1[0],p0[1]-p1[1])||1,l2=Math.hypot(p2[0]-p1[0],p2[1]-p1[1])||1;
+    const rr=Math.min(r,l1/2,l2/2);
+    const a=[p1[0]+(p0[0]-p1[0])/l1*rr,p1[1]+(p0[1]-p1[1])/l1*rr];
+    const b=[p1[0]+(p2[0]-p1[0])/l2*rr,p1[1]+(p2[1]-p1[1])/l2*rr];
+    d+=` L ${a[0]} ${a[1]} Q ${p1[0]} ${p1[1]} ${b[0]} ${b[1]}`;
+  }
+  const e=pts[pts.length-1];return d+` L ${e[0]} ${e[1]}`;
+}
 function seg(net,pts,w){
-  let d="M "+pts[0][0]+" "+pts[0][1];
-  for(let i=1;i<pts.length;i++)d+=" L "+pts[i][0]+" "+pts[i][1];
-  gWire.appendChild(el("path",{d,class:"netseg","data-net":net,stroke:NETS[net].c,"stroke-width":w||2}));
+  gWire.appendChild(el("path",{d:roundedPath(pts,6),class:"netseg","data-net":net,stroke:NETS[net].c,"stroke-width":w||2}));
 }
 Object.keys(NETS).forEach(net=>{
   const info=NETS[net], pts=netPins[net]; if(!pts)return;
@@ -332,15 +344,14 @@ Object.keys(NETS).forEach(net=>{
     const spanx=Math.max(...xs)-Math.min(...xs), spany=Math.max(...ys)-Math.min(...ys);
     // stub each pin outward first
     const anch=pts.map(p=>({...p,ax:p.px+p.dx*STUB,ay:p.py+p.dy*STUB}));
-    anch.forEach(p=>seg(net,[[p.px,p.py],[p.ax,p.ay]],2));
     if(spanx>=spany){
       const ty=(Math.min(...anch.map(p=>p.ay))+Math.max(...anch.map(p=>p.ay)))/2+off;
       seg(net,[[Math.min(...anch.map(p=>p.ax)),ty],[Math.max(...anch.map(p=>p.ax)),ty]],2);
-      anch.forEach(p=>seg(net,[[p.ax,p.ay],[p.ax,ty]],2));
+      anch.forEach(p=>seg(net,[[p.px,p.py],[p.ax,p.ay],[p.ax,ty]],2));
     }else{
       const tx=(Math.min(...anch.map(p=>p.ax))+Math.max(...anch.map(p=>p.ax)))/2+off;
       seg(net,[[tx,Math.min(...anch.map(p=>p.ay))],[tx,Math.max(...anch.map(p=>p.ay))]],2);
-      anch.forEach(p=>seg(net,[[p.ax,p.ay],[tx,p.ay]],2));
+      anch.forEach(p=>seg(net,[[p.px,p.py],[p.ax,p.ay],[tx,p.ay]],2));
     }
   }
 });
