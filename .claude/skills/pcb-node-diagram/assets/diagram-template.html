@@ -168,19 +168,19 @@ Object.keys(NETS).forEach(net=>{
     seg(net,[[Math.min(...xs),ry],[Math.max(...xs),ry]],3.4);
     pts.forEach(p=>seg(net,[[p.px,p.py],[p.px,ry]],2));
   }else{
+    // ruteo "peine": cada pata baja derecho al tronco, sin desvíos que hagan
+    // que la pista parezca cruzarse sobre sí misma.
     const off=((hash(net)%9)-4)*2.4;
     const xs=pts.map(p=>p.px),ys=pts.map(p=>p.py);
     const spanx=Math.max(...xs)-Math.min(...xs),spany=Math.max(...ys)-Math.min(...ys);
-    const anch=pts.map(p=>({...p,ax:p.px+p.dx*STUB,ay:p.py+p.dy*STUB}));
-    anch.forEach(p=>seg(net,[[p.px,p.py],[p.ax,p.ay]],2));
     if(spanx>=spany){
-      const ty=(Math.min(...anch.map(p=>p.ay))+Math.max(...anch.map(p=>p.ay)))/2+off;
-      seg(net,[[Math.min(...anch.map(p=>p.ax)),ty],[Math.max(...anch.map(p=>p.ax)),ty]],2);
-      anch.forEach(p=>seg(net,[[p.ax,p.ay],[p.ax,ty]],2));
+      const ty=(Math.min(...ys)+Math.max(...ys))/2+off;
+      seg(net,[[Math.min(...xs),ty],[Math.max(...xs),ty]],2);
+      pts.forEach(p=>{if(Math.abs(p.py-ty)>0.5)seg(net,[[p.px,p.py],[p.px,ty]],2);});
     }else{
-      const tx=(Math.min(...anch.map(p=>p.ax))+Math.max(...anch.map(p=>p.ax)))/2+off;
-      seg(net,[[tx,Math.min(...anch.map(p=>p.ay))],[tx,Math.max(...anch.map(p=>p.ay))]],2);
-      anch.forEach(p=>seg(net,[[p.ax,p.ay],[tx,p.ay]],2));
+      const tx=(Math.min(...xs)+Math.max(...xs))/2+off;
+      seg(net,[[tx,Math.min(...ys)],[tx,Math.max(...ys)]],2);
+      pts.forEach(p=>{if(Math.abs(p.px-tx)>0.5)seg(net,[[p.px,p.py],[tx,p.py]],2);});
     }
   }
 });
