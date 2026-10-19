@@ -2,7 +2,7 @@
 
 Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 
-**Total: 275 componentes** en 8 categorías.
+**Total: 391 componentes** en 10 categorías.
 
 | Categoría | Elementos |
 |---|---:|
@@ -10,6 +10,8 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | [Capacitores](#capacitores) | 21 |
 | [Inductores, transformadores y cristales](#inductivos_y_frecuencia) | 23 |
 | [Protección (fusibles, varistores, TVS)](#proteccion) | 19 |
+| [Semiconductores discretos (diodos, transistores, tiristores)](#semiconductores_discretos) | 86 |
+| [Optoelectrónica (LEDs, optoacopladores, displays de LED)](#optoelectronica) | 30 |
 | [Materiales para fabricar PCB](#materiales_pcb) | 37 |
 | [Soldadura y consumibles](#soldadura_y_consumibles) | 29 |
 | [Herramientas e instrumentos](#herramientas) | 70 |
@@ -144,6 +146,134 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Diodo TVS 1.5KE (1500 W, DO-201)**<br><sub>`prot-tvs-1-5ke`</sub> | THT | DO-201AD/AE axial (2p, 15.24 mm) | 1.5KE6.8A, 1.5KE12A, 1.5KE15A, 1.5KE18A, 1.5KE24A, 1.5KE33A, 1.5KE200A, 1.5KE400A, … (+1) | media |
 | **Diodo TVS P6KE (600 W, DO-15)**<br><sub>`prot-tvs-p6ke`</sub> | THT | DO-15 axial (2p, 10.16 mm) | P6KE6.8A, P6KE10A, P6KE12A, P6KE15A, P6KE18A, P6KE24A, P6KE33A, P6KE36A, … (+3) | media |
 | **Diodo TVS SMD SMAJ / SMBJ / SMCJ**<br><sub>`prot-tvs-smd`</sub> | SMD | SMA (DO-214AC) – SMAJ 400 W (2p); SMB (DO-214AA) – SMBJ 600 W (2p); SMC (DO-214AB) – SMCJ 1500 W (2p) | SMBJ5.0A, SMBJ12A, SMBJ15A, SMBJ24A, SMBJ33A, SMAJ5.0A, SMAJ12A, SMCJ24A, … (+1) | media |
+
+<a id="semiconductores_discretos"></a>
+## Semiconductores discretos (diodos, transistores, tiristores)
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Diodo de recuperación rápida 1 A (FR107 / UF4007 / HER108)**<br><sub>`dio-rapido-fr107-uf4007`</sub> | THT | DO-41 (DO-204AL) plástico (2p, 10.16 mm) | FR101–FR107 (50–1000 V, trr 150–500 ns), UF4001–UF4007 (50–1000 V, trr 50–75 ns), HER101–HER108 (50–1000 V, trr 50–75 ns) | alta |
+| **Diodo rápido 2–3 A (FR207 / FR307 / HER308 / UF5408)**<br><sub>`dio-rapido-fr207-fr307-uf5408`</sub> | THT | DO-15 (DO-204AC) (2p, 12.7 mm); DO-201AD (DO-27) (2p, 15.24 mm) | FR207 (2 A 1000 V, DO-15), HER208 (2 A 1000 V, DO-15), FR307 (3 A 1000 V, DO-201AD), HER308 (3 A 1000 V), UF5408 (3 A 1000 V, trr 75 ns) | media |
+| **Diodo rectificador 1N4001–1N4007 (1 A)**<br><sub>`dio-1n4001-1n4007`</sub> | THT | DO-41 (DO-204AL) plástico (2p, 10.16 mm) | 1N4001 (50 V), 1N4002 (100 V), 1N4003 (200 V), 1N4004 (400 V), 1N4005 (600 V), 1N4006 (800 V), 1N4007 (1000 V) | muy alta |
+| **Diodo rectificador 1N5400–1N5408 (3 A)**<br><sub>`dio-1n5400-1n5408`</sub> | THT | DO-201AD (DO-27) (2p, 15.24 mm) | 1N5400 (50 V), 1N5401 (100 V), 1N5402 (200 V), 1N5404 (400 V), 1N5406 (600 V), 1N5407 (800 V), 1N5408 (1000 V) | alta |
+| **Diodo rectificador 6A05–6A10 (6 A) / 10A10**<br><sub>`dio-6a10-r6`</sub> | THT | R-6 (P600) (2p, 20.32 mm) | 6A05 (50 V), 6A1 (100 V), 6A2 (200 V), 6A4 (400 V), 6A6 (600 V), 6A8 (800 V), 6A10 (1000 V), 10A10 (10 A, 1000 V) | media |
+| **Diodo Schottky 1N5817 / 1N5818 / 1N5819 (1 A)**<br><sub>`dio-schottky-1n5817-1n5819`</sub> | THT | DO-41 (DO-204AL) plástico (2p, 10.16 mm) | 1N5817 (20 V), 1N5818 (30 V), 1N5819 (40 V), SR160/SB160 (60 V), SR1100 (100 V) | muy alta |
+| **Diodo Schottky 3–5 A (1N5820–1N5822, SR540/SR560, SB560)**<br><sub>`dio-schottky-1n5822-sr560`</sub> | THT | DO-201AD (DO-27) (2p, 15.24 mm) | 1N5820 (3 A 20 V), 1N5821 (3 A 30 V), 1N5822 (3 A 40 V), SR540/SB540 (5 A 40 V), SR560/SB560 (5 A 60 V), SR5100 (5 A 100 V) | alta |
+| **Diodo de señal/conmutación 1N4148 / 1N914**<br><sub>`dio-1n4148-1n914`</sub> | THT | DO-35 (DO-204AH) vidrio (2p, 7.62 mm) | 1N4148, 1N914, 1N4448 | muy alta |
+| **Diodo de germanio 1N34A / 1N60**<br><sub>`dio-germanio-1n34a-1n60`</sub> | THT | DO-7 / DO-35 vidrio (axial) (2p, 7.62 mm) | 1N34A, 1N60, OA90 (ocasional) | media |
+| **Diodo rectificador SMD M1–M7 / S1M (SMA)**<br><sub>`dio-smd-m7-s1m`</sub> | SMD | SMA (DO-214AC) (2p) | M1 (50 V), M4 (400 V), M7 (1000 V), S1M (1000 V), S2M (2 A, SMB) | alta |
+| **Diodo Schottky SMD SS14 / SS34 / SS36 / SS54**<br><sub>`dio-smd-schottky-ss14-ss34`</sub> | SMD | SMA (DO-214AC) (2p); SMB (DO-214AA) (2p); SMC (DO-214AB) (2p) | SS14 (1 A 40 V, SMA), SS16 (1 A 60 V), SS34 (3 A 40 V, SMA/SMB), SS36 (3 A 60 V), SS54 (5 A 40 V, SMC) | alta |
+| **Diodo de señal SMD LL4148 / 1N4148W / 1N4148WS**<br><sub>`dio-smd-ll4148-1n4148w`</sub> | SMD | MiniMELF (SOD-80 / LL-34) (2p); SOD-123 (2p); SOD-323 (2p) | LL4148 (MiniMELF), 1N4148W (SOD-123), 1N4148WS (SOD-323), BAV99 (doble, SOT-23) | media |
+| **Diodo Zener SMD (ZMM / MMSZ52xx / BZT52)**<br><sub>`dio-zener-smd`</sub> | SMD | MiniMELF (SOD-80 / LL-34) (2p); SOD-123 (2p) | 3.3 V, 5.1 V, 6.2 V, 9.1 V, 12 V, 15 V, 24 V | media |
+| **Diodo Zener 0.5 W (BZX55C / 1N52xxB / BZX79)**<br><sub>`dio-zener-05w`</sub> | THT | DO-35 (DO-204AH) vidrio (2p, 7.62 mm) | 2.7 V, 3.0 V, 3.3 V, 3.6 V, 3.9 V, 4.3 V, 4.7 V, 5.1 V, … (+36) | muy alta |
+| **Diodo Zener 1 W (1N4728A–1N4753A / BZX85C)**<br><sub>`dio-zener-1w`</sub> | THT | DO-41 (DO-204AL) plástico (2p, 10.16 mm) | 1N4728A=3.3 V, 1N4729A=3.6 V, 1N4730A=3.9 V, 1N4731A=4.3 V, 1N4732A=4.7 V, 1N4733A=5.1 V, 1N4734A=5.6 V, 1N4735A=6.2 V, … (+17) | alta |
+| **DIAC DB3 / DB4**<br><sub>`tir-diac-db3`</sub> | THT | DO-35 (DO-204AH) vidrio (2p, 7.62 mm) | DB3 (VBO 28–36 V), DB4 (≈35–45 V) | alta |
+| **Transistor uniunión (UJT) 2N2646 / 2N2647**<br><sub>`tir-ujt-2n2646`</sub> | THT | TO-18 (TO-206AA) metálico (3p) | 2N2646, 2N2647 | media |
+| **Transistor uniunión programable (PUT) 2N6027 / 2N6028**<br><sub>`tir-put-2n6027`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N6027, 2N6028 (más sensible) | media |
+| **Puente rectificador cuadrado 10–50 A (KBPC1010 / KBPC2510 / KBPC3510)**<br><sub>`dio-puente-kbpc`</sub> | panel | KBPC (cuadrado, terminales faston 6.3 mm) (4p); KBPC-W (cuadrado, terminales de alambre) (4p); BR-10x (cuadrado pequeño) (4p) | KBPC1010 (10 A 1000 V), KBPC2510 (25 A 1000 V), KBPC3510 (35 A 1000 V), KBPC5010 (50 A), KBPC3510W (alambre), BR104 (10 A 400 V) | alta |
+| **Puente rectificador DIP-4 1 A (DB101–DB107)**<br><sub>`dio-puente-db107`</sub> | THT | DB-1 (DIP-4) (4p, 5.08 mm, filas 7.62 mm); DB-S / DBS (SMD, DB107S) (4p) | DB101 (50 V), DB102 (100 V), DB104 (400 V), DB106 (600 V), DB107 (1000 V), DB107S (SMD), DF10M (1 A 1000 V, DIP-4 pequeño) | alta |
+| **Puente rectificador en línea 2–4 A (KBP206/KBP307 / KBL04–KBL410)**<br><sub>`dio-puente-linea-kbp-kbl`</sub> | THT | KBP (en línea, 4 pines) (4p, 3.8 mm); KBL (en línea, 4 pines) (4p, 5.08 mm) | KBP206 (2 A 600 V), KBP210 (2 A 1000 V), KBP307 (3 A 1000 V), KBL04 (4 A 400 V), KBL406 (4 A 600 V), KBL410 (4 A 1000 V), KBL-4/200 (Steren, 4 A 200 V) | alta |
+| **Puente rectificador redondo 1.5–2 A (W10M / 2W10 / WB152)**<br><sub>`dio-puente-redondo-w10m-2w10`</sub> | THT | WOB / WOM redondo (4p) | W005M (50 V), W02M (200 V), W04M (400 V), W08M (800 V), W10M (1000 V), 2W10 (2 A 1000 V), WB152 (Steren, 200 V 2 A), WB154 (Steren, 400 V 1.5 A) | alta |
+| **Puente rectificador en línea 4–25 A (GBU / KBU / GBJ)**<br><sub>`dio-puente-linea-gbu-kbu-gbj`</sub> | THT | GBU (en línea) (4p); KBU (en línea) (4p); GBJ (en línea) (4p) | GBU4M (4 A 1000 V), GBU6M (6 A), GBU8M (8 A), GBU806/GBU810, KBU8M (8 A), KBU810, GBJ1510 (15 A), GBJ2510 (25 A), … (+1) | media |
+| **Puente rectificador SMD MB6S / MB10S**<br><sub>`dio-puente-smd-mb10s`</sub> | SMD | MBS (TO-269AA, SOIC-4) (4p, 2.54 mm) | MB6S (0.5 A 600 V), MB10S (0.5 A 1000 V), MB10F (cuerpo plano), ABS10 (1 A) | media |
+| **SCR BT151-500R / -650R / -800R (12 A, TO-220)**<br><sub>`tir-scr-bt151`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | BT151-500R, BT151-650R, BT151-800R | alta |
+| **SCR C106D / C106M (4 A, TO-126)**<br><sub>`tir-scr-c106`</sub> | THT | TO-126 (SOT-32 / TO-225AA) (3p, 2.29 mm) | C106B (200 V), C106D (400 V), C106M (600 V) | alta |
+| **SCR pequeño 2N5060 / MCR100-6 / MCR100-8 (0.8 A, TO-92)**<br><sub>`tir-scr-2n5060-mcr100`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N5060 (30 V), 2N5061 (60 V), 2N5062 (100 V), 2N5064 (200 V), MCR100-6 (400 V), MCR100-8 (600 V) | media |
+| **SCR TIC106 / TIC126 (5 A / 12 A, TO-220)**<br><sub>`tir-scr-tic106-tic126`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | TIC106D (5 A 400 V), TIC106M (5 A 600 V), TIC116D (8 A), TIC126D (12 A 400 V), TIC126M (12 A 600 V) | media |
+| **TRIAC aislado BTA08 / BTA12 / BTA16 / BTA24-600B (TO-220AB)**<br><sub>`tir-triac-bta08-bta12-bta16`</sub> | THT | TO-220AB aislado (BTA) / TO-220AB (BTB) (3p, 2.54 mm) | BTA08-600B (8 A), BTA12-600B (12 A), BTA16-600B (16 A), BTA16-800B (16 A 800 V), BTA24-600B (25 A), sufijo BW/CW = snubberless | muy alta |
+| **TRIAC BT136 / BT137 / BT138 (4–12 A, TO-220)**<br><sub>`tir-triac-bt136-bt137-bt138`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | BT136-600E (4 A), BT137-600E (8 A), BT138-600E (12 A), BT139-600E (16 A), sufijo E = compuerta sensible (≤10 mA) | muy alta |
+| **TRIAC BTA41-600B / BTA40 (40 A, TOP3)**<br><sub>`tir-triac-bta41`</sub> | THT | TOP3 aislado (TOP3I) (3p, 5.45 mm) | BTA41-600B, BTA41-800B, BTA40-600B (RD91) | media |
+| **TRIAC pequeño MAC97A6 / MAC97A8 (0.8 A, TO-92)**<br><sub>`tir-triac-mac97a`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | MAC97A6 (400 V), MAC97A8 (600 V), Z0607 (ST, pinout distinto: verificar) | media |
+| **TRIAC TIC226D / TIC226M (8 A, TO-220)**<br><sub>`tir-triac-tic226`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | TIC206D (4 A), TIC226D (8 A 400 V), TIC226M (8 A 600 V), TIC246 (16 A) | media |
+| **Transistor NPN 2N2222A / PN2222A / MPS2222A (TO-92)**<br><sub>`trn-2n2222a-to92`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N2222A (TO-92), PN2222A (Fairchild/onsemi), MPS2222A (Steren), P2N2222A (onsemi, ¡C-B-E!) | muy alta |
+| **Transistor NPN 2N3904**<br><sub>`trn-2n3904`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N3904, MMBT3904 (SMD SOT-23) | muy alta |
+| **Transistor NPN BC546 / BC547 / BC548 / BC549**<br><sub>`trn-bc547-bc548-bc549`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | BC546 (65 V), BC547 (45 V), BC548 (30 V), BC549 (30 V, bajo ruido), BC550 (45 V, bajo ruido), sufijo A (hFE 110–220), sufijo B (200–450), sufijo C (420–800) | muy alta |
+| **Transistor NPN de potencia TIP31C (3 A)**<br><sub>`trn-tip31c`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | TIP31 (40 V), TIP31A (60 V), TIP31B (80 V), TIP31C (100 V) | muy alta |
+| **Transistor NPN de potencia TIP41C (6 A)**<br><sub>`trn-tip41c`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | TIP41 (40 V), TIP41A (60 V), TIP41B (80 V), TIP41C (100 V) | muy alta |
+| **Transistor PNP 2N3906**<br><sub>`trn-2n3906`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N3906, MMBT3906 (SOT-23) | muy alta |
+| **Transistor PNP BC556 / BC557 / BC558 / BC559**<br><sub>`trn-bc557-bc558`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | BC556 (−65 V), BC557 (−45 V), BC558 (−30 V), BC559/BC560 (bajo ruido), sufijos A/B/C | muy alta |
+| **Transistor NPN 2N2222A metálico (TO-18)**<br><sub>`trn-2n2222a-to18`</sub> | THT | TO-18 (TO-206AA) metálico (3p) | 2N2222A (TO-18), 2N2219A (TO-39, mayor potencia) | alta |
+| **Transistor NPN alto voltaje 2N5551 / 2N5550**<br><sub>`trn-2n5551`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N5551 (160 V), 2N5550 (140 V) | alta |
+| **Transistor NPN BC337 / BC338 (800 mA)**<br><sub>`trn-bc337`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | BC337-16 (hFE 100–250), BC337-25 (160–400), BC337-40 (250–630), BC338 (25 V) | alta |
+| **Transistor NPN BD135 / BD137 / BD139 (1.5 A, TO-126)**<br><sub>`trn-bd135-bd137-bd139`</sub> | THT | TO-126 (SOT-32 / TO-225AA) (3p, 2.29 mm) | BD135 (45 V), BD137 (60 V), BD139 (80 V), sufijos -10/-16 (grupo hFE) | alta |
+| **Transistor NPN de audio 2SC5200 (C5200)**<br><sub>`trn-2sc5200`</sub> | THT | TO-3PL / TO-264 (Toshiba 2-21F1A) (3p, 5.45 mm) | 2SC5200 (Toshiba/ISC) | alta |
+| **Transistor NPN de potencia 2N3055 (TO-3)**<br><sub>`trn-2n3055`</sub> | panel | TO-3 (TO-204AA) metálico (2p, 10.92 mm) | 2N3055, MJE3055T (versión TO-220, pinout B-C-E) | alta |
+| **Transistor NPN japonés 2SC945 / 2SC1815 (C945, C1815)**<br><sub>`trn-2sc945-2sc1815`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | C945 (2SC945), C1815 (2SC1815, grupos O/Y/GR/BL) | alta |
+| **Transistor NPN S8050 / SS8050**<br><sub>`trn-s8050`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm); SOT-23 (TO-236AB) (3p, 0.95 mm) | S8050 (0.5 A), SS8050 (1.5 A), S8050 SMD SOT-23 (marcado J3Y), grados de hFE B/C/D | alta |
+| **Transistor NPN S9013 / S9014 / S9018**<br><sub>`trn-s9013-s9014`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | S9013 (500 mA), S9014 (100 mA bajo ruido), S9018 (RF, fT ≈700 MHz) | alta |
+| **Transistor PNP 2N2907A / PN2907A**<br><sub>`trn-2n2907a`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm); TO-18 (TO-206AA) metálico (3p) | PN2907A (TO-92), 2N2907A (TO-18 metálico), MMBT2907A (SOT-23) | alta |
+| **Transistor PNP alto voltaje 2N5401 / 2N5400**<br><sub>`trn-2n5401`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N5401 (−150 V), 2N5400 (−120 V) | alta |
+| **Transistor PNP BD136 / BD138 / BD140 (1.5 A, TO-126)**<br><sub>`trn-bd136-bd138-bd140`</sub> | THT | TO-126 (SOT-32 / TO-225AA) (3p, 2.29 mm) | BD136 (−45 V), BD138 (−60 V), BD140 (−80 V) | alta |
+| **Transistor PNP de audio 2SA1943 (A1943)**<br><sub>`trn-2sa1943`</sub> | THT | TO-3PL / TO-264 (Toshiba 2-21F1A) (3p, 5.45 mm) | 2SA1943 | alta |
+| **Transistor PNP de potencia TIP32C (3 A)**<br><sub>`trn-tip32c`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | TIP32 (−40 V), TIP32A, TIP32B, TIP32C (−100 V) | alta |
+| **Transistor PNP de potencia TIP42C (6 A)**<br><sub>`trn-tip42c`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | TIP42 (−40 V), TIP42A, TIP42B, TIP42C (−100 V) | alta |
+| **Transistor PNP japonés 2SA733 / 2SA1015 (A733, A1015)**<br><sub>`trn-2sa733-2sa1015`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | A733 (2SA733), A1015 (2SA1015) | alta |
+| **Transistor PNP S8550 / SS8550**<br><sub>`trn-s8550`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm); SOT-23 (TO-236AB) (3p, 0.95 mm) | S8550 (0.5 A), SS8550 (1.5 A), SMD SOT-23 (marcado 2TY) | alta |
+| **Transistor PNP S9012 / S9015**<br><sub>`trn-s9012-s9015`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | S9012 (−500 mA), S9015 (−100 mA, bajo ruido) | alta |
+| **Transistor NPN 2N4401**<br><sub>`trn-2n4401`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N4401, MMBT4401 (SOT-23) | media |
+| **Transistor NPN 2SD882 (D882, 3 A)**<br><sub>`trn-d882`</sub> | THT | TO-126 (SOT-32 / TO-225AA) (3p, 2.29 mm); TO-92L / TO-92NL (3p, 1.27 mm) | D882 (TO-126), 2SD882 en SOT-89/TO-252 (pinout distinto) | media |
+| **Transistor NPN alta ganancia 2N5088 / 2N5089**<br><sub>`trn-2n5088-2n5089`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N5088 (hFE 300–900), 2N5089 (hFE 400–1200) | media |
+| **Transistor NPN alto voltaje MJE13005 / MJE13007 (TO-220)**<br><sub>`trn-mje13005-mje13007`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm); TO-220F / ITO-220 (plástico aislado) (3p, 2.54 mm) | MJE13005 (4 A), MJE13007 (8 A), MJE13009 (12 A) | media |
+| **Transistor NPN alto voltaje MPSA42 / MPSA43**<br><sub>`trn-mpsa42`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | MPSA42 (300 V), MPSA43 (200 V), KSP42 | media |
+| **Transistor NPN de potencia TIP3055 (15 A)**<br><sub>`trn-tip3055`</sub> | THT | TO-247 (TO-247AC) (3p, 5.45 mm) | TIP3055 | media |
+| **Transistor PNP 2N4403**<br><sub>`trn-2n4403`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N4403 | media |
+| **Transistor PNP 2SB772 (B772, 3 A)**<br><sub>`trn-b772`</sub> | THT | TO-126 (SOT-32 / TO-225AA) (3p, 2.29 mm) | B772 (TO-126) | media |
+| **Transistor PNP alto voltaje MPSA92 / MPSA93**<br><sub>`trn-mpsa92`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | MPSA92 (−300 V), MPSA93 (−200 V) | media |
+| **Transistor PNP BC327 / BC328 (800 mA)**<br><sub>`trn-bc327`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | BC327-16, BC327-25, BC327-40, BC328 (−25 V) | media |
+| **Transistor PNP de potencia MJ2955 (TO-3)**<br><sub>`trn-mj2955`</sub> | panel | TO-3 (TO-204AA) metálico (2p, 10.92 mm) | MJ2955, MJE2955T (TO-220) | media |
+| **Transistor PNP de potencia TIP2955 (15 A)**<br><sub>`trn-tip2955`</sub> | THT | TO-247 (TO-247AC) (3p, 5.45 mm) | TIP2955 | media |
+| **Transistor Darlington NPN TIP120 / TIP121 / TIP122 (5 A)**<br><sub>`trn-tip120-tip122`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | TIP120 (60 V), TIP121 (80 V), TIP122 (100 V) | muy alta |
+| **Transistor Darlington PNP TIP125 / TIP126 / TIP127 (5 A)**<br><sub>`trn-tip125-tip127`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | TIP125 (−60 V), TIP126 (−80 V), TIP127 (−100 V) | alta |
+| **JFET canal N 2N3819 (TO-92)**<br><sub>`trn-jfet-2n3819`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N3819 | media |
+| **JFET canal N 2N5457 / MPF102 / J201 (TO-92)**<br><sub>`trn-jfet-2n5457-mpf102-j201`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N5457 (IDSS 1–5 mA), 2N5458 (2–9 mA), 2N5459 (4–16 mA), MPF102 (2–20 mA), J201 (0.2–1 mA), J113, J310 (RF) | media |
+| **JFET canal N BF245A / BF245B / BF245C**<br><sub>`trn-jfet-bf245`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | BF245A (IDSS 2–6.5 mA), BF245B (6–15 mA), BF245C (12–25 mA) | media |
+| **MOSFET canal N IRF520 / IRF530 / IRF540N (100 V, TO-220)**<br><sub>`trn-irf520-irf530-irf540`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | IRF520N (9.7 A, 0.20 Ω), IRF530N (17 A, 0.09 Ω), IRF530 (14 A, 0.16 Ω), IRF540N (33 A, 0.044 Ω), IRF540 (28 A, 0.077 Ω) | muy alta |
+| **MOSFET canal N IRFZ44N (55 V, 49 A)**<br><sub>`trn-irfz44n`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | IRFZ44N, IRFZ48N (64 A), IRFZ46N (53 A) | muy alta |
+| **MOSFET canal N 2N7000 (TO-92)**<br><sub>`trn-2n7000`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N7000, 2N7002 (versión SOT-23) | alta |
+| **MOSFET canal N IRF3205 (55 V, 110 A)**<br><sub>`trn-irf3205`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | IRF3205 | alta |
+| **MOSFET canal N nivel lógico IRLZ44N / IRLZ34N / IRL540N**<br><sub>`trn-irlz44n-irlz34n`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | IRLZ44N (55 V 47 A, ≈22–25 mΩ), IRLZ34N (55 V 30 A, ≈35–46 mΩ), IRL540N (100 V, ≈36 A) | alta |
+| **MOSFET canal N SMD AO3400 / 2N7002 (SOT-23)**<br><sub>`trn-ao3400-2n7002`</sub> | SMD | SOT-23 (TO-236AB) (3p, 0.95 mm) | AO3400A (30 V 5.7 A, marcado A09T), SI2302 (20 V 2.6 A), 2N7002 (60 V 115 mA), 2N7002K (300 mA) | alta |
+| **MOSFET canal P IRF9540N / IRF9530N / IRF4905**<br><sub>`trn-irf9540n-irf9530n`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | IRF9530N (−100 V −14 A, 0.20 Ω), IRF9540N (−100 V −23 A, 0.117 Ω), IRF4905 (−55 V −74 A, 0.02 Ω) | alta |
+| **MOSFET canal N alto voltaje IRF840 / IRF740 / IRF830**<br><sub>`trn-irf840-irf740`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm); TO-220F / ITO-220 (plástico aislado) (3p, 2.54 mm) | IRF840 (500 V 8 A, 0.85 Ω), IRF830 (500 V 4.5 A, 1.5 Ω), IRF740 (400 V 10 A, 0.55 Ω) | media |
+| **MOSFET canal N BS170 (TO-92)**<br><sub>`trn-bs170`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | BS170 | media |
+| **MOSFET canal N TO-247 IRFP250N / IRFP260N / IRFP460**<br><sub>`trn-irfp250-irfp260`</sub> | THT | TO-247 (TO-247AC) (3p, 5.45 mm) | IRFP250N (200 V 30 A, 0.075 Ω), IRFP260N (200 V 50 A, 0.04 Ω), IRFP460 (500 V 20 A, 0.27 Ω) | media |
+| **MOSFET canal P SMD AO3401 (SOT-23)**<br><sub>`trn-ao3401`</sub> | SMD | SOT-23 (TO-236AB) (3p, 0.95 mm) | AO3401A (−30 V −4 A, marcado A19T), SI2301 (−20 V) | media |
+
+<a id="optoelectronica"></a>
+## Optoelectrónica (LEDs, optoacopladores, displays de LED)
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Display de 7 segmentos de 1 dígito 0.36" / 0.56" / 0.8" / 1"**<br><sub>`opt-display-7seg-1-digito`</sub> | THT | 0.56" 1 dígito (DIP-10) (10p, 2.54 mm, filas 15.24 mm); 0.36" 1 dígito (10 pines) (10p, 2.54 mm); 0.8" y 1" 1 dígito (10 pines) (10p, 2.54 mm) | 0.56" cátodo común rojo (5161AS), 0.56" ánodo común rojo (5161BS), verde, azul, amarillo, blanco, 0.36", 0.8", … (+3) | muy alta |
+| **Display de 7 segmentos de 4 dígitos 0.36" / 0.56" (12 pines, multiplexado)**<br><sub>`opt-display-7seg-4-digitos`</sub> | THT | 0.56" 4 dígitos (12 pines) (12p, 2.54 mm, filas 15.24 mm); 0.36" 4 dígitos (12 pines) (12p, 2.54 mm) | 0.56" cátodo común (5461AS), 0.56" ánodo común (5461BS), 0.36" CC (3461AS), 0.36" CA (3461BS), rojo, verde, azul, con dos puntos de reloj (14–16 pines, pinout distinto) | alta |
+| **Matriz LED 8x8 (1088AS / 1088BS / 788BS / 1588BS)**<br><sub>`opt-matriz-led-8x8`</sub> | THT | 1088AS/BS 32 x 32 mm, punto de 3 mm (16 pines) (16p, 2.54 mm); 788BS 20 x 20 mm, punto de 1.9 mm (16 pines) (16p, 2.54 mm); 1588BS ≈38 x 38 mm (16 pines) (16p, 2.54 mm) | 1088AS (rojo 3 mm), 1088BS (polaridad invertida), 788BS (20 mm), 1588BS (38 mm), rojo, verde, bicolor (24 pines) | alta |
+| **Barra de LED de 10 segmentos (bargraph DIP-20)**<br><sub>`opt-barra-led-10-segmentos`</sub> | THT | DIP-20 (bargraph) (20p, 2.54 mm, filas 7.62 mm) | rojo, verde, amarillo, azul, multicolor (verde/amarillo/rojo) | media |
+| **Fototransistor (PT333-3C / 3DU5C / L14G1)**<br><sub>`opt-fototransistor`</sub> | THT | LED 5 mm (T-1¾) radial (2p, 2.54 mm); LED 3 mm (T-1) radial (2p, 2.54 mm); TO-18 con lente (L14G1/L14G2), 3 patas (3p) | 5 mm transparente (luz visible/IR), 5 mm negro (solo IR), 3 mm, L14G1 (TO-18) | alta |
+| **Fotodiodo (BPW34 / 5 mm IR negro / PD333)**<br><sub>`opt-fotodiodo`</sub> | THT | LED 5 mm (T-1¾) radial (2p, 2.54 mm); BPW34 (plano, 2 patas) (2p, 5.08 mm) | BPW34, 5 mm negro 940 nm, 5 mm transparente, PD333-3C | media |
+| **LED infrarrojo emisor 940 nm / 850 nm (3 y 5 mm)**<br><sub>`opt-led-ir-940nm`</sub> | THT | LED 5 mm (T-1¾) radial (2p, 2.54 mm); LED 3 mm (T-1) radial (2p, 2.54 mm) | 940 nm transparente, 940 nm azulado, 850 nm, 5 mm, 3 mm | muy alta |
+| **Receptor infrarrojo 38 kHz VS1838B / HS0038 / TL1838**<br><sub>`opt-receptor-ir-vs1838b`</sub> | THT | Receptor IR 3 pines con domo (3p, 2.54 mm) | VS1838B, HS0038B, TL1838, 38 kHz | muy alta |
+| **Receptor infrarrojo Vishay TSOP4838 / TSOP1738**<br><sub>`opt-receptor-ir-tsop4838`</sub> | THT | Receptor IR Vishay 3 pines (3p, 2.54 mm) | TSOP4838 (OUT-GND-VS), TSOP38238 (OUT-GND-VS), TSOP1738 (GND-VS-OUT, obsoleto) | media |
+| **Diodo láser rojo 650 nm 5 mW (cabezal Ø6 mm / módulo KY-008)**<br><sub>`opt-laser-650nm-ky008`</sub> | modulo | Cabezal láser Ø6 mm con cables (2p); Módulo KY-008 (header 3 pines) (3p, 2.54 mm) | 650 nm 5 mW punto, 650 nm línea, 650 nm cruz, 3 V y 5 V | media |
+| **LED 3 mm (colores estándar y alta luminosidad)**<br><sub>`opt-led-3mm`</sub> | THT | LED 3 mm (T-1) radial (2p, 2.54 mm) | rojo, verde, amarillo, naranja, azul, blanco, difuso, transparente (alto brillo), … (+1) | muy alta |
+| **LED 5 mm (difuso, transparente y ultrabrillante)**<br><sub>`opt-led-5mm`</sub> | THT | LED 5 mm (T-1¾) radial (2p, 2.54 mm); LED 5 mm 'sombrero de paja' (straw hat) (2p, 2.54 mm) | rojo, verde, amarillo, naranja, azul, blanco, blanco cálido, violeta/UV 395 nm, … (+3) | muy alta |
+| **LED RGB 5 mm de 4 patas, ánodo común**<br><sub>`opt-led-rgb-anodo-comun`</sub> | THT | LED 5 mm RGB 4 patas (4p, 1.27 mm) | difuso, transparente, 3 mm (menos común), 8 mm (menos común) | muy alta |
+| **LED 8 mm y 10 mm (jumbo)**<br><sub>`opt-led-8mm-10mm`</sub> | THT | LED 8 mm radial (2p, 2.54 mm); LED 10 mm radial (2p, 2.54 mm) | rojo, verde, amarillo, azul, blanco, RGB lento (2 patas), difuso, transparente | alta |
+| **LED auto-intermitente y multicolor automático (arcoíris) 3/5 mm**<br><sub>`opt-led-intermitente-multicolor`</sub> | THT | LED 3 mm (T-1) radial (2p, 2.54 mm); LED 5 mm (T-1¾) radial (2p, 2.54 mm) | intermitente rojo, intermitente verde/amarillo/azul, RGB lento (slow), RGB rápido (fast), 3 mm y 5 mm | alta |
+| **LED bicolor 5 mm (2 y 3 patas)**<br><sub>`opt-led-bicolor`</sub> | THT | LED 5 mm bicolor 2 patas (2p, 2.54 mm); LED 5 mm bicolor 3 patas (3p, 2.54 mm) | rojo/verde 2 patas, rojo/verde 3 patas cátodo común, rojo/verde 3 patas ánodo común, 3 mm | alta |
+| **LED RGB 5 mm de 4 patas, cátodo común**<br><sub>`opt-led-rgb-catodo-comun`</sub> | THT | LED 5 mm RGB 4 patas (4p, 1.27 mm) | difuso, transparente | alta |
+| **LED rectangular, cuadrado y triangular (2x5x7, 3x4)**<br><sub>`opt-led-formas`</sub> | THT | LED rectangular 2x5x7 mm (2p, 2.54 mm) | rojo, verde, amarillo, azul, blanco, bicolor | media |
+| **LED de potencia 1 W / 3 W (con estrella de aluminio)**<br><sub>`opt-led-potencia-1w-3w`</sub> | THT/SMD | Emisor de potencia (tipo Lumileds/Bridgelux genérico) (2p); Estrella de aluminio (MCPCB) 20 mm (2p) | 1 W blanco frío/cálido, 3 W blanco, rojo, verde, azul, UV 395 nm, RGB 3 W (6 pads) | alta |
+| **LED SMD 0603 / 0805 / 1206**<br><sub>`opt-led-smd-0805-1206`</sub> | SMD | 0603 (1608 métrico) (2p); 0805 (2012 métrico) (2p); 1206 (3216 métrico) (2p) | rojo, verde, amarillo, azul, blanco, naranja | alta |
+| **LED SMD PLCC 3528 / 2835 / 5050**<br><sub>`opt-led-smd-plcc-3528-2835-5050`</sub> | SMD | 3528 (PLCC-2) (2p); 2835 (2p); 5050 (PLCC-6) (6p) | 3528 blanco/colores (≈20 mA), 2835 blanco 0.2–0.5 W, 5050 blanco (≈60 mA, 3 chips), 5050 RGB | alta |
+| **Optoacoplador con salida TRIAC MOC3010/3011/3020/3021/3023 (fase aleatoria)**<br><sub>`opt-moc3021-moc3011`</sub> | THT | DIP-6 (6p, 2.54 mm, filas 7.62 mm) | MOC3010 (250 V, IFT 15 mA), MOC3011 (250 V, 10 mA), MOC3012 (5 mA), MOC3020 (400 V, 30 mA), MOC3021 (400 V, 15 mA), MOC3022 (10 mA), MOC3023 (5 mA) | muy alta |
+| **Optoacoplador PC817 / EL817 / LTV-817 / TLP521-1 (DIP-4)**<br><sub>`opt-pc817`</sub> | THT | DIP-4 (4p, 2.54 mm, filas 7.62 mm); SOP-4 / SMD-4 (PC817 SMD) (4p, 2.54 mm) | PC817 (rangos A, B, C, D de CTR), EL817, LTV-817, TLP521-1, PC817 SMD | muy alta |
+| **Optoacoplador 4N25 / 4N26 / 4N35 / 4N33 (DIP-6)**<br><sub>`opt-4n25-4n35`</sub> | THT | DIP-6 (6p, 2.54 mm, filas 7.62 mm) | 4N25 (CTR ≥20 %), 4N26, 4N28, 4N35 (CTR ≥100 %), 4N37, 4N33 (Darlington, CTR ≥500 %) | alta |
+| **Optoacoplador con TRIAC y cruce por cero MOC3041/3042/3043 y MOC3061/3062/3063**<br><sub>`opt-moc3041-moc3063`</sub> | THT | DIP-6 (6p, 2.54 mm, filas 7.62 mm) | MOC3041 (400 V, IFT 15 mA), MOC3042 (10 mA), MOC3043 (5 mA), MOC3061 (600 V, 15 mA), MOC3062 (10 mA), MOC3063 (600 V, 5 mA) | alta |
+| **Optoacoplador digital rápido 6N137 (10 Mbit/s)**<br><sub>`opt-6n137`</sub> | THT | DIP-8 (8p, 2.54 mm, filas 7.62 mm) | 6N137, HCPL-2601, HCPL-2631 (doble) | media |
+| **Optoacoplador multicanal TLP521-2 / TLP521-4 / PC827 / PC847**<br><sub>`opt-tlp521-multicanal`</sub> | THT | DIP-8 (8p, 2.54 mm, filas 7.62 mm); DIP-16 (16p, 2.54 mm, filas 7.62 mm) | TLP521-2 / PC827 (2 canales, DIP-8), TLP521-4 / PC847 (4 canales, DIP-16) | media |
+| **Sensor óptico reflectivo TCRT5000 / TCRT5000L (suelto)**<br><sub>`opt-tcrt5000`</sub> | THT | TCRT5000 4 pines (4p) | TCRT5000, TCRT5000L (patas largas) | alta |
+| **Interruptor óptico ranurado H21A1 / ITR9608 / TCST2103**<br><sub>`opt-interruptor-ranurado`</sub> | THT | Optointerruptor ranurado 4 pines (4p) | H21A1, ITR9608, TCST2103, MOC70T2 | media |
+| **Sensor óptico reflectivo CNY70**<br><sub>`opt-cny70`</sub> | THT | CNY70 4 pines (4p) | CNY70 | media |
 
 <a id="materiales_pcb"></a>
 ## Materiales para fabricar PCB
