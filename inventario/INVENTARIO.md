@@ -2,7 +2,7 @@
 
 Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 
-**Total: 391 componentes** en 10 categorías.
+**Total: 503 componentes** en 11 categorías.
 
 | Categoría | Elementos |
 |---|---:|
@@ -12,6 +12,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | [Protección (fusibles, varistores, TVS)](#proteccion) | 19 |
 | [Semiconductores discretos (diodos, transistores, tiristores)](#semiconductores_discretos) | 86 |
 | [Optoelectrónica (LEDs, optoacopladores, displays de LED)](#optoelectronica) | 30 |
+| [Sensores](#sensores) | 112 |
 | [Materiales para fabricar PCB](#materiales_pcb) | 37 |
 | [Soldadura y consumibles](#soldadura_y_consumibles) | 29 |
 | [Herramientas e instrumentos](#herramientas) | 70 |
@@ -274,6 +275,124 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Sensor óptico reflectivo TCRT5000 / TCRT5000L (suelto)**<br><sub>`opt-tcrt5000`</sub> | THT | TCRT5000 4 pines (4p) | TCRT5000, TCRT5000L (patas largas) | alta |
 | **Interruptor óptico ranurado H21A1 / ITR9608 / TCST2103**<br><sub>`opt-interruptor-ranurado`</sub> | THT | Optointerruptor ranurado 4 pines (4p) | H21A1, ITR9608, TCST2103, MOC70T2 | media |
 | **Sensor óptico reflectivo CNY70**<br><sub>`opt-cny70`</sub> | THT | CNY70 4 pines (4p) | CNY70 | media |
+
+<a id="sensores"></a>
+## Sensores
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Higrómetro de suelo resistivo YL-69 / FC-28 (sonda + placa LM393)**<br><sub>`sen-humedad-suelo-resistivo`</sub> | modulo | Placa de control con header 1x4 (VCC, GND, DO, AO) + 2 pines hacia la sonda (4p, 2.54 mm); Sonda de horquilla con 2 pines (2p, 2.54 mm) | YL-69 + YL-38, FC-28 | muy alta |
+| **Sensor capacitivo de humedad de suelo v1.2 / v2.0**<br><sub>`sen-humedad-suelo-capacitivo`</sub> | modulo | Sonda-placa con conector PH2.0 de 3 pines (paso 2.0 mm) + cable a Dupont 2.54 (3p, 2.0 mm) | v1.2, v2.0 | muy alta |
+| **Interruptor de nivel tipo flotador (vertical, con reed switch)**<br><sub>`sen-flotador-nivel`</sub> | panel | Cuerpo de PP con rosca y 2 cables (2p) | vertical, horizontal, acero inoxidable | alta |
+| **Sensor de flujo de agua YF-S201 (1/2")**<br><sub>`sen-flujo-yf-s201`</sub> | n/a | Cuerpo de plástico con roscas G1/2" y cable de 3 hilos (3p) | YF-S201 1/2", YF-S401 1/4", YF-B5 | alta |
+| **Sensor de lluvia FC-37 / YL-83 (placa detectora + LM393)**<br><sub>`sen-lluvia-fc37`</sub> | modulo | Placa de control con header 1x4 (VCC, GND, DO, AO) + 2 pines a la placa detectora (4p, 2.54 mm); Placa detectora con 2 pines (2p, 2.54 mm) | FC-37, YL-83, con relevador (UNIT) | alta |
+| **Sensor de nivel de agua tipo tira (Water Sensor)**<br><sub>`sen-nivel-agua-tira`</sub> | modulo | Módulo con header 1x3 a 2.54 mm (3p, 2.54 mm) | Water Sensor rojo | alta |
+| **Módulo sensor de pH PH-4502C con electrodo BNC**<br><sub>`sen-ph-4502c`</sub> | modulo | Placa con header 1x6 a 2.54 mm + conector BNC (6p, 2.54 mm) | PH-4502C + E-201-C | media |
+| **Sensor de turbidez del agua (sonda + placa adaptadora)**<br><sub>`sen-turbidez`</sub> | modulo | Placa adaptadora con header 1x3 a 2.54 mm + cable a la sonda (3p, 2.54 mm) | SEN0189 | media |
+| **Sensor TDS de calidad de agua (sólidos disueltos totales)**<br><sub>`sen-tds`</sub> | modulo | Placa con header 1x3 (o conector PH2.0) + sonda con conector de 2 pines (3p, 2.54 mm) | TDS v1.0 | media |
+| **Lector de huella dactilar óptico AS608 / R307 / FPM10A**<br><sub>`sen-huella-as608`</sub> | modulo | Módulo con conector de 6 pines de paso pequeño (≈1.0–1.25 mm) y cable (6p) | AS608, R307, FPM10A | alta |
+| **Oxímetro y sensor de pulso MAX30102**<br><sub>`sen-max30102`</sub> | modulo | Módulo con header 1x7 a 2.54 mm (7p, 2.54 mm) | MAX30102 morado | alta |
+| **Sensor de pulso cardiaco óptico (Pulse Sensor / XD-58C)**<br><sub>`sen-pulso-cardiaco`</sub> | modulo | Disco Ø16 mm con 3 cables o pines (3p, 2.54 mm) | XD-58C, XD-58D | alta |
+| **Módulo de electrocardiograma (ECG) AD8232**<br><sub>`sen-ad8232`</sub> | modulo | Módulo con header 1x6 a 2.54 mm + jack 3.5 mm para electrodos (6p, 2.54 mm) | AD8232 + cable 3 electrodos | media |
+| **Oxímetro y sensor de pulso MAX30100 (GY-MAX30100)**<br><sub>`sen-max30100`</sub> | modulo | Módulo con header 1x7 a 2.54 mm (7p, 2.54 mm) | GY-MAX30100 | media |
+| **Sensor de corriente por efecto Hall ACS712 (5 A / 20 A / 30 A)**<br><sub>`sen-acs712`</sub> | modulo | Módulo con header 1x3 a 2.54 mm + bornera de tornillo de 2 posiciones (3p, 2.54 mm); IC SOIC-8 (SMD) (8p, 1.27 mm) | 5 A (185 mV/A), 20 A (100 mV/A), 30 A (66 mV/A) | muy alta |
+| **Medidor de energía AC PZEM-004T v3.0 (UART/Modbus)**<br><sub>`sen-pzem-004t`</sub> | modulo | Placa con header TTL 1x4 + borneras de línea AC y transformador de corriente (4p, 2.54 mm) | 100 A con TC, 10 A con shunt interno | alta |
+| **Módulo sensor de voltaje DC 0–25 V (divisor resistivo)**<br><sub>`sen-voltaje-0-25v`</sub> | modulo | Módulo con bornera de 2 posiciones (VCC, GND de entrada) + header 1x3 a 2.54 mm (3p, 2.54 mm) | 0–25 V | alta |
+| **Sensor de corriente AC no invasivo SCT-013 (pinza)**<br><sub>`sen-sct-013`</sub> | n/a | Pinza de núcleo partido con cable ≈1 m y plug de 3.5 mm (2p) | SCT-013-000 (100 A : 50 mA), SCT-013-030 (30 A / 1 V), SCT-013-050 (50 A / 1 V) | alta |
+| **Sensor de corriente, voltaje y potencia INA219 (I2C)**<br><sub>`sen-ina219`</sub> | modulo | Módulo con header 1x6 a 2.54 mm + bornera de 2 posiciones (VIN+, VIN−) (6p, 2.54 mm) | shunt 0.1 Ω (R100) | alta |
+| **Módulo sensor de voltaje AC ZMPT101B**<br><sub>`sen-zmpt101b`</sub> | modulo | Módulo con header 1x4 a 2.54 mm + bornera de 2 posiciones para la línea AC (4p, 2.54 mm) | ZMPT101B | media |
+| **Sensor de corriente y voltaje INA226 (I2C, 16 bits, hasta 36 V)**<br><sub>`sen-ina226`</sub> | modulo | Módulo con header de 2.54 mm (8p, 2.54 mm) | shunt R100 (0.1 Ω), shunt R010 (0.01 Ω) | media |
+| **Sensor de movimiento PIR HC-SR501**<br><sub>`sen-pir-hc-sr501`</sub> | modulo | Módulo con header macho 1x3 a 2.54 mm (3p, 2.54 mm) | HC-SR501 | muy alta |
+| **Sensor infrarrojo de obstáculos FC-51 (y KY-032)**<br><sub>`sen-ir-obstaculo-fc51`</sub> | modulo | Módulo FC-51 con header 1x3 a 2.54 mm (3p, 2.54 mm); Módulo KY-032 con header 1x4 (GND, +, OUT, EN) (4p, 2.54 mm) | FC-51, KY-032 | muy alta |
+| **Sensor ultrasónico de distancia HC-SR04**<br><sub>`sen-hc-sr04`</sub> | modulo | Módulo con header macho 1x4 a 2.54 mm (centrado en el borde inferior) (4p, 2.54 mm) | HC-SR04 (5 V) | muy alta |
+| **Sensor óptico reflectivo TCRT5000 (módulo y suelto)**<br><sub>`sen-tcrt5000`</sub> | modulo | Módulo LM393 con header 1x4 a 2.54 mm (4p, 2.54 mm); TCRT5000 suelto (THT 4 patas) (4p) | módulo 4 pines, TCRT5000 suelto | muy alta |
+| **Módulo seguidor de línea de 3 y 5 canales (TCRT5000)**<br><sub>`sen-seguidor-linea-multicanal`</sub> | modulo | Módulo de 5 canales con header 1x7 a 2.54 mm (7p, 2.54 mm); Módulo de 3 canales con header 1x5 a 2.54 mm (5p, 2.54 mm) | 3 canales, 5 canales | alta |
+| **Sensor de distancia láser ToF VL53L0X**<br><sub>`sen-vl53l0x`</sub> | modulo | Módulo con header 1x6 a 2.54 mm (6p, 2.54 mm) | GY-530, GY-VL53L0XV2 | alta |
+| **Sensor de movimiento por microondas (radar Doppler) RCWL-0516**<br><sub>`sen-rcwl-0516`</sub> | modulo | Módulo con 5 pines a 2.54 mm (fila en un extremo) (5p, 2.54 mm) | RCWL-0516 | alta |
+| **Sensor ultrasónico HC-SR04P (3.3–5 V)**<br><sub>`sen-hc-sr04p`</sub> | modulo | Módulo con header macho 1x4 a 2.54 mm (4p, 2.54 mm) | HC-SR04P | alta |
+| **Sensor ultrasónico impermeable JSN-SR04T**<br><sub>`sen-jsn-sr04t`</sub> | modulo | Placa de control con header/bornera 1x4 a 2.54 mm + transductor con cable (4p, 2.54 mm) | v2.0, v3.0 | alta |
+| **Mini sensor PIR AM312**<br><sub>`sen-am312`</sub> | modulo | Módulo con 3 pines a 2.54 mm (3p, 2.54 mm) | AM312 | media |
+| **Sensor de distancia infrarrojo Sharp GP2Y0A21YK0F (10–80 cm)**<br><sub>`sen-sharp-gp2y0a21`</sub> | modulo | Cuerpo con conector JST PH de 3 pines (paso 2.0 mm) (3p, 2.0 mm) | GP2Y0A21YK0F (10–80 cm), GP2Y0A02YK0F (20–150 cm), GP2Y0A41SK0F (4–30 cm) | media |
+| **Sensor de distancia láser ToF VL53L1X (hasta 4 m)**<br><sub>`sen-vl53l1x`</sub> | modulo | Módulo con header 1x6 a 2.54 mm (6p, 2.54 mm) | VL53L1X | media |
+| **Módulo encoder rotativo KY-040**<br><sub>`sen-encoder-ky040`</sub> | modulo | Módulo con header 1x5 a 2.54 mm (a 90°) (5p, 2.54 mm) | KY-040 | muy alta |
+| **Módulo joystick analógico KY-023**<br><sub>`sen-joystick-ky023`</sub> | modulo | Módulo con header 1x5 a 2.54 mm (a 90°) (5p, 2.54 mm) | KY-023 | muy alta |
+| **Botón táctil capacitivo TTP223**<br><sub>`sen-touch-ttp223`</sub> | modulo | Módulo con header 1x3 a 2.54 mm (3p, 2.54 mm) | TTP223 rojo, TTP223 azul | alta |
+| **Controlador táctil capacitivo de 12 canales MPR121**<br><sub>`sen-mpr121`</sub> | modulo | Módulo con header de 2.54 mm + 12 pads de electrodo (6p, 2.54 mm) | MPR121 | media |
+| **Teclado capacitivo de 16 teclas TTP229**<br><sub>`sen-ttp229`</sub> | modulo | Placa con header de 2.54 mm (P1 de 4 pines + P2 de 8 salidas) (12p, 2.54 mm) | TTP229 16 teclas | media |
+| **Amplificador/convertidor para celdas de carga HX711**<br><sub>`sen-hx711`</sub> | modulo | Módulo con header 1x4 (lado MCU) + 1x6 (lado celda) a 2.54 mm (10p, 2.54 mm) | HX711 verde, HX711 rojo | muy alta |
+| **Celda de carga de barra (1, 5, 10, 20 kg)**<br><sub>`sen-celda-carga-barra`</sub> | n/a | Barra de aluminio con 4 cables (4p) | 1 kg, 5 kg, 10 kg, 20 kg | alta |
+| **Galga de báscula 50 kg de medio puente (3 cables)**<br><sub>`sen-celda-carga-50kg`</sub> | n/a | Placa metálica con 3 cables (3p) | 50 kg c/u, kit de 4 + HX711 | alta |
+| **Galga extensométrica BF350-3AA (350 Ω)**<br><sub>`sen-galga-bf350`</sub> | n/a | Galga adhesiva con 2 terminales de soldar (2p) | 350 Ω | media |
+| **Sensor de flexión (flex sensor) 2.2" y 4.5"**<br><sub>`sen-flex`</sub> | THT | Tira con 2 terminales (2p, 2.54 mm) | 2.2 pulgadas, 4.5 pulgadas | media |
+| **Sensor de fuerza resistivo FSR402 (y FSR400/FSR406)**<br><sub>`sen-fsr402`</sub> | THT | Película redonda con cola y 2 terminales (2p, 2.54 mm) | FSR400 (Ø5 mm), FSR402 (Ø12.7 mm), FSR406 (38 mm cuadrado) | media |
+| **Sensor de gas MQ-135 (módulo)**<br><sub>`sen-mq-135`</sub> | modulo | Módulo MQ con header macho 1x4 a 2.54 mm (4p, 2.54 mm); Sensor MQ suelto de 6 patas (ver sen-mq-suelto) (6p) | MQ-135 módulo, MQ-135 suelto | muy alta |
+| **Sensor de gas MQ-2 (módulo)**<br><sub>`sen-mq-2`</sub> | modulo | Módulo MQ con header macho 1x4 a 2.54 mm (4p, 2.54 mm); Sensor MQ suelto de 6 patas (ver sen-mq-suelto) (6p) | MQ-2 módulo, MQ-2 suelto | muy alta |
+| **Sensor de gas MQ-3 (módulo)**<br><sub>`sen-mq-3`</sub> | modulo | Módulo MQ con header macho 1x4 a 2.54 mm (4p, 2.54 mm); Sensor MQ suelto de 6 patas (ver sen-mq-suelto) (6p) | MQ-3 módulo, MQ-3 suelto | alta |
+| **Sensor de gas MQ-7 (módulo)**<br><sub>`sen-mq-7`</sub> | modulo | Módulo MQ con header macho 1x4 a 2.54 mm (4p, 2.54 mm); Sensor MQ suelto de 6 patas (ver sen-mq-suelto) (6p) | MQ-7 módulo, MQ-7 suelto | alta |
+| **Sensor de gas serie MQ suelto (6 patas, para PCB)**<br><sub>`sen-mq-suelto`</sub> | THT | Base de baquelita con 6 patas en círculo y capuchón de malla metálica (6p) | MQ-2, MQ-3, MQ-4, MQ-5, MQ-6, MQ-7, MQ-8, MQ-9, … (+1) | alta |
+| **Sensor ambiental BME680 (gas VOC, presión, temperatura y humedad)**<br><sub>`sen-bme680`</sub> | modulo | Módulo con header 1x6 (6p, 2.54 mm) | CJMCU-680 | media |
+| **Sensor de calidad del aire CCS811 (eCO2 y TVOC, CJMCU-811)**<br><sub>`sen-ccs811`</sub> | modulo | Módulo CJMCU-811 con header 1x8 a 2.54 mm (8p, 2.54 mm) | CJMCU-811, CCS811 + HDC1080 | media |
+| **Sensor de calidad del aire SGP30 (TVOC y eCO2, I2C)**<br><sub>`sen-sgp30`</sub> | modulo | Módulo con header 1x4 a 2.54 mm (4p, 2.54 mm) | SGP30 | media |
+| **Sensor de CO2 infrarrojo NDIR MH-Z19B / MH-Z19C**<br><sub>`sen-mh-z19`</sub> | modulo | Módulo con pines a 2.54 mm en los extremos (o conector JST con cable) (7p, 2.54 mm) | MH-Z19B 0–5000 ppm, MH-Z19C, rango 0–2000/5000/10000 ppm | media |
+| **Sensor de gas MQ-4 (módulo)**<br><sub>`sen-mq-4`</sub> | modulo | Módulo MQ con header macho 1x4 a 2.54 mm (4p, 2.54 mm); Sensor MQ suelto de 6 patas (ver sen-mq-suelto) (6p) | MQ-4 módulo, MQ-4 suelto | media |
+| **Sensor de gas MQ-5 (módulo)**<br><sub>`sen-mq-5`</sub> | modulo | Módulo MQ con header macho 1x4 a 2.54 mm (4p, 2.54 mm); Sensor MQ suelto de 6 patas (ver sen-mq-suelto) (6p) | MQ-5 módulo, MQ-5 suelto | media |
+| **Sensor de gas MQ-6 (módulo)**<br><sub>`sen-mq-6`</sub> | modulo | Módulo MQ con header macho 1x4 a 2.54 mm (4p, 2.54 mm); Sensor MQ suelto de 6 patas (ver sen-mq-suelto) (6p) | MQ-6 módulo, MQ-6 suelto | media |
+| **Sensor de gas MQ-8 (módulo)**<br><sub>`sen-mq-8`</sub> | modulo | Módulo MQ con header macho 1x4 a 2.54 mm (4p, 2.54 mm); Sensor MQ suelto de 6 patas (ver sen-mq-suelto) (6p) | MQ-8 módulo, MQ-8 suelto | media |
+| **Sensor de gas MQ-9 (módulo)**<br><sub>`sen-mq-9`</sub> | modulo | Módulo MQ con header macho 1x4 a 2.54 mm (4p, 2.54 mm); Sensor MQ suelto de 6 patas (ver sen-mq-suelto) (6p) | MQ-9 módulo, MQ-9 suelto | media |
+| **Sensor óptico de polvo Sharp GP2Y1010AU0F**<br><sub>`sen-polvo-gp2y1010`</sub> | modulo | Cuerpo con conector de 6 hilos (paso pequeño ≈1.5 mm, verificar) (6p) | GP2Y1010AU0F | media |
+| **Módulo sensor de luz con fotorresistencia LDR (KY-018 / LM393)**<br><sub>`sen-ldr-modulo`</sub> | modulo | Módulo serie KY-0xx, header macho 1x3 a 2.54 mm (3p, 2.54 mm); Módulo comparador LM393, header macho 1x4 a 2.54 mm (4p, 2.54 mm) | KY-018, módulo LM393 4 pines, módulo LM393 3 pines | muy alta |
+| **Sensor de color TCS3200 / TCS230 (módulo GY-31)**<br><sub>`sen-tcs3200`</sub> | modulo | Módulo con 2 tiras de 4 pines a 2.54 mm (a los lados) (8p, 2.54 mm) | TCS3200, TCS230 | alta |
+| **Sensor de intensidad luminosa BH1750 (GY-302)**<br><sub>`sen-bh1750`</sub> | modulo | Módulo GY-302 con header 1x5 a 2.54 mm (5p, 2.54 mm) | GY-302 | alta |
+| **Sensor de color RGB TCS34725 (I2C)**<br><sub>`sen-tcs34725`</sub> | modulo | Módulo con header 1x7 a 2.54 mm (7p, 2.54 mm) | TCS34725 | media |
+| **Sensor de gestos, proximidad y color APDS-9960**<br><sub>`sen-apds9960`</sub> | modulo | Módulo con header 1x6 a 2.54 mm (6p, 2.54 mm) | GY-9960-3.3 | media |
+| **Sensor de luz ultravioleta GUVA-S12SD**<br><sub>`sen-uv-guva-s12sd`</sub> | modulo | Módulo con header 1x3 a 2.54 mm (3p, 2.54 mm) | GUVA-S12SD | media |
+| **Sensor de luz ultravioleta ML8511 (GY-8511)**<br><sub>`sen-uv-ml8511`</sub> | modulo | Módulo con header 1x5 a 2.54 mm (5p, 2.54 mm) | GY-8511 | media |
+| **Módulo reed switch KY-021 / KY-025**<br><sub>`sen-reed-modulo`</sub> | modulo | Módulo serie KY-0xx, header macho 1x3 a 2.54 mm (3p, 2.54 mm); Módulo KY-025 con header 1x4 (AO, G, +, DO) (4p, 2.54 mm); Reed switch suelto en ampolla de vidrio (THT axial, 2 terminales) (2p) | KY-021, KY-025, reed suelto | alta |
+| **Sensor de efecto Hall A3144 (interruptor unipolar)**<br><sub>`sen-hall-a3144`</sub> | THT | UA / TO-92S plano (SIP-3) (3p, 1.27 mm) | A3144, OH3144E | alta |
+| **Módulo sensor Hall digital KY-003 (A3144)**<br><sub>`sen-ky-003`</sub> | modulo | Módulo serie KY-0xx, header macho 1x3 a 2.54 mm (3p, 2.54 mm) | KY-003 | media |
+| **Módulo sensor Hall lineal KY-024 (49E + LM393)**<br><sub>`sen-ky-024`</sub> | modulo | Módulo con header 1x4 a 2.54 mm (4p, 2.54 mm) | KY-024 | media |
+| **Sensor de efecto Hall lineal SS49E**<br><sub>`sen-hall-ss49e`</sub> | THT | TO-92S plano (SIP-3) (3p, 1.27 mm) | SS49E | media |
+| **Acelerómetro y giroscopio de 6 ejes MPU-6050 (GY-521)**<br><sub>`sen-mpu6050`</sub> | modulo | Módulo GY-521 con header 1x8 a 2.54 mm (8p, 2.54 mm) | GY-521 | muy alta |
+| **Acelerómetro digital de 3 ejes ADXL345 (GY-291)**<br><sub>`sen-adxl345`</sub> | modulo | Módulo GY-291 con header 1x8 a 2.54 mm (8p, 2.54 mm) | GY-291 | alta |
+| **Interruptor de inclinación de bola SW-520D (suelto)**<br><sub>`sen-inclinacion-sw520d`</sub> | THT | Cilindro metálico con 2 patas (2p) | SW-520D, SW-200D | alta |
+| **Magnetómetro / brújula digital de 3 ejes HMC5883L / QMC5883L (GY-273)**<br><sub>`sen-hmc5883l-qmc5883l`</sub> | modulo | Módulo GY-273 con header 1x5 a 2.54 mm (5p, 2.54 mm) | HMC5883L (0x1E), QMC5883L (0x0D) | alta |
+| **Módulo sensor de inclinación (KY-020 / LM393 con SW-520D)**<br><sub>`sen-inclinacion-modulo`</sub> | modulo | Módulo serie KY-0xx, header macho 1x3 a 2.54 mm (3p, 2.54 mm); Módulo comparador LM393, header macho 1x3 a 2.54 mm (3p, 2.54 mm) | KY-020, módulo LM393 3 pines | alta |
+| **Módulo sensor de vibración SW-420**<br><sub>`sen-vibracion-sw420`</sub> | modulo | Módulo comparador LM393, header macho 1x3 a 2.54 mm (3p, 2.54 mm) | SW-420 | alta |
+| **Acelerómetro analógico de 3 ejes ADXL335 (GY-61)**<br><sub>`sen-adxl335`</sub> | modulo | Módulo GY-61 con header 1x5 a 2.54 mm (5p, 2.54 mm) | GY-61 | media |
+| **IMU de 9 ejes MPU-9250 (GY-9250)**<br><sub>`sen-mpu9250`</sub> | modulo | Módulo con header 1x10 a 2.54 mm (10p, 2.54 mm) | GY-9250, GY-6500 (sin magnetómetro) | media |
+| **Interruptor de vibración de resorte SW-18010P (suelto)**<br><sub>`sen-vibracion-sw18010p`</sub> | THT | Cilindro con 2 patas (2p) | SW-18010P, SW-18015P, SW-18020P (distinta sensibilidad) | media |
+| **Módulo sensor de golpe KY-031 (knock sensor)**<br><sub>`sen-golpe-ky031`</sub> | modulo | Módulo serie KY-0xx, header macho 1x3 a 2.54 mm (3p, 2.54 mm) | KY-031 | media |
+| **Kit de 37 sensores (serie KY-0xx)**<br><sub>`sen-kit-37-sensores`</sub> | n/a | — | KY-001 DS18B20, KY-002 vibración, KY-003 Hall, KY-004 botón, KY-005 LED IR, KY-006 buzzer pasivo, KY-008 láser, KY-009 LED RGB SMD, … (+29) | alta |
+| **Módulo sensor de llama infrarrojo (760–1100 nm)**<br><sub>`sen-flama`</sub> | modulo | Módulo comparador LM393, header macho 1x4 a 2.54 mm (4p, 2.54 mm); Módulo KY-026 con header 1x4 (AO, G, +, DO) (4p, 2.54 mm) | 4 pines, 3 pines, 5 canales, KY-026 | alta |
+| **Kit de 45 sensores en 1**<br><sub>`sen-kit-45-sensores`</sub> | n/a | — | 45 módulos (variable) | media |
+| **Micrófono electret (cápsula suelta de 2 pines)**<br><sub>`sen-microfono-electret`</sub> | THT | Cápsula Ø6 x 5 mm con 2 patas (2p); Cápsula Ø9.7 mm (alto 4.5–6.7 mm) con 2 patas o pads (2p) | Ø6 x 5 mm, Ø9.7 x 4.5 mm, Ø9.7 x 6.7 mm | muy alta |
+| **Módulo sensor de sonido KY-038 (micrófono pequeño + LM393)**<br><sub>`sen-ky-038`</sub> | modulo | Módulo con header 1x4 a 2.54 mm (4p, 2.54 mm) | KY-038 | muy alta |
+| **Módulo sensor de sonido KY-037 (micrófono grande, alta sensibilidad)**<br><sub>`sen-ky-037`</sub> | modulo | Módulo con header 1x4 a 2.54 mm (4p, 2.54 mm) | KY-037 | alta |
+| **Módulo sensor de sonido LM393 de 3 pines (salida digital)**<br><sub>`sen-sonido-lm393`</sub> | modulo | Módulo comparador LM393, header macho 1x3 a 2.54 mm (3p, 2.54 mm) | FC-04 | alta |
+| **Módulo amplificador de micrófono con AGC MAX9814**<br><sub>`sen-max9814`</sub> | modulo | Módulo con header 1x5 a 2.54 mm (5p, 2.54 mm) | MAX9814 | media |
+| **Módulo amplificador de micrófono MAX4466 (ganancia ajustable)**<br><sub>`sen-max4466`</sub> | modulo | Módulo con header 1x3 a 2.54 mm (3p, 2.54 mm) | MAX4466 | media |
+| **Módulo DHT11 de 3 pines (KY-015 y similares)**<br><sub>`sen-dht11-modulo`</sub> | modulo | Módulo con header macho 1x3 a 2.54 mm (3p, 2.54 mm) | KY-015, módulo azul 3 pines | muy alta |
+| **Sensor de temperatura analógico LM35 (TO-92)**<br><sub>`sen-lm35`</sub> | THT | TO-92 (3p, 1.27 mm) | LM35DZ (0–100 °C), LM35CZ, LM35 TO-92 | muy alta |
+| **Sensor de temperatura digital DS18B20 (TO-92)**<br><sub>`sen-ds18b20`</sub> | THT | TO-92 (3p, 1.27 mm); Módulo serie KY-0xx, header macho 1x3 a 2.54 mm (3p, 2.54 mm) | DS18B20 TO-92, módulo KY-001 | muy alta |
+| **Sensor de temperatura y humedad DHT11 (suelto, 4 pines)**<br><sub>`sen-dht11`</sub> | THT | SIP-4 (cuerpo plástico azul con rejilla) (4p, 2.54 mm) | DHT11 azul | muy alta |
+| **Sensor de temperatura y humedad DHT22 / AM2302 (suelto, 4 pines)**<br><sub>`sen-dht22`</sub> | THT | SIP-4 (cuerpo plástico blanco con rejilla) (4p, 2.54 mm) | DHT22, AM2302 | muy alta |
+| **Sonda impermeable DS18B20 (acero inoxidable con cable)**<br><sub>`sen-ds18b20-sonda`</sub> | n/a | Sonda de acero inoxidable con cable de 3 hilos (3p) | 1 m, 2 m, 3 m | muy alta |
+| **Módulo DHT22 / AM2302 con cables o placa de 3 pines**<br><sub>`sen-dht22-modulo`</sub> | modulo | Módulo con header macho 1x3 a 2.54 mm (3p, 2.54 mm); AM2302 en carcasa con 3 cables (rojo/amarillo/negro) (3p) | placa 3 pines, AM2302 con cables, AM2301A | alta |
+| **Módulo MAX6675 con termopar tipo K**<br><sub>`sen-max6675-termopar`</sub> | modulo | Módulo con header 1x5 a 2.54 mm + bornera de 2 tornillos para el termopar (5p, 2.54 mm) | módulo solo, kit con termopar M6 (0–400 °C típ.) | alta |
+| **Módulo sensor de temperatura con termistor NTC (KY-013 / LM393)**<br><sub>`sen-ntc-modulo`</sub> | modulo | Módulo serie KY-0xx, header macho 1x3 a 2.54 mm (3p, 2.54 mm); Módulo comparador LM393, header macho 1x4 a 2.54 mm (4p, 2.54 mm) | NTC 10 kΩ B≈3950, KY-013, módulo LM393 4 pines | alta |
+| **Sensor ambiental BME280 (presión, temperatura y humedad)**<br><sub>`sen-bme280`</sub> | modulo | Módulo 3.3 V con header 1x6 (VCC, GND, SCL, SDA, CSB, SDO) (6p, 2.54 mm); Módulo 5 V con header 1x4 (VIN, GND, SCL, SDA) (4p, 2.54 mm); IC LGA-8 (SMD) (8p) | 3.3 V 6 pines, 5 V 4 pines | alta |
+| **Sensor de presión y temperatura BMP280 (módulo GY-BMP280)**<br><sub>`sen-bmp280`</sub> | modulo | Módulo GY-BMP280-3.3 con header 1x6 (6p, 2.54 mm); IC LGA-8 (SMD, tapa metálica) (8p, 0.65 mm) | módulo 3.3 V 6 pines, módulo 5 V 4 pines, IC suelto | alta |
+| **Sensor de temperatura analógico TMP36 (TO-92)**<br><sub>`sen-tmp36`</sub> | THT | TO-92 (3p, 1.27 mm) | TMP36GT9Z | alta |
+| **Sonda termopar tipo K (rosca M6, bayoneta o gota)**<br><sub>`sen-termopar-k`</sub> | n/a | Sonda con 2 hilos o terminales de horquilla (2p) | M6 0–400 °C, gota de fibra de vidrio, −50 a 400 °C | alta |
+| **Termómetro infrarrojo sin contacto MLX90614 (GY-906)**<br><sub>`sen-mlx90614`</sub> | modulo | Módulo GY-906 con header 1x4 (4p, 2.54 mm) | MLX90614ESF-BAA (3 V, 90°), MLX90614ESF-AAA (5 V), MLX90614ESF-DCC/DCI (campo estrecho) | alta |
+| **Módulo AHT20 + BMP280 (humedad, temperatura y presión)**<br><sub>`sen-aht20-bmp280`</sub> | modulo | Módulo con header 1x4 (4p, 2.54 mm) | AHT20+BMP280 | media |
+| **Módulo MAX31855 para termopar (K) — y el IC SO-8**<br><sub>`sen-max31855`</sub> | modulo | Módulo con header 1x5 o 1x6 a 2.54 mm + bornera para termopar (6p, 2.54 mm); IC SO-8 (SMD) (8p, 1.27 mm) | MAX31855K (tipo K), MAX31855 J/T | media |
+| **Sensor de presión barométrica BMP180 (módulo GY-68)**<br><sub>`sen-bmp180`</sub> | modulo | Módulo GY-68 con header 1x4 (algunos 1x5 con salida 3.3 V) (4p, 2.54 mm) | GY-68 | media |
+| **Sensor de temperatura LM335 (zener de temperatura, TO-92)**<br><sub>`sen-lm335`</sub> | THT | TO-92 (3p, 1.27 mm) | LM335Z, LM335AZ | media |
+| **Sensor de temperatura y humedad AHT10 (módulo I2C)**<br><sub>`sen-aht10`</sub> | modulo | Módulo con header 1x4 (4p, 2.54 mm) | AHT10 | media |
+| **Sensor de temperatura y humedad HTU21D (módulo GY-21)**<br><sub>`sen-htu21d`</sub> | modulo | Módulo con header 1x4 (4p, 2.54 mm) | HTU21D, Si7021, SHT21 | media |
+| **Sensor de temperatura y humedad SHT31 (módulo GY-SHT31-D)**<br><sub>`sen-sht31`</sub> | modulo | Módulo con header 1x6 (6p, 2.54 mm) | SHT31, SHT30 | media |
+| **Sensor de temperatura y humedad SHT40 (IC SMD DFN-4)**<br><sub>`sen-sht40`</sub> | SMD | DFN-4 (4p) | SHT40-AD1B (0x44) | media |
 
 <a id="materiales_pcb"></a>
 ## Materiales para fabricar PCB
