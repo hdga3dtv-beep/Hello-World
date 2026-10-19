@@ -2,7 +2,7 @@
 
 Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 
-**Total: 1068 componentes** en 22 categorías.
+**Total: 1176 componentes** en 22 categorías.
 
 | Categoría | Elementos |
 |---|---:|
@@ -12,7 +12,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | [Protección (fusibles, varistores, TVS)](#proteccion) | 19 |
 | [Semiconductores discretos (diodos, transistores, tiristores)](#semiconductores_discretos) | 86 |
 | [Optoelectrónica (LEDs, optoacopladores, displays de LED)](#optoelectronica) | 30 |
-| [Circuitos integrados](#circuitos_integrados) | 156 |
+| [Circuitos integrados](#circuitos_integrados) | 264 |
 | [Placas de desarrollo (Arduino, ESP, Raspberry Pi) y programadores](#placas_desarrollo) | 70 |
 | [Módulos de comunicación](#modulos_comunicacion) | 36 |
 | [Sensores](#sensores) | 112 |
@@ -292,6 +292,77 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 
 | Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
 |---|---|---|---|---|
+| **Amplificador operacional cuádruple LM324**<br><sub>`ic-lm324`</sub> | THT/SMD | DIP-14 (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (14p, 1.27 mm, filas 5.4 mm) | LM324N, LM2902N | muy alta |
+| **Amplificador operacional doble LM358**<br><sub>`ic-lm358`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | LM358N, LM358P, LM2904 (automotriz) | muy alta |
+| **Amplificador operacional LM741**<br><sub>`ic-lm741`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | LM741CN, UA741CP, MC1741CP1 (Steren) | muy alta |
+| **Amplificador operacional doble de bajo ruido NE5532**<br><sub>`ic-ne5532`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | NE5532P, NE5532AP, LM833N (equivalente de pinout) | alta |
+| **Amplificador operacional doble JFET TL072 / TL082**<br><sub>`ic-tl072`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | TL072CP, TL082CP, LF353N, TL062CP (bajo consumo) | alta |
+| **Amplificador operacional doble JRC4558**<br><sub>`ic-jrc4558`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | JRC4558D, NJM4558D, RC4558P | alta |
+| **Amplificador de instrumentación AD620**<br><sub>`ic-ad620`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | AD620AN (DIP-8), AD620ARZ (SOIC-8) | media |
+| **Amplificador operacional BiMOS CA3140**<br><sub>`ic-ca3140`</sub> | THT | DIP-8 (8p, 2.54 mm, filas 7.62 mm) | CA3140EZ, CA3140E | media |
+| **Amplificador operacional cuádruple JFET TL074 / TL084**<br><sub>`ic-tl074`</sub> | THT/SMD | DIP-14 (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (14p, 1.27 mm, filas 5.4 mm) | TL074CN, TL084CN | media |
+| **Amplificador operacional de precisión OP07**<br><sub>`ic-op07`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | OP07CP, OP07DP | media |
+| **Amplificador operacional doble rail-to-rail MCP6002**<br><sub>`ic-mcp6002`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm); SOT-23-5 (MCP6001, sencillo) (5p, 0.95 mm) | MCP6002-I/P (DIP-8), MCP6002-I/SN (SOIC-8), MCP6004 (cuádruple DIP-14, pinout tipo LM324) | media |
+| **Amplificador operacional sencillo JFET TL071 / TL081**<br><sub>`ic-tl071`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | TL071CP, TL081CP | media |
+| **Amplificador de audio de baja potencia LM386**<br><sub>`ic-lm386`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | LM386N-1 (4–12 V), LM386N-3 (4–12 V, más potencia), LM386N-4 (5–18 V, ≈1 W) | muy alta |
+| **Amplificador clase D estéreo 3 W PAM8403 (chip)**<br><sub>`ic-pam8403`</sub> | SMD | SOP-16 (150 mil) (16p, 1.27 mm, filas 5.4 mm) | PAM8403DR-H (chip SOP-16), Módulo PAM8403 con potenciómetro | alta |
+| **Amplificador de audio 10 W TDA2003**<br><sub>`ic-tda2003`</sub> | THT | Pentawatt V (TO-220-5 vertical) (5p, 1.7 mm) | TDA2003V (vertical), TDA2003H (horizontal), TDA2003A | alta |
+| **Amplificador de audio 100 W TDA7294 / TDA7296**<br><sub>`ic-tda7294`</sub> | THT | Multiwatt-15 V (15p, 1.27 mm) | TDA7294V, TDA7296 (60 W, mismo pinout), TDA7293V (pinout parecido, ver notas) | alta |
+| **Amplificador de audio 18 W TDA2030A**<br><sub>`ic-tda2030a`</sub> | THT | Pentawatt V (TO-220-5 vertical) (5p, 1.7 mm) | TDA2030AV, TDA2030AH | alta |
+| **Amplificador de audio 32 W TDA2050**<br><sub>`ic-tda2050`</sub> | THT | Pentawatt V (TO-220-5 vertical) (5p, 1.7 mm) | TDA2050V | alta |
+| **Amplificador clase D 2x50 W TPA3116D2 (chip)**<br><sub>`ic-tpa3116d2`</sub> | SMD | HTSSOP-32 (DAD, PowerPAD arriba) (32p, 0.65 mm) | TPA3116D2DAD, Módulos 2×50 W, 100 W mono, 2.1 | media |
+| **Amplificador cuádruple para auto TDA7388**<br><sub>`ic-tda7388`</sub> | THT | Flexiwatt-25 (25p, 1.0 mm) | TDA7388, TDA7386 / TDA7384 (familia, pinout similar) | media |
+| **Amplificador de audio 20 W LM1875**<br><sub>`ic-lm1875`</sub> | THT | TO-220-5 (5p, 1.7 mm) | LM1875T | media |
+| **Amplificador de audio 68 W LM3886**<br><sub>`ic-lm3886`</sub> | THT | TO-220-11 (TF aislado / T no aislado) (11p, 1.7 mm) | LM3886TF, LM3886T | media |
+| **Amplificador de audio estéreo 2x15 W TDA7297**<br><sub>`ic-tda7297`</sub> | THT | Multiwatt-15 V (15p, 1.27 mm) | TDA7297 | media |
+| **Amplificador de audio estéreo de bajo voltaje TDA2822**<br><sub>`ic-tda2822`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | TDA2822M | media |
+| **Amplificador de audio estéreo LA4440**<br><sub>`ic-la4440`</sub> | THT | SIP-14H (con aleta) (14p) | LA4440 | media |
+| **Amplificador de audio para auto TDA7377**<br><sub>`ic-tda7377`</sub> | THT | Multiwatt-15 V (15p, 1.27 mm) | TDA7377 | media |
+| **Comparador doble LM393**<br><sub>`ic-lm393`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | LM393P, LM393N, LM2903 | muy alta |
+| **Comparador cuádruple LM339**<br><sub>`ic-lm339`</sub> | THT/SMD | DIP-14 (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (14p, 1.27 mm, filas 5.4 mm) | LM339N, LM2901N | alta |
+| **Comparador rápido LM311**<br><sub>`ic-lm311`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | LM311P, LM311N | media |
+| **Arreglo de 7 transistores Darlington ULN2003A**<br><sub>`ic-uln2003a`</sub> | THT/SMD | DIP-16 (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (16p, 1.27 mm, filas 5.4 mm) | ULN2003AN (DIP-16), ULN2003 SOP-16, ULN2004A (entradas 6–15 V CMOS) | muy alta |
+| **Doble puente H L293D**<br><sub>`ic-l293d`</sub> | THT | DIP-16 (16p, 2.54 mm, filas 7.62 mm) | L293D (con diodos), L293/L293B (1 A, sin diodos internos), SN754410 (1 A, mismo pinout) | muy alta |
+| **Arreglo de 8 transistores Darlington ULN2803A**<br><sub>`ic-uln2803a`</sub> | THT/SMD | DIP-18 (18p, 2.54 mm, filas 7.62 mm); SOIC-18 ancho (300 mil) (18p, 1.27 mm, filas 9.4 mm) | ULN2803APG (DIP-18), ULN2803 SOIC-18 | alta |
+| **Controlador de displays/matriz de LEDs MAX7219**<br><sub>`ic-max7219`</sub> | THT/SMD | DIP-24 angosto (300 mil) (24p, 2.54 mm, filas 7.62 mm); SOIC-24 ancho (300 mil) (24p, 1.27 mm, filas 9.4 mm) | MAX7219CNG (DIP-24), MAX7219CWG (SOIC-24) | alta |
+| **Doble puente H de 2 A L298N**<br><sub>`ic-l298n`</sub> | THT | Multiwatt-15 V (15p, 1.27 mm) | L298N (Multiwatt-15 V), L298HN (horizontal) | alta |
+| **Driver de medio puente alto/bajo IR2110**<br><sub>`ic-ir2110`</sub> | THT/SMD | DIP-14 (14p, 2.54 mm, filas 7.62 mm); SOIC-16 ancho (300 mil) (16p, 1.27 mm, filas 9.4 mm) | IR2110PBF (500 V), IR2113PBF (600 V, mismo pinout) | alta |
+| **Drivers de motor a pasos A4988 / DRV8825**<br><sub>`ic-a4988-drv8825`</sub> | SMD | Módulo StepStick/Pololu (2 filas x 8 pines) (16p, 2.54 mm, filas 12.7 mm); QFN-28 5x5 mm (chip A4988 ET) (28p, 0.5 mm); HTSSOP-28 PowerPAD (chip DRV8825 PWP) (28p, 0.65 mm) | Módulo A4988 (8–35 V, 1/16 paso), Módulo DRV8825 (8.2–45 V, 1/32 paso) | alta |
+| **Doble puente H MOSFET TB6612FNG (chip)**<br><sub>`ic-tb6612fng`</sub> | SMD | SSOP-24 (24p, 0.65 mm) | TB6612FNG (chip SSOP-24), Módulo TB6612FNG | media |
+| **Driver alto/bajo independiente IR2101**<br><sub>`ic-ir2101`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | IR2101PBF | media |
+| **Driver autooscilante de medio puente IR2153**<br><sub>`ic-ir2153`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | IR2153PBF, IR2153D (con diodo bootstrap interno) | media |
+| **Driver de medio puente con tiempo muerto IR2104**<br><sub>`ic-ir2104`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | IR2104PBF, IR2104SPBF | media |
+| **Driver de MOSFET 6 A TC4420 / TC4429**<br><sub>`ic-tc4420`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | TC4420CPA (no inversor), TC4429CPA (inversor) | media |
+| **Driver doble de MOSFET 1.5 A TC4426 / TC4427 / TC4428**<br><sub>`ic-tc4427`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | TC4426 (inversor), TC4427 (no inversor), TC4428 (mixto) | media |
+| **Registro de desplazamiento de potencia TPIC6B595**<br><sub>`ic-tpic6b595`</sub> | THT/SMD | DIP-20 (20p, 2.54 mm, filas 7.62 mm); SOIC-20 ancho (300 mil) (20p, 1.27 mm, filas 9.4 mm) | TPIC6B595N (DIP-20), TPIC6B595DW (SOIC-20) | media |
+| **Controladores de barra de LEDs LM3914 / LM3915 / LM3916**<br><sub>`ic-lm3914`</sub> | THT | DIP-18 (18p, 2.54 mm, filas 7.62 mm) | LM3914N-1 (lineal), LM3915N (logarítmico), LM3916 (VU) | alta |
+| **Convertidor A/D de 3½ dígitos ICL7107 / ICL7106**<br><sub>`ic-icl7107`</sub> | THT | DIP-40 ancho (600 mil) (40p, 2.54 mm, filas 15.24 mm) | ICL7107CPL (LED), ICL7106CPL (LCD), TC7107 / TC7106 | alta |
+| **Convertidor A/D de 8 bits ADC0804**<br><sub>`ic-adc0804`</sub> | THT | DIP-20 (20p, 2.54 mm, filas 7.62 mm) | ADC0804LCN | alta |
+| **Amplificador de transconductancia doble LM13700**<br><sub>`ic-lm13700`</sub> | THT/SMD | DIP-16 (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (16p, 1.27 mm, filas 5.4 mm) | LM13700N, NJM13700D | media |
+| **Codificador remoto HT12E**<br><sub>`ic-ht12e`</sub> | THT/SMD | DIP-18 (18p, 2.54 mm, filas 7.62 mm); SOP-20 (300 mil) (20p, 1.27 mm, filas 9.4 mm) | HT12E (DIP-18) | media |
+| **Codificador remoto PT2262**<br><sub>`ic-pt2262`</sub> | THT/SMD | DIP-18 (18p, 2.54 mm, filas 7.62 mm) | PT2262 (DIP-18) | media |
+| **Convertidor A/D de 8 bits y 8 canales ADC0808 / ADC0809**<br><sub>`ic-adc0808`</sub> | THT | DIP-28 ancho (600 mil) (28p, 2.54 mm, filas 15.24 mm) | ADC0808CCN, ADC0809CCN | media |
+| **Convertidor A/D SPI de 10 bits y 8 canales MCP3008**<br><sub>`ic-mcp3008`</sub> | THT/SMD | DIP-16 (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (16p, 1.27 mm, filas 5.4 mm) | MCP3008-I/P (DIP-16), MCP3208 (12 bits, mismo pinout) | media |
+| **Convertidor D/A de 8 bits DAC0808**<br><sub>`ic-dac0808`</sub> | THT | DIP-16 (16p, 2.54 mm, filas 7.62 mm) | DAC0808LCN, MC1408P8 | media |
+| **Convertidor voltaje-frecuencia LM331**<br><sub>`ic-lm331`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | LM331N, LM331AN | media |
+| **Decodificador de tonos LM567 / NE567**<br><sub>`ic-lm567`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | LM567CN, NE567N | media |
+| **Decodificador remoto HT12D**<br><sub>`ic-ht12d`</sub> | THT/SMD | DIP-18 (18p, 2.54 mm, filas 7.62 mm) | HT12D (DIP-18) | media |
+| **Decodificador remoto PT2272**<br><sub>`ic-pt2272`</sub> | THT/SMD | DIP-18 (18p, 2.54 mm, filas 7.62 mm) | PT2272-M4 (momentáneo, 4 datos), PT2272-L4 (retención, 4 datos), PT2272-T4 (biestable) | media |
+| **Generador de funciones ICL8038**<br><sub>`ic-icl8038`</sub> | THT | DIP-14 (14p, 2.54 mm, filas 7.62 mm) | ICL8038CCPD, 8038C (Steren) | media |
+| **Generador de funciones XR2206**<br><sub>`ic-xr2206`</sub> | THT | DIP-16 (16p, 2.54 mm, filas 7.62 mm) | XR2206CP | media |
+| **Grabador/reproductor de voz ISD1820**<br><sub>`ic-isd1820`</sub> | modulo | Módulo ISD1820 (chip COB en placa) (2.54 mm) | Módulo ISD1820 con micrófono y bocina | media |
+| **Cargador lineal de baterías Li-ion TP4056 (chip)**<br><sub>`ic-tp4056`</sub> | SMD | ESOP-8 / SOP-8 con pad térmico (8p, 1.27 mm, filas 5.4 mm) | TP4056 (chip ESOP-8), Módulo TP4056 con protección DW01A + FS8205A | alta |
+| **Protector de batería Li-ion DW01A**<br><sub>`ic-dw01a`</sub> | SMD | SOT-23-6 (6p, 0.95 mm) | DW01A (SOT-23-6) | media |
+| **Convertidor de niveles RS-232 MAX232 / MAX3232**<br><sub>`ic-max232`</sub> | THT/SMD | DIP-16 (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (16p, 1.27 mm, filas 5.4 mm) | MAX232 (5 V, capacitores 1 µF), MAX232A (0.1 µF), MAX3232 (3–5.5 V, 0.1 µF) | alta |
+| **Convertidor USB a serie CH340G**<br><sub>`ic-ch340g`</sub> | SMD | SOIC-16 (16p, 1.27 mm, filas 5.4 mm) | CH340G (cristal externo), CH340C (sin cristal) | alta |
+| **Convertidor USB a UART FT232RL**<br><sub>`ic-ft232rl`</sub> | SMD | SSOP-28 (28p, 0.65 mm) | FT232RL (SSOP-28), Módulos FTDI USB-TTL | alta |
+| **Expansor de E/S I2C de 8 bits PCF8574**<br><sub>`ic-pcf8574`</sub> | THT/SMD | DIP-16 (16p, 2.54 mm, filas 7.62 mm); SOIC-16 ancho (300 mil) (16p, 1.27 mm, filas 9.4 mm) | PCF8574P (DIP-16), PCF8574T (SO-16), PCF8574A (direcciones 0x38–0x3F) | alta |
+| **Transceptor RS-485 MAX485**<br><sub>`ic-max485`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | MAX485CPA (DIP-8), MAX485ESA (SOIC-8), MAX3485 (3.3 V), SN75176 (mismo pinout) | alta |
+| **Controlador CAN con interfaz SPI MCP2515**<br><sub>`ic-mcp2515`</sub> | THT/SMD | DIP-18 (18p, 2.54 mm, filas 7.62 mm); SOIC-18 ancho (300 mil) (18p, 1.27 mm, filas 9.4 mm) | MCP2515-I/P (DIP-18), MCP2515-I/SO (SOIC-18) | media |
+| **Controlador Ethernet SPI ENC28J60**<br><sub>`ic-enc28j60`</sub> | THT/SMD | DIP-28 angosto (300 mil) (28p, 2.54 mm, filas 7.62 mm); SOIC-28 ancho (300 mil) (28p, 1.27 mm, filas 9.4 mm) | ENC28J60-I/SP (DIP-28), Módulo ENC28J60 con RJ45 (HR911105A) | media |
+| **Convertidor USB a UART CP2102**<br><sub>`ic-cp2102`</sub> | SMD | QFN-28 5x5 mm (28p, 0.5 mm) | CP2102 (QFN-28), CP2102N (QFN-24/28, pinout distinto) | media |
+| **Expansor de E/S I2C de 16 bits MCP23017**<br><sub>`ic-mcp23017`</sub> | THT/SMD | DIP-28 angosto (300 mil) (28p, 2.54 mm, filas 7.62 mm); SOIC-28 ancho (300 mil) (28p, 1.27 mm, filas 9.4 mm) | MCP23017-E/SP (DIP-28), MCP23S17 (SPI) | media |
+| **Transceptor CAN TJA1050 / MCP2551**<br><sub>`ic-tja1050`</sub> | THT/SMD | SOIC-8 (8p, 1.27 mm, filas 5.4 mm); DIP-8 (8p, 2.54 mm, filas 7.62 mm) | TJA1050T (SO-8), MCP2551-I/P (DIP-8) | media |
 | **Contador de décadas Johnson con 10 salidas decodificadas CD4017**<br><sub>`ic-cd4017`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | CD4017BE (DIP, TI), HEF4017BP (DIP, NXP/Nexperia), MC14017B (onsemi), CD4017BM (SOIC), 74HC4017 (2–6 V, mismo pinout) | muy alta |
 | **Cuádruple compuerta AND de 2 entradas CD4081**<br><sub>`ic-cd4081`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | CD4081BE (DIP, TI), HEF4081BP (DIP, NXP/Nexperia), MC14081B (onsemi), CD4081BM (SOIC) | muy alta |
 | **Cuádruple compuerta NAND de 2 entradas CD4011**<br><sub>`ic-cd4011`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | CD4011BE (DIP, TI), HEF4011BP (DIP, NXP/Nexperia), MC14011B (onsemi), CD4011BM (SOIC) | muy alta |
@@ -415,6 +486,11 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Séxtuple flip-flop D con clear 74174**<br><sub>`ic-74xx174`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | 74LS174, 74HC174, SN74LS174N (DIP), SN74HC174N (DIP), 74HC174D (SOIC) | media |
 | **Triple compuerta NOR de 3 entradas 7427**<br><sub>`ic-74xx27`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | 74LS27, 74HC27, SN74LS27N (DIP), SN74HC27N (DIP), 74HC27D (SOIC) | media |
 | **Unidad aritmético-lógica (ALU) de 4 bits 74181**<br><sub>`ic-74xx181`</sub> | THT/SMD | DIP-24 (PDIP, 600 mil) (24p, 2.54 mm, filas 15.24 mm) | 74LS181 | media |
+| **Memorias EEPROM I2C 24Cxx / 24LCxxx**<br><sub>`ic-24cxx`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | 24C02 (256 B), 24C04, 24C08, 24C16 (2 KB), 24C32 (4 KB), 24C64, 24LC256 (32 KB), 24LC512 (64 KB) | alta |
+| **EEPROM paralela AT28C256 (32K x 8)**<br><sub>`ic-at28c256`</sub> | THT | DIP-28 ancho (600 mil) (28p, 2.54 mm, filas 15.24 mm) | AT28C256 (32 KB), AT28C64 (8 KB) | media |
+| **EPROM borrable por UV 27C256**<br><sub>`ic-27c256`</sub> | THT | DIP-28 ancho (600 mil) (28p, 2.54 mm, filas 15.24 mm) | 27C256 (32 KB), 27C512 (64 KB: pin 1 = A15, pin 22 = /OE/VPP), 27C64 (8 KB) | media |
+| **Memoria EEPROM Microwire 93C46**<br><sub>`ic-93c46`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | 93C46 (1 Kbit), 93C56 (2 Kbit), 93C66 (4 Kbit), 93C86 (16 Kbit) | media |
+| **Memoria flash SPI W25Qxx / EEPROM SPI 25LCxxx**<br><sub>`ic-w25q32`</sub> | THT/SMD | SOIC-8 (150 mil, sufijo SN) (8p, 1.27 mm, filas 5.4 mm); SOIC-8 ancho (208 mil, sufijo SS) (8p, 1.27 mm); DIP-8 (8p, 2.54 mm, filas 7.62 mm) | W25Q16 (2 MB), W25Q32 (4 MB), W25Q64 (8 MB), W25Q128 (16 MB), 25LC256 (EEPROM 32 KB) | media |
 | **Microcontrolador AVR ATmega328P-PU (28 pines, el del Arduino UNO)**<br><sub>`ic-atmega328p`</sub> | THT/SMD | DIP-28 (PDIP, 300 mil) (28p, 2.54 mm, filas 7.62 mm); TQFP-32 (32p, 0.8 mm); QFN/MLF-32 (32p, 0.5 mm) | ATmega328P-PU (DIP-28) sin bootloader, ATmega328P-PU con bootloader Arduino precargado, ATmega328P-AU (TQFP-32), ATmega168A/88PA (pin-compatibles, menos memoria) | muy alta |
 | **Microcontrolador AVR ATtiny85-20PU (8 pines)**<br><sub>`ic-attiny85`</sub> | THT/SMD | DIP-8 (PDIP, 300 mil) (8p, 2.54 mm, filas 7.62 mm); SOIC-8 ancho (208 mil, -SU) (8p, 1.27 mm); QFN/MLF-20 (20p, 0.5 mm) | ATtiny85-20PU (DIP-8), ATtiny85-20SU (SOIC-8 ancho), ATtiny85V-10PU | muy alta |
 | **Microcontrolador AVR ATmega32A-PU (40 pines)**<br><sub>`ic-atmega32a`</sub> | THT/SMD | DIP-40 (PDIP, 600 mil) (40p, 2.54 mm, filas 15.24 mm); TQFP-44 (44p, 0.8 mm); QFN/MLF-44 (44p, 0.5 mm) | ATmega32A-PU (DIP-40) | alta |
@@ -448,6 +524,38 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Microcontrolador PIC16F690 (20 pines)**<br><sub>`ic-pic16f690`</sub> | THT/SMD | DIP-20 (PDIP, 300 mil) (20p, 2.54 mm, filas 7.62 mm); SOIC-20 ancho (300 mil) (20p, 1.27 mm) | PIC16F690-I/P (DIP-20) | media |
 | **Microcontrolador PIC16F873A (28 pines)**<br><sub>`ic-pic16f873a`</sub> | THT/SMD | DIP-28 (PDIP, 300 mil) (28p, 2.54 mm, filas 7.62 mm); SOIC-28 ancho (300 mil) (28p, 1.27 mm) | PIC16F873A-I/SP (DIP-28 angosto) | media |
 | **Microcontrolador PIC18F4520 / PIC18F452 (40 pines)**<br><sub>`ic-pic18f4520`</sub> | THT/SMD | DIP-40 (PDIP, 600 mil) (40p, 2.54 mm, filas 15.24 mm); TQFP-44 (44p, 0.8 mm); PLCC-44 / QFN-44 (44p) | PIC18F4520-I/P (DIP-40), PIC18F452-I/P (obsoleto, aún en tiendas) | media |
+| **Referencia de voltaje ajustable TL431**<br><sub>`ic-tl431`</sub> | THT/SMD | TO-92 (3p, 1.27 mm); SOT-23-3 (3p, 0.95 mm) | TL431A (TO-92), TL431 SOT-23 | alta |
+| **Referencia de micropotencia LM385 (1.2 V / 2.5 V)**<br><sub>`ic-lm385`</sub> | THT/SMD | TO-92 (3p, 1.27 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | LM385Z-1.2, LM385Z-2.5 | media |
+| **Referencia de voltaje LM336 (2.5 V / 5 V)**<br><sub>`ic-lm336`</sub> | THT | TO-92 (3p, 1.27 mm) | LM336Z-2.5, LM336Z-5.0 | media |
+| **Controlador PWM en modo corriente UC3842 / UC3843 / UC3845**<br><sub>`ic-uc3842`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | UC3842 (UVLO 16/10 V, 100 %), UC3843 (UVLO 8.4/7.6 V, 100 %), UC3844 (16/10 V, 50 %), UC3845 (8.4/7.6 V, 50 %) | alta |
+| **Controlador PWM TL494**<br><sub>`ic-tl494`</sub> | THT/SMD | DIP-16 (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (16p, 1.27 mm, filas 5.4 mm) | TL494CN, KA7500B (equivalente) | alta |
+| **Convertidor DC-DC MC34063 (buck/boost/inversor)**<br><sub>`ic-mc34063`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | MC34063AP (DIP-8), MC34063A SOP-8 | alta |
+| **Regulador conmutado reductor LM2596 (3 A)**<br><sub>`ic-lm2596`</sub> | THT/SMD | TO-220-5 (5p, 1.7 mm); TO-263-5 (D2PAK-5) (5p, 1.7 mm) | LM2596T-ADJ (TO-220-5), LM2596S-ADJ, LM2596S-5.0, LM2596S-3.3, LM2596S-12 | alta |
+| **Controlador PWM SG3525**<br><sub>`ic-sg3525`</sub> | THT/SMD | DIP-16 (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (16p, 1.27 mm, filas 5.4 mm) | SG3525AN | media |
+| **Convertidor elevador MT3608 (chip SOT-23-6)**<br><sub>`ic-mt3608`</sub> | SMD | SOT-23-6 (6p, 0.95 mm) | MT3608 (marcado B628) | media |
+| **Convertidor elevador XL6009 (chip TO-263-5)**<br><sub>`ic-xl6009`</sub> | SMD | TO-263-5 (D2PAK-5) (5p, 1.7 mm) | XL6009E1 | media |
+| **Convertidor reductor 5 A XL4015 (chip TO-263-5)**<br><sub>`ic-xl4015`</sub> | SMD | TO-263-5 (D2PAK-5) (5p, 1.7 mm) | XL4015E1 | media |
+| **Inversor de voltaje por bomba de carga ICL7660**<br><sub>`ic-icl7660`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | ICL7660 (1.5–10 V), ICL7660S (hasta 12 V), MAX1044 | media |
+| **Reguladores conmutados reductores LM2576 (3 A) / LM2575 (1 A)**<br><sub>`ic-lm2576-lm2575`</sub> | THT/SMD | TO-220-5 (5p, 1.7 mm); TO-263-5 (D2PAK-5) (5p, 1.7 mm) | LM2575-5.0 / -ADJ (1 A), LM2576-5.0 / -12 / -ADJ (3 A), LM2576HV (hasta 60 V) | media |
+| **Regulador ajustable positivo LM317 (TO-220)**<br><sub>`ic-lm317t`</sub> | THT/SMD | TO-220-3 (3p, 2.54 mm); SOT-223 (4p, 2.3 mm, filas 6.3 mm) | LM317T (TO-220, 1.5 A), LM317 en SOT-223 / D2PAK | muy alta |
+| **Regulador LDO AMS1117 / LM1117 / LD1117 (3.3 V, 5 V, ADJ)**<br><sub>`ic-ams1117`</sub> | THT/SMD | SOT-223 (4p, 2.3 mm, filas 6.3 mm); TO-252 (DPAK) (3p, 2.28 mm); TO-220-3 (3p, 2.54 mm) | AMS1117-3.3, AMS1117-5.0, AMS1117-ADJ, LM1117-3.3, LD1117V33 (TO-220), LD1117AS33 (SOT-223) | muy alta |
+| **Reguladores positivos fijos 78xx (TO-220)**<br><sub>`ic-lm78xx`</sub> | THT/SMD | TO-220-3 (3p, 2.54 mm); TO-252 (DPAK) (3p, 2.28 mm) | 7805 (5 V), 7806 (6 V), 7808 (8 V), 7809 (9 V), 7812 (12 V), 7815 (15 V), 7824 (24 V) | muy alta |
+| **Regulador ajustable negativo LM337 (TO-220)**<br><sub>`ic-lm337`</sub> | THT | TO-220-3 (3p, 2.54 mm) | LM337T | alta |
+| **Reguladores negativos fijos 79xx (TO-220)**<br><sub>`ic-lm79xx`</sub> | THT | TO-220-3 (3p, 2.54 mm) | 7905 (−5 V), 7908 (−8 V), 7912 (−12 V), 7915 (−15 V), 7924 (−24 V) | alta |
+| **Reguladores positivos fijos 78Lxx de baja corriente (TO-92)**<br><sub>`ic-78lxx`</sub> | THT/SMD | TO-92 (3p, 1.27 mm); SOT-89 (3p, 1.5 mm) | 78L05 (5 V), 78L09, 78L12, 78L15, 78L33 (3.3 V) | alta |
+| **Regulador ajustable de baja corriente LM317L (TO-92)**<br><sub>`ic-lm317l`</sub> | THT/SMD | TO-92 (3p, 1.27 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | LM317LZ (TO-92), LM317LCLPR, LM317LIDR (SOIC-8) | media |
+| **Regulador de voltaje de precisión LM723 (DIP-14)**<br><sub>`ic-lm723`</sub> | THT/SMD | DIP-14 (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (14p, 1.27 mm, filas 5.4 mm) | LM723CN, UA723CN | media |
+| **Regulador LDO 1 A LM2940**<br><sub>`ic-lm2940`</sub> | THT/SMD | TO-220-3 (3p, 2.54 mm); TO-252 (DPAK) (3p, 2.28 mm) | LM2940CT-5.0, LM2940CT-12 | media |
+| **Regulador LDO de bajo consumo HT7333 / HT7533**<br><sub>`ic-ht7333`</sub> | THT/SMD | TO-92 (3p, 1.27 mm); SOT-89 (3p, 1.5 mm) | HT7333 (3.3 V, entrada ≤12 V), HT7533 (3.3 V, entrada ≤24 V), HT7350 / HT7550 (5 V) | media |
+| **Reguladores ajustables de alta corriente LM350 (3 A) / LM338 (5 A)**<br><sub>`ic-lm350-lm338`</sub> | THT | TO-220-3 (3p, 2.54 mm) | LM350T (3 A), LM338T (5 A) | media |
+| **Reguladores negativos fijos 79Lxx de baja corriente (TO-92)**<br><sub>`ic-79lxx`</sub> | THT | TO-92 (3p, 1.27 mm) | 79L05 (−5 V), 79L12 (−12 V), 79L15 (−15 V) | media |
+| **Reloj de tiempo real de precisión DS3231**<br><sub>`ic-ds3231`</sub> | SMD | SOIC-16 ancho (300 mil) (16p, 1.27 mm, filas 9.4 mm) | DS3231SN (SO-16), Módulo DS3231 con AT24C32 | alta |
+| **Reloj de tiempo real DS1307**<br><sub>`ic-ds1307`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | DS1307+ (DIP-8), DS1307Z (SOIC-8), Módulo Tiny RTC con 24C32 | alta |
+| **Reloj de tiempo real DS1302 (3 hilos)**<br><sub>`ic-ds1302`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | DS1302+ (DIP-8), Módulo DS1302 | media |
+| **Reloj de tiempo real PCF8563**<br><sub>`ic-pcf8563`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | PCF8563P (DIP-8), PCF8563T (SO-8) | media |
+| **Temporizador NE555**<br><sub>`ic-ne555`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | NE555P (TI), NE555N, NE555V (Steren), LM555CN, NE555 SMD (SOIC-8) | muy alta |
+| **Temporizador doble NE556**<br><sub>`ic-ne556`</sub> | THT/SMD | DIP-14 (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (14p, 1.27 mm, filas 5.4 mm) | NE556N, NE556P | alta |
+| **Temporizador CMOS TLC555 / ICM7555**<br><sub>`ic-tlc555`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | TLC555CP, ICM7555IPA, LMC555CN | media |
 
 <a id="placas_desarrollo"></a>
 ## Placas de desarrollo (Arduino, ESP, Raspberry Pi) y programadores
