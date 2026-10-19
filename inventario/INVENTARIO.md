@@ -2,7 +2,7 @@
 
 Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 
-**Total: 503 componentes** en 11 categorías.
+**Total: 665 componentes** en 15 categorías.
 
 | Categoría | Elementos |
 |---|---:|
@@ -13,6 +13,10 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | [Semiconductores discretos (diodos, transistores, tiristores)](#semiconductores_discretos) | 86 |
 | [Optoelectrónica (LEDs, optoacopladores, displays de LED)](#optoelectronica) | 30 |
 | [Sensores](#sensores) | 112 |
+| [Electromecánicos (botones, interruptores, relevadores)](#electromecanicos) | 41 |
+| [Conectores, bases y portapilas](#conectores) | 75 |
+| [Cables y alambres](#cables) | 23 |
+| [Mecánicos (disipadores, separadores, gabinetes)](#mecanicos) | 23 |
 | [Materiales para fabricar PCB](#materiales_pcb) | 37 |
 | [Soldadura y consumibles](#soldadura_y_consumibles) | 29 |
 | [Herramientas e instrumentos](#herramientas) | 70 |
@@ -393,6 +397,192 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Sensor de temperatura y humedad HTU21D (módulo GY-21)**<br><sub>`sen-htu21d`</sub> | modulo | Módulo con header 1x4 (4p, 2.54 mm) | HTU21D, Si7021, SHT21 | media |
 | **Sensor de temperatura y humedad SHT31 (módulo GY-SHT31-D)**<br><sub>`sen-sht31`</sub> | modulo | Módulo con header 1x6 (6p, 2.54 mm) | SHT31, SHT30 | media |
 | **Sensor de temperatura y humedad SHT40 (IC SMD DFN-4)**<br><sub>`sen-sht40`</sub> | SMD | DFN-4 (4p) | SHT40-AD1B (0x44) | media |
+
+<a id="electromecanicos"></a>
+## Electromecánicos (botones, interruptores, relevadores)
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Interruptor de botón con enclavamiento 8x8 / 8.5x8.5 mm (6 pines)**<br><sub>`emc-selflock-8x8`</sub> | THT | THT 8x8 mm, 6 pines (2 filas de 3) (6p) | 8x8 mm, 8.5x8.5 mm, Con o sin capuchón | alta |
+| **Interruptor de enclavamiento miniatura 7x7 / 5.8x5.8 mm (6 pines)**<br><sub>`emc-selflock-7x7`</sub> | THT | THT 7x7 mm, 6 pines (6p); THT 5.8x5.8 mm, 6 pines (6p) | 7x7 con retención, 7x7 momentáneo, 5.8x5.8 | media |
+| **Botón pulsador de panel miniatura (PBS-110 / PBS-11A / PBS-11B / PBS-33B)**<br><sub>`emc-boton-panel-mini-pbs`</sub> | panel | Panel, 2 terminales de soldar (2p) | NA (OFF-(ON)) rojo, NA negro, NA verde/amarillo/azul/blanco, NC ((ON)-OFF), Botón cuadrado NA | muy alta |
+| **Botón metálico antivandálico con LED (12/16/19/22 mm)**<br><sub>`emc-boton-metalico-led`</sub> | panel | Panel Ø16 mm, 4–5 terminales (5p); Panel Ø19 mm (5p); Panel Ø22 mm (5p) | Ø12 mm, Ø16 mm, Ø19 mm, Ø22 mm, LED 3–6 V / 12 V / 24 V / 110–220 V, Momentáneo o con retención, Anillo rojo/azul/verde/blanco | alta |
+| **Botón arcade 24/30 mm con microswitch**<br><sub>`emc-boton-arcade`</sub> | panel | Panel 30 mm (3p); Panel 24 mm (3p) | 24 mm, 30 mm, Con LED 5 V/12 V, Colores surtidos | media |
+| **Botón de paro de emergencia tipo hongo**<br><sub>`emc-boton-paro-emergencia`</sub> | panel | Panel 22 mm (estándar industrial) (4p); Panel 16 mm (mini) (2p) | 22 mm 1NC, 22 mm 1NA+1NC, 16 mm, Con caja amarilla | media |
+| **Botón pulsador industrial 22 mm (LA38 / XB2)**<br><sub>`emc-boton-industrial-22mm`</sub> | panel | Panel 22 mm, bloque de tornillo (4p) | Verde (arranque), Rojo (paro), Amarillo, Negro, Con lámpara 24 V / 110–220 V | media |
+| **Botón pulsador táctil 6x6 mm THT (4 pines)**<br><sub>`emc-tact-6x6-tht`</sub> | THT | THT 6x6 mm, 4 pines (4p, 4.5 mm, filas 6.5 mm) | Altura 4.3 mm, 5 mm, 6 mm, 7 mm, 8 mm, 9 mm, 10 mm, 11 mm, … (+4) | muy alta |
+| **Botón táctil 12x12 mm THT con capuchón**<br><sub>`emc-tact-12x12`</sub> | THT | THT 12x12 mm, 4 pines (4p, 5.0 mm, filas 12.5 mm) | 12x12x7.3 mm, 12x12x4.3 mm, 12x12x8 mm, Capuchón rojo/azul/amarillo/verde/negro/blanco/gris | muy alta |
+| **Botón táctil 6x6 mm SMD (4 pads)**<br><sub>`emc-tact-6x6-smd`</sub> | SMD | SMD 6x6 mm, 4 pads (4p, 4.5 mm) | 6x6x3.1 mm, 6x6x4.3 mm, 6x6x5 mm, 6.1x6.1 mm (SMDTS-FS66T-C-A) | alta |
+| **Botón táctil 3x6 mm de 2 pines (THT/SMD)**<br><sub>`emc-tact-3x6-2p`</sub> | THT/SMD | SMD 3x6 mm, 2 pads (2p); THT 3x6 mm, 2 pines (2p) | 3x6x2.5 mm SMD, 3x6x4.3 mm THT, 3x6x5 mm THT | media |
+| **Botón táctil SMD miniatura 3x4 / 4x4 / 5.1x5.1 mm**<br><sub>`emc-tact-smd-3x4`</sub> | SMD | SMD 3x4 mm, 4 pads (4p); SMD 5.1x5.1 mm, 4 pads (TS-1187A) (4p) | 3x4x2 mm, 4x4x1.5 mm, 5.1x5.1x1.5 mm, 3x6x2.5 mm (2 pads) | media |
+| **DIP switch de 1 a 12 posiciones (paso 2.54 mm)**<br><sub>`emc-dip-switch`</sub> | THT | DIP-2N (N posiciones) (2.54 mm, filas 7.62 mm); SMD (gull-wing) 2.54 mm (2.54 mm) | 1 posición, 2 posiciones, 3, 4, 5, 6, 8, 10, … (+2) | muy alta |
+| **Encoder rotativo incremental EC11 (5 pines, con botón)**<br><sub>`emc-encoder-ec11`</sub> | THT | THT, 3+2 pines + 2 patas de fijación (5p, 2.5 mm) | Eje 15 mm, Eje 20 mm, Eje 25 mm, Eje 30 mm, Eje D o estriado 18 dientes, 20 pulsos / 20 detenes, 15 pulsos / 30 detenes | alta |
+| **Interruptor de balancín KCD1 (2 o 3 pines)**<br><sub>`emc-rocker-kcd1`</sub> | panel | Panel a presión, 2 terminales (KCD1-101) (2p); Panel a presión, 3 terminales (KCD1-102/103) (3p) | KCD1-101 SPST negro, Rojo, Blanco, KCD1-102 SPDT, Versión redonda Ø20 mm | muy alta |
+| **Interruptor de balancín KCD3 / KCD4 con luz (127 V)**<br><sub>`emc-rocker-kcd3-kcd4-luz`</sub> | panel | Panel a presión, 3 terminales (SPST iluminado) (3p); Panel a presión, 4 terminales (DPST iluminado) (4p) | KCD3 rojo 3 pines, KCD3 4 pines DPST, KCD4, Lámpara 127 V / 250 V / 12 V | alta |
+| **Interruptor deslizable SS12D00 (SPDT, 3 pines)**<br><sub>`emc-slide-ss12d00`</sub> | THT | THT vertical, 3 pines en línea (3p, 2.54 mm) | SS12D00G2, SS12D00G3, SS12D00G4, SS12D00G5 | muy alta |
+| **Interruptor deslizable SS22 / SS-22F (DPDT, 6 pines)**<br><sub>`emc-slide-ss22`</sub> | THT | THT, 6 pines (2 filas de 3) (6p) | SS22F32, SS-22D07 (palanca 4–7 mm), Vertical / horizontal (90°) | alta |
+| **Interruptor deslizable SMD miniatura MSK-12C02**<br><sub>`emc-slide-msk12c02`</sub> | SMD | SMD, 3 pads de señal + patas de fijación (7p, 1.5 mm) | MSK-12C02, MSK-12C01 | media |
+| **Interruptor de palanca MTS-102 (SPDT ON-ON, 3 terminales)**<br><sub>`emc-toggle-mts102`</sub> | panel | Panel, 3 terminales de soldar (3p, 4.7 mm) | MTS-102 (ON-ON), Versión PCB recta, Versión PCB 90° (MTS-102-C4) | muy alta |
+| **Interruptor de palanca MTS-101 (SPST ON-OFF, 2 terminales)**<br><sub>`emc-toggle-mts101`</sub> | panel | Panel, 2 terminales de soldar (2p, 4.7 mm) | MTS-101 (ON-OFF) | alta |
+| **Interruptor de palanca MTS-103 (SPDT ON-OFF-ON, 3 terminales)**<br><sub>`emc-toggle-mts103`</sub> | panel | Panel, 3 terminales de soldar (3p, 4.7 mm) | MTS-103 (ON-OFF-ON), MTS-113 / MTS-123 (momentáneo (ON)-OFF-(ON), según marca) | alta |
+| **Interruptor de palanca MTS-202 (DPDT ON-ON, 6 terminales)**<br><sub>`emc-toggle-mts202`</sub> | panel | Panel, 6 terminales (2 filas de 3) (6p, 4.7 mm, filas 4.7 mm) | MTS-201 (DPST ON-OFF), MTS-202 (DPDT ON-ON) | alta |
+| **Interruptor de palanca MTS-203 (DPDT ON-OFF-ON, 6 terminales)**<br><sub>`emc-toggle-mts203`</sub> | panel | Panel, 6 terminales (2 filas de 3) (6p, 4.7 mm, filas 4.7 mm) | MTS-203 (ON-OFF-ON), MTS-223 ((ON)-OFF-(ON) momentáneo) | media |
+| **Interruptor de palanca tipo avión con tapa de seguridad 12 V 20 A (con LED)**<br><sub>`emc-toggle-avion-12v`</sub> | panel | Panel 12 mm, 3 terminales faston (3p) | Rojo, Azul, Verde, Amarillo | media |
+| **Micro switch / interruptor de límite KW11 (palanca, rodillo o botón)**<br><sub>`emc-microswitch-kw11`</sub> | panel | Cuerpo tipo V (KW11), 3 terminales (3p) | Sin palanca (botón), Palanca corta, Palanca larga, Palanca con rodillo, Terminales faston / soldar / PCB | muy alta |
+| **Micro switch miniatura KW10 / KW12 (tipo SS, 20 x 10 mm)**<br><sub>`emc-microswitch-kw10-mini`</sub> | THT | Cuerpo tipo SS, 3 terminales (3p) | Botón, Palanca recta, Palanca con rodillo, Palanca de arco | alta |
+| **Interruptor de límite industrial (ME-8104 / ME-8108 / TZ-8108)**<br><sub>`emc-limit-switch-industrial`</sub> | panel | Caja metálica, 4 terminales de tornillo (4p) | ME-8104 (palanca rodillo), ME-8108 (rodillo ajustable), ME-8107 (varilla) | media |
+| **Reed switch de vidrio (ampolla 2 x 14 mm)**<br><sub>`emc-reed-switch`</sub> | THT | Axial (ampolla de vidrio) (2p) | 2x14 mm NA, 2.5x14 mm, 3x20 mm, Versión NC / conmutada (3 terminales) | alta |
+| **Relevador Songle SRD-05VDC-SL-C (bobina 5 V, 10 A)**<br><sub>`emc-relevador-srd-05vdc`</sub> | THT | THT 5 pines (cuerpo T73) (5p, filas 12.0 mm) | SRD-05VDC-SL-C, SRD-03VDC, SRD-06VDC, SRD-09VDC | muy alta |
+| **Relevador automotriz 12 V 30/40 A (4 o 5 terminales)**<br><sub>`emc-relevador-automotriz`</sub> | panel | Cubo ISO mini, terminales faston (5p) | 12 V 30 A 4 pines, 12 V 40 A 5 pines, 24 V, Con base y cables | alta |
+| **Relevador Songle SRD-12VDC-SL-C (bobina 12 V, 10 A)**<br><sub>`emc-relevador-srd-12vdc`</sub> | THT | THT 5 pines (cuerpo T73) (5p, filas 12.0 mm) | SRD-12VDC-SL-C, SRD-24VDC-SL-C | alta |
+| **Relevador de 2 polos HK19F (DPDT, 8 pines tipo DIP)**<br><sub>`emc-relevador-hk19f-dpdt`</sub> | THT | THT 8 pines (patrón DIP) (8p, 2.54 mm, filas 7.62 mm) | HK19F-DC5V-SHG, HK19F-DC12V-SHG, HK19F-DC3V-SHG | media |
+| **Relevador de estado sólido de panel SSR-25DA (tipo Fotek)**<br><sub>`emc-ssr-fotek-25da`</sub> | panel | Cuerpo estándar 'hockey puck', 4 tornillos (4p) | SSR-10DA, SSR-25DA, SSR-40DA, SSR-25AA (control AC), SSR-25DD (salida DC) | media |
+| **Relevador miniatura de señal (Omron G5V-1, Hongfa HFD2/HFD23, similares)**<br><sub>`emc-relevador-senal-mini`</sub> | THT | G5V-1 (1 Form C) (6p, 2.54 mm); HFD2 / G5V-2 (2 Form C) (8p, 2.54 mm, filas 7.62 mm) | 5 VCC, 12 VCC, 3 VCC, 24 VCC | media |
+| **Relevador reed SIP (SIP-1A05 / SIP-1A12)**<br><sub>`emc-relevador-reed-sip`</sub> | THT | SIP-4 (rejilla 2.54) (4p, 2.54 mm) | SIP-1A05 (5 V), SIP-1A12 (12 V), SIP-1A24 | media |
+| **Selector rotatorio de obleas (1P12T, 2P6T, 3P4T, 4P3T)**<br><sub>`emc-selector-rotatorio`</sub> | panel | Panel, terminales en círculo (13p) | 1 polo 12 posiciones, 2 polos 6 posiciones, 3 polos 4 posiciones, 4 polos 3 posiciones | media |
+| **Teclado matricial de membrana 4x4 (16 teclas, 8 pines)**<br><sub>`emc-teclado-membrana-4x4`</sub> | modulo | Cinta con conector hembra 1x8, paso 2.54 (8p, 2.54 mm) | 4x4 negro/azul, 4x4 con teclas de colores | muy alta |
+| **Teclado matricial de membrana 4x3 (12 teclas, 7 pines)**<br><sub>`emc-teclado-membrana-4x3`</sub> | modulo | Cinta con conector hembra 1x7, paso 2.54 (7p, 2.54 mm) | 4x3 negro | alta |
+| **Teclado de 16 botones táctiles 4x4 en placa**<br><sub>`emc-teclado-botones-4x4-placa`</sub> | modulo | Header macho 1x8, paso 2.54 (8p, 2.54 mm) | 4x4 matricial, Versión 1 pin analógico (divisor resistivo) | media |
+| **Teclado de membrana 1x4 (4 teclas, 5 pines)**<br><sub>`emc-teclado-membrana-1x4`</sub> | modulo | Cinta con conector hembra 1x5, paso 2.54 (5p, 2.54 mm) | 1x4, 1x5, 2x4 (8 teclas) | media |
+
+<a id="conectores"></a>
+## Conectores, bases y portapilas
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Jack DC 5.5 x 2.1 mm para PCB (DC-005, 3 pines)**<br><sub>`con-dc-jack-pcb-2.1`</sub> | THT | DC-005 horizontal, 3 pines tipo pala (3p) | DC-005 negro 2.1 mm, DC-005 2.5 mm, Versión SMD, Versión con tuerca (panel) | muy alta |
+| **Plug DC macho 5.5 x 2.1 / 2.5 mm (para soldar o con cable / bornera)**<br><sub>`con-dc-plug`</sub> | n/a | — | 5.5x2.1 para soldar, 5.5x2.5, Con bornera de tornillo, Cable con plug 1 m, Adaptadores 3.5x1.35, 4.0x1.7 | muy alta |
+| **Jack DC de panel 5.5 x 2.1 / 2.5 mm con tuerca (DC-022 / DC-099)**<br><sub>`con-dc-jack-panel`</sub> | panel | Panel roscado (3p) | DC-022 plástico, DC-099 metálico, 5.5x2.1, 5.5x2.5 | alta |
+| **Jack DC 5.5 x 2.5 mm para PCB**<br><sub>`con-dc-jack-pcb-2.5`</sub> | THT | Horizontal 3 pines (3p) | 5.5 x 2.5 mm | media |
+| **Conector RCA hembra para PCB y de panel**<br><sub>`con-rca-hembra`</sub> | THT | RCA PCB 90° sencillo (3p); RCA de panel con tuerca (2p) | PCB sencillo, PCB doble (rojo/blanco), PCB triple (amarillo/blanco/rojo), Panel metálico, Panel dorado | alta |
+| **Jack de audio 3.5 mm de panel (con tuerca)**<br><sub>`con-jack-3.5-panel`</sub> | panel | Panel roscado (3p) | Estéreo metálico, Estéreo plástico, Mono | alta |
+| **Jack de audio 3.5 mm estéreo para PCB (PJ-307 / PJ-320 / PJ-313)**<br><sub>`con-jack-3.5-pcb`</sub> | THT/SMD | PJ-307 THT, 5 pines (5p); PJ-320 (A=SMD, D=THT), 4 pines (4p) | PJ-307 5P, PJ-320A 4P SMD, PJ-320D 4P THT, PJ-313 5P, Mono 3 pines | alta |
+| **Jack de audio 6.3 mm (1/4") mono/estéreo, panel y PCB**<br><sub>`con-jack-6.3`</sub> | panel | Panel tipo abierto (open frame) (3p); PCB encapsulado (5p) | Mono, Estéreo, Con switch, Panel metálico, PCB | alta |
+| **Plug de audio 3.5 mm macho para soldar (mono/estéreo)**<br><sub>`con-plug-3.5`</sub> | n/a | — | Mono TS, Estéreo TRS, TRRS (4 polos, micrófono), Metálico, Plástico | alta |
+| **Plug RCA macho para soldar**<br><sub>`con-rca-macho`</sub> | n/a | — | Plástico rojo/negro, Metálico, Dorado | alta |
+| **Conector XLR 3 pines (macho y hembra)**<br><sub>`con-xlr`</sub> | panel | XLR de panel (tipo D) (3p); XLR de cable (3p) | Macho de cable, Hembra de cable, Macho de panel, Hembra de panel, XLR 4/5 pines (DMX) | media |
+| **Base / socket para CI DIP de lámina (6 a 40 pines)**<br><sub>`con-base-dip-lamina`</sub> | THT | Angosta 7.62 mm (DIP-6/8/14/16/18/20/24N/28N) (2.54 mm, filas 7.62 mm); Ancha 15.24 mm (DIP-24/28/40) (2.54 mm, filas 15.24 mm) | DIP-6, DIP-8, DIP-14, DIP-16, DIP-18, DIP-20, DIP-24 angosta/ancha, DIP-28 angosta/ancha, … (+1) | muy alta |
+| **Base / socket DIP maquinada (pines torneados)**<br><sub>`con-base-dip-maquinada`</sub> | THT | Angosta 7.62 mm (2.54 mm, filas 7.62 mm); Ancha 15.24 mm (2.54 mm, filas 15.24 mm) | DIP-8, DIP-14, DIP-16, DIP-18, DIP-20, DIP-28, DIP-40 | media |
+| **Zócalo ZIF 28 / 40 pines (tipo Textool)**<br><sub>`con-zif`</sub> | THT | ZIF-28 (28p, 2.54 mm, filas 15.24 mm); ZIF-40 (40p, 2.54 mm, filas 15.24 mm) | ZIF-28, ZIF-40, ZIF-14/16/20/24, ZIF-48 (programadores universales) | media |
+| **Bornera de tornillo para PCB KF301, paso 5.0 mm (2/3 pines, apilable)**<br><sub>`con-bornera-kf301-5mm`</sub> | THT | KF301-2P (2p, 5.0 mm); KF301-3P (3p, 5.0 mm) | 2P azul, 3P azul, 2P verde, Paquetes de 10 | muy alta |
+| **Regleta de clemas de plástico tipo 'chocolate' (12 polos)**<br><sub>`con-clema-chocolate`</sub> | n/a | — | 3 A, 6 A, 10 A, 16 A, 25 A, 12 polos blanco/negro | muy alta |
+| **Bornera de tornillo para PCB paso 3.5 mm (KF350 / DG350)**<br><sub>`con-bornera-3.5mm`</sub> | THT | KF350-2P (2p, 3.5 mm); KF350-3P (3p, 3.5 mm) | 2P, 3P, 4P | alta |
+| **Conector de palanca para empalme (tipo WAGO 221/222)**<br><sub>`con-conector-palanca-wago`</sub> | n/a | — | 2 vías, 3 vías, 5 vías | alta |
+| **Bornera de tornillo de PCB paso 5.08 mm (tipo KF128 / DG128)**<br><sub>`con-bornera-5.08-baja`</sub> | THT | 5.08 mm, N pines (5.08 mm) | 2P, 3P, 4P, 6P, 8P, 12P | media |
+| **Bornera enchufable 2EDG / 15EDG (plug + header), paso 5.08 / 3.81 mm**<br><sub>`con-bornera-2edg`</sub> | THT | 2EDGV (header recto) 5.08 mm (5.08 mm); 2EDGR (header 90°) 5.08 mm (5.08 mm); 15EDG 3.81 mm (3.81 mm) | 2P, 3P, 4P, 5P, 6P, 8P, 10P, 12P, … (+2) | media |
+| **Regleta de bornes de barrera (barrier strip TB-1503, TB-2504…)**<br><sub>`con-bornera-barrier`</sub> | panel | TB-15xx (15 A); TB-25xx (25 A) | TB-1503 (3 pos), TB-1504, TB-1506, TB-1512, TB-2503, TB-2506, TB-4503 | media |
+| **Conectores D-sub DB9 / DB15 / DB25 / HD15 (VGA), macho y hembra**<br><sub>`con-dsub`</sub> | THT | DE-9 (DB9) PCB 90° (9p, 2.77 mm, filas 2.84 mm); DA-15 (DB15) PCB (15p, 2.77 mm, filas 2.84 mm); DB-25 PCB (25p, 2.77 mm, filas 2.84 mm); DE-15 HD (VGA) PCB (15p, 2.29 mm, filas 1.98 mm) | DB9 macho, DB9 hembra, DB25, HD15 VGA, Carcasas plásticas/metálicas, Para soldar cable, PCB 90° | media |
+| **Conector FFC/FPC para cable plano flexible (paso 0.5 y 1.0 mm)**<br><sub>`con-ffc-fpc`</sub> | SMD | FPC 0.5 mm, 4–60 pines (0.5 mm); FPC 1.0 mm, 4–30 pines (1.0 mm) | 0.5 mm 24P, 0.5 mm 40P (pantallas TFT), 1.0 mm 15P (cámara Raspberry Pi), 1.0 mm 24P, Adaptadores FPC a 2.54 | media |
+| **Tira de pines hembra 1x40, paso 2.54 mm**<br><sub>`con-header-hembra-1x40`</sub> | THT | 1x40 hembra recta, 2.54 mm (40p, 2.54 mm) | 1x40, 1x20, 1x10, 1x8, 1x6, 1x4, 1x3, Altura 8.5 mm estándar, … (+1) | muy alta |
+| **Tira de pines macho 1x40 recta, paso 2.54 mm**<br><sub>`con-header-macho-1x40-recto`</sub> | THT | 1x40 recto, 2.54 mm (40p, 2.54 mm) | 1x40 negro, Colores (rojo, azul, amarillo, blanco), Pin largo 15/17/20 mm, Dorado/estañado | muy alta |
+| **Header hembra apilable (pin largo) para shields de Arduino**<br><sub>`con-header-hembra-arduino-largo`</sub> | THT | 1x8 apilable, 2.54 mm (8p, 2.54 mm); 1x6 apilable (6p, 2.54 mm); 1x10 apilable (10p, 2.54 mm); 2x3 apilable (ICSP) (6p, 2.54 mm, filas 2.54 mm) | Kit Uno R3 (1x10, 1x8 x2, 1x6), 1x8, 1x6, 2x3 ICSP | alta |
+| **Jumper / puente (shunt) para pines 2.54 mm**<br><sub>`con-jumper-shunt`</sub> | n/a | Shunt 2.54 mm, 2 posiciones (2p, 2.54 mm) | 2.54 mm negro/rojo/azul/amarillo, Con lengüeta larga, 2.0 mm | alta |
+| **Tira de pines doble fila 2x40 macho / hembra, paso 2.54 mm**<br><sub>`con-header-2x40`</sub> | THT | 2x40 macho recto (80p, 2.54 mm, filas 2.54 mm); 2x40 hembra (80p, 2.54 mm, filas 2.54 mm) | 2x40 macho, 2x40 hembra, 2x40 macho 90°, 2x20 hembra (RPi) | alta |
+| **Tira de pines macho 1x40 en ángulo (90°), paso 2.54 mm**<br><sub>`con-header-macho-1x40-90`</sub> | THT | 1x40 90°, 2.54 mm (40p, 2.54 mm) | 1x40 90°, 2x40 90° | alta |
+| **Headers paso 1.27 mm (macho y hembra)**<br><sub>`con-header-127mm`</sub> | THT/SMD | 1x40 macho 1.27 mm (40p, 1.27 mm); 2x40 macho 1.27 mm (80p, 1.27 mm, filas 1.27 mm) | 1x40 macho, 1x40 hembra, 2x5 SWD, 2x40 | media |
+| **Headers paso 2.0 mm (macho y hembra, 1 y 2 filas)**<br><sub>`con-header-2mm`</sub> | THT | 1x40 macho 2.0 mm (40p, 2.0 mm); 1x40 hembra 2.0 mm (40p, 2.0 mm); 2x40 2.0 mm (80p, 2.0 mm, filas 2.0 mm) | 1x40 macho, 1x40 hembra, 2x40 macho, 1x10 hembra (XBee) | media |
+| **Tira de pines torneados/maquinados macho y hembra 2.54 mm**<br><sub>`con-header-maquinado`</sub> | THT | Hembra maquinada 1x40 (40p, 2.54 mm); Macho maquinado 1x40 (40p, 2.54 mm) | 1x40 hembra, 1x40 macho, 2x40 hembra | media |
+| **Box header IDC macho 2xN, paso 2.54 mm (6 a 40 pines)**<br><sub>`con-box-header-idc`</sub> | THT | 2x3 (6P) (6p, 2.54 mm, filas 2.54 mm); 2x5 (10P) (10p, 2.54 mm, filas 2.54 mm); 2x7 (14P) (14p, 2.54 mm, filas 2.54 mm); 2x8 (16P) (16p, 2.54 mm, filas 2.54 mm); 2x10 (20P) (20p, 2.54 mm, filas 2.54 mm); 2x13 (26P) (26p, 2.54 mm, filas 2.54 mm); 2x20 (40P) (40p, 2.54 mm, filas 2.54 mm) | 2x3, 2x4, 2x5, 2x7, 2x8, 2x10, 2x13, 2x17, … (+2) | alta |
+| **Conector IDC hembra para cable plano (FC-6 a FC-40)**<br><sub>`con-idc-hembra-cable-plano`</sub> | n/a | — | FC-6, FC-8, FC-10, FC-14, FC-16, FC-20, FC-26, FC-34, … (+1) | alta |
+| **Ranura / socket microSD para PCB (push-push o bisagra)**<br><sub>`con-microsd-socket`</sub> | SMD | microSD push-push SMD (9p, 1.1 mm) | Push-push, Bisagra (hinge), Push-pull | media |
+| **Ranura / socket SD tamaño completo para PCB**<br><sub>`con-sd-socket`</sub> | SMD | SD SMD/THT (11p) | Push-push, Normal | media |
+| **Broche para pila de 9 V (con cables o con terminales para PCB)**<br><sub>`con-broche-9v`</sub> | n/a | Broche con terminales para PCB (2p) | Suave con cables 15 cm, Rígido tipo T, Con plug DC 5.5x2.1 (Arduino), Portapila 9V con tapa e interruptor | muy alta |
+| **Portapilas AA (x1, x2, x3, x4, x6, x8; con cables, con tapa e interruptor)**<br><sub>`con-portapilas-aa`</sub> | n/a | Portapilas con cables (2p); Portapilas para PCB (1xAA, 2xAA) (2p) | 1xAA (1.5 V), 2xAA (3 V), 3xAA (4.5 V), 4xAA (6 V), 6xAA (9 V), 8xAA (12 V), Con tapa e interruptor, Con broche 9 V | muy alta |
+| **Portapila para batería de botón CR2032 (THT / SMD)**<br><sub>`con-portapila-cr2032`</sub> | THT/SMD | THT horizontal (2 pines) (2p); SMD (2p) | CR2032 THT, CR2032 SMD, CR2025/CR2016, CR1220 (12 mm), Con cables | alta |
+| **Portapilas 18650 (x1, x2, x3, x4; con cables o para PCB)**<br><sub>`con-portapilas-18650`</sub> | THT | 1x18650 para PCB (2 pines) (2p); Portapilas con cables (2p) | 1x18650, 2x18650 serie, 2x18650 paralelo, 3x18650, 4x18650, Con pines para PCB | alta |
+| **Portapilas AAA (x2, x3, x4; con cables o caja con interruptor)**<br><sub>`con-portapilas-aaa`</sub> | n/a | Portapilas con cables (2p) | 2xAAA (3 V), 3xAAA (4.5 V), 4xAAA (6 V), Caja con interruptor | alta |
+| **Conector XT60 (macho/hembra)**<br><sub>`con-xt60`</sub> | n/a | XT60PW (PCB horizontal) (5p) | Par macho-hembra, XT60H con capuchón, Con cable 12 AWG, XT60PW para PCB | alta |
+| **Conector Deans / tipo T (macho/hembra)**<br><sub>`con-deans-t`</sub> | n/a | — | Par macho-hembra, Con cable | media |
+| **Conector JST-RCY / BEC rojo de 2 pines**<br><sub>`con-jst-rcy`</sub> | n/a | — | Par macho-hembra con cable 10–15 cm | media |
+| **Conector XT30 (macho/hembra)**<br><sub>`con-xt30`</sub> | n/a | XT30PW (PCB) (4p) | Par macho-hembra, Con cable 16 AWG, XT30PW | media |
+| **Pinza caimán con funda (caimanes)**<br><sub>`con-caiman`</sub> | n/a | — | Chico (~28 mm), Mediano (~35 mm), Grande (~50 mm), Para batería (5–100 A), Rojo/negro, Mini gancho de prueba (grabber) | muy alta |
+| **Borne de conexión / binding post con hembra banana 4 mm**<br><sub>`con-binding-post`</sub> | panel | Panel con tuerca (1p) | Rojo, Negro, Verde (tierra), Hembra banana simple de panel | alta |
+| **Conector banana macho 4 mm**<br><sub>`con-banana-macho`</sub> | n/a | — | Rojo, Negro, Apilable, Para soldar o tornillo, Mini banana 2 mm | alta |
+| **Puntas de prueba para multímetro (test leads)**<br><sub>`con-punta-prueba`</sub> | n/a | — | Punta fina, Punta con funda (CAT III), Con caimanes intercambiables, Silicón flexible | alta |
+| **Conector RJ11 / RJ12 hembra para PCB (6P4C / 6P6C)**<br><sub>`con-rj11`</sub> | THT | RJ11 90° THT (4p, 1.02 mm) | 6P4C, 6P6C, 4P4C (auricular) | media |
+| **Conector RJ45 con magnéticos y LEDs HR911105A**<br><sub>`con-rj45-hr911105a`</sub> | THT | RJ45 MagJack 90°, 12 pines + blindaje (14p) | HR911105A, HR911103A, HR911130C | media |
+| **Conector RJ45 hembra para PCB (sin magnéticos)**<br><sub>`con-rj45-pcb`</sub> | THT | RJ45 90° THT 8 pines (8p, 1.02 mm) | 90° sin blindaje, 90° con blindaje, Vertical | media |
+| **Conector BNC hembra (panel y PCB) y macho**<br><sub>`con-bnc`</sub> | panel | BNC hembra de panel (2p); BNC hembra PCB 90° (3p) | 50 Ω (RG-58), 75 Ω (RG-59 CCTV), Panel, PCB 90°, Macho de compresión/crimpar | media |
+| **Conector SMA hembra para PCB y de panel (antenas)**<br><sub>`con-sma`</sub> | THT | SMA vertical THT (5 pines) (5p); SMA de borde de placa (edge mount) (3p) | SMA hembra vertical, SMA de borde, SMA de panel con pigtail U.FL, RP-SMA (WiFi) | media |
+| **Conector U.FL / IPEX (MHF1) SMD**<br><sub>`con-ufl-ipex`</sub> | SMD | U.FL SMD (3p) | U.FL SMD, Pigtail U.FL a SMA 10–20 cm | media |
+| **Terminal faston hembra 2.8 / 4.8 / 6.3 mm (aislada y desnuda)**<br><sub>`con-faston-hembra`</sub> | n/a | — | 2.8 mm, 4.8 mm (0.187"), 6.3 mm (0.250"), Aislada roja (22–18 AWG), Aislada azul (16–14 AWG), Aislada amarilla (12–10 AWG), Desnuda + funda | muy alta |
+| **Terminal faston macho y lengüeta para PCB (4.8 / 6.3 mm)**<br><sub>`con-faston-macho`</sub> | THT | Lengüeta 6.3 mm para PCB (2 patas) (2p); Lengüeta 4.8 mm para PCB (2p) | 4.8 mm, 6.3 mm, Para crimpar aislado, Para PCB | alta |
+| **Terminales de ojillo (anillo) y horquilla para crimpar**<br><sub>`con-terminal-ojillo-horquilla`</sub> | n/a | — | Ojillo M3, M4, M5, M6, M8, Horquilla M3/M4, Aislada roja/azul/amarilla, Desnuda de cobre estañado | alta |
+| **Punteras / terminales tubulares aislados (ferrules)**<br><sub>`con-puntera-ferrule`</sub> | n/a | — | 0.5 mm², 0.75 mm², 1.0 mm², 1.5 mm², 2.5 mm², Kits de 400–1200 pzs | media |
+| **Conector Micro-USB hembra (SMD / THT)**<br><sub>`con-micro-usb`</sub> | SMD | Micro-B SMD (5p, 0.65 mm); Micro-B DIP (todos THT) (5p, 0.65 mm) | SMD 5 pines con anclaje THT, DIP, Breakout en placa | alta |
+| **Conector USB tipo A hembra para PCB (THT 90°)**<br><sub>`con-usb-a-hembra-pcb`</sub> | THT | USB-A 90° THT (6p) | 90° THT, Vertical, Doble apilado, SMD | alta |
+| **Conector USB-C hembra 16 pines (USB 2.0)**<br><sub>`con-usb-c-16p`</sub> | SMD | USB-C 16P SMD + anclajes THT (16p, 0.5 mm) | 16P SMD, 24P (completo, USB 3.x) | alta |
+| **Conector USB-C hembra 6 pines (solo carga)**<br><sub>`con-usb-c-6p`</sub> | SMD | USB-C 6P SMD con anclajes THT (6p) | 6P SMD, 6P vertical, 2P (solo VBUS/GND, no recomendado) | alta |
+| **Conector Mini-USB hembra (SMD con anclajes)**<br><sub>`con-mini-usb`</sub> | SMD | Mini-B SMD (5p, 0.8 mm) | SMD 5 pines, Versión DIP/THT | media |
+| **Conector USB tipo A macho (para soldar / para PCB)**<br><sub>`con-usb-a-macho`</sub> | THT | USB-A macho THT (6p) | Para soldar con carcasa, Para PCB 90° | media |
+| **Conector USB tipo B hembra para PCB (THT)**<br><sub>`con-usb-b-hembra-pcb`</sub> | THT | USB-B 90° THT (6p, 2.5 mm, filas 2.0 mm) | 90° THT, Vertical | media |
+| **Conector JST-XH paso 2.5 mm (2 a 8 pines)**<br><sub>`con-jst-xh`</sub> | THT | Header vertical B#B-XH-A (2.5 mm); Header 90° S#B-XH-A (2.5 mm) | 2P, 3P, 4P, 5P, 6P, 7P, 8P, Con cable precrimpado 15/20/30 cm, … (+1) | muy alta |
+| **Carcasas Dupont 2.54 mm (1 a 10 pines, 1 y 2 filas)**<br><sub>`con-dupont-carcasa`</sub> | n/a | 1xN (N=1..10) (2.54 mm); 2xN (2x2..2x10) (2.54 mm, filas 2.54 mm) | 1P, 2P, 3P, 4P, 5P, 6P, 8P, 10P, … (+5) | alta |
+| **Conector de batería JST-PH 2 pines (para LiPo 1S)**<br><sub>`con-jst-ph-lipo`</sub> | THT/SMD | Header B2B-PH-K (vertical) o S2B-PH-SM4 (SMD) (2p, 2.0 mm) | 2P con cable rojo/negro 10–15 cm, Header vertical, Header 90° SMD | alta |
+| **Conector JST-PH paso 2.0 mm (2 a 6 pines)**<br><sub>`con-jst-ph`</sub> | THT/SMD | Header vertical B#B-PH-K (2.0 mm); Header SMD 90° S#B-PH-SM4 (2.0 mm) | 2P, 3P, 4P, 5P, 6P, Con cable precrimpado | alta |
+| **Conector tipo Molex KK 2.54 / KF2510**<br><sub>`con-molex-kk-kf2510`</sub> | THT | Header recto KF2510-NA (2.54 mm); Header 90° KF2510-NAW (2.54 mm) | 2P, 3P, 4P, 5P, 6P, 8P, 10P, 12P | alta |
+| **Terminales Dupont para crimpar (macho y hembra)**<br><sub>`con-dupont-terminal`</sub> | n/a | — | Hembra, Macho, Para cable 22–28 AWG | alta |
+| **Conector JST-SH paso 1.0 mm (Qwiic / STEMMA QT)**<br><sub>`con-jst-sh`</sub> | SMD | SMD 90° SM#B-SRSS-TB (1.0 mm) | 2P, 3P, 4P (Qwiic), 6P, Cables 4P precrimpados | media |
+| **Conector Molex Mini-Fit Jr 4.2 mm (ATX / EPS / PCIe)**<br><sub>`con-molex-minifit-jr`</sub> | THT | Header 2xN recto (5566) / 90° (5569) (4.2 mm, filas 4.2 mm) | 2x2 (EPS 4P), 2x3 (PCIe 6P), 2x4, 2x10 (ATX 20P), 2x12 (ATX 24P) | media |
+| **Conector JST-SM 2.5 mm (cable a cable, tiras LED)**<br><sub>`con-jst-sm`</sub> | n/a | — | 2P, 3P, 4P, 5P, Par macho-hembra con cable 15 cm | alta |
+
+<a id="cables"></a>
+## Cables y alambres
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Tubo termocontráctil (termofit) 2:1, kits y por metro**<br><sub>`cab-tubo-termocontractil`</sub> | n/a | — | Ø 1, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10, 12, 20 mm, Kit 127/328/530 pzs, Negro, rojo, transparente, colores, Con adhesivo 3:1 | muy alta |
+| **Alambre de cobre desnudo / estañado para puentes (bus wire)**<br><sub>`cab-cobre-desnudo-estanado`</sub> | n/a | — | 18 AWG, 20 AWG, 22 AWG, 24 AWG, Carrete o por metro | media |
+| **Alambre magneto / alambre esmaltado (AWG 18 a 40)**<br><sub>`cab-alambre-magneto`</sub> | n/a | — | 18 AWG, 20 AWG, 22 AWG, 24 AWG, 26 AWG, 28 AWG, 30 AWG, 32 AWG, … (+7) | alta |
+| **Cable blindado de audio / micrófono (1 o 2 conductores + malla)**<br><sub>`cab-blindado-audio`</sub> | n/a | — | 1 conductor + malla (mono), 2 conductores + malla (balanceado/estéreo), Cable de micrófono negro por metro, Multipar | alta |
+| **Cable dúplex polarizado (cable de bocina rojo/negro)**<br><sub>`cab-duplex-polarizado`</sub> | n/a | — | 2x22 AWG, 2x20 AWG, 2x18 AWG, 2x16 AWG, 2x14 AWG, Rojo/negro, Transparente con traza, Por metro o rollo | muy alta |
+| **Cable flexible de conexión (cable de un conductor) 18–30 AWG**<br><sub>`cab-flexible-calibres`</sub> | n/a | — | 18 AWG, 20 AWG, 22 AWG, 24 AWG, 26 AWG, 28 AWG, 30 AWG, Colores rojo/negro/azul/verde/amarillo/blanco, … (+1) | muy alta |
+| **Cable sólido calibre 22 AWG para protoboard (carrete, colores)**<br><sub>`cab-solido-22awg`</sub> | n/a | — | 22 AWG rojo, negro, azul, verde, amarillo, blanco, Carrete 5–30 m, Kit de 6 colores, … (+1) | muy alta |
+| **Cable de silicón ultraflexible (alta temperatura / alta corriente) 10–30 AWG**<br><sub>`cab-silicon`</sub> | n/a | — | 10 AWG, 12 AWG, 14 AWG, 16 AWG, 18 AWG, 20 AWG, 22 AWG, 24 AWG, … (+5) | alta |
+| **Cable de uso rudo / cable POT 2x18–2x12 (127 V)**<br><sub>`cab-uso-rudo`</sub> | n/a | — | 2x18 AWG, 2x16 AWG, 2x14 AWG, 3x18 AWG (con tierra), Por metro | alta |
+| **Cable multiconductor de control / alarma (2, 4, 6, 8 hilos 22 AWG)**<br><sub>`cab-multiconductor-alarma`</sub> | n/a | — | 2x22 AWG, 4x22 AWG, 6x22 AWG, 8x22 AWG, Con blindaje, Por metro | media |
+| **Cable wire-wrap 30 AWG (Kynar) y herramienta**<br><sub>`cab-wire-wrap`</sub> | n/a | — | 30 AWG azul/rojo/amarillo/blanco/negro, Carrete 8–300 m, Herramienta WSU-30M (pelar, enrollar, desenrollar) | media |
+| **Cable UTP Cat5e / Cat6 (4 pares)**<br><sub>`cab-utp`</sub> | n/a | — | Cat5e 24 AWG sólido, Cat6 23 AWG, Patch cord armado 1–10 m, Por metro / caja 305 m, Exterior (con gel o forro negro) | muy alta |
+| **Cables USB para placas de desarrollo (A-B, mini, micro, USB-C)**<br><sub>`cab-usb-placas`</sub> | n/a | — | USB A-B 30 cm–1.8 m, USB A-mini B, USB A-micro B, USB A-C, USB C-C | muy alta |
+| **Cable plano gris para IDC (10–40 hilos, paso 1.27 mm)**<br><sub>`cab-plano-idc`</sub> | n/a | — | 10 hilos, 14 hilos, 16 hilos, 20 hilos, 26 hilos, 34 hilos, 40 hilos, Por metro | alta |
+| **Cable plano arcoíris (de colores) paso 1.27 mm**<br><sub>`cab-plano-arcoiris`</sub> | n/a | — | 10 hilos, 20 hilos, 40 hilos, Por metro | media |
+| **Cable plano flexible FFC (paso 0.5 / 1.0 mm)**<br><sub>`cab-ffc-flex`</sub> | n/a | — | 0.5 mm 24P/30P/40P, 1.0 mm 15P (cámara RPi), Largos 5–30 cm, Tipo A / Tipo B | media |
+| **Cables con caimanes en ambos extremos (juego de 10)**<br><sub>`cab-caiman-caiman`</sub> | n/a | — | Juego de 10 colores 50 cm, Caimán a banana, Caimán a Dupont macho, Caimán a gancho de prueba | muy alta |
+| **Cable coaxial RG-59**<br><sub>`cab-coaxial-rg59`</sub> | n/a | — | RG-59, Por metro, Rollo | alta |
+| **Cable coaxial RG-6**<br><sub>`cab-coaxial-rg6`</sub> | n/a | — | RG-6, Por metro, Rollo | alta |
+| **Cable coaxial RG-174**<br><sub>`cab-coaxial-rg174`</sub> | n/a | — | RG-174, Por metro, Rollo | media |
+| **Cable coaxial RG-58**<br><sub>`cab-coaxial-rg58`</sub> | n/a | — | RG-58, Por metro, Rollo | media |
+| **Cables jumper Dupont macho-macho, macho-hembra y hembra-hembra**<br><sub>`cab-jumpers-dupont`</sub> | n/a | — | M-M 10 cm, M-M 20 cm, M-M 30 cm, M-H 10/20/30 cm, H-H 10/20/30 cm, Tira de 40 piezas, Kit de 120 (40 de cada tipo) | muy alta |
+| **Kit de jumpers rígidos preformados para protoboard (65 / 140 / 350 piezas)**<br><sub>`cab-jumpers-rigidos-kit`</sub> | n/a | — | 140 piezas (14 longitudes), 350 piezas, 65 piezas flexibles con punta | alta |
+
+<a id="mecanicos"></a>
+## Mecánicos (disipadores, separadores, gabinetes)
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Cintillos plásticos (cinchos / abrazaderas) y bases adhesivas**<br><sub>`mec-cintillos`</sub> | n/a | — | 2.5 x 100 mm, 3.6 x 150 mm, 3.6 x 200 mm, 4.8 x 200 mm, 4.8 x 300 mm, Negros (UV), Blancos, Base adhesiva 20x20 mm, … (+1) | muy alta |
+| **Ojillos / pasacables de goma (grommets)**<br><sub>`mec-ojillos-pasacables`</sub> | panel | — | Para agujero 6, 8, 10, 12, 14, 16, 20 mm, Kits surtidos | media |
+| **Patas de goma / topes adhesivos para gabinetes y PCB**<br><sub>`mec-patas-goma`</sub> | n/a | — | Ø 8, 10, 12, 16, 20 mm, Transparentes, Negras, Con tornillo | media |
+| **Prensaestopas / conector de cable impermeable (PG7, PG9, PG11, PG13.5)**<br><sub>`mec-prensaestopas`</sub> | panel | PG7; PG9; PG11; PG13.5 | PG7, PG9, PG11, PG13.5, PG16, Métricos M12/M16/M20, Nylon negro/gris | media |
+| **Kit aislante para TO-220 / TO-247 (mica o silicón + buje)**<br><sub>`mec-kit-aislante-to220`</sub> | n/a | — | Mica TO-220, Silicón TO-220, Mica TO-247/TO-3P, Buje para M3, Kits de 100 | alta |
+| **Pasta térmica / grasa de silicón**<br><sub>`mec-pasta-termica`</sub> | n/a | — | Jeringa 1–30 g, Frasco, Blanca de silicón, Gris de alto rendimiento | alta |
+| **Kit aislante para TO-3 (mica + 2 bujes)**<br><sub>`mec-kit-aislante-to3`</sub> | n/a | — | Mica TO-3, Silicón TO-3 | media |
+| **Capuchones para botones táctiles 12x12 y 6x6**<br><sub>`mec-capuchon-boton`</sub> | n/a | — | Redondo A24 para 12x12 (rojo/azul/amarillo/verde/negro/blanco/gris), Cuadrado para 12x12, Para 6x6 vástago cuadrado/redondo, Kits surtidos | alta |
+| **Disipador pequeño para TO-220 con clip o tornillo (tipo U / aleta)**<br><sub>`mec-disipador-to220-clip`</sub> | THT | Aleta en U estampada; Extruido con aletas y pines para PCB (2p) | 20 x 15 x 10 mm, 21 x 15 x 11 mm, 25 x 23 x 16 mm, 30 x 25 x 12 mm, Con clip, Con 2 pines para PCB, Negro anodizado / natural | muy alta |
+| **Disipador extruido grande para TO-220/TO-247 (perfil de aluminio)**<br><sub>`mec-disipador-to220-grande`</sub> | panel | Perfil extruido | 40 mm, 60 mm, 100 mm, 150 mm, Con ventilador | alta |
+| **Disipadores adhesivos para chips (Raspberry Pi, drivers A4988, reguladores)**<br><sub>`mec-disipador-chip`</sub> | n/a | Adhesivo | Kit Raspberry Pi (3 pzs), 8.8x8.8 mm para A4988/DRV8825, 14x14 mm, 40x40 mm, Cobre | alta |
+| **Disipador para encapsulado TO-3**<br><sub>`mec-disipador-to3`</sub> | panel | Patrón TO-3 (2p) | Para 1 TO-3, Para 2 TO-3, Negro anodizado | media |
+| **Disipador para TO-247 / TO-3P**<br><sub>`mec-disipador-to247`</sub> | THT | Patrón TO-247 (3p, 5.45 mm) | Para 1 TO-247, Perfil para varios | media |
+| **Gabinetes / cajas de plástico para proyectos**<br><sub>`mec-gabinete-proyecto`</sub> | panel | Caja ABS | Chica (pila 9 V), Mediana, Grande, Negra, Gris, Transparente, Con tapa de aluminio | alta |
+| **Caja estanca IP65 (registro hermético)**<br><sub>`mec-caja-estanca-ip65`</sub> | panel | Caja IP65 | 83x58x33, 100x68x50, 115x90x55, 158x90x60, 200x120x75, Tapa transparente | media |
+| **Riel DIN 35 mm y accesorios (soportes para PCB en riel DIN)**<br><sub>`mec-riel-din`</sub> | panel | TS35 x 7.5 mm | TS35 7.5 mm, TS35 15 mm, Tope final, Soporte para PCB, Borneras para riel DIN (UK2.5B) | media |
+| **Perillas para potenciómetro (eje 6 mm estriado, liso o D)**<br><sub>`mec-perilla-potenciometro`</sub> | n/a | — | Para eje estriado 6 mm (18 dientes, a presión), Para eje liso 6 mm (con tornillo prisionero), Para eje D 6 mm, Para eje 1/4" (6.35 mm), Ø 15–40 mm, Negra con marcador, Aluminio, Tipo Davies (plástico) | alta |
+| **Porta LED / bisel para LED de 3 y 5 mm**<br><sub>`mec-portaled-bisel`</sub> | panel | Plástico 2 piezas; Metálico cromado con tuerca | 3 mm negro, 5 mm negro, Metálico 3 mm, Metálico 5 mm | media |
+| **Separadores / postes hexagonales de latón M3 (macho-hembra y hembra-hembra)**<br><sub>`mec-separador-laton-m3`</sub> | n/a | Hexagonal M3 | M3 x 5, M3 x 6, M3 x 8, M3 x 10, M3 x 12, M3 x 15, M3 x 20, M3 x 25, … (+5) | alta |
+| **Separadores de nylon M2.5 / M3 (kits para Raspberry Pi)**<br><sub>`mec-separador-nylon`</sub> | n/a | Hexagonal M2.5 / M3 nylon | Kit M2.5 (300 pzs), Kit M3, Negro, Blanco | alta |
+| **Soportes plásticos para PCB (snap-in y autoadheribles)**<br><sub>`mec-soporte-pcb-plastico`</sub> | n/a | Snap-in con base adhesiva | 6 mm, 10 mm, 12 mm, 16 mm, 20 mm, 25 mm, Con adhesivo, Doble snap-in | media |
+| **Tornillos, tuercas y rondanas M3**<br><sub>`mec-tornilleria-m3`</sub> | n/a | M3 | M3 x 6, M3 x 8, M3 x 10, M3 x 12, M3 x 16, M3 x 20, M3 x 30, Tuerca hexagonal, … (+3) | muy alta |
+| **Tornillos y tuercas M2 / M2.5**<br><sub>`mec-tornilleria-m2-m2.5`</sub> | n/a | M2.5; M2 | M2 x 5, M2 x 8, M2.5 x 6, M2.5 x 10, Kits surtidos | media |
 
 <a id="materiales_pcb"></a>
 ## Materiales para fabricar PCB
