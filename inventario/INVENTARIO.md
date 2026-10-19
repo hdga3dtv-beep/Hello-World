@@ -2,7 +2,7 @@
 
 Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 
-**Total: 106 componentes** en 4 categorías.
+**Total: 275 componentes** en 8 categorías.
 
 | Categoría | Elementos |
 |---|---:|
@@ -10,6 +10,10 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | [Capacitores](#capacitores) | 21 |
 | [Inductores, transformadores y cristales](#inductivos_y_frecuencia) | 23 |
 | [Protección (fusibles, varistores, TVS)](#proteccion) | 19 |
+| [Materiales para fabricar PCB](#materiales_pcb) | 37 |
+| [Soldadura y consumibles](#soldadura_y_consumibles) | 29 |
+| [Herramientas e instrumentos](#herramientas) | 70 |
+| [Energía (pilas, baterías, fuentes)](#energia) | 33 |
 
 <a id="resistores"></a>
 ## Resistores, potenciómetros y afines
@@ -140,3 +144,196 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Diodo TVS 1.5KE (1500 W, DO-201)**<br><sub>`prot-tvs-1-5ke`</sub> | THT | DO-201AD/AE axial (2p, 15.24 mm) | 1.5KE6.8A, 1.5KE12A, 1.5KE15A, 1.5KE18A, 1.5KE24A, 1.5KE33A, 1.5KE200A, 1.5KE400A, … (+1) | media |
 | **Diodo TVS P6KE (600 W, DO-15)**<br><sub>`prot-tvs-p6ke`</sub> | THT | DO-15 axial (2p, 10.16 mm) | P6KE6.8A, P6KE10A, P6KE12A, P6KE15A, P6KE18A, P6KE24A, P6KE33A, P6KE36A, … (+3) | media |
 | **Diodo TVS SMD SMAJ / SMBJ / SMCJ**<br><sub>`prot-tvs-smd`</sub> | SMD | SMA (DO-214AC) – SMAJ 400 W (2p); SMB (DO-214AA) – SMBJ 600 W (2p); SMC (DO-214AB) – SMCJ 1500 W (2p) | SMBJ5.0A, SMBJ12A, SMBJ15A, SMBJ24A, SMBJ33A, SMAJ5.0A, SMAJ12A, SMCJ24A, … (+1) | media |
+
+<a id="materiales_pcb"></a>
+## Materiales para fabricar PCB
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Barniz / laca protectora para PCB (conformal coating)**<br><sub>`mat-barniz-protector-pcb`</sub> | n/a | — | aerosol 200–400 ml, frasco con brocha | media |
+| **Estañado químico (estaño líquido / por inmersión)**<br><sub>`mat-estano-quimico`</sub> | n/a | — | polvo para preparar, solución lista | media |
+| **Guantes de nitrilo y equipo de protección (lentes)**<br><sub>`mat-guantes-nitrilo`</sub> | n/a | — | caja 100 pzs talla CH/M/G | muy alta |
+| **Recipiente / charola para ataque químico**<br><sub>`mat-charola-ataque`</sub> | n/a | — | charola de revelado fotográfico, tupper de plástico, refractario de vidrio | alta |
+| **Carbonato de sodio (revelador de dry film)**<br><sub>`mat-revelador-carbonato-sodio`</sub> | n/a | — | 250 g, 500 g, 1 kg | media |
+| **Hidróxido de sodio (sosa cáustica) para remover fotorresina**<br><sub>`mat-sosa-caustica-removedor`</sub> | n/a | — | escamas 500 g, 1 kg | media |
+| **Máscara antisoldante curable con UV (solder mask)**<br><sub>`mat-mascara-antisoldante-uv`</sub> | n/a | — | verde 10 ml, colores surtidos | media |
+| **Película fotosensible seca (dry film photoresist)**<br><sub>`mat-dry-film-fotosensible`</sub> | n/a | — | rollo 30 cm x 1 m, rollo 30 cm x 5 m, hojas A4 | media |
+| **Fibra, lija fina y esponja abrasiva para limpiar cobre**<br><sub>`mat-fibra-lija-limpieza-cobre`</sub> | n/a | — | fibra verde, lija 600, lija 1000, lana de acero 0000 | muy alta |
+| **Acetona / thinner para remover tóner**<br><sub>`mat-acetona-thinner`</sub> | n/a | — | acetona pura 250 ml–1 L, thinner estándar | alta |
+| **Placa perforada fenólica con islas (perfboard)**<br><sub>`mat-placa-perforada-islas`</sub> | n/a | Rejilla 2.54 mm (2.54 mm) | 5 x 7 cm, 7 x 9 cm, 9 x 15 cm, 10 x 15 cm | muy alta |
+| **Placa fenólica perforada Steren (150CC y 155)**<br><sub>`mat-placa-perforada-steren`</sub> | n/a | 150CC (2.54 mm); 155 (2.54 mm) | 150CC: 10.7 x 14 cm, 155: 4.5 x 4.5 cm | alta |
+| **Placa perforada de fibra de vidrio doble cara (verde, agujeros metalizados)**<br><sub>`mat-placa-perforada-fr4-doble-verde`</sub> | n/a | Kit surtido (2.54 mm) | 2 x 8 cm, 3 x 7 cm, 4 x 6 cm, 5 x 7 cm, 6 x 8 cm, 7 x 9 cm, 8 x 12 cm, 9 x 15 cm | alta |
+| **Placa de tiras (stripboard / veroboard)**<br><sub>`mat-stripboard`</sub> | n/a | Rejilla 2.54 mm (2.54 mm) | varios tamaños | media |
+| **Placa soldable con patrón de protoboard**<br><sub>`mat-placa-tipo-protoboard-soldable`</sub> | n/a | Patrón protoboard (2.54 mm, filas 7.62 mm) | tamaño 400 puntos, tamaño 830 puntos | media |
+| **Placa fenólica (FR-2) con cobre a una cara**<br><sub>`mat-placa-fenolica-1-cara`</sub> | n/a | Steren PC-5X5; Steren PC-5X10; Steren PC-10X10; Steren PC-10X15; Steren PC-30X30; UNIT 5x5 / 5x10 / 10x10 / 10x15 / 30x30 cm | 5 x 5 cm (PC-5X5), 5 x 10 cm (PC-5X10), 10 x 10 cm (PC-10X10), 10 x 15 cm (PC-10X15), 30 x 30 cm (PC-30X30) | muy alta |
+| **Placa de fibra de vidrio (FR-4) con cobre a dos caras**<br><sub>`mat-placa-fr4-2-caras`</sub> | n/a | UNIT: de 5 x 7 cm hasta 20 x 30 cm | 5 x 7 cm, 10 x 10 cm, 10 x 15 cm, 15 x 20 cm, 20 x 30 cm | alta |
+| **Placa de fibra de vidrio (FR-4) con cobre a una cara**<br><sub>`mat-placa-fr4-1-cara`</sub> | n/a | Varios tamaños UNIT | 5 x 7 cm, 10 x 10 cm, 10 x 15 cm, 15 x 20 cm, 20 x 30 cm | alta |
+| **Placa fenólica (FR-2) con cobre a dos caras**<br><sub>`mat-placa-fenolica-2-caras`</sub> | n/a | Medidas típicas | 10 x 10 cm, 10 x 15 cm | media |
+| **Placa fotosensible (presensibilizada) positiva**<br><sub>`mat-placa-presensibilizada`</sub> | n/a | — | 10 x 10 cm, 10 x 15 cm, una cara, doble cara | media |
+| **Protoboard de 400 puntos (media)**<br><sub>`mat-protoboard-400`</sub> | n/a | 400 puntos (2.54 mm, filas 7.62 mm) | Steren 509-003, Steren 509-005 (400 puntos, 2 líneas terminales), genérica 400 | muy alta |
+| **Protoboard de 830 puntos**<br><sub>`mat-protoboard-830`</sub> | n/a | 830 puntos (2.54 mm, filas 7.62 mm) | Steren 509-010, Steren 509-015 (deslizable), Steren a presión 1 bloque 2 tiras, MB-102 genérica | muy alta |
+| **Mini protoboard de 170 puntos**<br><sub>`mat-protoboard-170`</sub> | n/a | 170 puntos (2.54 mm) | blanca, colores surtidos | alta |
+| **Tablilla protoboard Steren 509-030 con 3 bornes (1,580 puntos)**<br><sub>`mat-protoboard-steren-509-030`</sub> | n/a | 509-030 (2.54 mm, filas 7.62 mm) | 509-030 | alta |
+| **Protoboard múltiple con base de aluminio y bornes (1660/2420/3220 puntos)**<br><sub>`mat-protoboard-multiple-base-aluminio`</sub> | n/a | Base de aluminio (2.54 mm, filas 7.62 mm) | 1660 puntos, 2420 puntos, 3220 puntos | media |
+| **Cloruro férrico líquido para grabado de PCB**<br><sub>`mat-cloruro-ferrico-liquido`</sub> | n/a | — | 220 ml (MC025), 250 ml, 500 ml, 930 ml (MC100), 1 L | muy alta |
+| **Cloruro férrico en polvo/granulado**<br><sub>`mat-cloruro-ferrico-polvo`</sub> | n/a | — | 250 g, 500 g, 1 kg | media |
+| **Método ácido muriático + agua oxigenada (informativo)**<br><sub>`mat-acido-muriatico-agua-oxigenada`</sub> | n/a | — | — | media |
+| **Persulfato de amonio (grabador de PCB)**<br><sub>`mat-persulfato-amonio`</sub> | n/a | — | 250 g, 500 g, 1 kg | media |
+| **Persulfato de sodio (grabador de PCB)**<br><sub>`mat-persulfato-sodio`</sub> | n/a | — | 250 g, 500 g, 1 kg | media |
+| **Cinta de cobre adhesiva**<br><sub>`mat-cinta-cobre-adhesiva`</sub> | n/a | — | 5 mm, 10 mm, 25 mm, 50 mm | media |
+| **Pluma de tinta conductiva de cobre Steren (CONDU-PEN)**<br><sub>`mat-pluma-tinta-conductiva`</sub> | n/a | — | CONDU-PEN 6 ml | media |
+| **Papel para transferencia térmica de tóner (transfer, couché, glossy)**<br><sub>`mat-papel-transfer-pcb`</sub> | n/a | — | papel transfer amarillo A4, papel couché 130–150 g, papel fotográfico glossy | muy alta |
+| **Plumón indeleble para circuito impreso**<br><sub>`mat-plumon-indeleble-pcb`</sub> | n/a | — | Sharpie fino negro, Sharpie ultra fino, Staedtler Lumocolor permanente S/F, Edding | muy alta |
+| **Acetato / transparencia para fotolito**<br><sub>`mat-acetato-fotolito`</sub> | n/a | — | tamaño carta, tamaño A4 | alta |
+| **Calcomanías y transferibles para PCB (donas, pistas, patrones DIP)**<br><sub>`mat-calcomanias-pcb`</sub> | n/a | — | — | media |
+| **Película Press-n-Peel (PnP Blue)**<br><sub>`mat-press-n-peel`</sub> | n/a | — | paquete de 5, 10 o 20 hojas | media |
+
+<a id="soldadura_y_consumibles"></a>
+## Soldadura y consumibles
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Pegamento de cianoacrilato (Kola Loca / Super Bonder)**<br><sub>`sol-cianoacrilato`</sub> | n/a | — | 2 g, 5 g, gel | muy alta |
+| **Silicón en barra para pistola (hot melt)**<br><sub>`sol-silicon-barra`</sub> | n/a | — | 7 mm, 11 mm, transparente, colores | muy alta |
+| **Adhesivo epóxico de 5 minutos**<br><sub>`sol-epoxico-5-min`</sub> | n/a | — | jeringa doble 14–25 ml, tubos | alta |
+| **Cinta doble cara (espuma y delgada)**<br><sub>`sol-cinta-doble-cara`</sub> | n/a | — | 12 mm, 19 mm, 24 mm | alta |
+| **Silicón RTV de curado neutro**<br><sub>`sol-silicon-rtv-neutro`</sub> | n/a | — | transparente, blanco, negro, alta temperatura (rojo) | alta |
+| **Resina para encapsular (potting)**<br><sub>`sol-resina-encapsular`</sub> | n/a | — | kit resina + endurecedor | media |
+| **Cinta de aislar (PVC)**<br><sub>`sol-cinta-aislar`</sub> | n/a | — | negra 19 mm, colores | muy alta |
+| **Tubo termocontráctil (termofil)**<br><sub>`sol-tubo-termocontractil`</sub> | n/a | — | kit 127 pzs, kit 328 pzs, kit 530 pzs, rollo por metro, negro, colores | muy alta |
+| **Cinta Kapton (poliimida) resistente al calor**<br><sub>`sol-cinta-kapton`</sub> | n/a | — | 10 mm, 20 mm, 50 mm | alta |
+| **Malla desoldadora (trenza de cobre)**<br><sub>`sol-malla-desoldadora`</sub> | n/a | — | 1.5 mm, 2.0 mm, 2.5 mm, 3.0 mm | alta |
+| **Flux en gel en jeringa (tipo RMA-223)**<br><sub>`sol-flux-gel-rma223`</sub> | n/a | — | 10 cc, RMA-223, NC-559 | alta |
+| **Pasta para soldar (flux en pasta) en lata**<br><sub>`sol-pasta-para-soldar-lata`</sub> | n/a | — | Steren SOL-060 60 g, Mechanic 60 g, Mechanic 200 g, Mechanic 500 g | alta |
+| **Flux líquido**<br><sub>`sol-flux-liquido`</sub> | n/a | — | frasco 30 ml, frasco con pincel | media |
+| **Pluma de flux**<br><sub>`sol-pluma-flux`</sub> | n/a | — | 10 ml | media |
+| **Alcohol isopropílico (IPA)**<br><sub>`sol-alcohol-isopropilico`</sub> | n/a | — | 250 ml, 500 ml, 1 L, aerosol | muy alta |
+| **Limpiador de contactos en aerosol**<br><sub>`sol-limpiador-contactos-aerosol`</sub> | n/a | — | aerosol 150–400 ml | alta |
+| **Removedor de flux en aerosol**<br><sub>`sol-removedor-flux`</sub> | n/a | — | aerosol 200–400 ml | media |
+| **Esponja de celulosa para base de cautín**<br><sub>`sol-esponja-celulosa`</sub> | n/a | — | cuadrada, redonda | alta |
+| **Lana de latón para limpiar punta de cautín**<br><sub>`sol-lana-laton`</sub> | n/a | — | con contenedor, repuesto | alta |
+| **Limpiador y regenerador de puntas (tip tinner)**<br><sub>`sol-tip-tinner`</sub> | n/a | — | lata 10 g, lata 15 g | alta |
+| **Soldadura de estaño-plomo 60/40 con núcleo de resina**<br><sub>`sol-soldadura-60-40`</sub> | n/a | — | 0.5 mm, 0.6 mm, 0.8 mm, 1.0 mm, 1.2 mm, 1.5 mm, carrete 100 g, carrete 250 g, … (+1) | muy alta |
+| **Soldadura en tubo dispensador (pluma)**<br><sub>`sol-soldadura-tubo-dispensador`</sub> | n/a | — | Steren SOL60-020 (17 g), tubo 20 g 1 mm | alta |
+| **Soldadura eutéctica 63/37 con núcleo de resina**<br><sub>`sol-soldadura-63-37`</sub> | n/a | — | 0.5 mm, 0.8 mm, 1.0 mm, carrete 100 g, carrete 450 g | alta |
+| **Soldadura sin plomo estaño-cobre 99.3/0.7**<br><sub>`sol-soldadura-sin-plomo-sncu`</sub> | n/a | — | 0.8 mm, 1.0 mm, 100 g, 250 g | media |
+| **Soldadura sin plomo SAC305**<br><sub>`sol-soldadura-sin-plomo-sac305`</sub> | n/a | — | 0.6 mm, 0.8 mm, 1.0 mm, 100 g | media |
+| **Soldadura en barra (para crisol)**<br><sub>`sol-soldadura-barra`</sub> | n/a | — | 60/40, 63/37 | media |
+| **Pasta de soldadura para SMD (solder paste)**<br><sub>`sol-pasta-soldadura-smd`</sub> | n/a | — | jeringa 10 cc, frasco 50 g, Sn63Pb37, SAC305 | media |
+| **Pasta térmica (grasa disipadora)**<br><sub>`sol-pasta-termica`</sub> | n/a | — | jeringa blanca, jeringa gris, bote | alta |
+| **Almohadilla térmica (thermal pad)**<br><sub>`sol-almohadilla-termica`</sub> | n/a | — | 0.5 mm, 1 mm, 2 mm | media |
+
+<a id="herramientas"></a>
+## Herramientas e instrumentos
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Base / soporte para cautín**<br><sub>`her-base-cautin`</sub> | n/a | — | base con esponja, base con lana de latón | muy alta |
+| **Puntas de repuesto para cautín (cónica, cincel, bisel)**<br><sub>`her-puntas-cautin`</sub> | n/a | — | 900M-T-B, 900M-T-I, 900M-T-K, 900M-T-2.4D, 900M-T-3C, kit 10 puntas | alta |
+| **Cautín de temperatura ajustable 60 W (con perilla en el mango)**<br><sub>`her-cautin-ajustable-60w`</sub> | n/a | — | solo cautín, kit con puntas y accesorios | muy alta |
+| **Cautín tipo lápiz sin control (25/30/40/60 W)**<br><sub>`her-cautin-lapiz-generico`</sub> | n/a | — | 25 W (CAU-145), 30 W (CAU-105), 35 W (CAU-115/115A), 40 W (CAU-130), 60 W | muy alta |
+| **Cautín tipo lápiz Steren 30 W (CAU-105)**<br><sub>`her-cautin-steren-cau-105`</sub> | n/a | — | CAU-105 | muy alta |
+| **Cautín tipo lápiz Steren 30 W con ajuste de potencia (CAU-140)**<br><sub>`her-cautin-steren-cau-140`</sub> | n/a | — | CAU-140, CAU-150 (descontinuado) | alta |
+| **Cautín de gas butano**<br><sub>`her-cautin-gas-butano`</sub> | n/a | — | — | media |
+| **Cautín portátil inteligente (TS100 / TS101 / Pinecil)**<br><sub>`her-cautin-usb-portatil`</sub> | n/a | — | TS100, TS101, Pinecil V2, cautín USB 5 V | media |
+| **Cautín tipo pistola / instantáneo 100 W**<br><sub>`her-cautin-pistola-100w`</sub> | n/a | — | 100 W, 100/140 W | media |
+| **Fresadora CNC 3018 (como herramienta para PCB)**<br><sub>`her-cnc-3018`</sub> | n/a | — | 3018, 3018 Pro, 3018 Pro Max | media |
+| **Fresas V-bit y fresas de corte para CNC (grabado de PCB)**<br><sub>`her-fresas-vbit-cnc`</sub> | n/a | — | V 20° 0.1 mm, V 30° 0.2 mm, kit 10 pzs | media |
+| **Cizalla, guillotina o cutter para cortar placa**<br><sub>`her-cortadora-placa`</sub> | n/a | — | — | alta |
+| **Sierra de arco (segueta) y caladora**<br><sub>`her-sierra-arco-segueta`</sub> | n/a | — | arco + hoja 32 TPI, mini segueta | alta |
+| **Juego de limas de aguja**<br><sub>`her-lima-aguja`</sub> | n/a | — | 6 pzs, 10 pzs | media |
+| **Bomba desoldadora / extractor de soldadura**<br><sub>`her-bomba-desoldadora`</sub> | n/a | — | chica, grande de aluminio | muy alta |
+| **Cautín desoldador con perilla integrada**<br><sub>`her-cautin-desoldador-perilla`</sub> | n/a | — | — | media |
+| **Perilla de succión para desoldar (bulbo de goma)**<br><sub>`her-perilla-succion`</sub> | n/a | — | — | media |
+| **Pulsera antiestática (ESD)**<br><sub>`her-pulsera-antiestatica`</sub> | n/a | — | con cable y caimán | alta |
+| **Tapete de silicón resistente al calor / tapete ESD**<br><sub>`her-tapete-silicon-esd`</sub> | n/a | — | silicón, ESD con conexión a tierra | media |
+| **Estaciones de soldadura Steren (CAU-190 45 W y CAU-245 60 W)**<br><sub>`her-estacion-soldadura-steren`</sub> | n/a | — | CAU-190, CAU-245 | alta |
+| **Estación de aire caliente (858D / 8586 / Steren CAU-280)**<br><sub>`her-estacion-aire-caliente`</sub> | n/a | — | 858D, 8586, CAU-280 | alta |
+| **Estación de soldadura de temperatura controlada tipo Hakko 936 (y clones)**<br><sub>`her-estacion-soldadura-936`</sub> | n/a | — | 936 analógica, 937D digital, FX-888D | alta |
+| **Pistola de calor (heat gun)**<br><sub>`her-pistola-calor`</sub> | n/a | — | — | alta |
+| **Estación de soldadura con cartucho T12**<br><sub>`her-estacion-t12`</sub> | n/a | — | kit con mango y fuente, cartuchos T12 | media |
+| **Estación profesional para soldar Steren con lupa y lámpara**<br><sub>`her-estacion-soldadura-steren-lupa`</sub> | n/a | — | — | media |
+| **Fuente de alimentación de laboratorio 0–30 V 0–5 A**<br><sub>`her-fuente-laboratorio-30v-5a`</sub> | n/a | — | 30 V 5 A, 30 V 3 A, 60 V 5 A | alta |
+| **Fuente para protoboard MB102 (3.3 V / 5 V)**<br><sub>`her-fuente-protoboard-mb102`</sub> | modulo | Módulo para riel de protoboard (2.54 mm) | MB102 | alta |
+| **Fuente de alimentación de laboratorio 0–30 V 0–10 A**<br><sub>`her-fuente-laboratorio-30v-10a`</sub> | n/a | — | 30 V 10 A | media |
+| **Generador de funciones DDS FeelElec FY6900**<br><sub>`her-generador-fy6900`</sub> | n/a | — | FY6900-20M, FY6900-60M, FY6900-100M | media |
+| **Generador de funciones en módulo/kit (XR2206, AD9833)**<br><sub>`her-generador-funciones-modulo`</sub> | modulo | — | kit XR2206, módulo AD9833 | media |
+| **Cutter de precisión / navaja tipo bisturí**<br><sub>`her-cutter-precision`</sub> | n/a | — | tipo X-Acto #11, cutter 9 mm, cutter 18 mm | muy alta |
+| **Juego de desarmadores de precisión**<br><sub>`her-desarmadores-precision`</sub> | n/a | — | 6 pzs, kit de puntas 24–60 pzs | muy alta |
+| **Pinzas de corte diagonal y de corte al ras**<br><sub>`her-pinzas-corte-diagonal`</sub> | n/a | — | 4.5 in, 5 in, corte al ras tipo 170 | muy alta |
+| **Pinzas de punta (punta larga)**<br><sub>`her-pinzas-punta`</sub> | n/a | — | 5 in, 6 in, punta curva | muy alta |
+| **Pinzas pelacables manuales (con calibres)**<br><sub>`her-pinzas-pelacables-manuales`</sub> | n/a | — | 10–22 AWG, 20–30 AWG | muy alta |
+| **Pistola de silicón caliente**<br><sub>`her-pistola-silicon`</sub> | n/a | — | chica 7 mm, grande 11 mm | muy alta |
+| **Pinzas de crimpeo (ponchadora) RJ45 / RJ11**<br><sub>`her-crimpeadora-rj45`</sub> | n/a | — | RJ45, RJ45/RJ11 | alta |
+| **Pinzas de crimpeo Dupont / JST (SN-28B)**<br><sub>`her-crimpeadora-dupont`</sub> | n/a | — | SN-28B, SN-01BM | alta |
+| **Pinzas de precisión antiestáticas (tweezers ESD)**<br><sub>`her-pinzas-tweezers-esd`</sub> | n/a | — | recta, curva, kit 6 pzs | alta |
+| **Pinzas pelacables automáticas**<br><sub>`her-pinzas-pelacables-automaticas`</sub> | n/a | — | — | alta |
+| **Extractor e insertor de circuitos integrados**<br><sub>`her-extractor-insertor-ci`</sub> | n/a | — | — | media |
+| **Lupa con luz (de escritorio, de mano o de diadema)**<br><sub>`her-lupa-con-luz`</sub> | n/a | — | de escritorio, de mano, de diadema | alta |
+| **Microscopio digital USB**<br><sub>`her-microscopio-usb`</sub> | n/a | — | USB, con pantalla LCD | media |
+| **Kit de herramientas Steren para electrónica**<br><sub>`her-kit-herramientas-steren`</sub> | n/a | — | — | media |
+| **Multímetro digital económico DT830B**<br><sub>`her-multimetro-dt830b`</sub> | n/a | — | DT830B, DT830D, DT832 | muy alta |
+| **Analizador lógico USB de 8 canales (24 MHz)**<br><sub>`her-analizador-logico-24mhz`</sub> | n/a | — | 24 MHz 8 canales | alta |
+| **Multímetro autorrango con capacitancia, frecuencia y temperatura**<br><sub>`her-multimetro-autorrango`</sub> | n/a | — | UNI-T UT33C+, UNI-T UT61E+, ANENG AN8008 | alta |
+| **Multímetro digital DT9205A**<br><sub>`her-multimetro-dt9205a`</sub> | n/a | — | DT9205A | alta |
+| **Multímetros digitales Steren (línea MUL)**<br><sub>`her-multimetro-steren`</sub> | n/a | — | MUL-010, MUL-265, MUL-270, MUL-281, MUL-105 (analógico) | alta |
+| **Probador de componentes LCR-T4 / TC1**<br><sub>`her-probador-componentes-lcr-t4`</sub> | n/a | — | LCR-T4, TC1, T7 | alta |
+| **Pinza amperimétrica**<br><sub>`her-pinza-amperimetrica`</sub> | n/a | — | AC 400–600 A, AC/DC | media |
+| **Probador de continuidad**<br><sub>`her-probador-continuidad`</sub> | n/a | — | — | media |
+| **Punta lógica**<br><sub>`her-punta-logica`</sub> | n/a | — | — | media |
+| **Calibrador vernier digital 150 mm**<br><sub>`her-vernier-calibrador`</sub> | n/a | — | digital 150 mm, analógico | muy alta |
+| **Regla y escuadra metálica**<br><sub>`her-regla-escuadra-metalica`</sub> | n/a | — | 15 cm, 30 cm, escuadra | muy alta |
+| **Osciloscopio en kit DSO138**<br><sub>`her-osciloscopio-dso138`</sub> | n/a | — | kit THT, armado | alta |
+| **Osciloscopio de banco básico (Rigol DS1054Z, Owon, Hantek, Siglent)**<br><sub>`her-osciloscopio-banco`</sub> | n/a | — | DS1054Z, SDS1102, DSO5102P, SDS1202X-E | media |
+| **Osciloscopio de bolsillo / portátil**<br><sub>`her-osciloscopio-bolsillo`</sub> | n/a | — | DSO150, FNIRSI DSO-TC3, Hantek 2D72 | media |
+| **Tercera mano con lupa**<br><sub>`her-tercera-mano-lupa`</sub> | n/a | — | con lupa, con lupa y LED | muy alta |
+| **Tercera mano con brazos flexibles**<br><sub>`her-tercera-mano-brazos-flexibles`</sub> | n/a | — | 4 brazos, 6 brazos | alta |
+| **Soporte / prensa para PCB**<br><sub>`her-soporte-placa-pcb`</sub> | n/a | — | — | media |
+| **Brocas de carburo de tungsteno para PCB (zanco 3.175 mm)**<br><sub>`her-brocas-carburo-pcb`</sub> | n/a | — | 0.6 mm, 0.8 mm, 0.9 mm, 1.0 mm, 1.2 mm, 1.5 mm, kit 10 pzs 0.3–1.2 mm | alta |
+| **Brocas HSS pequeñas (milimétricas y fraccionales)**<br><sub>`her-brocas-hss-pequenas`</sub> | n/a | — | 0.8 mm, 1.0 mm, 1/32 in, 3/64 in, 1/16 in | alta |
+| **Mototool / herramienta rotativa (Dremel)**<br><sub>`her-mototool-dremel`</sub> | n/a | — | Dremel 3000, Dremel 4000, Truper mototool | alta |
+| **Minitaladro para PCB de 12 V con portabrocas**<br><sub>`her-minitaladro-pcb-12v`</sub> | n/a | — | motor 385, motor 775, kit con brocas | media |
+| **Portabrocas manual (pin vise)**<br><sub>`her-portabrocas-manual`</sub> | n/a | — | — | media |
+| **Soporte de columna para minitaladro / Dremel**<br><sub>`her-soporte-columna-taladro`</sub> | n/a | — | Dremel 220, mini drill press 12 V | media |
+| **Impresora láser (información para método de planchado)**<br><sub>`her-impresora-laser`</sub> | n/a | — | — | alta |
+| **Plancha o laminadora para transferencia térmica**<br><sub>`her-plancha-laminadora`</sub> | n/a | — | plancha doméstica, laminadora A4 | alta |
+| **Lámpara UV para insolado (exposición)**<br><sub>`her-lampara-uv-insolado`</sub> | n/a | — | LED 395 nm, LED 405 nm, lámpara de uñas 36–48 W | media |
+
+<a id="energia"></a>
+## Energía (pilas, baterías, fuentes)
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Power bank (como fuente para proyectos)**<br><sub>`ene-power-bank`</sub> | n/a | — | 5000 mAh, 10000 mAh, 20000 mAh | alta |
+| **Cargador de pilas NiMH AA/AAA**<br><sub>`ene-cargador-pilas-nimh`</sub> | n/a | — | 2 ranuras, 4 ranuras, USB | alta |
+| **Cargador balanceador para LiPo (tipo iMAX B6)**<br><sub>`ene-cargador-balanceador-lipo`</sub> | n/a | — | iMAX B6, B6AC | media |
+| **Cargador externo para baterías 18650 / Li-ion**<br><sub>`ene-cargador-18650`</sub> | n/a | — | 1 ranura USB, 2 ranuras, 4 ranuras | media |
+| **Cargador USB de 5 V (cubo de pared)**<br><sub>`ene-cargador-usb-5v`</sub> | n/a | — | 5 V 1 A, 5 V 2 A, 5 V 2.4 A, USB-C 20 W | muy alta |
+| **Eliminador de voltaje fijo 5/9/12 V con plug 5.5 x 2.1 mm**<br><sub>`ene-eliminador-fijo-plug-2-1`</sub> | n/a | Plug 5.5 x 2.1 mm | 5 V 1 A, 5 V 2 A, 9 V 1 A, 12 V 1 A, 12 V 2 A, 12 V 5 A | muy alta |
+| **Eliminador de voltaje seleccionable (3–12 V) con puntas intercambiables**<br><sub>`ene-eliminador-voltaje-seleccionable`</sub> | n/a | Plug coaxial intercambiable | 500 mA, 1 A, 2 A | muy alta |
+| **Fuente conmutada tipo caja metálica (S-60-12, S-120-12, etc.)**<br><sub>`ene-fuente-conmutada-caja-metalica`</sub> | panel | Bornera de tornillos | 5 V 5 A, 5 V 10 A, 12 V 5 A, 12 V 10 A, 12 V 30 A, 24 V 5 A, 24 V 15 A | alta |
+| **Fuente de PC ATX (como recurso de alimentación)**<br><sub>`ene-fuente-atx`</sub> | n/a | — | 300 W, 500 W | media |
+| **Batería Li-ion 18650 3.7 V**<br><sub>`ene-bateria-18650`</sub> | n/a | 18650 sin protección (2p); 18650 con protección (2p) | 2000 mAh, 2600 mAh, 3000 mAh, 3400 mAh, con protección, sin protección | muy alta |
+| **Batería 18650 con lengüetas de níquel para soldar**<br><sub>`ene-bateria-18650-lengueta`</sub> | n/a | 18650 + lengüetas (2p) | con lengüetas planas, con lengüetas tipo pin | alta |
+| **Batería 16340 (Li-ion 3.7 V) / CR123A (litio 3 V)**<br><sub>`ene-bateria-16340-cr123a`</sub> | n/a | 16340 / CR123A (2p) | CR123A, 16340 | media |
+| **Batería Li-ion 14500 3.7 V (tamaño AA)**<br><sub>`ene-bateria-14500`</sub> | n/a | 14500 (2p) | 800 mAh, con protección | media |
+| **Batería Li-ion 21700 3.7 V**<br><sub>`ene-bateria-21700`</sub> | n/a | 21700 (2p) | 4000 mAh, 5000 mAh | media |
+| **Batería LiPo 3.7 V 1S con conector JST-PH**<br><sub>`ene-bateria-lipo-1s`</sub> | n/a | JST-PH 2.0 mm (2p, 2.0 mm) | 150 mAh, 500 mAh, 1000 mAh, 2000 mAh, 3000 mAh | alta |
+| **Batería LiPo 2S (7.4 V) / 3S (11.1 V) para RC**<br><sub>`ene-bateria-lipo-2s-3s`</sub> | n/a | Balanceo JST-XH (2.54 mm) | 2S 1000–2200 mAh, 3S 1300–5000 mAh, 20C–50C | media |
+| **Pila de 9 V alcalina (cuadrada)**<br><sub>`ene-pila-9v-alcalina`</sub> | n/a | PP3 / 6LR61 (2p) | alcalina 6LR61, zinc-carbón 6F22 | muy alta |
+| **Pila de 9 V recargable (NiMH o Li-ion)**<br><sub>`ene-pila-9v-recargable`</sub> | n/a | PP3 (2p) | NiMH 8.4 V, Li-ion USB | media |
+| **Pila de botón de litio CR2032 (3 V)**<br><sub>`ene-pila-boton-cr2032`</sub> | n/a | CR2032 (2p) | CR2032 | muy alta |
+| **Pila de botón alcalina LR44 / AG13 (1.5 V)**<br><sub>`ene-pila-boton-lr44`</sub> | n/a | LR44 (2p) | LR44, SR44, AG13 | alta |
+| **Pila de botón de litio CR1220 (3 V)**<br><sub>`ene-pila-boton-cr1220`</sub> | n/a | CR1220 (2p) | CR1220 | alta |
+| **Pila de botón de litio CR2016 (3 V)**<br><sub>`ene-pila-boton-cr2016`</sub> | n/a | CR2016 (2p) | CR2016 | alta |
+| **Pila de botón de litio CR2025 (3 V)**<br><sub>`ene-pila-boton-cr2025`</sub> | n/a | CR2025 (2p) | CR2025 | alta |
+| **Otras pilas de botón (LR41/AG3, CR2450, CR1632, AG1–AG12)**<br><sub>`ene-pila-boton-otras`</sub> | n/a | LR41 (2p); CR2450 (2p); CR1632 (2p) | LR41/AG3, AG10/LR1130, CR2450, CR1632 | media |
+| **Pila AA alcalina 1.5 V**<br><sub>`ene-pila-aa-alcalina`</sub> | n/a | AA (R6/LR6) (2p) | alcalina, zinc-carbón, blíster 2/4/8 pzs | muy alta |
+| **Pila AAA alcalina 1.5 V**<br><sub>`ene-pila-aaa-alcalina`</sub> | n/a | AAA (R03/LR03) (2p) | alcalina, zinc-carbón | muy alta |
+| **Pilas recargables NiMH AA y AAA 1.2 V**<br><sub>`ene-pila-aa-aaa-nimh`</sub> | n/a | AA (2p); AAA (2p) | AA 2000 mAh, AA 2500 mAh, AAA 800 mAh, AAA 1000 mAh | alta |
+| **Pila AA de litio recargable 1.5 V con USB**<br><sub>`ene-pila-aa-litio-usb`</sub> | n/a | AA (2p) | AA, AAA | media |
+| **Pilas C y D alcalinas 1.5 V**<br><sub>`ene-pila-c-d`</sub> | n/a | C (LR14) (2p); D (LR20) (2p) | C (LR14), D (LR20) | media |
+| **Batería de plomo-ácido sellada 12 V 7 Ah**<br><sub>`ene-bateria-plomo-12v-7ah`</sub> | n/a | 12 V 7 Ah (2p) | 12 V 7 Ah, 12 V 9 Ah | alta |
+| **Batería de plomo-ácido sellada 12 V 1.2 Ah**<br><sub>`ene-bateria-plomo-12v-1-2ah`</sub> | n/a | 12 V 1.2 Ah (2p) | 12 V 1.2 Ah, 12 V 1.3 Ah | media |
+| **Batería de plomo-ácido sellada 6 V 4.5 Ah**<br><sub>`ene-bateria-plomo-6v-4-5ah`</sub> | n/a | 6 V 4.5 Ah (2p) | 6 V 4.5 Ah, 6 V 4 Ah | media |
+| **Panel solar pequeño 5 V / 6 V / 12 V (0.5–10 W)**<br><sub>`ene-panel-solar-pequeno`</sub> | n/a | Panel (2p) | 5 V 1 W, 6 V 2 W, 6 V 3.5 W, 12 V 5 W, 12 V 10 W | media |
