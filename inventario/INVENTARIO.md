@@ -2,7 +2,7 @@
 
 Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 
-**Total: 806 componentes** en 19 categorías.
+**Total: 912 componentes** en 21 categorías.
 
 | Categoría | Elementos |
 |---|---:|
@@ -12,6 +12,8 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | [Protección (fusibles, varistores, TVS)](#proteccion) | 19 |
 | [Semiconductores discretos (diodos, transistores, tiristores)](#semiconductores_discretos) | 86 |
 | [Optoelectrónica (LEDs, optoacopladores, displays de LED)](#optoelectronica) | 30 |
+| [Placas de desarrollo (Arduino, ESP, Raspberry Pi) y programadores](#placas_desarrollo) | 70 |
+| [Módulos de comunicación](#modulos_comunicacion) | 36 |
 | [Sensores](#sensores) | 112 |
 | [Displays y pantallas](#displays) | 37 |
 | [Actuadores y audio (motores, servos, buzzers, bocinas)](#actuadores_y_audio) | 37 |
@@ -283,6 +285,124 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Sensor óptico reflectivo TCRT5000 / TCRT5000L (suelto)**<br><sub>`opt-tcrt5000`</sub> | THT | TCRT5000 4 pines (4p) | TCRT5000, TCRT5000L (patas largas) | alta |
 | **Interruptor óptico ranurado H21A1 / ITR9608 / TCST2103**<br><sub>`opt-interruptor-ranurado`</sub> | THT | Optointerruptor ranurado 4 pines (4p) | H21A1, ITR9608, TCST2103, MOC70T2 | media |
 | **Sensor óptico reflectivo CNY70**<br><sub>`opt-cny70`</sub> | THT | CNY70 4 pines (4p) | CNY70 | media |
+
+<a id="placas_desarrollo"></a>
+## Placas de desarrollo (Arduino, ESP, Raspberry Pi) y programadores
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Adaptador USB a TTL serie CH340G**<br><sub>`brd-usb-serial-ch340g`</sub> | modulo | Header 1x6 (6p, 2.54 mm) | USB-A, Micro-USB, USB-C (CH340E/CH340C) | muy alta |
+| **Adaptador USB a TTL serie CP2102**<br><sub>`brd-usb-serial-cp2102`</sub> | modulo | Header 1x6 (6p, 2.54 mm) | USB-A, Micro-USB | alta |
+| **Adaptador USB a TTL serie FT232RL (FTDI)**<br><sub>`brd-usb-serial-ft232rl`</sub> | modulo | Header 1x6 (orden FTDI) (6p, 2.54 mm) | Mini-USB, USB-C | alta |
+| **Adaptador / cable USB a TTL PL2303HX**<br><sub>`brd-usb-serial-pl2303`</sub> | modulo | Header 1x5 o cable de 4 hilos (5p, 2.54 mm) | Módulo USB-A, Cable de 4 hilos | media |
+| **Arduino Mega 2560 R3 compatible (clon CH340)**<br><sub>`brd-arduino-mega-2560-clon-ch340`</sub> | modulo | Placa formato Arduino Mega (86p, 2.54 mm, filas 48.26 mm) | CH340G, Con cable USB | muy alta |
+| **Arduino Nano V3 compatible (clon CH340, mini-USB)**<br><sub>`brd-arduino-nano-clon-ch340`</sub> | modulo | Nano DIP-30 (2x15) (30p, 2.54 mm, filas 15.24 mm) | Headers soldados, Headers sin soldar, Con cable mini-USB | muy alta |
+| **Arduino UNO R3 compatible (clon CH340, ATmega328P DIP)**<br><sub>`brd-arduino-uno-r3-clon-ch340-dip`</sub> | modulo | Placa formato Arduino UNO R3 (32p, 2.54 mm, filas 48.26 mm) | CH340G + cristal 12 MHz, Con cable USB-B | muy alta |
+| **Arduino UNO R3 compatible (clon CH340, ATmega328P SMD)**<br><sub>`brd-arduino-uno-r3-clon-ch340-smd`</sub> | modulo | Placa formato Arduino UNO R3 (32p, 2.54 mm, filas 48.26 mm) | CH340G, CH340C (sin cristal), Conector USB-B / micro-USB / USB-C | muy alta |
+| **Arduino Nano compatible USB-C (CH340)**<br><sub>`brd-arduino-nano-clon-usb-c`</sub> | modulo | Nano DIP-30 (2x15) (30p, 2.54 mm, filas 15.24 mm) | CH340C, ATmega328P, ATmega328PB (variante) | alta |
+| **Arduino Pro Mini 5 V / 16 MHz (compatible)**<br><sub>`brd-arduino-pro-mini-5v`</sub> | modulo | Pro Mini (2x12 + FTDI 1x6) (30p, 2.54 mm, filas 15.24 mm) | Headers sin soldar, ATmega328P-AU | alta |
+| **Pro Micro ATmega32U4 (compatible SparkFun)**<br><sub>`brd-pro-micro-atmega32u4`</sub> | modulo | Pro Micro DIP-24 (2x12) (24p, 2.54 mm, filas 15.24 mm) | 5 V / 16 MHz, 3.3 V / 8 MHz, Micro-USB, USB-C | alta |
+| **Arduino Pro Mini 3.3 V / 8 MHz (compatible)**<br><sub>`brd-arduino-pro-mini-3v3`</sub> | modulo | Pro Mini (2x12 + FTDI 1x6) (30p, 2.54 mm, filas 15.24 mm) | Headers sin soldar | media |
+| **Arduino UNO R3 (original)**<br><sub>`brd-arduino-uno-r3`</sub> | modulo | Placa formato Arduino UNO R3 (32p, 2.54 mm, filas 48.26 mm) | Original Italia (A000066), Original SMD (A000073) | muy alta |
+| **Arduino Mega 2560 R3 (original)**<br><sub>`brd-arduino-mega-2560-r3`</sub> | modulo | Placa formato Arduino Mega (86p, 2.54 mm, filas 48.26 mm) | Original (ATmega16U2) | alta |
+| **Arduino Nano V3 (original, mini-USB)**<br><sub>`brd-arduino-nano-v3`</sub> | modulo | Nano DIP-30 (2x15) (30p, 2.54 mm, filas 15.24 mm) | Original (FT232RL), Con o sin headers soldados | alta |
+| **Arduino Due**<br><sub>`brd-arduino-due`</sub> | modulo | Placa formato Arduino Mega (86p, 2.54 mm, filas 48.26 mm) | Original, Clon | media |
+| **Arduino Leonardo**<br><sub>`brd-arduino-leonardo`</sub> | modulo | Placa formato UNO R3 (Leonardo) (32p, 2.54 mm, filas 48.26 mm) | Original, Clon (micro-USB) | media |
+| **Arduino Micro**<br><sub>`brd-arduino-micro`</sub> | modulo | Micro DIP-34 (2x17) (34p, 2.54 mm, filas 15.24 mm) | Original, Clon | media |
+| **Arduino Nano 33 IoT**<br><sub>`brd-arduino-nano-33-iot`</sub> | modulo | Nano DIP-30 (2x15) (30p, 2.54 mm, filas 15.24 mm) | Con headers, Sin headers | media |
+| **Arduino Nano ESP32**<br><sub>`brd-arduino-nano-esp32`</sub> | modulo | Nano DIP-30 (2x15) (30p, 2.54 mm, filas 15.24 mm) | Con headers, Sin headers | media |
+| **Arduino Nano Every**<br><sub>`brd-arduino-nano-every`</sub> | modulo | Nano DIP-30 (2x15) (30p, 2.54 mm, filas 15.24 mm) | Con headers, Sin headers | media |
+| **Arduino UNO R4 Minima**<br><sub>`brd-arduino-uno-r4-minima`</sub> | modulo | Placa formato UNO R3 (R4 Minima) (32p, 2.54 mm, filas 48.26 mm) | R4 Minima | media |
+| **Arduino UNO R4 WiFi**<br><sub>`brd-arduino-uno-r4-wifi`</sub> | modulo | Placa formato UNO R3 (R4 WiFi) (32p, 2.54 mm, filas 48.26 mm) | R4 WiFi | media |
+| **Base de expansión para ESP32 DevKit 30 pines**<br><sub>`brd-base-esp32-30p`</sub> | modulo | Zócalo hembra 2x15 + tiras G-V-S (30p, 2.54 mm, filas 25.4 mm) | 30 pines, 38 pines, Con borneras de tornillo | alta |
+| **Base de expansión para NodeMCU v3 (Lolin)**<br><sub>`brd-base-nodemcu-v3`</sub> | modulo | Zócalo hembra 2x15 + tiras G-V-S (30p, 2.54 mm, filas 27.94 mm) | Para v3 (Lolin), Doble zócalo v2/v3 | alta |
+| **Nano I/O Shield / placa de expansión para Arduino Nano**<br><sub>`brd-shield-nano-io`</sub> | modulo | Zócalo hembra 2x15 (30p, 2.54 mm, filas 15.24 mm) | Con tiras G-V-S, Con borneras de tornillo | alta |
+| **ESP32 DevKit V1 30 pines (DOIT)**<br><sub>`brd-esp32-devkit-v1-30p`</sub> | modulo | 2x15 pines (30p, 2.54 mm, filas 25.4 mm) | Micro-USB + CP2102, USB-C + CH340C, Headers soldados | muy alta |
+| **ESP32 DevKitC 38 pines (ESP32-WROOM-32)**<br><sub>`brd-esp32-devkitc-38p`</sub> | modulo | 2x19 pines (38p, 2.54 mm, filas 25.4 mm) | CP2102, CH340C, Micro-USB, USB-C, WROOM-32 / WROOM-32U (antena externa) | alta |
+| **ESP32-C3 SuperMini**<br><sub>`brd-esp32-c3-supermini`</sub> | modulo | 2x8 pines (16p, 2.54 mm, filas 15.24 mm) | Con headers, Sin headers | alta |
+| **ESP32-CAM (AI-Thinker, cámara OV2640)**<br><sub>`brd-esp32-cam`</sub> | modulo | 2x8 pines (16p, 2.54 mm, filas 22.86 mm) | Con OV2640, Con antena IPEX, Kit con ESP32-CAM-MB | alta |
+| **ESP32-S3 DevKitC-1 (N8R2 / N16R8)**<br><sub>`brd-esp32-s3-devkitc-1`</sub> | modulo | 2x22 pines (44p, 2.54 mm) | N8R2, N8R8, N16R8, Clones con CH343/CH340 | alta |
+| **ESP32-C6 (DevKitC-1 / SuperMini)**<br><sub>`brd-esp32-c6-devkit`</sub> | modulo | Headers 2.54 mm (según placa) (2.54 mm) | DevKitC-1 (N8), SuperMini | media |
+| **Heltec WiFi LoRa 32 V3 (ESP32-S3 + SX1262 + OLED)**<br><sub>`brd-heltec-wifi-lora-32-v3`</sub> | modulo | 2x18 pines (36p, 2.54 mm) | 863–928 MHz (usar 915 MHz en México), 433–510 MHz | media |
+| **Wemos D1 R32 (ESP32 en formato UNO)**<br><sub>`brd-wemos-d1-r32`</sub> | modulo | Placa formato UNO R3 (D1 R32) (32p, 2.54 mm, filas 48.26 mm) | CH340G | media |
+| **NodeMCU v2 ESP8266 (Amica, CP2102)**<br><sub>`brd-nodemcu-v2-cp2102`</sub> | modulo | 2x15 pines (30p, 2.54 mm, filas 22.86 mm) | CP2102, ESP-12E o ESP-12F | muy alta |
+| **NodeMCU v3 ESP8266 (Lolin, CH340)**<br><sub>`brd-nodemcu-v3-lolin-ch340`</sub> | modulo | 2x15 pines (30p, 2.54 mm, filas 27.94 mm) | CH340G, ESP-12E/F | muy alta |
+| **Wemos / LOLIN D1 mini (ESP8266)**<br><sub>`brd-wemos-d1-mini`</sub> | modulo | 2x8 pines (16p, 2.54 mm, filas 22.86 mm) | v3 (CH340G), v4 (USB-C), D1 mini Pro (16 MB, antena externa), Clones | alta |
+| **Wemos D1 R2 (ESP8266 en formato UNO)**<br><sub>`brd-wemos-d1-r2`</sub> | modulo | Placa formato UNO R3 (D1 R2) (32p, 2.54 mm, filas 48.26 mm) | CH340G, Clones | media |
+| **BBC micro:bit V2**<br><sub>`brd-microbit-v2`</sub> | modulo | Conector de borde (edge) 25 pistas (25p, 1.27 mm) | V2.2, Kit con portapilas | media |
+| **Digispark ATtiny85 (USB)**<br><sub>`brd-digispark-attiny85`</sub> | modulo | 1x6 E/S + 1x3 alimentación (9p, 2.54 mm) | USB en PCB, Micro-USB | media |
+| **Seeed Studio XIAO (ESP32-C3 / ESP32-S3 / RP2040 / SAMD21)**<br><sub>`brd-seeed-xiao`</sub> | modulo | 2x7 castellated (14p, 2.54 mm, filas 15.24 mm) | XIAO SAMD21, XIAO RP2040, XIAO ESP32C3, XIAO ESP32S3 (Sense con cámara), XIAO nRF52840, XIAO ESP32C6 | media |
+| **Base programadora ESP32-CAM-MB (CH340)**<br><sub>`brd-esp32-cam-mb`</sub> | modulo | Header hembra 2x8 (16p, 2.54 mm, filas 22.86 mm) | Micro-USB, USB-C | alta |
+| **Programador ST-Link V2 (clon, tipo USB)**<br><sub>`brd-prog-st-link-v2`</sub> | modulo | Header macho 2x5 (cables dupont) (10p, 2.54 mm, filas 2.54 mm) | Carcasa de aluminio, Clon con chip STM32F103/CKS32/APM32 | alta |
+| **Programador USB para ESP-01 (CH340)**<br><sub>`brd-esp01-programador-usb`</sub> | modulo | Zócalo hembra 2x4 + USB-A (8p, 2.54 mm, filas 2.54 mm) | Con interruptor PROG/UART, Sin interruptor | alta |
+| **Programador USBasp (AVR ISP)**<br><sub>`brd-prog-usbasp`</sub> | modulo | Conector IDC 2x5 (cable plano) (10p, 2.54 mm, filas 2.54 mm) | Con cable de 10 pines, Con adaptador 10 a 6 | alta |
+| **Adaptador ESP-01 a 5 V (regulador + niveles)**<br><sub>`brd-esp01-adaptador-5v`</sub> | modulo | Zócalo 2x4 + header 1x4 (12p, 2.54 mm, filas 2.54 mm) | — | media |
+| **Programador CH341A (EEPROM 24xx / Flash SPI 25xx)**<br><sub>`brd-prog-ch341a`</sub> | modulo | Zócalo ZIF 2x8 (DIP-8 24xx/25xx) (16p, 2.54 mm, filas 7.62 mm) | Con pinza SOIC-8, Con adaptador 1.8 V, Versión negra/verde | media |
+| **Programador de PIC K150 / K128 (USB, ZIF 40)**<br><sub>`brd-prog-k150`</sub> | modulo | Zócalo ZIF 40 + ICSP 1x5/1x6 (40p, 2.54 mm, filas 15.24 mm) | K150 (USB, PL2303/CH340 + PIC16F628A), K128 (versión anterior) | media |
+| **Programador PICkit 2 (clon)**<br><sub>`brd-prog-pickit2-clon`</sub> | modulo | Header ICSP 1x6 hembra (6p, 2.54 mm) | Solo programador, Con base de programación ZIF | media |
+| **Programador PICkit 3 (clon)**<br><sub>`brd-prog-pickit3-clon`</sub> | modulo | Header ICSP 1x6 hembra (6p, 2.54 mm) | Clon, Con adaptador ZIF | media |
+| **Programador universal XGecu TL866II Plus**<br><sub>`brd-prog-tl866ii-plus`</sub> | modulo | Zócalo ZIF 40 + ICSP (40p, 2.54 mm, filas 15.24 mm) | TL866II Plus, T48, Kit con adaptadores | media |
+| **Programador/depurador PICkit 4 (MPLAB)**<br><sub>`brd-prog-pickit4`</sub> | modulo | Header 1x8 hembra (8p, 2.54 mm) | Original | media |
+| **Raspberry Pi Pico (RP2040)**<br><sub>`brd-rpi-pico`</sub> | modulo | Pico 2x20 castellated/through-hole (40p, 2.54 mm, filas 17.78 mm) | Pico, Pico H (headers soldados y conector de depuración JST) | alta |
+| **Raspberry Pi Pico W / WH (RP2040 + Wi-Fi)**<br><sub>`brd-rpi-pico-w`</sub> | modulo | Pico 2x20 castellated/through-hole (40p, 2.54 mm, filas 17.78 mm) | Pico W, Pico WH (headers soldados) | alta |
+| **Raspberry Pi Pico 2 / Pico 2 W (RP2350)**<br><sub>`brd-rpi-pico-2`</sub> | modulo | Pico 2x20 castellated/through-hole (40p, 2.54 mm, filas 17.78 mm) | Pico 2, Pico 2 W (Wi-Fi/BT), Con headers (H/WH) | media |
+| **Raspberry Pi 4 Model B**<br><sub>`brd-rpi-4b`</sub> | modulo | Header GPIO 2x20 (40p, 2.54 mm, filas 2.54 mm) | 2 GB, 4 GB, 8 GB, 1 GB (descontinuada en algunos mercados) | alta |
+| **Raspberry Pi 5**<br><sub>`brd-rpi-5`</sub> | modulo | Header GPIO 2x20 (40p, 2.54 mm, filas 2.54 mm) | 2 GB, 4 GB, 8 GB, 16 GB | alta |
+| **Raspberry Pi Zero 2 W**<br><sub>`brd-rpi-zero-2w`</sub> | modulo | Header GPIO 2x20 (sin poblar) (40p, 2.54 mm, filas 2.54 mm) | Zero 2 W, Zero 2 WH | alta |
+| **Raspberry Pi 3 Model B+**<br><sub>`brd-rpi-3b-plus`</sub> | modulo | Header GPIO 2x20 (40p, 2.54 mm, filas 2.54 mm) | 1 GB | media |
+| **CNC Shield V3 (GRBL, 4 drivers)**<br><sub>`brd-shield-cnc-v3`</sub> | modulo | Shield formato UNO R3 (32p, 2.54 mm, filas 48.26 mm) | Sin drivers, Kit con 4 A4988, Kit con DRV8825 | alta |
+| **LCD Keypad Shield 16x2 (5 botones)**<br><sub>`brd-shield-lcd-keypad`</sub> | modulo | Shield formato UNO R3 (32p, 2.54 mm, filas 48.26 mm) | Azul/blanco | alta |
+| **Motor Shield L293D (clon Adafruit v1)**<br><sub>`brd-shield-motor-l293d`</sub> | modulo | Shield formato UNO R3 (32p, 2.54 mm, filas 48.26 mm) | Clon v1 | alta |
+| **Sensor Shield V5.0 para UNO**<br><sub>`brd-shield-sensor-v5`</sub> | modulo | Shield formato UNO R3 (32p, 2.54 mm, filas 48.26 mm) | V5.0 | alta |
+| **Shield de prototipos (Proto Shield) para UNO**<br><sub>`brd-shield-protoshield-uno`</sub> | modulo | Shield formato UNO R3 (32p, 2.54 mm, filas 48.26 mm) | Con mini protoboard 170 puntos, Sin protoboard, Versión para Mega | alta |
+| **Data Logger Shield (SD + RTC DS1307)**<br><sub>`brd-shield-data-logger`</sub> | modulo | Shield formato UNO R3 (32p, 2.54 mm, filas 48.26 mm) | DS1307 (clon Adafruit v1 / Deek-Robot), PCF8523 (Adafruit rev B) | media |
+| **Ethernet Shield W5100 (con microSD)**<br><sub>`brd-shield-ethernet-w5100`</sub> | modulo | Shield formato UNO R3 (32p, 2.54 mm, filas 48.26 mm) | W5100 R3 clon, W5500 (versión moderna) | media |
+| **Multi-function Shield (display 4 dígitos, botones, buzzer)**<br><sub>`brd-shield-multifuncion`</sub> | modulo | Shield formato UNO R3 (32p, 2.54 mm, filas 48.26 mm) | — | media |
+| **RAMPS 1.4 (shield para Mega 2560)**<br><sub>`brd-shield-ramps-14`</sub> | modulo | Shield formato Mega (86p, 2.54 mm, filas 48.26 mm) | RAMPS 1.4, Kit con Mega + LCD 12864 + drivers | media |
+| **STM32 Blue Pill (STM32F103C8T6)**<br><sub>`brd-stm32-blue-pill`</sub> | modulo | 2x20 pines + SWD 1x4 (44p, 2.54 mm, filas 15.24 mm) | STM32F103C8T6 (64 KB), Clones con CKS32/CS32F103 o STM32F103C6 | alta |
+| **STM32 Black Pill (STM32F401/F411, WeAct)**<br><sub>`brd-stm32-black-pill`</sub> | modulo | 2x20 pines + SWD 1x4 (44p, 2.54 mm, filas 15.24 mm) | STM32F401CCU6 (84 MHz, 256 KB / 64 KB), STM32F411CEU6 (100 MHz, 512 KB / 128 KB), Con flash SPI opcional | media |
+
+<a id="modulos_comunicacion"></a>
+## Módulos de comunicación
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Módulo Bluetooth HC-05 (maestro/esclavo)**<br><sub>`com-bt-hc05`</sub> | modulo | Header 1x6 (placa base ZS-040) (6p, 2.54 mm) | HC-05 ZS-040, HC-05 de 6 pines con botón | muy alta |
+| **Módulo Bluetooth HC-06 (esclavo)**<br><sub>`com-bt-hc06`</sub> | modulo | Header 1x4 (4p, 2.54 mm) | 4 pines, 6 pines | alta |
+| **Módulo Bluetooth JDY-31 (SPP, compatible HC-06)**<br><sub>`com-bt-jdy31`</sub> | modulo | Header 1x6 (6p, 2.54 mm) | — | media |
+| **Módulo Bluetooth LE HM-10 (CC2541)**<br><sub>`com-ble-hm10`</sub> | modulo | Header 1x6 (6p, 2.54 mm) | HM-10 original (JNHuaMao), Clones AT-09 / MLT-BT05 | media |
+| **Módulo Ethernet ENC28J60**<br><sub>`com-eth-enc28j60`</sub> | modulo | Header 2x5 (10p, 2.54 mm, filas 2.54 mm) | Versión azul 2x5, Versión mini para Nano | media |
+| **Módulo Ethernet W5500**<br><sub>`com-eth-w5500`</sub> | modulo | Header 2x5 (10p, 2.54 mm, filas 2.54 mm) | Mini W5500, W5500 Lite (USR-ES1) | media |
+| **Módulo GPS u-blox NEO-6M (GY-GPS6MV2)**<br><sub>`com-gps-neo6m`</sub> | modulo | Header 1x4 (4p, 2.54 mm) | Con antena cerámica, Con antena activa | alta |
+| **Módulo GNSS u-blox NEO-M8N**<br><sub>`com-gps-neo-m8n`</sub> | modulo | Header 1x4 o conector GH 6 pines (4p, 2.54 mm) | Breakout, Domo para dron con brújula | media |
+| **Módulo GSM/GPRS SIM800L**<br><sub>`com-gsm-sim800l`</sub> | modulo | 2 headers 1x6 en lados opuestos (12p, 2.54 mm) | SIM800L (rojo, 3.7–4.2 V), SIM800L EVB V2 (azul, 5 V con niveles) | alta |
+| **Módulo 4G LTE Cat-1 SIMCom A7670 (A7670SA/E)**<br><sub>`com-4g-a7670`</sub> | modulo | Breakout con header (según fabricante) (2.54 mm) | A7670SA (Latinoamérica), A7670E (Europa/Asia), Con GNSS | media |
+| **Shield GSM/GPRS SIM900 para Arduino**<br><sub>`com-gsm-sim900-shield`</sub> | modulo | Shield formato UNO R3 (32p, 2.54 mm, filas 48.26 mm) | — | media |
+| **Transceptor infrarrojo IR por UART (YS-IRTM) y kit emisor/receptor IR**<br><sub>`com-ir-ys-irtm`</sub> | modulo | YS-IRTM header 1x5 / KY 1x3 (5p, 2.54 mm) | YS-IRTM, KY-022 receptor, KY-005 emisor, Control remoto de 21 teclas | media |
+| **Módulo LoRa 915 MHz RFM95W / Ra-01H (SX1276)**<br><sub>`com-lora-rfm95w-915`</sub> | modulo | SMD 16 pads (16p, 2.0 mm) | RFM95W 915 MHz, Ra-01H, Breakout con SMA | media |
+| **Módulo LoRa Ra-02 (SX1278, 433 MHz)**<br><sub>`com-lora-ra02-sx1278`</sub> | modulo | SMD medio-barreno 16 pads (16p, 2.0 mm) | Ra-02 (433 MHz), Ra-01 (antena resorte) | media |
+| **Módulo LoRa UART EBYTE E32 (433/915 MHz)**<br><sub>`com-lora-e32`</sub> | modulo | Header 1x7 + SMA (7p, 2.54 mm) | E32-433T20D, E32-915T20D, E220 (LLCC68, nueva generación) | media |
+| **Transceptor 2.4 GHz nRF24L01+ (antena PCB)**<br><sub>`com-nrf24l01`</sub> | modulo | Header 2x4 (8p, 2.54 mm, filas 2.54 mm) | Antena PCB, Versión SMD mini | muy alta |
+| **Adaptador de 5 V a 3.3 V para nRF24L01**<br><sub>`com-nrf24l01-adaptador`</sub> | modulo | Zócalo 2x4 + header 1x8 (16p, 2.54 mm, filas 2.54 mm) | — | alta |
+| **Transceptor nRF24L01+PA+LNA (antena SMA)**<br><sub>`com-nrf24l01-pa-lna`</sub> | modulo | Header 2x4 (8p, 2.54 mm, filas 2.54 mm) | Con antena 2 dBi, Con blindaje metálico | alta |
+| **Receptor RF 433 MHz XY-MK-5V**<br><sub>`com-rf433-xy-mk-5v-rx`</sub> | modulo | Header 1x4 (4p, 2.54 mm) | 433 MHz, 315 MHz | muy alta |
+| **Transmisor RF 433 MHz FS1000A**<br><sub>`com-rf433-fs1000a-tx`</sub> | modulo | Header 1x3 (3p, 2.54 mm) | 433 MHz, 315 MHz | muy alta |
+| **Kit transmisor/receptor RF 315 MHz**<br><sub>`com-rf315-kit`</sub> | modulo | TX 1x3 / RX 1x4 (7p, 2.54 mm) | 315 MHz | media |
+| **Receptor superheterodino 433 MHz RXB6**<br><sub>`com-rf433-rxb6`</sub> | modulo | Header 1x8 (8p, 2.54 mm) | 433 MHz, 315 MHz | media |
+| **Transceptor serie HC-12 (SI4463, 433 MHz)**<br><sub>`com-hc12-433`</sub> | modulo | Header 1x5 + IPEX/antena resorte (5p, 2.54 mm) | Antena resorte, Antena SMA por IPEX | media |
+| **Transceptor sub-GHz CC1101**<br><sub>`com-cc1101`</sub> | modulo | Header 2x4 o 2x5 (según versión) (8p, 2.54 mm, filas 2.54 mm) | 433 MHz, 868/915 MHz | media |
+| **Lector RFID RC522 13.56 MHz (MFRC522)**<br><sub>`com-rfid-rc522`</sub> | modulo | Header 1x8 (8p, 2.54 mm) | Kit con tarjeta y llavero, Mini RC522 | muy alta |
+| **Tarjetas y llaveros RFID 13.56 MHz (MIFARE Classic 1K)**<br><sub>`com-rfid-tags-13-56`</sub> | n/a | — | Tarjeta blanca CR80 (85.6 x 54 mm), Llavero azul, Sticker NTAG213/215, Tarjeta UID modificable ('magic') | alta |
+| **Lector RFID 125 kHz RDM6300**<br><sub>`com-rfid-rdm6300`</sub> | modulo | Headers P1 1x5, P2 1x2, P3 1x3 (10p, 2.54 mm) | — | media |
+| **Módulo NFC/RFID PN532 V3**<br><sub>`com-nfc-pn532`</sub> | modulo | Header 1x4 (I2C/HSU) + 1x8 (SPI) (12p, 2.54 mm) | V3 rojo, Mini PN532 azul | media |
+| **Tarjetas y llaveros RFID 125 kHz (EM4100 / T5577)**<br><sub>`com-rfid-tags-125khz`</sub> | n/a | — | Tarjeta CR80, Llavero, T5577 regrabable | media |
+| **Módulo RS-485 MAX485 (TTL a RS-485)**<br><sub>`com-rs485-max485`</sub> | modulo | Headers 1x4 + 1x4 en extremos + bornera 2 (10p, 2.54 mm) | MAX485, Versión automática sin DE/RE (XY-017/HW-519) | alta |
+| **Módulo CAN bus MCP2515 + TJA1050**<br><sub>`com-can-mcp2515`</sub> | modulo | Header 1x7 + bornera 2 + jumper J1 (7p, 2.54 mm) | Cristal 8 MHz, Cristal 16 MHz | media |
+| **Módulo TTL a RS-232 MAX3232 (DB9)**<br><sub>`com-rs232-max3232`</sub> | modulo | Header 1x4 + DB9 (4p, 2.54 mm) | DB9 hembra, DB9 macho | media |
+| **Módulo Wi-Fi ESP-01 / ESP-01S (ESP8266)**<br><sub>`com-esp-01`</sub> | modulo | Header 2x4 macho (8p, 2.54 mm, filas 2.54 mm) | ESP-01 (azul, 512 KB–1 MB), ESP-01S (negro, 1 MB, pull-ups integrados) | muy alta |
+| **Módulo ESP-12E / ESP-12F (ESP8266)**<br><sub>`com-esp-12f`</sub> | modulo | SMD castellated 22 pads (22p, 2.0 mm, filas 16.0 mm) | ESP-12E, ESP-12F (antena mejorada), Placa adaptadora blanca | alta |
+| **Módulo ESP32-WROOM-32 / WROOM-32E (suelto)**<br><sub>`com-esp32-wroom-32`</sub> | modulo | SMD castellated 38 pads + pad térmico (39p, 1.27 mm) | WROOM-32E 4 MB, WROOM-32E 8/16 MB, WROOM-32UE (conector IPEX) | media |
+| **Módulo Digi XBee S2C (Zigbee / 802.15.4)**<br><sub>`com-xbee-s2c`</sub> | modulo | THT 2x10 paso 2.0 mm (20p, 2.0 mm, filas 22.0 mm) | XBee S2C, XBee Pro S2C, Antena PCB / wire / RP-SMA / U.FL | media |
 
 <a id="sensores"></a>
 ## Sensores
