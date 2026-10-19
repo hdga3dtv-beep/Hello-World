@@ -2,7 +2,7 @@
 
 Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 
-**Total: 665 componentes** en 15 categorías.
+**Total: 806 componentes** en 19 categorías.
 
 | Categoría | Elementos |
 |---|---:|
@@ -13,6 +13,10 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | [Semiconductores discretos (diodos, transistores, tiristores)](#semiconductores_discretos) | 86 |
 | [Optoelectrónica (LEDs, optoacopladores, displays de LED)](#optoelectronica) | 30 |
 | [Sensores](#sensores) | 112 |
+| [Displays y pantallas](#displays) | 37 |
+| [Actuadores y audio (motores, servos, buzzers, bocinas)](#actuadores_y_audio) | 37 |
+| [Módulos de potencia y control](#modulos_potencia) | 42 |
+| [Módulos varios (RTC, SD, audio, ADC...)](#modulos_varios) | 25 |
 | [Electromecánicos (botones, interruptores, relevadores)](#electromecanicos) | 41 |
 | [Conectores, bases y portapilas](#conectores) | 75 |
 | [Cables y alambres](#cables) | 23 |
@@ -397,6 +401,171 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Sensor de temperatura y humedad HTU21D (módulo GY-21)**<br><sub>`sen-htu21d`</sub> | modulo | Módulo con header 1x4 (4p, 2.54 mm) | HTU21D, Si7021, SHT21 | media |
 | **Sensor de temperatura y humedad SHT31 (módulo GY-SHT31-D)**<br><sub>`sen-sht31`</sub> | modulo | Módulo con header 1x6 (6p, 2.54 mm) | SHT31, SHT30 | media |
 | **Sensor de temperatura y humedad SHT40 (IC SMD DFN-4)**<br><sub>`sen-sht40`</sub> | SMD | DFN-4 (4p) | SHT40-AD1B (0x44) | media |
+
+<a id="displays"></a>
+## Displays y pantallas
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Módulo display 4 dígitos TM1637**<br><sub>`dsp-tm1637-4digitos`</sub> | modulo | Módulo TM1637 0.36" (4p, 2.54 mm); Módulo TM1637 0.56" (4p, 2.54 mm) | Rojo 0.36" con dos puntos, Rojo 0.56", Azul, Blanco, Verde | muy alta |
+| **Módulo display 7 segmentos 8 dígitos MAX7219**<br><sub>`dsp-max7219-8digitos`</sub> | modulo | Módulo 8 dígitos (10p, 2.54 mm) | Rojo | alta |
+| **Módulo TM1638 LED&KEY (8 dígitos, 8 LEDs, 8 botones)**<br><sub>`dsp-tm1638-ledkey`</sub> | modulo | Módulo LED&KEY (5p, 2.54 mm) | — | media |
+| **Display e-Paper (tinta electrónica) 1.54" / 2.9" SPI**<br><sub>`dsp-epaper`</sub> | modulo | Módulo e-Paper 1.54" 200x200 (8p, 2.54 mm); Módulo e-Paper 2.9" 296x128 (8p, 2.54 mm) | 1.54" B/N, 2.13", 2.9" B/N, Tricolor (rojo/negro/blanco) | media |
+| **Adaptador I2C para LCD (backpack PCF8574)**<br><sub>`dsp-backpack-i2c-pcf8574`</sub> | modulo | Backpack LCM1602 IIC (20p, 2.54 mm) | PCF8574T (0x27), PCF8574AT (0x3F) | muy alta |
+| **Display LCD 16x2 con adaptador I2C soldado**<br><sub>`dsp-lcd-16x2-i2c`</sub> | modulo | Módulo 1602 + backpack I2C (4p, 2.54 mm) | Fondo azul, Fondo verde-amarillo, Dirección 0x27 (PCF8574T), Dirección 0x3F (PCF8574AT) | muy alta |
+| **Display LCD 16x2 HD44780 (paralelo)**<br><sub>`dsp-lcd-16x2`</sub> | modulo | Módulo 1602 estándar (16p, 2.54 mm) | Fondo azul, letras blancas, Fondo verde-amarillo, letras negras, Blanco/negro FSTN, Rojo negativo (AG: DYS-1602A-ROJO/NEGAT), Con o sin header soldado | muy alta |
+| **Display LCD 20x4 con adaptador I2C**<br><sub>`dsp-lcd-20x4-i2c`</sub> | modulo | Módulo 2004 + backpack I2C (4p, 2.54 mm) | Fondo azul/letras amarillas o blancas, Fondo verde, 0x27 o 0x3F | alta |
+| **Display LCD 20x4 HD44780 (paralelo)**<br><sub>`dsp-lcd-20x4`</sub> | modulo | Módulo 2004 estándar (16p, 2.54 mm) | Fondo azul, letras blancas, Fondo verde-amarillo, letras negras, Con o sin backpack I2C | alta |
+| **Shield LCD 16x2 con teclado (LCD Keypad Shield)**<br><sub>`dsp-lcd-keypad-shield`</sub> | modulo | Shield formato Arduino UNO (2.54 mm) | — | alta |
+| **Display LCD 16x1 HD44780**<br><sub>`dsp-lcd-16x1`</sub> | modulo | Módulo 1601 (16p, 2.54 mm) | Fondo azul, Fondo verde-amarillo | media |
+| **Display LCD 8x2 HD44780**<br><sub>`dsp-lcd-8x2`</sub> | modulo | Módulo 0802 (16p, 2.54 mm) | Fondo azul, Fondo verde-amarillo | media |
+| **LCD gráfico 128x64 ST7920 (12864B)**<br><sub>`dsp-lcd-12864-st7920`</sub> | modulo | Módulo 12864 ST7920 (20p, 2.54 mm) | Fondo azul, Fondo verde-amarillo | alta |
+| **Display Nokia 5110 84x48 PCD8544**<br><sub>`dsp-nokia-5110`</sub> | modulo | Módulo Nokia 5110 (PCB roja o azul) (8p, 2.54 mm) | PCB roja, PCB azul | media |
+| **LCD gráfico 128x64 KS0108**<br><sub>`dsp-lcd-12864-ks0108`</sub> | modulo | Módulo 12864 KS0108 (20p, 2.54 mm) | Fondo azul, Fondo verde-amarillo | media |
+| **Tira LED direccionable WS2812B 5 V**<br><sub>`dsp-ws2812b-tira`</sub> | modulo | Tira 30/60/144 LED por metro (3p) | 30 LED/m, 60 LED/m, 144 LED/m, IP30 (sin cubierta), IP65 (silicón), IP67 (tubo), PCB negra o blanca | alta |
+| **Anillo LED WS2812B (8/12/16/24 LEDs)**<br><sub>`dsp-ws2812b-anillo`</sub> | modulo | Anillo 8 LEDs (4p); Anillo 12 LEDs (4p); Anillo 16 LEDs (4p); Anillo 24 LEDs (4p) | 8, 12, 16, 24, 60 (4 segmentos) | media |
+| **LED direccionable PL9823 THT (5 mm / 8 mm)**<br><sub>`dsp-pl9823`</sub> | THT | LED 5 mm (F5) 4 patas (4p); LED 8 mm (F8) 4 patas (4p) | 5 mm, 8 mm | media |
+| **LED WS2812B suelto 5050 SMD**<br><sub>`dsp-ws2812b-led`</sub> | SMD | 5050 de 4 pads (4p); En mini PCB redonda (~10 mm) (3p) | — | media |
+| **Matriz LED WS2812B 8x8 (64 LEDs)**<br><sub>`dsp-ws2812b-matriz-8x8`</sub> | modulo | Matriz rígida 8x8 (CJMCU) (3p); Matriz flexible 8x8 / 16x16 (3p) | 8x8 rígida, 8x8 flexible, 16x16 flexible, 8x32 flexible | media |
+| **Módulo matriz LED 4 en 1 MAX7219 (32x8)**<br><sub>`dsp-max7219-4en1`</sub> | modulo | Módulo FC-16 4 en 1 (10p, 2.54 mm) | Rojo, Verde, Azul | alta |
+| **Módulo matriz LED 8x8 con MAX7219**<br><sub>`dsp-max7219-matriz-8x8`</sub> | modulo | Versión DIP (MAX7219 DIP-24, PCB larga) (10p, 2.54 mm); Versión SMD (FC-16, PCB cuadrada) (10p, 2.54 mm) | Rojo, Verde, Azul | alta |
+| **Módulo panel LED P10 32x16 (HUB12)**<br><sub>`dsp-panel-p10`</sub> | modulo | Panel P10 32x16 (16p, 2.54 mm, filas 2.54 mm) | Rojo, Bicolor, RGB (HUB75, otro conector), Interior / exterior | media |
+| **Display OLED 0.96" 128x64 SSD1306 I2C (4 pines)**<br><sub>`dsp-oled-096-i2c`</sub> | modulo | Módulo OLED 0.96" I2C (4p, 2.54 mm) | Blanco, Azul, Bicolor amarillo (16 filas superiores)/azul | muy alta |
+| **Display OLED 0.91" 128x32 SSD1306 I2C**<br><sub>`dsp-oled-091-128x32`</sub> | modulo | Módulo OLED 0.91" (4p, 2.54 mm) | Blanco, Azul | alta |
+| **Display OLED 0.96" 128x64 SSD1306 SPI (7 pines)**<br><sub>`dsp-oled-096-spi`</sub> | modulo | Módulo OLED 0.96" SPI (7p, 2.54 mm) | Blanco, Azul, Amarillo/azul | alta |
+| **Display OLED 1.3" 128x64 SH1106**<br><sub>`dsp-oled-13-sh1106`</sub> | modulo | Módulo OLED 1.3" I2C (4p, 2.54 mm); Módulo OLED 1.3" SPI (7p, 2.54 mm) | Blanco, Azul | alta |
+| **Display OLED de caracteres 16x2 (Winstar WEH001602)**<br><sub>`dsp-oled-caracteres-16x2`</sub> | modulo | Módulo 1602 OLED (16p, 2.54 mm) | Blanco, Amarillo, Verde | media |
+| **Display TFT 1.8" 128x160 ST7735 SPI con lector SD**<br><sub>`dsp-tft-18-st7735`</sub> | modulo | Módulo TFT 1.8" (PCB roja) (12p, 2.54 mm) | — | alta |
+| **Display TFT 2.8" ILI9341 SPI con táctil XPT2046**<br><sub>`dsp-tft-28-ili9341-spi`</sub> | modulo | Módulo TFT 2.8" SPI (PCB roja) (14p, 2.54 mm) | 2.4", 2.8", 3.2" | alta |
+| **Shield TFT 2.4" táctil 240x320 para Arduino UNO**<br><sub>`dsp-tft-24-shield`</sub> | modulo | Shield formato Arduino UNO (28p, 2.54 mm) | 2.4", 2.8" | alta |
+| **Display TFT 1.44" 128x128 ST7735 SPI**<br><sub>`dsp-tft-144-st7735`</sub> | modulo | Módulo TFT 1.44" (PCB roja) (8p, 2.54 mm) | — | media |
+| **Display TFT IPS 1.3"/1.54" 240x240 ST7789**<br><sub>`dsp-tft-ips-st7789`</sub> | modulo | Módulo IPS 1.3" (7 pines, sin CS) (7p, 2.54 mm) | 1.3" 240x240, 1.54" 240x240, 2.0" 240x320 | media |
+| **Shield TFT 3.5" 320x480 para Arduino UNO/Mega**<br><sub>`dsp-tft-35-shield`</sub> | modulo | Shield formato Arduino UNO/Mega (2.54 mm) | — | media |
+| **Controlador para tira LED RGB 12 V con control IR**<br><sub>`dsp-controlador-tira-rgb`</sub> | modulo | Controlador IR (4p) | 24 teclas, 44 teclas, Bluetooth/WiFi | alta |
+| **Tira LED 12 V monocolor (5050 / 2835)**<br><sub>`dsp-tira-led-12v`</sub> | modulo | 5050, 60 LED/m (2p); 2835, 60/120 LED/m (2p) | Blanco frío, Blanco cálido, Rojo, Verde, Azul, IP20, IP65 | alta |
+| **Tira LED RGB 12 V 5050 (ánodo común)**<br><sub>`dsp-tira-led-rgb-12v`</sub> | modulo | 5050 RGB 30/60 LED/m (4p) | 30 LED/m, 60 LED/m, IP20, IP65 | alta |
+
+<a id="actuadores_y_audio"></a>
+## Actuadores y audio (motores, servos, buzzers, bocinas)
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Bocina miniatura 8 Ω 0.25–0.5 W (28–66 mm)**<br><sub>`act-bocina-miniatura-8ohm`</sub> | panel | Ø28 mm (2p); Ø36 mm (2p); Ø40 mm (2p); Ø50 mm (2p); Ø57 mm (2p); Ø66 mm (2p) | 8 Ω 0.25 W, 8 Ω 0.5 W, 8 Ω 1 W | muy alta |
+| **Bocina 2" y 4" 8 Ω (Steren)**<br><sub>`act-bocina-2-4-pulgadas`</sub> | panel | 2" (5 cm) (2p); 4" (10 cm) (2p) | 2" 1.5 W PMPO 8 Ω, 4" 7 W PMPO 8 Ω | alta |
+| **Bocina 2–3 W (4 Ω / 8 Ω) para módulos amplificadores**<br><sub>`act-bocina-2-3w`</sub> | panel | Redonda Ø40 mm (2p); Rectangular (tipo laptop/TV) (2p) | 4 Ω 3 W, 8 Ω 2 W, 8 Ω 3 W | alta |
+| **Sirena electrónica 12 V para alarma**<br><sub>`act-sirena-12v`</sub> | panel | Sirena con soporte (2p) | 15 W, 20 W, 30 W, 1 tono, 6 tonos | media |
+| **Tweeter piezoeléctrico (bocina de agudos)**<br><sub>`act-tweeter-piezo`</sub> | panel | Corneta rectangular / redonda (2p) | — | media |
+| **Mini bomba de agua sumergible 3–6 V**<br><sub>`act-bomba-sumergible-3-6v`</sub> | panel | Bomba horizontal/vertical miniatura (2p) | Horizontal, Vertical | alta |
+| **Bomba de agua 12 V (diafragma R385 o sumergible)**<br><sub>`act-bomba-12v`</sub> | panel | Bomba de diafragma R385 (2p) | Diafragma R385, Sumergible brushless 12 V | media |
+| **Buzzer activo 5 V / 12 V (12 mm)**<br><sub>`act-buzzer-activo`</sub> | THT | Ø12 x 9.5 mm (2p, 7.6 mm) | 5 V, 12 V, 3.3 V | muy alta |
+| **Buzzer pasivo (magnético) 12 mm**<br><sub>`act-buzzer-pasivo`</sub> | THT | Ø12 x 8.5 mm (2p, 7.6 mm) | 16 Ω, 42 Ω | alta |
+| **Disco piezoeléctrico (12–35 mm)**<br><sub>`act-disco-piezo`</sub> | panel | Ø27 mm (2p); Ø35 mm (2p); Ø20 mm / Ø12 mm (2p) | 12 mm, 20 mm, 27 mm, 35 mm | alta |
+| **Módulo buzzer (activo o pasivo) con transistor**<br><sub>`act-modulo-buzzer`</sub> | modulo | Módulo de 3 pines (3p, 2.54 mm) | Activo, Pasivo | alta |
+| **Zumbador piezoeléctrico con carcasa 3–24 V (SFM-27)**<br><sub>`act-zumbador-piezo-carcasa`</sub> | panel | Carcasa con orejas (SFM-27) (2p) | Tono continuo, Tono intermitente | media |
+| **Motor DC de juguete tamaño 130/140 (3–6 V)**<br><sub>`act-motor-dc-130`</sub> | panel | Carcasa tamaño 130 (FA-130) (2p) | 1.5–3 V, 3–6 V | muy alta |
+| **Motor brushless A2212 (1000/1400/2200 KV)**<br><sub>`act-motor-brushless-a2212`</sub> | panel | Outrunner A2212 (3p) | 1000 KV, 1400 KV, 2200 KV | media |
+| **Motor DC R260 (3–6 V)**<br><sub>`act-motor-dc-r260`</sub> | panel | Carcasa 260 (2p) | 3 V, 6 V | media |
+| **Motor DC RF-300 (motor solar / bajo consumo)**<br><sub>`act-motor-dc-rf300`</sub> | panel | Carcasa RF-300 (2p) | 0.4–5.9 V | media |
+| **Motor DC RS-385 (6–12 V)**<br><sub>`act-motor-dc-rs385`</sub> | panel | Carcasa 385 (2p) | 6 V, 12 V | media |
+| **Motor DC RS-555 / RS-550 (12–24 V)**<br><sub>`act-motor-dc-rs555`</sub> | panel | Carcasa 555/550 (2p) | 12 V, 24 V | media |
+| **Motor a pasos 28BYJ-48 5 V (unipolar)**<br><sub>`act-motor-pasos-28byj48`</sub> | panel | 28BYJ-48 (5p, 2.5 mm) | 5 V, 12 V | muy alta |
+| **Motor a pasos NEMA 17 (17HS4401, bipolar)**<br><sub>`act-nema17-17hs4401`</sub> | panel | NEMA 17, 40 mm de largo (4p) | 17HS4401 (40 mm, 1.7 A), 17HS8401 / 48 mm (más torque), 17HS2408 (34 mm) | alta |
+| **Motor a pasos NEMA 23 (bipolar)**<br><sub>`act-nema23`</sub> | panel | NEMA 23 (4p) | 1.2 N·m, 1.9 N·m, 2.8–3 N·m | media |
+| **Motorreductor amarillo TT 3–6 V (recto y en L) con llanta**<br><sub>`act-motor-tt`</sub> | panel | TT recto (2p); TT en L (90°) (2p); Llanta 65 mm | Recto 1:48, En L 1:48, 1:120, Con llanta 65 mm, Con encoder de ranura (disco) | muy alta |
+| **Micromotorreductor N20 (3/6/12 V), con o sin encoder**<br><sub>`act-motor-n20`</sub> | panel | N20 sin encoder (2p); N20 con encoder (6p) | 3 V, 6 V, 12 V, 30, 50, 100, 200, 300, 500, 1000 rpm | alta |
+| **Motorreductor JGA25-370 12 V con encoder Hall**<br><sub>`act-motor-25ga370-encoder`</sub> | panel | Caja Ø25 mm + motor 370 (6p) | 6 V, 12 V, Varias rpm (e.g. 100–1000) | media |
+| **Motorreductor metálico 12 V JGB37-520 (37 mm)**<br><sub>`act-motorreductor-jgb37-520`</sub> | panel | Caja Ø37 mm (2p) | 12 V, 24 V, 10–1000 rpm | media |
+| **Micro servo SG90 9 g**<br><sub>`act-servo-sg90`</sub> | panel | Servo micro 9 g (3p, 2.54 mm) | 180°, 360° (rotación continua) | muy alta |
+| **Servo MG996R (engranes metálicos, alto torque)**<br><sub>`act-servo-mg996r`</sub> | panel | Servo estándar (3p, 2.54 mm) | 180°, 360° | muy alta |
+| **Micro servo MG90S (engranes metálicos)**<br><sub>`act-servo-mg90s`</sub> | panel | Servo micro 13 g (3p, 2.54 mm) | 180°, 360° | alta |
+| **Servo MG995 estándar (engranes metálicos)**<br><sub>`act-servo-mg995`</sub> | panel | Servo estándar (3p, 2.54 mm) | 180°, 360° | alta |
+| **Servo de rotación continua 360° (FS90R / SG90-360 / MG995-360)**<br><sub>`act-servo-continuo`</sub> | panel | Micro (9 g) (3p, 2.54 mm); Estándar (MG995 360°) (3p, 2.54 mm) | Micro 360°, Estándar 360° | media |
+| **Cerradura eléctrica de solenoide 12 V**<br><sub>`act-cerradura-solenoide-12v`</sub> | panel | Cerradura tipo pestillo (2p) | 12 V, Pestillo inclinado o recto | media |
+| **Electroimán de sujeción 12 V (KK-P20/15, KK-P25/20)**<br><sub>`act-electroiman-12v`</sub> | panel | KK-P20/15 (2p); KK-P25/20 (2p) | 2.5 kg, 5 kg, 10 kg | media |
+| **Electroválvula solenoide 12 V 1/2" (normalmente cerrada)**<br><sub>`act-electrovalvula-12v`</sub> | panel | Rosca 1/2" (2p) | 12 V NC, 24 V, 110 V AC, 1/2", 3/4" | media |
+| **Solenoide push-pull 12 V (JF-0530B)**<br><sub>`act-solenoide-push-pull-12v`</sub> | panel | JF-0530B (2p) | 5 V, 6 V, 12 V, 24 V, JF-0826B (más grande) | media |
+| **Ventilador DC 5 V / 12 V (30–120 mm)**<br><sub>`act-ventilador-dc`</sub> | panel | 30 x 30 x 10 mm (2p); 40 x 40 x 10 mm (2p); 50 x 50 x 10/15 mm (2p); 60 x 60 x 15/25 mm (2p); 80 x 80 x 25 mm (3p); 92 / 120 mm (3p) | 5 V, 12 V, 24 V, 2 hilos, 3 hilos, 4 hilos PWM, Rodamiento de manga o de bolas | muy alta |
+| **Motor vibrador tipo moneda 10 mm**<br><sub>`act-vibrador-moneda`</sub> | panel | 1027 (Ø10 x 2.7 mm) (2p); 1030 (Ø10 x 3 mm) (2p) | Ø8 mm, Ø10 mm | alta |
+| **Motor vibrador cilíndrico (masa excéntrica) y módulo vibrador**<br><sub>`act-vibrador-cilindrico`</sub> | panel | Motor cilíndrico con contrapeso (2p); Módulo vibrador (3p, 2.54 mm) | — | media |
+
+<a id="modulos_potencia"></a>
+## Módulos de potencia y control
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Módulo cargador de litio TP4056 (con y sin protección DW01)**<br><sub>`mod-tp4056`</sub> | modulo | Sin protección (4 pads) (4p); Con protección DW01 (6 pads) (6p) | Micro-USB, USB-C, Con protección, Sin protección | muy alta |
+| **Módulo BMS / protección de litio 2S, 3S, 4S**<br><sub>`mod-bms-litio`</sub> | modulo | BMS 2S/3S/4S | 2S 7.4 V, 3S 11.1 V, 4S 14.8 V, 10 A, 20 A, 40 A, Con balanceo | alta |
+| **Porta batería 18650 con cargador y salida USB (Battery Shield V3/V8)**<br><sub>`mod-shield-18650-usb`</sub> | modulo | Shield 1 celda (V3) (2.54 mm); Shield 2 celdas (V8) (2.54 mm) | 1 celda, 2 celdas | media |
+| **Módulo detector de cruce por cero (AC)**<br><sub>`mod-cruce-por-cero`</sub> | modulo | Módulo detector (5p, 2.54 mm) | — | media |
+| **Módulo dimmer AC con TRIAC y detector de cruce por cero**<br><sub>`mod-dimmer-ac-triac`</sub> | modulo | Módulo RobotDyn (8p, 2.54 mm); Dimmer 2000 W con potenciómetro (4p) | 1 canal, 2 canales, Manual 2000 W | media |
+| **Módulo reductor DC-DC LM2596 (step-down ajustable)**<br><sub>`mod-lm2596`</sub> | modulo | Módulo azul LM2596 (4p) | Básico, Con display de voltaje, Con salida USB | muy alta |
+| **Módulo elevador DC-DC MT3608 (step-up)**<br><sub>`mod-mt3608`</sub> | modulo | Módulo MT3608 (4p) | Pads, Con micro-USB | alta |
+| **Módulo mini reductor DC-DC MP1584EN**<br><sub>`mod-mp1584en`</sub> | modulo | Módulo MP1584EN (4p) | Ajustable, Fijo 5 V / 3.3 V | alta |
+| **Módulo reductor DC-DC XL4015 5 A (CV o CC/CV)**<br><sub>`mod-xl4015`</sub> | modulo | Módulo XL4015 (4p) | Voltaje constante, CC/CV (2 potenciómetros), Con voltímetro | alta |
+| **Convertidor DC-DC aislado B0505S-1W (5 V → 5 V)**<br><sub>`mod-b0505s`</sub> | THT | SIP-4 (4p, 2.54 mm) | B0505S (5→5 V), B0512S (5→12 V), B1205S (12→5 V) | media |
+| **Módulo DC-DC XL6009 (elevador o buck-boost)**<br><sub>`mod-xl6009`</sub> | modulo | Módulo XL6009 boost (4p); Módulo XL6009 buck-boost (4p) | Boost, Buck-boost | media |
+| **Módulo elevador a 5 V con salida USB**<br><sub>`mod-step-up-5v-usb`</sub> | modulo | Módulo con USB-A hembra (2p) | 600 mA, 1 A, 2 A | media |
+| **Módulo puente H L298N (driver doble de motores)**<br><sub>`mod-l298n`</sub> | modulo | Módulo rojo con disipador (13p, 2.54 mm) | — | muy alta |
+| **Controlador PWM de velocidad para motor DC (CCM5D / 10 A)**<br><sub>`mod-pwm-motor-dc`</sub> | modulo | Módulo con bornera y perilla (4p) | 3 A, 5 A, 10 A, 20 A | alta |
+| **Módulo driver de motor BTS7960 43 A (IBT-2)**<br><sub>`mod-bts7960`</sub> | modulo | Módulo con disipador (12p, 2.54 mm) | — | alta |
+| **Módulo driver L9110S (2 motores DC)**<br><sub>`mod-l9110s`</sub> | modulo | Módulo L9110S (6p, 2.54 mm) | — | alta |
+| **Módulo driver TB6612FNG (2 motores DC, MOSFET)**<br><sub>`mod-tb6612fng`</sub> | modulo | Breakout 16 pines (16p, 2.54 mm) | — | alta |
+| **Shield de motores L293D para Arduino (Motor Shield v1)**<br><sub>`mod-l293d-shield`</sub> | modulo | Shield formato Arduino UNO (2.54 mm) | — | alta |
+| **Módulo driver DRV8833 (2 motores DC)**<br><sub>`mod-drv8833`</sub> | modulo | Módulo DRV8833 (2.54 mm) | — | media |
+| **Módulo driver MX1508 (2 motores DC)**<br><sub>`mod-mx1508`</sub> | modulo | Módulo MX1508 (8p, 2.54 mm) | — | media |
+| **Variador ESC 30 A para motor brushless**<br><sub>`mod-esc-30a`</sub> | modulo | ESC en termoencogible (8p) | 20 A, 30 A, 40 A | media |
+| **Driver de motor a pasos A4988 (Pololu/StepStick)**<br><sub>`mod-a4988`</sub> | modulo | StepStick 16 pines (16p, 2.54 mm, filas 12.7 mm) | Verde/rojo (clones), Pololu original | muy alta |
+| **Placa driver ULN2003 para motor a pasos 28BYJ-48**<br><sub>`mod-uln2003-driver`</sub> | modulo | Placa ULN2003 (11p, 2.54 mm) | — | muy alta |
+| **CNC Shield V3 para Arduino UNO (4 drivers StepStick)**<br><sub>`mod-cnc-shield-v3`</sub> | modulo | Shield formato Arduino UNO (2.54 mm) | — | alta |
+| **Driver de motor a pasos DRV8825 (Pololu/StepStick)**<br><sub>`mod-drv8825`</sub> | modulo | StepStick 16 pines (16p, 2.54 mm, filas 12.7 mm) | — | alta |
+| **Driver de motor a pasos silencioso TMC2208 / TMC2209**<br><sub>`mod-tmc2208-tmc2209`</sub> | modulo | StepStick 16 pines (16p, 2.54 mm, filas 12.7 mm) | TMC2208 v3, TMC2209 v1.2, TMC2225 | alta |
+| **Fuente AC-DC encapsulada HLK-PM01 (220 V → 5 V 3 W)**<br><sub>`mod-hlk-pm01`</sub> | THT | Encapsulado HLK-PM (4p) | HLK-PM01 5 V 600 mA, HLK-PM03 3.3 V, HLK-PM12 12 V, HLK-5M05 (5 W) | alta |
+| **Voltímetro digital de panel (0.28" / 0.56")**<br><sub>`mod-voltimetro-panel`</sub> | panel | 0.28" 3 dígitos (3p); 0.56" 3 dígitos (3p) | 0–30 V (2 hilos), 0–100 V (3 hilos), Rojo, Azul, Verde | alta |
+| **Voltímetro/amperímetro digital de panel DC 100 V 10 A**<br><sub>`mod-voltamperimetro-panel`</sub> | panel | Panel 0.28" doble (5p) | 10 A, 50 A (shunt externo), 100 A (shunt externo) | alta |
+| **Indicador de capacidad de batería (litio 1S–4S / plomo 12 V)**<br><sub>`mod-indicador-bateria`</sub> | modulo | Módulo 4 LEDs (2p) | 1S, 2S, 3S, 4S, 12 V plomo-ácido | media |
+| **Módulo MOSFET IRF520**<br><sub>`mod-mosfet-irf520`</sub> | modulo | Módulo IRF520 (7p, 2.54 mm) | — | alta |
+| **Módulo MOSFET doble AOD4184 (trigger switch 15 A)**<br><sub>`mod-mosfet-d4184`</sub> | modulo | Módulo D4184 (6p) | — | media |
+| **Fuente para protoboard MB102 (YwRobot) 3.3 V / 5 V**<br><sub>`mod-mb102-fuente-protoboard`</sub> | modulo | Módulo MB102 (2.54 mm) | — | muy alta |
+| **Módulo regulador AMS1117 3.3 V / 5 V**<br><sub>`mod-ams1117-33`</sub> | modulo | Módulo AMS1117 (3p, 2.54 mm) | 3.3 V, 5 V | alta |
+| **Módulo regulador ajustable LM317**<br><sub>`mod-lm317-ajustable`</sub> | modulo | Módulo LM317 (4p) | — | media |
+| **Módulo relevador 1 canal 5 V / 12 V**<br><sub>`mod-relevador-1ch`</sub> | modulo | Módulo 1 canal (6p, 2.54 mm) | 5 V, 12 V, Con optoacoplador, Jumper disparo alto/bajo | muy alta |
+| **Módulo relevador 2 canales 5 V / 12 V con optoacoplador**<br><sub>`mod-relevador-2ch`</sub> | modulo | Módulo 2 canales (13p, 2.54 mm) | 5 V, 12 V | muy alta |
+| **Módulo relevador 4 canales 5 V / 12 V con optoacoplador**<br><sub>`mod-relevador-4ch`</sub> | modulo | Módulo 4 canales (21p, 2.54 mm) | 5 V, 12 V | muy alta |
+| **Módulo relevador 8 canales 5 V / 12 V con optoacoplador**<br><sub>`mod-relevador-8ch`</sub> | modulo | Módulo 8 canales (37p, 2.54 mm) | 5 V, 12 V | alta |
+| **Módulo relevador 16 canales 12 V / 5 V**<br><sub>`mod-relevador-16ch`</sub> | modulo | Módulo 16 canales (2.54 mm) | 12 V, 5 V | media |
+| **Relevador de estado sólido SSR Fotek SSR-25DA / SSR-40DA**<br><sub>`mod-ssr-fotek`</sub> | panel | Encapsulado industrial con 4 tornillos (4p) | 25 A (SSR-25DA), 40 A (SSR-40DA), 10 A, DD (DC→DC), AA (AC→AC) | alta |
+| **Módulo relevador de estado sólido Omron G3MB-202P (1/2/4/8 canales)**<br><sub>`mod-ssr-g3mb-202p`</sub> | modulo | Módulo 1/2/4/8 canales (2.54 mm) | 1 canal, 2 canales, 4 canales, 8 canales, Disparo bajo, Disparo alto | media |
+
+<a id="modulos_varios"></a>
+## Módulos varios (RTC, SD, audio, ADC...)
+
+| Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
+|---|---|---|---|---|
+| **Módulo lector microSD (SPI)**<br><sub>`mod-microsd`</sub> | modulo | Módulo Catalex (6p, 2.54 mm); Mini lector 3.3 V (sin regulador) (2.54 mm) | 5 V con convertidor de nivel, 3.3 V mini | muy alta |
+| **Módulo lector de tarjeta SD tamaño completo**<br><sub>`mod-sd`</sub> | modulo | Módulo SD doble fila (16p, 2.54 mm, filas 2.54 mm) | — | media |
+| **Módulo memoria EEPROM AT24C256 (I2C)**<br><sub>`mod-at24c256`</sub> | modulo | Módulo AT24C256 (4p, 2.54 mm) | — | media |
+| **Módulo amplificador PAM8403 2 x 3 W (5 V)**<br><sub>`mod-pam8403`</sub> | modulo | Mini módulo (pads) (9p); Con potenciómetro de volumen (9p, 2.54 mm) | Sin volumen, Con potenciómetro | muy alta |
+| **Módulo amplificador LM386**<br><sub>`mod-lm386`</sub> | modulo | Módulo LM386 (6p, 2.54 mm) | — | alta |
+| **Módulo amplificador TPA3116D2 2 x 50 W (clase D)**<br><sub>`mod-tpa3116d2`</sub> | modulo | Módulo TPA3116D2 | 2 x 50 W, Mono 100 W, 2.1 (con subwoofer) | alta |
+| **Módulo amplificador PAM8610 2 x 10 W (12 V)**<br><sub>`mod-pam8610`</sub> | modulo | Módulo PAM8610 (9p) | — | media |
+| **Módulo amplificador TDA7297 2 x 15 W**<br><sub>`mod-tda7297`</sub> | modulo | Módulo TDA7297 con disipador | — | media |
+| **Módulo reproductor MP3 DFPlayer Mini**<br><sub>`mod-dfplayer-mini`</sub> | modulo | Módulo DFPlayer (2 x 8 pines) (16p, 2.54 mm) | Original DFRobot, Clones (MP3-TF-16P) | muy alta |
+| **Decodificador MP3 de panel 12 V (USB/SD/FM/Bluetooth)**<br><sub>`mod-decodificador-mp3-panel`</sub> | panel | Panel rectangular | 5 V, 12 V, Con amplificador 2 x 3 W | alta |
+| **Módulo receptor de audio Bluetooth (estéreo)**<br><sub>`mod-receptor-bluetooth-audio`</sub> | modulo | Módulo receptor | Bluetooth 4.2, Bluetooth 5.0, Con amplificador integrado | alta |
+| **Módulo de reconocimiento de voz V3 (Elechouse)**<br><sub>`mod-reconocimiento-voz-v3`</sub> | modulo | Módulo VR3 (2.54 mm) | — | media |
+| **Módulo grabador/reproductor de voz ISD1820**<br><sub>`mod-isd1820`</sub> | modulo | Módulo ISD1820 (2.54 mm) | — | media |
+| **Termostato digital XH-W1209 con relevador (12 V)**<br><sub>`mod-termostato-w1209`</sub> | modulo | Módulo W1209 (6p) | 12 V, 5 V (versión W1209 5V), 24 V | alta |
+| **Módulo expansor de E/S PCF8574 (I2C, 8 bits)**<br><sub>`mod-pcf8574-expansor`</sub> | modulo | Módulo azul (PCF8574 DIP-16) (17p, 2.54 mm) | PCF8574 (0x20–0x27), PCF8574A (0x38–0x3F) | media |
+| **Módulo multiplexor analógico 16 canales CD74HC4067**<br><sub>`mod-cd74hc4067`</sub> | modulo | Breakout 24 pines (24p, 2.54 mm) | — | media |
+| **Kit generador de funciones XR2206 (1 Hz – 1 MHz)**<br><sub>`mod-xr2206-generador`</sub> | THT | Kit THT | — | media |
+| **Módulo NE555 generador de pulsos de frecuencia ajustable**<br><sub>`mod-ne555-generador`</sub> | modulo | Módulo NE555 (3p, 2.54 mm) | — | media |
+| **Módulo relevador temporizador con retardo (programable)**<br><sub>`mod-relevador-temporizador`</sub> | modulo | Módulo con display (5p) | 5 V, 12 V, 24 V, Con display LED, NE555 con potenciómetro | media |
+| **Módulo ADC ADS1115 (16 bits) / ADS1015 (12 bits)**<br><sub>`mod-ads1115`</sub> | modulo | Módulo azul 10 pines (10p, 2.54 mm) | ADS1115 16 bits, ADS1015 12 bits | alta |
+| **Módulo PWM/servos 16 canales PCA9685 (I2C)**<br><sub>`mod-pca9685`</sub> | modulo | Módulo PCA9685 (70p, 2.54 mm) | — | alta |
+| **Módulo DAC MCP4725 (12 bits, I2C)**<br><sub>`mod-mcp4725`</sub> | modulo | Módulo MCP4725 (6p, 2.54 mm) | — | media |
+| **Módulo reloj de tiempo real DS3231 (ZS-042)**<br><sub>`mod-rtc-ds3231`</sub> | modulo | Módulo ZS-042 (10p, 2.54 mm) | — | muy alta |
+| **Módulo RTC DS1307 (Tiny RTC)**<br><sub>`mod-rtc-ds1307`</sub> | modulo | Tiny RTC (12p, 2.54 mm) | — | alta |
+| **Convertidor de nivel lógico bidireccional 4 canales (BSS138)**<br><sub>`mod-convertidor-nivel-logico`</sub> | modulo | Breakout 12 pines (12p, 2.54 mm) | 4 canales, 8 canales (TXS0108E) | alta |
 
 <a id="electromecanicos"></a>
 ## Electromecánicos (botones, interruptores, relevadores)
