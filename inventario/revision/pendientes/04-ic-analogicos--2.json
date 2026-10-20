@@ -1,0 +1,24 @@
+[
+  {
+    "index": 0,
+    "id": "ic-a4988-drv8825",
+    "field": "mounting",
+    "new_value": "modulo",
+    "problem": "mounting = \"SMD\", pero el pinout y la huella principal (primer paquete) son del módulo StepStick/Pololu de 2 x 8 pines a 2.54 mm con filas a 12.7 mm, que se monta con tiras de pines/hembras (THT); schematic_symbol ya es \"modulo\". Con \"SMD\" la app dibujaría pads superficiales para una huella que es de barrenos.",
+    "evidence": "ESQUEMA.md: \"modulo\" = placa ya armada con pines. La propia descripción y las notas del elemento dicen que en tienda se compra el módulo carrier de 16 pines y que el pinout es del MÓDULO, no del chip (los chips QFN-28/HTSSOP-28 se listan sin pinout).",
+    "confidence": "media"
+  },
+  {
+    "index": 1,
+    "id": "ic-w25q32",
+    "field": "specs",
+    "new_value": {
+      "voltaje_alimentacion": "2.7–3.6 V (W25Qxx, NO tolerante a 5 V) / 2.5–5.5 V (25LCxxx; la serie 25AAxxx opera desde 1.8 V)",
+      "interfaz": "SPI (Dual/Quad en W25Q) hasta ≈104–133 MHz",
+      "borrado": "por sector de 4 KB (flash)"
+    },
+    "problem": "Atribuye 1.8–5.5 V a las EEPROM 25LCxxx; ese rango es de la serie 25AAxxx. Las 25LCxxx (p. ej. 25LC256) operan de 2.5 a 5.5 V.",
+    "evidence": "Hoja de datos Microchip 25AA256/25LC256: 25AA256 VCC = 1.8–5.5 V, 25LC256 VCC = 2.5–5.5 V (lo mismo en toda la familia 25AAxxx/25LCxxx).",
+    "confidence": "alta"
+  }
+]

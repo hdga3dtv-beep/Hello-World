@@ -1,0 +1,95 @@
+[
+  {
+    "index": 0,
+    "id": "dio-puente-linea-kbp-kbl",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "1", "name": "+", "function": "Salida positiva DC (junto a la esquina biselada/marca +)"},
+      {"pin": "2", "name": "AC1", "function": "Entrada de corriente alterna (~)"},
+      {"pin": "3", "name": "AC2", "function": "Entrada de corriente alterna (~)"},
+      {"pin": "4", "name": "−", "function": "Salida negativa DC"}
+    ],
+    "problem": "En un puente EN LÍNEA el pinout lista el orden + − ~ ~ (con dos pines con el mismo id '~'); el orden físico real es + ~ ~ −, así que una huella en línea generada desde esta lista pone el − junto al + y las AC en los extremos.",
+    "evidence": "Hojas de datos KBP2xx / KBP3xx y KBL4xx (Diodes Inc., Vishay, MCC): terminales en línea marcadas + ~ ~ −, con el + en la esquina biselada; el propio campo notes del elemento dice 'Orden típico impreso: + ~ ~ −'.",
+    "confidence": "alta"
+  },
+  {
+    "index": 1,
+    "id": "dio-puente-linea-gbu-kbu-gbj",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "1", "name": "+", "function": "Salida positiva DC (junto a la esquina biselada/marca +)"},
+      {"pin": "2", "name": "AC1", "function": "Entrada de corriente alterna (~)"},
+      {"pin": "3", "name": "AC2", "function": "Entrada de corriente alterna (~)"},
+      {"pin": "4", "name": "−", "function": "Salida negativa DC"}
+    ],
+    "problem": "Igual que KBP/KBL: el pinout está en orden + − ~ ~ con ids '~' duplicados, pero GBU/KBU/GBJ tienen las 4 patas en línea en el orden físico + ~ ~ −.",
+    "evidence": "Hojas de datos GBU4–GBU10, KBU6–KBU10, GBJ15xx–GBJ35xx (Vishay, Diodes Inc., MCC): terminales en línea + ~ ~ − con el + en la esquina biselada (en GBU/GBJ el hueco más grande queda entre + y la primera ~, como ya indican las notas del paquete).",
+    "confidence": "alta"
+  },
+  {
+    "index": 2,
+    "id": "tir-diac-db3",
+    "field": "packages",
+    "new_value": [
+      {
+        "name": "DO-35 (DO-204AH) vidrio",
+        "pins": 2,
+        "pitch_mm": 7.62,
+        "row_spacing_mm": null,
+        "body_mm": "≈3.0–4.5 x 1.5–2.0 (largo x diámetro)",
+        "lead_diameter_mm": 0.5,
+        "notes": "Paso de huella 7.62 mm (0.3 in) o 10.16 mm; vertical 2.54 mm. Terminal Ø0.46–0.56 mm, taladro 0.8 mm. Sin polaridad: si trae banda, NO indica cátodo (no marcar polaridad en la serigrafía)."
+      }
+    ],
+    "problem": "La nota del paquete, copiada de los diodos, dice 'Banda negra = cátodo', pero el DIAC DB3/DB4 es bidireccional y no tiene cátodo; contradice el pinout y las notas del propio elemento ('sin polaridad').",
+    "evidence": "Hojas de datos DB3/DB4 (ST, diodos de disparo bidireccionales): conducen de forma simétrica en ambos sentidos (VBO ±28–36 V), no tienen ánodo ni cátodo.",
+    "confidence": "alta"
+  },
+  {
+    "index": 3,
+    "id": "opt-led-smd-plcc-3528-2835-5050",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "1", "name": "K1", "function": "Cátodo del chip 1 (5050; la asignación ánodo/cátodo varía por fabricante)"},
+      {"pin": "2", "name": "K2", "function": "Cátodo del chip 2 (5050; la asignación ánodo/cátodo varía por fabricante)"},
+      {"pin": "3", "name": "K3", "function": "Cátodo del chip 3 (5050; la asignación ánodo/cátodo varía por fabricante)"},
+      {"pin": "4", "name": "A3", "function": "Ánodo del chip 3 (5050; opuesto al pin 3; varía por fabricante)"},
+      {"pin": "5", "name": "A2", "function": "Ánodo del chip 2 (5050; opuesto al pin 2; varía por fabricante)"},
+      {"pin": "6", "name": "A1", "function": "Ánodo del chip 1 (5050; opuesto al pin 1; varía por fabricante)"}
+    ],
+    "problem": "El paquete 5050 tiene 6 pads, pero el pinout solo tiene 2 entradas con ids de rango ('1-3', '4-6'), que no corresponden a ningún pin; la app no puede asignar los pads 1–6.",
+    "evidence": "PLCC-6 (5050): 3 pads por lado, cada chip entre pads opuestos (1–6, 2–5, 3–4). La asignación original (1–3 cátodos, 4–6 ánodos A3–A1) se conserva, solo que con un pin por entrada.",
+    "confidence": "media"
+  },
+  {
+    "index": 4,
+    "id": "opt-barra-led-10-segmentos",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "1", "name": "A1", "function": "Ánodo del segmento 1 (lado de ánodos típico; verificar)"},
+      {"pin": "2", "name": "A2", "function": "Ánodo del segmento 2 (lado de ánodos típico; verificar)"},
+      {"pin": "3", "name": "A3", "function": "Ánodo del segmento 3 (lado de ánodos típico; verificar)"},
+      {"pin": "4", "name": "A4", "function": "Ánodo del segmento 4 (lado de ánodos típico; verificar)"},
+      {"pin": "5", "name": "A5", "function": "Ánodo del segmento 5 (lado de ánodos típico; verificar)"},
+      {"pin": "6", "name": "A6", "function": "Ánodo del segmento 6 (lado de ánodos típico; verificar)"},
+      {"pin": "7", "name": "A7", "function": "Ánodo del segmento 7 (lado de ánodos típico; verificar)"},
+      {"pin": "8", "name": "A8", "function": "Ánodo del segmento 8 (lado de ánodos típico; verificar)"},
+      {"pin": "9", "name": "A9", "function": "Ánodo del segmento 9 (lado de ánodos típico; verificar)"},
+      {"pin": "10", "name": "A10", "function": "Ánodo del segmento 10 (lado de ánodos típico; verificar)"},
+      {"pin": "11", "name": "K10", "function": "Cátodo del segmento 10"},
+      {"pin": "12", "name": "K9", "function": "Cátodo del segmento 9"},
+      {"pin": "13", "name": "K8", "function": "Cátodo del segmento 8"},
+      {"pin": "14", "name": "K7", "function": "Cátodo del segmento 7"},
+      {"pin": "15", "name": "K6", "function": "Cátodo del segmento 6"},
+      {"pin": "16", "name": "K5", "function": "Cátodo del segmento 5"},
+      {"pin": "17", "name": "K4", "function": "Cátodo del segmento 4"},
+      {"pin": "18", "name": "K3", "function": "Cátodo del segmento 3"},
+      {"pin": "19", "name": "K2", "function": "Cátodo del segmento 2"},
+      {"pin": "20", "name": "K1", "function": "Cátodo del segmento 1"}
+    ],
+    "problem": "El paquete es DIP-20, pero el pinout solo tiene 2 entradas con ids de rango ('1–10', '11–20'), así que faltan 18 pines individuales y la app no puede conectar cada segmento.",
+    "evidence": "Bargraph DIP-20 típico (p. ej. Kingbright DC-10xx): pin n = ánodo del segmento n (1–10) y pin 21−n = cátodo del segmento n (pin 20 = K1, pin 11 = K10), que es justo lo que describe el texto original, aquí con un pin por entrada.",
+    "confidence": "media"
+  }
+]

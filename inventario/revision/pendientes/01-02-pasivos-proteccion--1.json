@@ -1,0 +1,14 @@
+[
+  {
+    "index": 0,
+    "id": "cap-ceramico-disco-alto-voltaje",
+    "field": "specs",
+    "new_value": {
+      "voltaje": "1 kV, 2 kV, 3 kV DC",
+      "dielectrico": "Clase 2 (alta constante dieléctrica, valores de nF): Y5P/Y5U/Z5U; clase 1 (estable, valores de pF): SL o NP0"
+    },
+    "problem": "El dieléctrico SL aparece como clase 2. SL es un dieléctrico cerámico clase 1 (compensación de temperatura, nomenclatura JIS); Y5P/Y5U/Z5U sí son clase 2.",
+    "evidence": "Según la clasificación EIA/JIS de dieléctricos cerámicos, SL (+350 a −1000 ppm/°C) es clase 1, como NP0/C0G. En discos de alto voltaje se usa en valores de pF (p. ej. 100 pF 1 kV SL), y la clase 2 (Y5P/Y5U/Z5U) en valores de nF.",
+    "confidence": "media"
+  }
+]

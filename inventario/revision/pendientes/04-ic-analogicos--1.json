@@ -1,0 +1,58 @@
+[
+ {
+  "index": 0,
+  "id": "ic-mcp6002",
+  "field": "packages",
+  "new_value": [
+   {
+    "name": "DIP-8",
+    "pins": 8,
+    "pitch_mm": 2.54,
+    "row_spacing_mm": 7.62,
+    "body_mm": "9.0–10.2 x 6.1–7.1 (largo x ancho del cuerpo, aprox.)",
+    "lead_diameter_mm": 0.46,
+    "notes": "Paso 2.54 mm (0.1 in); filas a 7.62 mm (0.3 in). Terminal plana ≈0.46 x 0.25 mm: barreno 0.8–1.0 mm, pad Ø1.6–1.8 mm. Muesca/punto = pin 1; numeración antihoraria vista desde arriba."
+   },
+   {
+    "name": "SOIC-8",
+    "pins": 8,
+    "pitch_mm": 1.27,
+    "row_spacing_mm": 5.4,
+    "body_mm": "4.8–5.0 x 3.8–4.0 (cuerpo), envergadura de terminales 5.8–6.2",
+    "lead_diameter_mm": null,
+    "notes": "Paso 1.27 mm. row_spacing = distancia aprox. centro a centro de las filas de pads en huella IPC nominal (pads ≈1.5 x 0.6 mm)."
+   }
+  ],
+  "problem": "Incluye un encapsulado SOT-23-5 de 5 pines que no existe para el MCP6002 (es del MCP6001 sencillo); la app podría dibujar una huella de 5 pines con el pinout dual de 8 pines.",
+  "evidence": "Hoja de datos Microchip MCP6001/6002/6004: el MCP6002 (doble) solo se ofrece en 8 pines (PDIP-8, SOIC-8, MSOP-8, TDFN/DFN-8); SOT-23-5 y SC-70-5 corresponden al MCP6001 con pinout distinto (1 VOUT, 2 VSS, 3 VIN+, 4 VIN−, 5 VDD).",
+  "confidence": "alta"
+ },
+ {
+  "index": 1,
+  "id": "ic-lm317l",
+  "field": "packages",
+  "new_value": [
+   {
+    "name": "TO-92",
+    "pins": 3,
+    "pitch_mm": 1.27,
+    "row_spacing_mm": null,
+    "body_mm": "4.4–5.2 x 3.4–4.2 (ancho x fondo), alto 4.3–5.3 (aprox.)",
+    "lead_diameter_mm": 0.45,
+    "notes": "Paso nativo 1.27 mm; muchas piezas vienen con patas formadas a 2.54 mm y en PCB casera es habitual abrirlas a 2.54 mm. Vista con la cara plana al frente y patas abajo: pin 1 a la izquierda."
+   },
+   {
+    "name": "SOIC-8",
+    "pins": 8,
+    "pitch_mm": 1.27,
+    "row_spacing_mm": 5.4,
+    "body_mm": "4.8–5.0 x 3.8–4.0 (cuerpo), envergadura de terminales 5.8–6.2",
+    "lead_diameter_mm": null,
+    "notes": "Paso 1.27 mm. row_spacing = distancia aprox. centro a centro de las filas de pads en huella IPC nominal (pads ≈1.5 x 0.6 mm). ¡PINOUT DISTINTO AL TO-92! LM317LD / LM317LIDR (SOIC-8): 1 = IN, 2 = OUT, 3 = OUT, 4 = ADJ, 5 = NC, 6 = OUT, 7 = OUT, 8 = NC (unir todos los OUT; los pines 2, 3, 6 y 7 también disipan calor). El pinout de 3 pines del elemento (1 ADJ, 2 OUT, 3 IN) aplica solo al TO-92."
+   }
+  ],
+  "problem": "El SOIC-8 se lista sin su pinout y el pinout del elemento es el del TO-92 (1 ADJ, 2 OUT, 3 IN); aplicado al SOIC-8 pondría ADJ en el pin 1 (que es IN) y dejaría sin conectar los pines 4–8.",
+  "evidence": "Hojas de datos TI LM317L (encapsulado D) y onsemi LM317L (sufijo D, caso 751): pin 1 Vin, pines 2, 3, 6 y 7 Vout, pin 4 Adjust, pines 5 y 8 NC.",
+  "confidence": "alta"
+ }
+]
