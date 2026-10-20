@@ -1,0 +1,40 @@
+[
+  {
+    "index": 0,
+    "id": "sen-lm335",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "1", "name": "ADJ", "function": "Ajuste de calibración (trimpot 10 kΩ opcional; puede quedar sin conectar)"},
+      {"pin": "2", "name": "V+", "function": "Terminal positiva (salida, se polariza con resistencia desde Vcc)"},
+      {"pin": "3", "name": "V-", "function": "Terminal negativa (GND)"}
+    ],
+    "problem": "La lista no sigue el orden físico del TO-92: pone V- en la pata central (pin 2) y ADJ en un extremo como pin 3. La app dibujaría la huella con V+ y V- en posiciones equivocadas.",
+    "evidence": "Hoja de datos LM135/LM235/LM335 (TI SNIS160 / ST), dibujo del TO-92 en vista inferior: V+ es la pata central y ADJ y V- van a los extremos. Varias guías de aplicación numeran ADJ = 1, V+ = 2, V- = 3 (cara plana al frente, patas abajo, de izquierda a derecha). Que V+ va al centro es firme; el sentido izquierda/derecha de ADJ y V- conviene confirmarlo con multímetro.",
+    "confidence": "media"
+  },
+  {
+    "index": 1,
+    "id": "sen-lm335",
+    "field": "notes",
+    "new_value": "Pinout TO-92 en orden físico: cara plana con texto al frente, patas abajo, de izquierda a derecha: ADJ, V+, V- (V+ es la pata central). Confirmar antes de fabricar: polarizado con una resistencia, V+ mide ≈2.98 V respecto a V- a 25 °C. Tiendas no verificadas.",
+    "problem": "La nota decía que la lista de pinout no estaba en orden físico. Queda incoherente una vez corregido el pinout.",
+    "evidence": "Va con la corrección del pinout (index 0) según la hoja de datos TI SNIS160 / ST.",
+    "confidence": "media"
+  },
+  {
+    "index": 2,
+    "id": "sen-mlx90614",
+    "field": "specs",
+    "new_value": {
+      "voltaje_operacion": "Módulo 3–5 V",
+      "interfaz": "I2C/SMBus (0x5A), también PWM",
+      "rango_objeto": "−70 a 380 °C",
+      "rango_ambiente": "−40 a 85 °C (grado E, MLX90614ESF de los GY-906); −40 a 125 °C solo en grado K (MLX90614KSF)",
+      "precision": "±0.5 °C (rango 0–50 °C)",
+      "campo_vision": "90° (xAA/BAA); versiones DCC/DCI más estrechas"
+    },
+    "problem": "rango_ambiente dice −40 a 125 °C, pero las partes listadas (MLX90614ESF-xxx, las de los módulos GY-906) son de grado E, que llega solo a 85 °C.",
+    "evidence": "Hoja de datos Melexis MLX90614, código de temperatura del número de parte: E = −40…85 °C, K = −40…125 °C. Los 125 °C solo aplican a las versiones K.",
+    "confidence": "media"
+  }
+]

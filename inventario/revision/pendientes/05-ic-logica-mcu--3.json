@@ -1,0 +1,168 @@
+[
+ {
+  "index": 0,
+  "id": "ic-pic16f88",
+  "field": "pinout",
+  "new_value": [
+   {
+    "pin": "1",
+    "name": "RA2/AN2/CVREF/VREF-",
+    "function": "E/S RA2; AN2; referencia comparador; VREF−"
+   },
+   {
+    "pin": "2",
+    "name": "RA3/AN3/VREF+/C1OUT",
+    "function": "E/S RA3; AN3; VREF+; salida comparador 1"
+   },
+   {
+    "pin": "3",
+    "name": "RA4/AN4/T0CKI/C2OUT",
+    "function": "E/S RA4; AN4; reloj Timer0; salida comparador 2"
+   },
+   {
+    "pin": "4",
+    "name": "RA5/MCLR/VPP",
+    "function": "Solo entrada RA5 o reset; programación"
+   },
+   {
+    "pin": "5",
+    "name": "VSS",
+    "function": "Tierra (0 V)"
+   },
+   {
+    "pin": "6",
+    "name": "RB0/INT/CCP1",
+    "function": "E/S RB0; interrupción externa; CCP1/PWM (por defecto, bit CCPMX=1 sin programar)"
+   },
+   {
+    "pin": "7",
+    "name": "RB1/SDI/SDA",
+    "function": "E/S RB1; SPI entrada de datos; I2C datos"
+   },
+   {
+    "pin": "8",
+    "name": "RB2/SDO/RX/DT",
+    "function": "E/S RB2; SPI salida de datos; recepción UART"
+   },
+   {
+    "pin": "9",
+    "name": "RB3/PGM/CCP1",
+    "function": "E/S RB3; LVP; CCP1/PWM solo si se programa CCPMX=0"
+   },
+   {
+    "pin": "10",
+    "name": "RB4/SCK/SCL",
+    "function": "E/S RB4; reloj SPI; reloj I2C"
+   },
+   {
+    "pin": "11",
+    "name": "RB5/SS/TX/CK",
+    "function": "E/S RB5; selección esclavo SPI; transmisión UART"
+   },
+   {
+    "pin": "12",
+    "name": "RB6/AN5/PGC/T1OSO/T1CKI",
+    "function": "E/S RB6; AN5; reloj programación; Timer1"
+   },
+   {
+    "pin": "13",
+    "name": "RB7/AN6/PGD/T1OSI",
+    "function": "E/S RB7; AN6; datos programación; oscilador Timer1"
+   },
+   {
+    "pin": "14",
+    "name": "VDD",
+    "function": "Alimentación positiva"
+   },
+   {
+    "pin": "15",
+    "name": "RA6/OSC2/CLKO",
+    "function": "E/S RA6 o cristal"
+   },
+   {
+    "pin": "16",
+    "name": "RA7/OSC1/CLKI",
+    "function": "E/S RA7 o cristal/reloj externo"
+   },
+   {
+    "pin": "17",
+    "name": "RA0/AN0",
+    "function": "E/S RA0; AN0"
+   },
+   {
+    "pin": "18",
+    "name": "RA1/AN1",
+    "function": "E/S RA1; AN1"
+   }
+  ],
+  "problem": "Indica que CCP1/PWM está por defecto en RB3 (pin 9) y en RB0 (pin 6) como 'configurable'; es al revés.",
+  "evidence": "Hoja de datos PIC16F87/88 (DS30487), CONFIG1 bit 12 CCPMX: 1 = CCP1 en RB0, 0 = CCP1 en RB3. Con la configuración sin programar (bit en 1) CCP1 sale por RB0 (pin 6); en MPASM _CCP1_RB0 = 0x3FFF y _CCP1_RB3 = 0x2FFF.",
+  "confidence": "media"
+ },
+ {
+  "index": 1,
+  "id": "ic-atmega2560",
+  "field": "specs",
+  "new_value": {
+   "nucleo": "AVR 8 bits",
+   "flash": "256 KB",
+   "ram": "8 KB SRAM",
+   "eeprom": "4 KB",
+   "frecuencia_max": "16 MHz",
+   "voltaje": "4.5–5.5 V (0–16 MHz). ATmega2560V: 1.8–5.5 V solo a baja frecuencia (hasta ≈2 MHz); 2.7–5.5 V para 0–8 MHz",
+   "e_s": "86",
+   "adc": "16 canales 10 bits",
+   "uart": "4 USART",
+   "i2c_spi": "SPI + TWI (I2C)",
+   "pwm": "15 canales",
+   "temporizadores": "2 x 8 bits, 4 x 16 bits"
+  },
+  "problem": "Dice 'ATmega2560V: 1.8–5.5 V a 8 MHz'; a 8 MHz la versión V requiere al menos 2.7 V.",
+  "evidence": "Hoja de datos ATmega640/1280/1281/2560/2561, grados de velocidad: ATmega2560V 0–2 MHz @ 1.8–5.5 V y 0–8 MHz @ 2.7–5.5 V; ATmega2560 0–16 MHz @ 4.5–5.5 V.",
+  "confidence": "alta"
+ },
+ {
+  "index": 2,
+  "id": "ic-attiny84",
+  "field": "specs",
+  "new_value": {
+   "nucleo": "AVR 8 bits",
+   "frecuencia_max": "20 MHz (interno 8 MHz)",
+   "voltaje": "1.8–5.5 V (ATtiny84A: hasta 4 MHz a 1.8 V, 10 MHz a 2.7 V, 20 MHz a 4.5 V). El ATtiny84 antiguo sin \"A\": 2.7–5.5 V (ATtiny84V: 1.8–5.5 V)",
+   "e_s": "12 (11 si se conserva RESET)",
+   "adc": "8 canales 10 bits",
+   "uart": "No (por software)",
+   "i2c_spi": "USI",
+   "pwm": "4",
+   "temporizadores": "1 x 8 bits, 1 x 16 bits",
+   "flash": "8 KB",
+   "ram": "512 B SRAM",
+   "eeprom": "512 B"
+  },
+  "problem": "El elemento es el ATtiny84A-PU pero el voltaje dado (2.7–5.5 V, 'versión V' 1.8–5.5 V) corresponde al ATtiny84 antiguo; la serie A opera de 1.8 a 5.5 V y no tiene versión V.",
+  "evidence": "Hoja de datos ATtiny24A/44A/84A (Atmel-8183): Operating Voltage 1.8–5.5 V; Speed Grade 0–4 MHz @ 1.8–5.5 V, 0–10 MHz @ 2.7–5.5 V, 0–20 MHz @ 4.5–5.5 V.",
+  "confidence": "alta"
+ },
+ {
+  "index": 3,
+  "id": "ic-attiny44",
+  "field": "specs",
+  "new_value": {
+   "nucleo": "AVR 8 bits",
+   "frecuencia_max": "20 MHz (interno 8 MHz)",
+   "voltaje": "1.8–5.5 V (ATtiny44A: hasta 4 MHz a 1.8 V, 10 MHz a 2.7 V, 20 MHz a 4.5 V). El ATtiny44 antiguo sin \"A\": 2.7–5.5 V (ATtiny44V: 1.8–5.5 V)",
+   "e_s": "12 (11 si se conserva RESET)",
+   "adc": "8 canales 10 bits",
+   "uart": "No (por software)",
+   "i2c_spi": "USI",
+   "pwm": "4",
+   "temporizadores": "1 x 8 bits, 1 x 16 bits",
+   "flash": "4 KB",
+   "ram": "256 B SRAM",
+   "eeprom": "256 B"
+  },
+  "problem": "El elemento es el ATtiny44A-PU pero el voltaje dado (2.7–5.5 V, 'versión V' 1.8–5.5 V) corresponde al ATtiny44 antiguo; la serie A opera de 1.8 a 5.5 V y no tiene versión V.",
+  "evidence": "Hoja de datos ATtiny24A/44A/84A (Atmel-8183): Operating Voltage 1.8–5.5 V; Speed Grade 0–4 MHz @ 1.8–5.5 V, 0–10 MHz @ 2.7–5.5 V, 0–20 MHz @ 4.5–5.5 V.",
+  "confidence": "alta"
+ }
+]

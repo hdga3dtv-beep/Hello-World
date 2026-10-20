@@ -1,0 +1,1230 @@
+{
+  "group": "11-complementos-pasivos-discretos",
+  "sources": [
+    "https://uelectronics.com/categoria-producto/kits/componentes-kits/",
+    "https://uelectronics.com/producto/kit-de-capacitores-electroliticos-510-piezas-24-valores/",
+    "https://uelectronics.com/producto/kit-de-400-capacitores-electroliticos-smd-24-valores-diferentes/",
+    "https://uelectronics.com/producto/kit-capacitores-electroliticos-smd-165-piezas-10-valores/",
+    "https://uelectronics.com/producto/kit-de-componentes-electronicos-basicos-surtido-de-7-tipos/",
+    "https://uelectronics.com/producto/kit-de-diodos-200-piezas-10-valores/",
+    "https://uelectronics.com/producto/tip35c-transistor-npn-100v-25a-to-3pn/",
+    "https://uelectronics.com/producto/tip36c-transistor-pnp-100v-25a-to-3pn/",
+    "https://www.rlocman.es/datasheet/pdf.html?di=188491",
+    "https://uk.rs-online.com/web/p/bipolar-transistors/2513564",
+    "https://de.rs-online.com/web/p/cob-leds/9033636",
+    "https://adjditec.com/de/productos/led-high-power-cob30-50w-5000lm",
+    "https://components101.com/igbts/fga25n120antd-1200v-npt-trench-igbt",
+    "https://au.element14.com/onsemi/fga25n120antdtu/igbt-npt-1-2kv-25a-to-3p/dp/1095025",
+    "https://besomi.com/jo_en/h20r1203igbt-to-247-31200v-20a.html",
+    "https://www.vishay.com/en/product/96266/"
+  ],
+  "items": [
+    {
+      "id": "cap-kit-electroliticos",
+      "name": "Kit / surtido de capacitores electrolíticos (THT y SMD)",
+      "aliases": [
+        "kit de capacitores electrolíticos",
+        "surtido de electrolíticos",
+        "electrolytic capacitor kit",
+        "kit 510 piezas 24 valores",
+        "kit de electrolíticos SMD",
+        "caja de capacitores"
+      ],
+      "category": "capacitores",
+      "subcategory": "kits_capacitores",
+      "description": "Surtidos de capacitores electrolíticos de aluminio radiales (o V-chip SMD) en estuche con compartimentos, con los valores más usados de décimas de µF a 1000 µF en 10–50 V.",
+      "mounting": "THT/SMD",
+      "packages": [],
+      "pinout": [],
+      "common_values": [
+        "0.1 µF",
+        "0.22 µF",
+        "0.47 µF",
+        "1 µF",
+        "2.2 µF",
+        "3.3 µF",
+        "4.7 µF",
+        "10 µF",
+        "22 µF",
+        "33 µF",
+        "47 µF",
+        "100 µF",
+        "220 µF",
+        "330 µF",
+        "470 µF",
+        "1000 µF",
+        "voltajes típicos: 10, 16, 25 y 50 V",
+        "THT 510 piezas / 24 valores (UNIT)",
+        "SMD 400 piezas / 24 valores, 6.3–50 V (UNIT)",
+        "SMD 165 piezas / 10 valores, 0.47–470 µF (UNIT)"
+      ],
+      "specs": {
+        "presentaciones": "THT: estuche de 510 piezas / 24 valores a 10, 16, 25 y 50 V (UNIT); SMD V-chip: 400 piezas / 24 valores (6.3–50 V) y 165 piezas / 10 valores (0.47–470 µF) (UNIT). Otros vendedores: 120–500 piezas.",
+        "temperatura": "85 °C o 105 °C según marca (revisar funda)",
+        "huella": "ver cap-electrolitico-radial (Ø5–13 mm) y cap-electrolitico-smd"
+      },
+      "schematic_symbol": "capacitor_polarizado",
+      "typical_uses": [
+        "Laboratorio de estudiante (CONALEP, CECyT, tecnológicos)",
+        "Prototipos con Arduino: filtrado y desacoplo",
+        "Reparación general"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre",
+        "Amazon México"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Verificado en el catálogo de UNIT (kit THT de 510 piezas / 24 valores en estuche con broche; kits SMD de 400 y 165 piezas). Los valores listados en common_values son los típicos de estos surtidos; el contenido exacto (valores y voltajes) cambia por vendedor, revisar la etiqueta del estuche. La huella depende del diámetro de cada valor. Los kits económicos son de marca genérica: para fuentes de potencia conviene comprar piezas de marca."
+    },
+    {
+      "id": "cap-kit-ceramicos",
+      "name": "Kit / surtido de capacitores cerámicos (disco, multicapa y libro SMD)",
+      "aliases": [
+        "kit de capacitores cerámicos",
+        "surtido de lentejas",
+        "ceramic capacitor kit",
+        "kit 300 cerámicos 30 valores",
+        "kit 250 cerámicos",
+        "libro de capacitores SMD"
+      ],
+      "category": "capacitores",
+      "subcategory": "kits_capacitores",
+      "description": "Surtidos de capacitores cerámicos de disco de 50 V (y kits de multicapa/monolíticos) desde unos pocos pF hasta 100 nF–1 µF, en bolsitas, estuche o libreta; también hay libros de capacitores SMD.",
+      "mounting": "THT/SMD",
+      "packages": [],
+      "pinout": [],
+      "common_values": [
+        "2 pF",
+        "5 pF",
+        "10 pF",
+        "15 pF",
+        "18 pF",
+        "20 pF",
+        "22 pF",
+        "27 pF",
+        "30 pF",
+        "33 pF",
+        "47 pF",
+        "68 pF",
+        "100 pF (101)",
+        "220 pF (221)",
+        "470 pF (471)",
+        "1 nF (102)",
+        "2.2 nF (222)",
+        "4.7 nF (472)",
+        "10 nF (103)",
+        "22 nF (223)",
+        "47 nF (473)",
+        "100 nF (104)",
+        "250 piezas 1 pF–0.1 µF (UNIT)",
+        "cerámicos 20 pF–1 µF (UNIT)",
+        "300 piezas 2 pF–100 nF, 10 de cada valor (kit básico de 7 tipos, UNIT)"
+      ],
+      "specs": {
+        "voltaje": "50 V en los discos de surtido",
+        "dielectrico": "NP0/C0G en valores de pF (normalmente); Y5V/Z5U o X7R en valores de nF, según marca",
+        "presentaciones": "250 piezas 1 pF–0.1 µF; kit 20 pF–1 µF; 300 piezas / 30 valores (2 pF–100 nF) dentro del kit básico de 7 tipos (UNIT). Libros SMD 0603/0805 con número de valores según vendedor.",
+        "huella": "ver cap-ceramico-disco, cap-mlcc-tht y cap-mlcc-smd"
+      },
+      "schematic_symbol": "capacitor",
+      "typical_uses": [
+        "Laboratorio de estudiante",
+        "Capacitores de 22 pF para cristales y 100 nF de desacoplo",
+        "Filtros y osciladores (555, RC)"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre",
+        "Amazon México"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT: kit de 250 cerámicos de 1 pF a 0.1 µF, kit de cerámicos de 20 pF a 1 µF y kit básico de 7 tipos (incluye 300 cerámicos de 2 pF a 100 nF, 10 de cada valor). La lista de common_values es la típica de estos surtidos y varía por vendedor. Código de 3 cifras en pF: 104 = 100 nF, 103 = 10 nF, 102 = 1 nF (104 NO es 104 pF)."
+    },
+    {
+      "id": "dio-kit-surtido",
+      "name": "Kit / surtido de diodos (rectificadores, señal, Schottky y Zener)",
+      "aliases": [
+        "kit de diodos",
+        "surtido de diodos",
+        "diode kit",
+        "kit de diodos zener",
+        "kit 200 diodos 10 valores",
+        "kit 100 diodos"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "kits_diodos",
+      "description": "Surtidos en estuche o bolsitas con los diodos de uso general más comunes (1N400x, 1N540x, 1N4148, 1N581x, 1N582x, rápidos) y kits aparte de diodos Zener de 0.5 W o 1 W.",
+      "mounting": "THT",
+      "packages": [],
+      "pinout": [],
+      "common_values": [
+        "1N4001–1N4007",
+        "1N5817–1N5819",
+        "1N4148",
+        "1N5399",
+        "1N5408",
+        "1N5822",
+        "FR107 / UF4007 (en algunos kits)",
+        "Zener 0.5 W surtidos (≈3.3–30 V)",
+        "Zener 1 W 1N47xxA surtidos",
+        "200 piezas / 10 valores: 1N4001–1N4007 + 1N5817–1N5819 (UNIT)",
+        "100 piezas: 1N5399, 1N5408, 1N4148, 1N4007, 1N5819, 1N5822 (UNIT)"
+      ],
+      "specs": {
+        "presentaciones": "200 piezas / 10 valores y 100 piezas de 6 tipos (UNIT); el kit básico de 7 tipos de UNIT trae 100 diodos de 8 valores. Kits de Zener en bolsitas por voltaje (cantidad de valores según vendedor).",
+        "huella": "ver dio-1n4001-1n4007 (DO-41), dio-1n5400-1n5408 (DO-201AD), dio-1n4148-1n914 (DO-35), dio-schottky-1n5817-1n5819, dio-zener-05w y dio-zener-1w"
+      },
+      "schematic_symbol": "diodo",
+      "typical_uses": [
+        "Laboratorio de estudiante",
+        "Prototipos: rectificación, protección de polaridad y diodos de rueda libre en relevadores/motores",
+        "Reparación general"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre",
+        "Amazon México"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT: kit de 200 diodos de 10 valores (1N4001–1N4007 y 1N5817–1N5819; la ficha se contradice entre 5 y 20 piezas por valor) y kit de 100 diodos (1N5399, 1N5408, 1N4148, 1N4007, 1N5819, 1N5822). El contenido varía por vendedor: identificar cada diodo por su marcado. En todos, la banda marca el cátodo."
+    },
+    {
+      "id": "trn-kit-to92",
+      "name": "Kit / surtido de transistores TO-92",
+      "aliases": [
+        "kit de transistores",
+        "surtido de transistores",
+        "transistor kit TO-92",
+        "kit 200 transistores 10 valores",
+        "kit 180 transistores 18 valores",
+        "kit BJT TO-92"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "kits_transistores",
+      "description": "Surtidos de transistores bipolares NPN y PNP de pequeña señal en TO-92, en estuche con compartimentos o bolsitas etiquetadas, para prácticas y prototipos.",
+      "mounting": "THT",
+      "packages": [],
+      "pinout": [],
+      "common_values": [
+        "S8050",
+        "S8550",
+        "S9012",
+        "S9013",
+        "S9014",
+        "S9015",
+        "S9018",
+        "2N2222A",
+        "2N2907A",
+        "2N3904",
+        "2N3906",
+        "2N5401",
+        "2N5551",
+        "A1015",
+        "C1815",
+        "A42",
+        "A92",
+        "BC327",
+        "BC337",
+        "BC547",
+        "BC557",
+        "200 piezas / 10 valores (BJT TO-92, UNIT)",
+        "180 piezas / 18 valores (TO-92, UNIT)"
+      ],
+      "specs": {
+        "encapsulado": "TO-92 (patas rectas a 1.27 mm o preformadas a 2.54 mm)",
+        "presentaciones": "200 piezas / 10 valores y 180 piezas / 18 valores (UNIT); la mezcla exacta de números de parte varía por vendedor",
+        "huella": "ver la ficha de cada número de parte (trn-s8050, trn-2n2222a-to92, trn-2n3904, trn-bc547-bc548-bc549, trn-2sc945-2sc1815, etc.)"
+      },
+      "schematic_symbol": "transistor_npn",
+      "typical_uses": [
+        "Laboratorio de estudiante",
+        "Prototipos con Arduino: manejar relevadores, LEDs y buzzers",
+        "Reparación general"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre",
+        "Amazon México"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT (kit TO-92 de 180 piezas / 18 valores y kit BJT TO-92 de 200 piezas / 10 valores); la lista de common_values reúne los números de parte que suelen traer estos kits, no el contenido exacto de uno. ¡Ojo con el pinout! Vistos de frente a la cara plana: S8050/S9013/2N2222A/2N3904 = E-B-C; BC547/BC557/BC337 = C-B-E; A1015/C1815 = E-C-B. Usar siempre la huella del número de parte concreto."
+    },
+    {
+      "id": "opt-kit-leds",
+      "name": "Kit / surtido de LEDs de 3 mm y 5 mm",
+      "aliases": [
+        "kit de LEDs",
+        "surtido de LEDs",
+        "LED kit",
+        "kit 200 LEDs difusos",
+        "kit 500 LEDs 3 mm",
+        "foquitos LED surtidos"
+      ],
+      "category": "optoelectronica",
+      "subcategory": "kits_leds",
+      "description": "Surtidos de LEDs de 3 mm y/o 5 mm (difusos o transparentes) en 5 o más colores, en estuche con compartimentos; material básico de cualquier práctica de electrónica digital o Arduino.",
+      "mounting": "THT",
+      "packages": [],
+      "pinout": [],
+      "common_values": [
+        "rojo",
+        "verde",
+        "amarillo",
+        "azul",
+        "blanco",
+        "3 mm difuso",
+        "5 mm difuso",
+        "5 mm transparente (alto brillo)",
+        "200 LEDs difusos de 3 y 5 mm (UNIT)",
+        "500 LEDs de 3 mm (UNIT)"
+      ],
+      "specs": {
+        "corriente": "≈20 mA máx. continua; para indicador bastan 5–15 mA",
+        "vf_tipico": "rojo/amarillo ≈1.8–2.2 V; azul/blanco ≈2.8–3.4 V; verde ≈2–3.4 V según la tecnología del chip",
+        "huella": "ver opt-led-3mm y opt-led-5mm (2 pads a 2.54 mm)"
+      },
+      "schematic_symbol": "led",
+      "typical_uses": [
+        "Prácticas de electrónica digital (indicadores, semáforos, contadores)",
+        "Primeros proyectos con Arduino",
+        "Luces rítmicas y secuenciales"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre",
+        "Amazon México"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT (kit de 200 LEDs difusos de 3 y 5 mm; kit de 500 LEDs de 3 mm). Pata larga = ánodo; lado plano de la ceja = cátodo. Cada LED necesita su resistencia en serie (≈220–330 Ω a 5 V)."
+    },
+    {
+      "id": "dio-schottky-mbr-to220",
+      "name": "Diodo Schottky de potencia MBR1045 / MBR1645 / MBR20100CT / MBR3045PT (TO-220 / TO-247)",
+      "aliases": [
+        "MBR1045",
+        "MBR1060",
+        "MBR1645",
+        "MBR2045CT",
+        "MBR20100CT",
+        "MBR3045PT",
+        "Schottky TO-220",
+        "diodo Schottky doble",
+        "diodo antirretorno"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "diodos_schottky",
+      "description": "Rectificadores Schottky de 10–30 A en cápsula TO-220 (sencillos de 2 patas o dobles de cátodo común, sufijo CT) o TO-247/TO-3P (sufijo PT), para salidas de fuentes conmutadas, cargadores solares y protección contra retorno de corriente.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "TO-220AC (2 terminales, MBR1045/MBR1645)",
+          "pins": 2,
+          "pitch_mm": 5.08,
+          "row_spacing_mm": null,
+          "body_mm": "≈10.0 x 15.0 (con pestaña) x 4.5 (aprox., como TO-220)",
+          "lead_diameter_mm": null,
+          "notes": "Dos patas en las posiciones exteriores de un TO-220 (separadas 5.08 mm, sin pata central). Pestaña = cátodo. Medidas aproximadas."
+        },
+        {
+          "name": "TO-220AB (3 terminales, dobles CT: MBR2045CT/MBR20100CT)",
+          "pins": 3,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": "≈10.0 x 15.0 (con pestaña) x 4.5; parte plástica ≈10 x 9",
+          "lead_diameter_mm": null,
+          "notes": "Terminales rectangulares ≈0.8 x 0.5 mm (taladro 1.0–1.2 mm, pad ≥1.8 mm). Pestaña metálica con agujero Ø≈3.6–3.8 mm unida al pin central. Vista: de frente a la leyenda, patas abajo, pin 1 a la izquierda. Medidas aproximadas (varían por fabricante)."
+        },
+        {
+          "name": "TO-247 / TO-3P (dobles PT: MBR3045PT)",
+          "pins": 3,
+          "pitch_mm": 5.45,
+          "row_spacing_mm": null,
+          "body_mm": "≈15.9 x 20.9 x 5.0 (sin patas)",
+          "lead_diameter_mm": null,
+          "notes": "Terminales ≈1.2 x 0.6 mm (taladro 1.5–1.8 mm). Agujero de montaje Ø≈3.6 mm. Cara metálica = pin central. Vista: de frente a la leyenda, patas abajo, pin 1 a la izquierda. Medidas aproximadas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "A1",
+          "function": "Versiones dobles CT/PT: ánodo del diodo 1"
+        },
+        {
+          "pin": "2",
+          "name": "K",
+          "function": "Versiones dobles CT/PT: cátodo común (unido a la pestaña/cara metálica)"
+        },
+        {
+          "pin": "3",
+          "name": "A2",
+          "function": "Versiones dobles CT/PT: ánodo del diodo 2"
+        },
+        {
+          "pin": "AC1",
+          "name": "K",
+          "function": "TO-220AC sencillo: pata izquierda = cátodo (unido a la pestaña)"
+        },
+        {
+          "pin": "AC2",
+          "name": "A",
+          "function": "TO-220AC sencillo: pata derecha = ánodo"
+        }
+      ],
+      "common_values": [
+        "MBR1045 (10 A 45 V, TO-220AC)",
+        "MBR1060 (10 A 60 V, TO-220AC)",
+        "MBR1645 (16 A 45 V, TO-220AC)",
+        "MBR2045CT (2 x 10 A 45 V)",
+        "MBR20100CT (2 x 10 A 100 V)",
+        "MBR3045PT (2 x 15 A 45 V, TO-247/TO-3P)"
+      ],
+      "specs": {
+        "if": "10–30 A (en los dobles, la mitad por diodo)",
+        "vrrm": "45–100 V",
+        "vf": "≈0.55–0.85 V a corriente nominal (según modelo y temperatura)",
+        "fuga": "mayor que en diodos de silicio; aumenta mucho con la temperatura"
+      },
+      "schematic_symbol": "diodo_schottky",
+      "typical_uses": [
+        "Diodo antirretorno entre panel solar y batería",
+        "Rectificador de salida en fuentes conmutadas",
+        "OR de fuentes / alimentación redundante",
+        "Protección contra polaridad inversa de alta corriente"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Pinout TO-220AC según la convención JEDEC habitual (pin 1 = cátodo = pestaña, pin del otro extremo = ánodo); verificar con la hoja del fabricante concreto. En los dobles se pueden unir A1 y A2 para usarlo como un solo diodo de doble corriente. La pestaña está viva (cátodo): usar mica si el disipador va a tierra. Necesita disipador en uso continuo cerca de la corriente nominal. Disponibilidad por tienda no verificada individualmente."
+    },
+    {
+      "id": "dio-schottky-bat85-bat54",
+      "name": "Diodo Schottky de señal BAT85 / BAT43 / BAT46 / BAT54 (DO-35 y SOT-23)",
+      "aliases": [
+        "BAT85",
+        "BAT43",
+        "BAT46",
+        "BAT54",
+        "BAT54C",
+        "BAT54S",
+        "BAT54A",
+        "Schottky de señal",
+        "small signal Schottky"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "diodos_schottky",
+      "description": "Diodos Schottky de baja corriente (150–200 mA) y baja caída de voltaje para detección de RF, protección y sujeción de entradas, compuertas de diodos y respaldo de batería; sustituto moderno del diodo de germanio.",
+      "mounting": "THT/SMD",
+      "packages": [
+        {
+          "name": "DO-35 (DO-204AH) vidrio (BAT85/BAT43/BAT46)",
+          "pins": 2,
+          "pitch_mm": 7.62,
+          "row_spacing_mm": null,
+          "body_mm": "≈3.0–4.5 x 1.5–2.0 (largo x diámetro)",
+          "lead_diameter_mm": 0.5,
+          "notes": "Paso de huella 7.62 mm (0.3 in) o 10.16 mm; vertical 2.54 mm. Terminal Ø0.46–0.56 mm, taladro 0.8 mm. Banda = cátodo. Misma huella que el 1N4148."
+        },
+        {
+          "name": "SOT-23 (BAT54, BAT54A/C/S)",
+          "pins": 3,
+          "pitch_mm": 0.95,
+          "row_spacing_mm": null,
+          "body_mm": "≈2.9 x 1.3 x 1.0 (largo x ancho x alto); ancho total con patas ≈2.4",
+          "lead_diameter_mm": null,
+          "notes": "Pines 1 y 2 del mismo lado (separados 1.9 mm, paso 0.95 mm), pin 3 solo en el lado opuesto. Vista superior con el pin 3 arriba."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "A",
+          "name": "A",
+          "function": "DO-35: ánodo (lado sin banda)"
+        },
+        {
+          "pin": "K",
+          "name": "K",
+          "function": "DO-35: cátodo (lado de la banda)"
+        },
+        {
+          "pin": "1",
+          "name": "A",
+          "function": "SOT-23 BAT54 sencillo: ánodo"
+        },
+        {
+          "pin": "2",
+          "name": "NC",
+          "function": "SOT-23 BAT54 sencillo: sin conexión"
+        },
+        {
+          "pin": "3",
+          "name": "K",
+          "function": "SOT-23 BAT54 sencillo: cátodo"
+        }
+      ],
+      "common_values": [
+        "BAT85 (30 V 200 mA, DO-35)",
+        "BAT43 (30 V 200 mA, DO-35)",
+        "BAT46 (100 V 150 mA, DO-35)",
+        "BAT54 (30 V 200 mA, SOT-23)",
+        "BAT54C (doble, cátodo común)",
+        "BAT54A (doble, ánodo común)",
+        "BAT54S (doble, en serie)"
+      ],
+      "specs": {
+        "vr": "30 V (BAT85/BAT43/BAT54), 100 V (BAT46)",
+        "if": "150–200 mA continuos",
+        "vf": "≈0.3–0.4 V a 1–10 mA; ≈0.8–1 V a 100 mA"
+      },
+      "schematic_symbol": "diodo_schottky",
+      "typical_uses": [
+        "Detector de RF / radio de galena (en lugar del 1N34A)",
+        "Protección de entradas de microcontrolador (clamp a VCC/GND)",
+        "Compuertas OR de diodos con baja caída",
+        "Respaldo con batería de RTC y circuitos de bajo consumo"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Variantes dobles en SOT-23: BAT54C (1 = ánodo 1, 2 = ánodo 2, 3 = cátodo común), BAT54A (1 = cátodo 1, 2 = cátodo 2, 3 = ánodo común), BAT54S (1 = ánodo 1, 2 = cátodo 2, 3 = cátodo 1/ánodo 2); verificar con la hoja del fabricante. No usar como rectificador de potencia (para eso: 1N5817–1N5819). Disponibilidad por tienda no verificada individualmente."
+    },
+    {
+      "id": "trn-tip35c",
+      "name": "Transistor NPN de potencia TIP35C (25 A, TO-247 / TO-3P)",
+      "aliases": [
+        "TIP35C",
+        "TIP35",
+        "TIP35A",
+        "TIP35B",
+        "TIP 35C"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "transistores_bjt",
+      "description": "NPN de potencia de 25 A y 125 W en cápsula plástica grande; complemento del TIP36C en etapas de salida de amplificadores de audio y fuentes de alta corriente.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "TO-247 (TO-247AC)",
+          "pins": 3,
+          "pitch_mm": 5.45,
+          "row_spacing_mm": null,
+          "body_mm": "≈15.9 x 20.9 x 5.0 (sin patas)",
+          "lead_diameter_mm": null,
+          "notes": "Terminales ≈1.2 x 0.6 mm (taladro 1.5–1.8 mm). Agujero de montaje Ø≈3.6 mm. Cara metálica = pin central. Vista: de frente a la leyenda, patas abajo, pin 1 a la izquierda. Medidas aproximadas."
+        },
+        {
+          "name": "TO-3P / TO-3PN",
+          "pins": 3,
+          "pitch_mm": 5.45,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Cápsula plástica grande de 3 patas a 5.45 mm, de tamaño parecido al TO-247 y con el mismo orden de pines; en la práctica se usa la misma huella. Dimensiones exactas no verificadas: tomar las del fabricante concreto."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "B",
+          "function": "Base"
+        },
+        {
+          "pin": "2",
+          "name": "C",
+          "function": "Colector (cara metálica)"
+        },
+        {
+          "pin": "3",
+          "name": "E",
+          "function": "Emisor"
+        }
+      ],
+      "common_values": [
+        "TIP35 (40 V)",
+        "TIP35A (60 V)",
+        "TIP35B (80 V)",
+        "TIP35C (100 V)"
+      ],
+      "specs": {
+        "tipo": "NPN",
+        "vceo": "100 V (TIP35C)",
+        "ic_max": "25 A (40 A pico)",
+        "potencia": "125 W (Tc = 25 °C, con disipador)",
+        "hfe": "≥25 a 1.5 A; ≈10–15 mín. a 15 A (según fabricante)",
+        "ft": "≈3 MHz"
+      },
+      "schematic_symbol": "transistor_npn",
+      "typical_uses": [
+        "Etapa de salida de amplificadores de audio de 100–200 W (par con TIP36C)",
+        "Transistor de paso en fuentes reguladas de alta corriente",
+        "Cargadores e inversores"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT (TIP35C NPN 100 V 25 A en TO-3PN). ST lo fabrica en TO-247; otras marcas en TO-3P/TO-3PN o TO-218: mismo pinout B-C-E y paso 5.45 mm. El colector está en la cara metálica: usar mica/silicón y buje (mec-kit-aislante-to220 incluye TO-247). Abundan falsificaciones."
+    },
+    {
+      "id": "trn-tip36c",
+      "name": "Transistor PNP de potencia TIP36C (25 A, TO-247 / TO-3P)",
+      "aliases": [
+        "TIP36C",
+        "TIP36",
+        "TIP36A",
+        "TIP36B",
+        "TIP 36C"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "transistores_bjt",
+      "description": "PNP de potencia de 25 A y 125 W en cápsula plástica grande; complemento del TIP35C en etapas de salida de amplificadores de audio.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "TO-247 (TO-247AC)",
+          "pins": 3,
+          "pitch_mm": 5.45,
+          "row_spacing_mm": null,
+          "body_mm": "≈15.9 x 20.9 x 5.0 (sin patas)",
+          "lead_diameter_mm": null,
+          "notes": "Terminales ≈1.2 x 0.6 mm (taladro 1.5–1.8 mm). Agujero de montaje Ø≈3.6 mm. Cara metálica = pin central. Vista: de frente a la leyenda, patas abajo, pin 1 a la izquierda. Medidas aproximadas."
+        },
+        {
+          "name": "TO-3P / TO-3PN",
+          "pins": 3,
+          "pitch_mm": 5.45,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Cápsula plástica grande de 3 patas a 5.45 mm, de tamaño parecido al TO-247 y con el mismo orden de pines; en la práctica se usa la misma huella. Dimensiones exactas no verificadas: tomar las del fabricante concreto."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "B",
+          "function": "Base"
+        },
+        {
+          "pin": "2",
+          "name": "C",
+          "function": "Colector (cara metálica)"
+        },
+        {
+          "pin": "3",
+          "name": "E",
+          "function": "Emisor"
+        }
+      ],
+      "common_values": [
+        "TIP36 (−40 V)",
+        "TIP36A (−60 V)",
+        "TIP36B (−80 V)",
+        "TIP36C (−100 V)"
+      ],
+      "specs": {
+        "tipo": "PNP",
+        "vceo": "−100 V (TIP36C)",
+        "ic_max": "−25 A (−40 A pico)",
+        "potencia": "125 W (Tc = 25 °C, con disipador)",
+        "hfe": "≥25 a 1.5 A; ≈10–15 mín. a 15 A (según fabricante)",
+        "ft": "≈3 MHz"
+      },
+      "schematic_symbol": "transistor_pnp",
+      "typical_uses": [
+        "Etapa de salida de amplificadores de audio de 100–200 W (par con TIP35C)",
+        "Fuentes simétricas de alta corriente",
+        "Puentes H discretos"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT (TIP36C PNP 100 V 25 A en TO-3PN). Mismo pinout B-C-E que el TIP35C; cara metálica = colector, aislar del disipador. Abundan falsificaciones."
+    },
+    {
+      "id": "trn-mj15003-mj15024",
+      "name": "Transistor NPN de potencia de audio MJ15003 / MJ15022 / MJ15024 (TO-3)",
+      "aliases": [
+        "MJ15003",
+        "MJ15024",
+        "MJ15022",
+        "MJ15003G",
+        "MJ15024G"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "transistores_bjt",
+      "description": "NPN de potencia de 250 W en cápsula metálica TO-3 para etapas de salida de amplificadores de audio de alta potencia y fuentes lineales; se usa en par complementario con MJ15004 / MJ15025.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "TO-3 (TO-204AA) metálico",
+          "pins": 2,
+          "pitch_mm": 10.92,
+          "row_spacing_mm": null,
+          "body_mm": "Brida ≈39 x 26 mm, cápsula Ø≈22 mm, alto ≈8 mm (sin patas)",
+          "lead_diameter_mm": 1.0,
+          "notes": "Solo 2 pines (Base y Emisor) separados 10.92 mm (0.43 in) y desplazados del centro; la CARCASA es el COLECTOR. Agujeros de montaje Ø≈4 mm separados 30.15 mm (1.187 in). Misma huella que el 2N3055 (ver trn-2n3055). Medidas JEDEC aproximadas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "B",
+          "function": "Base"
+        },
+        {
+          "pin": "2",
+          "name": "E",
+          "function": "Emisor"
+        },
+        {
+          "pin": "carcasa",
+          "name": "C",
+          "function": "Colector (cuerpo metálico)"
+        }
+      ],
+      "common_values": [
+        "MJ15003 (140 V 20 A 250 W)",
+        "MJ15022 (200 V 16 A 250 W)",
+        "MJ15024 (250 V 16 A 250 W)"
+      ],
+      "specs": {
+        "tipo": "NPN",
+        "vceo": "140 V (MJ15003) / 200 V (MJ15022) / 250 V (MJ15024)",
+        "ic_max": "20 A (MJ15003) / 16 A (MJ15022, MJ15024)",
+        "potencia": "250 W (Tc = 25 °C)",
+        "ft": "≈2–4 MHz (según modelo)"
+      },
+      "schematic_symbol": "transistor_npn",
+      "typical_uses": [
+        "Amplificadores de audio de alta potencia (par con MJ15004/MJ15025)",
+        "Reparación de amplificadores profesionales",
+        "Fuentes lineales de laboratorio de alta corriente"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Misma huella TO-3 que el 2N3055: solo Base y Emisor salen como patas; la carcasa es el colector y requiere kit aislante TO-3 (mec-kit-aislante-to3). Visto desde abajo con los pines más cerca de ti: izquierdo = Base, derecho = Emisor (verificar con multímetro). Muy falsificados; disponibilidad por tienda no verificada individualmente."
+    },
+    {
+      "id": "trn-mj15004-mj15025",
+      "name": "Transistor PNP de potencia de audio MJ15004 / MJ15023 / MJ15025 (TO-3)",
+      "aliases": [
+        "MJ15004",
+        "MJ15025",
+        "MJ15023",
+        "MJ15004G",
+        "MJ15025G"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "transistores_bjt",
+      "description": "PNP de potencia de 250 W en cápsula metálica TO-3, complemento de MJ15003 / MJ15024 en etapas de salida de amplificadores de audio de alta potencia.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "TO-3 (TO-204AA) metálico",
+          "pins": 2,
+          "pitch_mm": 10.92,
+          "row_spacing_mm": null,
+          "body_mm": "Brida ≈39 x 26 mm, cápsula Ø≈22 mm, alto ≈8 mm (sin patas)",
+          "lead_diameter_mm": 1.0,
+          "notes": "Solo 2 pines (Base y Emisor) separados 10.92 mm (0.43 in) y desplazados del centro; la CARCASA es el COLECTOR. Agujeros de montaje Ø≈4 mm separados 30.15 mm (1.187 in). Misma huella que el 2N3055 (ver trn-2n3055). Medidas JEDEC aproximadas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "B",
+          "function": "Base"
+        },
+        {
+          "pin": "2",
+          "name": "E",
+          "function": "Emisor"
+        },
+        {
+          "pin": "carcasa",
+          "name": "C",
+          "function": "Colector (cuerpo metálico)"
+        }
+      ],
+      "common_values": [
+        "MJ15004 (−140 V −20 A 250 W)",
+        "MJ15023 (−200 V −16 A 250 W)",
+        "MJ15025 (−250 V −16 A 250 W)"
+      ],
+      "specs": {
+        "tipo": "PNP",
+        "vceo": "−140 V (MJ15004) / −200 V (MJ15023) / −250 V (MJ15025)",
+        "ic_max": "−20 A (MJ15004) / −16 A (MJ15023, MJ15025)",
+        "potencia": "250 W (Tc = 25 °C)",
+        "ft": "≈2–4 MHz (según modelo)"
+      },
+      "schematic_symbol": "transistor_pnp",
+      "typical_uses": [
+        "Amplificadores de audio de alta potencia (par con MJ15003/MJ15024)",
+        "Reparación de amplificadores profesionales",
+        "Fuentes simétricas lineales"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Huella TO-3 idéntica a la del MJ15003 y el 2N3055; carcasa = colector. Comprar los pares del mismo lote/fabricante. Muy falsificados; disponibilidad por tienda no verificada individualmente."
+    },
+    {
+      "id": "trn-irfp9240",
+      "name": "MOSFET canal P TO-247 IRFP9240 / IRFP9140N (complemento del IRFP240)",
+      "aliases": [
+        "IRFP9240",
+        "IRFP9240PBF",
+        "IRFP9140N",
+        "IRFP9140",
+        "MOSFET canal P TO-247",
+        "par IRFP240 / IRFP9240"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "transistores_mosfet",
+      "description": "MOSFET de potencia de canal P en TO-247; el IRFP9240 forma con el IRFP240 (canal N) el par complementario clásico de los amplificadores de audio MOSFET caseros.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "TO-247 (TO-247AC)",
+          "pins": 3,
+          "pitch_mm": 5.45,
+          "row_spacing_mm": null,
+          "body_mm": "≈15.9 x 20.9 x 5.0 (sin patas)",
+          "lead_diameter_mm": null,
+          "notes": "Terminales ≈1.2 x 0.6 mm (taladro 1.5–1.8 mm). Agujero de montaje Ø≈3.6 mm. Cara metálica = pin central. Vista: de frente a la leyenda, patas abajo, pin 1 a la izquierda. Medidas aproximadas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "G",
+          "function": "Compuerta (gate)"
+        },
+        {
+          "pin": "2",
+          "name": "D",
+          "function": "Drenador (cara metálica)"
+        },
+        {
+          "pin": "3",
+          "name": "S",
+          "function": "Fuente (source)"
+        }
+      ],
+      "common_values": [
+        "IRFP9240 (−200 V −12 A, 0.5 Ω, 150 W)",
+        "IRFP9140N (−100 V −23 A, 0.117 Ω)",
+        "complemento N: IRFP240 (200 V 20 A, 0.18 Ω; misma huella que trn-irfp250-irfp260)"
+      ],
+      "specs": {
+        "canal": "P",
+        "vds": "−100 a −200 V",
+        "id": "−12 a −23 A",
+        "vgs_th": "−2 a −4 V",
+        "potencia": "≈140–150 W"
+      },
+      "schematic_symbol": "mosfet_p",
+      "typical_uses": [
+        "Amplificadores de audio MOSFET (par IRFP240/IRFP9240)",
+        "Interruptor de lado alto de alta corriente",
+        "Puentes H de potencia"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Pinout G-D-S igual que los TO-247 de canal N. En canal P la fuente va al positivo y conduce con VGS negativo (compuerta por debajo de la fuente, sin pasar de ±20 V). Para amplificadores lineales conviene aparear piezas y revisar el área de operación segura (SOA). Disponibilidad por tienda no verificada individualmente."
+    },
+    {
+      "id": "trn-igbt-to247",
+      "name": "IGBT de potencia TO-247 / TO-3P (FGA25N120ANTD / H20R1203 / FGH40N60SFD / IRG4PC50UD)",
+      "aliases": [
+        "IGBT",
+        "FGA25N120ANTD",
+        "FGA25N120",
+        "H20R1203",
+        "IHW20N120R3",
+        "FGH40N60SFD",
+        "IRG4PC50UD",
+        "G4PC50UD",
+        "transistor bipolar de compuerta aislada"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "transistores_igbt",
+      "description": "Transistores bipolares de compuerta aislada para conmutar alto voltaje y corriente en cocinas de inducción, soldadoras inversoras, calentadores por inducción y variadores; los modelos listados traen diodo antiparalelo integrado.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "TO-247 (TO-247AC)",
+          "pins": 3,
+          "pitch_mm": 5.45,
+          "row_spacing_mm": null,
+          "body_mm": "≈15.9 x 20.9 x 5.0 (sin patas)",
+          "lead_diameter_mm": null,
+          "notes": "Terminales ≈1.2 x 0.6 mm (taladro 1.5–1.8 mm). Agujero de montaje Ø≈3.6 mm. Cara metálica = pin central. Vista: de frente a la leyenda, patas abajo, pin 1 a la izquierda. Medidas aproximadas."
+        },
+        {
+          "name": "TO-3P / TO-3PN",
+          "pins": 3,
+          "pitch_mm": 5.45,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Cápsula plástica grande de 3 patas a 5.45 mm, de tamaño parecido al TO-247 y con el mismo orden de pines; en la práctica se usa la misma huella. Dimensiones exactas no verificadas: tomar las del fabricante concreto."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "G",
+          "function": "Compuerta (gate)"
+        },
+        {
+          "pin": "2",
+          "name": "C",
+          "function": "Colector (cara metálica)"
+        },
+        {
+          "pin": "3",
+          "name": "E",
+          "function": "Emisor"
+        }
+      ],
+      "common_values": [
+        "FGA25N120ANTD (1200 V 25 A, TO-3PN; cocinas de inducción)",
+        "H20R1203 = IHW20N120R3 (1200 V 20 A, TO-247, conducción inversa)",
+        "FGH40N60SFD (600 V 40 A, TO-247; soldadoras inversoras)",
+        "IRG4PC50UD (600 V ≈27 A a 100 °C, TO-247)"
+      ],
+      "specs": {
+        "vces": "600–1200 V",
+        "ic": "20–40 A (a 100 °C, según modelo)",
+        "vge_th": "≈3.5–7.5 V",
+        "vge_conduccion": "15 V recomendados (máx. ±20 V)",
+        "diodo": "antiparalelo integrado en los modelos listados"
+      },
+      "schematic_symbol": "igbt",
+      "typical_uses": [
+        "Reparación de cocinas/parrillas de inducción y hornos de microondas inverter",
+        "Soldadoras inversoras y fuentes de alta potencia",
+        "Calentadores por inducción y bobinas Tesla de estado sólido",
+        "Variadores de motor e inversores"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Pinout G-C-E (de frente a la leyenda, patas abajo); cara metálica = colector. Necesita driver de compuerta a ≈15 V (p. ej. opt-tlp250 o IR2110): no se maneja directo con 5 V de un microcontrolador. El FGA25N120ANTDTU de onsemi figura como descontinuado en element14 y abundan réplicas. No sustituir un modelo por otro sin revisar voltaje, corriente, encapsulado y tipo de diodo. Disponibilidad por tienda no verificada individualmente. Símbolo esquemático 'igbt' propuesto (no está en la lista base)."
+    },
+    {
+      "id": "opt-led-cob",
+      "name": "LED COB de potencia 10–100 W (chip cuadrado de 2 terminales)",
+      "aliases": [
+        "LED COB",
+        "chip LED 50W",
+        "LED integrado 100W",
+        "COB LED",
+        "LED de 10W",
+        "high power LED chip",
+        "LED para reflector"
+      ],
+      "category": "optoelectronica",
+      "subcategory": "leds_potencia",
+      "description": "Módulo LED 'chip on board' (muchos chips bajo una capa de fósforo sobre base metálica) para reflectores y lámparas caseras de 10 a 100 W; requiere driver de corriente constante y disipador grande.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "COB cuadrado 10–100 W",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Base ≈40 x 46 mm, espesor ≈1–3.3 mm según marca (listados de distribuidores)",
+          "lead_diameter_mm": null,
+          "notes": "Dos pestañas planas para soldar cable (+ y −) en lados opuestos y dos ranuras para tornillo. No va en la PCB: se atornilla a un disipador con pasta térmica y se cablea al driver. Medidas aproximadas, verificar con la pieza."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "+",
+          "name": "A",
+          "function": "Ánodo (pestaña marcada +)"
+        },
+        {
+          "pin": "−",
+          "name": "K",
+          "function": "Cátodo (pestaña marcada −)"
+        }
+      ],
+      "common_values": [
+        "10 W (≈9–12 V, ≈900 mA)",
+        "20 W (≈30–34 V, ≈600 mA)",
+        "30 W (≈30–34 V, ≈900 mA)",
+        "50 W (≈30–34 V, ≈1.5 A)",
+        "100 W (≈30–34 V, ≈3 A)",
+        "blanco frío 6000–6500 K",
+        "blanco cálido ≈3000 K",
+        "versiones de 12 V y 'DOB' con driver integrado para línea de CA"
+      ],
+      "specs": {
+        "vf": "≈9–12 V (10 W) o ≈30–34 V (20–100 W)",
+        "corriente": "≈0.6–3 A según potencia",
+        "angulo": "≈120°",
+        "alimentacion": "driver de corriente constante; nunca directo a una fuente de voltaje sin limitar corriente"
+      },
+      "schematic_symbol": "led",
+      "typical_uses": [
+        "Reflectores y lámparas LED caseras",
+        "Iluminación para fotografía o cultivo",
+        "Linternas de alta potencia",
+        "Proyectos de driver de corriente constante (XL4015, LM338)"
+      ],
+      "stores": [
+        "Mercado Libre",
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Vf, corriente y medida de 40 x 46 mm tomadas de listados de distribuidores (RS Components COB 50 W 46 x 40 x 2.2 mm 31.5 V; ADJDiTec COB30 50 W 30–34 V 1.5 A; Xuancai 40 x 46 mm 30–33 V); varían por fabricante. Casi toda la potencia se vuelve calor: un COB de 50 W necesita disipador grande con ventilador. Los de 20–100 W requieren driver de ≈30–36 V o elevador (boost). Disponibilidad por tienda no verificada individualmente."
+    },
+    {
+      "id": "opt-pc814-h11aa1",
+      "name": "Optoacoplador de entrada de CA PC814 / EL814 / H11AA1 (detección de cruce por cero)",
+      "aliases": [
+        "PC814",
+        "EL814",
+        "LTV-814",
+        "H11AA1",
+        "optoacoplador AC",
+        "optoacoplador bidireccional",
+        "AC input optocoupler"
+      ],
+      "category": "optoelectronica",
+      "subcategory": "optoacopladores",
+      "description": "Optoacoplador con dos LED en antiparalelo a la entrada, que conduce en ambos semiciclos de una señal de CA; se usa para detectar presencia de línea y el cruce por cero en dimmers y proyectos de domótica con microcontrolador.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "DIP-4 (PC814 / EL814 / LTV-814)",
+          "pins": 4,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": 7.62,
+          "body_mm": "≈4.6 x 6.5 x 3.5 (aprox.)",
+          "lead_diameter_mm": 0.5,
+          "notes": "Pin 1 marcado con punto. Huella DIP estándar de 300 mil (igual que PC817)."
+        },
+        {
+          "name": "DIP-6 (H11AA1)",
+          "pins": 6,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": 7.62,
+          "body_mm": "≈8.6 x 6.5 x 3.5 (aprox.)",
+          "lead_diameter_mm": 0.5,
+          "notes": "Pin 1 marcado con punto o muesca. Huella DIP estándar de 300 mil (igual que 4N35)."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "AC1",
+          "function": "Entrada de CA (LEDs en antiparalelo, sin polaridad); igual en PC814 y H11AA1"
+        },
+        {
+          "pin": "2",
+          "name": "AC2",
+          "function": "Entrada de CA (sin polaridad); igual en PC814 y H11AA1"
+        },
+        {
+          "pin": "3",
+          "name": "E / NC",
+          "function": "PC814: emisor del fototransistor. H11AA1: sin conexión"
+        },
+        {
+          "pin": "4",
+          "name": "C / E",
+          "function": "PC814: colector. H11AA1: emisor"
+        },
+        {
+          "pin": "5",
+          "name": "C",
+          "function": "Solo H11AA1: colector"
+        },
+        {
+          "pin": "6",
+          "name": "B",
+          "function": "Solo H11AA1: base del fototransistor"
+        }
+      ],
+      "common_values": [
+        "PC814 (DIP-4)",
+        "EL814",
+        "LTV-814",
+        "PC814 SMD",
+        "H11AA1 (DIP-6)"
+      ],
+      "specs": {
+        "entrada": "LEDs en antiparalelo (CA o CD de cualquier polaridad)",
+        "aislamiento": "≈5000 Vrms (según fabricante)",
+        "salida": "fototransistor, colector abierto"
+      },
+      "schematic_symbol": "optoacoplador",
+      "typical_uses": [
+        "Detector de cruce por cero para dimmer con TRIAC y Arduino",
+        "Detectar presencia de 127 VAC (falla de luz, timbre)",
+        "Entradas de CA aisladas hacia microcontroladores o PLC"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "A 127 VAC el LED se alimenta con resistencias en serie de alto valor (decenas de kΩ, ≥0.5 W, divididas en dos piezas para repartir el voltaje); calcular corriente y disipación. Salida con pull-up al microcontrolador: da un pulso en cada cruce por cero. La huella del PC814 es la del PC817 (DIP-4) y la del H11AA1 la del 4N35 (DIP-6). El módulo armado está en mod-cruce-por-cero. Disponibilidad por tienda no verificada individualmente."
+    },
+    {
+      "id": "opt-tlp250",
+      "name": "Optoacoplador driver de compuerta TLP250 / HCPL-3120 (A3120) (DIP-8)",
+      "aliases": [
+        "TLP250",
+        "HCPL-3120",
+        "A3120",
+        "HCPL3120",
+        "optoacoplador driver IGBT",
+        "gate driver optocoupler"
+      ],
+      "category": "optoelectronica",
+      "subcategory": "optoacopladores",
+      "description": "Optoacoplador con salida tótem-polo de 1.5–2.5 A pico para manejar directamente la compuerta de MOSFET e IGBT de potencia con aislamiento galvánico.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "DIP-8",
+          "pins": 8,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": 7.62,
+          "body_mm": "≈9.6 x 6.4 x 3.5 (aprox.)",
+          "lead_diameter_mm": 0.5,
+          "notes": "Huella DIP-8 estándar de 300 mil. Existen versiones SMD (patas de ala de gaviota) con el mismo pinout."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "NC",
+          "function": "Sin conexión"
+        },
+        {
+          "pin": "2",
+          "name": "A",
+          "function": "Ánodo del LED"
+        },
+        {
+          "pin": "3",
+          "name": "K",
+          "function": "Cátodo del LED"
+        },
+        {
+          "pin": "4",
+          "name": "NC",
+          "function": "Sin conexión"
+        },
+        {
+          "pin": "5",
+          "name": "GND/VEE",
+          "function": "Tierra (negativo) de la salida"
+        },
+        {
+          "pin": "6",
+          "name": "VO",
+          "function": "Salida a la compuerta (unir con pin 7)"
+        },
+        {
+          "pin": "7",
+          "name": "VO",
+          "function": "Salida a la compuerta (unir con pin 6)"
+        },
+        {
+          "pin": "8",
+          "name": "VCC",
+          "function": "Alimentación de la salida (≈15 V)"
+        }
+      ],
+      "common_values": [
+        "TLP250 (Toshiba, ±1.5 A pico)",
+        "HCPL-3120 / A3120 (Broadcom/Avago, 2.5 A pico)"
+      ],
+      "specs": {
+        "vcc": "10–35 V (TLP250) / 15–30 V (HCPL-3120)",
+        "corriente_salida_pico": "±1.5 A (TLP250) / 2.5 A (HCPL-3120)",
+        "if_led": "≈7–10 mA recomendados (TLP250)",
+        "aislamiento": "2500–3750 Vrms según modelo"
+      },
+      "schematic_symbol": "optoacoplador",
+      "typical_uses": [
+        "Driver de compuerta para IGBT/MOSFET en inversores y soldadoras",
+        "Puentes H aislados (lado alto con fuente flotante)",
+        "Inversores senoidales caseros con microcontrolador",
+        "Variadores de motor"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Poner un capacitor cerámico de 0.1 µF (o mayor) entre VCC (8) y GND (5) lo más cerca posible del encapsulado. Cada driver de lado alto necesita su propia fuente aislada de ≈15 V. Con el LED encendido la salida va a VCC. Hay versión TLP250H y versiones SMD: verificar su hoja antes de usar esta huella/pinout. Disponibilidad por tienda no verificada individualmente."
+    }
+  ]
+}

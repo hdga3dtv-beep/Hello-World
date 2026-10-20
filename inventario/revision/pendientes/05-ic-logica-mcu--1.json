@@ -1,0 +1,101 @@
+[
+ {
+  "index": 0,
+  "id": "ic-74xx121",
+  "field": "specs",
+  "new_value": {
+   "familia": "TTL estándar, 4.75–5.25 V",
+   "duracion_pulso": "tw ≈ 0.7 · RT · Cext (ln2·RT·Cext); 40 ns a 28 s con Rext/Cext; ≈35 ns típ. usando solo Rint",
+   "r_externa": "1.4–40 kΩ"
+  },
+  "problem": "Rango de duración de pulso '≈30 ns a 40 s' incorrecto; 40 s excede lo posible con RT máx. 40 kΩ y Cext máx. 1000 µF (0.693·40 kΩ·1000 µF ≈ 28 s).",
+  "evidence": "Hoja de datos TI SN74121: 'Programmable output pulse width: with Rint 35 ns typ; with Rext/Cext 40 ns to 28 seconds'; Rext 1.4–40 kΩ, Cext hasta 1000 µF.",
+  "confidence": "alta"
+ },
+ {
+  "index": 1,
+  "id": "ic-74xx123",
+  "field": "specs",
+  "new_value": {
+   "familias": "LS (TTL Schottky de baja potencia, 4.75–5.25 V); HC (CMOS, 2–6 V); HCT (CMOS con entradas TTL, 4.5–5.5 V)",
+   "niveles_entrada": "LS/HCT: VIH ≥ 2.0 V, VIL ≤ 0.8 V; HC a 5 V: VIH ≥ 3.5 V, VIL ≤ 1.5 V",
+   "corriente_salida": "LS: IOL 8 mA / IOH −0.4 mA; HC/HCT: ±4 mA (salidas estándar)",
+   "temperatura": "SN74LS: 0–70 °C; 74HC: −40–85 °C (o −40–125 °C)",
+   "duracion_pulso": "LS: tw ≈ 0.45·RT·Cext (Cext > 1 nF); HC/HCT: tw ≈ 0.45·Rext·Cext a VCC = 5 V (K ≈ 0.55 a 2 V; válido para Cext > 10 nF)"
+  },
+  "problem": "Para 74HC123 indica tw ≈ R·C (K = 1); el factor real es K ≈ 0.45 a 5 V, el pulso calculado saldría ~2 veces más largo.",
+  "evidence": "Hoja de datos NXP 74HC/HCT123: tW = K·REXT·CEXT, K = 0.45 a VCC = 5 V y 0.55 a 2 V (CEXT > 10 nF); TI CD74HC123: tW ≈ 0.45·RX·CX a 5 V. K ≈ 1 corresponde a 74LV123/AHC123, no a HC.",
+  "confidence": "alta"
+ },
+ {
+  "index": 2,
+  "id": "ic-74xx173",
+  "field": "specs",
+  "new_value": {
+   "familias": "LS (TTL Schottky de baja potencia, 4.75–5.25 V); HC (CMOS, 2–6 V); HCT (CMOS con entradas TTL, 4.5–5.5 V)",
+   "niveles_entrada": "LS/HCT: VIH ≥ 2.0 V, VIL ≤ 0.8 V; HC a 5 V: VIH ≥ 3.5 V, VIL ≤ 1.5 V",
+   "corriente_salida": "LS173A (salidas 3 estados, driver de bus): IOL 24 mA / IOH −2.6 mA; HC/HCT173: ±6 mA (driver de bus)",
+   "temperatura": "SN74LS: 0–70 °C; 74HC: −40–85 °C (o −40–125 °C)"
+  },
+  "problem": "Corriente de salida genérica (LS 8 mA/−0.4 mA, HC ±4 mA) no corresponde: el 74173 tiene salidas de 3 estados tipo driver de bus.",
+  "evidence": "TI SN74LS173A, condiciones recomendadas: IOH −2.6 mA, IOL 24 mA (SN74); NXP 74HC173: salidas de bus 3 estados ±6 mA (IO máx. ±35 mA).",
+  "confidence": "alta"
+ },
+ {
+  "index": 3,
+  "id": "ic-74xx83",
+  "field": "specs",
+  "new_value": {
+   "familias": "Solo TTL: LS (TTL Schottky de baja potencia, 4.75–5.25 V) y TTL estándar 74xx (4.75–5.25 V); no hay versión HC/HCT con este pinout",
+   "niveles_entrada": "VIH ≥ 2.0 V, VIL ≤ 0.8 V",
+   "corriente_salida": "LS: IOL 8 mA / IOH −0.4 mA",
+   "temperatura": "SN74LS: 0–70 °C"
+  },
+  "problem": "No existe 74HC83/74HCT83 estándar; la versión CMOS es el 74HC283 (pinout distinto, alimentación estándar).",
+  "evidence": "Catálogos TI/NXP: solo SN74LS83A (y 7483 TTL); el equivalente CMOS es 74HC283. Las notas del propio elemento remiten al 74LS283.",
+  "confidence": "media"
+ },
+ {
+  "index": 4,
+  "id": "ic-74xx90",
+  "field": "specs",
+  "new_value": {
+   "familias": "Solo TTL: LS (TTL Schottky de baja potencia, 4.75–5.25 V) y TTL estándar 74xx (4.75–5.25 V); no hay versión HC/HCT con este pinout",
+   "niveles_entrada": "VIH ≥ 2.0 V, VIL ≤ 0.8 V",
+   "corriente_salida": "LS: IOL 8 mA / IOH −0.4 mA",
+   "temperatura": "SN74LS: 0–70 °C",
+   "frecuencia_max": "≈32 MHz (CKA, LS)"
+  },
+  "problem": "specs.familias lista HC/HCT con niveles CMOS, pero el 7490 solo existe en TTL/LS (las propias notas dicen 'Solo LS; en HC se usa 74HC390').",
+  "evidence": "Catálogos TI/NXP: SN7490A/SN74LS90; no hay 74HC90 estándar, el equivalente CMOS es 74HC390 (pinout distinto).",
+  "confidence": "media"
+ },
+ {
+  "index": 5,
+  "id": "ic-74xx92",
+  "field": "specs",
+  "new_value": {
+   "familias": "Solo TTL: LS (TTL Schottky de baja potencia, 4.75–5.25 V) y TTL estándar 74xx (4.75–5.25 V); no hay versión HC/HCT con este pinout",
+   "niveles_entrada": "VIH ≥ 2.0 V, VIL ≤ 0.8 V",
+   "corriente_salida": "LS: IOL 8 mA / IOH −0.4 mA",
+   "temperatura": "SN74LS: 0–70 °C"
+  },
+  "problem": "specs.familias lista HC/HCT con niveles CMOS, pero el 7492 solo existe en TTL/LS.",
+  "evidence": "Catálogos TI/NXP: SN7492A/SN74LS92; no existe 74HC92 estándar.",
+  "confidence": "media"
+ },
+ {
+  "index": 6,
+  "id": "ic-74xx93",
+  "field": "specs",
+  "new_value": {
+   "familias": "Solo TTL: LS (TTL Schottky de baja potencia, 4.75–5.25 V) y TTL estándar 74xx (4.75–5.25 V); no hay versión HC/HCT con este pinout",
+   "niveles_entrada": "VIH ≥ 2.0 V, VIL ≤ 0.8 V",
+   "corriente_salida": "LS: IOL 8 mA / IOH −0.4 mA",
+   "temperatura": "SN74LS: 0–70 °C"
+  },
+  "problem": "specs.familias lista HC/HCT con niveles CMOS, pero el 7493 solo existe en TTL/LS (el elemento sugiere 74HC393 como alternativa CMOS).",
+  "evidence": "Catálogos TI/NXP: SN7493A/SN74LS93; no existe 74HC93 estándar, el equivalente CMOS es 74HC393 (pinout distinto).",
+  "confidence": "media"
+ }
+]

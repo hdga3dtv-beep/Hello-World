@@ -1,0 +1,739 @@
+[
+ {
+  "index": 0,
+  "id": "brd-arduino-nano-every",
+  "field": "packages",
+  "new_value": [
+   {
+    "name": "Nano DIP-30 (2x15)",
+    "pins": 30,
+    "pitch_mm": 2.54,
+    "row_spacing_mm": 15.24,
+    "body_mm": "18 x 45 mm",
+    "lead_diameter_mm": 0.64,
+    "notes": "Formato Nano: 2 filas de 15 pines (DIP-30 ancho) a 2.54 mm con filas separadas 15.24 mm (0.6 in); encaja en protoboard dejando columnas libres a ambos lados. SIN header ICSP 2x3 (el ATmega4809 se programa por UPDI a través del SAMD11; no dibujar los 6 barrenos ICSP). Pin 1 = D1/TX en el extremo opuesto al USB; pines 15 (D12) y 16 (D13) junto al USB. Bordes castellated además de los barrenos, se puede soldar como SMD sobre la PCB. Conector micro-USB."
+   }
+  ],
+  "problem": "La nota de huella dice que tiene header ICSP 2x3; la Nano Every no lo tiene.",
+  "evidence": "El ATmega4809 no usa ISP por SPI sino UPDI (1 hilo), gestionado por el ATSAMD11 de la placa; la Nano Every no trae header/pads ICSP 2x3 (documentación y fotos oficiales ABX00028).",
+  "confidence": "alta"
+ },
+ {
+  "index": 1,
+  "id": "brd-arduino-nano-esp32",
+  "field": "pinout",
+  "new_value": [
+   {
+    "pin": "1",
+    "name": "D1",
+    "function": "D1 / TX0"
+   },
+   {
+    "pin": "2",
+    "name": "D0",
+    "function": "D0 / RX0"
+   },
+   {
+    "pin": "3",
+    "name": "RESET",
+    "function": "Reset (activo en bajo)"
+   },
+   {
+    "pin": "4",
+    "name": "GND",
+    "function": "Tierra"
+   },
+   {
+    "pin": "5",
+    "name": "D2",
+    "function": "E/S digital 2"
+   },
+   {
+    "pin": "6",
+    "name": "D3",
+    "function": "E/S digital 3"
+   },
+   {
+    "pin": "7",
+    "name": "D4",
+    "function": "E/S digital 4"
+   },
+   {
+    "pin": "8",
+    "name": "D5",
+    "function": "E/S digital 5"
+   },
+   {
+    "pin": "9",
+    "name": "D6",
+    "function": "E/S digital 6"
+   },
+   {
+    "pin": "10",
+    "name": "D7",
+    "function": "E/S digital 7"
+   },
+   {
+    "pin": "11",
+    "name": "D8",
+    "function": "E/S digital 8"
+   },
+   {
+    "pin": "12",
+    "name": "D9",
+    "function": "E/S digital 9"
+   },
+   {
+    "pin": "13",
+    "name": "D10",
+    "function": "E/S digital 10"
+   },
+   {
+    "pin": "14",
+    "name": "D11",
+    "function": "E/S digital 11"
+   },
+   {
+    "pin": "15",
+    "name": "D12",
+    "function": "E/S digital 12"
+   },
+   {
+    "pin": "16",
+    "name": "D13",
+    "function": "D13 / SCK / LED"
+   },
+   {
+    "pin": "17",
+    "name": "3V3",
+    "function": "Salida 3.3 V"
+   },
+   {
+    "pin": "18",
+    "name": "B0",
+    "function": "BOOT0 = GPIO46 (pin de arranque/strapping; usar solo como salida). En la posición de AREF del Nano clásico; la Nano ESP32 no tiene AREF"
+   },
+   {
+    "pin": "19",
+    "name": "A0",
+    "function": "Entrada analógica 0"
+   },
+   {
+    "pin": "20",
+    "name": "A1",
+    "function": "Entrada analógica 1"
+   },
+   {
+    "pin": "21",
+    "name": "A2",
+    "function": "Entrada analógica 2"
+   },
+   {
+    "pin": "22",
+    "name": "A3",
+    "function": "Entrada analógica 3"
+   },
+   {
+    "pin": "23",
+    "name": "A4",
+    "function": "A4 / SDA"
+   },
+   {
+    "pin": "24",
+    "name": "A5",
+    "function": "A5 / SCL"
+   },
+   {
+    "pin": "25",
+    "name": "A6",
+    "function": "Entrada analógica 6"
+   },
+   {
+    "pin": "26",
+    "name": "A7",
+    "function": "Entrada analógica 7"
+   },
+   {
+    "pin": "27",
+    "name": "VBUS",
+    "function": "VBUS/5V (solo con USB conectado; ver documentación)"
+   },
+   {
+    "pin": "28",
+    "name": "B1",
+    "function": "BOOT1 = GPIO0 (a GND + reset = modo bootloader). En la posición del 2.º RESET del Nano clásico; NO es reset"
+   },
+   {
+    "pin": "29",
+    "name": "GND",
+    "function": "Tierra"
+   },
+   {
+    "pin": "30",
+    "name": "VIN",
+    "function": "Entrada de alimentación externa"
+   }
+  ],
+  "problem": "Los pines 18 y 28 no son AREF y RESET: en la Nano ESP32 son B0 (GPIO46) y B1 (GPIO0); el pin 27 se rotula VBUS.",
+  "evidence": "Arduino Nano ESP32 (ABX00083) cheat sheet y artículo de soporte 'About the B1 and B0 pins on the Nano ESP32': B0 = GPIO46, B1 = GPIO0; la tabla del Nano Screw Terminal Adapter mapea B0 a 'REF' y B1 a 'RST'. Conectar B1 creyendo que es RESET deja la placa en modo bootloader.",
+  "confidence": "alta"
+ },
+ {
+  "index": 2,
+  "id": "brd-arduino-nano-esp32",
+  "field": "packages",
+  "new_value": [
+   {
+    "name": "Nano DIP-30 (2x15)",
+    "pins": 30,
+    "pitch_mm": 2.54,
+    "row_spacing_mm": 15.24,
+    "body_mm": "18 x 45 mm",
+    "lead_diameter_mm": 0.64,
+    "notes": "Formato Nano: 2 filas de 15 pines (DIP-30 ancho) a 2.54 mm con filas separadas 15.24 mm (0.6 in); encaja en protoboard dejando columnas libres a ambos lados. SIN header ICSP 2x3 (no dibujar los 6 barrenos ICSP). Pin 1 = D1/TX en el extremo opuesto al USB; pines 15 (D12) y 16 (D13) junto al USB. Bordes castellated + barrenos; USB-C. Los pines se rotulan D0–D13/A0–A7 como el Nano, pero AREF se sustituye por B0 (GPIO46), el 2.º RESET por B1 (GPIO0) y 5V por VBUS."
+   }
+  ],
+  "problem": "La nota de huella dice que tiene header ICSP 2x3; la Nano ESP32 no lo tiene (y no menciona B0/B1).",
+  "evidence": "La Nano ESP32 se programa por USB nativo del ESP32-S3; su pinout oficial (ABX00083) no incluye header ICSP 2x3.",
+  "confidence": "alta"
+ },
+ {
+  "index": 3,
+  "id": "brd-arduino-nano-33-iot",
+  "field": "packages",
+  "new_value": [
+   {
+    "name": "Nano DIP-30 (2x15)",
+    "pins": 30,
+    "pitch_mm": 2.54,
+    "row_spacing_mm": 15.24,
+    "body_mm": "18 x 45 mm",
+    "lead_diameter_mm": 0.64,
+    "notes": "Formato Nano: 2 filas de 15 pines (DIP-30 ancho) a 2.54 mm con filas separadas 15.24 mm (0.6 in); encaja en protoboard dejando columnas libres a ambos lados. SIN header ICSP 2x3 (el SAMD21 se depura por SWD en pads inferiores; no dibujar los 6 barrenos ICSP). Pin 1 = D1/TX en el extremo opuesto al USB; pines 15 (D12) y 16 (D13) junto al USB. Micro-USB. Bordes castellated."
+   }
+  ],
+  "problem": "La nota de huella dice que tiene header ICSP 2x3; la Nano 33 IoT no lo tiene.",
+  "evidence": "El SAMD21 (Cortex-M0+) se programa por USB nativo/SWD; la Nano 33 IoT (ABX00027) no tiene header ICSP 2x3, solo pads SWD en la cara inferior.",
+  "confidence": "alta"
+ },
+ {
+  "index": 4,
+  "id": "brd-arduino-leonardo",
+  "field": "pinout",
+  "new_value": [
+   {
+    "pin": "H1-1",
+    "name": "SCL",
+    "function": "I2C SCL (en Leonardo es el mismo pin que D3, no A5)"
+   },
+   {
+    "pin": "H1-2",
+    "name": "SDA",
+    "function": "I2C SDA (en Leonardo es el mismo pin que D2, no A4)"
+   },
+   {
+    "pin": "H1-3",
+    "name": "AREF",
+    "function": "Referencia analógica externa"
+   },
+   {
+    "pin": "H1-4",
+    "name": "GND",
+    "function": "Tierra"
+   },
+   {
+    "pin": "H1-5",
+    "name": "D13",
+    "function": "D13 / PWM / LED"
+   },
+   {
+    "pin": "H1-6",
+    "name": "D12",
+    "function": "D12 / A11"
+   },
+   {
+    "pin": "H1-7",
+    "name": "D11",
+    "function": "D11 / PWM"
+   },
+   {
+    "pin": "H1-8",
+    "name": "D10",
+    "function": "D10 / PWM / A10"
+   },
+   {
+    "pin": "H1-9",
+    "name": "D9",
+    "function": "D9 / PWM / A9"
+   },
+   {
+    "pin": "H1-10",
+    "name": "D8",
+    "function": "D8 / A8"
+   },
+   {
+    "pin": "H2-1",
+    "name": "D7",
+    "function": "E/S digital 7"
+   },
+   {
+    "pin": "H2-2",
+    "name": "D6",
+    "function": "D6 / PWM / A7"
+   },
+   {
+    "pin": "H2-3",
+    "name": "D5",
+    "function": "D5 / PWM"
+   },
+   {
+    "pin": "H2-4",
+    "name": "D4",
+    "function": "D4 / A6"
+   },
+   {
+    "pin": "H2-5",
+    "name": "D3",
+    "function": "D3 / SCL / PWM / INT"
+   },
+   {
+    "pin": "H2-6",
+    "name": "D2",
+    "function": "D2 / SDA / INT"
+   },
+   {
+    "pin": "H2-7",
+    "name": "D1",
+    "function": "D1 / TX (Serial1) / INT"
+   },
+   {
+    "pin": "H2-8",
+    "name": "D0",
+    "function": "D0 / RX (Serial1) / INT"
+   },
+   {
+    "pin": "H3-1",
+    "name": "NC",
+    "function": "Sin conexión (reservado)"
+   },
+   {
+    "pin": "H3-2",
+    "name": "IOREF",
+    "function": "Referencia de voltaje lógico de la placa"
+   },
+   {
+    "pin": "H3-3",
+    "name": "RESET",
+    "function": "Reset (activo en bajo)"
+   },
+   {
+    "pin": "H3-4",
+    "name": "3V3",
+    "function": "Salida 3.3 V"
+   },
+   {
+    "pin": "H3-5",
+    "name": "5V",
+    "function": "Salida/entrada 5 V regulados"
+   },
+   {
+    "pin": "H3-6",
+    "name": "GND",
+    "function": "Tierra"
+   },
+   {
+    "pin": "H3-7",
+    "name": "GND",
+    "function": "Tierra"
+   },
+   {
+    "pin": "H3-8",
+    "name": "VIN",
+    "function": "Entrada de alimentación externa (no regulada)"
+   },
+   {
+    "pin": "H4-1",
+    "name": "A0",
+    "function": "Entrada analógica 0"
+   },
+   {
+    "pin": "H4-2",
+    "name": "A1",
+    "function": "Entrada analógica 1"
+   },
+   {
+    "pin": "H4-3",
+    "name": "A2",
+    "function": "Entrada analógica 2"
+   },
+   {
+    "pin": "H4-4",
+    "name": "A3",
+    "function": "Entrada analógica 3"
+   },
+   {
+    "pin": "H4-5",
+    "name": "A4",
+    "function": "Entrada analógica 4"
+   },
+   {
+    "pin": "H4-6",
+    "name": "A5",
+    "function": "Entrada analógica 5"
+   },
+   {
+    "pin": "ICSP-1",
+    "name": "MISO",
+    "function": "SPI MISO (solo en ICSP; NO está en D12)"
+   },
+   {
+    "pin": "ICSP-2",
+    "name": "5V",
+    "function": "5 V"
+   },
+   {
+    "pin": "ICSP-3",
+    "name": "SCK",
+    "function": "SPI SCK (solo en ICSP; NO está en D13)"
+   },
+   {
+    "pin": "ICSP-4",
+    "name": "MOSI",
+    "function": "SPI MOSI (solo en ICSP; NO está en D11)"
+   },
+   {
+    "pin": "ICSP-5",
+    "name": "RESET",
+    "function": "Reset"
+   },
+   {
+    "pin": "ICSP-6",
+    "name": "GND",
+    "function": "Tierra"
+   }
+  ],
+  "problem": "Copiado del UNO: dice que SCL/SDA son A5/A4 y que MISO/SCK/MOSI del ICSP equivalen a D12/D13/D11; en la Leonardo no es así.",
+  "evidence": "ATmega32U4 en Leonardo: SDA = D2 (PD1), SCL = D3 (PD0); el SPI (PB1–PB3) sale solo al header ICSP y no está conectado a D11–D13 (documentación oficial de Arduino Leonardo; la propia nota del elemento lo indica).",
+  "confidence": "alta"
+ },
+ {
+  "index": 5,
+  "id": "brd-esp32-cam-mb",
+  "field": "pinout",
+  "new_value": [
+   {
+    "pin": "A1",
+    "name": "5V",
+    "function": "5 V del USB hacia la ESP32-CAM"
+   },
+   {
+    "pin": "A2",
+    "name": "GND",
+    "function": "Tierra"
+   },
+   {
+    "pin": "A3",
+    "name": "IO12",
+    "function": "IO12 (sin uso en la MB, pasa directo)"
+   },
+   {
+    "pin": "A4",
+    "name": "IO13",
+    "function": "IO13 (sin uso en la MB, pasa directo)"
+   },
+   {
+    "pin": "A5",
+    "name": "IO15",
+    "function": "IO15 (sin uso en la MB, pasa directo)"
+   },
+   {
+    "pin": "A6",
+    "name": "IO14",
+    "function": "IO14 (sin uso en la MB, pasa directo)"
+   },
+   {
+    "pin": "A7",
+    "name": "IO2",
+    "function": "IO2 (sin uso en la MB, pasa directo)"
+   },
+   {
+    "pin": "A8",
+    "name": "IO4",
+    "function": "IO4 (sin uso en la MB, pasa directo)"
+   },
+   {
+    "pin": "B1",
+    "name": "3V3",
+    "function": "3.3 V de la ESP32-CAM (la MB alimenta por el pin 5V)"
+   },
+   {
+    "pin": "B2",
+    "name": "IO16",
+    "function": "IO16 (sin uso en la MB, pasa directo)"
+   },
+   {
+    "pin": "B3",
+    "name": "IO0",
+    "function": "Controlado por botón IO0 / DTR-RTS (modo programación)"
+   },
+   {
+    "pin": "B4",
+    "name": "GND",
+    "function": "Tierra"
+   },
+   {
+    "pin": "B5",
+    "name": "VCC",
+    "function": "VCC de la ESP32-CAM (sin uso en la MB)"
+   },
+   {
+    "pin": "B6",
+    "name": "U0R",
+    "function": "RX del ESP32 ← TX del CH340"
+   },
+   {
+    "pin": "B7",
+    "name": "U0T",
+    "function": "TX del ESP32 → RX del CH340"
+   },
+   {
+    "pin": "B8",
+    "name": "GND",
+    "function": "Tierra"
+   }
+  ],
+  "problem": "El paquete es un header hembra 2x8 (16 pines) pero el pinout solo lista 6 señales numeradas 1–6, sin orden físico, e incluye un pin 'RST' que no existe en el header de la ESP32-CAM.",
+  "evidence": "La MB recibe los 16 pines de la ESP32-CAM (5V, GND, IO12, IO13, IO15, IO14, IO2, IO4 / 3V3, IO16, IO0, GND, VCC, U0R, U0T, GND, igual que brd-esp32-cam); la ESP32-CAM AI-Thinker no expone EN/RST en sus headers. Se usa la misma numeración A1–A8/B1–B8 del elemento brd-esp32-cam para que la huella coincida.",
+  "confidence": "media"
+ },
+ {
+  "index": 6,
+  "id": "brd-esp32-s3-devkitc-1",
+  "field": "pinout",
+  "new_value": [
+   {
+    "pin": "J1-1",
+    "name": "3V3",
+    "function": "Salida 3.3 V"
+   },
+   {
+    "pin": "J1-2",
+    "name": "3V3",
+    "function": "Salida 3.3 V"
+   },
+   {
+    "pin": "J1-3",
+    "name": "RST",
+    "function": "EN / reset (activo en bajo)"
+   },
+   {
+    "pin": "J1-4",
+    "name": "GPIO4",
+    "function": "ADC1_CH3 / TOUCH4"
+   },
+   {
+    "pin": "J1-5",
+    "name": "GPIO5",
+    "function": "ADC1_CH4 / TOUCH5"
+   },
+   {
+    "pin": "J1-6",
+    "name": "GPIO6",
+    "function": "ADC1_CH5 / TOUCH6"
+   },
+   {
+    "pin": "J1-7",
+    "name": "GPIO7",
+    "function": "ADC1_CH6 / TOUCH7"
+   },
+   {
+    "pin": "J1-8",
+    "name": "GPIO15",
+    "function": "ADC2_CH4 / U0RTS / XTAL_32K_P"
+   },
+   {
+    "pin": "J1-9",
+    "name": "GPIO16",
+    "function": "ADC2_CH5 / U0CTS / XTAL_32K_N"
+   },
+   {
+    "pin": "J1-10",
+    "name": "GPIO17",
+    "function": "ADC2_CH6 / U1TXD"
+   },
+   {
+    "pin": "J1-11",
+    "name": "GPIO18",
+    "function": "ADC2_CH7 / U1RXD"
+   },
+   {
+    "pin": "J1-12",
+    "name": "GPIO8",
+    "function": "ADC1_CH7 / TOUCH8"
+   },
+   {
+    "pin": "J1-13",
+    "name": "GPIO3",
+    "function": "ADC1_CH2 / TOUCH3 (strapping)"
+   },
+   {
+    "pin": "J1-14",
+    "name": "GPIO46",
+    "function": "E/S (strapping)"
+   },
+   {
+    "pin": "J1-15",
+    "name": "GPIO9",
+    "function": "ADC1_CH8 / TOUCH9"
+   },
+   {
+    "pin": "J1-16",
+    "name": "GPIO10",
+    "function": "ADC1_CH9 / TOUCH10"
+   },
+   {
+    "pin": "J1-17",
+    "name": "GPIO11",
+    "function": "ADC2_CH0 / TOUCH11"
+   },
+   {
+    "pin": "J1-18",
+    "name": "GPIO12",
+    "function": "ADC2_CH1 / TOUCH12"
+   },
+   {
+    "pin": "J1-19",
+    "name": "GPIO13",
+    "function": "ADC2_CH2 / TOUCH13"
+   },
+   {
+    "pin": "J1-20",
+    "name": "GPIO14",
+    "function": "ADC2_CH3 / TOUCH14"
+   },
+   {
+    "pin": "J1-21",
+    "name": "5V",
+    "function": "Entrada/salida 5 V"
+   },
+   {
+    "pin": "J1-22",
+    "name": "GND",
+    "function": "Tierra"
+   },
+   {
+    "pin": "J3-1",
+    "name": "GND",
+    "function": "Tierra"
+   },
+   {
+    "pin": "J3-2",
+    "name": "TX",
+    "function": "GPIO43 / U0TXD"
+   },
+   {
+    "pin": "J3-3",
+    "name": "RX",
+    "function": "GPIO44 / U0RXD"
+   },
+   {
+    "pin": "J3-4",
+    "name": "GPIO1",
+    "function": "ADC1_CH0 / TOUCH1"
+   },
+   {
+    "pin": "J3-5",
+    "name": "GPIO2",
+    "function": "ADC1_CH1 / TOUCH2"
+   },
+   {
+    "pin": "J3-6",
+    "name": "GPIO42",
+    "function": "E/S / MTMS (JTAG)"
+   },
+   {
+    "pin": "J3-7",
+    "name": "GPIO41",
+    "function": "E/S / MTDI (JTAG)"
+   },
+   {
+    "pin": "J3-8",
+    "name": "GPIO40",
+    "function": "E/S / MTDO (JTAG)"
+   },
+   {
+    "pin": "J3-9",
+    "name": "GPIO39",
+    "function": "E/S / MTCK (JTAG)"
+   },
+   {
+    "pin": "J3-10",
+    "name": "GPIO38",
+    "function": "E/S / LED RGB en v1.1"
+   },
+   {
+    "pin": "J3-11",
+    "name": "GPIO37",
+    "function": "E/S (ocupado por PSRAM octal en módulos R8)"
+   },
+   {
+    "pin": "J3-12",
+    "name": "GPIO36",
+    "function": "E/S (ocupado por PSRAM octal en módulos R8)"
+   },
+   {
+    "pin": "J3-13",
+    "name": "GPIO35",
+    "function": "E/S (ocupado por PSRAM octal en módulos R8)"
+   },
+   {
+    "pin": "J3-14",
+    "name": "GPIO0",
+    "function": "BOOT (strapping, botón BOOT)"
+   },
+   {
+    "pin": "J3-15",
+    "name": "GPIO45",
+    "function": "E/S (strapping)"
+   },
+   {
+    "pin": "J3-16",
+    "name": "GPIO48",
+    "function": "E/S / LED RGB en v1.0"
+   },
+   {
+    "pin": "J3-17",
+    "name": "GPIO47",
+    "function": "E/S"
+   },
+   {
+    "pin": "J3-18",
+    "name": "GPIO21",
+    "function": "E/S"
+   },
+   {
+    "pin": "J3-19",
+    "name": "GPIO20",
+    "function": "USB D+ / ADC2_CH9"
+   },
+   {
+    "pin": "J3-20",
+    "name": "GPIO19",
+    "function": "USB D− / ADC2_CH8"
+   },
+   {
+    "pin": "J3-21",
+    "name": "GND",
+    "function": "Tierra"
+   },
+   {
+    "pin": "J3-22",
+    "name": "GND",
+    "function": "Tierra"
+   }
+  ],
+  "problem": "Pinout solo en 2 renglones de resumen (no dibujable) y engañoso: 'GPIO4–GPIO18' sugiere GPIO4…GPIO18 consecutivos (incluiría 8–14) cuando el orden real es 4, 5, 6, 7, 15, 16, 17, 18; y 'GPIO48/38 (RGB)' mezcla el pin del header (siempre GPIO48) con el LED.",
+  "evidence": "Espressif, ESP32-S3-DevKitC-1 User Guide (Header Block J1/J3): J1 = 3V3, 3V3, RST, 4, 5, 6, 7, 15, 16, 17, 18, 8, 3, 46, 9, 10, 11, 12, 13, 14, 5V, G; J3 = G, TX(43), RX(44), 1, 2, 42, 41, 40, 39, 38, 37, 36, 35, 0, 45, 48, 47, 21, 20, 19, G, G. Pin 1 de cada header en el extremo del módulo/antena; J1 a la izquierda vista de componentes. ADC1 = GPIO1–10, ADC2 = GPIO11–20 (hoja de datos ESP32-S3).",
+  "confidence": "alta"
+ }
+]

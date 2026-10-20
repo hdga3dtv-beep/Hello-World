@@ -1,0 +1,207 @@
+[
+  {
+    "index": 0,
+    "id": "mod-l9110s",
+    "field": "packages",
+    "new_value": [
+      {
+        "name": "Módulo L9110S",
+        "pins": 10,
+        "pitch_mm": 2.54,
+        "row_spacing_mm": null,
+        "body_mm": "aprox. 29 x 23 mm",
+        "lead_diameter_mm": null,
+        "notes": "Header de 6 pines + 2 borneras de 2 terminales (Motor A, Motor B). Medida aproximada."
+      }
+    ],
+    "problem": "pins = 6 cuenta solo el header; el módulo tiene además 2 borneras de 2 terminales (Motor A y Motor B), total 10.",
+    "evidence": "Módulo L9110S/HG7881: header de 6 pines (B-IA, B-IB, GND, VCC, A-IA, A-IB) + 2 borneras de 2 terminales para los motores; las propias notas del paquete lo describen.",
+    "confidence": "alta"
+  },
+  {
+    "index": 1,
+    "id": "mod-l9110s",
+    "field": "pinout",
+    "new_value": [
+      {
+        "pin": "1",
+        "name": "B-IA",
+        "function": "Motor B entrada A (PWM)"
+      },
+      {
+        "pin": "2",
+        "name": "B-IB",
+        "function": "Motor B entrada B (dirección)"
+      },
+      {
+        "pin": "3",
+        "name": "GND",
+        "function": "Tierra"
+      },
+      {
+        "pin": "4",
+        "name": "VCC",
+        "function": "2.5–12 V"
+      },
+      {
+        "pin": "5",
+        "name": "A-IA",
+        "function": "Motor A entrada A (PWM)"
+      },
+      {
+        "pin": "6",
+        "name": "A-IB",
+        "function": "Motor A entrada B (dirección)"
+      },
+      {
+        "pin": "MA1",
+        "name": "MOTOR A",
+        "function": "Salida motor A (OA1, bornera)"
+      },
+      {
+        "pin": "MA2",
+        "name": "MOTOR A",
+        "function": "Salida motor A (OA2, bornera)"
+      },
+      {
+        "pin": "MB1",
+        "name": "MOTOR B",
+        "function": "Salida motor B (OB1, bornera)"
+      },
+      {
+        "pin": "MB2",
+        "name": "MOTOR B",
+        "function": "Salida motor B (OB2, bornera)"
+      }
+    ],
+    "problem": "Faltan las 4 terminales de salida a los motores (borneras Motor A y Motor B); la app no dibujaría las conexiones de los motores.",
+    "evidence": "El L9110S tiene salidas OA/OB por canal que en el módulo HG7881 salen a dos borneras de 2 terminales marcadas MOTOR A y MOTOR B.",
+    "confidence": "alta"
+  },
+  {
+    "index": 2,
+    "id": "mod-mx1508",
+    "field": "packages",
+    "new_value": [
+      {
+        "name": "Módulo MX1508",
+        "pins": 10,
+        "pitch_mm": 2.54,
+        "row_spacing_mm": null,
+        "body_mm": "aprox. 24.7 x 21 x 5 mm",
+        "lead_diameter_mm": null,
+        "notes": "4 pines de entrada IN1–IN4 + pads de alimentación (+/−) y de motores (MOTOR-A, MOTOR-B). Medida aproximada."
+      }
+    ],
+    "problem": "pins = 8, pero cada salida de motor tiene 2 pads: 4 entradas + 2 de alimentación + 4 de motores = 10.",
+    "evidence": "Módulo MX1508: IN1–IN4, pads + / − y dos pares de pads MOTOR-A y MOTOR-B (cada motor necesita 2 terminales del puente H); el propio pinout dice '2 pads'.",
+    "confidence": "media"
+  },
+  {
+    "index": 3,
+    "id": "mod-mx1508",
+    "field": "pinout",
+    "new_value": [
+      {
+        "pin": "1",
+        "name": "IN1",
+        "function": "Motor A"
+      },
+      {
+        "pin": "2",
+        "name": "IN2",
+        "function": "Motor A"
+      },
+      {
+        "pin": "3",
+        "name": "IN3",
+        "function": "Motor B"
+      },
+      {
+        "pin": "4",
+        "name": "IN4",
+        "function": "Motor B"
+      },
+      {
+        "pin": "5",
+        "name": "+",
+        "function": "2–10 V"
+      },
+      {
+        "pin": "6",
+        "name": "−",
+        "function": "Tierra"
+      },
+      {
+        "pin": "7",
+        "name": "MOTOR-A",
+        "function": "Salida motor A (pad 1)"
+      },
+      {
+        "pin": "8",
+        "name": "MOTOR-A",
+        "function": "Salida motor A (pad 2)"
+      },
+      {
+        "pin": "9",
+        "name": "MOTOR-B",
+        "function": "Salida motor B (pad 1)"
+      },
+      {
+        "pin": "10",
+        "name": "MOTOR-B",
+        "function": "Salida motor B (pad 2)"
+      }
+    ],
+    "problem": "Cada salida de motor está como un solo pin aunque son 2 pads; la huella quedaría con un pad de motor por canal.",
+    "evidence": "Un puente H entrega 2 terminales por motor (OUT A1/A2, B1/B2); el módulo MX1508 tiene 2 pads por motor.",
+    "confidence": "media"
+  },
+  {
+    "index": 4,
+    "id": "mod-pca9685",
+    "field": "packages",
+    "new_value": [
+      {
+        "name": "Módulo PCA9685",
+        "pins": 62,
+        "pitch_mm": 2.54,
+        "row_spacing_mm": null,
+        "body_mm": "aprox. 62.5 x 25.4 mm",
+        "lead_diameter_mm": null,
+        "notes": "Header de 6 pines en cada extremo (encadenable) + 16 grupos de 3 pines (PWM, V+, GND) + bornera V+ para servos. 4 agujeros. Medida aproximada."
+      }
+    ],
+    "problem": "pins = 70 no corresponde con lo descrito: 2 headers de 6 (12) + 16 grupos de 3 (48) + bornera V+ de 2 = 62.",
+    "evidence": "Placa Adafruit PCA9685 (y clones): header de 6 pines GND/OE/SCL/SDA/VCC/V+ en cada extremo, 16 salidas de 3 pines y bornera de 2 terminales para V+ de servos.",
+    "confidence": "alta"
+  },
+  {
+    "index": 5,
+    "id": "mod-xl4015",
+    "field": "specs",
+    "new_value": {
+      "entrada": "8–36 V (chip XL4015; los vendedores anuncian 4–38 V)",
+      "salida": "1.25–32 V",
+      "corriente": "5 A máx. (con disipador)",
+      "frecuencia": "180 kHz"
+    },
+    "problem": "Rango de entrada/salida tomado de anuncios: el XL4015 se especifica para 8–36 V de entrada y 1.25–32 V de salida.",
+    "evidence": "Hoja de datos XLSEMI XL4015: 'Wide 8V to 36V Input Voltage Range', 'Output Adjustable from 1.25V to 32V', 180 kHz, 5 A.",
+    "confidence": "media"
+  },
+  {
+    "index": 6,
+    "id": "mod-mt3608",
+    "field": "specs",
+    "new_value": {
+      "entrada": "2–24 V",
+      "salida": "hasta 28 V (siempre mayor que la entrada)",
+      "corriente": "Límite de interruptor 4 A interno (módulo ~2 A máx. de salida, ~1 A útil)",
+      "frecuencia": "1.2 MHz"
+    },
+    "problem": "El límite de corriente del interruptor del MT3608 es 4 A, no 2 A (2 A es la corriente de salida que anuncian los módulos).",
+    "evidence": "Hoja de datos Aerosemi MT3608: 'Internal 4A Switch Current Limit', 2–24 V entrada, hasta 28 V salida, 1.2 MHz.",
+    "confidence": "media"
+  }
+]

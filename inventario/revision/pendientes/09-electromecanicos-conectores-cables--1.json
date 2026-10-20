@@ -1,0 +1,80 @@
+[
+  {
+    "index": 19,
+    "id": "emc-rocker-kcd1",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "1", "name": "T1", "function": "Versión de 2 pines: terminal 1 (sin polaridad). Versión de 3 pines SPDT (KCD1-102/103): tiro 1 (terminal de un extremo)"},
+      {"pin": "2", "name": "COM / T2", "function": "Versión de 3 pines SPDT: común (terminal CENTRAL). Versión de 2 pines: terminal 2"},
+      {"pin": "3", "name": "T3", "function": "Tiro 2 (terminal del extremo opuesto; solo versión de 3 pines)"}
+    ],
+    "problem": "Para la versión de 3 pines (SPDT ON-ON / ON-OFF-ON, la que describe el propio paquete) el pinout pone el pin 1 como 'entrada' y el 2 como 'salida', lo que implica que el común es un extremo; en los KCD1-102/103 el común es el terminal central y los extremos son los dos tiros.",
+    "evidence": "En los balancines SPDT de 3 terminales en línea (KCD1-102/103 y equivalentes) el terminal central es el común (marcado COM o 2) y cada extremo cierra con él según la posición del balancín, igual que en los toggles MTS-102/103 del mismo lote. Si se cablea la entrada en el pin 1 de un extremo, la carga queda conectada solo en una posición y el otro tiro queda sin función.",
+    "confidence": "media"
+  },
+  {
+    "index": 87,
+    "id": "con-xt60",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "+", "name": "+", "function": "Lado recto/plano del cuerpo (esquinas a escuadra); positivo convencional, marcado '+' en el moldeado"},
+      {"pin": "−", "name": "−", "function": "Lado chaflanado (esquinas recortadas en ángulo); negativo"}
+    ],
+    "problem": "La polaridad física es confusa y en parte está invertida: el XT60 no tiene un 'lado redondeado'. El negativo se describe como 'chaflanado/recto', pero el lado recto (plano) es el positivo. En la huella XT60PW esto puede invertir la batería.",
+    "evidence": "Convención Amass/RC: el lado plano (esquinas a escuadra) es el + y el lado chaflanado es el −, con los símbolos +/− moldeados en el cuerpo (done.land, components101 y foros de RC/KiCad coinciden; también advierten que hay cables de terceros mal armados, así que hay que verificar con multímetro).",
+    "confidence": "media"
+  },
+  {
+    "index": 88,
+    "id": "con-xt30",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "+", "name": "+", "function": "Positivo: lado recto/plano del cuerpo (esquinas a escuadra), marcado '+'"},
+      {"pin": "−", "name": "−", "function": "Negativo: lado chaflanado (esquinas recortadas)"}
+    ],
+    "problem": "El '+' se identifica como 'lado redondeado'. El XT30 tiene la misma forma que el XT60 (un lado plano y otro chaflanado), sin lado redondeado, así que la referencia física es ambigua para orientar la huella XT30PW.",
+    "evidence": "La familia Amass XT (XT30/XT60/XT90) usa la misma convención: el lado plano es el + y el lado chaflanado es el −, marcados en el moldeado.",
+    "confidence": "media"
+  },
+  {
+    "index": 96,
+    "id": "con-rj45-hr911105a",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "1", "name": "TD+", "function": "Transmisión +"},
+      {"pin": "2", "name": "TD-", "function": "Transmisión −"},
+      {"pin": "3", "name": "RD+", "function": "Recepción +"},
+      {"pin": "4", "name": "TCT", "function": "Toma central TX (a 3.3 V o según chip)"},
+      {"pin": "5", "name": "RCT", "function": "Toma central RX"},
+      {"pin": "6", "name": "RD-", "function": "Recepción −"},
+      {"pin": "7", "name": "NC", "function": "Sin conexión"},
+      {"pin": "8", "name": "SHD-GND", "function": "Tierra de blindaje/chasis (terminación interna de pares libres)"},
+      {"pin": "9", "name": "LED verde A", "function": "Ánodo del LED verde (verificar con la hoja de datos de la variante)"},
+      {"pin": "10", "name": "LED verde K", "function": "Cátodo del LED verde"},
+      {"pin": "11", "name": "LED amarillo K", "function": "Cátodo del LED amarillo"},
+      {"pin": "12", "name": "LED amarillo A", "function": "Ánodo del LED amarillo"},
+      {"pin": "SH", "name": "Shield", "function": "Blindaje a tierra de chasis (2 patas grandes, 13-14)"}
+    ],
+    "problem": "Faltan los pines 7 y 8 de los 14 del encapsulado, y la asignación de LEDs parece invertida y sin polaridad: 9-10 aparece como amarillo y 11-12 como verde, sin decir cuál es ánodo y cuál cátodo.",
+    "evidence": "Esquema de referencia con HR911105A (mikrocontroller.net, NETWORK_SWITCH_2PORT): 1 TD+, 2 TD-, 3 RD+, 4 TCT, 5 RCT, 6 RD-, 7 NC, 8 SHD-GND, 9 LED verde A, 10 LED verde K, 11 LED amarillo K, 12 LED amarillo A, 13-14 blindaje. Coincide con la hoja de datos Hanrun (LCSC C12074) en los pines 1-8.",
+    "confidence": "media"
+  },
+  {
+    "index": 114,
+    "id": "con-sma",
+    "field": "schematic_symbol",
+    "new_value": "conector",
+    "problem": "Un conector SMA hembra tiene asignado el símbolo 'antena'. El símbolo de antena suele tener un solo pin, así que el esquemático pierde la conexión de tierra de las patas del cuerpo, que el propio pinout sí define (C = RF, G = GND).",
+    "evidence": "El SMA es un conector coaxial de 2 polos (centro + cuerpo/GND), igual que el BNC del mismo lote, que usa 'conector'. La antena es otro componente que se atornilla al conector.",
+    "confidence": "media"
+  },
+  {
+    "index": 115,
+    "id": "con-ufl-ipex",
+    "field": "schematic_symbol",
+    "new_value": "conector",
+    "problem": "El receptáculo U.FL/IPEX tiene el símbolo 'antena', que no es lo que es: tiene 3 pads (RF + 2 GND) y con un símbolo de antena de un pin los pads de tierra quedarían sin conectar.",
+    "evidence": "La huella Hirose U.FL-R-SMT es un conector coaxial: 1 pad central de señal y 2 de tierra (el pinout del propio elemento lo dice). Es coherente usar 'conector', como en el BNC (con-bnc).",
+    "confidence": "media"
+  }
+]

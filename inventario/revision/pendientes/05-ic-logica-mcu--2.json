@@ -1,0 +1,58 @@
+[
+ {
+  "index": 0,
+  "id": "ic-74xx373",
+  "field": "specs",
+  "new_value": {
+   "familias": "LS (TTL Schottky de baja potencia, 4.75–5.25 V); HC (CMOS, 2–6 V); HCT (CMOS con entradas TTL, 4.5–5.5 V)",
+   "niveles_entrada": "LS/HCT: VIH ≥ 2.0 V, VIL ≤ 0.8 V; HC a 5 V: VIH ≥ 3.5 V, VIL ≤ 1.5 V",
+   "corriente_salida": "LS: IOL 24 mA / IOH −2.6 mA; HC/HCT: ±6 mA (salidas de 3 estados tipo bus)",
+   "temperatura": "SN74LS: 0–70 °C; 74HC: −40–85 °C (o −40–125 °C)"
+  },
+  "problem": "La corriente de salida indicada (LS 8 mA/−0.4 mA, HC ±4 mA 'salidas estándar') corresponde a salidas normales; el 74373 tiene salidas de 3 estados para bus.",
+  "evidence": "SN74LS373 (TI): condiciones recomendadas IOH −2.6 mA, IOL 24 mA (serie SN74). SN74HC373: salidas de 3 estados de alta corriente, IOH/IOL ±6 mA a VCC 4.5 V (15 cargas LSTTL).",
+  "confidence": "alta"
+ },
+ {
+  "index": 1,
+  "id": "ic-74xx374",
+  "field": "specs",
+  "new_value": {
+   "familias": "LS (TTL Schottky de baja potencia, 4.75–5.25 V); HC (CMOS, 2–6 V); HCT (CMOS con entradas TTL, 4.5–5.5 V)",
+   "niveles_entrada": "LS/HCT: VIH ≥ 2.0 V, VIL ≤ 0.8 V; HC a 5 V: VIH ≥ 3.5 V, VIL ≤ 1.5 V",
+   "corriente_salida": "LS: IOL 24 mA / IOH −2.6 mA; HC/HCT: ±6 mA (salidas de 3 estados tipo bus)",
+   "temperatura": "SN74LS: 0–70 °C; 74HC: −40–85 °C (o −40–125 °C)"
+  },
+  "problem": "La corriente de salida indicada (LS 8 mA/−0.4 mA, HC ±4 mA) es la de salidas estándar; el 74374 tiene salidas de 3 estados para bus.",
+  "evidence": "SN74LS374 (TI): IOH −2.6 mA, IOL 24 mA (serie SN74). SN74HC374: salidas de 3 estados de alta corriente, ±6 mA a VCC 4.5 V.",
+  "confidence": "alta"
+ },
+ {
+  "index": 2,
+  "id": "ic-74xx573",
+  "field": "specs",
+  "new_value": {
+   "familias": "LS (TTL Schottky de baja potencia, 4.75–5.25 V); HC (CMOS, 2–6 V); HCT (CMOS con entradas TTL, 4.5–5.5 V)",
+   "niveles_entrada": "LS/HCT: VIH ≥ 2.0 V, VIL ≤ 0.8 V; HC a 5 V: VIH ≥ 3.5 V, VIL ≤ 1.5 V",
+   "corriente_salida": "LS: IOL 24 mA / IOH −2.6 mA; HC/HCT: ±6 mA (salidas de 3 estados tipo bus)",
+   "temperatura": "SN74LS: 0–70 °C; 74HC: −40–85 °C (o −40–125 °C)"
+  },
+  "problem": "La corriente de salida indicada (HC ±4 mA 'salidas estándar', LS 8 mA/−0.4 mA) no corresponde: el 74573 tiene salidas de 3 estados para bus.",
+  "evidence": "SN74HC573A (TI) / 74HC573 (Nexperia): salidas de 3 estados de alta corriente, IOH/IOL ±6 mA a VCC 4.5 V (15 cargas LSTTL). Las versiones LS de 573/574 (como la LS373) especifican IOL 24 mA / IOH −2.6 mA.",
+  "confidence": "media"
+ },
+ {
+  "index": 3,
+  "id": "ic-74xx574",
+  "field": "specs",
+  "new_value": {
+   "familias": "LS (TTL Schottky de baja potencia, 4.75–5.25 V); HC (CMOS, 2–6 V); HCT (CMOS con entradas TTL, 4.5–5.5 V)",
+   "niveles_entrada": "LS/HCT: VIH ≥ 2.0 V, VIL ≤ 0.8 V; HC a 5 V: VIH ≥ 3.5 V, VIL ≤ 1.5 V",
+   "corriente_salida": "LS: IOL 24 mA / IOH −2.6 mA; HC/HCT: ±6 mA (salidas de 3 estados tipo bus)",
+   "temperatura": "SN74LS: 0–70 °C; 74HC: −40–85 °C (o −40–125 °C)"
+  },
+  "problem": "La corriente de salida indicada (HC ±4 mA 'salidas estándar', LS 8 mA/−0.4 mA) no corresponde: el 74574 tiene salidas de 3 estados para bus.",
+  "evidence": "SN74HC574 (TI) / 74HC574 (Nexperia): salidas de 3 estados de alta corriente, IOH/IOL ±6 mA a VCC 4.5 V. Las versiones LS de salidas de bus especifican IOL 24 mA / IOH −2.6 mA.",
+  "confidence": "media"
+ }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "index": 0,
+    "id": "com-rs485-max485",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "1", "name": "RO", "function": "Salida del receptor (a RX del micro)"},
+      {"pin": "2", "name": "RE", "function": "Habilita recepción (activo en bajo)"},
+      {"pin": "3", "name": "DE", "function": "Habilita transmisión (unir con RE)"},
+      {"pin": "4", "name": "DI", "function": "Entrada al driver (de TX del micro)"},
+      {"pin": "5", "name": "VCC", "function": "5 V"},
+      {"pin": "6", "name": "B", "function": "Línea B (−)"},
+      {"pin": "7", "name": "A", "function": "Línea A (+)"},
+      {"pin": "8", "name": "GND", "function": "Tierra"},
+      {"pin": "T-A", "name": "A", "function": "Bornera de tornillo: línea A (+), mismo nodo que el pin 7 (orden en la bornera según serigrafía)"},
+      {"pin": "T-B", "name": "B", "function": "Bornera de tornillo: línea B (−), mismo nodo que el pin 6 (orden en la bornera según serigrafía)"}
+    ],
+    "problem": "El paquete declara 10 terminales (2 headers 1x4 + bornera de 2), pero el pinout solo lista 8: faltan las 2 terminales de la bornera A/B, por lo que la huella quedaría sin esos pads.",
+    "evidence": "El módulo azul MAX485 común trae header RO/RE/DE/DI, header VCC/B/A/GND y una bornera de 2 vías para A/B unida en paralelo a los pines A y B del header; el propio item lo describe así en packages (pins: 10).",
+    "confidence": "media"
+  },
+  {
+    "index": 1,
+    "id": "brd-usb-serial-pl2303",
+    "field": "specs",
+    "new_value": {"chip_usb_serie": "Prolific PL2303HX/TA", "voltaje_logico": "3.3 V (TTL)", "velocidad": "75 bps a 6 Mbaud según hoja de datos (PL2303HX rev D / PL2303TA); en la práctica ≤1 Mbaud fiable con cables largos"},
+    "problem": "Velocidad máxima subestimada: indica 'hasta ≈1 Mbaud'.",
+    "evidence": "Hojas de datos de Prolific PL2303HX (rev D) y PL2303TA: tasa de baudios soportada de 75 bps a 6 Mbps (el PL2303HXD llega a 12 Mbps).",
+    "confidence": "media"
+  },
+  {
+    "index": 2,
+    "id": "com-xbee-s2c",
+    "field": "specs",
+    "new_value": {"frecuencia": "2.4 GHz", "protocolos": "Zigbee 3.0 / 802.15.4 / DigiMesh", "potencia": "+8 dBm (Pro +19 dBm aprox.)", "interfaz": "UART hasta 1 Mb/s (también SPI hasta 5 Mb/s); tasa de datos RF 250 kb/s", "voltaje_entrada": "2.1–3.6 V"},
+    "problem": "Confunde la tasa de datos por radio (250 kb/s, IEEE 802.15.4) con la velocidad máxima de la UART.",
+    "evidence": "Hoja de datos Digi XBee S2C: interfaz serie UART hasta 1 Mb/s y SPI hasta 5 Mb/s; 250 kb/s es la tasa de datos RF en 2.4 GHz.",
+    "confidence": "media"
+  }
+]

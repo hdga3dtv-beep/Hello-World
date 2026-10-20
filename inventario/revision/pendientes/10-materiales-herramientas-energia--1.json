@@ -1,0 +1,30 @@
+[
+  {
+    "index": 0,
+    "id": "her-generador-funciones-modulo",
+    "field": "packages",
+    "new_value": [
+      {
+        "name": "Módulo AD9833 (tipo CJMCU-9833) con tira de pines 1x7",
+        "pins": 7,
+        "pitch_mm": 2.54,
+        "row_spacing_mm": null,
+        "body_mm": null,
+        "lead_diameter_mm": 0.64,
+        "notes": "Header macho de una fila a 2.54 mm (pin cuadrado de 0.64 mm) con serigrafía VCC, DGND, SDATA, SCLK, FSYNC, AGND, OUT. El kit XR2206 no tiene huella estándar (se usa como equipo con bornes)."
+      }
+    ],
+    "problem": "El elemento tiene mounting 'modulo' y un pinout de 7 pines, pero packages está vacío: la app no puede dibujar la huella del header del módulo AD9833.",
+    "evidence": "El módulo AD9833 común (CJMCU-9833) expone sus 7 señales (VCC, DGND, SDATA, SCLK, FSYNC, AGND, OUT) en una sola tira de pines de 2.54 mm; coincide con el pinout de 7 pines ya listado en el elemento.",
+    "confidence": "media"
+  },
+  {
+    "index": 1,
+    "id": "her-generador-funciones-modulo",
+    "field": "schematic_symbol",
+    "new_value": "modulo",
+    "problem": "Se asignó 'ninguno' a un elemento con mounting 'modulo' y pinout de 7 pines; sin símbolo, la app no puede colocarlo ni conectarlo en el esquemático.",
+    "evidence": "Es una placa armada con header de pines conectada por SPI a un microcontrolador. Según ESQUEMA.md le corresponde el símbolo 'modulo', el mismo que usa el módulo MB102 de este lote.",
+    "confidence": "media"
+  }
+]

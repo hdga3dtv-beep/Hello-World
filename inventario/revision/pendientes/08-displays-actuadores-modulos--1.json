@@ -1,0 +1,84 @@
+[
+  {
+    "index": 0,
+    "id": "dsp-oled-caracteres-16x2",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "1", "name": "VSS", "function": "Tierra (GND)"},
+      {"pin": "2", "name": "VDD", "function": "Alimentación +5 V (o 3.3 V según versión)"},
+      {"pin": "3", "name": "NC", "function": "Sin conexión (el OLED no requiere ajuste de contraste)"},
+      {"pin": "4", "name": "RS", "function": "Selección de registro (0 = comando, 1 = dato)"},
+      {"pin": "5", "name": "RW", "function": "Lectura/escritura (normalmente a GND = escribir)"},
+      {"pin": "6", "name": "E", "function": "Enable (pulso de habilitación)"},
+      {"pin": "7", "name": "D0", "function": "Bus de datos bit 0 (no se usa en modo 4 bits)"},
+      {"pin": "8", "name": "D1", "function": "Bus de datos bit 1 (no se usa en modo 4 bits)"},
+      {"pin": "9", "name": "D2", "function": "Bus de datos bit 2 (no se usa en modo 4 bits)"},
+      {"pin": "10", "name": "D3", "function": "Bus de datos bit 3 (no se usa en modo 4 bits)"},
+      {"pin": "11", "name": "D4", "function": "Bus de datos bit 4"},
+      {"pin": "12", "name": "D5", "function": "Bus de datos bit 5"},
+      {"pin": "13", "name": "D6", "function": "Bus de datos bit 6"},
+      {"pin": "14", "name": "D7", "function": "Bus de datos bit 7 (bandera busy)"},
+      {"pin": "15", "name": "NC", "function": "Sin conexión (no hay retroiluminación)"},
+      {"pin": "16", "name": "NC", "function": "Sin conexión (no hay retroiluminación)"}
+    ],
+    "problem": "Se copió el pinout del LCD HD44780: pin 3 como V0 (contraste con potenciómetro) y pines 15–16 como ánodo/cátodo de retroiluminación. En el OLED Winstar WEH001602 los pines 3, 15 y 16 son NC; la app dibujaría un potenciómetro de contraste y una resistencia de retroiluminación que no existen (las propias notas del elemento dicen que 15–16 no se usan).",
+    "evidence": "Hoja de datos Winstar WEH001602 (controlador WS0010): tabla de pines 1 VSS, 2 VDD, 3 NC, 4 RS, 5 R/W, 6 E, 7–14 DB0–DB7, 15 NC, 16 NC. Una pantalla OLED es emisiva: no lleva retroiluminación ni ajuste de contraste por V0.",
+    "confidence": "alta"
+  },
+  {
+    "index": 1,
+    "id": "dsp-tft-18-st7735",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "1", "name": "VCC", "function": "3.3–5 V"},
+      {"pin": "2", "name": "GND", "function": "Tierra"},
+      {"pin": "3", "name": "CS", "function": "Chip select display"},
+      {"pin": "4", "name": "RESET", "function": "Reset"},
+      {"pin": "5", "name": "A0 (DC)", "function": "Dato/comando"},
+      {"pin": "6", "name": "SDA (MOSI)", "function": "Datos SPI"},
+      {"pin": "7", "name": "SCK", "function": "Reloj SPI"},
+      {"pin": "8", "name": "LED", "function": "Retroiluminación (3.3 V)"},
+      {"pin": "9", "name": "SD_CS", "function": "Chip select del lector SD (header de 4 pines en el extremo opuesto)"},
+      {"pin": "10", "name": "SD_MOSI", "function": "Datos SPI hacia la SD"},
+      {"pin": "11", "name": "SD_MISO", "function": "Datos SPI desde la SD"},
+      {"pin": "12", "name": "SD_SCK", "function": "Reloj SPI de la SD"}
+    ],
+    "problem": "El paquete declara 12 pines (8 del display + 4 del lector SD), pero el pinout solo lista los 8 del display; faltan los 4 pines del header SD, así que la huella quedaría incompleta.",
+    "evidence": "Módulo rojo 1.8\" ST7735 128x160 (V1.1): header de 8 pines VCC, GND, CS, RESET, A0, SDA, SCK, LED y, en el extremo opuesto, header de 4 pines del zócalo SD (SD_CS, MOSI, MISO, SCK), como ya dicen las notas del paquete. Confirmar el orden con la serigrafía.",
+    "confidence": "media"
+  },
+  {
+    "index": 2,
+    "id": "dsp-max7219-8digitos",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "IN-1", "name": "VCC", "function": "5 V"},
+      {"pin": "IN-2", "name": "GND", "function": "Tierra"},
+      {"pin": "IN-3", "name": "DIN", "function": "Datos"},
+      {"pin": "IN-4", "name": "CS", "function": "Latch"},
+      {"pin": "IN-5", "name": "CLK", "function": "Reloj"},
+      {"pin": "OUT-1", "name": "VCC", "function": "5 V al siguiente módulo"},
+      {"pin": "OUT-2", "name": "GND", "function": "Tierra"},
+      {"pin": "OUT-3", "name": "DOUT", "function": "Datos al siguiente módulo (DOUT del MAX7219)"},
+      {"pin": "OUT-4", "name": "CS", "function": "Latch"},
+      {"pin": "OUT-5", "name": "CLK", "function": "Reloj"}
+    ],
+    "problem": "El paquete declara 10 pines (entrada 5 + salida 5), pero el pinout solo lista los 5 de entrada; falta el header de salida para encadenar, así que la huella quedaría incompleta.",
+    "evidence": "El módulo de 8 dígitos con MAX7219 trae, igual que las matrices 8x8 de este mismo lote, un header de entrada VCC, GND, DIN, CS, CLK y otro de salida VCC, GND, DOUT, CS, CLK en el extremo opuesto (pin 24 DOUT del MAX7219).",
+    "confidence": "media"
+  },
+  {
+    "index": 3,
+    "id": "dsp-pl9823",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "1", "name": "DIN", "function": "Entrada de datos"},
+      {"pin": "2", "name": "VDD", "function": "+5 V"},
+      {"pin": "3", "name": "GND", "function": "Tierra (en muchos lotes es la pata más larga; verificar antes de orientar la huella)"},
+      {"pin": "4", "name": "DOUT", "function": "Salida de datos"}
+    ],
+    "problem": "Se dice que VDD es la pata más larga, como en un LED RGB de ánodo común, pero en los LED direccionables THT de 5 mm tipo PL9823 las mediciones apuntan a GND (y DOUT) como las patas largas. Orientar la huella por la pata larga como VDD podría invertir la alimentación.",
+    "evidence": "Orden de pines de la hoja de datos PL9823: 1 DIN, 2 VDD, 3 GND, 4 DOUT. Foro de Pololu (forum.pololu.com/t/addressable-through-hole-5mm-rgb-led-lead-length/8420): en LED direccionables THT de 5 mm, DIN y 5 V miden ~15 mm y GND y DOUT ~17 mm; en el de 8 mm, GND es la más larga. Ninguna fuente confirma que VDD sea la más larga.",
+    "confidence": "media"
+  }
+]
