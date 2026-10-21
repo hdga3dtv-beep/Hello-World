@@ -1,0 +1,79 @@
+[
+  {
+    "keep_id": "sol-tubo-termocontractil",
+    "remove_ids": [
+      "cab-tubo-termocontractil"
+    ],
+    "reason": "Las dos fichas describen el mismo tubo termocontráctil de poliolefina, 2:1 o 3:1 con adhesivo, en kits de 127/328/530 piezas o por metro, con los mismos diámetros; no hay diferencia de producto."
+  },
+  {
+    "keep_id": "sol-pasta-termica",
+    "remove_ids": [
+      "mec-pasta-termica"
+    ],
+    "reason": "Las dos son la misma pasta térmica (grasa de silicón), blanca o gris, en jeringa de 1 a 30 g o en frasco, para disipadores; la almohadilla térmica es otra ficha y no está en el grupo."
+  },
+  {
+    "keep_id": "mod-mb102-fuente-protoboard",
+    "remove_ids": [
+      "her-fuente-protoboard-mb102"
+    ],
+    "reason": "Es el mismo módulo MB102 (YwRobot) para rieles de protoboard: entrada de 6.5 a 12 V por jack o por USB, 3.3 V o 5 V por jumper y AMS1117; ninguna otra ficha apunta al id que se quita."
+  },
+  {
+    "keep_id": "mod-ssr-fotek",
+    "remove_ids": [
+      "emc-ssr-fotek-25da"
+    ],
+    "reason": "Es el mismo SSR-25DA/40DA tipo Fotek: el mismo cuerpo de unos 62x45x23 mm con 4 tornillos, el mismo pinout (1-2 salida de CA, 3+/4- control de 3 a 32 VCC) y las mismas especificaciones."
+  },
+  {
+    "keep_id": "brd-shield-lcd-keypad",
+    "remove_ids": [
+      "dsp-lcd-keypad-shield"
+    ],
+    "reason": "Es el mismo LCD Keypad Shield 16x2 (clon DFR0009) con pinout idéntico (D4-D7 datos, D8 RS, D9 E, D10 luz de fondo, A0 botones); que las medidas no coincidan solo es por cómo se midió la placa."
+  },
+  {
+    "keep_id": "brd-shield-cnc-v3",
+    "remove_ids": [
+      "mod-cnc-shield-v3"
+    ],
+    "reason": "Es el mismo CNC Shield V3 GRBL para UNO con 4 zócalos StepStick y el mismo pinout de D2 a D13; la ficha que se queda es más completa (A0-A5 y formato UNO)."
+  },
+  {
+    "keep_id": "brd-shield-motor-l293d",
+    "remove_ids": [
+      "mod-l293d-shield"
+    ],
+    "reason": "Es el mismo Motor Shield L293D v1 (2x L293D + 74HC595, AFMotor) y su pinout coincide pin por pin; conviene pasar el alias ARD-340 (Steren) a la ficha que se queda."
+  },
+  {
+    "keep_id": "mod-isd1820",
+    "remove_ids": [
+      "ic-isd1820"
+    ],
+    "reason": "La ficha de CI no describe un chip suelto: su montaje es 'modulo' y su único encapsulado es el módulo COB con micrófono y botones (dice que el chip suelto no se consigue), así que es el mismo artículo que mod-isd1820, que además trae pinout."
+  },
+  {
+    "keep_id": "com-esp01-relevador",
+    "remove_ids": [
+      "mod-relevador-wifi-esp01s"
+    ],
+    "reason": "Es el mismo módulo relevador de 5 V con zócalo 2x4 para ESP-01/ESP-01S, controlado por GPIO0; la ficha que se queda ya incluye la versión v1.0 con GPIO0 y además la variante STC15F104."
+  },
+  {
+    "keep_id": "com-rf-control-4ch-pt2272",
+    "remove_ids": [
+      "mod-rf433-control-4ch"
+    ],
+    "reason": "Es el mismo kit de llavero de 4 botones con receptor M4/L4/T4 (header 1x7 con GND, +5V, D0-D3 y VT); conviene pasar a la ficha que se queda los alias YK04 y EV1527 de la que se quita."
+  },
+  {
+    "keep_id": "act-chasis-robot-2wd-4wd",
+    "remove_ids": [
+      "brd-kit-robot-chasis-2wd-4wd"
+    ],
+    "reason": "Es el mismo kit de chasis de acrílico 2WD/4WD con motores TT, rueda loca, portapilas y tornillería; la variante de 'kit completo con UNO' que menciona la otra ficha no tiene ficha propia y se puede agregar como valor común."
+  }
+]

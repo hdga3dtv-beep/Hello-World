@@ -11719,53 +11719,6 @@
       "notes": "Disponibilidad no verificada en línea."
     },
     {
-      "id": "ic-isd1820",
-      "name": "Grabador/reproductor de voz ISD1820",
-      "aliases": [
-        "ISD1820",
-        "ISD1820P",
-        "módulo grabador de voz"
-      ],
-      "category": "circuitos_integrados",
-      "subcategory": "especiales",
-      "description": "Chip de grabación y reproducción de mensajes de voz de 8–20 s en memoria no volátil, con amplificador para bocina integrado; en México se vende como módulo con micrófono y botones.",
-      "mounting": "modulo",
-      "packages": [
-        {
-          "name": "Módulo ISD1820 (chip COB en placa)",
-          "pins": null,
-          "pitch_mm": 2.54,
-          "row_spacing_mm": null,
-          "body_mm": null,
-          "lead_diameter_mm": null,
-          "notes": "El chip suele venir como COB (gota de resina) en el módulo; el encapsulado suelto no es común en tiendas mexicanas."
-        }
-      ],
-      "pinout": null,
-      "common_values": [
-        "Módulo ISD1820 con micrófono y bocina"
-      ],
-      "specs": {
-        "voltaje_alimentacion": "≈3–5 V",
-        "duracion": "8–20 s según resistencia del oscilador (≈10 s típico)",
-        "salida": "bocina 8 Ω directa"
-      },
-      "schematic_symbol": "modulo",
-      "typical_uses": [
-        "Mensajes de voz en juguetes y alarmas",
-        "Timbres y avisos grabados",
-        "Proyectos escolares con audio"
-      ],
-      "stores": [
-        "UNIT Electronics",
-        "Geek Factory",
-        "Mercado Libre"
-      ],
-      "popularity": "media",
-      "price_mxn_approx": null,
-      "notes": "Pinout del chip no incluido (no verificado). Verificado como módulo en UNIT y Geek Factory."
-    },
-    {
       "id": "ic-adc0804",
       "name": "Convertidor A/D de 8 bits ADC0804",
       "aliases": [

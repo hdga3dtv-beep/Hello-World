@@ -1004,7 +1004,15 @@
         "kit carrito robot",
         "chasis seguidor de línea",
         "robot car chassis",
-        "kit robot 2 llantas con rueda loca"
+        "kit robot 2 llantas con rueda loca",
+        "Kit chasis de robot (carro inteligente) 2WD / 4WD para Arduino",
+        "smart car chassis",
+        "chasis 2WD acrílico",
+        "kit carro robot 4WD",
+        "chasis robot seguidor de línea",
+        "robot car kit",
+        "kit carrito Arduino",
+        "chasis de robot evasor"
       ],
       "category": "actuadores_y_audio",
       "subcategory": "robotica_movil",
@@ -1066,7 +1074,8 @@
         "Geek Factory",
         "Electrónica 5Hz",
         "Mercado Libre",
-        "Tiendas Rep. del Salvador (Centro CDMX)"
+        "Tiendas Rep. del Salvador (Centro CDMX)",
+        "AG Electrónica"
       ],
       "popularity": "alta",
       "price_mxn_approx": null,
@@ -1315,98 +1324,6 @@
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "Verificado en UNIT (9–42 VDC, 0.5–3.5 A, 7 modos de micropasos, 96 x 56 x 33 mm, ≈ 200 g). Conexión típica de ánodo común: PUL+, DIR+ y ENA+ a 5 V y PUL−, DIR−, ENA− a los pines del Arduino (o al revés, cátodo común). Para señales de 12/24 V agregar resistencia en serie. Orden de bornes según la serigrafía de la caja."
-    },
-    {
-      "id": "mod-relevador-wifi-esp01s",
-      "name": "Módulo relevador Wi-Fi para ESP-01S (5 V, 1 canal)",
-      "aliases": [
-        "ESP-01S relay",
-        "relevador con interfaz para ESP8266",
-        "ESP8266 relay module",
-        "relé WiFi ESP-01",
-        "módulo relé ESP-01S"
-      ],
-      "category": "modulos_potencia",
-      "subcategory": "relevadores",
-      "description": "Placa con relevador de 10 A, regulador de 3.3 V y zócalo para insertar un ESP-01S; el GPIO0 del ESP acciona el relevador, formando un interruptor Wi-Fi económico para domótica.",
-      "mounting": "modulo",
-      "packages": [
-        {
-          "name": "Zócalo hembra 2x4 para ESP-01S",
-          "pins": 8,
-          "pitch_mm": 2.54,
-          "row_spacing_mm": 2.54,
-          "body_mm": null,
-          "lead_diameter_mm": null,
-          "notes": "El ESP-01S se inserta con la antena hacia fuera de la placa."
-        },
-        {
-          "name": "Alimentación + bornera del relevador",
-          "pins": 5,
-          "pitch_mm": null,
-          "row_spacing_mm": null,
-          "body_mm": null,
-          "lead_diameter_mm": null,
-          "notes": "Header o pads VCC/GND y bornera de 3 tornillos NO/COM/NC; algunas versiones agregan un pin IN."
-        }
-      ],
-      "pinout": [
-        {
-          "pin": "VCC",
-          "name": "VCC",
-          "function": "Alimentación 5 V"
-        },
-        {
-          "pin": "GND",
-          "name": "GND",
-          "function": "Tierra"
-        },
-        {
-          "pin": "NO",
-          "name": "NO",
-          "function": "Contacto normalmente abierto"
-        },
-        {
-          "pin": "COM",
-          "name": "COM",
-          "function": "Común del relevador"
-        },
-        {
-          "pin": "NC",
-          "name": "NC",
-          "function": "Contacto normalmente cerrado"
-        },
-        {
-          "pin": "GPIO0",
-          "name": "GPIO0 (interno)",
-          "function": "Señal del ESP-01S que activa el transistor del relevador"
-        }
-      ],
-      "common_values": [
-        "5 V 1 canal",
-        "Con o sin ESP-01S incluido"
-      ],
-      "specs": {
-        "voltaje": "5 V DC",
-        "contactos": "10 A 250 VAC / 30 VDC",
-        "control": "GPIO0 del ESP-01S",
-        "extras": "LED indicador y botón de reset"
-      },
-      "schematic_symbol": "modulo",
-      "typical_uses": [
-        "Encender focos o bombas desde el celular",
-        "Domótica con ESPHome, Tasmota o Blynk",
-        "Timbres y portones Wi-Fi"
-      ],
-      "stores": [
-        "UNIT Electronics",
-        "Geek Factory",
-        "Mercado Libre",
-        "Tiendas Rep. del Salvador (Centro CDMX)"
-      ],
-      "popularity": "alta",
-      "price_mxn_approx": null,
-      "notes": "Verificado en UNIT ('relevador con interfaz para ESP8266': 5 V, 10 A, GPIO0, botón de reset; el ESP-01S se vende aparte). Según la versión el relevador se activa con nivel alto o bajo (en ESPHome usar 'inverted' si hace falta). Programar el ESP-01S fuera del módulo. Las pistas de la placa no soportan 10 A continuos en la práctica."
     },
     {
       "id": "mod-optoacoplador-pc817-multicanal",
@@ -2568,109 +2485,6 @@
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Verificado en UNIT (termostato REX-C100 con SSR40DA y disipador; termopar K 0–400 °C; 100/240 VAC; ON/OFF y PID). La numeración de terminales cambia entre clones y versiones (un desarme publicado muestra 1-2 alimentación, 4-5 SSR, 6-7 alarma, 9-10 termopar): seguir el diagrama impreso en la carcasa. Ejecutar AT para ajustar el PID. Ver mod-ssr-fotek y sen-termopar-k."
-    },
-    {
-      "id": "mod-rf433-control-4ch",
-      "name": "Control remoto RF 433/315 MHz de 4 botones con receptor decodificador (YK04 / M4, L4, T4)",
-      "aliases": [
-        "control remoto RF 4 canales",
-        "receptor RF 4 canales",
-        "YK04",
-        "llavero RF 433MHz",
-        "receptor M4",
-        "receptor PT2272",
-        "RF remote 4 channel",
-        "EV1527 receptor"
-      ],
-      "category": "modulos_varios",
-      "subcategory": "control_remoto",
-      "description": "Llavero transmisor de 4 botones (codificador PT2262 o EV1527) y placa receptora con decodificador que pone en alto una salida por botón (momentánea M4, enclavada L4 o alterna T4); base de portones, alarmas y domótica sencilla.",
-      "mounting": "modulo",
-      "packages": [
-        {
-          "name": "Receptor con header 1x7 paso 2.54 mm",
-          "pins": 7,
-          "pitch_mm": 2.54,
-          "row_spacing_mm": null,
-          "body_mm": null,
-          "lead_diameter_mm": null,
-          "notes": "Hay versiones con relevadores (1 a 4 canales, 12 V) y borneras."
-        },
-        {
-          "name": "Llavero transmisor de 4 botones",
-          "pins": null,
-          "pitch_mm": null,
-          "row_spacing_mm": null,
-          "body_mm": null,
-          "lead_diameter_mm": null,
-          "notes": "Usa pila 27A de 12 V (típico)."
-        }
-      ],
-      "pinout": [
-        {
-          "pin": "1",
-          "name": "GND",
-          "function": "Tierra"
-        },
-        {
-          "pin": "2",
-          "name": "+5V",
-          "function": "Alimentación 5 V"
-        },
-        {
-          "pin": "3",
-          "name": "D0",
-          "function": "Salida del botón 1"
-        },
-        {
-          "pin": "4",
-          "name": "D1",
-          "function": "Salida del botón 2"
-        },
-        {
-          "pin": "5",
-          "name": "D2",
-          "function": "Salida del botón 3"
-        },
-        {
-          "pin": "6",
-          "name": "D3",
-          "function": "Salida del botón 4"
-        },
-        {
-          "pin": "7",
-          "name": "VT",
-          "function": "Dato válido: alto mientras se recibe cualquier botón"
-        }
-      ],
-      "common_values": [
-        "433 MHz",
-        "315 MHz",
-        "M4 (momentáneo)",
-        "L4 (enclavado entre canales)",
-        "T4 (alterna / toggle)",
-        "Con relevadores 12 V"
-      ],
-      "specs": {
-        "voltaje_receptor": "5 V",
-        "salidas": "4 digitales activas en alto",
-        "codificacion": "PT2262/PT2272 o EV1527 (aprendizaje)"
-      },
-      "schematic_symbol": "modulo",
-      "typical_uses": [
-        "Abrir portones y chapas eléctricas",
-        "Armar y desarmar alarmas",
-        "Controlar relevadores a distancia sin microcontrolador"
-      ],
-      "stores": [
-        "UNIT Electronics",
-        "AG Electrónica",
-        "Mercado Libre",
-        "Tiendas Rep. del Salvador (Centro CDMX)"
-      ],
-      "popularity": "alta",
-      "price_mxn_approx": null,
-      "notes": "Control y receptor deben coincidir en frecuencia y codificación (PT2262/PT2272 con los mismos puentes de dirección, o EV1527 con aprendizaje). El orden del header y la asignación de botones a D0–D3 varían: verificar la serigrafía. La pila 27A es dato típico, no verificado. Complementa com-rf433-fs1000a-tx / com-rf433-xy-mk-5v-rx e ic-pt2272."
     }
   ]
 }

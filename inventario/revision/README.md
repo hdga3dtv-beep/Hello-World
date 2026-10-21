@@ -9,3 +9,5 @@
 
 Ya se aplicaron a `../datos/` las correcciones aceptadas por el escéptico, más las
 correcciones de los componentes nuevos. Las rechazadas quedan aquí solo como registro.
+- `duplicados.json`: grupos de elementos repetidos entre familias que confirmó el verificador
+  escéptico. Se quitó el sobrante y sus nombres, alias y tiendas pasaron al que se quedó.

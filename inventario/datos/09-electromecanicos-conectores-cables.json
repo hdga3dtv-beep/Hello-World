@@ -3059,80 +3059,6 @@
       "notes": ""
     },
     {
-      "id": "emc-ssr-fotek-25da",
-      "name": "Relevador de estado sólido de panel SSR-25DA (tipo Fotek)",
-      "aliases": [
-        "SSR",
-        "relevador de estado sólido",
-        "SSR-25DA",
-        "SSR-40DA",
-        "Fotek SSR"
-      ],
-      "category": "electromecanicos",
-      "subcategory": "relevadores",
-      "description": "Relevador de estado sólido para montaje en chasis: entrada de control DC (3–32 V) y salida de CA para cargas resistivas; 4 terminales de tornillo.",
-      "mounting": "panel",
-      "packages": [
-        {
-          "name": "Cuerpo estándar 'hockey puck', 4 tornillos",
-          "pins": 4,
-          "pitch_mm": null,
-          "row_spacing_mm": null,
-          "body_mm": "≈62 x 45 x 23 (aprox.)",
-          "lead_diameter_mm": null,
-          "notes": "Dos agujeros de fijación separados ~47.5 mm (formato industrial estándar, verificar). Requiere disipador para >5–10 A."
-        }
-      ],
-      "pinout": [
-        {
-          "pin": "3",
-          "name": "+IN",
-          "function": "Entrada de control + (3–32 VCC)"
-        },
-        {
-          "pin": "4",
-          "name": "-IN",
-          "function": "Entrada de control −"
-        },
-        {
-          "pin": "1",
-          "name": "AC",
-          "function": "Salida CA (en serie con la carga)"
-        },
-        {
-          "pin": "2",
-          "name": "AC",
-          "function": "Salida CA"
-        }
-      ],
-      "common_values": [
-        "SSR-10DA",
-        "SSR-25DA",
-        "SSR-40DA",
-        "SSR-25AA (control AC)",
-        "SSR-25DD (salida DC)"
-      ],
-      "specs": {
-        "entrada": "3–32 VCC",
-        "salida": "24–380 VCA (DA)",
-        "corriente": "10/25/40 A nominal (con disipador)"
-      },
-      "schematic_symbol": "relevador_estado_solido",
-      "typical_uses": [
-        "Control de resistencias calefactoras con PID",
-        "Hornos de reflujo caseros"
-      ],
-      "stores": [
-        "AG Electrónica",
-        "UNIT Electronics",
-        "Tiendas Rep. del Salvador / Centro CDMX",
-        "Mercado Libre"
-      ],
-      "popularity": "media",
-      "price_mxn_approx": null,
-      "notes": "Abundan copias con capacidad real inferior a la marcada; sobredimensionar."
-    },
-    {
       "id": "con-header-macho-1x40-recto",
       "name": "Tira de pines macho 1x40 recta, paso 2.54 mm",
       "aliases": [
@@ -9216,50 +9142,6 @@
       "notes": "Accesorio; no tiene huella."
     },
     {
-      "id": "cab-tubo-termocontractil",
-      "name": "Tubo termocontráctil (termofit) 2:1, kits y por metro",
-      "aliases": [
-        "termofit",
-        "termocontráctil",
-        "heat shrink",
-        "tubo termoencogible",
-        "espagueti termocontráctil"
-      ],
-      "category": "cables",
-      "subcategory": "accesorios_cable",
-      "description": "Tubo plástico que se encoge con calor para aislar empalmes y terminales soldadas.",
-      "mounting": "n/a",
-      "packages": [],
-      "pinout": [],
-      "common_values": [
-        "Ø 1, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10, 12, 20 mm",
-        "Kit 127/328/530 pzs",
-        "Negro, rojo, transparente, colores",
-        "Con adhesivo 3:1"
-      ],
-      "specs": {
-        "relacion_contraccion": "2:1 (típico) o 3:1 con adhesivo",
-        "temperatura_encogido": "≈90–120 °C"
-      },
-      "schematic_symbol": "ninguno",
-      "typical_uses": [
-        "Aislar empalmes soldados",
-        "Proteger terminales de LEDs y sensores"
-      ],
-      "stores": [
-        "Steren",
-        "AG Electrónica",
-        "UNIT Electronics",
-        "Geek Factory",
-        "Electrónica 5Hz",
-        "Tiendas Rep. del Salvador / Centro CDMX",
-        "Mercado Libre"
-      ],
-      "popularity": "muy_alta",
-      "price_mxn_approx": null,
-      "notes": ""
-    },
-    {
       "id": "cab-ffc-flex",
       "name": "Cable plano flexible FFC (paso 0.5 / 1.0 mm)",
       "aliases": [
@@ -9634,47 +9516,6 @@
         "Mercado Libre"
       ],
       "popularity": "media",
-      "price_mxn_approx": null,
-      "notes": ""
-    },
-    {
-      "id": "mec-pasta-termica",
-      "name": "Pasta térmica / grasa de silicón",
-      "aliases": [
-        "pasta térmica",
-        "grasa térmica",
-        "thermal paste",
-        "compuesto disipador"
-      ],
-      "category": "mecanicos",
-      "subcategory": "aislamiento_termico",
-      "description": "Compuesto que mejora la transferencia de calor entre el componente y el disipador; en jeringa o frasco.",
-      "mounting": "n/a",
-      "packages": [],
-      "pinout": [],
-      "common_values": [
-        "Jeringa 1–30 g",
-        "Frasco",
-        "Blanca de silicón",
-        "Gris de alto rendimiento"
-      ],
-      "specs": {
-        "conductividad": "≈0.8–8 W/m·K según tipo"
-      },
-      "schematic_symbol": "ninguno",
-      "typical_uses": [
-        "Montaje de reguladores y transistores en disipador",
-        "CPUs"
-      ],
-      "stores": [
-        "Steren",
-        "AG Electrónica",
-        "UNIT Electronics",
-        "Geek Factory",
-        "Tiendas Rep. del Salvador / Centro CDMX",
-        "Mercado Libre"
-      ],
-      "popularity": "alta",
       "price_mxn_approx": null,
       "notes": ""
     },

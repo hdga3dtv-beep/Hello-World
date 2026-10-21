@@ -9052,7 +9052,11 @@
         "L293D motor shield",
         "Motor Drive Shield",
         "AFMotor shield",
-        "shield de motores"
+        "shield de motores",
+        "Shield de motores L293D para Arduino (Motor Shield v1)",
+        "ARD-340 (Steren)",
+        "tarjeta para control de motores CC L293D",
+        "Adafruit Motor Shield v1"
       ],
       "category": "placas_desarrollo",
       "subcategory": "shields",
@@ -9146,7 +9150,9 @@
         "Geek Factory",
         "Electrónica 5Hz",
         "Tiendas del Centro CDMX (Rep. del Salvador)",
-        "Mercado Libre"
+        "Mercado Libre",
+        "Steren",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
       ],
       "popularity": "alta",
       "price_mxn_approx": "$90–150 (aprox.)",
@@ -9158,7 +9164,11 @@
       "aliases": [
         "CNC Shield V3.0",
         "GRBL shield",
-        "shield CNC A4988"
+        "shield CNC A4988",
+        "CNC Shield V3 para Arduino UNO (4 drivers StepStick)",
+        "CNC Shield V3",
+        "shield GRBL",
+        "Protoneer CNC shield"
       ],
       "category": "placas_desarrollo",
       "subcategory": "shields",
@@ -9369,7 +9379,9 @@
       "aliases": [
         "LCD Keypad Shield",
         "DFR0009 clon",
-        "shield LCD 1602 con botones"
+        "shield LCD 1602 con botones",
+        "Shield LCD 16x2 con teclado (LCD Keypad Shield)",
+        "DFRobot LCD keypad"
       ],
       "category": "placas_desarrollo",
       "subcategory": "shields",
@@ -9448,7 +9460,8 @@
         "Geek Factory",
         "Electrónica 5Hz",
         "Tiendas del Centro CDMX (Rep. del Salvador)",
-        "Mercado Libre"
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
       ],
       "popularity": "alta",
       "price_mxn_approx": "$120–200 (aprox.)",

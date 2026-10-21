@@ -56,7 +56,7 @@ def main():
     items_by_id = {i["id"]: i for d in files.values() for i in d["items"]}
     log = []
 
-    corr_dir = Path(plan["corrections_dir"])
+    corr_dir = Path(plan.get("corrections_dir", "."))
     cache = {}
     for acc in plan.get("accepted", []):
         chunk = acc["chunk"]

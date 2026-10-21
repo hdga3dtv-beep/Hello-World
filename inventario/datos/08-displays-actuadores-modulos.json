@@ -789,97 +789,6 @@
       "notes": "El cableado interno PCF8574→LCD no es estándar entre fabricantes; la librería LiquidCrystal_I2C común asume P0=RS, P1=RW, P2=E, P3=BL, P4–P7=D4–D7. Correr un escáner I2C si no responde."
     },
     {
-      "id": "dsp-lcd-keypad-shield",
-      "name": "Shield LCD 16x2 con teclado (LCD Keypad Shield)",
-      "aliases": [
-        "LCD Keypad Shield",
-        "shield LCD 1602 con botones",
-        "DFRobot LCD keypad"
-      ],
-      "category": "displays",
-      "subcategory": "lcd_caracteres",
-      "description": "Shield para Arduino UNO con LCD 16x2 y 6 botones (SELECT, LEFT, UP, DOWN, RIGHT, RST); los 5 botones de navegación se leen en una sola entrada analógica.",
-      "mounting": "modulo",
-      "packages": [
-        {
-          "name": "Shield formato Arduino UNO",
-          "pins": null,
-          "pitch_mm": 2.54,
-          "row_spacing_mm": null,
-          "body_mm": "aprox. 80 x 58 mm",
-          "lead_diameter_mm": null,
-          "notes": "Se monta sobre headers de Arduino UNO/Mega. Medida aproximada."
-        }
-      ],
-      "pinout": [
-        {
-          "pin": "D4",
-          "name": "DB4",
-          "function": "Dato LCD"
-        },
-        {
-          "pin": "D5",
-          "name": "DB5",
-          "function": "Dato LCD"
-        },
-        {
-          "pin": "D6",
-          "name": "DB6",
-          "function": "Dato LCD"
-        },
-        {
-          "pin": "D7",
-          "name": "DB7",
-          "function": "Dato LCD"
-        },
-        {
-          "pin": "D8",
-          "name": "RS",
-          "function": "Selección de registro"
-        },
-        {
-          "pin": "D9",
-          "name": "E",
-          "function": "Enable"
-        },
-        {
-          "pin": "D10",
-          "name": "BL",
-          "function": "Control de retroiluminación"
-        },
-        {
-          "pin": "A0",
-          "name": "KEYS",
-          "function": "Botones por divisor resistivo"
-        },
-        {
-          "pin": "RST",
-          "name": "RESET",
-          "function": "Reset del Arduino"
-        }
-      ],
-      "common_values": [],
-      "specs": {
-        "voltaje": "5 V (del Arduino)",
-        "interfaz": "Paralela 4 bits + lectura analógica de botones"
-      },
-      "schematic_symbol": "display_lcd",
-      "typical_uses": [
-        "Menús con botones en Arduino",
-        "Prototipos rápidos"
-      ],
-      "stores": [
-        "UNIT Electronics",
-        "Geek Factory",
-        "Electrónica 5Hz",
-        "Mercado Libre",
-        "Tiendas Rep. del Salvador (Centro CDMX)"
-      ],
-      "popularity": "alta",
-      "price_mxn_approx": null,
-      "notes": "No usar D10 como salida alta permanente en algunos clones (cortocircuito por el transistor de retroiluminación). Valores ADC de botones varían por versión."
-    },
-    {
       "id": "dsp-lcd-12864-st7920",
       "name": "LCD gráfico 128x64 ST7920 (12864B)",
       "aliases": [
@@ -6752,7 +6661,10 @@
         "SSR-40DA",
         "Fotek SSR",
         "relé de estado sólido",
-        "solid state relay DA"
+        "solid state relay DA",
+        "Relevador de estado sólido de panel SSR-25DA (tipo Fotek)",
+        "SSR",
+        "relevador de estado sólido"
       ],
       "category": "modulos_potencia",
       "subcategory": "ssr",
@@ -6813,7 +6725,8 @@
         "UNIT Electronics",
         "AG Electrónica",
         "Mercado Libre",
-        "Tiendas Rep. del Salvador (Centro CDMX)"
+        "Tiendas Rep. del Salvador (Centro CDMX)",
+        "Tiendas Rep. del Salvador / Centro CDMX"
       ],
       "popularity": "alta",
       "price_mxn_approx": null,
@@ -7006,108 +6919,6 @@
       "popularity": "muy_alta",
       "price_mxn_approx": null,
       "notes": "Verificado en Steren (ARD-341: 4.5–40 Vcc, 2 A). Quitar el jumper 5V si la alimentación supera 12 V y dar 5 V externos."
-    },
-    {
-      "id": "mod-l293d-shield",
-      "name": "Shield de motores L293D para Arduino (Motor Shield v1)",
-      "aliases": [
-        "L293D motor shield",
-        "ARD-340 (Steren)",
-        "tarjeta para control de motores CC L293D",
-        "Adafruit Motor Shield v1"
-      ],
-      "category": "modulos_potencia",
-      "subcategory": "drivers_motor_dc",
-      "description": "Shield para UNO/Mega con dos L293D y un 74HC595: controla 4 motores DC (o 2 a pasos) y 2 servos.",
-      "mounting": "modulo",
-      "packages": [
-        {
-          "name": "Shield formato Arduino UNO",
-          "pins": null,
-          "pitch_mm": 2.54,
-          "row_spacing_mm": null,
-          "body_mm": null,
-          "lead_diameter_mm": null,
-          "notes": "Borneras M1–M4 y EXT_PWR; headers SERVO_1/SERVO_2 de 3 pines."
-        }
-      ],
-      "pinout": [
-        {
-          "pin": "D3",
-          "name": "PWM M2",
-          "function": "Motor 2"
-        },
-        {
-          "pin": "D4",
-          "name": "DIR_CLK",
-          "function": "74HC595"
-        },
-        {
-          "pin": "D5",
-          "name": "PWM M3",
-          "function": "Motor 3"
-        },
-        {
-          "pin": "D6",
-          "name": "PWM M4",
-          "function": "Motor 4"
-        },
-        {
-          "pin": "D7",
-          "name": "DIR_EN",
-          "function": "74HC595"
-        },
-        {
-          "pin": "D8",
-          "name": "DIR_SER",
-          "function": "74HC595"
-        },
-        {
-          "pin": "D9",
-          "name": "SERVO_2",
-          "function": "Servo 2"
-        },
-        {
-          "pin": "D10",
-          "name": "SERVO_1",
-          "function": "Servo 1"
-        },
-        {
-          "pin": "D11",
-          "name": "PWM M1",
-          "function": "Motor 1"
-        },
-        {
-          "pin": "D12",
-          "name": "DIR_LATCH",
-          "function": "74HC595"
-        },
-        {
-          "pin": "EXT_PWR",
-          "name": "EXT_PWR",
-          "function": "Alimentación de motores"
-        }
-      ],
-      "common_values": [],
-      "specs": {
-        "voltaje_motores": "4.5–25 V (Steren indica 4.5–36 Vcc)",
-        "corriente": "0.6 A por canal (1.2 A pico)"
-      },
-      "schematic_symbol": "modulo",
-      "typical_uses": [
-        "Robots 4WD",
-        "Plotters con motores a pasos pequeños"
-      ],
-      "stores": [
-        "Steren",
-        "UNIT Electronics",
-        "Geek Factory",
-        "Mercado Libre",
-        "Tiendas Rep. del Salvador (Centro CDMX)"
-      ],
-      "popularity": "alta",
-      "price_mxn_approx": null,
-      "notes": "Verificado en Steren (ARD-340: hasta 4 motores CC, pasos y servos). Librería AFMotor."
     },
     {
       "id": "mod-l9110s",
@@ -7999,111 +7810,6 @@
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "Nombres y función de pines 4–6 cambian por fabricante (BIGTREETECH, FYSETC, Watterott): verificar serigrafía."
-    },
-    {
-      "id": "mod-cnc-shield-v3",
-      "name": "CNC Shield V3 para Arduino UNO (4 drivers StepStick)",
-      "aliases": [
-        "CNC Shield V3",
-        "shield GRBL",
-        "Protoneer CNC shield"
-      ],
-      "category": "modulos_potencia",
-      "subcategory": "drivers_motor_paso",
-      "description": "Shield para UNO con 4 zócalos para A4988/DRV8825 (X, Y, Z, A), finales de carrera y control de husillo; usado con firmware GRBL.",
-      "mounting": "modulo",
-      "packages": [
-        {
-          "name": "Shield formato Arduino UNO",
-          "pins": null,
-          "pitch_mm": 2.54,
-          "row_spacing_mm": null,
-          "body_mm": null,
-          "lead_diameter_mm": null,
-          "notes": "Bornera de alimentación 12–36 V; jumpers de microstep bajo cada driver."
-        }
-      ],
-      "pinout": [
-        {
-          "pin": "D2",
-          "name": "X.STEP",
-          "function": "Paso X"
-        },
-        {
-          "pin": "D3",
-          "name": "Y.STEP",
-          "function": "Paso Y"
-        },
-        {
-          "pin": "D4",
-          "name": "Z.STEP",
-          "function": "Paso Z"
-        },
-        {
-          "pin": "D5",
-          "name": "X.DIR",
-          "function": "Dirección X"
-        },
-        {
-          "pin": "D6",
-          "name": "Y.DIR",
-          "function": "Dirección Y"
-        },
-        {
-          "pin": "D7",
-          "name": "Z.DIR",
-          "function": "Dirección Z"
-        },
-        {
-          "pin": "D8",
-          "name": "EN",
-          "function": "Habilitación de drivers"
-        },
-        {
-          "pin": "D9",
-          "name": "X.LIM",
-          "function": "Final de carrera X"
-        },
-        {
-          "pin": "D10",
-          "name": "Y.LIM",
-          "function": "Final de carrera Y"
-        },
-        {
-          "pin": "D11",
-          "name": "Z.LIM",
-          "function": "Final de carrera Z / PWM husillo"
-        },
-        {
-          "pin": "D12",
-          "name": "SpnEn",
-          "function": "Husillo enable (o paso A)"
-        },
-        {
-          "pin": "D13",
-          "name": "SpnDir",
-          "function": "Husillo dirección (o dirección A)"
-        }
-      ],
-      "common_values": [],
-      "specs": {
-        "voltaje_motores": "12–36 V",
-        "firmware": "GRBL"
-      },
-      "schematic_symbol": "modulo",
-      "typical_uses": [
-        "CNC caseras",
-        "Grabadoras láser",
-        "Plotters"
-      ],
-      "stores": [
-        "UNIT Electronics",
-        "Geek Factory",
-        "Mercado Libre"
-      ],
-      "popularity": "alta",
-      "price_mxn_approx": null,
-      "notes": ""
     },
     {
       "id": "mod-bts7960",
@@ -9089,7 +8795,9 @@
         "MB102 power supply",
         "YwRobot",
         "fuente protoboard",
-        "breadboard power supply"
+        "breadboard power supply",
+        "Fuente para protoboard MB102 (3.3 V / 5 V)",
+        "breadboard power module"
       ],
       "category": "modulos_potencia",
       "subcategory": "reguladores_modulo",
@@ -11073,7 +10781,10 @@
       "aliases": [
         "ISD1820",
         "grabador de voz",
-        "voice recorder module"
+        "voice recorder module",
+        "Grabador/reproductor de voz ISD1820",
+        "ISD1820P",
+        "módulo grabador de voz"
       ],
       "category": "modulos_varios",
       "subcategory": "audio_reproductores",

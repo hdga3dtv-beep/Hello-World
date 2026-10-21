@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Inventario de componentes electrónicos comunes en tiendas de México/Latinoamérica (Steren, AG Electrónica, UNIT Electronics, etc.) para una app de diseño de pistas/PCB caseras.",
-  "total_items": 1331,
+  "total_items": 1320,
   "categories": [
     {
       "id": "resistores",
@@ -36,12 +36,12 @@
     {
       "id": "circuitos_integrados",
       "name": "Circuitos integrados",
-      "count": 299
+      "count": 298
     },
     {
       "id": "placas_desarrollo",
       "name": "Placas de desarrollo (Arduino, ESP, Raspberry Pi) y programadores",
-      "count": 81
+      "count": 80
     },
     {
       "id": "modulos_comunicacion",
@@ -56,7 +56,7 @@
     {
       "id": "displays",
       "name": "Displays y pantallas",
-      "count": 42
+      "count": 41
     },
     {
       "id": "actuadores_y_audio",
@@ -66,17 +66,17 @@
     {
       "id": "modulos_potencia",
       "name": "Módulos de potencia y control",
-      "count": 52
+      "count": 49
     },
     {
       "id": "modulos_varios",
       "name": "Módulos varios (RTC, SD, audio, ADC...)",
-      "count": 32
+      "count": 31
     },
     {
       "id": "electromecanicos",
       "name": "Electromecánicos (botones, interruptores, relevadores)",
-      "count": 46
+      "count": 45
     },
     {
       "id": "conectores",
@@ -86,12 +86,12 @@
     {
       "id": "cables",
       "name": "Cables y alambres",
-      "count": 24
+      "count": 23
     },
     {
       "id": "mecanicos",
       "name": "Mecánicos (disipadores, separadores, gabinetes)",
-      "count": 25
+      "count": 24
     },
     {
       "id": "materiales_pcb",
@@ -106,7 +106,7 @@
     {
       "id": "herramientas",
       "name": "Herramientas e instrumentos",
-      "count": 76
+      "count": 75
     },
     {
       "id": "energia",
@@ -27669,54 +27669,6 @@
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Verificado en UNIT (XR2206CP y kit). Muchos chips de mercado son clones.",
-      "group": "04-ic-analogicos"
-    },
-    {
-      "id": "ic-isd1820",
-      "name": "Grabador/reproductor de voz ISD1820",
-      "aliases": [
-        "ISD1820",
-        "ISD1820P",
-        "módulo grabador de voz"
-      ],
-      "category": "circuitos_integrados",
-      "subcategory": "especiales",
-      "description": "Chip de grabación y reproducción de mensajes de voz de 8–20 s en memoria no volátil, con amplificador para bocina integrado; en México se vende como módulo con micrófono y botones.",
-      "mounting": "modulo",
-      "packages": [
-        {
-          "name": "Módulo ISD1820 (chip COB en placa)",
-          "pins": null,
-          "pitch_mm": 2.54,
-          "row_spacing_mm": null,
-          "body_mm": null,
-          "lead_diameter_mm": null,
-          "notes": "El chip suele venir como COB (gota de resina) en el módulo; el encapsulado suelto no es común en tiendas mexicanas."
-        }
-      ],
-      "pinout": [],
-      "common_values": [
-        "Módulo ISD1820 con micrófono y bocina"
-      ],
-      "specs": {
-        "voltaje_alimentacion": "≈3–5 V",
-        "duracion": "8–20 s según resistencia del oscilador (≈10 s típico)",
-        "salida": "bocina 8 Ω directa"
-      },
-      "schematic_symbol": "modulo",
-      "typical_uses": [
-        "Mensajes de voz en juguetes y alarmas",
-        "Timbres y avisos grabados",
-        "Proyectos escolares con audio"
-      ],
-      "stores": [
-        "UNIT Electronics",
-        "Geek Factory",
-        "Mercado Libre"
-      ],
-      "popularity": "media",
-      "price_mxn_approx": null,
-      "notes": "Pinout del chip no incluido (no verificado). Verificado como módulo en UNIT y Geek Factory.",
       "group": "04-ic-analogicos"
     },
     {
@@ -68110,54 +68062,6 @@
       "group": "11-complementos-placas-sensores"
     },
     {
-      "id": "brd-kit-robot-chasis-2wd-4wd",
-      "name": "Kit chasis de robot (carro inteligente) 2WD / 4WD para Arduino",
-      "aliases": [
-        "smart car chassis",
-        "chasis 2WD acrílico",
-        "kit carro robot 4WD",
-        "chasis robot seguidor de línea",
-        "robot car kit",
-        "kit carrito Arduino",
-        "chasis de robot evasor"
-      ],
-      "category": "placas_desarrollo",
-      "subcategory": "kits_inicio",
-      "description": "Base de acrílico (a veces metálica) con 2 o 4 motorreductores amarillos TT, llantas, rueda loca (en 2WD), portapilas y tornillería; es la plataforma más usada para robots seguidores de línea, evasores de obstáculos y carritos por Bluetooth.",
-      "mounting": "n/a",
-      "packages": [],
-      "pinout": [],
-      "common_values": [
-        "2WD acrílico (2 motores TT + rueda loca)",
-        "4WD acrílico de 2 niveles",
-        "Kit completo (chasis + UNO + L298N + HC-SR04 + sensores de línea + HC-05)"
-      ],
-      "specs": {
-        "motores": "Motorreductores TT 3–6 V (ver act-motor-tt), 2 o 4 piezas",
-        "alimentacion": "Portapilas 4 x AA (6 V) o porta 2 x 18650 según kit",
-        "accesorios": "Discos encoder de 20 ranuras para el motor TT en muchos kits 2WD, interruptor, separadores y tornillería M3"
-      },
-      "schematic_symbol": "ninguno",
-      "typical_uses": [
-        "Robot seguidor de línea",
-        "Robot evasor de obstáculos con HC-SR04",
-        "Carrito controlado por Bluetooth (HC-05) o control PS2",
-        "Concursos escolares de robótica"
-      ],
-      "stores": [
-        "UNIT Electronics",
-        "AG Electrónica",
-        "Geek Factory",
-        "Electrónica 5Hz",
-        "Mercado Libre",
-        "Tiendas Rep. del Salvador (Centro CDMX)"
-      ],
-      "popularity": "alta",
-      "price_mxn_approx": null,
-      "notes": "No es una placa electrónica: los componentes que se sueldan o conectan están en el inventario (act-motor-tt, mod-l298n, sen-velocidad-ranura-lm393, sen-tcrt5000, sen-seguidor-linea-multicanal, sen-hc-sr04). La posición de los barrenos del acrílico varía entre fabricantes: medir antes de diseñar una PCB que se atornille al chasis. Precio no verificado.",
-      "group": "11-complementos-placas-sensores"
-    },
-    {
       "id": "brd-arduino-starter-kit-oficial",
       "name": "Arduino Starter Kit oficial (UNO + libro de 15 proyectos)",
       "aliases": [
@@ -71363,7 +71267,11 @@
       "aliases": [
         "CNC Shield V3.0",
         "GRBL shield",
-        "shield CNC A4988"
+        "shield CNC A4988",
+        "CNC Shield V3 para Arduino UNO (4 drivers StepStick)",
+        "CNC Shield V3",
+        "shield GRBL",
+        "Protoneer CNC shield"
       ],
       "category": "placas_desarrollo",
       "subcategory": "shields",
@@ -71502,7 +71410,9 @@
       "aliases": [
         "LCD Keypad Shield",
         "DFR0009 clon",
-        "shield LCD 1602 con botones"
+        "shield LCD 1602 con botones",
+        "Shield LCD 16x2 con teclado (LCD Keypad Shield)",
+        "DFRobot LCD keypad"
       ],
       "category": "placas_desarrollo",
       "subcategory": "shields",
@@ -71581,7 +71491,8 @@
         "Geek Factory",
         "Electrónica 5Hz",
         "Tiendas del Centro CDMX (Rep. del Salvador)",
-        "Mercado Libre"
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
       ],
       "popularity": "alta",
       "price_mxn_approx": "$120–200 (aprox.)",
@@ -71595,7 +71506,11 @@
         "L293D motor shield",
         "Motor Drive Shield",
         "AFMotor shield",
-        "shield de motores"
+        "shield de motores",
+        "Shield de motores L293D para Arduino (Motor Shield v1)",
+        "ARD-340 (Steren)",
+        "tarjeta para control de motores CC L293D",
+        "Adafruit Motor Shield v1"
       ],
       "category": "placas_desarrollo",
       "subcategory": "shields",
@@ -71689,7 +71604,9 @@
         "Geek Factory",
         "Electrónica 5Hz",
         "Tiendas del Centro CDMX (Rep. del Salvador)",
-        "Mercado Libre"
+        "Mercado Libre",
+        "Steren",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
       ],
       "popularity": "alta",
       "price_mxn_approx": "$90–150 (aprox.)",
@@ -75085,7 +75002,16 @@
         "llavero RF 315 MHz",
         "kit control remoto inalámbrico 4 canales",
         "PT2272-M4",
-        "SC2272"
+        "SC2272",
+        "Control remoto RF 433/315 MHz de 4 botones con receptor decodificador (YK04 / M4, L4, T4)",
+        "control remoto RF 4 canales",
+        "receptor RF 4 canales",
+        "YK04",
+        "llavero RF 433MHz",
+        "receptor M4",
+        "receptor PT2272",
+        "RF remote 4 channel",
+        "EV1527 receptor"
       ],
       "category": "modulos_comunicacion",
       "subcategory": "rf_sub_ghz",
@@ -76604,7 +76530,11 @@
         "relé WiFi ESP-01",
         "módulo relevador ESP8266 5V",
         "ESP-01 relay v1.0",
-        "LC Technology ESP8266 relay"
+        "LC Technology ESP8266 relay",
+        "Módulo relevador Wi-Fi para ESP-01S (5 V, 1 canal)",
+        "ESP-01S relay",
+        "relevador con interfaz para ESP8266",
+        "módulo relé ESP-01S"
       ],
       "category": "modulos_comunicacion",
       "subcategory": "wifi",
@@ -76673,7 +76603,9 @@
         "UNIT Electronics",
         "AG Electrónica",
         "Electrónica 5Hz",
-        "Mercado Libre"
+        "Mercado Libre",
+        "Geek Factory",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
       ],
       "popularity": "alta",
       "price_mxn_approx": null,
@@ -87817,98 +87749,6 @@
       "group": "08-displays-actuadores-modulos"
     },
     {
-      "id": "dsp-lcd-keypad-shield",
-      "name": "Shield LCD 16x2 con teclado (LCD Keypad Shield)",
-      "aliases": [
-        "LCD Keypad Shield",
-        "shield LCD 1602 con botones",
-        "DFRobot LCD keypad"
-      ],
-      "category": "displays",
-      "subcategory": "lcd_caracteres",
-      "description": "Shield para Arduino UNO con LCD 16x2 y 6 botones (SELECT, LEFT, UP, DOWN, RIGHT, RST); los 5 botones de navegación se leen en una sola entrada analógica.",
-      "mounting": "modulo",
-      "packages": [
-        {
-          "name": "Shield formato Arduino UNO",
-          "pins": null,
-          "pitch_mm": 2.54,
-          "row_spacing_mm": null,
-          "body_mm": "aprox. 80 x 58 mm",
-          "lead_diameter_mm": null,
-          "notes": "Se monta sobre headers de Arduino UNO/Mega. Medida aproximada."
-        }
-      ],
-      "pinout": [
-        {
-          "pin": "D4",
-          "name": "DB4",
-          "function": "Dato LCD"
-        },
-        {
-          "pin": "D5",
-          "name": "DB5",
-          "function": "Dato LCD"
-        },
-        {
-          "pin": "D6",
-          "name": "DB6",
-          "function": "Dato LCD"
-        },
-        {
-          "pin": "D7",
-          "name": "DB7",
-          "function": "Dato LCD"
-        },
-        {
-          "pin": "D8",
-          "name": "RS",
-          "function": "Selección de registro"
-        },
-        {
-          "pin": "D9",
-          "name": "E",
-          "function": "Enable"
-        },
-        {
-          "pin": "D10",
-          "name": "BL",
-          "function": "Control de retroiluminación"
-        },
-        {
-          "pin": "A0",
-          "name": "KEYS",
-          "function": "Botones por divisor resistivo"
-        },
-        {
-          "pin": "RST",
-          "name": "RESET",
-          "function": "Reset del Arduino"
-        }
-      ],
-      "common_values": [],
-      "specs": {
-        "voltaje": "5 V (del Arduino)",
-        "interfaz": "Paralela 4 bits + lectura analógica de botones"
-      },
-      "schematic_symbol": "display_lcd",
-      "typical_uses": [
-        "Menús con botones en Arduino",
-        "Prototipos rápidos"
-      ],
-      "stores": [
-        "UNIT Electronics",
-        "Geek Factory",
-        "Electrónica 5Hz",
-        "Mercado Libre",
-        "Tiendas Rep. del Salvador (Centro CDMX)"
-      ],
-      "popularity": "alta",
-      "price_mxn_approx": null,
-      "notes": "No usar D10 como salida alta permanente en algunos clones (cortocircuito por el transistor de retroiluminación). Valores ADC de botones varían por versión.",
-      "group": "08-displays-actuadores-modulos"
-    },
-    {
       "id": "dsp-lcd-16x1",
       "name": "Display LCD 16x1 HD44780",
       "aliases": [
@@ -93104,7 +92944,15 @@
         "kit carrito robot",
         "chasis seguidor de línea",
         "robot car chassis",
-        "kit robot 2 llantas con rueda loca"
+        "kit robot 2 llantas con rueda loca",
+        "Kit chasis de robot (carro inteligente) 2WD / 4WD para Arduino",
+        "smart car chassis",
+        "chasis 2WD acrílico",
+        "kit carro robot 4WD",
+        "chasis robot seguidor de línea",
+        "robot car kit",
+        "kit carrito Arduino",
+        "chasis de robot evasor"
       ],
       "category": "actuadores_y_audio",
       "subcategory": "robotica_movil",
@@ -93166,7 +93014,8 @@
         "Geek Factory",
         "Electrónica 5Hz",
         "Mercado Libre",
-        "Tiendas Rep. del Salvador (Centro CDMX)"
+        "Tiendas Rep. del Salvador (Centro CDMX)",
+        "AG Electrónica"
       ],
       "popularity": "alta",
       "price_mxn_approx": null,
@@ -96198,109 +96047,6 @@
       "group": "08-displays-actuadores-modulos"
     },
     {
-      "id": "mod-l293d-shield",
-      "name": "Shield de motores L293D para Arduino (Motor Shield v1)",
-      "aliases": [
-        "L293D motor shield",
-        "ARD-340 (Steren)",
-        "tarjeta para control de motores CC L293D",
-        "Adafruit Motor Shield v1"
-      ],
-      "category": "modulos_potencia",
-      "subcategory": "drivers_motor_dc",
-      "description": "Shield para UNO/Mega con dos L293D y un 74HC595: controla 4 motores DC (o 2 a pasos) y 2 servos.",
-      "mounting": "modulo",
-      "packages": [
-        {
-          "name": "Shield formato Arduino UNO",
-          "pins": null,
-          "pitch_mm": 2.54,
-          "row_spacing_mm": null,
-          "body_mm": null,
-          "lead_diameter_mm": null,
-          "notes": "Borneras M1–M4 y EXT_PWR; headers SERVO_1/SERVO_2 de 3 pines."
-        }
-      ],
-      "pinout": [
-        {
-          "pin": "D3",
-          "name": "PWM M2",
-          "function": "Motor 2"
-        },
-        {
-          "pin": "D4",
-          "name": "DIR_CLK",
-          "function": "74HC595"
-        },
-        {
-          "pin": "D5",
-          "name": "PWM M3",
-          "function": "Motor 3"
-        },
-        {
-          "pin": "D6",
-          "name": "PWM M4",
-          "function": "Motor 4"
-        },
-        {
-          "pin": "D7",
-          "name": "DIR_EN",
-          "function": "74HC595"
-        },
-        {
-          "pin": "D8",
-          "name": "DIR_SER",
-          "function": "74HC595"
-        },
-        {
-          "pin": "D9",
-          "name": "SERVO_2",
-          "function": "Servo 2"
-        },
-        {
-          "pin": "D10",
-          "name": "SERVO_1",
-          "function": "Servo 1"
-        },
-        {
-          "pin": "D11",
-          "name": "PWM M1",
-          "function": "Motor 1"
-        },
-        {
-          "pin": "D12",
-          "name": "DIR_LATCH",
-          "function": "74HC595"
-        },
-        {
-          "pin": "EXT_PWR",
-          "name": "EXT_PWR",
-          "function": "Alimentación de motores"
-        }
-      ],
-      "common_values": [],
-      "specs": {
-        "voltaje_motores": "4.5–25 V (Steren indica 4.5–36 Vcc)",
-        "corriente": "0.6 A por canal (1.2 A pico)"
-      },
-      "schematic_symbol": "modulo",
-      "typical_uses": [
-        "Robots 4WD",
-        "Plotters con motores a pasos pequeños"
-      ],
-      "stores": [
-        "Steren",
-        "UNIT Electronics",
-        "Geek Factory",
-        "Mercado Libre",
-        "Tiendas Rep. del Salvador (Centro CDMX)"
-      ],
-      "popularity": "alta",
-      "price_mxn_approx": null,
-      "notes": "Verificado en Steren (ARD-340: hasta 4 motores CC, pasos y servos). Librería AFMotor.",
-      "group": "08-displays-actuadores-modulos"
-    },
-    {
       "id": "mod-vnh2sp30",
       "name": "Driver de motor VNH2SP30 (Monster Moto Shield, ≈14 A continuos)",
       "aliases": [
@@ -96907,112 +96653,6 @@
       "popularity": "muy_alta",
       "price_mxn_approx": null,
       "notes": "Steren: tarjeta ARD-300 compatible con su motor a pasos 5 Vcc (driver exacto no verificado).",
-      "group": "08-displays-actuadores-modulos"
-    },
-    {
-      "id": "mod-cnc-shield-v3",
-      "name": "CNC Shield V3 para Arduino UNO (4 drivers StepStick)",
-      "aliases": [
-        "CNC Shield V3",
-        "shield GRBL",
-        "Protoneer CNC shield"
-      ],
-      "category": "modulos_potencia",
-      "subcategory": "drivers_motor_paso",
-      "description": "Shield para UNO con 4 zócalos para A4988/DRV8825 (X, Y, Z, A), finales de carrera y control de husillo; usado con firmware GRBL.",
-      "mounting": "modulo",
-      "packages": [
-        {
-          "name": "Shield formato Arduino UNO",
-          "pins": null,
-          "pitch_mm": 2.54,
-          "row_spacing_mm": null,
-          "body_mm": null,
-          "lead_diameter_mm": null,
-          "notes": "Bornera de alimentación 12–36 V; jumpers de microstep bajo cada driver."
-        }
-      ],
-      "pinout": [
-        {
-          "pin": "D2",
-          "name": "X.STEP",
-          "function": "Paso X"
-        },
-        {
-          "pin": "D3",
-          "name": "Y.STEP",
-          "function": "Paso Y"
-        },
-        {
-          "pin": "D4",
-          "name": "Z.STEP",
-          "function": "Paso Z"
-        },
-        {
-          "pin": "D5",
-          "name": "X.DIR",
-          "function": "Dirección X"
-        },
-        {
-          "pin": "D6",
-          "name": "Y.DIR",
-          "function": "Dirección Y"
-        },
-        {
-          "pin": "D7",
-          "name": "Z.DIR",
-          "function": "Dirección Z"
-        },
-        {
-          "pin": "D8",
-          "name": "EN",
-          "function": "Habilitación de drivers"
-        },
-        {
-          "pin": "D9",
-          "name": "X.LIM",
-          "function": "Final de carrera X"
-        },
-        {
-          "pin": "D10",
-          "name": "Y.LIM",
-          "function": "Final de carrera Y"
-        },
-        {
-          "pin": "D11",
-          "name": "Z.LIM",
-          "function": "Final de carrera Z / PWM husillo"
-        },
-        {
-          "pin": "D12",
-          "name": "SpnEn",
-          "function": "Husillo enable (o paso A)"
-        },
-        {
-          "pin": "D13",
-          "name": "SpnDir",
-          "function": "Husillo dirección (o dirección A)"
-        }
-      ],
-      "common_values": [],
-      "specs": {
-        "voltaje_motores": "12–36 V",
-        "firmware": "GRBL"
-      },
-      "schematic_symbol": "modulo",
-      "typical_uses": [
-        "CNC caseras",
-        "Grabadoras láser",
-        "Plotters"
-      ],
-      "stores": [
-        "UNIT Electronics",
-        "Geek Factory",
-        "Mercado Libre"
-      ],
-      "popularity": "alta",
-      "price_mxn_approx": null,
-      "notes": "",
       "group": "08-displays-actuadores-modulos"
     },
     {
@@ -98078,7 +97718,9 @@
         "MB102 power supply",
         "YwRobot",
         "fuente protoboard",
-        "breadboard power supply"
+        "breadboard power supply",
+        "Fuente para protoboard MB102 (3.3 V / 5 V)",
+        "breadboard power module"
       ],
       "category": "modulos_potencia",
       "subcategory": "reguladores_modulo",
@@ -98279,99 +97921,6 @@
       "price_mxn_approx": null,
       "notes": "",
       "group": "08-displays-actuadores-modulos"
-    },
-    {
-      "id": "mod-relevador-wifi-esp01s",
-      "name": "Módulo relevador Wi-Fi para ESP-01S (5 V, 1 canal)",
-      "aliases": [
-        "ESP-01S relay",
-        "relevador con interfaz para ESP8266",
-        "ESP8266 relay module",
-        "relé WiFi ESP-01",
-        "módulo relé ESP-01S"
-      ],
-      "category": "modulos_potencia",
-      "subcategory": "relevadores",
-      "description": "Placa con relevador de 10 A, regulador de 3.3 V y zócalo para insertar un ESP-01S; el GPIO0 del ESP acciona el relevador, formando un interruptor Wi-Fi económico para domótica.",
-      "mounting": "modulo",
-      "packages": [
-        {
-          "name": "Zócalo hembra 2x4 para ESP-01S",
-          "pins": 8,
-          "pitch_mm": 2.54,
-          "row_spacing_mm": 2.54,
-          "body_mm": null,
-          "lead_diameter_mm": null,
-          "notes": "El ESP-01S se inserta con la antena hacia fuera de la placa."
-        },
-        {
-          "name": "Alimentación + bornera del relevador",
-          "pins": 5,
-          "pitch_mm": null,
-          "row_spacing_mm": null,
-          "body_mm": null,
-          "lead_diameter_mm": null,
-          "notes": "Header o pads VCC/GND y bornera de 3 tornillos NO/COM/NC; algunas versiones agregan un pin IN."
-        }
-      ],
-      "pinout": [
-        {
-          "pin": "VCC",
-          "name": "VCC",
-          "function": "Alimentación 5 V"
-        },
-        {
-          "pin": "GND",
-          "name": "GND",
-          "function": "Tierra"
-        },
-        {
-          "pin": "NO",
-          "name": "NO",
-          "function": "Contacto normalmente abierto"
-        },
-        {
-          "pin": "COM",
-          "name": "COM",
-          "function": "Común del relevador"
-        },
-        {
-          "pin": "NC",
-          "name": "NC",
-          "function": "Contacto normalmente cerrado"
-        },
-        {
-          "pin": "GPIO0",
-          "name": "GPIO0 (interno)",
-          "function": "Señal del ESP-01S que activa el transistor del relevador"
-        }
-      ],
-      "common_values": [
-        "5 V 1 canal",
-        "Con o sin ESP-01S incluido"
-      ],
-      "specs": {
-        "voltaje": "5 V DC",
-        "contactos": "10 A 250 VAC / 30 VDC",
-        "control": "GPIO0 del ESP-01S",
-        "extras": "LED indicador y botón de reset"
-      },
-      "schematic_symbol": "modulo",
-      "typical_uses": [
-        "Encender focos o bombas desde el celular",
-        "Domótica con ESPHome, Tasmota o Blynk",
-        "Timbres y portones Wi-Fi"
-      ],
-      "stores": [
-        "UNIT Electronics",
-        "Geek Factory",
-        "Mercado Libre",
-        "Tiendas Rep. del Salvador (Centro CDMX)"
-      ],
-      "popularity": "alta",
-      "price_mxn_approx": null,
-      "notes": "Verificado en UNIT ('relevador con interfaz para ESP8266': 5 V, 10 A, GPIO0, botón de reset; el ESP-01S se vende aparte). Según la versión el relevador se activa con nivel alto o bajo (en ESPHome usar 'inverted' si hace falta). Programar el ESP-01S fuera del módulo. Las pistas de la placa no soportan 10 A continuos en la práctica.",
-      "group": "11-complementos-modulos-actuadores"
     },
     {
       "id": "mod-relevador-1ch",
@@ -98893,7 +98442,10 @@
         "SSR-40DA",
         "Fotek SSR",
         "relé de estado sólido",
-        "solid state relay DA"
+        "solid state relay DA",
+        "Relevador de estado sólido de panel SSR-25DA (tipo Fotek)",
+        "SSR",
+        "relevador de estado sólido"
       ],
       "category": "modulos_potencia",
       "subcategory": "ssr",
@@ -98954,7 +98506,8 @@
         "UNIT Electronics",
         "AG Electrónica",
         "Mercado Libre",
-        "Tiendas Rep. del Salvador (Centro CDMX)"
+        "Tiendas Rep. del Salvador (Centro CDMX)",
+        "Tiendas Rep. del Salvador / Centro CDMX"
       ],
       "popularity": "alta",
       "price_mxn_approx": null,
@@ -100295,7 +99848,10 @@
       "aliases": [
         "ISD1820",
         "grabador de voz",
-        "voice recorder module"
+        "voice recorder module",
+        "Grabador/reproductor de voz ISD1820",
+        "ISD1820P",
+        "módulo grabador de voz"
       ],
       "category": "modulos_varios",
       "subcategory": "audio_reproductores",
@@ -100374,110 +99930,6 @@
       "price_mxn_approx": null,
       "notes": "Pinout aproximado; confirmar serigrafía.",
       "group": "08-displays-actuadores-modulos"
-    },
-    {
-      "id": "mod-rf433-control-4ch",
-      "name": "Control remoto RF 433/315 MHz de 4 botones con receptor decodificador (YK04 / M4, L4, T4)",
-      "aliases": [
-        "control remoto RF 4 canales",
-        "receptor RF 4 canales",
-        "YK04",
-        "llavero RF 433MHz",
-        "receptor M4",
-        "receptor PT2272",
-        "RF remote 4 channel",
-        "EV1527 receptor"
-      ],
-      "category": "modulos_varios",
-      "subcategory": "control_remoto",
-      "description": "Llavero transmisor de 4 botones (codificador PT2262 o EV1527) y placa receptora con decodificador que pone en alto una salida por botón (momentánea M4, enclavada L4 o alterna T4); base de portones, alarmas y domótica sencilla.",
-      "mounting": "modulo",
-      "packages": [
-        {
-          "name": "Receptor con header 1x7 paso 2.54 mm",
-          "pins": 7,
-          "pitch_mm": 2.54,
-          "row_spacing_mm": null,
-          "body_mm": null,
-          "lead_diameter_mm": null,
-          "notes": "Hay versiones con relevadores (1 a 4 canales, 12 V) y borneras."
-        },
-        {
-          "name": "Llavero transmisor de 4 botones",
-          "pins": null,
-          "pitch_mm": null,
-          "row_spacing_mm": null,
-          "body_mm": null,
-          "lead_diameter_mm": null,
-          "notes": "Usa pila 27A de 12 V (típico)."
-        }
-      ],
-      "pinout": [
-        {
-          "pin": "1",
-          "name": "GND",
-          "function": "Tierra"
-        },
-        {
-          "pin": "2",
-          "name": "+5V",
-          "function": "Alimentación 5 V"
-        },
-        {
-          "pin": "3",
-          "name": "D0",
-          "function": "Salida del botón 1"
-        },
-        {
-          "pin": "4",
-          "name": "D1",
-          "function": "Salida del botón 2"
-        },
-        {
-          "pin": "5",
-          "name": "D2",
-          "function": "Salida del botón 3"
-        },
-        {
-          "pin": "6",
-          "name": "D3",
-          "function": "Salida del botón 4"
-        },
-        {
-          "pin": "7",
-          "name": "VT",
-          "function": "Dato válido: alto mientras se recibe cualquier botón"
-        }
-      ],
-      "common_values": [
-        "433 MHz",
-        "315 MHz",
-        "M4 (momentáneo)",
-        "L4 (enclavado entre canales)",
-        "T4 (alterna / toggle)",
-        "Con relevadores 12 V"
-      ],
-      "specs": {
-        "voltaje_receptor": "5 V",
-        "salidas": "4 digitales activas en alto",
-        "codificacion": "PT2262/PT2272 o EV1527 (aprendizaje)"
-      },
-      "schematic_symbol": "modulo",
-      "typical_uses": [
-        "Abrir portones y chapas eléctricas",
-        "Armar y desarmar alarmas",
-        "Controlar relevadores a distancia sin microcontrolador"
-      ],
-      "stores": [
-        "UNIT Electronics",
-        "AG Electrónica",
-        "Mercado Libre",
-        "Tiendas Rep. del Salvador (Centro CDMX)"
-      ],
-      "popularity": "alta",
-      "price_mxn_approx": null,
-      "notes": "Control y receptor deben coincidir en frecuencia y codificación (PT2262/PT2272 con los mismos puentes de dirección, o EV1527 con aprendizaje). El orden del header y la asignación de botones a D0–D3 varían: verificar la serigrafía. La pila 27A es dato típico, no verificado. Complementa com-rf433-fs1000a-tx / com-rf433-xy-mk-5v-rx e ic-pt2272.",
-      "group": "11-complementos-modulos-actuadores"
     },
     {
       "id": "mod-termostato-stc-1000",
@@ -104715,81 +104167,6 @@
       "popularity": "media",
       "price_mxn_approx": "$15–35 c/u",
       "notes": "Numeración de pines de memoria técnica: confirmar con la hoja de datos antes de rutear.",
-      "group": "09-electromecanicos-conectores-cables"
-    },
-    {
-      "id": "emc-ssr-fotek-25da",
-      "name": "Relevador de estado sólido de panel SSR-25DA (tipo Fotek)",
-      "aliases": [
-        "SSR",
-        "relevador de estado sólido",
-        "SSR-25DA",
-        "SSR-40DA",
-        "Fotek SSR"
-      ],
-      "category": "electromecanicos",
-      "subcategory": "relevadores",
-      "description": "Relevador de estado sólido para montaje en chasis: entrada de control DC (3–32 V) y salida de CA para cargas resistivas; 4 terminales de tornillo.",
-      "mounting": "panel",
-      "packages": [
-        {
-          "name": "Cuerpo estándar 'hockey puck', 4 tornillos",
-          "pins": 4,
-          "pitch_mm": null,
-          "row_spacing_mm": null,
-          "body_mm": "≈62 x 45 x 23 (aprox.)",
-          "lead_diameter_mm": null,
-          "notes": "Dos agujeros de fijación separados ~47.5 mm (formato industrial estándar, verificar). Requiere disipador para >5–10 A."
-        }
-      ],
-      "pinout": [
-        {
-          "pin": "3",
-          "name": "+IN",
-          "function": "Entrada de control + (3–32 VCC)"
-        },
-        {
-          "pin": "4",
-          "name": "-IN",
-          "function": "Entrada de control −"
-        },
-        {
-          "pin": "1",
-          "name": "AC",
-          "function": "Salida CA (en serie con la carga)"
-        },
-        {
-          "pin": "2",
-          "name": "AC",
-          "function": "Salida CA"
-        }
-      ],
-      "common_values": [
-        "SSR-10DA",
-        "SSR-25DA",
-        "SSR-40DA",
-        "SSR-25AA (control AC)",
-        "SSR-25DD (salida DC)"
-      ],
-      "specs": {
-        "entrada": "3–32 VCC",
-        "salida": "24–380 VCA (DA)",
-        "corriente": "10/25/40 A nominal (con disipador)"
-      },
-      "schematic_symbol": "relevador_estado_solido",
-      "typical_uses": [
-        "Control de resistencias calefactoras con PID",
-        "Hornos de reflujo caseros"
-      ],
-      "stores": [
-        "AG Electrónica",
-        "UNIT Electronics",
-        "Tiendas Rep. del Salvador / Centro CDMX",
-        "Mercado Libre"
-      ],
-      "popularity": "media",
-      "price_mxn_approx": null,
-      "notes": "Abundan copias con capacidad real inferior a la marcada; sobredimensionar.",
       "group": "09-electromecanicos-conectores-cables"
     },
     {
@@ -110894,51 +110271,6 @@
       "group": "09-electromecanicos-conectores-cables"
     },
     {
-      "id": "cab-tubo-termocontractil",
-      "name": "Tubo termocontráctil (termofit) 2:1, kits y por metro",
-      "aliases": [
-        "termofit",
-        "termocontráctil",
-        "heat shrink",
-        "tubo termoencogible",
-        "espagueti termocontráctil"
-      ],
-      "category": "cables",
-      "subcategory": "accesorios_cable",
-      "description": "Tubo plástico que se encoge con calor para aislar empalmes y terminales soldadas.",
-      "mounting": "n/a",
-      "packages": [],
-      "pinout": [],
-      "common_values": [
-        "Ø 1, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10, 12, 20 mm",
-        "Kit 127/328/530 pzs",
-        "Negro, rojo, transparente, colores",
-        "Con adhesivo 3:1"
-      ],
-      "specs": {
-        "relacion_contraccion": "2:1 (típico) o 3:1 con adhesivo",
-        "temperatura_encogido": "≈90–120 °C"
-      },
-      "schematic_symbol": "ninguno",
-      "typical_uses": [
-        "Aislar empalmes soldados",
-        "Proteger terminales de LEDs y sensores"
-      ],
-      "stores": [
-        "Steren",
-        "AG Electrónica",
-        "UNIT Electronics",
-        "Geek Factory",
-        "Electrónica 5Hz",
-        "Tiendas Rep. del Salvador / Centro CDMX",
-        "Mercado Libre"
-      ],
-      "popularity": "muy_alta",
-      "price_mxn_approx": null,
-      "notes": "",
-      "group": "09-electromecanicos-conectores-cables"
-    },
-    {
       "id": "cab-cobre-desnudo-estanado",
       "name": "Alambre de cobre desnudo / estañado para puentes (bus wire)",
       "aliases": [
@@ -112370,48 +111702,6 @@
       ],
       "popularity": "alta",
       "price_mxn_approx": "$2–5 por juego",
-      "notes": "",
-      "group": "09-electromecanicos-conectores-cables"
-    },
-    {
-      "id": "mec-pasta-termica",
-      "name": "Pasta térmica / grasa de silicón",
-      "aliases": [
-        "pasta térmica",
-        "grasa térmica",
-        "thermal paste",
-        "compuesto disipador"
-      ],
-      "category": "mecanicos",
-      "subcategory": "aislamiento_termico",
-      "description": "Compuesto que mejora la transferencia de calor entre el componente y el disipador; en jeringa o frasco.",
-      "mounting": "n/a",
-      "packages": [],
-      "pinout": [],
-      "common_values": [
-        "Jeringa 1–30 g",
-        "Frasco",
-        "Blanca de silicón",
-        "Gris de alto rendimiento"
-      ],
-      "specs": {
-        "conductividad": "≈0.8–8 W/m·K según tipo"
-      },
-      "schematic_symbol": "ninguno",
-      "typical_uses": [
-        "Montaje de reguladores y transistores en disipador",
-        "CPUs"
-      ],
-      "stores": [
-        "Steren",
-        "AG Electrónica",
-        "UNIT Electronics",
-        "Geek Factory",
-        "Tiendas Rep. del Salvador / Centro CDMX",
-        "Mercado Libre"
-      ],
-      "popularity": "alta",
-      "price_mxn_approx": null,
       "notes": "",
       "group": "09-electromecanicos-conectores-cables"
     },
@@ -115586,7 +114876,10 @@
         "termocontráctil",
         "heat shrink",
         "tubo termo",
-        "espagueti termocontráctil"
+        "espagueti termocontráctil",
+        "Tubo termocontráctil (termofit) 2:1, kits y por metro",
+        "termofit",
+        "tubo termoencogible"
       ],
       "category": "soldadura_y_consumibles",
       "subcategory": "aislamiento",
@@ -115621,7 +114914,8 @@
         "Geek Factory",
         "Electrónica 5Hz",
         "Tiendas Rep. del Salvador (Centro CDMX)",
-        "Mercado Libre"
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador / Centro CDMX"
       ],
       "popularity": "muy_alta",
       "price_mxn_approx": null,
@@ -116427,7 +115721,10 @@
         "grasa de silicón",
         "thermal paste",
         "thermal compound",
-        "Arctic MX-4"
+        "Arctic MX-4",
+        "Pasta térmica / grasa de silicón",
+        "grasa térmica",
+        "compuesto disipador"
       ],
       "category": "soldadura_y_consumibles",
       "subcategory": "termico",
@@ -116456,7 +115753,9 @@
         "AG Electrónica",
         "Tiendas Rep. del Salvador (Centro CDMX)",
         "Cyberpuerta",
-        "Mercado Libre"
+        "Mercado Libre",
+        "Geek Factory",
+        "Tiendas Rep. del Salvador / Centro CDMX"
       ],
       "popularity": "alta",
       "price_mxn_approx": null,
@@ -117533,71 +116832,6 @@
         "Tiendas Rep. del Salvador (Centro CDMX)",
         "Mercado Libre",
         "Amazon México"
-      ],
-      "popularity": "alta",
-      "price_mxn_approx": null,
-      "notes": "",
-      "group": "10-materiales-herramientas-energia"
-    },
-    {
-      "id": "her-fuente-protoboard-mb102",
-      "name": "Fuente para protoboard MB102 (3.3 V / 5 V)",
-      "aliases": [
-        "fuente protoboard",
-        "MB102 power supply",
-        "breadboard power module",
-        "YwRobot"
-      ],
-      "category": "herramientas",
-      "subcategory": "fuente_laboratorio",
-      "description": "Pequeña fuente que se inserta en los rieles de una protoboard de 830 y entrega 3.3 V o 5 V seleccionables por riel con jumpers.",
-      "mounting": "modulo",
-      "packages": [
-        {
-          "name": "Módulo para riel de protoboard",
-          "pins": null,
-          "pitch_mm": 2.54,
-          "row_spacing_mm": null,
-          "body_mm": null,
-          "lead_diameter_mm": null,
-          "notes": "Pines a paso 2.54 que entran en los rieles"
-        }
-      ],
-      "pinout": [
-        {
-          "pin": "J+",
-          "name": "+V",
-          "function": "Riel positivo (3.3 V o 5 V según jumper)"
-        },
-        {
-          "pin": "J-",
-          "name": "GND",
-          "function": "Riel negativo"
-        },
-        {
-          "pin": "IN",
-          "name": "DC jack / USB",
-          "function": "Entrada 6.5–12 V o 5 V USB"
-        }
-      ],
-      "common_values": [
-        "MB102"
-      ],
-      "specs": {
-        "entrada": "6.5–12 V DC por jack 5.5x2.1 mm o USB",
-        "salidas": "3.3 V y 5 V por jumper (cada lado)",
-        "corriente_aprox": "<700 mA recomendado (regulador AMS1117, aprox.)"
-      },
-      "schematic_symbol": "modulo",
-      "typical_uses": [
-        "Alimentar prototipos en protoboard"
-      ],
-      "stores": [
-        "UNIT Electronics",
-        "Geek Factory",
-        "Electrónica 5Hz",
-        "AG Electrónica",
-        "Mercado Libre"
       ],
       "popularity": "alta",
       "price_mxn_approx": null,

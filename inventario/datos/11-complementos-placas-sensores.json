@@ -108,53 +108,6 @@
       "notes": "Lista de contenido de memoria según la edición clásica; puede cambiar entre revisiones (verificar en la caja). Disponibilidad y precio en tiendas mexicanas no verificados en esta investigación. Las piezas sueltas tienen artículo propio en el inventario (brd-arduino-uno-r3, sen-tmp36, dsp-lcd-16x2, ic-l293d, opt-4n25-4n35, etc.)."
     },
     {
-      "id": "brd-kit-robot-chasis-2wd-4wd",
-      "name": "Kit chasis de robot (carro inteligente) 2WD / 4WD para Arduino",
-      "aliases": [
-        "smart car chassis",
-        "chasis 2WD acrílico",
-        "kit carro robot 4WD",
-        "chasis robot seguidor de línea",
-        "robot car kit",
-        "kit carrito Arduino",
-        "chasis de robot evasor"
-      ],
-      "category": "placas_desarrollo",
-      "subcategory": "kits_inicio",
-      "description": "Base de acrílico (a veces metálica) con 2 o 4 motorreductores amarillos TT, llantas, rueda loca (en 2WD), portapilas y tornillería; es la plataforma más usada para robots seguidores de línea, evasores de obstáculos y carritos por Bluetooth.",
-      "mounting": "n/a",
-      "packages": [],
-      "pinout": [],
-      "common_values": [
-        "2WD acrílico (2 motores TT + rueda loca)",
-        "4WD acrílico de 2 niveles",
-        "Kit completo (chasis + UNO + L298N + HC-SR04 + sensores de línea + HC-05)"
-      ],
-      "specs": {
-        "motores": "Motorreductores TT 3–6 V (ver act-motor-tt), 2 o 4 piezas",
-        "alimentacion": "Portapilas 4 x AA (6 V) o porta 2 x 18650 según kit",
-        "accesorios": "Discos encoder de 20 ranuras para el motor TT en muchos kits 2WD, interruptor, separadores y tornillería M3"
-      },
-      "schematic_symbol": "ninguno",
-      "typical_uses": [
-        "Robot seguidor de línea",
-        "Robot evasor de obstáculos con HC-SR04",
-        "Carrito controlado por Bluetooth (HC-05) o control PS2",
-        "Concursos escolares de robótica"
-      ],
-      "stores": [
-        "UNIT Electronics",
-        "AG Electrónica",
-        "Geek Factory",
-        "Electrónica 5Hz",
-        "Mercado Libre",
-        "Tiendas Rep. del Salvador (Centro CDMX)"
-      ],
-      "popularity": "alta",
-      "price_mxn_approx": null,
-      "notes": "No es una placa electrónica: los componentes que se sueldan o conectan están en el inventario (act-motor-tt, mod-l298n, sen-velocidad-ranura-lm393, sen-tcrt5000, sen-seguidor-linea-multicanal, sen-hc-sr04). La posición de los barrenos del acrílico varía entre fabricantes: medir antes de diseñar una PCB que se atornille al chasis. Precio no verificado."
-    },
-    {
       "id": "brd-fpga-cyclone-iv-ep4ce6",
       "name": "Tarjeta de desarrollo FPGA Altera Cyclone IV EP4CE6 (placa mínima / kit de prácticas)",
       "aliases": [
@@ -1174,7 +1127,16 @@
         "llavero RF 315 MHz",
         "kit control remoto inalámbrico 4 canales",
         "PT2272-M4",
-        "SC2272"
+        "SC2272",
+        "Control remoto RF 433/315 MHz de 4 botones con receptor decodificador (YK04 / M4, L4, T4)",
+        "control remoto RF 4 canales",
+        "receptor RF 4 canales",
+        "YK04",
+        "llavero RF 433MHz",
+        "receptor M4",
+        "receptor PT2272",
+        "RF remote 4 channel",
+        "EV1527 receptor"
       ],
       "category": "modulos_comunicacion",
       "subcategory": "rf_sub_ghz",
@@ -1356,7 +1318,11 @@
         "relé WiFi ESP-01",
         "módulo relevador ESP8266 5V",
         "ESP-01 relay v1.0",
-        "LC Technology ESP8266 relay"
+        "LC Technology ESP8266 relay",
+        "Módulo relevador Wi-Fi para ESP-01S (5 V, 1 canal)",
+        "ESP-01S relay",
+        "relevador con interfaz para ESP8266",
+        "módulo relé ESP-01S"
       ],
       "category": "modulos_comunicacion",
       "subcategory": "wifi",
@@ -1425,7 +1391,9 @@
         "UNIT Electronics",
         "AG Electrónica",
         "Electrónica 5Hz",
-        "Mercado Libre"
+        "Mercado Libre",
+        "Geek Factory",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
       ],
       "popularity": "alta",
       "price_mxn_approx": null,

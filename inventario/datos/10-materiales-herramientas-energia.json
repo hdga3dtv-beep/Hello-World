@@ -2527,7 +2527,10 @@
         "termocontráctil",
         "heat shrink",
         "tubo termo",
-        "espagueti termocontráctil"
+        "espagueti termocontráctil",
+        "Tubo termocontráctil (termofit) 2:1, kits y por metro",
+        "termofit",
+        "tubo termoencogible"
       ],
       "category": "soldadura_y_consumibles",
       "subcategory": "aislamiento",
@@ -2562,7 +2565,8 @@
         "Geek Factory",
         "Electrónica 5Hz",
         "Tiendas Rep. del Salvador (Centro CDMX)",
-        "Mercado Libre"
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador / Centro CDMX"
       ],
       "popularity": "muy_alta",
       "price_mxn_approx": null,
@@ -2695,7 +2699,10 @@
         "grasa de silicón",
         "thermal paste",
         "thermal compound",
-        "Arctic MX-4"
+        "Arctic MX-4",
+        "Pasta térmica / grasa de silicón",
+        "grasa térmica",
+        "compuesto disipador"
       ],
       "category": "soldadura_y_consumibles",
       "subcategory": "termico",
@@ -2724,7 +2731,9 @@
         "AG Electrónica",
         "Tiendas Rep. del Salvador (Centro CDMX)",
         "Cyberpuerta",
-        "Mercado Libre"
+        "Mercado Libre",
+        "Geek Factory",
+        "Tiendas Rep. del Salvador / Centro CDMX"
       ],
       "popularity": "alta",
       "price_mxn_approx": null,
@@ -5634,70 +5643,6 @@
         "Amazon México"
       ],
       "popularity": "media",
-      "price_mxn_approx": null,
-      "notes": ""
-    },
-    {
-      "id": "her-fuente-protoboard-mb102",
-      "name": "Fuente para protoboard MB102 (3.3 V / 5 V)",
-      "aliases": [
-        "fuente protoboard",
-        "MB102 power supply",
-        "breadboard power module",
-        "YwRobot"
-      ],
-      "category": "herramientas",
-      "subcategory": "fuente_laboratorio",
-      "description": "Pequeña fuente que se inserta en los rieles de una protoboard de 830 y entrega 3.3 V o 5 V seleccionables por riel con jumpers.",
-      "mounting": "modulo",
-      "packages": [
-        {
-          "name": "Módulo para riel de protoboard",
-          "pins": null,
-          "pitch_mm": 2.54,
-          "row_spacing_mm": null,
-          "body_mm": null,
-          "lead_diameter_mm": null,
-          "notes": "Pines a paso 2.54 que entran en los rieles"
-        }
-      ],
-      "pinout": [
-        {
-          "pin": "J+",
-          "name": "+V",
-          "function": "Riel positivo (3.3 V o 5 V según jumper)"
-        },
-        {
-          "pin": "J-",
-          "name": "GND",
-          "function": "Riel negativo"
-        },
-        {
-          "pin": "IN",
-          "name": "DC jack / USB",
-          "function": "Entrada 6.5–12 V o 5 V USB"
-        }
-      ],
-      "common_values": [
-        "MB102"
-      ],
-      "specs": {
-        "entrada": "6.5–12 V DC por jack 5.5x2.1 mm o USB",
-        "salidas": "3.3 V y 5 V por jumper (cada lado)",
-        "corriente_aprox": "<700 mA recomendado (regulador AMS1117, aprox.)"
-      },
-      "schematic_symbol": "modulo",
-      "typical_uses": [
-        "Alimentar prototipos en protoboard"
-      ],
-      "stores": [
-        "UNIT Electronics",
-        "Geek Factory",
-        "Electrónica 5Hz",
-        "AG Electrónica",
-        "Mercado Libre"
-      ],
-      "popularity": "alta",
       "price_mxn_approx": null,
       "notes": ""
     },

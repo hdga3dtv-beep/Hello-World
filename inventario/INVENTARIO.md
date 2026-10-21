@@ -2,7 +2,7 @@
 
 Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 
-**Total: 1331 componentes** en 22 categorías.
+**Total: 1320 componentes** en 22 categorías.
 
 | Categoría | Elementos |
 |---|---:|
@@ -12,21 +12,21 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | [Protección (fusibles, varistores, TVS)](#proteccion) | 19 |
 | [Semiconductores discretos (diodos, transistores, tiristores)](#semiconductores_discretos) | 103 |
 | [Optoelectrónica (LEDs, optoacopladores, displays de LED)](#optoelectronica) | 37 |
-| [Circuitos integrados](#circuitos_integrados) | 299 |
-| [Placas de desarrollo (Arduino, ESP, Raspberry Pi) y programadores](#placas_desarrollo) | 81 |
+| [Circuitos integrados](#circuitos_integrados) | 298 |
+| [Placas de desarrollo (Arduino, ESP, Raspberry Pi) y programadores](#placas_desarrollo) | 80 |
 | [Módulos de comunicación](#modulos_comunicacion) | 44 |
 | [Sensores](#sensores) | 133 |
-| [Displays y pantallas](#displays) | 42 |
+| [Displays y pantallas](#displays) | 41 |
 | [Actuadores y audio (motores, servos, buzzers, bocinas)](#actuadores_y_audio) | 47 |
-| [Módulos de potencia y control](#modulos_potencia) | 52 |
-| [Módulos varios (RTC, SD, audio, ADC...)](#modulos_varios) | 32 |
-| [Electromecánicos (botones, interruptores, relevadores)](#electromecanicos) | 46 |
+| [Módulos de potencia y control](#modulos_potencia) | 49 |
+| [Módulos varios (RTC, SD, audio, ADC...)](#modulos_varios) | 31 |
+| [Electromecánicos (botones, interruptores, relevadores)](#electromecanicos) | 45 |
 | [Conectores, bases y portapilas](#conectores) | 81 |
-| [Cables y alambres](#cables) | 24 |
-| [Mecánicos (disipadores, separadores, gabinetes)](#mecanicos) | 25 |
+| [Cables y alambres](#cables) | 23 |
+| [Mecánicos (disipadores, separadores, gabinetes)](#mecanicos) | 24 |
 | [Materiales para fabricar PCB](#materiales_pcb) | 38 |
 | [Soldadura y consumibles](#soldadura_y_consumibles) | 29 |
-| [Herramientas e instrumentos](#herramientas) | 76 |
+| [Herramientas e instrumentos](#herramientas) | 75 |
 | [Energía (pilas, baterías, fuentes)](#energia) | 34 |
 
 <a id="resistores"></a>
@@ -387,7 +387,6 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Decodificador remoto PT2272**<br><sub>`ic-pt2272`</sub> | THT/SMD | DIP-18 (18p, 2.54 mm, filas 7.62 mm) | PT2272-M4 (momentáneo, 4 datos), PT2272-L4 (retención, 4 datos), PT2272-T4 (biestable) | media |
 | **Generador de funciones ICL8038**<br><sub>`ic-icl8038`</sub> | THT | DIP-14 (14p, 2.54 mm, filas 7.62 mm) | ICL8038CCPD, 8038C (Steren) | media |
 | **Generador de funciones XR2206**<br><sub>`ic-xr2206`</sub> | THT | DIP-16 (16p, 2.54 mm, filas 7.62 mm) | XR2206CP | media |
-| **Grabador/reproductor de voz ISD1820**<br><sub>`ic-isd1820`</sub> | modulo | Módulo ISD1820 (chip COB en placa) (2.54 mm) | Módulo ISD1820 con micrófono y bocina | media |
 | **Lazo de seguimiento de fase (PLL) LM565 / NE565**<br><sub>`ic-lm565`</sub> | THT | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm) | LM565CN (DIP-14), NE565N (DIP-14) | media |
 | **Modulador/demodulador balanceado MC1496 / LM1496**<br><sub>`ic-mc1496`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | MC1496P (DIP-14), LM1496N (DIP-14), MC1496D (SOIC-14) | media |
 | **Multiplicador analógico de 4 cuadrantes AD633**<br><sub>`ic-ad633`</sub> | THT/SMD | DIP-8 (PDIP, 300 mil) (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (150 mil) (8p, 1.27 mm) | AD633JNZ (DIP-8), AD633ARZ / AD633JRZ (SOIC-8) | media |
@@ -666,7 +665,6 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Wemos D1 R2 (ESP8266 en formato UNO)**<br><sub>`brd-wemos-d1-r2`</sub> | modulo | Placa formato UNO R3 (D1 R2) (32p, 2.54 mm, filas 48.26 mm) | CH340G, Clones | media |
 | **Tarjeta de desarrollo FPGA Altera Cyclone IV EP4CE6 (placa mínima / kit de prácticas)**<br><sub>`brd-fpga-cyclone-iv-ep4ce6`</sub> | modulo | Placa con headers de E/S a 2.54 mm (distribución variable según fabricante) (2.54 mm) | Placa mínima (FPGA + reloj + EPCS + headers), Kit con periféricos (LEDs, botones, 4 dígitos, VGA, PS/2, RS-232), Kit con caja, USB Blaster y control remoto IR | media |
 | **Kit de inicio para Arduino UNO R3 (genérico: básico, Super Starter y RFID)**<br><sub>`brd-kit-inicio-arduino-uno`</sub> | n/a | — | Kit básico (UNO, protoboard 400/830, LEDs, resistencias, botones, buzzer, potenciómetro, LDR), Super Starter Kit (además LCD 1602, servo SG90, 28BYJ-48 + ULN2003, HC-SR04, DHT11, control y receptor IR, display de 7 segmentos, 74HC595, relevador, teclado 4x4, joystick), Kit RFID (agrega lector RC522 con tarjeta y llavero), Versión con Mega 2560 (Mega starter kit) | muy alta |
-| **Kit chasis de robot (carro inteligente) 2WD / 4WD para Arduino**<br><sub>`brd-kit-robot-chasis-2wd-4wd`</sub> | n/a | — | 2WD acrílico (2 motores TT + rueda loca), 4WD acrílico de 2 niveles, Kit completo (chasis + UNO + L298N + HC-SR04 + sensores de línea + HC-05) | alta |
 | **Arduino Starter Kit oficial (UNO + libro de 15 proyectos)**<br><sub>`brd-arduino-starter-kit-oficial`</sub> | n/a | — | Edición en inglés (K000007), Edición en español (K040007), Edición R4 (con UNO R4) | media |
 | **BBC micro:bit V2**<br><sub>`brd-microbit-v2`</sub> | modulo | Conector de borde (edge) 25 pistas (25p, 1.27 mm) | V2.2, Kit con portapilas | media |
 | **Digispark ATtiny85 (USB)**<br><sub>`brd-digispark-attiny85`</sub> | modulo | 1x6 E/S + 1x3 alimentación (9p, 2.54 mm) | USB en PCB, Micro-USB | media |
@@ -908,7 +906,6 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Display LCD 16x2 HD44780 (paralelo)**<br><sub>`dsp-lcd-16x2`</sub> | modulo | Módulo 1602 estándar (16p, 2.54 mm) | Fondo azul, letras blancas, Fondo verde-amarillo, letras negras, Blanco/negro FSTN, Rojo negativo (AG: DYS-1602A-ROJO/NEGAT), Con o sin header soldado | muy alta |
 | **Display LCD 20x4 con adaptador I2C**<br><sub>`dsp-lcd-20x4-i2c`</sub> | modulo | Módulo 2004 + backpack I2C (4p, 2.54 mm) | Fondo azul/letras amarillas o blancas, Fondo verde, 0x27 o 0x3F | alta |
 | **Display LCD 20x4 HD44780 (paralelo)**<br><sub>`dsp-lcd-20x4`</sub> | modulo | Módulo 2004 estándar (16p, 2.54 mm) | Fondo azul, letras blancas, Fondo verde-amarillo, letras negras, Con o sin backpack I2C | alta |
-| **Shield LCD 16x2 con teclado (LCD Keypad Shield)**<br><sub>`dsp-lcd-keypad-shield`</sub> | modulo | Shield formato Arduino UNO (2.54 mm) | — | alta |
 | **Display LCD 16x1 HD44780**<br><sub>`dsp-lcd-16x1`</sub> | modulo | Módulo 1601 (16p, 2.54 mm) | Fondo azul, Fondo verde-amarillo | media |
 | **Display LCD 8x2 HD44780**<br><sub>`dsp-lcd-8x2`</sub> | modulo | Módulo 0802 (16p, 2.54 mm) | Fondo azul, Fondo verde-amarillo | media |
 | **LCD gráfico 128x64 ST7920 (12864B)**<br><sub>`dsp-lcd-12864-st7920`</sub> | modulo | Módulo 12864 ST7920 (20p, 2.54 mm) | Fondo azul, Fondo verde-amarillo | alta |
@@ -1021,14 +1018,12 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Módulo driver de motor BTS7960 43 A (IBT-2)**<br><sub>`mod-bts7960`</sub> | modulo | Módulo con disipador (12p, 2.54 mm) | — | alta |
 | **Módulo driver L9110S (2 motores DC)**<br><sub>`mod-l9110s`</sub> | modulo | Módulo L9110S (10p, 2.54 mm) | — | alta |
 | **Módulo driver TB6612FNG (2 motores DC, MOSFET)**<br><sub>`mod-tb6612fng`</sub> | modulo | Breakout 16 pines (16p, 2.54 mm) | — | alta |
-| **Shield de motores L293D para Arduino (Motor Shield v1)**<br><sub>`mod-l293d-shield`</sub> | modulo | Shield formato Arduino UNO (2.54 mm) | — | alta |
 | **Driver de motor VNH2SP30 (Monster Moto Shield, ≈14 A continuos)**<br><sub>`mod-vnh2sp30`</sub> | modulo | Shield de 2 canales formato Arduino UNO (2.54 mm) | Shield 2 canales, Placa de 1 canal | media |
 | **Módulo driver DRV8833 (2 motores DC)**<br><sub>`mod-drv8833`</sub> | modulo | Módulo DRV8833 (2.54 mm) | — | media |
 | **Módulo driver MX1508 (2 motores DC)**<br><sub>`mod-mx1508`</sub> | modulo | Módulo MX1508 (10p, 2.54 mm) | — | media |
 | **Variador ESC 30 A para motor brushless**<br><sub>`mod-esc-30a`</sub> | modulo | ESC en termoencogible (8p) | 20 A, 30 A, 40 A | media |
 | **Driver de motor a pasos A4988 (Pololu/StepStick)**<br><sub>`mod-a4988`</sub> | modulo | StepStick 16 pines (16p, 2.54 mm, filas 12.7 mm) | Verde/rojo (clones), Pololu original | muy alta |
 | **Placa driver ULN2003 para motor a pasos 28BYJ-48**<br><sub>`mod-uln2003-driver`</sub> | modulo | Placa ULN2003 (11p, 2.54 mm) | — | muy alta |
-| **CNC Shield V3 para Arduino UNO (4 drivers StepStick)**<br><sub>`mod-cnc-shield-v3`</sub> | modulo | Shield formato Arduino UNO (2.54 mm) | — | alta |
 | **Driver de motor a pasos DRV8825 (Pololu/StepStick)**<br><sub>`mod-drv8825`</sub> | modulo | StepStick 16 pines (16p, 2.54 mm, filas 12.7 mm) | — | alta |
 | **Driver de motor a pasos silencioso TMC2208 / TMC2209**<br><sub>`mod-tmc2208-tmc2209`</sub> | modulo | StepStick 16 pines (16p, 2.54 mm, filas 12.7 mm) | TMC2208 v3, TMC2209 v1.2, TMC2225 | alta |
 | **Driver de motor a pasos TB6600 (9–42 V, hasta 3.5–4 A)**<br><sub>`mod-tb6600`</sub> | panel | Caja de aluminio con 2 borneras de tornillo (6 + 6) (12p) | Corriente 0.5–3.5 A (8 niveles), Micropasos 1, 2/A, 2/B, 4, 8, 16, 32 | alta |
@@ -1044,7 +1039,6 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Fuente para protoboard MB102 (YwRobot) 3.3 V / 5 V**<br><sub>`mod-mb102-fuente-protoboard`</sub> | modulo | Módulo MB102 (2.54 mm) | — | muy alta |
 | **Módulo regulador AMS1117 3.3 V / 5 V**<br><sub>`mod-ams1117-33`</sub> | modulo | Módulo AMS1117 (3p, 2.54 mm) | 3.3 V, 5 V | alta |
 | **Módulo regulador ajustable LM317**<br><sub>`mod-lm317-ajustable`</sub> | modulo | Módulo LM317 (4p) | — | media |
-| **Módulo relevador Wi-Fi para ESP-01S (5 V, 1 canal)**<br><sub>`mod-relevador-wifi-esp01s`</sub> | modulo | Zócalo hembra 2x4 para ESP-01S (8p, 2.54 mm, filas 2.54 mm); Alimentación + bornera del relevador (5p) | 5 V 1 canal, Con o sin ESP-01S incluido | alta |
 | **Módulo relevador 1 canal 5 V / 12 V**<br><sub>`mod-relevador-1ch`</sub> | modulo | Módulo 1 canal (6p, 2.54 mm) | 5 V, 12 V, Con optoacoplador, Jumper disparo alto/bajo | muy alta |
 | **Módulo relevador 2 canales 5 V / 12 V con optoacoplador**<br><sub>`mod-relevador-2ch`</sub> | modulo | Módulo 2 canales (13p, 2.54 mm) | 5 V, 12 V | muy alta |
 | **Módulo relevador 4 canales 5 V / 12 V con optoacoplador**<br><sub>`mod-relevador-4ch`</sub> | modulo | Módulo 4 canales (21p, 2.54 mm) | 5 V, 12 V | muy alta |
@@ -1074,7 +1068,6 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Módulo receptor de audio Bluetooth (estéreo)**<br><sub>`mod-receptor-bluetooth-audio`</sub> | modulo | Módulo receptor | Bluetooth 4.2, Bluetooth 5.0, Con amplificador integrado | alta |
 | **Módulo de reconocimiento de voz V3 (Elechouse)**<br><sub>`mod-reconocimiento-voz-v3`</sub> | modulo | Módulo VR3 (2.54 mm) | — | media |
 | **Módulo grabador/reproductor de voz ISD1820**<br><sub>`mod-isd1820`</sub> | modulo | Módulo ISD1820 (2.54 mm) | — | media |
-| **Control remoto RF 433/315 MHz de 4 botones con receptor decodificador (YK04 / M4, L4, T4)**<br><sub>`mod-rf433-control-4ch`</sub> | modulo | Receptor con header 1x7 paso 2.54 mm (7p, 2.54 mm); Llavero transmisor de 4 botones | 433 MHz, 315 MHz, M4 (momentáneo), L4 (enclavado entre canales), T4 (alterna / toggle), Con relevadores 12 V | alta |
 | **Controlador de temperatura STC-1000 (calentar y enfriar, sonda NTC)**<br><sub>`mod-termostato-stc-1000`</sub> | panel | Caja de panel con bornera trasera de 8 terminales (8p) | 110–220 VAC, 12 V DC, 24 V | alta |
 | **Termostato digital XH-W1209 con relevador (12 V)**<br><sub>`mod-termostato-w1209`</sub> | modulo | Módulo W1209 (6p) | 12 V, 5 V (versión W1209 5V), 24 V | alta |
 | **Controlador de temperatura PID REX-C100 (48 x 48 mm, termopar K, salida SSR o relevador)**<br><sub>`mod-controlador-pid-rex-c100`</sub> | panel | Caja de panel 48 x 48 mm (1/16 DIN) con bornera trasera numerada | Salida SSR (código V), Salida relevador (código M), Kit con SSR-40DA, disipador y termopar K | media |
@@ -1134,7 +1127,6 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Relevador enchufable de uso general tipo Omron MY2N / MY4N / LY2N (terminales planas)**<br><sub>`emc-relevador-enchufable-my`</sub> | panel | MY2 / HH52P (2 polos, 8 terminales planas) (8p); MY4 / HH54P (4 polos, 14 terminales planas) (14p); LY2 / HH62P (2 polos, 8 terminales, 10 A) (8p) | MY2N 12 VCC, MY2N 24 VCC, MY2N 24 VCA, MY2N 120 VCA (para 127 V), MY4N 12/24 VCC y 120 VCA, LY2N 12/24 VCC y 120 VCA, Con LED indicador, MK2P-I octal (8 pines redondos, base PF083A) | alta |
 | **Relevador Songle SRD-12VDC-SL-C (bobina 12 V, 10 A)**<br><sub>`emc-relevador-srd-12vdc`</sub> | THT | THT 5 pines (cuerpo T73) (5p, filas 12.0 mm) | SRD-12VDC-SL-C, SRD-24VDC-SL-C | alta |
 | **Relevador de 2 polos HK19F (DPDT, 8 pines tipo DIP)**<br><sub>`emc-relevador-hk19f-dpdt`</sub> | THT | THT 8 pines (patrón DIP) (8p, 2.54 mm, filas 7.62 mm) | HK19F-DC5V-SHG, HK19F-DC12V-SHG, HK19F-DC3V-SHG | media |
-| **Relevador de estado sólido de panel SSR-25DA (tipo Fotek)**<br><sub>`emc-ssr-fotek-25da`</sub> | panel | Cuerpo estándar 'hockey puck', 4 tornillos (4p) | SSR-10DA, SSR-25DA, SSR-40DA, SSR-25AA (control AC), SSR-25DD (salida DC) | media |
 | **Relevador miniatura de señal (Omron G5V-1, Hongfa HFD2/HFD23, similares)**<br><sub>`emc-relevador-senal-mini`</sub> | THT | G5V-1 (1 Form C) (6p, 2.54 mm); HFD2 / G5V-2 (2 Form C) (8p, 2.54 mm, filas 7.62 mm) | 5 VCC, 12 VCC, 3 VCC, 24 VCC | media |
 | **Relevador reed SIP (SIP-1A05 / SIP-1A12)**<br><sub>`emc-relevador-reed-sip`</sub> | THT | SIP-4 (rejilla 2.54) (4p, 2.54 mm) | SIP-1A05 (5 V), SIP-1A12 (12 V), SIP-1A24 | media |
 | **Selector rotatorio de obleas (1P12T, 2P6T, 3P4T, 4P3T)**<br><sub>`emc-selector-rotatorio`</sub> | panel | Panel, terminales en círculo (13p) | 1 polo 12 posiciones, 2 polos 6 posiciones, 3 polos 4 posiciones, 4 polos 3 posiciones | media |
@@ -1235,7 +1227,6 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 
 | Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
 |---|---|---|---|---|
-| **Tubo termocontráctil (termofit) 2:1, kits y por metro**<br><sub>`cab-tubo-termocontractil`</sub> | n/a | — | Ø 1, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10, 12, 20 mm, Kit 127/328/530 pzs, Negro, rojo, transparente, colores, Con adhesivo 3:1 | muy alta |
 | **Alambre de cobre desnudo / estañado para puentes (bus wire)**<br><sub>`cab-cobre-desnudo-estanado`</sub> | n/a | — | 18 AWG, 20 AWG, 22 AWG, 24 AWG, Carrete o por metro | media |
 | **Alambre magneto / alambre esmaltado (AWG 18 a 40)**<br><sub>`cab-alambre-magneto`</sub> | n/a | — | 18 AWG, 20 AWG, 22 AWG, 24 AWG, 26 AWG, 28 AWG, 30 AWG, 32 AWG, … (+7) | alta |
 | **Cable de alimentación 127 VCA con clavija (cordón de línea y cable de poder IEC C13)**<br><sub>`cab-cordon-alimentacion`</sub> | n/a | — | IEC C13 a clavija de 3 patas, 1.8 m, Cordón 2x18 AWG con clavija polarizada y punta libre, C7 'tipo 8' de 2 hilos, C5 'trébol' (laptop) | muy alta |
@@ -1270,7 +1261,6 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Patas de goma / topes adhesivos para gabinetes y PCB**<br><sub>`mec-patas-goma`</sub> | n/a | — | Ø 8, 10, 12, 16, 20 mm, Transparentes, Negras, Con tornillo | media |
 | **Prensaestopas / conector de cable impermeable (PG7, PG9, PG11, PG13.5)**<br><sub>`mec-prensaestopas`</sub> | panel | PG7; PG9; PG11; PG13.5 | PG7, PG9, PG11, PG13.5, PG16, Métricos M12/M16/M20, Nylon negro/gris | media |
 | **Kit aislante para TO-220 / TO-247 (mica o silicón + buje)**<br><sub>`mec-kit-aislante-to220`</sub> | n/a | — | Mica TO-220, Silicón TO-220, Mica TO-247/TO-3P, Buje para M3, Kits de 100 | alta |
-| **Pasta térmica / grasa de silicón**<br><sub>`mec-pasta-termica`</sub> | n/a | — | Jeringa 1–30 g, Frasco, Blanca de silicón, Gris de alto rendimiento | alta |
 | **Kit aislante para TO-3 (mica + 2 bujes)**<br><sub>`mec-kit-aislante-to3`</sub> | n/a | — | Mica TO-3, Silicón TO-3 | media |
 | **Capuchones para botones táctiles 12x12 y 6x6**<br><sub>`mec-capuchon-boton`</sub> | n/a | — | Redondo A24 para 12x12 (rojo/azul/amarillo/verde/negro/blanco/gris), Cuadrado para 12x12, Para 6x6 vástago cuadrado/redondo, Kits surtidos | alta |
 | **Disipador pequeño para TO-220 con clip o tornillo (tipo U / aleta)**<br><sub>`mec-disipador-to220-clip`</sub> | THT | Aleta en U estampada; Extruido con aletas y pines para PCB (2p) | 20 x 15 x 10 mm, 21 x 15 x 11 mm, 25 x 23 x 16 mm, 30 x 25 x 12 mm, Con clip, Con 2 pines para PCB, Negro anodizado / natural | muy alta |
@@ -1401,7 +1391,6 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Estación de soldadura con cartucho T12**<br><sub>`her-estacion-t12`</sub> | n/a | — | kit con mango y fuente, cartuchos T12 | media |
 | **Estación profesional para soldar Steren con lupa y lámpara**<br><sub>`her-estacion-soldadura-steren-lupa`</sub> | n/a | — | — | media |
 | **Fuente de alimentación de laboratorio 0–30 V 0–5 A**<br><sub>`her-fuente-laboratorio-30v-5a`</sub> | n/a | — | 30 V 5 A, 30 V 3 A, 60 V 5 A | alta |
-| **Fuente para protoboard MB102 (3.3 V / 5 V)**<br><sub>`her-fuente-protoboard-mb102`</sub> | modulo | Módulo para riel de protoboard (2.54 mm) | MB102 | alta |
 | **Fuente de alimentación de laboratorio 0–30 V 0–10 A**<br><sub>`her-fuente-laboratorio-30v-10a`</sub> | n/a | — | 30 V 10 A | media |
 | **Generador de funciones DDS FeelElec FY6900**<br><sub>`her-generador-fy6900`</sub> | n/a | — | FY6900-20M, FY6900-60M, FY6900-100M | media |
 | **Generador de funciones en módulo/kit (XR2206, AD9833)**<br><sub>`her-generador-funciones-modulo`</sub> | modulo | Módulo AD9833 (tipo CJMCU-9833) con tira de pines 1x7 (7p, 2.54 mm) | kit XR2206, módulo AD9833 | media |
