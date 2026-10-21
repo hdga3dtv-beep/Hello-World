@@ -1,0 +1,3528 @@
+{
+  "group": "11-complementos-placas-sensores",
+  "sources": [
+    "https://uelectronics.com/producto/fpga-altera-cyclone-iv-ep4ce6e-kit-desarrollo/",
+    "https://uelectronics.com/producto/fpga-altera-cyclone-iv-ep4ce6-carcasa-kit-desarrollo-ep4ce/",
+    "https://uelectronics.com/producto/programador-usb-blaster-altera-cpld-fpga/",
+    "https://uelectronics.com/categoria-producto/tarjetas-desarrollo/fpga-y-riscv/",
+    "https://uelectronics.com/producto/lj12a3-4-z-bx-npn-sensor-de-proximidad-inductivo/",
+    "https://uelectronics.com/producto/lj12a3-4-z-by-pnp-sensor-de-proximidad-inductivo/",
+    "https://uelectronics.com/producto/control-remoto-inalambrico-receptor-y-transmisor-315mhz-ic2262-2272-4-canales/",
+    "https://uelectronics.com/producto/camara-vga-ov7670-640x480-arduino-raspberry-sin-fifo/",
+    "https://uelectronics.com/producto/qtr-8a-modulo-de-seguimiento-8-canales/",
+    "https://www.electrokit.com/en/qtr-8a-reflectance-sensor-array",
+    "https://www.robotshop.com/es/products/pololu-qtr-8a-infrared-sensor-array",
+    "https://wiki.dfrobot.com/SEN0557",
+    "https://www.elemon.com.ar/images/industry_news/11-HLK-LD2410-user-manual-V1.02.pdf",
+    "https://www.melopero.com/?p=50055",
+    "https://www.electroniclinic.com/lm393-speed-sensor-with-arduino-using-l9110-motor-driver-circuit-and-code-explained/",
+    "https://www.abasteo.mx/Electrodomesticos/Para-Ninos/Juguetes/Steren-Kit-de-Inicio-en-la-Programacion-K-960-Arduino-Transparente.html"
+  ],
+  "items": [
+    {
+      "id": "brd-kit-inicio-arduino-uno",
+      "name": "Kit de inicio para Arduino UNO R3 (genérico: básico, Super Starter y RFID)",
+      "aliases": [
+        "starter kit Arduino",
+        "kit básico Arduino UNO",
+        "Super Starter Kit UNO R3",
+        "kit RFID Arduino",
+        "kit de aprendizaje Arduino",
+        "kit Arduino para principiantes",
+        "UNO R3 starter kit"
+      ],
+      "category": "placas_desarrollo",
+      "subcategory": "kits_inicio",
+      "description": "Caja con una placa UNO R3 compatible (CH340), cable USB, protoboard, cables dupont y un surtido de componentes y módulos para las prácticas típicas de iniciación. Es lo que piden muchas escuelas como material de la materia de programación o electrónica digital.",
+      "mounting": "n/a",
+      "packages": [],
+      "pinout": [],
+      "common_values": [
+        "Kit básico (UNO, protoboard 400/830, LEDs, resistencias, botones, buzzer, potenciómetro, LDR)",
+        "Super Starter Kit (además LCD 1602, servo SG90, 28BYJ-48 + ULN2003, HC-SR04, DHT11, control y receptor IR, display de 7 segmentos, 74HC595, relevador, teclado 4x4, joystick)",
+        "Kit RFID (agrega lector RC522 con tarjeta y llavero)",
+        "Versión con Mega 2560 (Mega starter kit)"
+      ],
+      "specs": {
+        "placa_incluida": "UNO R3 compatible (ATmega328P, CH340) en la mayoría; algunos traen UNO original o Mega 2560",
+        "contenido_tipico": "protoboard, jumpers macho-macho y macho-hembra, LEDs 5 mm, LED RGB, resistencias 220 Ω/1 kΩ/10 kΩ, botones 6x6, potenciómetro 10 kΩ, LDR, buzzer activo y pasivo, 74HC595, display 7 segmentos 1 y 4 dígitos, sensor de temperatura, portapilas 9 V",
+        "alimentacion": "USB 5 V o pila de 9 V con conector a plug 5.5 x 2.1 mm"
+      },
+      "schematic_symbol": "ninguno",
+      "typical_uses": [
+        "Prácticas de iniciación a Arduino (semáforo, luces secuenciales, lectura de sensores)",
+        "Materia de programación o sistemas digitales en secundaria técnica, CONALEP y CECyT",
+        "Primer contacto con sensores, displays y motores"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Geek Factory",
+        "Electrónica 5Hz",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "muy_alta",
+      "price_mxn_approx": null,
+      "notes": "Kit de contenido variable: cada componente está en el inventario como artículo propio (brd-arduino-uno-r3-clon-ch340-dip, mat-protoboard-830, dsp-lcd-16x2, act-servo-sg90, act-motor-pasos-28byj48, mod-uln2003-driver, sen-hc-sr04, sen-dht11-modulo, com-rfid-rc522, emc-teclado-membrana-4x4, etc.); para el diseño de PCB usa las huellas de esos artículos. Steren vende un 'Kit de inicio en la programación' K-960 compatible con Arduino; su contenido no se verificó. Precio no verificado."
+    },
+    {
+      "id": "brd-arduino-starter-kit-oficial",
+      "name": "Arduino Starter Kit oficial (UNO + libro de 15 proyectos)",
+      "aliases": [
+        "K000007",
+        "K040007 (edición en español)",
+        "Arduino Starter Kit",
+        "kit oficial Arduino",
+        "Arduino Projects Book",
+        "Starter Kit R4 (edición con UNO R4)"
+      ],
+      "category": "placas_desarrollo",
+      "subcategory": "kits_inicio",
+      "description": "Kit oficial de Arduino con placa UNO, libro impreso de 15 proyectos (en español en la edición K040007), base de madera para montar placa y protoboard, y los componentes de los proyectos (motor, servo, LCD, puente H, optoacopladores, MOSFET, sensores).",
+      "mounting": "n/a",
+      "packages": [],
+      "pinout": [],
+      "common_values": [
+        "Edición en inglés (K000007)",
+        "Edición en español (K040007)",
+        "Edición R4 (con UNO R4)"
+      ],
+      "specs": {
+        "placa_incluida": "Arduino UNO R3 original (o UNO R4 en la edición R4)",
+        "contenido_tipico": "protoboard 400 puntos, base de madera, conector de pila 9 V, ~70 jumpers rígidos, 6 fotorresistencias, 3 potenciómetros 10 kΩ, 10 botones, sensor de temperatura TMP36, sensor de inclinación, LCD 16x2, LED blanco, LED RGB, LEDs rojos/verdes/amarillos/azules, motor DC 6/9 V, micro servo, piezo, puente H L293D, 2 optoacopladores 4N35, 2 MOSFET IRF520, capacitores 100 µF/100 nF/100 pF, diodos 1N4007, filtros de color (gels), tira de pines y resistencias de 220 Ω a 10 MΩ",
+        "proyectos": "15 proyectos guiados (Spaceship Interface, Love-o-Meter, Color Mixing Lamp, Keyboard Instrument, Motorized Pinwheel, Crystal Ball, Knock Lock, etc.)"
+      },
+      "schematic_symbol": "ninguno",
+      "typical_uses": [
+        "Curso introductorio de Arduino con libro guiado",
+        "Laboratorios de universidades y talleres maker"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Lista de contenido de memoria según la edición clásica; puede cambiar entre revisiones (verificar en la caja). Disponibilidad y precio en tiendas mexicanas no verificados en esta investigación. Las piezas sueltas tienen artículo propio en el inventario (brd-arduino-uno-r3, sen-tmp36, dsp-lcd-16x2, ic-l293d, opt-4n25-4n35, etc.)."
+    },
+    {
+      "id": "brd-kit-robot-chasis-2wd-4wd",
+      "name": "Kit chasis de robot (carro inteligente) 2WD / 4WD para Arduino",
+      "aliases": [
+        "smart car chassis",
+        "chasis 2WD acrílico",
+        "kit carro robot 4WD",
+        "chasis robot seguidor de línea",
+        "robot car kit",
+        "kit carrito Arduino",
+        "chasis de robot evasor"
+      ],
+      "category": "placas_desarrollo",
+      "subcategory": "kits_inicio",
+      "description": "Base de acrílico (a veces metálica) con 2 o 4 motorreductores amarillos TT, llantas, rueda loca (en 2WD), portapilas y tornillería; es la plataforma más usada para robots seguidores de línea, evasores de obstáculos y carritos por Bluetooth.",
+      "mounting": "n/a",
+      "packages": [],
+      "pinout": [],
+      "common_values": [
+        "2WD acrílico (2 motores TT + rueda loca)",
+        "4WD acrílico de 2 niveles",
+        "Kit completo (chasis + UNO + L298N + HC-SR04 + sensores de línea + HC-05)"
+      ],
+      "specs": {
+        "motores": "Motorreductores TT 3–6 V (ver act-motor-tt), 2 o 4 piezas",
+        "alimentacion": "Portapilas 4 x AA (6 V) o porta 2 x 18650 según kit",
+        "accesorios": "Discos encoder de 20 ranuras para el motor TT en muchos kits 2WD, interruptor, separadores y tornillería M3"
+      },
+      "schematic_symbol": "ninguno",
+      "typical_uses": [
+        "Robot seguidor de línea",
+        "Robot evasor de obstáculos con HC-SR04",
+        "Carrito controlado por Bluetooth (HC-05) o control PS2",
+        "Concursos escolares de robótica"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Geek Factory",
+        "Electrónica 5Hz",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "No es una placa electrónica: los componentes que se sueldan o conectan están en el inventario (act-motor-tt, mod-l298n, sen-velocidad-ranura-lm393, sen-tcrt5000, sen-seguidor-linea-multicanal, sen-hc-sr04). La posición de los barrenos del acrílico varía entre fabricantes: medir antes de diseñar una PCB que se atornille al chasis. Precio no verificado."
+    },
+    {
+      "id": "brd-fpga-cyclone-iv-ep4ce6",
+      "name": "Tarjeta de desarrollo FPGA Altera Cyclone IV EP4CE6 (placa mínima / kit de prácticas)",
+      "aliases": [
+        "EP4CE6E22C8N",
+        "Cyclone IV EP4CE6",
+        "FPGA Altera",
+        "tarjeta FPGA",
+        "placa FPGA EP4CE6",
+        "RZ-EasyFPGA A2.2 (similar, con display y VGA)",
+        "Intel Cyclone IV"
+      ],
+      "category": "placas_desarrollo",
+      "subcategory": "fpga_cpld",
+      "description": "Placa con FPGA Intel/Altera Cyclone IV EP4CE6 (EQFP-144), oscilador de 50 MHz, memoria de configuración EPCS, conector JTAG de 10 pines y headers de E/S; las versiones tipo kit agregan LEDs, botones, display de 7 segmentos de 4 dígitos, VGA, PS/2 y RS-232. Se programa en VHDL o Verilog con Quartus.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa con headers de E/S a 2.54 mm (distribución variable según fabricante)",
+          "pins": null,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": "≈76 x 50 mm (versión E de UNIT; otras varían)",
+          "lead_diameter_mm": 0.64,
+          "notes": "Conector JTAG IDC macho 2x5 a 2.54 mm (filas a 2.54 mm). Alimentación por jack 5.5 x 2.1 mm o USB (5 V). El número y orden de pines de E/S cambia entre modelos: tomar la asignación del manual o del esquemático de la placa concreta."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "TCK",
+          "function": "Reloj JTAG (DCLK en modo AS)"
+        },
+        {
+          "pin": "2",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "3",
+          "name": "TDO",
+          "function": "Datos del objetivo al programador (CONF_DONE en AS)"
+        },
+        {
+          "pin": "4",
+          "name": "VCC",
+          "function": "Referencia de voltaje del objetivo (VCC_TRGT)"
+        },
+        {
+          "pin": "5",
+          "name": "TMS",
+          "function": "Selección de modo JTAG (nCONFIG en AS)"
+        },
+        {
+          "pin": "6",
+          "name": "NC",
+          "function": "Sin conexión en JTAG (nCE en AS)"
+        },
+        {
+          "pin": "7",
+          "name": "NC",
+          "function": "Sin conexión en JTAG (DATAOUT en AS)"
+        },
+        {
+          "pin": "8",
+          "name": "NC",
+          "function": "Sin conexión en JTAG (nCS en AS)"
+        },
+        {
+          "pin": "9",
+          "name": "TDI",
+          "function": "Datos del programador al objetivo (ASDI en AS)"
+        },
+        {
+          "pin": "10",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "PWR",
+          "name": "5V / GND",
+          "function": "Entrada de 5 V (jack o USB); reguladores internos a 3.3 V, 2.5 V y 1.2 V"
+        },
+        {
+          "pin": "I/O",
+          "name": "PIN_xx",
+          "function": "E/S de usuario a 3.3 V LVTTL (no toleran 5 V); el número de pin del FPGA viene serigrafiado"
+        }
+      ],
+      "common_values": [
+        "Placa mínima (FPGA + reloj + EPCS + headers)",
+        "Kit con periféricos (LEDs, botones, 4 dígitos, VGA, PS/2, RS-232)",
+        "Kit con caja, USB Blaster y control remoto IR"
+      ],
+      "specs": {
+        "fpga": "EP4CE6E22C8N: 6,272 elementos lógicos, 2 PLL, EQFP-144",
+        "reloj": "50 MHz",
+        "configuracion": "EPCS4 o EPCS16 según versión (las fichas de UNIT difieren)",
+        "programacion": "JTAG / Active Serial con USB Blaster (brd-prog-usb-blaster)",
+        "software": "Quartus Prime Lite (gratuito)",
+        "logica": "3.3 V"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Prácticas de diseño digital en VHDL/Verilog (tecnológicos y universidades)",
+        "Contadores, máquinas de estados, controlador VGA",
+        "Procesador suave Nios II"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT (kit EP4CE6E y kit con carcasa EP4CE). Las dos fichas de UNIT no coinciden en la memoria EPCS/SDRAM; confirmar con el esquemático. Dimensiones de la ficha de UNIT, no medidas. El pinout de E/S depende del modelo."
+    },
+    {
+      "id": "brd-prog-usb-blaster",
+      "name": "Programador USB Blaster (clon) para FPGA/CPLD Intel-Altera",
+      "aliases": [
+        "USB Blaster",
+        "USB-Blaster",
+        "Altera USB Blaster",
+        "programador JTAG Altera",
+        "cable de programación Quartus",
+        "programador CPLD FPGA"
+      ],
+      "category": "placas_desarrollo",
+      "subcategory": "programadores",
+      "description": "Programador USB compatible con el USB-Blaster de Altera/Intel para cargar diseños a FPGA Cyclone y CPLD MAX por JTAG o a la memoria EPCS por Active Serial desde Quartus.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Caja con cable USB y cable plano IDC hembra 2x5",
+          "pins": 10,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": 2.54,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "En la placa objetivo se pone un header macho 2x5 a 2.54 mm (de preferencia con guía/caja para no invertirlo)."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "TCK",
+          "function": "Reloj JTAG (DCLK en modo AS)"
+        },
+        {
+          "pin": "2",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "3",
+          "name": "TDO",
+          "function": "Datos del objetivo al programador (CONF_DONE en AS)"
+        },
+        {
+          "pin": "4",
+          "name": "VCC",
+          "function": "Referencia de voltaje del objetivo (VCC_TRGT)"
+        },
+        {
+          "pin": "5",
+          "name": "TMS",
+          "function": "Selección de modo JTAG (nCONFIG en AS)"
+        },
+        {
+          "pin": "6",
+          "name": "NC",
+          "function": "Sin conexión en JTAG (nCE en AS)"
+        },
+        {
+          "pin": "7",
+          "name": "NC",
+          "function": "Sin conexión en JTAG (DATAOUT en AS)"
+        },
+        {
+          "pin": "8",
+          "name": "NC",
+          "function": "Sin conexión en JTAG (nCS en AS)"
+        },
+        {
+          "pin": "9",
+          "name": "TDI",
+          "function": "Datos del programador al objetivo (ASDI en AS)"
+        },
+        {
+          "pin": "10",
+          "name": "GND",
+          "function": "Tierra"
+        }
+      ],
+      "common_values": [
+        "Clon económico (caja de plástico)",
+        "Versión 'Rev. C' de alta velocidad"
+      ],
+      "specs": {
+        "interfaz": "USB 2.0",
+        "modos": "JTAG, Active Serial (AS) y Passive Serial (PS)",
+        "voltaje_objetivo": "Toma la referencia del pin 4 (VCC del objetivo)",
+        "software": "Quartus Prime (driver incluido en la instalación)"
+      },
+      "schematic_symbol": "conector",
+      "typical_uses": [
+        "Programar tarjetas FPGA Cyclone IV (brd-fpga-cyclone-iv-ep4ce6)",
+        "Programar CPLD MAX II (EPM240/EPM570)",
+        "Grabar la memoria de configuración EPCS"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT. El pinout es el del conector estándar de 10 pines de Altera (entre paréntesis la función en modo AS). Algunos clones muy baratos fallan con objetivos de 1.8–2.5 V: revisar la ficha."
+    },
+    {
+      "id": "brd-stm32-nucleo-64",
+      "name": "STM32 Nucleo-64 (NUCLEO-F401RE / F411RE / F446RE / L476RG)",
+      "aliases": [
+        "Nucleo-64",
+        "NUCLEO-F401RE",
+        "NUCLEO-F411RE",
+        "NUCLEO-F446RE",
+        "NUCLEO-L476RG",
+        "Nucleo ST",
+        "tarjeta Nucleo STM32"
+      ],
+      "category": "placas_desarrollo",
+      "subcategory": "stm32",
+      "description": "Placa oficial de STMicroelectronics con MCU STM32 en LQFP-64, depurador ST-LINK integrado (puerto serie virtual incluido), headers hembra compatibles con shields Arduino UNO y conectores ST morpho con todos los pines del MCU.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa Nucleo-64: headers Arduino UNO R3 hembra + 2 conectores ST morpho macho 2x19",
+          "pins": null,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": 2.54,
+          "body_mm": null,
+          "lead_diameter_mm": 0.64,
+          "notes": "Los headers Arduino siguen la plantilla de brd-arduino-uno-r3 (incluido el desfase entre D7 y D8); los morpho CN7 y CN10 son 2x19 a 2.54 mm en los bordes largos. Dimensiones de la placa no verificadas aquí (consultar el manual UM1724 de ST). La parte del ST-LINK se puede separar en revisiones antiguas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "D0",
+          "name": "PA3",
+          "function": "USART2 RX (puerto serie virtual del ST-LINK)"
+        },
+        {
+          "pin": "D1",
+          "name": "PA2",
+          "function": "USART2 TX (puerto serie virtual del ST-LINK)"
+        },
+        {
+          "pin": "D2",
+          "name": "PA10",
+          "function": "E/S"
+        },
+        {
+          "pin": "D3",
+          "name": "PB3",
+          "function": "E/S / PWM"
+        },
+        {
+          "pin": "D4",
+          "name": "PB5",
+          "function": "E/S"
+        },
+        {
+          "pin": "D5",
+          "name": "PB4",
+          "function": "E/S / PWM"
+        },
+        {
+          "pin": "D6",
+          "name": "PB10",
+          "function": "E/S / PWM"
+        },
+        {
+          "pin": "D7",
+          "name": "PA8",
+          "function": "E/S"
+        },
+        {
+          "pin": "D8",
+          "name": "PA9",
+          "function": "E/S"
+        },
+        {
+          "pin": "D9",
+          "name": "PC7",
+          "function": "E/S / PWM"
+        },
+        {
+          "pin": "D10",
+          "name": "PB6",
+          "function": "SPI CS / PWM"
+        },
+        {
+          "pin": "D11",
+          "name": "PA7",
+          "function": "SPI1 MOSI / PWM"
+        },
+        {
+          "pin": "D12",
+          "name": "PA6",
+          "function": "SPI1 MISO"
+        },
+        {
+          "pin": "D13",
+          "name": "PA5",
+          "function": "SPI1 SCK y LED de usuario LD2"
+        },
+        {
+          "pin": "D14",
+          "name": "PB9",
+          "function": "I2C1 SDA"
+        },
+        {
+          "pin": "D15",
+          "name": "PB8",
+          "function": "I2C1 SCL"
+        },
+        {
+          "pin": "A0",
+          "name": "PA0",
+          "function": "ADC"
+        },
+        {
+          "pin": "A1",
+          "name": "PA1",
+          "function": "ADC"
+        },
+        {
+          "pin": "A2",
+          "name": "PA4",
+          "function": "ADC"
+        },
+        {
+          "pin": "A3",
+          "name": "PB0",
+          "function": "ADC"
+        },
+        {
+          "pin": "A4",
+          "name": "PC1",
+          "function": "ADC"
+        },
+        {
+          "pin": "A5",
+          "name": "PC0",
+          "function": "ADC"
+        },
+        {
+          "pin": "B1",
+          "name": "PC13",
+          "function": "Botón de usuario (azul)"
+        },
+        {
+          "pin": "PWR",
+          "name": "3V3 / 5V / VIN / GND / IOREF / RESET",
+          "function": "Header de alimentación tipo Arduino"
+        },
+        {
+          "pin": "CN7/CN10",
+          "name": "morpho",
+          "function": "Todos los pines del MCU en 2x19 + 2x19"
+        }
+      ],
+      "common_values": [
+        "NUCLEO-F401RE",
+        "NUCLEO-F411RE",
+        "NUCLEO-F446RE",
+        "NUCLEO-L476RG",
+        "NUCLEO-G431RB"
+      ],
+      "specs": {
+        "mcu": "STM32 en LQFP-64 (Cortex-M4 en F401/F411/F446/L476)",
+        "depurador": "ST-LINK/V2-1 integrado (V3 en revisiones nuevas), USB mini-B o micro-B",
+        "logica": "3.3 V (muchos pines toleran 5 V como entrada digital, no los analógicos)",
+        "software": "STM32CubeIDE, Arduino (STM32duino), Mbed, Keil"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Materias de microcontroladores/sistemas embebidos con ARM en universidades",
+        "Uso de shields Arduino con un MCU más potente",
+        "Control digital y procesamiento de señales"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Mapeo de pines Arduino válido para NUCLEO-F401RE/F411RE/F446RE (verificar en el manual UM1724 para otros modelos). Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "brd-rpi-t-cobbler",
+      "name": "Placa de extensión GPIO T-Cobbler de 40 pines para Raspberry Pi (con cable plano)",
+      "aliases": [
+        "T-Cobbler",
+        "T-Cobbler Plus",
+        "GPIO extension board",
+        "adaptador GPIO a protoboard",
+        "placa T GPIO Raspberry",
+        "cobbler 40 pines",
+        "cable plano GPIO 40 pines"
+      ],
+      "category": "placas_desarrollo",
+      "subcategory": "bases_expansion",
+      "description": "Placa en forma de T con conector IDC macho 2x20 y dos filas de pines que se insertan en el protoboard, más un cable plano de 40 hilos; lleva los GPIO de la Raspberry Pi al protoboard con cada pin rotulado.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa en T: conector IDC macho 2x20 + 2 filas de pines 1x20 hacia el protoboard",
+          "pins": 40,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": 0.64,
+          "notes": "El conector IDC es 2x20 a 2.54 mm (filas a 2.54 mm), igual que el header de la Raspberry Pi. Las dos filas que entran al protoboard quedan a ambos lados del canal central; su separación varía entre fabricantes (no verificada). El cable plano debe orientarse con la marca (hilo rojo) en el pin 1."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "3V3",
+          "function": "Alimentación 3.3 V"
+        },
+        {
+          "pin": "2",
+          "name": "5V",
+          "function": "Alimentación 5 V"
+        },
+        {
+          "pin": "3",
+          "name": "GPIO2",
+          "function": "SDA1 (I2C)"
+        },
+        {
+          "pin": "4",
+          "name": "5V",
+          "function": "Alimentación 5 V"
+        },
+        {
+          "pin": "5",
+          "name": "GPIO3",
+          "function": "SCL1 (I2C)"
+        },
+        {
+          "pin": "6",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "7",
+          "name": "GPIO4",
+          "function": "GPCLK0 / 1-Wire típico"
+        },
+        {
+          "pin": "8",
+          "name": "GPIO14",
+          "function": "TXD (UART)"
+        },
+        {
+          "pin": "9",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "10",
+          "name": "GPIO15",
+          "function": "RXD (UART)"
+        },
+        {
+          "pin": "11",
+          "name": "GPIO17",
+          "function": "E/S"
+        },
+        {
+          "pin": "12",
+          "name": "GPIO18",
+          "function": "PWM0 / PCM_CLK"
+        },
+        {
+          "pin": "13",
+          "name": "GPIO27",
+          "function": "E/S"
+        },
+        {
+          "pin": "14",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "15",
+          "name": "GPIO22",
+          "function": "E/S"
+        },
+        {
+          "pin": "16",
+          "name": "GPIO23",
+          "function": "E/S"
+        },
+        {
+          "pin": "17",
+          "name": "3V3",
+          "function": "Alimentación 3.3 V"
+        },
+        {
+          "pin": "18",
+          "name": "GPIO24",
+          "function": "E/S"
+        },
+        {
+          "pin": "19",
+          "name": "GPIO10",
+          "function": "SPI0 MOSI"
+        },
+        {
+          "pin": "20",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "21",
+          "name": "GPIO9",
+          "function": "SPI0 MISO"
+        },
+        {
+          "pin": "22",
+          "name": "GPIO25",
+          "function": "E/S"
+        },
+        {
+          "pin": "23",
+          "name": "GPIO11",
+          "function": "SPI0 SCLK"
+        },
+        {
+          "pin": "24",
+          "name": "GPIO8",
+          "function": "SPI0 CE0"
+        },
+        {
+          "pin": "25",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "26",
+          "name": "GPIO7",
+          "function": "SPI0 CE1"
+        },
+        {
+          "pin": "27",
+          "name": "ID_SD",
+          "function": "GPIO0, EEPROM de HAT (no usar)"
+        },
+        {
+          "pin": "28",
+          "name": "ID_SC",
+          "function": "GPIO1, EEPROM de HAT (no usar)"
+        },
+        {
+          "pin": "29",
+          "name": "GPIO5",
+          "function": "E/S"
+        },
+        {
+          "pin": "30",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "31",
+          "name": "GPIO6",
+          "function": "E/S"
+        },
+        {
+          "pin": "32",
+          "name": "GPIO12",
+          "function": "PWM0"
+        },
+        {
+          "pin": "33",
+          "name": "GPIO13",
+          "function": "PWM1"
+        },
+        {
+          "pin": "34",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "35",
+          "name": "GPIO19",
+          "function": "PCM_FS / SPI1 MISO / PWM1"
+        },
+        {
+          "pin": "36",
+          "name": "GPIO16",
+          "function": "E/S / SPI1 CE2"
+        },
+        {
+          "pin": "37",
+          "name": "GPIO26",
+          "function": "E/S"
+        },
+        {
+          "pin": "38",
+          "name": "GPIO20",
+          "function": "PCM_DIN / SPI1 MOSI"
+        },
+        {
+          "pin": "39",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "40",
+          "name": "GPIO21",
+          "function": "PCM_DOUT / SPI1 SCLK"
+        }
+      ],
+      "common_values": [
+        "Tipo T 40 pines con cable",
+        "Tipo recto (Cobbler) 40 pines",
+        "Versión de 26 pines (Raspberry Pi 1)"
+      ],
+      "specs": {
+        "compatibilidad": "Raspberry Pi 2/3/4/5, Zero (con header soldado) y otras SBC con GPIO de 40 pines",
+        "cable": "Cable plano IDC de 40 hilos, 1.27 mm entre hilos",
+        "logica": "3.3 V (los GPIO de la Raspberry Pi no toleran 5 V)"
+      },
+      "schematic_symbol": "header",
+      "typical_uses": [
+        "Prácticas de GPIO con Raspberry Pi en protoboard",
+        "Prototipos con sensores I2C/SPI",
+        "Kits de inicio de Raspberry Pi"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Geek Factory",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Pinout = header GPIO estándar de 40 pines (igual que brd-rpi-4b). Revisar la orientación: un cable invertido conecta 5 V a pines de 3.3 V. Disponibilidad en tiendas mexicanas no verificada en esta investigación; precio no verificado."
+    },
+    {
+      "id": "brd-shield-motor-l298p",
+      "name": "Motor Shield L298P para UNO (Arduino Motor Shield Rev3 y clones)",
+      "aliases": [
+        "Arduino Motor Shield Rev3",
+        "A000079",
+        "L298P shield",
+        "shield puente H L298P",
+        "Motor Shield R3",
+        "shield de motores L298P",
+        "Deek-Robot L298P (clon)"
+      ],
+      "category": "placas_desarrollo",
+      "subcategory": "shields",
+      "description": "Shield con el puente H doble L298P para manejar 2 motores DC o 1 motor a pasos bipolar con dirección, PWM y freno por canal, y sensado de corriente en la versión oficial.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Shield formato UNO R3",
+          "pins": 32,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": 48.26,
+          "body_mm": "68.6 x 53.3 mm (placa)",
+          "lead_diameter_mm": 0.64,
+          "notes": "Misma plantilla que brd-arduino-uno-r3: headers apilables de 2.54 mm (digital 10 + 8, power 8, analógico 6), con el desfase de 160 mil (4.064 mm) entre D7 y D8 y ≈48.26 mm entre la fila digital y la de power/analógica (aprox., verificar con la plantilla oficial). Cabecera ICSP 2x3 opcional."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "D12",
+          "name": "DIR A",
+          "function": "Dirección canal A (oficial Rev3)"
+        },
+        {
+          "pin": "D3",
+          "name": "PWM A",
+          "function": "Velocidad canal A (oficial Rev3)"
+        },
+        {
+          "pin": "D9",
+          "name": "BRAKE A",
+          "function": "Freno canal A (oficial Rev3)"
+        },
+        {
+          "pin": "A0",
+          "name": "SNS A",
+          "function": "Sensado de corriente canal A (1.65 V/A, oficial)"
+        },
+        {
+          "pin": "D13",
+          "name": "DIR B",
+          "function": "Dirección canal B (oficial Rev3)"
+        },
+        {
+          "pin": "D11",
+          "name": "PWM B",
+          "function": "Velocidad canal B (oficial Rev3)"
+        },
+        {
+          "pin": "D8",
+          "name": "BRAKE B",
+          "function": "Freno canal B (oficial Rev3)"
+        },
+        {
+          "pin": "A1",
+          "name": "SNS B",
+          "function": "Sensado de corriente canal B (oficial)"
+        },
+        {
+          "pin": "BORNERA",
+          "name": "VIN / GND / A+ A− / B+ B−",
+          "function": "Alimentación de motores y salidas de los dos canales"
+        }
+      ],
+      "common_values": [
+        "Oficial Arduino Motor Shield Rev3",
+        "Clon L298P (pines D10/D12 y D11/D13)"
+      ],
+      "specs": {
+        "driver": "L298P (PowerSO-20)",
+        "corriente": "2 A por canal (pico 4 A total según fabricante)",
+        "voltaje_motores": "5–12 V (oficial)",
+        "logica": "5 V"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Robots de 2 ruedas",
+        "Control de un motor a pasos bipolar",
+        "Prácticas de control de velocidad PWM"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Geek Factory",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Pinout listado = shield oficial Rev3. Muchos clones L298P usan otra asignación (p. ej. PWM A=D10, DIR A=D12, PWM B=D11, DIR B=D13) y no tienen freno ni sensado; revisar la serigrafía. Cortar el puente VIN del reverso si los motores usan más de 12 V. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "brd-shield-joystick",
+      "name": "Joystick Shield para UNO (Funduino V1.A: joystick + 6 botones)",
+      "aliases": [
+        "Joystick Shield V1.A",
+        "Funduino Joystick Shield",
+        "shield joystick",
+        "game shield Arduino",
+        "shield control de juego"
+      ],
+      "category": "placas_desarrollo",
+      "subcategory": "shields",
+      "description": "Shield con un joystick analógico de 2 ejes con botón y 6 botones, más conectores para nRF24L01, Nokia 5110, Bluetooth/serie e I2C; se usa como control remoto de robots.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Shield formato UNO R3",
+          "pins": 32,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": 48.26,
+          "body_mm": "68.6 x 53.3 mm (placa)",
+          "lead_diameter_mm": 0.64,
+          "notes": "Misma plantilla que brd-arduino-uno-r3: headers apilables de 2.54 mm (digital 10 + 8, power 8, analógico 6), con el desfase de 160 mil (4.064 mm) entre D7 y D8 y ≈48.26 mm entre la fila digital y la de power/analógica (aprox., verificar con la plantilla oficial). Cabecera ICSP 2x3 opcional."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "A0",
+          "name": "X",
+          "function": "Eje X del joystick"
+        },
+        {
+          "pin": "A1",
+          "name": "Y",
+          "function": "Eje Y del joystick"
+        },
+        {
+          "pin": "D8",
+          "name": "K",
+          "function": "Botón del joystick (presionar)"
+        },
+        {
+          "pin": "D2",
+          "name": "A",
+          "function": "Botón A"
+        },
+        {
+          "pin": "D3",
+          "name": "B",
+          "function": "Botón B"
+        },
+        {
+          "pin": "D4",
+          "name": "C",
+          "function": "Botón C"
+        },
+        {
+          "pin": "D5",
+          "name": "D",
+          "function": "Botón D"
+        },
+        {
+          "pin": "D6",
+          "name": "E",
+          "function": "Botón E"
+        },
+        {
+          "pin": "D7",
+          "name": "F",
+          "function": "Botón F"
+        },
+        {
+          "pin": "NRF",
+          "name": "2x4",
+          "function": "Zócalo para nRF24L01 (SPI D11/D12/D13 + CE/CSN)"
+        },
+        {
+          "pin": "SW",
+          "name": "3.3V / 5V",
+          "function": "Selector de voltaje de trabajo"
+        }
+      ],
+      "common_values": [
+        "V1.A"
+      ],
+      "specs": {
+        "compatibilidad": "UNO / Leonardo / Mega",
+        "botones": "activos en bajo (usar INPUT_PULLUP si el shield no trae pull-up)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Control remoto de robots con nRF24L01",
+        "Videojuegos sencillos con LCD Nokia 5110"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Asignación de pines de la versión Funduino V1.A; confirmar con la serigrafía. Los pines CE/CSN del zócalo nRF24L01 varían entre lotes (frecuentemente D9/D10). Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "brd-ttgo-t-display",
+      "name": "LILYGO TTGO T-Display ESP32 (pantalla IPS 1.14\" ST7789)",
+      "aliases": [
+        "TTGO T-Display",
+        "LILYGO T-Display",
+        "T-Display ESP32",
+        "ESP32 con pantalla 1.14",
+        "T-Display CH9102"
+      ],
+      "category": "placas_desarrollo",
+      "subcategory": "esp32",
+      "description": "Placa ESP32 con pantalla a color IPS de 1.14\" (135x240, ST7789V), dos botones, USB-C y cargador para batería LiPo con conector JST de 1.25 mm.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa con dos filas de pines a 2.54 mm",
+          "pins": null,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": 0.64,
+          "notes": "Número de pines, separación entre filas y dimensiones no verificados en esta investigación: medir la placa o consultar el repositorio de LILYGO antes de diseñar una base."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "TFT",
+          "name": "GPIO19 / 18 / 5 / 16 / 23 / 4",
+          "function": "Pantalla ST7789: MOSI 19, SCLK 18, CS 5, DC 16, RST 23, retroiluminación 4 (ocupados)"
+        },
+        {
+          "pin": "BTN",
+          "name": "GPIO0 / GPIO35",
+          "function": "Botones de usuario (GPIO0 también es el botón de arranque)"
+        },
+        {
+          "pin": "ADC",
+          "name": "GPIO34 / GPIO14",
+          "function": "Lectura del voltaje de batería por divisor (GPIO34) habilitada con GPIO14"
+        },
+        {
+          "pin": "I/O",
+          "name": "GPIO2, 12, 13, 15, 17, 21, 22, 25, 26, 27, 32, 33",
+          "function": "E/S libres en headers (21/22 = I2C)"
+        },
+        {
+          "pin": "IN",
+          "name": "GPIO36, 37, 38, 39",
+          "function": "Sólo entrada"
+        },
+        {
+          "pin": "PWR",
+          "name": "5V / 3V3 / GND",
+          "function": "Alimentación"
+        }
+      ],
+      "common_values": [
+        "4 MB flash",
+        "16 MB flash",
+        "Versión con CH9102 o CP2104"
+      ],
+      "specs": {
+        "mcu": "ESP32 (Wi-Fi + Bluetooth)",
+        "pantalla": "IPS 1.14\" 135x240 ST7789V (SPI)",
+        "usb": "USB-C",
+        "bateria": "Cargador LiPo 1S integrado, conector JST 1.25 mm"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Relojes y estaciones meteorológicas con pantalla",
+        "Monitores IoT portátiles"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Pines de la pantalla según la configuración de TFT_eSPI para esta placa. El orden físico de los headers no se verificó: usar la serigrafía. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "brd-xbee-explorer-usb",
+      "name": "Adaptador USB para XBee (XBee Explorer / XBee USB Adapter)",
+      "aliases": [
+        "XBee Explorer USB",
+        "XBee USB adapter",
+        "base XBee USB",
+        "adaptador XBee FT232",
+        "adaptador XBee CH340",
+        "XBee USB board"
+      ],
+      "category": "placas_desarrollo",
+      "subcategory": "adaptadores_usb_serial",
+      "description": "Base con zócalos hembra de 2 mm para un módulo XBee y convertidor USB-serie con regulador de 3.3 V y LEDs de estado; sirve para configurar y actualizar los XBee con XCTU o usarlos como radio desde la PC.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Zócalo para XBee 2x 1x10 hembra paso 2.0 mm",
+          "pins": 20,
+          "pitch_mm": 2.0,
+          "row_spacing_mm": 22.0,
+          "body_mm": null,
+          "lead_diameter_mm": 0.5,
+          "notes": "Footprint de XBee THT: 2 filas de 10 pines a 2.0 mm, separadas 22.0 mm (ver com-xbee-s2c). Conector USB mini/micro según versión; algunas placas sacan TX/RX/DTR/RTS a un header de 2.54 mm."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "USB",
+          "name": "USB",
+          "function": "Mini-USB o micro-USB a la PC (5 V)"
+        },
+        {
+          "pin": "XBEE",
+          "name": "zócalo 20 pines",
+          "function": "Mismo pinout que com-xbee-s2c (1 VCC, 2 DOUT, 3 DIN, 10 GND…)"
+        },
+        {
+          "pin": "LED",
+          "name": "PWR / RSSI / ASSOC / TX / RX",
+          "function": "Indicadores de estado"
+        }
+      ],
+      "common_values": [
+        "Con FT232RL / FT231X",
+        "Con CH340",
+        "Con botón de reset"
+      ],
+      "specs": {
+        "regulador": "3.3 V para el XBee",
+        "interfaz": "USB a UART con DTR/RTS (permite actualizar firmware)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Configurar XBee con XCTU",
+        "Coordinador Zigbee conectado a la PC"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Necesario para trabajar con com-xbee-s2c. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "com-rf-control-4ch-pt2272",
+      "name": "Kit control remoto RF de 4 canales con receptor decodificador (PT2262/PT2272, 315/433 MHz)",
+      "aliases": [
+        "control remoto RF 4 botones",
+        "receptor M4 PT2272",
+        "receptor L4",
+        "receptor T4",
+        "IC2262/2272",
+        "llavero RF 315 MHz",
+        "kit control remoto inalámbrico 4 canales",
+        "PT2272-M4",
+        "SC2272"
+      ],
+      "category": "modulos_comunicacion",
+      "subcategory": "rf_sub_ghz",
+      "description": "Llavero transmisor de 4 botones (codificador PT2262) y receptor superregenerativo con decodificador PT2272 que entrega 4 salidas lógicas, una por botón, más una salida VT de dato válido; no necesita programación.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Receptor con header macho 1x7 a 2.54 mm",
+          "pins": 7,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": 0.64,
+          "notes": "Orden de pines según serigrafía (no estandarizado). Pad o resorte para antena. Dimensiones no verificadas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "VCC",
+          "name": "+5V",
+          "function": "Alimentación 5 V"
+        },
+        {
+          "pin": "GND",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "D0",
+          "name": "D0",
+          "function": "Salida del botón correspondiente (activa en alto)"
+        },
+        {
+          "pin": "D1",
+          "name": "D1",
+          "function": "Salida del botón correspondiente"
+        },
+        {
+          "pin": "D2",
+          "name": "D2",
+          "function": "Salida del botón correspondiente"
+        },
+        {
+          "pin": "D3",
+          "name": "D3",
+          "function": "Salida del botón correspondiente"
+        },
+        {
+          "pin": "VT",
+          "name": "VT",
+          "function": "Valid Transmission: alto mientras recibe un código válido"
+        }
+      ],
+      "common_values": [
+        "315 MHz",
+        "433 MHz",
+        "M4 (momentáneo)",
+        "L4 (enclavado)",
+        "T4 (conmutado, SC2272)"
+      ],
+      "specs": {
+        "codificador_decodificador": "PT2262 / PT2272 (o equivalentes SC2262/SC2272, también PT2260 en el llavero)",
+        "alimentacion_receptor": "5 V",
+        "bateria_llavero": "12 V tipo 23A (común)",
+        "alcance": "hasta ≈100 m en campo abierto según UNIT (en interiores mucho menos)",
+        "direccion": "Jumpers/pads de dirección en codificador y decodificador (deben coincidir)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Encender cargas a distancia con un módulo relevador",
+        "Control de portón o alarma casera",
+        "Control remoto de carritos sencillos sin microcontrolador"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT (315 MHz, IC2262/2272, 4 canales). La relación botón A–D ↔ D0–D3 cambia entre fabricantes; probar con un LED. Los decodificadores PT2272 sueltos están en ic-pt2272 / ic-pt2262. Sin direccionamiento propio: varios receptores con la misma dirección responden al mismo llavero."
+    },
+    {
+      "id": "com-rf433-receptor-relevador",
+      "name": "Receptor RF 433 MHz con relevador (1/2/4 canales, código de aprendizaje EV1527) y control",
+      "aliases": [
+        "receptor RF con relé",
+        "interruptor inalámbrico 433 MHz",
+        "RF relay receiver",
+        "módulo relé RF 12V",
+        "receptor de control de portón 433",
+        "EV1527 learning code",
+        "relevador inalámbrico"
+      ],
+      "category": "modulos_comunicacion",
+      "subcategory": "rf_sub_ghz",
+      "description": "Tarjeta receptora de 433 MHz con microcontrolador decodificador, botón de aprendizaje y 1, 2 o 4 relevadores con contactos COM/NO/NC; se empareja con controles de llavero de código aprendible (EV1527) y no requiere Arduino.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa con borneras de tornillo",
+          "pins": null,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Borneras para alimentación y para COM/NO/NC de cada relevador (paso típico 5.0–5.08 mm, no verificado). Algunas versiones vienen en caja plástica."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "V+",
+          "name": "+V",
+          "function": "Alimentación (12 V DC, 5 V DC o 127/220 V AC según versión)"
+        },
+        {
+          "pin": "GND",
+          "name": "GND",
+          "function": "Tierra / neutro de la alimentación"
+        },
+        {
+          "pin": "COMx",
+          "name": "COM",
+          "function": "Común del relevador x"
+        },
+        {
+          "pin": "NOx",
+          "name": "NO",
+          "function": "Contacto normalmente abierto del relevador x"
+        },
+        {
+          "pin": "NCx",
+          "name": "NC",
+          "function": "Contacto normalmente cerrado del relevador x"
+        },
+        {
+          "pin": "LEARN",
+          "name": "botón",
+          "function": "Botón de aprendizaje / selección de modo"
+        }
+      ],
+      "common_values": [
+        "1 canal 12 V",
+        "2 canales 12 V",
+        "4 canales 12 V",
+        "1 canal 5 V",
+        "1 canal 127/220 V AC"
+      ],
+      "specs": {
+        "frecuencia": "433.92 MHz (también 315 MHz)",
+        "modos": "momentáneo, enclavado (toggle) y enclavamiento mutuo, según el número de pulsaciones del botón de aprendizaje",
+        "relevador": "10 A nominal (contactos del relevador; el borne y las pistas suelen limitar menos)"
+      },
+      "schematic_symbol": "relevador",
+      "typical_uses": [
+        "Encender luces o bombas a distancia (domótica básica)",
+        "Apertura de portones y chapas eléctricas",
+        "Alarmas caseras con control de llavero"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Las versiones que se alimentan de la red (127/220 V) tienen partes vivas expuestas: usar gabinete y nunca en protoboard. El orden de borneras y la secuencia de aprendizaje varían entre fabricantes. Disponibilidad en tiendas específicas no verificada en esta investigación."
+    },
+    {
+      "id": "com-esp01-relevador",
+      "name": "Módulo relevador Wi-Fi para ESP-01 / ESP-01S (ESP8266 Relay)",
+      "aliases": [
+        "ESP-01S Relay",
+        "ESP8266 relay module",
+        "relé WiFi ESP-01",
+        "módulo relevador ESP8266 5V",
+        "ESP-01 relay v1.0",
+        "LC Technology ESP8266 relay"
+      ],
+      "category": "modulos_comunicacion",
+      "subcategory": "wifi",
+      "description": "Base con relevador de 5 V, regulador de 3.3 V y zócalo 2x4 para un ESP-01/ESP-01S; convierte el ESP8266 en un interruptor Wi-Fi sencillo para domótica.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Zócalo hembra 2x4 para ESP-01 + pines de alimentación + bornera de 3 tornillos",
+          "pins": null,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": 2.54,
+          "body_mm": null,
+          "lead_diameter_mm": 0.64,
+          "notes": "Zócalo 2x4 a 2.54 mm (filas a 2.54 mm) para el ESP-01. Pines de entrada +5 V / GND a 2.54 mm y bornera NO/COM/NC (paso no verificado). Dimensiones no verificadas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "VCC",
+          "name": "+5V",
+          "function": "Alimentación 5 V (regulador a 3.3 V para el ESP-01)"
+        },
+        {
+          "pin": "GND",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "NO",
+          "name": "NO",
+          "function": "Contacto normalmente abierto"
+        },
+        {
+          "pin": "COM",
+          "name": "COM",
+          "function": "Común del relevador"
+        },
+        {
+          "pin": "NC",
+          "name": "NC",
+          "function": "Contacto normalmente cerrado"
+        },
+        {
+          "pin": "ESP",
+          "name": "zócalo 2x4",
+          "function": "Pinout del ESP-01 (ver com-esp-01); el relevador se maneja con GPIO0 en la versión 'ESP-01S Relay v1.0'"
+        }
+      ],
+      "common_values": [
+        "ESP-01S Relay v1.0 (GPIO0, directo)",
+        "ESP8266 Relay con STC15F104 (comandos serie A0 01 01 A2 / A0 01 00 A1)",
+        "Placas de 2 y 4 relevadores con ESP-01 o ESP-12F"
+      ],
+      "specs": {
+        "alimentacion": "5 V",
+        "relevador": "5 V, contactos 10 A / 250 VAC nominales",
+        "control": "GPIO0 (v1.0) o UART hacia un microcontrolador auxiliar (versiones con STC15F104)"
+      },
+      "schematic_symbol": "relevador",
+      "typical_uses": [
+        "Apagador Wi-Fi para lámparas",
+        "Encender bombas o ventiladores desde el celular",
+        "Domótica con Tasmota, ESPHome o Home Assistant"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Hay dos diseños con el mismo aspecto: el ESP-01S Relay v1.0 usa GPIO0 (activo en bajo en la mayoría) y el de LC Technology usa un STC15F104 controlado por comandos serie; verificar cuál es antes de programar. El ESP-01 se compra aparte (com-esp-01). Con carga de 127 V cuidar el aislamiento: el módulo no tiene separación de seguridad amplia. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "com-usb-rs485",
+      "name": "Adaptador USB a RS-485 (CH340 / FT232 / CP2102)",
+      "aliases": [
+        "USB to RS485",
+        "convertidor USB RS485",
+        "USB-485",
+        "adaptador Modbus RTU USB",
+        "dongle RS485 CH340",
+        "convertidor USB RS-485 FT232"
+      ],
+      "category": "modulos_comunicacion",
+      "subcategory": "serial_industrial",
+      "description": "Dongle USB con convertidor USB-serie y transceptor RS-485 de control automático de dirección; permite a la PC hablar Modbus RTU con PLC, variadores, medidores y sensores industriales.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Dongle USB-A con bornera de 2 o 3 tornillos",
+          "pins": null,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Bornera A+ / B− (y GND en algunas). Paso de bornera no verificado."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "USB",
+          "name": "USB-A",
+          "function": "A la PC (puerto COM virtual)"
+        },
+        {
+          "pin": "A+",
+          "name": "A / D+",
+          "function": "Línea A del bus RS-485"
+        },
+        {
+          "pin": "B-",
+          "name": "B / D−",
+          "function": "Línea B del bus RS-485"
+        },
+        {
+          "pin": "GND",
+          "name": "GND",
+          "function": "Referencia (versiones de 3 terminales)"
+        }
+      ],
+      "common_values": [
+        "CH340",
+        "FT232RL",
+        "CP2102",
+        "Con o sin terminal GND",
+        "Versión aislada"
+      ],
+      "specs": {
+        "modo": "Semidúplex (half-duplex) con control automático de dirección",
+        "transceptor": "MAX485/SP485 o equivalente",
+        "velocidad": "hasta 115200 bps típico (varía por modelo)"
+      },
+      "schematic_symbol": "conector",
+      "typical_uses": [
+        "Leer medidores de energía y sensores Modbus RTU desde la PC",
+        "Depurar redes RS-485 con com-rs485-max485",
+        "Prácticas de redes industriales en tecnológicos"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Agregar resistencia de terminación de 120 Ω entre A y B en los extremos del bus largo. La nomenclatura A/B se invierte entre algunos fabricantes: si no hay comunicación, intercambiar. Disponibilidad en tiendas específicas no verificada en esta investigación."
+    },
+    {
+      "id": "com-antena-2-4ghz-sma",
+      "name": "Antena de 2.4 GHz con conector SMA / RP-SMA (Wi-Fi, Bluetooth, nRF24, Zigbee)",
+      "aliases": [
+        "antena WiFi 2.4 GHz",
+        "antena SMA 3 dBi",
+        "antena RP-SMA 5 dBi",
+        "antena para nRF24L01 PA LNA",
+        "antena ESP32-WROOM-32U",
+        "antena de látigo 2.4G"
+      ],
+      "category": "modulos_comunicacion",
+      "subcategory": "antenas",
+      "description": "Antena omnidireccional tipo látigo (recta o articulada) para la banda de 2.4 GHz con conector SMA o RP-SMA macho; se usa con módulos que traen conector SMA o U.FL mediante un pigtail.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Antena con conector SMA o RP-SMA macho",
+          "pins": 1,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "La huella en PCB es la del conector hembra (ver con-sma); para módulos con U.FL/IPEX se usa un pigtail (ver con-ufl-ipex). Longitud según ganancia (no verificada)."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "RF",
+          "function": "Vivo central (50 Ω)"
+        },
+        {
+          "pin": "2",
+          "name": "GND",
+          "function": "Cuerpo del conector / malla"
+        }
+      ],
+      "common_values": [
+        "2 dBi",
+        "3 dBi",
+        "5 dBi",
+        "SMA macho",
+        "RP-SMA macho",
+        "Recta o articulada",
+        "Con pigtail U.FL (IPEX) a SMA hembra"
+      ],
+      "specs": {
+        "frecuencia": "2.4–2.5 GHz",
+        "impedancia": "50 Ω",
+        "polarizacion": "Vertical, omnidireccional"
+      },
+      "schematic_symbol": "antena",
+      "typical_uses": [
+        "nRF24L01+PA+LNA de largo alcance",
+        "ESP32-WROOM-32U y módulos con U.FL",
+        "XBee con conector RP-SMA",
+        "Routers y adaptadores Wi-Fi"
+      ],
+      "stores": [
+        "Steren",
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "SMA y RP-SMA NO son compatibles entre sí (el pin central va en el macho o en la hembra según tipo): revisar el conector del módulo. Las de routers suelen ser RP-SMA; las de nRF24L01+PA+LNA, SMA. Disponibilidad en tiendas específicas no verificada en esta investigación."
+    },
+    {
+      "id": "com-antena-helicoidal-433",
+      "name": "Antena helicoidal de resorte 315 / 433 / 868 / 915 MHz (para soldar)",
+      "aliases": [
+        "antena resorte 433 MHz",
+        "helical antenna 433",
+        "antena espiral 433",
+        "antena de cobre para FS1000A",
+        "antena LoRa resorte",
+        "antena 315MHz resorte"
+      ],
+      "category": "modulos_comunicacion",
+      "subcategory": "antenas",
+      "description": "Pequeño resorte de cobre o latón estañado que se suelda al pad ANT de los módulos sub-GHz; mejora mucho el alcance de transmisores y receptores que vienen sin antena.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "Resorte con terminal recta para soldar",
+          "pins": 1,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Se suelda en el pad o barreno ANT del módulo. Diámetro, número de vueltas y largo dependen de la frecuencia y del fabricante (no verificados). Alternativa: cable recto de 1/4 de onda (≈17.3 cm para 433 MHz)."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "ANT",
+          "function": "Terminal a soldar en el pad de antena (sin tierra)"
+        }
+      ],
+      "common_values": [
+        "315 MHz",
+        "433 MHz",
+        "868 MHz",
+        "915 MHz",
+        "Versión con conector SMA (antena de goma corta)"
+      ],
+      "specs": {
+        "impedancia": "≈50 Ω nominal (dependiente del montaje)",
+        "tipo": "Helicoidal en modo normal, 1/4 de onda acortada"
+      },
+      "schematic_symbol": "antena",
+      "typical_uses": [
+        "FS1000A / XY-MK-5V / RXB6",
+        "LoRa Ra-02 y RFM95W",
+        "HC-12 y CC1101",
+        "Controles remotos de 315 MHz"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Comprar la antena de la misma frecuencia que el módulo: una de 433 MHz en un módulo de 915 MHz rinde poco. Disponibilidad en tiendas específicas no verificada en esta investigación."
+    },
+    {
+      "id": "com-control-ps2-inalambrico",
+      "name": "Control inalámbrico tipo PS2 (2.4 GHz) con receptor para Arduino",
+      "aliases": [
+        "control PS2 inalámbrico",
+        "PS2 wireless controller",
+        "mando PS2 robot",
+        "receptor PS2 2.4G",
+        "control PS2 Arduino",
+        "gamepad PS2 con receptor"
+      ],
+      "category": "modulos_comunicacion",
+      "subcategory": "rf_2_4ghz",
+      "description": "Control genérico estilo PlayStation 2 con receptor de 2.4 GHz; el receptor habla el protocolo serie síncrono del PS2 y se lee con la librería PS2X desde Arduino o ESP32. Muy usado en robots de competencia (sumo, futbol, carreras).",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Receptor con conector PS2 de 9 contactos o con header de pines a 2.54 mm",
+          "pins": null,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Muchos vendedores incluyen una plaquita adaptadora PS2 a pines dupont; el número de pines del adaptador varía (6 a 9)."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "DAT",
+          "function": "Datos del control al microcontrolador (requiere pull-up)"
+        },
+        {
+          "pin": "2",
+          "name": "CMD",
+          "function": "Comandos del microcontrolador al control"
+        },
+        {
+          "pin": "3",
+          "name": "MOT",
+          "function": "Alimentación de motores de vibración (no se usa normalmente)"
+        },
+        {
+          "pin": "4",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "5",
+          "name": "VCC",
+          "function": "Alimentación 3.3 V (muchos receptores toleran 5 V; verificar)"
+        },
+        {
+          "pin": "6",
+          "name": "ATT",
+          "function": "Selección (chip select)"
+        },
+        {
+          "pin": "7",
+          "name": "CLK",
+          "function": "Reloj"
+        },
+        {
+          "pin": "8",
+          "name": "NC",
+          "function": "Sin conexión"
+        },
+        {
+          "pin": "9",
+          "name": "ACK",
+          "function": "Reconocimiento (casi nunca se conecta)"
+        }
+      ],
+      "common_values": [
+        "Control + receptor",
+        "Con adaptador a pines dupont"
+      ],
+      "specs": {
+        "frecuencia": "2.4 GHz",
+        "alimentacion_control": "2 pilas AAA",
+        "libreria": "PS2X (Bill Porter)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Robots de sumo y futbol controlados",
+        "Carritos y brazos robóticos manuales"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Pinout = conector estándar del control PS2 (pin 1 a 9). La librería necesita 4 pines digitales (DAT, CMD, ATT, CLK). Disponibilidad en tiendas específicas no verificada en esta investigación."
+    },
+    {
+      "id": "com-fm-tea5767",
+      "name": "Módulo receptor de radio FM TEA5767 / RDA5807M (I2C)",
+      "aliases": [
+        "TEA5767",
+        "radio FM Arduino",
+        "RDA5807M",
+        "RRD-102",
+        "módulo FM 76–108 MHz",
+        "receptor FM I2C"
+      ],
+      "category": "modulos_comunicacion",
+      "subcategory": "radio_fm",
+      "description": "Sintonizador de radio FM estéreo controlado por I2C; la versión común del TEA5767 viene en placa con jack de 3.5 mm para audio y otro para antena, y el RDA5807M se vende como módulo SMD pequeño de castellaciones.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa TEA5767 con header 1x4 y dos jacks de 3.5 mm",
+          "pins": 4,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": 0.64,
+          "notes": "Orden del header según serigrafía (VCC, SDA, SCL, GND en la versión común; no verificado). Dimensiones no verificadas."
+        },
+        {
+          "name": "Módulo RDA5807M (RRD-102) de castellaciones",
+          "pins": 10,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Módulo SMD de 10 pads; paso y medidas no verificados en esta investigación: medir antes de hacer la huella."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "VCC",
+          "name": "VCC",
+          "function": "5 V (placa TEA5767) / 3.3 V (RDA5807M)"
+        },
+        {
+          "pin": "GND",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "SDA",
+          "name": "SDA",
+          "function": "Datos I2C"
+        },
+        {
+          "pin": "SCL",
+          "name": "SCL",
+          "function": "Reloj I2C"
+        },
+        {
+          "pin": "ANT",
+          "name": "ANT",
+          "function": "Antena (jack o pad)"
+        },
+        {
+          "pin": "L/R",
+          "name": "AUDIO",
+          "function": "Salida de audio estéreo de nivel línea (requiere amplificador, p. ej. mod-pam8403)"
+        }
+      ],
+      "common_values": [
+        "TEA5767 en placa con jacks",
+        "RDA5807M (RRD-102)"
+      ],
+      "specs": {
+        "banda": "76–108 MHz (TEA5767); 50/65–115 MHz (RDA5807M)",
+        "direccion_i2c": "0x60 (TEA5767); 0x10/0x11 (RDA5807M)",
+        "salida": "Audio de nivel línea, no maneja bocina directo"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Radio FM digital con Arduino y LCD",
+        "Práctica de comunicaciones (proyecto de radio)"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "El RDA5807M trabaja a 3.3 V: no conectarlo directo a 5 V. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "sen-velocidad-ranura-lm393",
+      "name": "Módulo sensor de velocidad óptico de ranura (LM393, FC-03 / HC-020K) con disco encoder",
+      "aliases": [
+        "sensor de velocidad",
+        "speed sensor module",
+        "FC-03",
+        "HC-020K",
+        "sensor de herradura",
+        "optointerruptor con LM393",
+        "encoder óptico para motor TT",
+        "MOCH22A"
+      ],
+      "category": "sensores",
+      "subcategory": "movimiento_orientacion",
+      "description": "Optointerruptor de ranura con comparador LM393 que da un pulso digital cada vez que una ranura del disco encoder pasa por el haz; se usa para medir RPM y distancia recorrida en robots.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Módulo FC-03 con header 1x4 a 2.54 mm",
+          "pins": 4,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": "≈32 x 14 x 7 mm (aprox., ficha de fabricante)",
+          "lead_diameter_mm": 0.64,
+          "notes": "Ranura de ≈5 mm. Barreno para tornillo M3 para fijarlo al chasis. HC-020K: header de 3 pines (VCC, OUT, GND)."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "VCC",
+          "function": "3.3–5 V"
+        },
+        {
+          "pin": "2",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "3",
+          "name": "D0",
+          "function": "Salida digital: un pulso por ranura (usar interrupción)"
+        },
+        {
+          "pin": "4",
+          "name": "A0",
+          "function": "Salida analógica del fototransistor (casi no se usa)"
+        }
+      ],
+      "common_values": [
+        "FC-03 (4 pines, LM393)",
+        "HC-020K (3 pines, con disco de 20 ranuras)",
+        "Disco encoder de 20 ranuras para motor TT"
+      ],
+      "specs": {
+        "voltaje": "3.3–5 V",
+        "ancho_ranura": "≈5 mm",
+        "salida": "TTL digital + analógica",
+        "calculo": "RPM = 60 / (tiempo entre pulsos en s × número de ranuras)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Odometría de robots con motores TT",
+        "Tacómetro",
+        "Contador de vueltas y de objetos"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Geek Factory",
+        "Electrónica 5Hz",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Orden de pines según serigrafía (varía). El optointerruptor suelto está en opt-interruptor-ranurado. Las salidas generan rebotes en los bordes de la ranura: filtrar por software o con capacitor. Disponibilidad en tiendas específicas no verificada en esta investigación."
+    },
+    {
+      "id": "sen-qtr-8a-8rc",
+      "name": "Arreglo de 8 sensores de reflectancia QTR-8A / QTR-8RC (Pololu y compatibles)",
+      "aliases": [
+        "QTR-8A",
+        "QTR-8RC",
+        "Pololu QTR-8",
+        "barra de 8 sensores IR",
+        "regleta seguidor de línea 8 canales",
+        "QTR-8A módulo de seguimiento 8 canales",
+        "QRE1113 x8"
+      ],
+      "category": "sensores",
+      "subcategory": "distancia_presencia",
+      "description": "Barra con 8 pares LED IR + fototransistor (QRE1113) a 9.525 mm para robots seguidores de línea de competencia; la versión A da 8 salidas analógicas y la RC se lee midiendo el tiempo de descarga con pines digitales.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Barra con header 1x11 a 2.54 mm",
+          "pins": 11,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": "74.9 x 12.7 x 3.2 mm (2.95 x 0.5 x 0.125 in, sin header)",
+          "lead_diameter_mm": 0.64,
+          "notes": "Sensores separados 9.525 mm (0.375 in). Se puede partir para usar 6 + 2 sensores. Orden del header según serigrafía. Algunos clones (como el de UNIT) tienen otras medidas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "VCC",
+          "name": "VCC",
+          "function": "3.3–5 V (puente de bypass para 3.3 V)"
+        },
+        {
+          "pin": "GND",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "1-8",
+          "name": "OUT1–OUT8",
+          "function": "Salida de cada sensor (analógica en QTR-8A; RC en QTR-8RC)"
+        },
+        {
+          "pin": "LEDON",
+          "name": "LEDON",
+          "function": "Control de los LEDs IR (en alto o sin conectar = encendidos; a GND = apagados)"
+        }
+      ],
+      "common_values": [
+        "QTR-8A (analógica)",
+        "QTR-8RC (digital RC)",
+        "Clones de 8 canales"
+      ],
+      "specs": {
+        "sensor": "QRE1113 (x8)",
+        "consumo": "≈100 mA con LEDs encendidos",
+        "distancia_optima": "≈3 mm (máximo recomendado ≈6 mm)",
+        "libreria": "QTRSensors (Pololu)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Robots seguidores de línea de velocidad con control PID",
+        "Concursos de robótica escolares"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Medidas y pitch de los sensores según Pololu (vía distribuidores). UNIT vende un 'QTR-8A módulo de seguimiento 8 canales' cuya ficha da otras medidas (124 x 30 mm) e interfaz distinta: confirmar qué modelo es antes de diseñar. Pololu sustituyó estos modelos por la serie QTR-MD-08A/08RC con pinout similar."
+    },
+    {
+      "id": "sen-inductivo-lj12a3",
+      "name": "Sensor de proximidad inductivo LJ12A3-4-Z/BX (NPN) / LJ12A3-4-Z/BY (PNP), M12",
+      "aliases": [
+        "LJ12A3-4-Z/BX",
+        "LJ12A3-4-Z/BY",
+        "sensor inductivo M12",
+        "sensor de metal",
+        "proximity switch NPN",
+        "sensor final de carrera inductivo",
+        "sensor de proximidad para CNC"
+      ],
+      "category": "sensores",
+      "subcategory": "distancia_presencia",
+      "description": "Sensor industrial cilíndrico roscado M12 que detecta metal sin contacto a unos 4 mm; salida a transistor NPN o PNP normalmente abierta y LED indicador, alimentado de 6 a 36 V.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Cuerpo roscado M12 con 2 tuercas y cable de 3 hilos",
+          "pins": 3,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Se fija a través de un barreno de 12 mm con las tuercas. Largo del cuerpo y del cable no verificados."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "CAFÉ",
+          "name": "+V",
+          "function": "Alimentación 6–36 V DC"
+        },
+        {
+          "pin": "AZUL",
+          "name": "0V",
+          "function": "Tierra"
+        },
+        {
+          "pin": "NEGRO",
+          "name": "OUT",
+          "function": "Salida NPN (BX) o PNP (BY), normalmente abierta, máx. 300 mA"
+        }
+      ],
+      "common_values": [
+        "LJ12A3-4-Z/BX (NPN NO)",
+        "LJ12A3-4-Z/BY (PNP NO)",
+        "LJ12A3-4-Z/AX (NPN NC)",
+        "LJ18A3-8-Z/BX (M18, 8 mm)"
+      ],
+      "specs": {
+        "distancia_deteccion": "4 mm (acero; menor con aluminio o cobre)",
+        "alimentacion": "6–36 V DC",
+        "corriente_salida": "300 mA",
+        "salida": "Transistor NPN o PNP, NO"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Sensor de home en CNC e impresoras 3D (autonivelado)",
+        "Conteo de piezas metálicas en bandas",
+        "Prácticas de sensores industriales en CONALEP y tecnológicos (mecatrónica)"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT (versiones NPN y PNP). Alimentado a 12–24 V, la salida no debe ir directo a un pin de 5 V/3.3 V: con NPN usar pull-up al voltaje lógico (o INPUT_PULLUP) y revisar que el sensor no tenga pull-up interno a +V; con PNP usar divisor o optoacoplador. Colores según código IEC (café +, azul −, negro salida)."
+    },
+    {
+      "id": "sen-capacitivo-ljc18a3",
+      "name": "Sensor de proximidad capacitivo LJC18A3-H-Z/BX (M18, NPN, 1–10 mm)",
+      "aliases": [
+        "LJC18A3-H-Z/BX",
+        "LJC18A3-B-Z/BX",
+        "sensor capacitivo M18",
+        "sensor de nivel capacitivo",
+        "capacitive proximity switch",
+        "LJC18A3-H-Z/AX (NPN NC)"
+      ],
+      "category": "sensores",
+      "subcategory": "distancia_presencia",
+      "description": "Sensor industrial cilíndrico M18 que detecta casi cualquier material (metal, plástico, madera, agua, granos) por cambio de capacitancia; distancia ajustable con un trimpot trasero y salida a transistor.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Cuerpo roscado M18 con 2 tuercas y cable de 3 hilos",
+          "pins": 3,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Se fija en barreno de 18 mm. Trimpot de sensibilidad en la parte trasera. Medidas del cuerpo no verificadas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "CAFÉ",
+          "name": "+V",
+          "function": "Alimentación 6–36 V DC"
+        },
+        {
+          "pin": "AZUL",
+          "name": "0V",
+          "function": "Tierra"
+        },
+        {
+          "pin": "NEGRO",
+          "name": "OUT",
+          "function": "Salida NPN normalmente abierta (BX)"
+        }
+      ],
+      "common_values": [
+        "LJC18A3-H-Z/BX (NPN NO)",
+        "LJC18A3-H-Z/AX (NPN NC)",
+        "LJC18A3-H-Z/BY (PNP NO)"
+      ],
+      "specs": {
+        "distancia_deteccion": "1–10 mm ajustable",
+        "alimentacion": "6–36 V DC",
+        "salida": "Transistor NPN/PNP"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Detección de nivel de granos o líquidos a través de la pared de un tanque de plástico",
+        "Detección de piezas no metálicas en bandas transportadoras",
+        "Prácticas de sensores industriales"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Mismas precauciones de interfaz que sen-inductivo-lj12a3 (salida al voltaje de alimentación). Sensible a humedad y a la mano: ajustar el trimpot en sitio. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "sen-fotoelectrico-e18-d80nk",
+      "name": "Sensor fotoeléctrico infrarrojo ajustable E18-D80NK (3–80 cm)",
+      "aliases": [
+        "E18-D80NK",
+        "sensor de obstáculos infrarrojo ajustable",
+        "sensor IR de reflexión difusa M18",
+        "sensor infrarrojo 80 cm",
+        "E3F-DS30C4 (similar, M18 industrial)"
+      ],
+      "category": "sensores",
+      "subcategory": "distancia_presencia",
+      "description": "Sensor de reflexión difusa con emisor IR modulado en un cuerpo roscado de 18 mm; da una salida digital cuando hay un objeto dentro de la distancia ajustada con su tornillo trasero, mucho más inmune a la luz que el FC-51.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Cuerpo cilíndrico roscado de 18 mm con cable de 3 hilos",
+          "pins": 3,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Se fija en barreno de 18 mm con dos tuercas. Largo del cuerpo no verificado."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "CAFÉ/ROJO",
+          "name": "VCC",
+          "function": "Alimentación 5 V DC"
+        },
+        {
+          "pin": "AZUL/VERDE",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "NEGRO/AMARILLO",
+          "name": "OUT",
+          "function": "Salida NPN: en bajo al detectar (colector abierto, usar pull-up)"
+        }
+      ],
+      "common_values": [
+        "E18-D80NK (3–80 cm)",
+        "E18-D50NK (3–50 cm)",
+        "E3F-DS30C4 (6–36 V, M18)"
+      ],
+      "specs": {
+        "alimentacion": "5 V DC",
+        "rango": "3–80 cm ajustable (depende del color y tamaño del objeto)",
+        "salida": "NPN normalmente abierta, ≈100 mA"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Robots de sumo y evasores",
+        "Conteo de objetos en bandas",
+        "Puertas y despachadores automáticos"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Los colores de los cables cambian entre lotes (café/azul/negro o rojo/verde/amarillo): verificar con la etiqueta. Con Arduino usar INPUT_PULLUP en la salida. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "sen-ld2410",
+      "name": "Sensor de presencia por radar 24 GHz HLK-LD2410 / LD2410B / LD2410C",
+      "aliases": [
+        "LD2410",
+        "HLK-LD2410",
+        "HLK-LD2410B",
+        "HLK-LD2410C",
+        "sensor mmWave de presencia",
+        "radar de presencia humana 24 GHz",
+        "sensor de presencia estática"
+      ],
+      "category": "sensores",
+      "subcategory": "distancia_presencia",
+      "description": "Radar FMCW de 24 GHz de Hi-Link que detecta personas en movimiento y también quietas (respiración), con distancia al objetivo; tiene salida digital OUT y UART configurable (las versiones B y C también por Bluetooth).",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "LD2410C: header 1x5 a 2.54 mm",
+          "pins": 5,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": 0.64,
+          "notes": "La versión LD2410 original usa un conector de 5 pines de paso fino (1.27 mm aprox., no verificado) y requiere adaptador; preferir la LD2410C para protoboard. Medidas no verificadas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "VCC",
+          "name": "VCC",
+          "function": "5 V (≈80 mA promedio)"
+        },
+        {
+          "pin": "GND",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "TX",
+          "name": "TX",
+          "function": "UART del sensor (3.3 V, 256000 bps por defecto)"
+        },
+        {
+          "pin": "RX",
+          "name": "RX",
+          "function": "UART del sensor (3.3 V)"
+        },
+        {
+          "pin": "OUT",
+          "name": "OUT",
+          "function": "Salida digital de presencia (3.3 V)"
+        }
+      ],
+      "common_values": [
+        "LD2410",
+        "LD2410B (con Bluetooth)",
+        "LD2410C (con Bluetooth y pines de 2.54 mm)"
+      ],
+      "specs": {
+        "frecuencia": "24–24.25 GHz",
+        "rango": "0.75–6 m ajustable",
+        "angulo": "±60°",
+        "alimentacion": "5 V (algunas fichas: 5–12 V)",
+        "logica": "3.3 V"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Encendido de luces por presencia (detecta personas quietas, a diferencia del PIR)",
+        "Domótica con ESPHome / Home Assistant",
+        "Detección de ocupación de cuartos"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Detecta a través de materiales no metálicos (paredes delgadas, puertas): ajustar sensibilidad por compuertas. Orden de pines según serigrafía. Datos técnicos del manual de Hi-Link y de DFRobot; disponibilidad en UNIT no verificada en esta investigación."
+    },
+    {
+      "id": "sen-hc-sr505",
+      "name": "Mini sensor de movimiento PIR HC-SR505",
+      "aliases": [
+        "HC-SR505",
+        "mini PIR HC-SR505",
+        "sensor de movimiento miniatura",
+        "PIR pequeño 3 pines"
+      ],
+      "category": "sensores",
+      "subcategory": "distancia_presencia",
+      "description": "Detector PIR compacto con lente pequeña y retardo fijo de unos 8 s; útil donde el HC-SR501 es demasiado grande, sin ajustes de sensibilidad ni de tiempo.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Módulo cilíndrico con 3 pines a 2.54 mm",
+          "pins": 3,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": 0.64,
+          "notes": "Cuerpo de ≈10 mm de diámetro (aprox., no verificado). Orden de pines según serigrafía."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "+",
+          "function": "Alimentación 4.5–20 V"
+        },
+        {
+          "pin": "2",
+          "name": "OUT",
+          "function": "Salida en alto (≈3.3 V) al detectar"
+        },
+        {
+          "pin": "3",
+          "name": "-",
+          "function": "Tierra"
+        }
+      ],
+      "common_values": [
+        "HC-SR505"
+      ],
+      "specs": {
+        "alimentacion": "4.5–20 V DC",
+        "consumo_reposo": "< 60 µA",
+        "rango": "≈3 m",
+        "retardo": "≈8 s, redisparable",
+        "salida": "≈3.3 V en alto"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Luces nocturnas automáticas pequeñas",
+        "Alarmas en cajones o gabinetes",
+        "Proyectos con batería por su bajo consumo"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Electrónica 5Hz",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Especificaciones de fichas comerciales; verificar. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "sen-receptor-laser",
+      "name": "Módulo receptor de láser (detector de haz láser, salida digital)",
+      "aliases": [
+        "laser receiver module",
+        "sensor receptor láser",
+        "módulo receptor de luz láser",
+        "detector de láser para alarma",
+        "sensor de barrera láser"
+      ],
+      "category": "sensores",
+      "subcategory": "luz_color",
+      "description": "Módulo con sensor de luz y circuito de umbral que da una salida digital según reciba o no el haz de un láser rojo; con el KY-008 forma una barrera láser.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Módulo con header 1x3 a 2.54 mm",
+          "pins": 3,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": 0.64,
+          "notes": "Medidas y orden de pines no verificados: usar la serigrafía."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "VCC",
+          "name": "VCC",
+          "function": "5 V"
+        },
+        {
+          "pin": "OUT",
+          "name": "OUT",
+          "function": "Salida digital (nivel según módulo: verificar si es alto con haz o sin haz)"
+        },
+        {
+          "pin": "GND",
+          "name": "GND",
+          "function": "Tierra"
+        }
+      ],
+      "common_values": [
+        "Receptor no modulado (5 V)"
+      ],
+      "specs": {
+        "alimentacion": "5 V",
+        "salida": "Digital TTL"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Alarma de barrera láser (proyecto escolar clásico)",
+        "Contador de paso de objetos o personas",
+        "Cronometraje de carreras de carritos"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "El emisor es opt-laser-650nm-ky008. Con luz ambiental intensa puede fallar: poner el sensor dentro de un tubo negro. Datos técnicos de memoria; disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "sen-max31865",
+      "name": "Módulo MAX31865 para RTD PT100 / PT1000 (SPI)",
+      "aliases": [
+        "MAX31865",
+        "MAX31865 PT100",
+        "amplificador RTD SPI",
+        "Adafruit MAX31865 (clon)",
+        "convertidor PT100 a digital"
+      ],
+      "category": "sensores",
+      "subcategory": "temperatura_humedad",
+      "description": "Convertidor de resistencia a digital para sondas RTD de platino (PT100/PT1000) de 2, 3 o 4 hilos, con resistencia de referencia de precisión y detección de fallas; se lee por SPI.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Módulo con header 1x8 a 2.54 mm + bornera de 4 posiciones",
+          "pins": 8,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": 0.64,
+          "notes": "Bornera para F+, RTD+, RTD−, F− (paso no verificado). Puentes de soldadura para elegir 2/3/4 hilos. Medidas no verificadas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "VIN",
+          "function": "Alimentación 3.3–5 V"
+        },
+        {
+          "pin": "2",
+          "name": "3V3",
+          "function": "Salida del regulador 3.3 V"
+        },
+        {
+          "pin": "3",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "4",
+          "name": "CLK",
+          "function": "SPI SCK"
+        },
+        {
+          "pin": "5",
+          "name": "SDO",
+          "function": "SPI MISO"
+        },
+        {
+          "pin": "6",
+          "name": "SDI",
+          "function": "SPI MOSI"
+        },
+        {
+          "pin": "7",
+          "name": "CS",
+          "function": "Selección de chip"
+        },
+        {
+          "pin": "8",
+          "name": "RDY",
+          "function": "DRDY: conversión lista (activo en bajo)"
+        },
+        {
+          "pin": "T",
+          "name": "F+ / RTD+ / RTD− / F−",
+          "function": "Conexión de la sonda RTD"
+        }
+      ],
+      "common_values": [
+        "Para PT100 (Rref 430 Ω)",
+        "Para PT1000 (Rref 4.3 kΩ)"
+      ],
+      "specs": {
+        "resolucion": "ADC de 15 bits (≈0.03 °C)",
+        "interfaz": "SPI (modos 1 y 3)",
+        "sondas": "PT100 / PT1000 de 2, 3 o 4 hilos",
+        "alimentacion": "3.3–5 V (regulador y adaptación de niveles en el módulo)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Medición de temperatura de precisión con PT100",
+        "Control de hornos, cámaras y procesos",
+        "Prácticas de instrumentación industrial"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Pinout según el diseño de Adafruit, copiado por la mayoría de los clones; el orden físico puede variar. Revisar el valor de Rref impreso (430 / 4300 Ω): algunos clones usan otro y hay que ajustarlo en el código. Disponibilidad en tiendas mexicanas no verificada en esta investigación. La sonda se lista en sen-sonda-pt100."
+    },
+    {
+      "id": "sen-sonda-pt100",
+      "name": "Sonda de temperatura PT100 (2 o 3 hilos; bulbo, rosca o termopozo)",
+      "aliases": [
+        "PT100",
+        "RTD PT100",
+        "sonda PT100 3 hilos",
+        "termorresistencia PT100",
+        "PT100 rosca",
+        "sensor PT100 para controlador REX-C100"
+      ],
+      "category": "sensores",
+      "subcategory": "temperatura_humedad",
+      "description": "Elemento de platino de 100 Ω a 0 °C encapsulado en tubo de acero inoxidable con cable; es el sensor de temperatura estándar en la industria y en los controladores de temperatura de panel.",
+      "mounting": "n/a",
+      "packages": [],
+      "pinout": [
+        {
+          "pin": "A",
+          "name": "Hilo (color 1)",
+          "function": "Un extremo del RTD"
+        },
+        {
+          "pin": "B",
+          "name": "Hilo (color 2)",
+          "function": "Otro extremo del RTD"
+        },
+        {
+          "pin": "B'",
+          "name": "Hilo (color 2)",
+          "function": "Hilo de compensación (en sondas de 3 hilos, mismo color que B)"
+        }
+      ],
+      "common_values": [
+        "2 hilos",
+        "3 hilos",
+        "Bulbo liso Ø6 mm x 50/100 mm",
+        "Con rosca 1/4\" o M8",
+        "Cable 1 m / 2 m"
+      ],
+      "specs": {
+        "resistencia": "100 Ω a 0 °C (≈107.7 Ω a 20 °C)",
+        "coeficiente": "α = 0.00385 /°C (IEC 60751)",
+        "rango": "−50 a +200 °C típico (más con cable de fibra de vidrio)",
+        "clase": "Clase B común"
+      },
+      "schematic_symbol": "sensor_temperatura",
+      "typical_uses": [
+        "Controladores de temperatura de panel (REX-C100 y similares)",
+        "Medición con sen-max31865",
+        "Prácticas de instrumentación (puente de Wheatstone)"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "El elemento suelto está en res-ptc-rtd-sensado. Identificar hilos con multímetro: entre los dos del mismo color ≈0 Ω y de éstos al otro ≈108 Ω a temperatura ambiente. Medidas de sonda según el vendedor. Disponibilidad específica no verificada en esta investigación."
+    },
+    {
+      "id": "sen-sonda-ntc-10k",
+      "name": "Sonda de temperatura NTC 10 kΩ impermeable (punta de acero con cable)",
+      "aliases": [
+        "sonda NTC 10K",
+        "NTC 10K waterproof",
+        "termistor con cable",
+        "sensor de temperatura del W1209",
+        "sonda NTC 3950",
+        "sensor de temperatura para acuario"
+      ],
+      "category": "sensores",
+      "subcategory": "temperatura_humedad",
+      "description": "Termistor NTC de 10 kΩ sellado en una punta de acero inoxidable o de epóxico con cable de dos hilos; es la sonda de termostatos como el W1209 y sirve para medir líquidos con un divisor de voltaje.",
+      "mounting": "n/a",
+      "packages": [],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "T1",
+          "function": "Terminal del termistor (sin polaridad)"
+        },
+        {
+          "pin": "2",
+          "name": "T2",
+          "function": "Terminal del termistor (sin polaridad)"
+        }
+      ],
+      "common_values": [
+        "10 kΩ B3950",
+        "10 kΩ B3435",
+        "Cable 0.5 m / 1 m / 2 m",
+        "Con conector XH 2.54 mm (tipo W1209)"
+      ],
+      "specs": {
+        "resistencia": "10 kΩ a 25 °C",
+        "beta": "3950 o 3435 (según modelo)",
+        "rango": "≈ −20 a +105 °C (según cable y sellado)"
+      },
+      "schematic_symbol": "termistor",
+      "typical_uses": [
+        "Termostatos (mod-termostato-w1209)",
+        "Temperatura de agua en acuarios y calentadores",
+        "Incubadoras y refrigeradores caseros"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "El termistor suelto está en res-ntc-10k-mf52. Medir con divisor (10 kΩ fijo) y ecuación Beta o Steinhart-Hart. Confirmar el valor Beta con el vendedor. Disponibilidad específica no verificada en esta investigación."
+    },
+    {
+      "id": "sen-camara-ov7670",
+      "name": "Módulo de cámara VGA OV7670 (sin FIFO / con FIFO AL422B)",
+      "aliases": [
+        "OV7670",
+        "cámara OV7670",
+        "OV7670 FIFO AL422B",
+        "cámara Arduino VGA 0.3 MP",
+        "OV7670 sin FIFO"
+      ],
+      "category": "sensores",
+      "subcategory": "camaras",
+      "description": "Sensor de imagen CMOS de 0.3 MP (640x480) con lente M12, configurable por SCCB (similar a I2C) y salida paralela de 8 bits; la versión con FIFO AL422B guarda un cuadro para que un microcontrolador lento lo lea.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Sin FIFO: header 2x9 a 2.54 mm",
+          "pins": 18,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": 2.54,
+          "body_mm": null,
+          "lead_diameter_mm": 0.64,
+          "notes": "Medidas de la placa no verificadas."
+        },
+        {
+          "name": "Con FIFO AL422B: header 2x11 a 2.54 mm",
+          "pins": 22,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": 2.54,
+          "body_mm": null,
+          "lead_diameter_mm": 0.64,
+          "notes": "Medidas de la placa no verificadas; pinout distinto (señales de la FIFO)."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "3V3",
+          "function": "Alimentación 3.3 V"
+        },
+        {
+          "pin": "2",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "3",
+          "name": "SIOC",
+          "function": "Reloj SCCB (SCL)"
+        },
+        {
+          "pin": "4",
+          "name": "SIOD",
+          "function": "Datos SCCB (SDA)"
+        },
+        {
+          "pin": "5",
+          "name": "VSYNC",
+          "function": "Sincronía vertical"
+        },
+        {
+          "pin": "6",
+          "name": "HREF",
+          "function": "Referencia horizontal"
+        },
+        {
+          "pin": "7",
+          "name": "PCLK",
+          "function": "Reloj de píxel"
+        },
+        {
+          "pin": "8",
+          "name": "XCLK",
+          "function": "Reloj de entrada (≈10–24 MHz)"
+        },
+        {
+          "pin": "9",
+          "name": "D7",
+          "function": "Dato 7"
+        },
+        {
+          "pin": "10",
+          "name": "D6",
+          "function": "Dato 6"
+        },
+        {
+          "pin": "11",
+          "name": "D5",
+          "function": "Dato 5"
+        },
+        {
+          "pin": "12",
+          "name": "D4",
+          "function": "Dato 4"
+        },
+        {
+          "pin": "13",
+          "name": "D3",
+          "function": "Dato 3"
+        },
+        {
+          "pin": "14",
+          "name": "D2",
+          "function": "Dato 2"
+        },
+        {
+          "pin": "15",
+          "name": "D1",
+          "function": "Dato 1"
+        },
+        {
+          "pin": "16",
+          "name": "D0",
+          "function": "Dato 0"
+        },
+        {
+          "pin": "17",
+          "name": "RESET",
+          "function": "Reset (activo en bajo)"
+        },
+        {
+          "pin": "18",
+          "name": "PWDN",
+          "function": "Apagado (activo en alto)"
+        }
+      ],
+      "common_values": [
+        "Sin FIFO (18 pines)",
+        "Con FIFO AL422B (22 pines)"
+      ],
+      "specs": {
+        "resolucion": "640x480 (VGA), 30 fps máx.",
+        "alimentacion": "3.3 V (E/S no toleran 5 V)",
+        "interfaz": "SCCB + bus paralelo de 8 bits",
+        "direccion_sccb": "0x42 escritura / 0x43 lectura (0x21 de 7 bits)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Captura de imágenes con Arduino Mega, STM32 o FPGA",
+        "Prácticas de procesamiento de imagen y video VGA"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT (versión sin FIFO). Orden de pines del listado = versión sin FIFO común (por filas 1-2, 3-4…); confirmar con la serigrafía. Con UNO sólo alcanza resoluciones bajas: preferir la versión con FIFO, un STM32/ESP32 o usar brd-esp32-cam."
+    },
+    {
+      "id": "sen-camara-rpi",
+      "name": "Módulo de cámara para Raspberry Pi (OV5647 v1.3, Camera Module 2 IMX219, Camera Module 3 IMX708)",
+      "aliases": [
+        "cámara Raspberry Pi",
+        "Pi Camera",
+        "OV5647 5MP",
+        "Camera Module V2",
+        "Camera Module 3",
+        "IMX219",
+        "IMX708",
+        "cámara CSI",
+        "cámara NoIR"
+      ],
+      "category": "sensores",
+      "subcategory": "camaras",
+      "description": "Cámara que se conecta al puerto CSI-2 de la Raspberry Pi con cable plano; la OV5647 (5 MP) es la económica genérica, y las oficiales v2 (8 MP) y v3 (12 MP con autofoco) tienen versiones NoIR para visión nocturna con IR.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa de cámara con conector FFC de 15 contactos a 1.0 mm",
+          "pins": 15,
+          "pitch_mm": 1.0,
+          "row_spacing_mm": null,
+          "body_mm": "25 x 24 mm (formato oficial v1/v2/v3)",
+          "lead_diameter_mm": null,
+          "notes": "Raspberry Pi 5 y Zero usan conector de 22 contactos a 0.5 mm: requieren cable adaptador 15→22. Barrenos M2 en las esquinas (posición no verificada aquí). Las genéricas con lente grande o IR pueden medir más."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "2",
+          "name": "CAM_D0_N",
+          "function": "Carril de datos 0 −"
+        },
+        {
+          "pin": "3",
+          "name": "CAM_D0_P",
+          "function": "Carril de datos 0 +"
+        },
+        {
+          "pin": "4",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "5",
+          "name": "CAM_D1_N",
+          "function": "Carril de datos 1 −"
+        },
+        {
+          "pin": "6",
+          "name": "CAM_D1_P",
+          "function": "Carril de datos 1 +"
+        },
+        {
+          "pin": "7",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "8",
+          "name": "CAM_CK_N",
+          "function": "Reloj −"
+        },
+        {
+          "pin": "9",
+          "name": "CAM_CK_P",
+          "function": "Reloj +"
+        },
+        {
+          "pin": "10",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "11",
+          "name": "CAM_IO0",
+          "function": "Habilitación de alimentación"
+        },
+        {
+          "pin": "12",
+          "name": "CAM_IO1",
+          "function": "LED / control"
+        },
+        {
+          "pin": "13",
+          "name": "CAM_SCL",
+          "function": "I2C de control"
+        },
+        {
+          "pin": "14",
+          "name": "CAM_SDA",
+          "function": "I2C de control"
+        },
+        {
+          "pin": "15",
+          "name": "CAM_3V3",
+          "function": "Alimentación 3.3 V"
+        }
+      ],
+      "common_values": [
+        "OV5647 5 MP (genérica v1.3)",
+        "Camera Module 2 (IMX219, 8 MP)",
+        "Camera Module 3 (IMX708, 12 MP, autofoco)",
+        "Versiones NoIR",
+        "Gran angular / lente M12"
+      ],
+      "specs": {
+        "interfaz": "MIPI CSI-2, 2 carriles",
+        "software": "libcamera / Picamera2",
+        "video": "1080p30 (OV5647/IMX219)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Videovigilancia y timelapse con Raspberry Pi",
+        "Visión artificial (OpenCV, detección de objetos)",
+        "Proyectos escolares de reconocimiento facial"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Geek Factory",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Pinout = conector CSI de 15 contactos de la Raspberry Pi (lado de la placa). El cable plano tiene una cara con contactos: orientarlo según el conector. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "sen-inmp441",
+      "name": "Micrófono MEMS digital I2S INMP441 (módulo)",
+      "aliases": [
+        "INMP441",
+        "micrófono I2S",
+        "MEMS microphone I2S",
+        "micrófono digital ESP32",
+        "GY-INMP441"
+      ],
+      "category": "sensores",
+      "subcategory": "sonido",
+      "description": "Micrófono MEMS omnidireccional con salida digital I2S de 24 bits en una plaquita redonda; se conecta directo al ESP32 para grabar o analizar audio sin ADC externo.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa redonda con 6 pines a 2.54 mm",
+          "pins": 6,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": 0.64,
+          "notes": "Distribución y medidas de la placa no verificadas: usar la serigrafía. El orificio de sonido del MEMS está del lado opuesto a los componentes en muchas versiones."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "VDD",
+          "name": "VDD",
+          "function": "1.8–3.3 V"
+        },
+        {
+          "pin": "GND",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "SD",
+          "name": "SD",
+          "function": "Datos I2S (salida)"
+        },
+        {
+          "pin": "SCK",
+          "name": "SCK",
+          "function": "Reloj de bit I2S (BCLK)"
+        },
+        {
+          "pin": "WS",
+          "name": "WS",
+          "function": "Selección de palabra / LRCLK"
+        },
+        {
+          "pin": "L/R",
+          "name": "L/R",
+          "function": "Canal: a GND = izquierdo, a VDD = derecho"
+        }
+      ],
+      "common_values": [
+        "INMP441"
+      ],
+      "specs": {
+        "interfaz": "I2S, 24 bits",
+        "snr": "61 dBA",
+        "sensibilidad": "−26 dBFS",
+        "respuesta": "60 Hz – 15 kHz",
+        "alimentacion": "1.8–3.3 V (no 5 V)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Reconocimiento de voz y asistentes con ESP32",
+        "Medidor de nivel de ruido (sonómetro)",
+        "Visualizadores de audio y luces rítmicas con FFT"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "No funciona con Arduino UNO (sin I2S); usar ESP32, RP2040 o similares. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "sen-pms5003",
+      "name": "Sensor láser de partículas PM1.0 / PM2.5 / PM10 Plantower PMS5003 / PMS7003",
+      "aliases": [
+        "PMS5003",
+        "PMS7003",
+        "PMSA003",
+        "sensor PM2.5",
+        "sensor de partículas láser",
+        "sensor de calidad del aire por partículas",
+        "Plantower G5",
+        "Plantower G7"
+      ],
+      "category": "sensores",
+      "subcategory": "gas_calidad_aire",
+      "description": "Contador de partículas por dispersión láser con ventilador integrado; entrega por UART las concentraciones de PM1.0, PM2.5 y PM10 en µg/m³, el dato que reportan los índices de calidad del aire.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "PMS5003: conector de 8 pines a 1.27 mm",
+          "pins": 8,
+          "pitch_mm": 1.27,
+          "row_spacing_mm": null,
+          "body_mm": "≈50 x 38 x 21 mm (aprox., de memoria)",
+          "lead_diameter_mm": null,
+          "notes": "Se vende con cable a conector de 2.54 mm o con plaquita adaptadora."
+        },
+        {
+          "name": "PMS7003: conector 2x5 a 1.27 mm",
+          "pins": 10,
+          "pitch_mm": 1.27,
+          "row_spacing_mm": 1.27,
+          "body_mm": "≈48 x 37 x 12 mm (aprox., de memoria)",
+          "lead_diameter_mm": null,
+          "notes": "Versión delgada; normalmente con adaptador a 2.54 mm."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "VCC",
+          "function": "5 V (el ventilador lo requiere)"
+        },
+        {
+          "pin": "2",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "3",
+          "name": "SET",
+          "function": "En bajo = modo reposo (3.3 V lógico)"
+        },
+        {
+          "pin": "4",
+          "name": "RX",
+          "function": "UART del sensor (3.3 V)"
+        },
+        {
+          "pin": "5",
+          "name": "TX",
+          "function": "UART del sensor (3.3 V, 9600 bps)"
+        },
+        {
+          "pin": "6",
+          "name": "RESET",
+          "function": "Reset (activo en bajo)"
+        },
+        {
+          "pin": "7",
+          "name": "NC",
+          "function": "Sin conexión"
+        },
+        {
+          "pin": "8",
+          "name": "NC",
+          "function": "Sin conexión"
+        }
+      ],
+      "common_values": [
+        "PMS5003",
+        "PMS7003",
+        "PMSA003"
+      ],
+      "specs": {
+        "alimentacion": "5 V (≈100 mA)",
+        "logica": "3.3 V",
+        "interfaz": "UART 9600 bps",
+        "rango_particulas": "0.3–10 µm"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Monitor de calidad del aire (PM2.5) casero o escolar",
+        "Estaciones ambientales con ESP32"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Pinout listado = PMS5003. Medidas de memoria: verificar con la hoja de datos de Plantower. Más preciso que sen-polvo-gp2y1010 para PM2.5. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "sen-transductor-presion",
+      "name": "Transductor de presión 5 V con salida 0.5–4.5 V (rosca G1/4; agua, aire o aceite)",
+      "aliases": [
+        "sensor de presión de agua",
+        "pressure transducer 5V",
+        "sensor de presión de aceite",
+        "transductor G1/4 0.5-4.5 V",
+        "sensor de presión 1.2 MPa",
+        "sensor de presión de aire"
+      ],
+      "category": "sensores",
+      "subcategory": "presion",
+      "description": "Sensor de presión en cuerpo de acero inoxidable con rosca G1/4 y salida analógica ratiométrica de 0.5 V (0) a 4.5 V (fondo de escala); se conecta directo al ADC de un Arduino.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Cuerpo roscado G1/4 con cable de 3 hilos (o conector)",
+          "pins": 3,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Medidas del cuerpo no verificadas. Usar cinta teflón en la rosca."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "ROJO",
+          "name": "+5V",
+          "function": "Alimentación 5 V"
+        },
+        {
+          "pin": "NEGRO",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "AMARILLO/VERDE",
+          "name": "OUT",
+          "function": "Salida 0.5–4.5 V proporcional a la presión"
+        }
+      ],
+      "common_values": [
+        "0–0.5 MPa",
+        "0–1.2 MPa",
+        "0–1.6 MPa",
+        "0–30 psi",
+        "0–100 psi",
+        "0–150 psi"
+      ],
+      "specs": {
+        "alimentacion": "5 V DC",
+        "salida": "0.5–4.5 V (ratiométrica)",
+        "precision": "≈±1.5 % FS (fichas comerciales)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Medir presión de la red de agua o hidroneumáticos",
+        "Nivel de tinaco por presión hidrostática",
+        "Compresores y sistemas neumáticos de práctica"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Colores de cables más comunes; varían entre fabricantes. Presión = (Vout − 0.5) / 4 × fondo de escala. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "sen-hx710b-presion",
+      "name": "Módulo sensor de presión de aire HX710B + MPS20N0040D (0–40 kPa)",
+      "aliases": [
+        "HX710B",
+        "MPS20N0040D",
+        "sensor de presión de aire 40 kPa",
+        "sensor de nivel de agua por presión",
+        "módulo presión HX710",
+        "XGZP (similar)"
+      ],
+      "category": "sensores",
+      "subcategory": "presion",
+      "description": "Sensor piezorresistivo de baja presión con boquilla para manguera y convertidor HX710B de 24 bits (interfaz serie de 2 hilos tipo HX711); mide presión manométrica de aire hasta unos 40 kPa.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Módulo con header 1x4 a 2.54 mm y boquilla para manguera",
+          "pins": 4,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": 0.64,
+          "notes": "Medidas de la placa y diámetro de la boquilla no verificados. Orden de pines según serigrafía."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "VCC",
+          "name": "VCC",
+          "function": "3.3–5 V"
+        },
+        {
+          "pin": "GND",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "OUT",
+          "name": "DOUT",
+          "function": "Datos serie del HX710B"
+        },
+        {
+          "pin": "SCK",
+          "name": "SCK",
+          "function": "Reloj"
+        }
+      ],
+      "common_values": [
+        "0–40 kPa (MPS20N0040D)"
+      ],
+      "specs": {
+        "rango": "0–40 kPa (≈5.8 psi)",
+        "adc": "HX710B 24 bits",
+        "interfaz": "Serie de 2 hilos (similar a HX711)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Medir nivel de agua con una manguera sumergida (tinaco, cisterna)",
+        "Baumanómetro casero",
+        "Medición de presión de aire de baja escala"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Sólo para aire/gases secos: no meter agua al sensor (para nivel, el agua empuja el aire de la manguera). Se puede leer con librerías de HX711/HX710. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "sen-nivel-xkc-y25",
+      "name": "Sensor de nivel de líquido sin contacto XKC-Y25 (capacitivo, adhesivo)",
+      "aliases": [
+        "XKC-Y25-V",
+        "XKC-Y25-NPN",
+        "XKC-Y25-PNP",
+        "XKC-Y25-T12V",
+        "sensor de nivel sin contacto",
+        "non-contact liquid level sensor"
+      ],
+      "category": "sensores",
+      "subcategory": "agua_suelo",
+      "description": "Sensor capacitivo que se pega por fuera de un recipiente no metálico y detecta si hay líquido a esa altura a través de la pared, sin tocar el agua; salida digital.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Cuerpo plástico con cara adhesiva y cable de 4 hilos (o conector)",
+          "pins": 4,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Se adhiere a la pared del tanque; medidas no verificadas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "CAFÉ",
+          "name": "VCC",
+          "function": "Alimentación (5–24 V según versión)"
+        },
+        {
+          "pin": "AZUL",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "AMARILLO",
+          "name": "OUT",
+          "function": "Salida digital (voltaje, NPN o PNP según versión)"
+        },
+        {
+          "pin": "NEGRO",
+          "name": "MODE",
+          "function": "Selección de lógica de salida (en versiones -V)"
+        }
+      ],
+      "common_values": [
+        "XKC-Y25-V (salida de voltaje)",
+        "XKC-Y25-NPN",
+        "XKC-Y25-PNP",
+        "XKC-Y25-T12V (5–12 V)"
+      ],
+      "specs": {
+        "detecta_a_traves_de": "paredes no metálicas de hasta ≈20 mm (fichas comerciales)",
+        "salida": "Digital"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Alarma de tinaco lleno o vacío sin perforar",
+        "Control de bomba en cisternas",
+        "Despachadores de líquidos"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Colores y función del cable negro varían entre versiones: revisar la etiqueta. No funciona con tanques metálicos. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "sen-zmct103c",
+      "name": "Módulo sensor de corriente AC ZMCT103C (5 A, transformador de corriente)",
+      "aliases": [
+        "ZMCT103C",
+        "sensor de corriente AC 5A",
+        "módulo transformador de corriente",
+        "current transformer module",
+        "ZMCT103C LM358"
+      ],
+      "category": "sensores",
+      "subcategory": "corriente_voltaje",
+      "description": "Pequeño transformador de corriente 1000:1 montado en placa con amplificador LM358 y trimpot; el cable de la carga pasa por el orificio y el módulo entrega una señal analógica centrada en VCC/2.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Módulo con header 1x3 a 2.54 mm y transformador con orificio pasacable",
+          "pins": 3,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": 0.64,
+          "notes": "Medidas y diámetro del orificio no verificados. El transformador ZMCT103C suelto también se suelda directo en PCB (huella no verificada aquí)."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "VCC",
+          "name": "VCC",
+          "function": "5 V"
+        },
+        {
+          "pin": "GND",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "OUT",
+          "name": "OUT",
+          "function": "Salida analógica (senoidal montada en ≈VCC/2)"
+        }
+      ],
+      "common_values": [
+        "Módulo 5 A con LM358",
+        "Transformador ZMCT103C suelto"
+      ],
+      "specs": {
+        "relacion": "1000:1 (5 A : 5 mA)",
+        "rango": "0–5 A AC",
+        "aislamiento": "Galvánico (el cable de red sólo pasa por el orificio)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Medir consumo de aparatos de 127 V",
+        "Detectar si un motor o bomba está encendido",
+        "Medidores de energía junto con sen-zmpt101b"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Pasar sólo UN conductor (fase o neutro) por el orificio, no el cable completo. Calcular RMS por software muestreando varios ciclos. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "sen-encoder-lpd3806",
+      "name": "Encoder óptico rotatorio incremental LPD3806 (360/600 P/R, fases A/B)",
+      "aliases": [
+        "LPD3806-600BM-G5-24C",
+        "LPD3806-360BM",
+        "encoder incremental 600 pulsos",
+        "encoder rotativo óptico",
+        "encoder AB 600 P/R",
+        "encoder industrial 6 mm"
+      ],
+      "category": "sensores",
+      "subcategory": "movimiento_orientacion",
+      "description": "Encoder óptico de cuerpo metálico con eje de 6 mm que entrega dos señales en cuadratura (A y B) con 360 o 600 pulsos por vuelta; salida a transistor NPN de colector abierto.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Cuerpo cilíndrico Ø38 mm con eje de 6 mm y cable de 4 hilos + malla",
+          "pins": 4,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Ø38 mm (aprox.)",
+          "lead_diameter_mm": null,
+          "notes": "Diámetro de memoria, verificar. Barrenos de montaje en la cara frontal (posición no verificada)."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "ROJO",
+          "name": "VCC",
+          "function": "Alimentación 5–24 V DC"
+        },
+        {
+          "pin": "NEGRO",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "VERDE",
+          "name": "A",
+          "function": "Fase A (NPN colector abierto, requiere pull-up)"
+        },
+        {
+          "pin": "BLANCO",
+          "name": "B",
+          "function": "Fase B (NPN colector abierto, requiere pull-up)"
+        },
+        {
+          "pin": "MALLA",
+          "name": "Shield",
+          "function": "Blindaje a tierra"
+        }
+      ],
+      "common_values": [
+        "360 P/R",
+        "400 P/R",
+        "600 P/R"
+      ],
+      "specs": {
+        "resolucion": "360 / 400 / 600 pulsos por revolución (x4 en cuadratura)",
+        "alimentacion": "5–24 V DC",
+        "salida": "NPN colector abierto, fases A/B a 90°",
+        "eje": "6 mm"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Medición de posición y velocidad en prácticas de control (PID de motores)",
+        "Medidores de longitud con rueda",
+        "Péndulo invertido y bancos de mecatrónica"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Colores de cables de la versión común; verificar etiqueta. Con Arduino usar INPUT_PULLUP o resistencias de 4.7–10 kΩ a 5 V aunque se alimente a más voltaje. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    },
+    {
+      "id": "sen-emg-muscular",
+      "name": "Sensor muscular EMG (Muscle Sensor V3 / MyoWare) con electrodos",
+      "aliases": [
+        "Muscle Sensor V3",
+        "MyoWare",
+        "sensor EMG",
+        "sensor de electromiografía",
+        "sensor muscular Arduino",
+        "AT-04-001 (MyoWare)",
+        "SEN-13723 (MyoWare, SparkFun)"
+      ],
+      "category": "sensores",
+      "subcategory": "biometricos",
+      "description": "Amplificador de electromiografía que mide la actividad eléctrica de un músculo con 3 electrodos y entrega la envolvente rectificada como señal analógica; el Muscle Sensor V3 usa alimentación doble y el MyoWare alimentación sencilla.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa con pines/borneras de alimentación y señal + cable de electrodos",
+          "pins": null,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Muscle Sensor V3: jack de 3.5 mm para el cable de 3 electrodos. MyoWare: broches para electrodos directos en la placa. Medidas no verificadas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "+Vs",
+          "name": "+Vs",
+          "function": "Alimentación positiva (V3: +3.5 a +18 V; MyoWare: 2.9–5.7 V)"
+        },
+        {
+          "pin": "GND",
+          "name": "GND",
+          "function": "Tierra / punto medio de la fuente doble (V3)"
+        },
+        {
+          "pin": "-Vs",
+          "name": "-Vs",
+          "function": "Alimentación negativa (sólo Muscle Sensor V3)"
+        },
+        {
+          "pin": "SIG",
+          "name": "SIG",
+          "function": "Salida analógica de la envolvente EMG"
+        },
+        {
+          "pin": "ELEC",
+          "name": "MID / END / REF",
+          "function": "Electrodos: mitad del músculo, extremo y referencia (hueso)"
+        }
+      ],
+      "common_values": [
+        "Muscle Sensor V3 (alimentación ±)",
+        "MyoWare (alimentación sencilla)",
+        "Electrodos desechables de repuesto"
+      ],
+      "specs": {
+        "salida": "0 a +Vs, envolvente rectificada",
+        "ganancia": "Ajustable con trimpot"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Prácticas de ingeniería biomédica",
+        "Control de prótesis o pinzas robóticas con el músculo",
+        "Interfaces humano-máquina"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "No es dispositivo médico: alimentar con baterías y nunca con la PC conectada a la red mientras se usa en una persona (igual que sen-ad8232). El V3 suele alimentarse con dos pilas de 9 V. Disponibilidad en tiendas mexicanas no verificada en esta investigación."
+    }
+  ]
+}

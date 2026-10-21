@@ -1,0 +1,11 @@
+[
+  {
+    "index": 0,
+    "id": "sen-zmct103c",
+    "field": "schematic_symbol",
+    "new_value": "modulo",
+    "problem": "El artículo describe el módulo armado (transformador + amplificador LM358 + trimpot) con header de 3 pines VCC/GND/OUT, pero se le asigna el símbolo 'transformador', que tiene terminales de primario/secundario y no puede representar VCC, GND ni la salida del amplificador.",
+    "evidence": "El propio artículo: mounting 'modulo', package 'Módulo con header 1x3' y pinout VCC/GND/OUT; la salida es del LM358 polarizada a VCC/2, no un devanado. El resto de módulos con header del archivo usan 'modulo'. El transformador ZMCT103C suelto (4 terminales) tendría su propio símbolo.",
+    "confidence": "media"
+  }
+]

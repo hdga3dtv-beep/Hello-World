@@ -44,7 +44,14 @@
     {
       "id": "res-carbon-1-4w",
       "name": "Resistor de película de carbón 1/4 W",
-      "aliases": ["resistencia 1/4 W", "resistencia de carbón", "CFR-25", "CF 1/4W", "carbon film resistor 0.25 W", "resistor axial"],
+      "aliases": [
+        "resistencia 1/4 W",
+        "resistencia de carbón",
+        "CFR-25",
+        "CF 1/4W",
+        "carbon film resistor 0.25 W",
+        "resistor axial"
+      ],
       "category": "resistores",
       "subcategory": "resistores_fijos",
       "description": "Resistor fijo axial de película de carbón, 0.25 W y ±5 %, el más común en tiendas y kits de estudiante. Cuerpo color beige/café claro con 4 bandas de colores.",
@@ -70,7 +77,93 @@
         }
       ],
       "pinout": [],
-      "common_values": ["1 Ω", "1.2 Ω", "1.5 Ω", "1.8 Ω", "2.2 Ω", "2.7 Ω", "3.3 Ω", "3.9 Ω", "4.7 Ω", "5.6 Ω", "6.8 Ω", "8.2 Ω", "10 Ω", "12 Ω", "15 Ω", "18 Ω", "22 Ω", "27 Ω", "33 Ω", "39 Ω", "47 Ω", "56 Ω", "68 Ω", "82 Ω", "100 Ω", "120 Ω", "150 Ω", "180 Ω", "220 Ω", "270 Ω", "330 Ω", "390 Ω", "470 Ω", "560 Ω", "680 Ω", "820 Ω", "1 kΩ", "1.2 kΩ", "1.5 kΩ", "1.8 kΩ", "2.2 kΩ", "2.7 kΩ", "3.3 kΩ", "3.9 kΩ", "4.7 kΩ", "5.6 kΩ", "6.8 kΩ", "8.2 kΩ", "10 kΩ", "12 kΩ", "15 kΩ", "18 kΩ", "22 kΩ", "27 kΩ", "33 kΩ", "39 kΩ", "47 kΩ", "56 kΩ", "68 kΩ", "82 kΩ", "100 kΩ", "120 kΩ", "150 kΩ", "180 kΩ", "220 kΩ", "270 kΩ", "330 kΩ", "390 kΩ", "470 kΩ", "560 kΩ", "680 kΩ", "820 kΩ", "1 MΩ", "1.2 MΩ", "1.5 MΩ", "1.8 MΩ", "2.2 MΩ", "2.7 MΩ", "3.3 MΩ", "3.9 MΩ", "4.7 MΩ", "5.6 MΩ", "6.8 MΩ", "8.2 MΩ", "10 MΩ"],
+      "common_values": [
+        "1 Ω",
+        "1.2 Ω",
+        "1.5 Ω",
+        "1.8 Ω",
+        "2.2 Ω",
+        "2.7 Ω",
+        "3.3 Ω",
+        "3.9 Ω",
+        "4.7 Ω",
+        "5.6 Ω",
+        "6.8 Ω",
+        "8.2 Ω",
+        "10 Ω",
+        "12 Ω",
+        "15 Ω",
+        "18 Ω",
+        "22 Ω",
+        "27 Ω",
+        "33 Ω",
+        "39 Ω",
+        "47 Ω",
+        "56 Ω",
+        "68 Ω",
+        "82 Ω",
+        "100 Ω",
+        "120 Ω",
+        "150 Ω",
+        "180 Ω",
+        "220 Ω",
+        "270 Ω",
+        "330 Ω",
+        "390 Ω",
+        "470 Ω",
+        "560 Ω",
+        "680 Ω",
+        "820 Ω",
+        "1 kΩ",
+        "1.2 kΩ",
+        "1.5 kΩ",
+        "1.8 kΩ",
+        "2.2 kΩ",
+        "2.7 kΩ",
+        "3.3 kΩ",
+        "3.9 kΩ",
+        "4.7 kΩ",
+        "5.6 kΩ",
+        "6.8 kΩ",
+        "8.2 kΩ",
+        "10 kΩ",
+        "12 kΩ",
+        "15 kΩ",
+        "18 kΩ",
+        "22 kΩ",
+        "27 kΩ",
+        "33 kΩ",
+        "39 kΩ",
+        "47 kΩ",
+        "56 kΩ",
+        "68 kΩ",
+        "82 kΩ",
+        "100 kΩ",
+        "120 kΩ",
+        "150 kΩ",
+        "180 kΩ",
+        "220 kΩ",
+        "270 kΩ",
+        "330 kΩ",
+        "390 kΩ",
+        "470 kΩ",
+        "560 kΩ",
+        "680 kΩ",
+        "820 kΩ",
+        "1 MΩ",
+        "1.2 MΩ",
+        "1.5 MΩ",
+        "1.8 MΩ",
+        "2.2 MΩ",
+        "2.7 MΩ",
+        "3.3 MΩ",
+        "3.9 MΩ",
+        "4.7 MΩ",
+        "5.6 MΩ",
+        "6.8 MΩ",
+        "8.2 MΩ",
+        "10 MΩ"
+      ],
       "specs": {
         "potencia": "0.25 W (a 70 °C)",
         "tolerancia": "±5 % (banda dorada)",
@@ -88,8 +181,22 @@
         "lectura": "Se lee empezando por el extremo con la banda más cercana a la orilla; la banda de tolerancia (dorada/plateada en 4 bandas) va al final."
       },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Limitar corriente de LEDs", "Divisores de voltaje", "Pull-up/pull-down en microcontroladores", "Polarización de transistores", "Prácticas escolares en protoboard"],
-      "stores": ["Steren", "AG Electrónica", "UNIT Electronics", "Geek Factory", "Electrónica 5Hz", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Limitar corriente de LEDs",
+        "Divisores de voltaje",
+        "Pull-up/pull-down en microcontroladores",
+        "Polarización de transistores",
+        "Prácticas escolares en protoboard"
+      ],
+      "stores": [
+        "Steren",
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Geek Factory",
+        "Electrónica 5Hz",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "muy_alta",
       "price_mxn_approx": null,
       "notes": "Verificado por búsqueda: UNIT Electronics vende resistencia 1/4 W 5 % de 1 Ω a 1 MΩ. Precio 1/4 W no confirmado; referencia: Steren vende la de 1/2 W a $1.00 c/u (Rappi). Este elemento contiene la referencia del código de colores para toda la app."
@@ -97,7 +204,13 @@
     {
       "id": "res-carbon-1-2w",
       "name": "Resistor de película de carbón 1/2 W",
-      "aliases": ["resistencia 1/2 W", "resistencia de medio watt", "CFR-50", "CF 1/2W", "carbon film resistor 0.5 W"],
+      "aliases": [
+        "resistencia 1/2 W",
+        "resistencia de medio watt",
+        "CFR-50",
+        "CF 1/2W",
+        "carbon film resistor 0.5 W"
+      ],
       "category": "resistores",
       "subcategory": "resistores_fijos",
       "description": "Resistor axial de película de carbón de 0.5 W y ±5 %; es el formato estándar que vende Steren a granel. Cuerpo más grande que el de 1/4 W.",
@@ -123,7 +236,41 @@
         }
       ],
       "pinout": [],
-      "common_values": ["1 Ω", "2.2 Ω", "4.7 Ω", "10 Ω", "22 Ω", "33 Ω", "47 Ω", "68 Ω", "100 Ω", "150 Ω", "220 Ω", "330 Ω", "470 Ω", "680 Ω", "1 kΩ", "1.5 kΩ", "2.2 kΩ", "3.3 kΩ", "4.7 kΩ", "6.8 kΩ", "10 kΩ", "15 kΩ", "22 kΩ", "33 kΩ", "47 kΩ", "68 kΩ", "100 kΩ", "220 kΩ", "470 kΩ", "1 MΩ", "2.2 MΩ", "4.7 MΩ", "10 MΩ"],
+      "common_values": [
+        "1 Ω",
+        "2.2 Ω",
+        "4.7 Ω",
+        "10 Ω",
+        "22 Ω",
+        "33 Ω",
+        "47 Ω",
+        "68 Ω",
+        "100 Ω",
+        "150 Ω",
+        "220 Ω",
+        "330 Ω",
+        "470 Ω",
+        "680 Ω",
+        "1 kΩ",
+        "1.5 kΩ",
+        "2.2 kΩ",
+        "3.3 kΩ",
+        "4.7 kΩ",
+        "6.8 kΩ",
+        "10 kΩ",
+        "15 kΩ",
+        "22 kΩ",
+        "33 kΩ",
+        "47 kΩ",
+        "68 kΩ",
+        "100 kΩ",
+        "220 kΩ",
+        "470 kΩ",
+        "1 MΩ",
+        "2.2 MΩ",
+        "4.7 MΩ",
+        "10 MΩ"
+      ],
       "specs": {
         "potencia": "0.5 W",
         "tolerancia": "±5 %",
@@ -132,8 +279,18 @@
         "codigo_colores": "Igual que 1/4 W (4 bandas); ver specs de res-carbon-1-4w"
       },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Circuitos con algo más de disipación que 1/4 W", "Reparación de equipos de audio y TV", "Divisores y limitadores en fuentes"],
-      "stores": ["Steren", "AG Electrónica", "UNIT Electronics", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Circuitos con algo más de disipación que 1/4 W",
+        "Reparación de equipos de audio y TV",
+        "Divisores y limitadores en fuentes"
+      ],
+      "stores": [
+        "Steren",
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": "$1 c/u (Steren, vía Rappi)",
       "notes": "Verificado: tiendas Steren en Rappi listan resistencias de carbón 1/2 W a $1.00 c/u, vendidas por pieza. La película metálica 1/2 W 1 % (MFR-50) tiene un tamaño de cuerpo similar."
@@ -141,7 +298,14 @@
     {
       "id": "res-metal-1-4w-1pct",
       "name": "Resistor de película metálica 1/4 W 1 %",
-      "aliases": ["resistencia de precisión", "resistencia 1 %", "MFR-25", "MF 1/4W", "metal film resistor", "resistencia azul"],
+      "aliases": [
+        "resistencia de precisión",
+        "resistencia 1 %",
+        "MFR-25",
+        "MF 1/4W",
+        "metal film resistor",
+        "resistencia azul"
+      ],
       "category": "resistores",
       "subcategory": "resistores_fijos",
       "description": "Resistor axial de película metálica, ±1 %, bajo ruido y bajo coeficiente de temperatura. Suele tener cuerpo azul y 5 bandas de colores; es el tipo que traen los kits de 600 piezas.",
@@ -158,7 +322,42 @@
         }
       ],
       "pinout": [],
-      "common_values": ["10 Ω", "22 Ω", "47 Ω", "100 Ω", "120 Ω", "150 Ω", "200 Ω", "220 Ω", "270 Ω", "330 Ω", "470 Ω", "510 Ω", "680 Ω", "1 kΩ", "1.5 kΩ", "2 kΩ", "2.2 kΩ", "3.3 kΩ", "4.7 kΩ", "5.1 kΩ", "6.8 kΩ", "10 kΩ", "20 kΩ", "22 kΩ", "33 kΩ", "47 kΩ", "51 kΩ", "68 kΩ", "100 kΩ", "220 kΩ", "300 kΩ", "470 kΩ", "680 kΩ", "1 MΩ"],
+      "common_values": [
+        "10 Ω",
+        "22 Ω",
+        "47 Ω",
+        "100 Ω",
+        "120 Ω",
+        "150 Ω",
+        "200 Ω",
+        "220 Ω",
+        "270 Ω",
+        "330 Ω",
+        "470 Ω",
+        "510 Ω",
+        "680 Ω",
+        "1 kΩ",
+        "1.5 kΩ",
+        "2 kΩ",
+        "2.2 kΩ",
+        "3.3 kΩ",
+        "4.7 kΩ",
+        "5.1 kΩ",
+        "6.8 kΩ",
+        "10 kΩ",
+        "20 kΩ",
+        "22 kΩ",
+        "33 kΩ",
+        "47 kΩ",
+        "51 kΩ",
+        "68 kΩ",
+        "100 kΩ",
+        "220 kΩ",
+        "300 kΩ",
+        "470 kΩ",
+        "680 kΩ",
+        "1 MΩ"
+      ],
       "specs": {
         "potencia": "0.25 W",
         "tolerancia": "±1 % (banda café)",
@@ -168,8 +367,20 @@
         "codigo_5_bandas": "3 dígitos + multiplicador + tolerancia. Ej.: café-negro-negro-café-café = 1 kΩ ±1 %; café-negro-negro-rojo-café = 10 kΩ ±1 %; amarillo-violeta-negro-negro-café = 470 Ω ±1 %. Tabla completa de colores en res-carbon-1-4w."
       },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Divisores de referencia para ADC", "Ganancia de amplificadores operacionales", "Filtros activos", "Proyectos con Arduino (kits)"],
-      "stores": ["AG Electrónica", "UNIT Electronics", "Geek Factory", "Electrónica 5Hz", "Mercado Libre", "Tiendas de la Rep. del Salvador (Centro CDMX)"],
+      "typical_uses": [
+        "Divisores de referencia para ADC",
+        "Ganancia de amplificadores operacionales",
+        "Filtros activos",
+        "Proyectos con Arduino (kits)"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Geek Factory",
+        "Electrónica 5Hz",
+        "Mercado Libre",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "Por su cuerpo azul a veces el rojo y el café se confunden; medir con multímetro ante la duda. Un kit de Sears México (75 piezas, 22 valores) es de película metálica 1/4 W 1 %."
@@ -177,7 +388,13 @@
     {
       "id": "res-oxido-metalico-1w",
       "name": "Resistor de óxido metálico 1 W",
-      "aliases": ["resistencia de 1 watt", "MOF 1W", "metal oxide film resistor", "RSF100", "resistencia de potencia 1 W"],
+      "aliases": [
+        "resistencia de 1 watt",
+        "MOF 1W",
+        "metal oxide film resistor",
+        "RSF100",
+        "resistencia de potencia 1 W"
+      ],
       "category": "resistores",
       "subcategory": "resistores_potencia",
       "description": "Resistor axial de película de óxido metálico de 1 W, ±5 %, resistente a temperatura; cuerpo gris, azul o beige con bandas.",
@@ -194,7 +411,27 @@
         }
       ],
       "pinout": [],
-      "common_values": ["0.1 Ω", "0.22 Ω", "0.47 Ω", "1 Ω", "2.2 Ω", "4.7 Ω", "10 Ω", "22 Ω", "47 Ω", "100 Ω", "220 Ω", "470 Ω", "1 kΩ", "2.2 kΩ", "4.7 kΩ", "10 kΩ", "22 kΩ", "47 kΩ", "100 kΩ"],
+      "common_values": [
+        "0.1 Ω",
+        "0.22 Ω",
+        "0.47 Ω",
+        "1 Ω",
+        "2.2 Ω",
+        "4.7 Ω",
+        "10 Ω",
+        "22 Ω",
+        "47 Ω",
+        "100 Ω",
+        "220 Ω",
+        "470 Ω",
+        "1 kΩ",
+        "2.2 kΩ",
+        "4.7 kΩ",
+        "10 kΩ",
+        "22 kΩ",
+        "47 kΩ",
+        "100 kΩ"
+      ],
       "specs": {
         "potencia": "1 W",
         "tolerancia": "±5 %",
@@ -202,8 +439,19 @@
         "codigo_colores": "4 bandas (ver res-carbon-1-4w)"
       },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Limitadores de corriente en fuentes", "Cargas de prueba pequeñas", "Resistencias de descarga (bleeder)", "LEDs de potencia"],
-      "stores": ["Steren", "AG Electrónica", "UNIT Electronics", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Limitadores de corriente en fuentes",
+        "Cargas de prueba pequeñas",
+        "Resistencias de descarga (bleeder)",
+        "LEDs de potencia"
+      ],
+      "stores": [
+        "Steren",
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "También se venden de 1 W en película metálica o de carbón con tamaño parecido. Dimensiones no verificadas en la hoja de datos de un fabricante específico: confirmar con calibrador antes de fijar la huella."
@@ -211,7 +459,12 @@
     {
       "id": "res-oxido-metalico-2w",
       "name": "Resistor de óxido metálico 2 W",
-      "aliases": ["resistencia de 2 watts", "MOF 2W", "metal oxide 2W", "RSF200"],
+      "aliases": [
+        "resistencia de 2 watts",
+        "MOF 2W",
+        "metal oxide 2W",
+        "RSF200"
+      ],
       "category": "resistores",
       "subcategory": "resistores_potencia",
       "description": "Resistor axial de óxido metálico de 2 W, ±5 %, para disipaciones medias.",
@@ -228,15 +481,45 @@
         }
       ],
       "pinout": [],
-      "common_values": ["0.1 Ω", "0.22 Ω", "0.47 Ω", "1 Ω", "2.2 Ω", "4.7 Ω", "10 Ω", "22 Ω", "47 Ω", "100 Ω", "220 Ω", "470 Ω", "1 kΩ", "2.2 kΩ", "4.7 kΩ", "10 kΩ", "47 kΩ", "100 kΩ"],
+      "common_values": [
+        "0.1 Ω",
+        "0.22 Ω",
+        "0.47 Ω",
+        "1 Ω",
+        "2.2 Ω",
+        "4.7 Ω",
+        "10 Ω",
+        "22 Ω",
+        "47 Ω",
+        "100 Ω",
+        "220 Ω",
+        "470 Ω",
+        "1 kΩ",
+        "2.2 kΩ",
+        "4.7 kΩ",
+        "10 kΩ",
+        "47 kΩ",
+        "100 kΩ"
+      ],
       "specs": {
         "potencia": "2 W",
         "tolerancia": "±5 %",
         "voltaje_max": "aprox. 350–500 V (según fabricante)"
       },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Fuentes de alimentación", "Cargas de prueba", "Snubbers RC", "Reparación de electrodomésticos"],
-      "stores": ["Steren", "AG Electrónica", "UNIT Electronics", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Fuentes de alimentación",
+        "Cargas de prueba",
+        "Snubbers RC",
+        "Reparación de electrodomésticos"
+      ],
+      "stores": [
+        "Steren",
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "Dimensiones aproximadas; verificar con la pieza comprada."
@@ -244,7 +527,12 @@
     {
       "id": "res-oxido-metalico-3w",
       "name": "Resistor de óxido metálico 3 W",
-      "aliases": ["resistencia de 3 watts", "MOF 3W", "metal oxide 3W", "RSF300"],
+      "aliases": [
+        "resistencia de 3 watts",
+        "MOF 3W",
+        "metal oxide 3W",
+        "RSF300"
+      ],
       "category": "resistores",
       "subcategory": "resistores_potencia",
       "description": "Resistor axial de óxido metálico de 3 W, ±5 %; alternativa compacta al cerámico de 5 W.",
@@ -261,14 +549,40 @@
         }
       ],
       "pinout": [],
-      "common_values": ["0.1 Ω", "0.22 Ω", "0.47 Ω", "1 Ω", "2.2 Ω", "4.7 Ω", "10 Ω", "22 Ω", "47 Ω", "100 Ω", "220 Ω", "470 Ω", "1 kΩ", "2.2 kΩ", "4.7 kΩ", "10 kΩ"],
+      "common_values": [
+        "0.1 Ω",
+        "0.22 Ω",
+        "0.47 Ω",
+        "1 Ω",
+        "2.2 Ω",
+        "4.7 Ω",
+        "10 Ω",
+        "22 Ω",
+        "47 Ω",
+        "100 Ω",
+        "220 Ω",
+        "470 Ω",
+        "1 kΩ",
+        "2.2 kΩ",
+        "4.7 kΩ",
+        "10 kΩ"
+      ],
       "specs": {
         "potencia": "3 W",
         "tolerancia": "±5 %"
       },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Fuentes lineales", "Cargas de prueba", "Limitadores de arranque en equipos pequeños"],
-      "stores": ["AG Electrónica", "UNIT Electronics", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Fuentes lineales",
+        "Cargas de prueba",
+        "Limitadores de arranque en equipos pequeños"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Dimensiones aproximadas; no verificadas en una hoja de datos específica."
@@ -276,7 +590,14 @@
     {
       "id": "res-ceramica-5w",
       "name": "Resistor cerámico (cemento) 5 W",
-      "aliases": ["resistencia cerámica 5W", "resistencia de cemento", "resistencia de porcelana", "SQP 5W", "cement resistor", "wirewound ceramic resistor"],
+      "aliases": [
+        "resistencia cerámica 5W",
+        "resistencia de cemento",
+        "resistencia de porcelana",
+        "SQP 5W",
+        "cement resistor",
+        "wirewound ceramic resistor"
+      ],
       "category": "resistores",
       "subcategory": "resistores_potencia",
       "description": "Resistor de alambre (o película) encapsulado en caja cerámica rectangular blanca con cemento, 5 W, ±5 %, terminales axiales. Muy usado en fuentes y amplificadores.",
@@ -302,15 +623,46 @@
         }
       ],
       "pinout": [],
-      "common_values": ["0.1 Ω", "0.22 Ω", "0.33 Ω", "0.47 Ω", "1 Ω", "2.2 Ω", "4.7 Ω", "5 Ω", "8.2 Ω", "10 Ω", "22 Ω", "47 Ω", "100 Ω", "220 Ω", "470 Ω", "1 kΩ", "2.2 kΩ", "4.7 kΩ", "10 kΩ"],
+      "common_values": [
+        "0.1 Ω",
+        "0.22 Ω",
+        "0.33 Ω",
+        "0.47 Ω",
+        "1 Ω",
+        "2.2 Ω",
+        "4.7 Ω",
+        "5 Ω",
+        "8.2 Ω",
+        "10 Ω",
+        "22 Ω",
+        "47 Ω",
+        "100 Ω",
+        "220 Ω",
+        "470 Ω",
+        "1 kΩ",
+        "2.2 kΩ",
+        "4.7 kΩ",
+        "10 kΩ"
+      ],
       "specs": {
         "potencia": "5 W",
         "tolerancia": "±5 %",
         "marcado": "Impreso en el cuerpo, p. ej. '5W 0.22ΩJ' o '5W 10RJ' (J = ±5 %, R = punto decimal)"
       },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Resistencias de emisor en amplificadores de audio (0.22–0.47 Ω)", "Cargas de prueba para fuentes", "Sensado de corriente", "Limitadores de arranque"],
-      "stores": ["AG Electrónica", "UNIT Electronics", "Syscom", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Resistencias de emisor en amplificadores de audio (0.22–0.47 Ω)",
+        "Cargas de prueba para fuentes",
+        "Sensado de corriente",
+        "Limitadores de arranque"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Syscom",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "Verificado: Syscom México lista resistencia cerámica 5 W ±5 %. Valores bajos (0.1–1 Ω) son los más pedidos en reparación de audio."
@@ -318,7 +670,12 @@
     {
       "id": "res-ceramica-10w",
       "name": "Resistor cerámico (cemento) 10 W",
-      "aliases": ["resistencia cerámica 10W", "resistencia de cemento 10 W", "SQP 10W", "cement resistor 10W"],
+      "aliases": [
+        "resistencia cerámica 10W",
+        "resistencia de cemento 10 W",
+        "SQP 10W",
+        "cement resistor 10W"
+      ],
       "category": "resistores",
       "subcategory": "resistores_potencia",
       "description": "Resistor cerámico rectangular de 10 W, ±5 %, terminales axiales; cuerpo alargado blanco.",
@@ -335,15 +692,42 @@
         }
       ],
       "pinout": [],
-      "common_values": ["0.1 Ω", "0.22 Ω", "0.47 Ω", "1 Ω", "2.2 Ω", "4.7 Ω", "5 Ω", "8.2 Ω", "10 Ω", "22 Ω", "47 Ω", "100 Ω", "220 Ω", "470 Ω", "1 kΩ"],
+      "common_values": [
+        "0.1 Ω",
+        "0.22 Ω",
+        "0.47 Ω",
+        "1 Ω",
+        "2.2 Ω",
+        "4.7 Ω",
+        "5 Ω",
+        "8.2 Ω",
+        "10 Ω",
+        "22 Ω",
+        "47 Ω",
+        "100 Ω",
+        "220 Ω",
+        "470 Ω",
+        "1 kΩ"
+      ],
       "specs": {
         "potencia": "10 W",
         "tolerancia": "±5 %",
         "terminales": "cobre estañado (Syscom)"
       },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Cargas ficticias", "Descarga de capacitores", "Precarga (soft-start) de fuentes", "Calefactores pequeños"],
-      "stores": ["AG Electrónica", "UNIT Electronics", "Syscom", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Cargas ficticias",
+        "Descarga de capacitores",
+        "Precarga (soft-start) de fuentes",
+        "Calefactores pequeños"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Syscom",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "Verificado: Syscom lista una resistencia de cuerpo cerámico de 5 Ω 10 W ±5 % con terminales de cobre estañado."
@@ -351,7 +735,11 @@
     {
       "id": "res-ceramica-20w",
       "name": "Resistor cerámico (cemento) 20 W",
-      "aliases": ["resistencia cerámica 20W", "SQP 20W", "cement resistor 20W"],
+      "aliases": [
+        "resistencia cerámica 20W",
+        "SQP 20W",
+        "cement resistor 20W"
+      ],
       "category": "resistores",
       "subcategory": "resistores_potencia",
       "description": "Resistor cerámico rectangular de 20 W, ±5 %, axial; menos común que 5 W y 10 W.",
@@ -368,11 +756,31 @@
         }
       ],
       "pinout": [],
-      "common_values": ["0.1 Ω", "0.5 Ω", "1 Ω", "4.7 Ω", "10 Ω", "22 Ω", "47 Ω", "100 Ω"],
-      "specs": {"potencia": "20 W", "tolerancia": "±5 %"},
+      "common_values": [
+        "0.1 Ω",
+        "0.5 Ω",
+        "1 Ω",
+        "4.7 Ω",
+        "10 Ω",
+        "22 Ω",
+        "47 Ω",
+        "100 Ω"
+      ],
+      "specs": {
+        "potencia": "20 W",
+        "tolerancia": "±5 %"
+      },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Cargas de prueba", "Frenado y descarga", "Precarga de bancos de capacitores"],
-      "stores": ["AG Electrónica", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Cargas de prueba",
+        "Frenado y descarga",
+        "Precarga de bancos de capacitores"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Vendedores internacionales ofrecen la familia 5/10/20/30/50/100 W de cemento; en México 5 y 10 W son los habituales."
@@ -380,7 +788,12 @@
     {
       "id": "res-ceramica-bpr56-5w",
       "name": "Resistor cerámico no inductivo BPR56 5 W",
-      "aliases": ["BPR56", "resistencia shunt cerámica", "resistencia no inductiva", "resistencia de cemento plana"],
+      "aliases": [
+        "BPR56",
+        "resistencia shunt cerámica",
+        "resistencia no inductiva",
+        "resistencia de cemento plana"
+      ],
       "category": "resistores",
       "subcategory": "resistores_potencia",
       "description": "Resistor cerámico plano de 5 W, no inductivo, de valores muy bajos (0.01–1 Ω); se usa para medir corriente. Las dos terminales salen por la base.",
@@ -397,7 +810,11 @@
         }
       ],
       "pinout": [],
-      "common_values": ["0.01 Ω", "0.1 Ω", "1 Ω"],
+      "common_values": [
+        "0.01 Ω",
+        "0.1 Ω",
+        "1 Ω"
+      ],
       "specs": {
         "potencia": "5 W",
         "tolerancia": "±5 %",
@@ -406,8 +823,14 @@
         "inductancia": "baja (no inductiva)"
       },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Shunt de corriente en fuentes y cargadores", "Medición de corriente con ADC/INA219"],
-      "stores": ["UNIT Electronics", "Mercado Libre"],
+      "typical_uses": [
+        "Shunt de corriente en fuentes y cargadores",
+        "Medición de corriente con ADC/INA219"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Verificado en UNIT Electronics (cerámica BPR56 5 W, THT, 5 %, cuerpo blanco). Otros vendedores (eBay) ofrecen 0.01–0.5 Ω."
@@ -415,7 +838,13 @@
     {
       "id": "res-potencia-aluminio",
       "name": "Resistor de potencia con carcasa de aluminio (10–100 W)",
-      "aliases": ["resistencia con disipador", "resistencia dorada", "RX24", "aluminum housed resistor", "resistencia blindada"],
+      "aliases": [
+        "resistencia con disipador",
+        "resistencia dorada",
+        "RX24",
+        "aluminum housed resistor",
+        "resistencia blindada"
+      ],
       "category": "resistores",
       "subcategory": "resistores_potencia",
       "description": "Resistor de alambre encapsulado en carcasa de aluminio con aletas y orejas para atornillar a chasis o disipador; 10 W, 25 W, 50 W y 100 W.",
@@ -432,14 +861,30 @@
         }
       ],
       "pinout": [],
-      "common_values": ["0.1 Ω", "1 Ω", "4 Ω", "8 Ω", "10 Ω", "100 Ω"],
+      "common_values": [
+        "0.1 Ω",
+        "1 Ω",
+        "4 Ω",
+        "8 Ω",
+        "10 Ω",
+        "100 Ω"
+      ],
       "specs": {
         "potencia": "10, 25, 50, 100 W (la potencia nominal requiere disipador)",
         "tolerancia": "±5 % típico"
       },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Carga ficticia de 4/8 Ω para amplificadores", "Frenado de motores", "Carga de prueba de baterías y fuentes"],
-      "stores": ["UNIT Electronics", "AG Electrónica", "Mercado Libre", "Tiendas de la Rep. del Salvador (Centro CDMX)"],
+      "typical_uses": [
+        "Carga ficticia de 4/8 Ω para amplificadores",
+        "Frenado de motores",
+        "Carga de prueba de baterías y fuentes"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "UNIT Electronics indica que maneja resistencias de potencia de 10 W y 50 W con coraza de aluminio. Valores listados son orientativos."
@@ -447,7 +892,13 @@
     {
       "id": "res-alambre-vitrificado",
       "name": "Resistor de alambre vitrificado tubular",
-      "aliases": ["resistencia de alambre", "resistencia tubular", "resistencia esmaltada", "wirewound tubular resistor", "resistencia con abrazadera ajustable"],
+      "aliases": [
+        "resistencia de alambre",
+        "resistencia tubular",
+        "resistencia esmaltada",
+        "wirewound tubular resistor",
+        "resistencia con abrazadera ajustable"
+      ],
       "category": "resistores",
       "subcategory": "resistores_potencia",
       "description": "Tubo cerámico con alambre resistivo bobinado y recubrimiento vitrificado, con terminales de ojillo; de 10 W a cientos de watts. Algunas versiones tienen abrazadera deslizable para ajustar el valor.",
@@ -464,11 +915,28 @@
         }
       ],
       "pinout": [],
-      "common_values": ["1 Ω", "10 Ω", "50 Ω", "100 Ω", "1 kΩ"],
-      "specs": {"potencia": "10 W a 100 W o más", "tolerancia": "±5 % a ±10 %"},
+      "common_values": [
+        "1 Ω",
+        "10 Ω",
+        "50 Ω",
+        "100 Ω",
+        "1 kΩ"
+      ],
+      "specs": {
+        "potencia": "10 W a 100 W o más",
+        "tolerancia": "±5 % a ±10 %"
+      },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Cargas de prueba de alta potencia", "Limitadores de arranque en equipos industriales", "Calefacción"],
-      "stores": ["AG Electrónica", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Cargas de prueba de alta potencia",
+        "Limitadores de arranque en equipos industriales",
+        "Calefacción"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Disponibilidad y valores no verificados en catálogo; más común en tiendas de refacciones industriales."
@@ -476,7 +944,13 @@
     {
       "id": "res-smd-0603",
       "name": "Resistor SMD 0603",
-      "aliases": ["resistencia SMD 0603", "1608 métrico", "chip resistor 0603", "RC0603", "resistencia de montaje superficial"],
+      "aliases": [
+        "resistencia SMD 0603",
+        "1608 métrico",
+        "chip resistor 0603",
+        "RC0603",
+        "resistencia de montaje superficial"
+      ],
       "category": "resistores",
       "subcategory": "resistores_smd",
       "description": "Resistor chip de película gruesa de 1.6 x 0.8 mm, 1/10 W. Pequeño para soldar a mano, pero se puede con cautín de punta fina y pinzas.",
@@ -493,7 +967,26 @@
         }
       ],
       "pinout": [],
-      "common_values": ["0 Ω", "10 Ω", "22 Ω", "33 Ω", "47 Ω", "100 Ω", "220 Ω", "330 Ω", "470 Ω", "1 kΩ", "2.2 kΩ", "4.7 kΩ", "5.1 kΩ", "10 kΩ", "22 kΩ", "47 kΩ", "100 kΩ", "1 MΩ"],
+      "common_values": [
+        "0 Ω",
+        "10 Ω",
+        "22 Ω",
+        "33 Ω",
+        "47 Ω",
+        "100 Ω",
+        "220 Ω",
+        "330 Ω",
+        "470 Ω",
+        "1 kΩ",
+        "2.2 kΩ",
+        "4.7 kΩ",
+        "5.1 kΩ",
+        "10 kΩ",
+        "22 kΩ",
+        "47 kΩ",
+        "100 kΩ",
+        "1 MΩ"
+      ],
       "specs": {
         "potencia": "0.1 W (1/10 W)",
         "voltaje_max": "50–75 V según fabricante",
@@ -506,8 +999,17 @@
         "eia96_tabla": "01=100, 02=102, 03=105, 04=107, 05=110, 06=113, 07=115, 08=118, 09=121, 10=124, 11=127, 12=130, 13=133, 14=137, 15=140, 16=143, 17=147, 18=150, 19=154, 20=158, 21=162, 22=165, 23=169, 24=174, 25=178, 26=182, 27=187, 28=191, 29=196, 30=200, 31=205, 32=210, 33=215, 34=221, 35=226, 36=232, 37=237, 38=243, 39=249, 40=255, 41=261, 42=267, 43=274, 44=280, 45=287, 46=294, 47=301, 48=309, 49=316, 50=324, 51=332, 52=340, 53=348, 54=357, 55=365, 56=374, 57=383, 58=392, 59=402, 60=412, 61=422, 62=432, 63=442, 64=453, 65=464, 66=475, 67=487, 68=499, 69=511, 70=523, 71=536, 72=549, 73=562, 74=576, 75=590, 76=604, 77=619, 78=634, 79=649, 80=665, 81=681, 82=698, 83=715, 84=732, 85=750, 86=768, 87=787, 88=806, 89=825, 90=845, 91=866, 92=887, 93=909, 94=931, 95=953, 96=976"
       },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Placas compactas", "Módulos con microcontrolador", "Pull-ups de I2C", "Resistencias de LED en tiras y módulos"],
-      "stores": ["UNIT Electronics", "AG Electrónica", "Mercado Libre"],
+      "typical_uses": [
+        "Placas compactas",
+        "Módulos con microcontrolador",
+        "Pull-ups de I2C",
+        "Resistencias de LED en tiras y módulos"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "Este elemento contiene la referencia completa del código SMD (3 dígitos, 4 dígitos y EIA-96). La tabla EIA-96 se verificó contra la fórmula de la serie E96. En tienda se venden por tira/carrete o en libros-kit (ver res-kit-smd)."
@@ -515,7 +1017,12 @@
     {
       "id": "res-smd-0805",
       "name": "Resistor SMD 0805",
-      "aliases": ["resistencia SMD 0805", "2012 métrico", "chip resistor 0805", "RC0805"],
+      "aliases": [
+        "resistencia SMD 0805",
+        "2012 métrico",
+        "chip resistor 0805",
+        "RC0805"
+      ],
       "category": "resistores",
       "subcategory": "resistores_smd",
       "description": "Resistor chip de 2.0 x 1.25 mm, 1/8 W; el tamaño SMD más cómodo para soldar a mano en proyectos caseros.",
@@ -532,7 +1039,26 @@
         }
       ],
       "pinout": [],
-      "common_values": ["0 Ω", "10 Ω", "22 Ω", "47 Ω", "100 Ω", "220 Ω", "330 Ω", "470 Ω", "1 kΩ", "2.2 kΩ", "4.7 kΩ", "5.1 kΩ", "10 kΩ", "22 kΩ", "47 kΩ", "100 kΩ", "470 kΩ", "1 MΩ"],
+      "common_values": [
+        "0 Ω",
+        "10 Ω",
+        "22 Ω",
+        "47 Ω",
+        "100 Ω",
+        "220 Ω",
+        "330 Ω",
+        "470 Ω",
+        "1 kΩ",
+        "2.2 kΩ",
+        "4.7 kΩ",
+        "5.1 kΩ",
+        "10 kΩ",
+        "22 kΩ",
+        "47 kΩ",
+        "100 kΩ",
+        "470 kΩ",
+        "1 MΩ"
+      ],
       "specs": {
         "potencia": "0.125 W (1/8 W)",
         "voltaje_max": "150 V",
@@ -540,8 +1066,17 @@
         "codigo_smd": "3 dígitos (±5 %): 103 = 10 kΩ, 4R7 = 4.7 Ω; 4 dígitos (±1 %): 1002 = 10.0 kΩ; a veces EIA-96 (ver res-smd-0603)"
       },
       "schematic_symbol": "resistor",
-      "typical_uses": ["PCB caseras con SMD", "Pull-ups/pull-downs", "Divisores", "LEDs"],
-      "stores": ["UNIT Electronics", "AG Electrónica", "Mercado Libre"],
+      "typical_uses": [
+        "PCB caseras con SMD",
+        "Pull-ups/pull-downs",
+        "Divisores",
+        "LEDs"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "Recomendado como tamaño SMD por defecto en la app para usuarios que sueldan a mano."
@@ -549,7 +1084,12 @@
     {
       "id": "res-smd-1206",
       "name": "Resistor SMD 1206",
-      "aliases": ["resistencia SMD 1206", "3216 métrico", "chip resistor 1206", "RC1206"],
+      "aliases": [
+        "resistencia SMD 1206",
+        "3216 métrico",
+        "chip resistor 1206",
+        "RC1206"
+      ],
       "category": "resistores",
       "subcategory": "resistores_smd",
       "description": "Resistor chip de 3.2 x 1.6 mm, 1/4 W; el SMD más fácil de soldar a mano y útil como puente sobre una pista.",
@@ -566,7 +1106,23 @@
         }
       ],
       "pinout": [],
-      "common_values": ["0 Ω", "1 Ω", "10 Ω", "47 Ω", "100 Ω", "220 Ω", "330 Ω", "470 Ω", "1 kΩ", "2.2 kΩ", "4.7 kΩ", "10 kΩ", "47 kΩ", "100 kΩ", "1 MΩ"],
+      "common_values": [
+        "0 Ω",
+        "1 Ω",
+        "10 Ω",
+        "47 Ω",
+        "100 Ω",
+        "220 Ω",
+        "330 Ω",
+        "470 Ω",
+        "1 kΩ",
+        "2.2 kΩ",
+        "4.7 kΩ",
+        "10 kΩ",
+        "47 kΩ",
+        "100 kΩ",
+        "1 MΩ"
+      ],
       "specs": {
         "potencia": "0.25 W (1/4 W)",
         "voltaje_max": "200 V",
@@ -574,8 +1130,16 @@
         "codigo_smd": "3 dígitos (±5 %) o 4 dígitos (±1 %); ver res-smd-0603"
       },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Placas caseras soldadas a mano", "Puente 0 Ω sobre pistas en PCB de una cara", "LEDs de mayor corriente"],
-      "stores": ["UNIT Electronics", "AG Electrónica", "Mercado Libre"],
+      "typical_uses": [
+        "Placas caseras soldadas a mano",
+        "Puente 0 Ω sobre pistas en PCB de una cara",
+        "LEDs de mayor corriente"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": ""
@@ -583,7 +1147,13 @@
     {
       "id": "res-puente-0-ohm",
       "name": "Resistor 0 Ω (puente / jumper)",
-      "aliases": ["resistencia de cero ohms", "jumper 0R", "puente", "zero ohm resistor", "000"],
+      "aliases": [
+        "resistencia de cero ohms",
+        "jumper 0R",
+        "puente",
+        "zero ohm resistor",
+        "000"
+      ],
       "category": "resistores",
       "subcategory": "resistores_fijos",
       "description": "Resistor de resistencia prácticamente nula que sirve como puente para cruzar pistas en PCB de una cara o como opción de configuración. Axial con una sola banda negra o SMD marcado 0/000.",
@@ -609,15 +1179,28 @@
         }
       ],
       "pinout": [],
-      "common_values": ["0 Ω axial", "0 Ω 0603", "0 Ω 0805", "0 Ω 1206"],
+      "common_values": [
+        "0 Ω axial",
+        "0 Ω 0603",
+        "0 Ω 0805",
+        "0 Ω 1206"
+      ],
       "specs": {
         "resistencia_max": "típicamente ≤ 50 mΩ",
         "corriente_max": "aprox. 1 A (0603) y 2 A (0805/1206); axial según fabricante",
         "marcado": "una banda negra (axial); '0' o '000' (SMD)"
       },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Cruzar pistas en PCB de una cara", "Seleccionar opciones de configuración", "Medir corriente quitando el puente"],
-      "stores": ["AG Electrónica", "UNIT Electronics", "Mercado Libre"],
+      "typical_uses": [
+        "Cruzar pistas en PCB de una cara",
+        "Seleccionar opciones de configuración",
+        "Medir corriente quitando el puente"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Mercado Libre"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Corrientes máximas aproximadas; verificar en la hoja de datos de la marca."
@@ -625,32 +1208,112 @@
     {
       "id": "res-red-sip",
       "name": "Red resistiva SIP (bus o aislada)",
-      "aliases": ["red de resistencias", "resistor network", "resistor array SIP", "A103J", "9A103J", "A102J", "A472J", "bus resistor"],
+      "aliases": [
+        "red de resistencias",
+        "resistor network",
+        "resistor array SIP",
+        "A103J",
+        "9A103J",
+        "A102J",
+        "A472J",
+        "bus resistor"
+      ],
       "category": "resistores",
       "subcategory": "redes_resistivas",
       "description": "Varias resistencias del mismo valor en un encapsulado de una sola fila de pines. Tipo A (bus): todas comparten un pin común marcado con punto; tipo B (aislada): resistencias independientes por pares de pines.",
       "mounting": "THT",
       "packages": [
-        {"name": "SIP-5", "pins": 5, "pitch_mm": 2.54, "row_spacing_mm": null, "body_mm": "aprox. 12.7 x 2.5 x 5 (largo x espesor x alto)", "lead_diameter_mm": null, "notes": "Largo ≈ N × 2.54 mm; espesor ≈2.5 mm; alto ≈5 mm (aprox., tipo Bourns 4600X). Pines planos ≈0.5 mm; barreno 0.8–1.0 mm."},
-        {"name": "SIP-6", "pins": 6, "pitch_mm": 2.54, "row_spacing_mm": null, "body_mm": "aprox. 15.2 x 2.5 x 5", "lead_diameter_mm": null, "notes": "Dimensiones aproximadas."},
-        {"name": "SIP-8", "pins": 8, "pitch_mm": 2.54, "row_spacing_mm": null, "body_mm": "aprox. 20.3 x 2.5 x 5", "lead_diameter_mm": null, "notes": "Dimensiones aproximadas."},
-        {"name": "SIP-9 (el más común, p. ej. A103J)", "pins": 9, "pitch_mm": 2.54, "row_spacing_mm": null, "body_mm": "aprox. 22.9 x 2.5 x 5", "lead_diameter_mm": null, "notes": "Dimensiones aproximadas. 8 resistencias a pin común."},
-        {"name": "SIP-10", "pins": 10, "pitch_mm": 2.54, "row_spacing_mm": null, "body_mm": "aprox. 25.4 x 2.5 x 5", "lead_diameter_mm": null, "notes": "Dimensiones aproximadas."}
+        {
+          "name": "SIP-5",
+          "pins": 5,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": "aprox. 12.7 x 2.5 x 5 (largo x espesor x alto)",
+          "lead_diameter_mm": null,
+          "notes": "Largo ≈ N × 2.54 mm; espesor ≈2.5 mm; alto ≈5 mm (aprox., tipo Bourns 4600X). Pines planos ≈0.5 mm; barreno 0.8–1.0 mm."
+        },
+        {
+          "name": "SIP-6",
+          "pins": 6,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": "aprox. 15.2 x 2.5 x 5",
+          "lead_diameter_mm": null,
+          "notes": "Dimensiones aproximadas."
+        },
+        {
+          "name": "SIP-8",
+          "pins": 8,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": "aprox. 20.3 x 2.5 x 5",
+          "lead_diameter_mm": null,
+          "notes": "Dimensiones aproximadas."
+        },
+        {
+          "name": "SIP-9 (el más común, p. ej. A103J)",
+          "pins": 9,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": "aprox. 22.9 x 2.5 x 5",
+          "lead_diameter_mm": null,
+          "notes": "Dimensiones aproximadas. 8 resistencias a pin común."
+        },
+        {
+          "name": "SIP-10",
+          "pins": 10,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": "aprox. 25.4 x 2.5 x 5",
+          "lead_diameter_mm": null,
+          "notes": "Dimensiones aproximadas."
+        }
       ],
       "pinout": [
-        {"pin": "1", "name": "COM", "function": "Tipo A (bus): pin común, marcado con punto o línea"},
-        {"pin": "2..N", "name": "R", "function": "Tipo A (bus): cada pin es el otro extremo de una resistencia conectada a COM (N−1 resistencias)"},
-        {"pin": "1-2, 3-4, ...", "name": "R par", "function": "Tipo B (aislada): cada par de pines consecutivos es una resistencia independiente (N/2 resistencias)"}
+        {
+          "pin": "1",
+          "name": "COM",
+          "function": "Tipo A (bus): pin común, marcado con punto o línea"
+        },
+        {
+          "pin": "2..N",
+          "name": "R",
+          "function": "Tipo A (bus): cada pin es el otro extremo de una resistencia conectada a COM (N−1 resistencias)"
+        },
+        {
+          "pin": "1-2, 3-4, ...",
+          "name": "R par",
+          "function": "Tipo B (aislada): cada par de pines consecutivos es una resistencia independiente (N/2 resistencias)"
+        }
       ],
-      "common_values": ["A221J (220 Ω)", "A331J (330 Ω)", "A471J (470 Ω)", "A102J (1 kΩ)", "A222J (2.2 kΩ)", "A472J (4.7 kΩ)", "A103J (10 kΩ)", "A473J (47 kΩ)", "A104J (100 kΩ)"],
+      "common_values": [
+        "A221J (220 Ω)",
+        "A331J (330 Ω)",
+        "A471J (470 Ω)",
+        "A102J (1 kΩ)",
+        "A222J (2.2 kΩ)",
+        "A472J (4.7 kΩ)",
+        "A103J (10 kΩ)",
+        "A473J (47 kΩ)",
+        "A104J (100 kΩ)"
+      ],
       "specs": {
         "codigo": "Letra = circuito (A = bus/común, B = aisladas, otras letras según fabricante) + 3 dígitos de valor (103 = 10 kΩ) + tolerancia (J = ±5 %, G = ±2 %, F = ±1 %). El número de pines a veces va al inicio: 9A103J = 9 pines, bus, 10 kΩ.",
         "potencia_por_elemento": "aprox. 0.125–0.2 W",
         "tolerancia": "±2 % o ±5 % típico"
       },
       "schematic_symbol": "red_resistiva",
-      "typical_uses": ["Pull-ups de buses de datos y teclados", "Resistencias limitadoras para displays de 7 segmentos y barras de LEDs", "Ahorro de espacio en PCB"],
-      "stores": ["AG Electrónica", "UNIT Electronics", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Pull-ups de buses de datos y teclados",
+        "Resistencias limitadoras para displays de 7 segmentos y barras de LEDs",
+        "Ahorro de espacio en PCB"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "Respetar la orientación: el pin 1 (común) está marcado. Dimensiones de cuerpo aproximadas; el paso de 2.54 mm es estándar."
@@ -658,25 +1321,78 @@
     {
       "id": "res-red-dip",
       "name": "Red resistiva DIP-14/16",
-      "aliases": ["red de resistencias DIP", "DIP resistor network", "4116R-1", "4116R-2", "4114R", "resistor array DIP"],
+      "aliases": [
+        "red de resistencias DIP",
+        "DIP resistor network",
+        "4116R-1",
+        "4116R-2",
+        "4114R",
+        "resistor array DIP"
+      ],
       "category": "resistores",
       "subcategory": "redes_resistivas",
       "description": "Red de resistencias en encapsulado DIP como un circuito integrado: versión aislada (8 resistencias en DIP-16) o con bus común (15 resistencias a un pin común).",
       "mounting": "THT",
       "packages": [
-        {"name": "DIP-16", "pins": 16, "pitch_mm": 2.54, "row_spacing_mm": 7.62, "body_mm": "similar a CI DIP-16 (aprox. 20–22 x 6.5 mm)", "lead_diameter_mm": null, "notes": "Huella idéntica a un DIP-16 de 300 mil; cabe en zócalo. Largo del cuerpo aproximado."},
-        {"name": "DIP-14", "pins": 14, "pitch_mm": 2.54, "row_spacing_mm": 7.62, "body_mm": "similar a CI DIP-14", "lead_diameter_mm": null, "notes": "Huella idéntica a DIP-14 de 300 mil."}
+        {
+          "name": "DIP-16",
+          "pins": 16,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": 7.62,
+          "body_mm": "similar a CI DIP-16 (aprox. 20–22 x 6.5 mm)",
+          "lead_diameter_mm": null,
+          "notes": "Huella idéntica a un DIP-16 de 300 mil; cabe en zócalo. Largo del cuerpo aproximado."
+        },
+        {
+          "name": "DIP-14",
+          "pins": 14,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": 7.62,
+          "body_mm": "similar a CI DIP-14",
+          "lead_diameter_mm": null,
+          "notes": "Huella idéntica a DIP-14 de 300 mil."
+        }
       ],
       "pinout": [
-        {"pin": "n ↔ 17−n", "name": "R aislada", "function": "Versión aislada (-1) DIP-16: resistencia entre pin 1-16, 2-15, 3-14, 4-13, 5-12, 6-11, 7-10, 8-9"},
-        {"pin": "16", "name": "COM", "function": "Versión bus (-2) DIP-16: pin común"},
-        {"pin": "1–15", "name": "R", "function": "Versión bus (-2) DIP-16: cada pin conecta una resistencia al común"}
+        {
+          "pin": "n ↔ 17−n",
+          "name": "R aislada",
+          "function": "Versión aislada (-1) DIP-16: resistencia entre pin 1-16, 2-15, 3-14, 4-13, 5-12, 6-11, 7-10, 8-9"
+        },
+        {
+          "pin": "16",
+          "name": "COM",
+          "function": "Versión bus (-2) DIP-16: pin común"
+        },
+        {
+          "pin": "1–15",
+          "name": "R",
+          "function": "Versión bus (-2) DIP-16: cada pin conecta una resistencia al común"
+        }
       ],
-      "common_values": ["220 Ω", "330 Ω", "470 Ω", "1 kΩ", "4.7 kΩ", "10 kΩ"],
-      "specs": {"tolerancia": "±2 % típico", "potencia_por_elemento": "aprox. 0.125–0.25 W"},
+      "common_values": [
+        "220 Ω",
+        "330 Ω",
+        "470 Ω",
+        "1 kΩ",
+        "4.7 kΩ",
+        "10 kΩ"
+      ],
+      "specs": {
+        "tolerancia": "±2 % típico",
+        "potencia_por_elemento": "aprox. 0.125–0.25 W"
+      },
       "schematic_symbol": "red_resistiva",
-      "typical_uses": ["Limitadores de corriente para displays y barras de LED", "Terminación de buses", "Pull-ups en sistemas digitales"],
-      "stores": ["AG Electrónica", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Limitadores de corriente para displays y barras de LED",
+        "Terminación de buses",
+        "Pull-ups en sistemas digitales"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Pinouts según convención Bourns 4100R (-1 aislada, -2 bus); confirmar con la hoja de datos de la pieza."
@@ -684,26 +1400,81 @@
     {
       "id": "res-red-smd",
       "name": "Red resistiva SMD (array 4 x 0603 / 4 x 0402)",
-      "aliases": ["array de resistencias SMD", "4D03", "4D02", "CAY16", "resistor array 0603x4"],
+      "aliases": [
+        "array de resistencias SMD",
+        "4D03",
+        "4D02",
+        "CAY16",
+        "resistor array 0603x4"
+      ],
       "category": "resistores",
       "subcategory": "redes_resistivas",
       "description": "Cuatro resistencias aisladas en un solo chip SMD de 8 terminales; común en placas comerciales (Arduino, módulos).",
       "mounting": "SMD",
       "packages": [
-        {"name": "4 x 0603 (4D03, 1206 de 8 terminales)", "pins": 8, "pitch_mm": 0.8, "row_spacing_mm": null, "body_mm": "3.2 x 1.6", "lead_diameter_mm": null, "notes": "Paso 0.8 mm entre terminales de un mismo lado. Aproximado; ver hoja de datos (p. ej. Yageo YC164)."},
-        {"name": "4 x 0402 (4D02, 0804 de 8 terminales)", "pins": 8, "pitch_mm": 0.5, "row_spacing_mm": null, "body_mm": "2.0 x 1.0", "lead_diameter_mm": null, "notes": "Aproximado; difícil de soldar a mano."}
+        {
+          "name": "4 x 0603 (4D03, 1206 de 8 terminales)",
+          "pins": 8,
+          "pitch_mm": 0.8,
+          "row_spacing_mm": null,
+          "body_mm": "3.2 x 1.6",
+          "lead_diameter_mm": null,
+          "notes": "Paso 0.8 mm entre terminales de un mismo lado. Aproximado; ver hoja de datos (p. ej. Yageo YC164)."
+        },
+        {
+          "name": "4 x 0402 (4D02, 0804 de 8 terminales)",
+          "pins": 8,
+          "pitch_mm": 0.5,
+          "row_spacing_mm": null,
+          "body_mm": "2.0 x 1.0",
+          "lead_diameter_mm": null,
+          "notes": "Aproximado; difícil de soldar a mano."
+        }
       ],
       "pinout": [
-        {"pin": "1-8", "name": "R1", "function": "Resistencia 1"},
-        {"pin": "2-7", "name": "R2", "function": "Resistencia 2"},
-        {"pin": "3-6", "name": "R3", "function": "Resistencia 3"},
-        {"pin": "4-5", "name": "R4", "function": "Resistencia 4"}
+        {
+          "pin": "1-8",
+          "name": "R1",
+          "function": "Resistencia 1"
+        },
+        {
+          "pin": "2-7",
+          "name": "R2",
+          "function": "Resistencia 2"
+        },
+        {
+          "pin": "3-6",
+          "name": "R3",
+          "function": "Resistencia 3"
+        },
+        {
+          "pin": "4-5",
+          "name": "R4",
+          "function": "Resistencia 4"
+        }
       ],
-      "common_values": ["22 Ω", "33 Ω", "1 kΩ", "4.7 kΩ", "10 kΩ"],
-      "specs": {"tolerancia": "±5 % o ±1 %", "potencia_por_elemento": "aprox. 0.0625 W"},
+      "common_values": [
+        "22 Ω",
+        "33 Ω",
+        "1 kΩ",
+        "4.7 kΩ",
+        "10 kΩ"
+      ],
+      "specs": {
+        "tolerancia": "±5 % o ±1 %",
+        "potencia_por_elemento": "aprox. 0.0625 W"
+      },
       "schematic_symbol": "red_resistiva",
-      "typical_uses": ["Resistencias en serie para buses de datos", "Pull-ups múltiples", "Clones de Arduino"],
-      "stores": ["AG Electrónica", "UNIT Electronics", "Mercado Libre"],
+      "typical_uses": [
+        "Resistencias en serie para buses de datos",
+        "Pull-ups múltiples",
+        "Clones de Arduino"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Mercado Libre"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Poco común en mostrador; más en distribuidores. Dimensiones aproximadas."
@@ -711,22 +1482,70 @@
     {
       "id": "res-kit-tht",
       "name": "Kit / surtido de resistencias THT",
-      "aliases": ["kit de resistencias", "surtido de resistencias", "resistor kit", "kit 600 piezas 30 valores", "resistencias en estuche"],
+      "aliases": [
+        "kit de resistencias",
+        "surtido de resistencias",
+        "resistor kit",
+        "kit 600 piezas 30 valores",
+        "resistencias en estuche"
+      ],
       "category": "resistores",
       "subcategory": "kits_resistores",
       "description": "Surtidos de resistencias axiales 1/4 W (película metálica 1 % o carbón 5 %) en libreta, bolsa o estuche, con varios valores de la serie E12/E24.",
       "mounting": "THT",
       "packages": [],
       "pinout": [],
-      "common_values": ["10 Ω", "22 Ω", "47 Ω", "100 Ω", "150 Ω", "200 Ω", "220 Ω", "270 Ω", "330 Ω", "470 Ω", "510 Ω", "680 Ω", "1 kΩ", "2 kΩ", "2.2 kΩ", "3.3 kΩ", "4.7 kΩ", "5.1 kΩ", "6.8 kΩ", "10 kΩ", "20 kΩ", "47 kΩ", "51 kΩ", "68 kΩ", "100 kΩ", "220 kΩ", "300 kΩ", "470 kΩ", "680 kΩ", "1 MΩ"],
+      "common_values": [
+        "10 Ω",
+        "22 Ω",
+        "47 Ω",
+        "100 Ω",
+        "150 Ω",
+        "200 Ω",
+        "220 Ω",
+        "270 Ω",
+        "330 Ω",
+        "470 Ω",
+        "510 Ω",
+        "680 Ω",
+        "1 kΩ",
+        "2 kΩ",
+        "2.2 kΩ",
+        "3.3 kΩ",
+        "4.7 kΩ",
+        "5.1 kΩ",
+        "6.8 kΩ",
+        "10 kΩ",
+        "20 kΩ",
+        "47 kΩ",
+        "51 kΩ",
+        "68 kΩ",
+        "100 kΩ",
+        "220 kΩ",
+        "300 kΩ",
+        "470 kΩ",
+        "680 kΩ",
+        "1 MΩ"
+      ],
       "specs": {
         "presentaciones": "600 piezas / 30 valores (20 c/u, metal film 1 %, el más común en tiendas maker); 560 piezas / 20 valores (OSEPP, carbón 5 %); 75 piezas / 22 valores en estuche (Sears México, película metálica 1 %); kits grandes de 2600 piezas / 130 valores; kits por valor de 100 piezas (Newark)",
         "potencia": "0.25 W",
         "huella": "ver res-carbon-1-4w y res-metal-1-4w-1pct"
       },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Laboratorio de estudiante", "Prototipos con Arduino", "Reparación general"],
-      "stores": ["UNIT Electronics", "Geek Factory", "Electrónica 5Hz", "AG Electrónica", "Mercado Libre", "Sears México"],
+      "typical_uses": [
+        "Laboratorio de estudiante",
+        "Prototipos con Arduino",
+        "Reparación general"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Electrónica 5Hz",
+        "AG Electrónica",
+        "Mercado Libre",
+        "Sears México"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "Los 30 valores listados corresponden al kit chino típico de 600 piezas; el contenido varía por vendedor. Verificado: Sears México (kit 75 pzas, 22 valores, metal film 1 %), RobotShop (OSEPP 560 pzas). En la app se puede ofrecer 'filtrar por mi kit'."
@@ -734,21 +1553,38 @@
     {
       "id": "res-kit-smd",
       "name": "Libro-kit de resistencias SMD (0603 / 0805 / 1206)",
-      "aliases": ["kit SMD", "libro de resistencias SMD", "SMD resistor sample book", "surtido SMD"],
+      "aliases": [
+        "kit SMD",
+        "libro de resistencias SMD",
+        "SMD resistor sample book",
+        "surtido SMD"
+      ],
       "category": "resistores",
       "subcategory": "kits_resistores",
       "description": "Carpeta con tiras de cinta de resistencias SMD de un tamaño (0603, 0805 o 1206), con muchos valores de 0 Ω a 10 MΩ.",
       "mounting": "SMD",
       "packages": [],
       "pinout": [],
-      "common_values": ["0603 (≈170 valores)", "0805 (≈170 valores)", "1206 (≈170 valores)"],
+      "common_values": [
+        "0603 (≈170 valores)",
+        "0805 (≈170 valores)",
+        "1206 (≈170 valores)"
+      ],
       "specs": {
         "contenido": "aprox. 170 valores × 25 o 50 piezas, 0 Ω a 10 MΩ (varía por vendedor)",
         "huella": "ver res-smd-0603 / res-smd-0805 / res-smd-1206"
       },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Prototipos SMD", "Reparación de placas", "Laboratorio"],
-      "stores": ["UNIT Electronics", "Mercado Libre", "AG Electrónica"],
+      "typical_uses": [
+        "Prototipos SMD",
+        "Reparación de placas",
+        "Laboratorio"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre",
+        "AG Electrónica"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Cantidades aproximadas; no verificadas en una tienda mexicana específica."
@@ -756,18 +1592,46 @@
     {
       "id": "res-kit-potenciometros",
       "name": "Kit de trimpots / potenciómetros",
-      "aliases": ["kit trimpot 3296", "surtido de potenciómetros", "kit de presets", "potentiometer kit"],
+      "aliases": [
+        "kit trimpot 3296",
+        "surtido de potenciómetros",
+        "kit de presets",
+        "potentiometer kit"
+      ],
       "category": "resistores",
       "subcategory": "kits_resistores",
       "description": "Surtidos de trimpots (3296W, 3362P o de carbón) o potenciómetros de 16 mm en varios valores, en caja o bolsa.",
       "mounting": "THT",
       "packages": [],
       "pinout": [],
-      "common_values": ["100 Ω", "200 Ω", "500 Ω", "1 kΩ", "2 kΩ", "5 kΩ", "10 kΩ", "20 kΩ", "50 kΩ", "100 kΩ", "200 kΩ", "500 kΩ", "1 MΩ"],
-      "specs": {"huella": "ver res-trimpot-3296w, res-trimpot-3362p, res-trimpot-carbon-6mm, res-pot-16mm-pcb"},
+      "common_values": [
+        "100 Ω",
+        "200 Ω",
+        "500 Ω",
+        "1 kΩ",
+        "2 kΩ",
+        "5 kΩ",
+        "10 kΩ",
+        "20 kΩ",
+        "50 kΩ",
+        "100 kΩ",
+        "200 kΩ",
+        "500 kΩ",
+        "1 MΩ"
+      ],
+      "specs": {
+        "huella": "ver res-trimpot-3296w, res-trimpot-3362p, res-trimpot-carbon-6mm, res-pot-16mm-pcb"
+      },
       "schematic_symbol": "trimpot",
-      "typical_uses": ["Laboratorio", "Calibración de prototipos"],
-      "stores": ["Mercado Libre", "UNIT Electronics", "AG Electrónica"],
+      "typical_uses": [
+        "Laboratorio",
+        "Calibración de prototipos"
+      ],
+      "stores": [
+        "Mercado Libre",
+        "UNIT Electronics",
+        "AG Electrónica"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Contenido y valores varían por vendedor; no verificados en tienda."
@@ -775,7 +1639,16 @@
     {
       "id": "res-pot-16mm-pcb",
       "name": "Potenciómetro rotatorio 16 mm para PCB (mono)",
-      "aliases": ["potenciómetro 10k", "pot B10K", "WH148", "RV16", "Alpha 16mm", "potenciómetro lineal", "potenciómetro logarítmico", "perilla"],
+      "aliases": [
+        "potenciómetro 10k",
+        "pot B10K",
+        "WH148",
+        "RV16",
+        "Alpha 16mm",
+        "potenciómetro lineal",
+        "potenciómetro logarítmico",
+        "perilla"
+      ],
       "category": "resistores",
       "subcategory": "potenciometros",
       "description": "Potenciómetro de carbón de 16 mm con 3 pines para PCB en línea, eje de 6 mm moleteado y buje roscado para fijar al panel. B = lineal, A = logarítmico (audio).",
@@ -792,11 +1665,39 @@
         }
       ],
       "pinout": [
-        {"pin": "1", "name": "Extremo CCW", "function": "Extremo del elemento resistivo (a la izquierda viendo el frente con los pines hacia abajo)"},
-        {"pin": "2", "name": "Cursor (wiper)", "function": "Contacto deslizante, salida variable"},
-        {"pin": "3", "name": "Extremo CW", "function": "Extremo del elemento resistivo; al girar en sentido horario aumenta R(1-2)"}
+        {
+          "pin": "1",
+          "name": "Extremo CCW",
+          "function": "Extremo del elemento resistivo (a la izquierda viendo el frente con los pines hacia abajo)"
+        },
+        {
+          "pin": "2",
+          "name": "Cursor (wiper)",
+          "function": "Contacto deslizante, salida variable"
+        },
+        {
+          "pin": "3",
+          "name": "Extremo CW",
+          "function": "Extremo del elemento resistivo; al girar en sentido horario aumenta R(1-2)"
+        }
       ],
-      "common_values": ["B1K", "B2K", "B5K", "B10K", "B20K", "B50K", "B100K", "B250K", "B500K", "B1M", "A10K", "A50K", "A100K", "A500K", "A1M"],
+      "common_values": [
+        "B1K",
+        "B2K",
+        "B5K",
+        "B10K",
+        "B20K",
+        "B50K",
+        "B100K",
+        "B250K",
+        "B500K",
+        "B1M",
+        "A10K",
+        "A50K",
+        "A100K",
+        "A500K",
+        "A1M"
+      ],
       "specs": {
         "potencia": "0.125 W (Alpha RV16AF)",
         "tolerancia": "±20 %",
@@ -807,8 +1708,21 @@
         "marcado": "Letra de curva + valor: B103 o B10K = 10 kΩ lineal; A104 = 100 kΩ logarítmico"
       },
       "schematic_symbol": "potenciometro",
-      "typical_uses": ["Control de volumen y tono", "Ajuste de velocidad de motores", "Entrada analógica para Arduino", "Control de brillo"],
-      "stores": ["Steren", "AG Electrónica", "UNIT Electronics", "Geek Factory", "Electrónica 5Hz", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Control de volumen y tono",
+        "Ajuste de velocidad de motores",
+        "Entrada analógica para Arduino",
+        "Control de brillo"
+      ],
+      "stores": [
+        "Steren",
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Geek Factory",
+        "Electrónica 5Hz",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "muy_alta",
       "price_mxn_approx": null,
       "notes": "Verificado: UNIT Electronics vende el WH148 de 3 pines con eje de 6 mm (20 mm) en varios valores. Steren (Rappi) lista 'Potenciómetro miniatura sin switch de 50 kΩ' a $9.00 (no se confirmó el tamaño)."
@@ -816,7 +1730,14 @@
     {
       "id": "res-pot-16mm-doble",
       "name": "Potenciómetro doble (estéreo) 16 mm para PCB",
-      "aliases": ["potenciómetro estéreo", "potenciómetro dual", "pot doble", "WH148 doble", "RV16 dual", "6 pines"],
+      "aliases": [
+        "potenciómetro estéreo",
+        "potenciómetro dual",
+        "pot doble",
+        "WH148 doble",
+        "RV16 dual",
+        "6 pines"
+      ],
       "category": "resistores",
       "subcategory": "potenciometros",
       "description": "Dos potenciómetros del mismo valor en un solo eje (dos secciones apiladas), 6 pines para PCB; para control de volumen estéreo.",
@@ -833,14 +1754,42 @@
         }
       ],
       "pinout": [
-        {"pin": "1A, 2A, 3A", "name": "Sección A", "function": "Extremo CCW, cursor, extremo CW (canal izquierdo)"},
-        {"pin": "1B, 2B, 3B", "name": "Sección B", "function": "Extremo CCW, cursor, extremo CW (canal derecho)"}
+        {
+          "pin": "1A, 2A, 3A",
+          "name": "Sección A",
+          "function": "Extremo CCW, cursor, extremo CW (canal izquierdo)"
+        },
+        {
+          "pin": "1B, 2B, 3B",
+          "name": "Sección B",
+          "function": "Extremo CCW, cursor, extremo CW (canal derecho)"
+        }
       ],
-      "common_values": ["A10K", "A50K", "A100K", "B10K", "B50K", "B100K"],
-      "specs": {"tolerancia": "±20 %", "curvas": "A (log) para audio, B (lineal)"},
+      "common_values": [
+        "A10K",
+        "A50K",
+        "A100K",
+        "B10K",
+        "B50K",
+        "B100K"
+      ],
+      "specs": {
+        "tolerancia": "±20 %",
+        "curvas": "A (log) para audio, B (lineal)"
+      },
       "schematic_symbol": "potenciometro_doble",
-      "typical_uses": ["Volumen estéreo", "Balance/tono en amplificadores", "Control dual de filtros"],
-      "stores": ["AG Electrónica", "UNIT Electronics", "Steren", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Volumen estéreo",
+        "Balance/tono en amplificadores",
+        "Control dual de filtros"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Steren",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": ""
@@ -848,7 +1797,14 @@
     {
       "id": "res-pot-24mm",
       "name": "Potenciómetro rotatorio 24 mm con terminales para cable",
-      "aliases": ["potenciómetro de 24 mm", "potenciómetro grande", "RV24", "Alpha 24mm", "pot de panel", "potenciómetro de guitarra"],
+      "aliases": [
+        "potenciómetro de 24 mm",
+        "potenciómetro grande",
+        "RV24",
+        "Alpha 24mm",
+        "pot de panel",
+        "potenciómetro de guitarra"
+      ],
       "category": "resistores",
       "subcategory": "potenciometros",
       "description": "Potenciómetro de 24 mm de diámetro para montaje en panel con terminales tipo oreja para soldar cable; más robusto que el de 16 mm. Existe también en versión doble.",
@@ -865,19 +1821,52 @@
         }
       ],
       "pinout": [
-        {"pin": "1", "name": "Extremo CCW", "function": "Extremo del elemento resistivo"},
-        {"pin": "2", "name": "Cursor (wiper)", "function": "Salida variable"},
-        {"pin": "3", "name": "Extremo CW", "function": "Extremo del elemento resistivo"}
+        {
+          "pin": "1",
+          "name": "Extremo CCW",
+          "function": "Extremo del elemento resistivo"
+        },
+        {
+          "pin": "2",
+          "name": "Cursor (wiper)",
+          "function": "Salida variable"
+        },
+        {
+          "pin": "3",
+          "name": "Extremo CW",
+          "function": "Extremo del elemento resistivo"
+        }
       ],
-      "common_values": ["B1K", "B5K", "B10K", "B50K", "B100K", "A10K", "A50K", "A100K", "A250K", "A500K", "A1M"],
+      "common_values": [
+        "B1K",
+        "B5K",
+        "B10K",
+        "B50K",
+        "B100K",
+        "A10K",
+        "A50K",
+        "A100K",
+        "A250K",
+        "A500K",
+        "A1M"
+      ],
       "specs": {
         "potencia": "0.25–0.5 W (Alpha RV24: dual 1/4 W; con switch 500 mW)",
         "tolerancia": "±20 %",
         "curvas": "A (log), B (lineal)"
       },
       "schematic_symbol": "potenciometro",
-      "typical_uses": ["Amplificadores de audio y guitarra", "Fuentes de laboratorio", "Paneles de equipos"],
-      "stores": ["AG Electrónica", "Steren", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Amplificadores de audio y guitarra",
+        "Fuentes de laboratorio",
+        "Paneles de equipos"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Steren",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "Para la app: este componente va fuera de la PCB; la PCB solo lleva 3 pads/cables (usar bornera o header de 3 pines)."
@@ -885,7 +1874,14 @@
     {
       "id": "res-pot-con-interruptor",
       "name": "Potenciómetro con interruptor (switch)",
-      "aliases": ["potenciómetro con switch", "pot con apagador", "volumen con encendido", "WH138", "RV16 con switch", "RV24 con switch"],
+      "aliases": [
+        "potenciómetro con switch",
+        "pot con apagador",
+        "volumen con encendido",
+        "WH138",
+        "RV16 con switch",
+        "RV24 con switch"
+      ],
       "category": "resistores",
       "subcategory": "potenciometros",
       "description": "Potenciómetro (16 o 24 mm) con un interruptor en la parte trasera que se acciona al girar al extremo CCW (clic); combina encendido y volumen.",
@@ -902,17 +1898,58 @@
         }
       ],
       "pinout": [
-        {"pin": "1", "name": "Extremo CCW", "function": "Extremo del elemento resistivo"},
-        {"pin": "2", "name": "Cursor (wiper)", "function": "Salida variable"},
-        {"pin": "3", "name": "Extremo CW", "function": "Extremo del elemento resistivo"},
-        {"pin": "S1", "name": "Interruptor", "function": "Terminal 1 del interruptor (abierto en el extremo CCW)"},
-        {"pin": "S2", "name": "Interruptor", "function": "Terminal 2 del interruptor"}
+        {
+          "pin": "1",
+          "name": "Extremo CCW",
+          "function": "Extremo del elemento resistivo"
+        },
+        {
+          "pin": "2",
+          "name": "Cursor (wiper)",
+          "function": "Salida variable"
+        },
+        {
+          "pin": "3",
+          "name": "Extremo CW",
+          "function": "Extremo del elemento resistivo"
+        },
+        {
+          "pin": "S1",
+          "name": "Interruptor",
+          "function": "Terminal 1 del interruptor (abierto en el extremo CCW)"
+        },
+        {
+          "pin": "S2",
+          "name": "Interruptor",
+          "function": "Terminal 2 del interruptor"
+        }
       ],
-      "common_values": ["A10K", "A50K", "A100K", "B10K", "B50K", "B100K", "A500K", "A1M"],
-      "specs": {"interruptor": "SPST (algunos SPDT)", "tolerancia": "±20 %"},
+      "common_values": [
+        "A10K",
+        "A50K",
+        "A100K",
+        "B10K",
+        "B50K",
+        "B100K",
+        "A500K",
+        "A1M"
+      ],
+      "specs": {
+        "interruptor": "SPST (algunos SPDT)",
+        "tolerancia": "±20 %"
+      },
       "schematic_symbol": "potenciometro_interruptor",
-      "typical_uses": ["Radios y amplificadores pequeños", "Dimmer con apagado", "Control de velocidad con encendido"],
-      "stores": ["Steren", "AG Electrónica", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Radios y amplificadores pequeños",
+        "Dimmer con apagado",
+        "Control de velocidad con encendido"
+      ],
+      "stores": [
+        "Steren",
+        "AG Electrónica",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "Steren maneja versiones 'con switch' y 'sin switch' (se infiere del listado 'Potenciómetro miniatura sin switch' en Rappi)."
@@ -920,7 +1957,13 @@
     {
       "id": "res-pot-9mm",
       "name": "Potenciómetro miniatura 9 mm para PCB",
-      "aliases": ["potenciómetro miniatura", "RK09", "RV09", "pot 9mm", "potenciómetro para protoboard"],
+      "aliases": [
+        "potenciómetro miniatura",
+        "RK09",
+        "RV09",
+        "pot 9mm",
+        "potenciómetro para protoboard"
+      ],
       "category": "resistores",
       "subcategory": "potenciometros",
       "description": "Potenciómetro rotatorio compacto de 9 mm con 3 pines en línea y patas de sujeción; usado en placas pequeñas y kits.",
@@ -937,15 +1980,45 @@
         }
       ],
       "pinout": [
-        {"pin": "1", "name": "Extremo CCW", "function": "Extremo del elemento resistivo"},
-        {"pin": "2", "name": "Cursor (wiper)", "function": "Salida variable"},
-        {"pin": "3", "name": "Extremo CW", "function": "Extremo del elemento resistivo"}
+        {
+          "pin": "1",
+          "name": "Extremo CCW",
+          "function": "Extremo del elemento resistivo"
+        },
+        {
+          "pin": "2",
+          "name": "Cursor (wiper)",
+          "function": "Salida variable"
+        },
+        {
+          "pin": "3",
+          "name": "Extremo CW",
+          "function": "Extremo del elemento resistivo"
+        }
       ],
-      "common_values": ["B1K", "B5K", "B10K", "B20K", "B50K", "B100K"],
-      "specs": {"tolerancia": "±20 %", "potencia": "aprox. 0.05 W"},
+      "common_values": [
+        "B1K",
+        "B5K",
+        "B10K",
+        "B20K",
+        "B50K",
+        "B100K"
+      ],
+      "specs": {
+        "tolerancia": "±20 %",
+        "potencia": "aprox. 0.05 W"
+      },
       "schematic_symbol": "potenciometro",
-      "typical_uses": ["Placas compactas", "Ajustes de usuario en módulos", "Kits de Arduino"],
-      "stores": ["UNIT Electronics", "AG Electrónica", "Mercado Libre"],
+      "typical_uses": [
+        "Placas compactas",
+        "Ajustes de usuario en módulos",
+        "Kits de Arduino"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Medidas y potencia aproximadas, no verificadas en una tienda mexicana."
@@ -953,7 +2026,14 @@
     {
       "id": "res-pot-deslizable",
       "name": "Potenciómetro deslizable (slide / fader)",
-      "aliases": ["potenciómetro deslizable", "fader", "slide potentiometer", "potenciómetro lineal de carrera", "PTA4543", "PTA6043"],
+      "aliases": [
+        "potenciómetro deslizable",
+        "fader",
+        "slide potentiometer",
+        "potenciómetro lineal de carrera",
+        "PTA4543",
+        "PTA6043"
+      ],
       "category": "resistores",
       "subcategory": "potenciometros",
       "description": "Potenciómetro de carrera recta, mono o estéreo, para PCB; usado en mezcladoras y ecualizadores.",
@@ -979,15 +2059,47 @@
         }
       ],
       "pinout": [
-        {"pin": "1", "name": "Extremo", "function": "Extremo del elemento resistivo"},
-        {"pin": "2", "name": "Cursor (wiper)", "function": "Salida variable"},
-        {"pin": "3", "name": "Extremo", "function": "Otro extremo del elemento resistivo"}
+        {
+          "pin": "1",
+          "name": "Extremo",
+          "function": "Extremo del elemento resistivo"
+        },
+        {
+          "pin": "2",
+          "name": "Cursor (wiper)",
+          "function": "Salida variable"
+        },
+        {
+          "pin": "3",
+          "name": "Extremo",
+          "function": "Otro extremo del elemento resistivo"
+        }
       ],
-      "common_values": ["B10K", "B20K", "B50K", "B100K", "A10K", "A50K"],
-      "specs": {"tolerancia": "±20 %", "carreras_comunes": "35, 45 y 60 mm"},
+      "common_values": [
+        "B10K",
+        "B20K",
+        "B50K",
+        "B100K",
+        "A10K",
+        "A50K"
+      ],
+      "specs": {
+        "tolerancia": "±20 %",
+        "carreras_comunes": "35, 45 y 60 mm"
+      },
       "schematic_symbol": "potenciometro",
-      "typical_uses": ["Mezcladoras de audio", "Ecualizadores gráficos", "Controladores MIDI", "Proyectos con Arduino"],
-      "stores": ["Mercado Libre", "UNIT Electronics", "AG Electrónica", "Tiendas de la Rep. del Salvador (Centro CDMX)"],
+      "typical_uses": [
+        "Mezcladoras de audio",
+        "Ecualizadores gráficos",
+        "Controladores MIDI",
+        "Proyectos con Arduino"
+      ],
+      "stores": [
+        "Mercado Libre",
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)"
+      ],
       "popularity": "media",
       "price_mxn_approx": "$190 (deslizable 8.5 cm, Mercado Libre)",
       "notes": "Verificado: Mercado Libre México, 'Potenciómetro deslizable 8.5 cm St 10k 20k 50k 100k' a $190.50."
@@ -995,7 +2107,14 @@
     {
       "id": "res-pot-multivuelta-3590s",
       "name": "Potenciómetro multivuelta de precisión 3590S (10 vueltas)",
-      "aliases": ["3590S", "3590S-2-103L", "potenciómetro de 10 vueltas", "potenciómetro de precisión", "multiturn potentiometer", "WXD3-13"],
+      "aliases": [
+        "3590S",
+        "3590S-2-103L",
+        "potenciómetro de 10 vueltas",
+        "potenciómetro de precisión",
+        "multiturn potentiometer",
+        "WXD3-13"
+      ],
       "category": "resistores",
       "subcategory": "potenciometros",
       "description": "Potenciómetro de alambre de 10 vueltas para panel, con eje de 1/4\" (6.35 mm); permite ajuste fino. Se combina con un dial contador de vueltas.",
@@ -1012,11 +2131,33 @@
         }
       ],
       "pinout": [
-        {"pin": "1", "name": "Extremo", "function": "Extremo del elemento resistivo"},
-        {"pin": "2", "name": "Cursor (wiper)", "function": "Salida variable"},
-        {"pin": "3", "name": "Extremo", "function": "Otro extremo del elemento resistivo"}
+        {
+          "pin": "1",
+          "name": "Extremo",
+          "function": "Extremo del elemento resistivo"
+        },
+        {
+          "pin": "2",
+          "name": "Cursor (wiper)",
+          "function": "Salida variable"
+        },
+        {
+          "pin": "3",
+          "name": "Extremo",
+          "function": "Otro extremo del elemento resistivo"
+        }
       ],
-      "common_values": ["100 Ω", "500 Ω", "1 kΩ", "2 kΩ", "5 kΩ", "10 kΩ", "20 kΩ", "50 kΩ", "100 kΩ"],
+      "common_values": [
+        "100 Ω",
+        "500 Ω",
+        "1 kΩ",
+        "2 kΩ",
+        "5 kΩ",
+        "10 kΩ",
+        "20 kΩ",
+        "50 kΩ",
+        "100 kΩ"
+      ],
       "specs": {
         "vueltas": "10",
         "potencia": "aprox. 2 W",
@@ -1025,8 +2166,17 @@
         "codigo": "3590S-2-103L = 10 kΩ (103)"
       },
       "schematic_symbol": "potenciometro",
-      "typical_uses": ["Fuentes de laboratorio ajustables", "Generadores de funciones", "Calibración fina de referencias"],
-      "stores": ["AG Electrónica", "UNIT Electronics", "Syscom", "Mercado Libre"],
+      "typical_uses": [
+        "Fuentes de laboratorio ajustables",
+        "Generadores de funciones",
+        "Calibración fina de referencias"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Syscom",
+        "Mercado Libre"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Especificaciones aproximadas de memoria de hojas de datos 3590S; verificar. Syscom lista un 'potenciómetro de precisión de 10 kΩ' (marca Ramsey)."
@@ -1034,7 +2184,13 @@
     {
       "id": "res-reostato-alambre",
       "name": "Potenciómetro de alambre / reóstato de panel",
-      "aliases": ["reóstato", "potenciómetro de alambre", "wirewound potentiometer", "rheostat", "potenciómetro de potencia"],
+      "aliases": [
+        "reóstato",
+        "potenciómetro de alambre",
+        "wirewound potentiometer",
+        "rheostat",
+        "potenciómetro de potencia"
+      ],
       "category": "resistores",
       "subcategory": "potenciometros",
       "description": "Resistencia variable bobinada con alambre, para manejar más potencia (de 1 W a 50 W o más); montaje en panel.",
@@ -1051,15 +2207,46 @@
         }
       ],
       "pinout": [
-        {"pin": "1", "name": "Extremo", "function": "Extremo del devanado"},
-        {"pin": "2", "name": "Cursor", "function": "Contacto deslizante"},
-        {"pin": "3", "name": "Extremo", "function": "Otro extremo (en reóstato se usan solo 2 terminales)"}
+        {
+          "pin": "1",
+          "name": "Extremo",
+          "function": "Extremo del devanado"
+        },
+        {
+          "pin": "2",
+          "name": "Cursor",
+          "function": "Contacto deslizante"
+        },
+        {
+          "pin": "3",
+          "name": "Extremo",
+          "function": "Otro extremo (en reóstato se usan solo 2 terminales)"
+        }
       ],
-      "common_values": ["10 Ω", "50 Ω", "100 Ω", "500 Ω", "1 kΩ", "5 kΩ", "10 kΩ"],
-      "specs": {"potencia": "1 W a 50 W o más según modelo", "curva": "lineal"},
+      "common_values": [
+        "10 Ω",
+        "50 Ω",
+        "100 Ω",
+        "500 Ω",
+        "1 kΩ",
+        "5 kΩ",
+        "10 kΩ"
+      ],
+      "specs": {
+        "potencia": "1 W a 50 W o más según modelo",
+        "curva": "lineal"
+      },
       "schematic_symbol": "resistor_variable",
-      "typical_uses": ["Control de corriente en cargas", "Bancos de prueba", "Control de motores pequeños"],
-      "stores": ["AG Electrónica", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Control de corriente en cargas",
+        "Bancos de prueba",
+        "Control de motores pequeños"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Disponibilidad no verificada en catálogo."
@@ -1067,7 +2254,14 @@
     {
       "id": "res-trimpot-3296w",
       "name": "Trimpot multivuelta 3296W (ajuste superior, pines en línea)",
-      "aliases": ["trimpot 3296", "3296W-1-103LF", "preset multivuelta", "potenciómetro de precisión 25 vueltas", "trimmer cermet", "resistencia variable azul"],
+      "aliases": [
+        "trimpot 3296",
+        "3296W-1-103LF",
+        "preset multivuelta",
+        "potenciómetro de precisión 25 vueltas",
+        "trimmer cermet",
+        "resistencia variable azul"
+      ],
       "category": "resistores",
       "subcategory": "trimpots",
       "description": "Trimpot cermet de 25 vueltas, cuerpo rectangular azul de 3/8\", tornillo de ajuste arriba y 3 pines en línea a 2.54 mm. El trimpot de precisión más común.",
@@ -1084,11 +2278,38 @@
         }
       ],
       "pinout": [
-        {"pin": "1", "name": "Extremo", "function": "Extremo del elemento resistivo"},
-        {"pin": "2", "name": "Cursor (wiper)", "function": "Salida variable (pin central)"},
-        {"pin": "3", "name": "Extremo", "function": "Otro extremo del elemento resistivo"}
+        {
+          "pin": "1",
+          "name": "Extremo",
+          "function": "Extremo del elemento resistivo"
+        },
+        {
+          "pin": "2",
+          "name": "Cursor (wiper)",
+          "function": "Salida variable (pin central)"
+        },
+        {
+          "pin": "3",
+          "name": "Extremo",
+          "function": "Otro extremo del elemento resistivo"
+        }
       ],
-      "common_values": ["101 (100 Ω)", "201 (200 Ω)", "501 (500 Ω)", "102 (1 kΩ)", "202 (2 kΩ)", "502 (5 kΩ)", "103 (10 kΩ)", "203 (20 kΩ)", "503 (50 kΩ)", "104 (100 kΩ)", "204 (200 kΩ)", "504 (500 kΩ)", "105 (1 MΩ)", "205 (2 MΩ)"],
+      "common_values": [
+        "101 (100 Ω)",
+        "201 (200 Ω)",
+        "501 (500 Ω)",
+        "102 (1 kΩ)",
+        "202 (2 kΩ)",
+        "502 (5 kΩ)",
+        "103 (10 kΩ)",
+        "203 (20 kΩ)",
+        "503 (50 kΩ)",
+        "104 (100 kΩ)",
+        "204 (200 kΩ)",
+        "504 (500 kΩ)",
+        "105 (1 MΩ)",
+        "205 (2 MΩ)"
+      ],
       "specs": {
         "vueltas": "25",
         "potencia": "0.5 W",
@@ -1099,8 +2320,21 @@
         "marcado": "3 dígitos: 103 = 10 kΩ"
       },
       "schematic_symbol": "trimpot",
-      "typical_uses": ["Ajuste de contraste de LCD", "Calibración de reguladores ajustables (LM317)", "Ajuste de umbrales en comparadores", "Módulos sensores"],
-      "stores": ["UNIT Electronics", "AG Electrónica", "Geek Factory", "Electrónica 5Hz", "Steren", "Mercado Libre", "Tiendas de la Rep. del Salvador (Centro CDMX)"],
+      "typical_uses": [
+        "Ajuste de contraste de LCD",
+        "Calibración de reguladores ajustables (LM317)",
+        "Ajuste de umbrales en comparadores",
+        "Módulos sensores"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Geek Factory",
+        "Electrónica 5Hz",
+        "Steren",
+        "Mercado Libre",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)"
+      ],
       "popularity": "muy_alta",
       "price_mxn_approx": null,
       "notes": "Datos eléctricos de Mouser (Bourns 3296). Los clones chinos usan el mismo marcado. Variantes: W (arriba, en línea), Y (arriba, escalonado), X (lateral, en línea), P (lateral, escalonado), Z."
@@ -1108,7 +2342,13 @@
     {
       "id": "res-trimpot-3296y",
       "name": "Trimpot multivuelta 3296Y / 3296P (pines escalonados)",
-      "aliases": ["3296Y-1-103LF", "3296P", "3296X", "trimpot multivuelta escalonado", "trimpot ajuste lateral"],
+      "aliases": [
+        "3296Y-1-103LF",
+        "3296P",
+        "3296X",
+        "trimpot multivuelta escalonado",
+        "trimpot ajuste lateral"
+      ],
       "category": "resistores",
       "subcategory": "trimpots",
       "description": "Mismo trimpot de 25 vueltas que el 3296W pero con los pines en triángulo (Y: ajuste arriba; P: ajuste lateral). El 3296X es lateral con pines en línea.",
@@ -1143,15 +2383,45 @@
         }
       ],
       "pinout": [
-        {"pin": "1", "name": "Extremo", "function": "Extremo del elemento resistivo"},
-        {"pin": "2", "name": "Cursor (wiper)", "function": "Salida variable"},
-        {"pin": "3", "name": "Extremo", "function": "Otro extremo del elemento resistivo"}
+        {
+          "pin": "1",
+          "name": "Extremo",
+          "function": "Extremo del elemento resistivo"
+        },
+        {
+          "pin": "2",
+          "name": "Cursor (wiper)",
+          "function": "Salida variable"
+        },
+        {
+          "pin": "3",
+          "name": "Extremo",
+          "function": "Otro extremo del elemento resistivo"
+        }
       ],
-      "common_values": ["102 (1 kΩ)", "502 (5 kΩ)", "103 (10 kΩ)", "503 (50 kΩ)", "104 (100 kΩ)", "105 (1 MΩ)"],
-      "specs": {"vueltas": "25", "potencia": "0.5 W", "tolerancia": "±10 %"},
+      "common_values": [
+        "102 (1 kΩ)",
+        "502 (5 kΩ)",
+        "103 (10 kΩ)",
+        "503 (50 kΩ)",
+        "104 (100 kΩ)",
+        "105 (1 MΩ)"
+      ],
+      "specs": {
+        "vueltas": "25",
+        "potencia": "0.5 W",
+        "tolerancia": "±10 %"
+      },
       "schematic_symbol": "trimpot",
-      "typical_uses": ["Calibración de precisión", "Ajustes accesibles desde el borde de la placa (P/X)"],
-      "stores": ["AG Electrónica", "UNIT Electronics", "Mercado Libre"],
+      "typical_uses": [
+        "Calibración de precisión",
+        "Ajustes accesibles desde el borde de la placa (P/X)"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "La KiCad library incluye huellas Potentiometer_Bourns_3296Y_Vertical / 3296P_Horizontal / 3296X_Horizontal; comprobar la numeración de pines (en verticales a veces se invierte)."
@@ -1159,7 +2429,12 @@
     {
       "id": "res-trimpot-3362p",
       "name": "Trimpot de una vuelta 3362P",
-      "aliases": ["3362P-1-103LF", "trimpot 3362", "preset cermet 1 vuelta", "trimpot cuadrado 6 mm"],
+      "aliases": [
+        "3362P-1-103LF",
+        "trimpot 3362",
+        "preset cermet 1 vuelta",
+        "trimpot cuadrado 6 mm"
+      ],
       "category": "resistores",
       "subcategory": "trimpots",
       "description": "Trimpot cermet de una vuelta, cuadrado de ~6.6 mm con ajuste superior y 3 pines en triángulo; muy usado en módulos y placas compactas.",
@@ -1176,15 +2451,53 @@
         }
       ],
       "pinout": [
-        {"pin": "1", "name": "Extremo", "function": "Extremo del elemento resistivo"},
-        {"pin": "2", "name": "Cursor (wiper)", "function": "Salida variable (pin desplazado)"},
-        {"pin": "3", "name": "Extremo", "function": "Otro extremo del elemento resistivo"}
+        {
+          "pin": "1",
+          "name": "Extremo",
+          "function": "Extremo del elemento resistivo"
+        },
+        {
+          "pin": "2",
+          "name": "Cursor (wiper)",
+          "function": "Salida variable (pin desplazado)"
+        },
+        {
+          "pin": "3",
+          "name": "Extremo",
+          "function": "Otro extremo del elemento resistivo"
+        }
       ],
-      "common_values": ["101 (100 Ω)", "501 (500 Ω)", "102 (1 kΩ)", "202 (2 kΩ)", "502 (5 kΩ)", "103 (10 kΩ)", "203 (20 kΩ)", "503 (50 kΩ)", "104 (100 kΩ)", "504 (500 kΩ)", "105 (1 MΩ)"],
-      "specs": {"vueltas": "1", "potencia": "0.5 W", "tolerancia": "±10 %"},
+      "common_values": [
+        "101 (100 Ω)",
+        "501 (500 Ω)",
+        "102 (1 kΩ)",
+        "202 (2 kΩ)",
+        "502 (5 kΩ)",
+        "103 (10 kΩ)",
+        "203 (20 kΩ)",
+        "503 (50 kΩ)",
+        "104 (100 kΩ)",
+        "504 (500 kΩ)",
+        "105 (1 MΩ)"
+      ],
+      "specs": {
+        "vueltas": "1",
+        "potencia": "0.5 W",
+        "tolerancia": "±10 %"
+      },
       "schematic_symbol": "trimpot",
-      "typical_uses": ["Ajuste de sensibilidad en módulos sensores", "Contraste de LCD", "Calibración de offsets"],
-      "stores": ["UNIT Electronics", "AG Electrónica", "Geek Factory", "Electrónica 5Hz", "Mercado Libre"],
+      "typical_uses": [
+        "Ajuste de sensibilidad en módulos sensores",
+        "Contraste de LCD",
+        "Calibración de offsets"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Geek Factory",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "Datos de distribuidores (DigiKey, IBS, myMectronic)."
@@ -1192,7 +2505,14 @@
     {
       "id": "res-trimpot-carbon-6mm",
       "name": "Trimpot de carbón 6 mm (RM-065 / preset)",
-      "aliases": ["RM-065", "RM065", "preset de carbón", "trimpot horizontal", "potenciómetro de ajuste", "trimmer de carbón"],
+      "aliases": [
+        "RM-065",
+        "RM065",
+        "preset de carbón",
+        "trimpot horizontal",
+        "potenciómetro de ajuste",
+        "trimmer de carbón"
+      ],
       "category": "resistores",
       "subcategory": "trimpots",
       "description": "Trimpot económico de pista de carbón, de una vuelta, ~6 mm, con ranura para desarmador; versiones de ajuste vertical u horizontal.",
@@ -1209,15 +2529,55 @@
         }
       ],
       "pinout": [
-        {"pin": "1", "name": "Extremo", "function": "Extremo del elemento resistivo"},
-        {"pin": "2", "name": "Cursor (wiper)", "function": "Salida variable"},
-        {"pin": "3", "name": "Extremo", "function": "Otro extremo del elemento resistivo"}
+        {
+          "pin": "1",
+          "name": "Extremo",
+          "function": "Extremo del elemento resistivo"
+        },
+        {
+          "pin": "2",
+          "name": "Cursor (wiper)",
+          "function": "Salida variable"
+        },
+        {
+          "pin": "3",
+          "name": "Extremo",
+          "function": "Otro extremo del elemento resistivo"
+        }
       ],
-      "common_values": ["100 Ω", "200 Ω", "500 Ω", "1 kΩ", "2 kΩ", "5 kΩ", "10 kΩ", "20 kΩ", "50 kΩ", "100 kΩ", "200 kΩ", "500 kΩ", "1 MΩ"],
-      "specs": {"vueltas": "1", "potencia": "aprox. 0.1 W", "tolerancia": "±20 % aprox."},
+      "common_values": [
+        "100 Ω",
+        "200 Ω",
+        "500 Ω",
+        "1 kΩ",
+        "2 kΩ",
+        "5 kΩ",
+        "10 kΩ",
+        "20 kΩ",
+        "50 kΩ",
+        "100 kΩ",
+        "200 kΩ",
+        "500 kΩ",
+        "1 MΩ"
+      ],
+      "specs": {
+        "vueltas": "1",
+        "potencia": "aprox. 0.1 W",
+        "tolerancia": "±20 % aprox."
+      },
       "schematic_symbol": "trimpot",
-      "typical_uses": ["Ajustes de una sola vez", "Kits de estudiante", "Calibración de circuitos 555"],
-      "stores": ["Steren", "AG Electrónica", "UNIT Electronics", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Ajustes de una sola vez",
+        "Kits de estudiante",
+        "Calibración de circuitos 555"
+      ],
+      "stores": [
+        "Steren",
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "Medidas y potencia aproximadas."
@@ -1225,7 +2585,13 @@
     {
       "id": "res-trimpot-carbon-10mm",
       "name": "Trimpot de carbón 10 mm (tipo Piher PT10)",
-      "aliases": ["PT10", "Piher PT10LH", "PT10LV", "preset 10 mm", "trimpot horizontal grande"],
+      "aliases": [
+        "PT10",
+        "Piher PT10LH",
+        "PT10LV",
+        "preset 10 mm",
+        "trimpot horizontal grande"
+      ],
       "category": "resistores",
       "subcategory": "trimpots",
       "description": "Trimpot de carbón de 10 mm, de una vuelta, en versión horizontal (H, ajuste desde arriba) o vertical (V, ajuste de frente); común en equipos de audio y TV.",
@@ -1251,15 +2617,50 @@
         }
       ],
       "pinout": [
-        {"pin": "1", "name": "Extremo", "function": "Extremo del elemento resistivo"},
-        {"pin": "2", "name": "Cursor (wiper)", "function": "Salida variable"},
-        {"pin": "3", "name": "Extremo", "function": "Otro extremo del elemento resistivo"}
+        {
+          "pin": "1",
+          "name": "Extremo",
+          "function": "Extremo del elemento resistivo"
+        },
+        {
+          "pin": "2",
+          "name": "Cursor (wiper)",
+          "function": "Salida variable"
+        },
+        {
+          "pin": "3",
+          "name": "Extremo",
+          "function": "Otro extremo del elemento resistivo"
+        }
       ],
-      "common_values": ["470 Ω", "1 kΩ", "2.2 kΩ", "4.7 kΩ", "10 kΩ", "22 kΩ", "47 kΩ", "100 kΩ", "220 kΩ", "470 kΩ", "1 MΩ"],
-      "specs": {"vueltas": "1", "potencia": "aprox. 0.15 W"},
+      "common_values": [
+        "470 Ω",
+        "1 kΩ",
+        "2.2 kΩ",
+        "4.7 kΩ",
+        "10 kΩ",
+        "22 kΩ",
+        "47 kΩ",
+        "100 kΩ",
+        "220 kΩ",
+        "470 kΩ",
+        "1 MΩ"
+      ],
+      "specs": {
+        "vueltas": "1",
+        "potencia": "aprox. 0.15 W"
+      },
       "schematic_symbol": "trimpot",
-      "typical_uses": ["Reparación de equipos de audio/TV", "Ajustes de bias", "Fuentes"],
-      "stores": ["AG Electrónica", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Reparación de equipos de audio/TV",
+        "Ajustes de bias",
+        "Fuentes"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Medidas aproximadas."
@@ -1267,7 +2668,17 @@
     {
       "id": "res-ldr-fotorresistencia",
       "name": "Fotorresistencia LDR (GL5528 y serie GL55xx)",
-      "aliases": ["LDR", "fotorresistencia", "fotocelda", "GL5528", "GL5516", "GL5537", "GL5539", "photoresistor", "CdS cell"],
+      "aliases": [
+        "LDR",
+        "fotorresistencia",
+        "fotocelda",
+        "GL5528",
+        "GL5516",
+        "GL5537",
+        "GL5539",
+        "photoresistor",
+        "CdS cell"
+      ],
       "category": "resistores",
       "subcategory": "resistores_sensores",
       "description": "Resistor de sulfuro de cadmio cuya resistencia baja al aumentar la luz; la de 5 mm GL5528 es la más vendida para Arduino y fotoceldas.",
@@ -1293,7 +2704,15 @@
         }
       ],
       "pinout": [],
-      "common_values": ["GL5506 (2–5 kΩ a 10 lux, 0.2 MΩ oscuridad)", "GL5516 (5–10 kΩ, 0.5 MΩ)", "GL5528 (10–20 kΩ, 1 MΩ)", "GL5537-1 (20–30 kΩ, 2 MΩ)", "GL5537-2 (30–50 kΩ, 3 MΩ)", "GL5539 (50–100 kΩ, 5 MΩ)", "GL5549 (100–200 kΩ, 10 MΩ)"],
+      "common_values": [
+        "GL5506 (2–5 kΩ a 10 lux, 0.2 MΩ oscuridad)",
+        "GL5516 (5–10 kΩ, 0.5 MΩ)",
+        "GL5528 (10–20 kΩ, 1 MΩ)",
+        "GL5537-1 (20–30 kΩ, 2 MΩ)",
+        "GL5537-2 (30–50 kΩ, 3 MΩ)",
+        "GL5539 (50–100 kΩ, 5 MΩ)",
+        "GL5549 (100–200 kΩ, 10 MΩ)"
+      ],
       "specs": {
         "resistencia_luz_gl5528": "10–20 kΩ a 10 lux",
         "voltaje_max": "150 V",
@@ -1303,8 +2722,20 @@
         "temperatura": "−30 a +70 °C"
       },
       "schematic_symbol": "ldr",
-      "typical_uses": ["Fotocelda para encender luces de noche", "Sensor de luz con Arduino (divisor de voltaje con 10 kΩ)", "Seguidores de luz"],
-      "stores": ["Steren", "UNIT Electronics", "AG Electrónica", "Geek Factory", "Electrónica 5Hz", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Fotocelda para encender luces de noche",
+        "Sensor de luz con Arduino (divisor de voltaje con 10 kΩ)",
+        "Seguidores de luz"
+      ],
+      "stores": [
+        "Steren",
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Geek Factory",
+        "Electrónica 5Hz",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "muy_alta",
       "price_mxn_approx": null,
       "notes": "Especificaciones del GL5528 según datos Senba reproducidos por distribuidores (Ozdisan, LCSC). Valores de la serie GL55 de la tabla típica Senba. Contienen cadmio (restricciones RoHS en algunos mercados)."
@@ -1312,7 +2743,14 @@
     {
       "id": "res-ntc-10k-mf52",
       "name": "Termistor NTC 10 kΩ tipo gota epóxica (MF52)",
-      "aliases": ["NTC 10k", "MF52AT", "termistor 3950", "NTC 103", "thermistor 10k B3950", "sensor de temperatura NTC"],
+      "aliases": [
+        "NTC 10k",
+        "MF52AT",
+        "termistor 3950",
+        "NTC 103",
+        "thermistor 10k B3950",
+        "sensor de temperatura NTC"
+      ],
       "category": "resistores",
       "subcategory": "resistores_sensores",
       "description": "Termistor de coeficiente negativo encapsulado en gota de epoxi con dos terminales; su resistencia baja al subir la temperatura (10 kΩ a 25 °C).",
@@ -1329,7 +2767,16 @@
         }
       ],
       "pinout": [],
-      "common_values": ["1 kΩ", "2 kΩ", "5 kΩ", "10 kΩ B3950", "10 kΩ B3435", "47 kΩ", "50 kΩ", "100 kΩ B3950"],
+      "common_values": [
+        "1 kΩ",
+        "2 kΩ",
+        "5 kΩ",
+        "10 kΩ B3950",
+        "10 kΩ B3435",
+        "47 kΩ",
+        "50 kΩ",
+        "100 kΩ B3950"
+      ],
       "specs": {
         "r25": "10 kΩ a 25 °C (±1 % o ±5 %)",
         "beta": "B25/50 = 3950 K (también 3435 K)",
@@ -1337,8 +2784,18 @@
         "ecuacion": "1/T = 1/T0 + (1/B)·ln(R/R0), con T en kelvin, T0 = 298.15 K, R0 = 10 kΩ"
       },
       "schematic_symbol": "termistor",
-      "typical_uses": ["Medición de temperatura con Arduino (divisor con 10 kΩ)", "Control de ventiladores", "Protección térmica de baterías"],
-      "stores": ["UNIT Electronics", "AG Electrónica", "Geek Factory", "Electrónica 5Hz", "Mercado Libre"],
+      "typical_uses": [
+        "Medición de temperatura con Arduino (divisor con 10 kΩ)",
+        "Control de ventiladores",
+        "Protección térmica de baterías"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Geek Factory",
+        "Electrónica 5Hz",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "También se vende encapsulado en sonda metálica con cable (eso corresponde a sensores)."
@@ -1346,7 +2803,13 @@
     {
       "id": "res-ntc-vidrio",
       "name": "Termistor NTC de vidrio axial (MF58, 100 kΩ 3950)",
-      "aliases": ["MF58", "NTC 100k", "termistor de vidrio", "termistor impresora 3D", "glass NTC"],
+      "aliases": [
+        "MF58",
+        "NTC 100k",
+        "termistor de vidrio",
+        "termistor impresora 3D",
+        "glass NTC"
+      ],
       "category": "resistores",
       "subcategory": "resistores_sensores",
       "description": "Termistor NTC encapsulado en vidrio tipo diodo, axial; soporta mayor temperatura que el de epoxi y se usa en hot-ends y camas de impresoras 3D.",
@@ -1363,11 +2826,26 @@
         }
       ],
       "pinout": [],
-      "common_values": ["10 kΩ B3950", "50 kΩ", "100 kΩ B3950"],
-      "specs": {"r25": "100 kΩ a 25 °C típico", "beta": "3950 K", "temperatura": "hasta aprox. 250–300 °C según fabricante"},
+      "common_values": [
+        "10 kΩ B3950",
+        "50 kΩ",
+        "100 kΩ B3950"
+      ],
+      "specs": {
+        "r25": "100 kΩ a 25 °C típico",
+        "beta": "3950 K",
+        "temperatura": "hasta aprox. 250–300 °C según fabricante"
+      },
       "schematic_symbol": "termistor",
-      "typical_uses": ["Impresoras 3D (hot-end y cama)", "Medición de temperatura en hornos pequeños"],
-      "stores": ["UNIT Electronics", "Geek Factory", "Mercado Libre"],
+      "typical_uses": [
+        "Impresoras 3D (hot-end y cama)",
+        "Medición de temperatura en hornos pequeños"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Rango de temperatura aproximado; verificar con el vendedor."
@@ -1375,25 +2853,81 @@
     {
       "id": "res-ntc-inrush",
       "name": "Termistor NTC de disco para corriente de arranque (MF72, 5D-9, 10D-13...)",
-      "aliases": ["NTC de potencia", "limitador de inrush", "MF72", "5D-9", "5D-11", "10D-9", "8D-11", "5D-15", "10D-20", "termistor de arranque"],
+      "aliases": [
+        "NTC de potencia",
+        "limitador de inrush",
+        "MF72",
+        "5D-9",
+        "5D-11",
+        "10D-9",
+        "8D-11",
+        "5D-15",
+        "10D-20",
+        "termistor de arranque"
+      ],
       "category": "resistores",
       "subcategory": "resistores_sensores",
       "description": "Disco NTC de potencia que limita el pico de corriente al encender fuentes conmutadas; frío tiene unos ohms y al calentarse baja casi a cero. Código: 5D-9 = 5 Ω, disco de 9 mm.",
       "mounting": "THT",
       "packages": [
-        {"name": "Disco Ø5–9 mm (p. ej. 5D-9, 10D-9)", "pins": 2, "pitch_mm": 5.0, "row_spacing_mm": null, "body_mm": "Ø≈9 (más grueso que un capacitor cerámico)", "lead_diameter_mm": 0.6, "notes": "Paso y terminal aproximados para discos chicos."},
-        {"name": "Disco Ø11–15 mm (p. ej. 5D-11, 10D-13, 5D-15)", "pins": 2, "pitch_mm": 7.5, "row_spacing_mm": null, "body_mm": "Ø≈11–15", "lead_diameter_mm": 0.8, "notes": "Aproximado; hay variantes de 5 mm de paso."},
-        {"name": "Disco Ø20–25 mm (p. ej. 5D-20, 10D-20)", "pins": 2, "pitch_mm": 7.5, "row_spacing_mm": null, "body_mm": "Ø≈20–25", "lead_diameter_mm": 1.0, "notes": "Aproximado; algunos usan 10 mm de paso."}
+        {
+          "name": "Disco Ø5–9 mm (p. ej. 5D-9, 10D-9)",
+          "pins": 2,
+          "pitch_mm": 5.0,
+          "row_spacing_mm": null,
+          "body_mm": "Ø≈9 (más grueso que un capacitor cerámico)",
+          "lead_diameter_mm": 0.6,
+          "notes": "Paso y terminal aproximados para discos chicos."
+        },
+        {
+          "name": "Disco Ø11–15 mm (p. ej. 5D-11, 10D-13, 5D-15)",
+          "pins": 2,
+          "pitch_mm": 7.5,
+          "row_spacing_mm": null,
+          "body_mm": "Ø≈11–15",
+          "lead_diameter_mm": 0.8,
+          "notes": "Aproximado; hay variantes de 5 mm de paso."
+        },
+        {
+          "name": "Disco Ø20–25 mm (p. ej. 5D-20, 10D-20)",
+          "pins": 2,
+          "pitch_mm": 7.5,
+          "row_spacing_mm": null,
+          "body_mm": "Ø≈20–25",
+          "lead_diameter_mm": 1.0,
+          "notes": "Aproximado; algunos usan 10 mm de paso."
+        }
       ],
       "pinout": [],
-      "common_values": ["5D-9", "10D-9", "5D-11", "8D-11", "10D-11", "5D-13", "10D-13", "3D-15", "5D-15", "5D-20", "10D-20"],
+      "common_values": [
+        "5D-9",
+        "10D-9",
+        "5D-11",
+        "8D-11",
+        "10D-11",
+        "5D-13",
+        "10D-13",
+        "3D-15",
+        "5D-15",
+        "5D-20",
+        "10D-20"
+      ],
       "specs": {
         "codigo": "nD-m: n = resistencia en Ω a 25 °C, m = diámetro del disco en mm",
         "corriente_max": "crece con el diámetro (≈2 A en Ø9 hasta ≈7–8 A en Ø20, aproximado; ver hoja de datos)"
       },
       "schematic_symbol": "termistor",
-      "typical_uses": ["Entrada de fuentes conmutadas", "Fuentes de PC y cargadores", "Balastros y drivers LED"],
-      "stores": ["AG Electrónica", "UNIT Electronics", "Tiendas de la Rep. del Salvador (Centro CDMX)", "Mercado Libre"],
+      "typical_uses": [
+        "Entrada de fuentes conmutadas",
+        "Fuentes de PC y cargadores",
+        "Balastros y drivers LED"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
       "popularity": "alta",
       "price_mxn_approx": null,
       "notes": "Se calienta en operación: separarlo de capacitores electrolíticos. Pasos y corrientes aproximados."
@@ -1401,24 +2935,60 @@
     {
       "id": "res-ptc-rtd-sensado",
       "name": "Sensores resistivos PTC de temperatura (PT100/PT1000, KTY81)",
-      "aliases": ["PT100", "PT1000", "RTD", "KTY81-110", "KTY81-210", "sensor de platino", "PTC de silicio"],
+      "aliases": [
+        "PT100",
+        "PT1000",
+        "RTD",
+        "KTY81-110",
+        "KTY81-210",
+        "sensor de platino",
+        "PTC de silicio"
+      ],
       "category": "resistores",
       "subcategory": "resistores_sensores",
       "description": "Resistores cuyo valor sube con la temperatura: elementos RTD de platino (PT100 = 100 Ω a 0 °C) y sensores de silicio KTY81 (1 kΩ o 2 kΩ a 25 °C).",
       "mounting": "THT",
       "packages": [
-        {"name": "Elemento RTD de película delgada (chip cerámico con 2 hilos)", "pins": 2, "pitch_mm": null, "row_spacing_mm": null, "body_mm": null, "lead_diameter_mm": null, "notes": "Tamaño varía por modelo; medidas no verificadas."},
-        {"name": "KTY81 (SOD-70, 2 terminales)", "pins": 2, "pitch_mm": null, "row_spacing_mm": null, "body_mm": null, "lead_diameter_mm": null, "notes": "Cuerpo tipo TO-92 de 2 terminales; separación no verificada."}
+        {
+          "name": "Elemento RTD de película delgada (chip cerámico con 2 hilos)",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Tamaño varía por modelo; medidas no verificadas."
+        },
+        {
+          "name": "KTY81 (SOD-70, 2 terminales)",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Cuerpo tipo TO-92 de 2 terminales; separación no verificada."
+        }
       ],
       "pinout": [],
-      "common_values": ["PT100", "PT1000", "KTY81-110 (1 kΩ a 25 °C)", "KTY81-210 (2 kΩ a 25 °C)"],
+      "common_values": [
+        "PT100",
+        "PT1000",
+        "KTY81-110 (1 kΩ a 25 °C)",
+        "KTY81-210 (2 kΩ a 25 °C)"
+      ],
       "specs": {
         "pt100": "100 Ω a 0 °C, α = 0.00385 /°C (IEC 60751)",
         "pt1000": "1000 Ω a 0 °C"
       },
       "schematic_symbol": "termistor",
-      "typical_uses": ["Medición de temperatura industrial", "Controladores de temperatura (con módulo MAX31865)", "Sensado de temperatura en motores"],
-      "stores": ["AG Electrónica", "Mercado Libre"],
+      "typical_uses": [
+        "Medición de temperatura industrial",
+        "Controladores de temperatura (con módulo MAX31865)",
+        "Sensado de temperatura en motores"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Menos comunes en mostrador; los PT100 suelen venderse ya en sonda con cable. Los PTC rearmables (polyfuse) los cubre el grupo de fusibles."
@@ -1426,20 +2996,49 @@
     {
       "id": "res-shunt-alambre",
       "name": "Resistencia shunt de alambre (manganina/constantán)",
-      "aliases": ["shunt", "resistencia de sensado", "alambre de manganina", "R010", "shunt de multímetro", "resistencia de 0.01 ohm"],
+      "aliases": [
+        "shunt",
+        "resistencia de sensado",
+        "alambre de manganina",
+        "R010",
+        "shunt de multímetro",
+        "resistencia de 0.01 ohm"
+      ],
       "category": "resistores",
       "subcategory": "shunts",
       "description": "Tramo de alambre grueso de aleación de bajo coeficiente de temperatura doblado en U, de pocos miliohms, que se suelda a la placa para medir corriente.",
       "mounting": "THT",
       "packages": [
-        {"name": "Alambre en U, 2 terminales", "pins": 2, "pitch_mm": null, "row_spacing_mm": null, "body_mm": null, "lead_diameter_mm": null, "notes": "Separación y diámetro varían según valor; medir la pieza. En PCB caseras se usa pad grande y pistas anchas."}
+        {
+          "name": "Alambre en U, 2 terminales",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Separación y diámetro varían según valor; medir la pieza. En PCB caseras se usa pad grande y pistas anchas."
+        }
       ],
       "pinout": [],
-      "common_values": ["5 mΩ (R005)", "10 mΩ (R010)", "20 mΩ", "50 mΩ (R050)"],
-      "specs": {"medicion": "V = I × R; con 10 mΩ, 10 A producen 100 mV"},
+      "common_values": [
+        "5 mΩ (R005)",
+        "10 mΩ (R010)",
+        "20 mΩ",
+        "50 mΩ (R050)"
+      ],
+      "specs": {
+        "medicion": "V = I × R; con 10 mΩ, 10 A producen 100 mV"
+      },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Amperímetros", "Medición de corriente con INA219/ACS", "Protección de sobrecorriente en fuentes"],
-      "stores": ["Mercado Libre", "AG Electrónica"],
+      "typical_uses": [
+        "Amperímetros",
+        "Medición de corriente con INA219/ACS",
+        "Protección de sobrecorriente en fuentes"
+      ],
+      "stores": [
+        "Mercado Libre",
+        "AG Electrónica"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Disponibilidad no verificada en tiendas mexicanas específicas."
@@ -1447,20 +3046,54 @@
     {
       "id": "res-shunt-smd-2512",
       "name": "Resistor shunt SMD 2512 (miliohms)",
-      "aliases": ["shunt SMD", "R010 2512", "R100 2512", "resistencia de sensado SMD", "current sense resistor"],
+      "aliases": [
+        "shunt SMD",
+        "R010 2512",
+        "R100 2512",
+        "resistencia de sensado SMD",
+        "current sense resistor"
+      ],
       "category": "resistores",
       "subcategory": "shunts",
       "description": "Resistor chip grande 2512 de 1–2 W y valor de miliohms para medir corriente; es el shunt de muchos módulos (p. ej. INA219 usa 0.1 Ω).",
       "mounting": "SMD",
       "packages": [
-        {"name": "2512 (6332 métrico)", "pins": 2, "pitch_mm": null, "row_spacing_mm": null, "body_mm": "6.3 x 3.2 x 0.55", "lead_diameter_mm": null, "notes": "Usar huella IPC 2512 (R_2512_6332Metric). Para precisión, conectar la medición con pistas Kelvin desde el interior de los pads."}
+        {
+          "name": "2512 (6332 métrico)",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "6.3 x 3.2 x 0.55",
+          "lead_diameter_mm": null,
+          "notes": "Usar huella IPC 2512 (R_2512_6332Metric). Para precisión, conectar la medición con pistas Kelvin desde el interior de los pads."
+        }
       ],
       "pinout": [],
-      "common_values": ["R005 (5 mΩ)", "R010 (10 mΩ)", "R020", "R050 (50 mΩ)", "R100 (0.1 Ω)", "R200", "R500"],
-      "specs": {"potencia": "1 W (algunos 2 W)", "tolerancia": "±1 % típico", "marcado": "R010 = 0.010 Ω (R = punto decimal)"},
+      "common_values": [
+        "R005 (5 mΩ)",
+        "R010 (10 mΩ)",
+        "R020",
+        "R050 (50 mΩ)",
+        "R100 (0.1 Ω)",
+        "R200",
+        "R500"
+      ],
+      "specs": {
+        "potencia": "1 W (algunos 2 W)",
+        "tolerancia": "±1 % típico",
+        "marcado": "R010 = 0.010 Ω (R = punto decimal)"
+      },
       "schematic_symbol": "resistor",
-      "typical_uses": ["Medición de corriente", "Protección de baterías", "Drivers de motores"],
-      "stores": ["UNIT Electronics", "AG Electrónica", "Mercado Libre"],
+      "typical_uses": [
+        "Medición de corriente",
+        "Protección de baterías",
+        "Drivers de motores"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Disponibilidad no verificada en tienda específica."
@@ -1468,25 +3101,71 @@
     {
       "id": "res-shunt-panel-75mv",
       "name": "Shunt de panel para amperímetro (75 mV / 50 mV)",
-      "aliases": ["shunt 75mV", "shunt 50A", "FL-2", "derivador de corriente", "shunt de bloque"],
+      "aliases": [
+        "shunt 75mV",
+        "shunt 50A",
+        "FL-2",
+        "derivador de corriente",
+        "shunt de bloque"
+      ],
       "category": "resistores",
       "subcategory": "shunts",
       "description": "Shunt de latón con barras de manganina y tornillos, para medir corrientes altas (10 A a cientos de A) con un medidor de 75 mV o 50 mV.",
       "mounting": "panel",
       "packages": [
-        {"name": "Bloque con 2 tornillos de potencia + 2 de sensado", "pins": 4, "pitch_mm": null, "row_spacing_mm": null, "body_mm": null, "lead_diameter_mm": null, "notes": "Se monta en chasis; los tornillos pequeños son la conexión Kelvin al medidor."}
+        {
+          "name": "Bloque con 2 tornillos de potencia + 2 de sensado",
+          "pins": 4,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Se monta en chasis; los tornillos pequeños son la conexión Kelvin al medidor."
+        }
       ],
       "pinout": [
-        {"pin": "I+", "name": "Corriente", "function": "Entrada de corriente (tornillo grande)"},
-        {"pin": "I−", "name": "Corriente", "function": "Salida de corriente (tornillo grande)"},
-        {"pin": "S+", "name": "Sensado", "function": "Medición de voltaje (tornillo pequeño)"},
-        {"pin": "S−", "name": "Sensado", "function": "Medición de voltaje (tornillo pequeño)"}
+        {
+          "pin": "I+",
+          "name": "Corriente",
+          "function": "Entrada de corriente (tornillo grande)"
+        },
+        {
+          "pin": "I−",
+          "name": "Corriente",
+          "function": "Salida de corriente (tornillo grande)"
+        },
+        {
+          "pin": "S+",
+          "name": "Sensado",
+          "function": "Medición de voltaje (tornillo pequeño)"
+        },
+        {
+          "pin": "S−",
+          "name": "Sensado",
+          "function": "Medición de voltaje (tornillo pequeño)"
+        }
       ],
-      "common_values": ["10 A / 75 mV", "20 A / 75 mV", "50 A / 75 mV", "100 A / 75 mV", "200 A / 75 mV"],
-      "specs": {"caida_nominal": "75 mV (o 50 mV) a corriente nominal", "ejemplo": "50 A / 75 mV = 1.5 mΩ"},
+      "common_values": [
+        "10 A / 75 mV",
+        "20 A / 75 mV",
+        "50 A / 75 mV",
+        "100 A / 75 mV",
+        "200 A / 75 mV"
+      ],
+      "specs": {
+        "caida_nominal": "75 mV (o 50 mV) a corriente nominal",
+        "ejemplo": "50 A / 75 mV = 1.5 mΩ"
+      },
       "schematic_symbol": "resistor_shunt",
-      "typical_uses": ["Amperímetros de panel", "Monitores de baterías solares", "Cargadores"],
-      "stores": ["Mercado Libre", "AG Electrónica"],
+      "typical_uses": [
+        "Amperímetros de panel",
+        "Monitores de baterías solares",
+        "Cargadores"
+      ],
+      "stores": [
+        "Mercado Libre",
+        "AG Electrónica"
+      ],
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Disponibilidad no verificada en tienda específica."

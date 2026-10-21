@@ -7,6 +7,7 @@ Entrada (JSON en la ruta pasada como argumento):
     "accepted": [{"chunk": "<lote>", "index": 0}],            # contrastadas y aceptadas
     "new_files": ["<ruta a 11-complementos-*.json>"],
     "new_corrections": {"<ruta complemento>": "<ruta correcciones>"},
+    "new_min_confidence": "alta" | "media",   # qué correcciones de los nuevos aplicar
     "duplicates": [{"keep_id": "...", "remove_ids": ["..."]}]
   }
 
@@ -67,13 +68,14 @@ def main():
             continue
         apply_correction(items_by_id, corr, log)
 
+    levels = {"alta", "media"} if plan.get("new_min_confidence") == "media" else {"alta"}
     for new_file in plan.get("new_files", []):
         data = load(new_file)
         corr_file = plan.get("new_corrections", {}).get(new_file)
         if corr_file and Path(corr_file).exists():
             new_by_id = {i["id"]: i for i in data["items"]}
             for corr in load(corr_file):
-                if corr.get("confidence") == "alta":
+                if corr.get("confidence") in levels:
                     apply_correction(new_by_id, corr, log)
         fresh = [i for i in data["items"] if i["id"] not in items_by_id]
         skipped = len(data["items"]) - len(fresh)

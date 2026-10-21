@@ -1,0 +1,30 @@
+[
+  {
+    "index": 0,
+    "id": "emc-relevador-enchufable-my",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "13", "name": "Bobina", "function": "Bobina (A1/A2). En versiones de CD con diodo o LED tiene polaridad, pero depende del modelo: Omron vende MY□N-D2 (polaridad estándar) y MY□N1-D2 (polaridad invertida), y los clones varían. Tomar la polaridad del diagrama impreso en el relevador"},
+      {"pin": "14", "name": "Bobina", "function": "Bobina (A1/A2). Polaridad según el diagrama impreso del modelo (ver pin 13); en CA no hay polaridad"},
+      {"pin": "9", "name": "COM1", "function": "Común del polo 1 (MY2)"},
+      {"pin": "1", "name": "NC1", "function": "Normalmente cerrado del polo 1 (MY2)"},
+      {"pin": "5", "name": "NA1", "function": "Normalmente abierto del polo 1 (MY2)"},
+      {"pin": "12", "name": "COM2", "function": "Común del polo 2 (MY2)"},
+      {"pin": "4", "name": "NC2", "function": "Normalmente cerrado del polo 2 (MY2)"},
+      {"pin": "8", "name": "NA2", "function": "Normalmente abierto del polo 2 (MY2)"},
+      {"pin": "MY4", "name": "9–12 / 1–4 / 5–8", "function": "En MY4: comunes 9, 10, 11, 12; NC 1, 2, 3, 4; NA 5, 6, 7, 8 (polos 1 a 4); bobina 13–14"}
+    ],
+    "problem": "Se fija la polaridad de la bobina como 13 (+) y 14 (−) para todas las versiones de CD con diodo/LED. No es universal: Omron fabrica la misma serie con polaridad estándar y con polaridad invertida, y los clones (HH52P, etc.) no siguen una sola convención. Si la polaridad de un modelo con diodo se invierte, el diodo pone la fuente en corto.",
+    "evidence": "Omron vende el MY2N-D2 (polaridad estándar) y el MY2N1-D2 / MY□IN1 (polaridad invertida) como modelos distintos. El FAQ de Omron advierte que con la polaridad invertida el diodo interno conduce en corto y daña el relevador y la fuente. Así que la polaridad depende del número de parte y no puede ser una sola regla 13+/14−. No logré confirmar en el diagrama de Omron cuál terminal es + en el modelo estándar, por eso la corrección no lo afirma.",
+    "confidence": "media"
+  },
+  {
+    "index": 1,
+    "id": "emc-relevador-enchufable-my",
+    "field": "notes",
+    "new_value": "La base se compra aparte (ver con-base-relevador-enchufable). En las versiones de CD con LED o diodo interno la bobina (13–14) tiene polaridad, pero la terminal positiva depende del modelo: Omron fabrica versiones de polaridad estándar (MY□N-D2) y de polaridad invertida (MY□N1-D2), y los clones varían. Conectarla al revés pone la fuente en corto a través del diodo, así que siempre se toma la polaridad del diagrama impreso en el relevador. Ese diagrama, en un costado del relevador, también hay que revisarlo porque LY2 y MK2P usan otra numeración. Medidas y capacidades aproximadas; no se verificó existencia en el sitio de una tienda en esta sesión.",
+    "problem": "La nota dice que la bobina siempre tiene la polaridad '13 +, 14 −' en las versiones de CD con LED o diodo. Esa polaridad cambia según el modelo (hay versiones de polaridad estándar e invertida).",
+    "evidence": "Mismo razonamiento que la corrección del pinout: Omron vende MY2N-D2 y MY2N1-D2 (polaridad invertida) como modelos distintos, y la polaridad de la bobina con diodo depende del número de parte.",
+    "confidence": "media"
+  }
+]

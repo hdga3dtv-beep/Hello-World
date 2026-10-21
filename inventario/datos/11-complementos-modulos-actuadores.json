@@ -1,0 +1,2676 @@
+{
+  "group": "11-complementos-modulos-actuadores",
+  "sources": [
+    "https://uelectronics.com/producto/celdas-peltier-tec1/",
+    "https://protosupplies.com/product/tec1-12706-thermoelectric-peltier-cooling-device/",
+    "https://uelectronics.com/producto/tb6600-driver-para-motor-a-pasos-4a-nema/",
+    "https://uelectronics.com/producto/relevador-con-interfaz-para-esp8266/",
+    "https://devices.esphome.io/devices/ESP-01S-1-channel-relay",
+    "https://www.ozdisan.com/en/p/hmi-and-hdmi-tfts-378/nextion-nx4832t035-993516",
+    "https://st.robu.in/?p=84213",
+    "https://uelectronics.com/producto/semaforo-led-5v-10mm/",
+    "https://oe2.open-electronics.org/?p=60583",
+    "https://www.abasteo.mx/Articulos-de-Oficina/Ferreteria/Cerrajeria/Cerraduras/Steren-Cerradura-Electromagnetica-SEG-035-5mm-x-25mm-190Kg.html",
+    "https://www.cyberpuerta.mx/Hogar/Herramientas/Cerrajeria/Cerraduras/AccessPRO-Cerradura-Electromagnetica-MAG600NLEDV2-280kg-Aluminio.html",
+    "https://uelectronics.com/producto/termostato-rex-c100-con-ssr40da-y-disipador-de-calor/",
+    "https://www.steeman.be/posts/rex-c100-teardown/",
+    "https://docs.cirkitdesigner.com/component/2c1204c0-6bd2-41da-a110-bfe8c6bc5e78/stc-1000",
+    "https://sigmanortec.ro/en/ultrasonic-atomizer-module-20mm-microusb",
+    "https://probots.co.in/ultrasonic-humidifier-power-circuit-board-with-atomizing-chip-16mm-5v.html",
+    "https://wiki.seeedstudio.com/es/Grove-Water_Atomization/",
+    "https://syscom.mx/products/144592",
+    "https://makerselectronics.com/product/ka2284-module-battery-level-indicator/",
+    "https://www.eleccircuit.com/?p=23438",
+    "https://wiki.dfrobot.com/DFR0954/",
+    "https://www.waveshare.com/wiki/3.5inch_RPi_LCD_(A)"
+  ],
+  "items": [
+    {
+      "id": "dsp-nextion-hmi",
+      "name": "Pantalla HMI táctil Nextion 2.4\"–7\" (UART)",
+      "aliases": [
+        "Nextion",
+        "NX4832T035",
+        "NX3224T024",
+        "NX3224T028",
+        "NX4024T032",
+        "NX4827T043",
+        "NX8048T070",
+        "pantalla HMI",
+        "Nextion Basic",
+        "Nextion Discovery",
+        "TJC (versión china)"
+      ],
+      "category": "displays",
+      "subcategory": "tft_hmi",
+      "description": "Pantalla TFT con táctil resistivo y procesador propio: las pantallas se diseñan en el software Nextion Editor y el microcontrolador solo envía y recibe comandos de texto por UART de 4 hilos.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Conector de 4 pines paso 2.54 mm (cable a Dupont incluido)",
+          "pins": 4,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "El tamaño de la placa y la posición de los barrenos dependen del modelo (2.4\" a 7\"): consultar el plano del modelo. Ranura microSD para cargar el archivo .tft."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "+5V (rojo)",
+          "function": "Alimentación 5 V (se recomiendan ≈ 500 mA para la de 3.5\")"
+        },
+        {
+          "pin": "2",
+          "name": "TX (azul)",
+          "function": "Salida serie de la pantalla → RX del microcontrolador"
+        },
+        {
+          "pin": "3",
+          "name": "RX (amarillo)",
+          "function": "Entrada serie ← TX del microcontrolador"
+        },
+        {
+          "pin": "4",
+          "name": "GND (negro)",
+          "function": "Tierra"
+        }
+      ],
+      "common_values": [
+        "2.4\" 320x240 (NX3224T024)",
+        "2.8\" 320x240 (NX3224T028)",
+        "3.2\" 400x240 (NX4024T032)",
+        "3.5\" 480x320 (NX4832T035)",
+        "4.3\" 480x272 (NX4827T043)",
+        "7\" 800x480 (NX8048T070)",
+        "Táctil resistivo (R) o sin táctil (N)"
+      ],
+      "specs": {
+        "voltaje": "5 V",
+        "interfaz": "UART TTL (9600 baud por defecto)",
+        "tactil": "resistivo en versiones R",
+        "memoria_flash": "16 MB en la NX4832T035 (varía por modelo)",
+        "software": "Nextion Editor (gratuito)"
+      },
+      "schematic_symbol": "display_grafico",
+      "typical_uses": [
+        "Paneles de control con botones en pantalla",
+        "Interfaces para máquinas, incubadoras y tableros",
+        "Proyectos de titulación con Arduino o ESP32"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Los colores del cable y el orden funcional son los habituales del cable incluido; el orden físico del conector se debe confirmar con la serigrafía. Las versiones TJC (mercado chino) no aceptan archivos del editor Nextion internacional. Dimensiones por modelo no capturadas (body_mm null). Disponibilidad en tiendas mexicanas no verificada en línea; especificaciones de la NX4832T035 tomadas de distribuidores (Ozdisan, Robu)."
+    },
+    {
+      "id": "dsp-tft-35-raspberry-pi",
+      "name": "Pantalla TFT 3.5\" táctil para Raspberry Pi (SPI, header de 26 pines)",
+      "aliases": [
+        "3.5inch RPi LCD (A)",
+        "MPI3501",
+        "Waveshare 3.5 RPi",
+        "pantalla 3.5 Raspberry Pi",
+        "ILI9486 + XPT2046",
+        "LCD-show 3.5"
+      ],
+      "category": "displays",
+      "subcategory": "tft_spi",
+      "description": "Pantalla de 320x480 con táctil resistivo que se enchufa directamente sobre los primeros 26 pines del GPIO de la Raspberry Pi; imagen y táctil comparten el bus SPI (driver LCD-show).",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Header hembra 2x13 paso 2.54 mm",
+          "pins": 26,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": 2.54,
+          "body_mm": "aprox. 85 x 56 mm (tamaño de una Raspberry Pi B)",
+          "lead_diameter_mm": null,
+          "notes": "Se monta encima de los pines 1–26 del GPIO; medida aproximada del clon MPI3501."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "3.3V",
+          "function": "Alimentación 3.3 V"
+        },
+        {
+          "pin": "2",
+          "name": "5V",
+          "function": "Alimentación 5 V"
+        },
+        {
+          "pin": "4",
+          "name": "5V",
+          "function": "Alimentación 5 V"
+        },
+        {
+          "pin": "6",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "9",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "11",
+          "name": "TP_IRQ",
+          "function": "Interrupción del táctil (GPIO17)"
+        },
+        {
+          "pin": "14",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "17",
+          "name": "3.3V",
+          "function": "Alimentación 3.3 V"
+        },
+        {
+          "pin": "18",
+          "name": "LCD_RS",
+          "function": "Selección comando/datos (GPIO24)"
+        },
+        {
+          "pin": "19",
+          "name": "LCD_SI / TP_SI",
+          "function": "MOSI del SPI (GPIO10)"
+        },
+        {
+          "pin": "20",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "21",
+          "name": "TP_SO",
+          "function": "MISO del táctil (GPIO9)"
+        },
+        {
+          "pin": "22",
+          "name": "RST",
+          "function": "Reset del LCD (GPIO25)"
+        },
+        {
+          "pin": "23",
+          "name": "LCD_SCK / TP_SCK",
+          "function": "Reloj SPI (GPIO11)"
+        },
+        {
+          "pin": "24",
+          "name": "LCD_CS",
+          "function": "Chip select del LCD (CE0, GPIO8)"
+        },
+        {
+          "pin": "25",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "26",
+          "name": "TP_CS",
+          "function": "Chip select del táctil (CE1, GPIO7)"
+        }
+      ],
+      "common_values": [
+        "3.5\" 320x480 SPI (tipo A)",
+        "3.5\" con entrada HDMI (MPI3508)"
+      ],
+      "specs": {
+        "resolucion": "320x480",
+        "controlador": "ILI9486 (LCD) + XPT2046 (táctil)",
+        "interfaz": "SPI0 (CE0 y CE1)",
+        "tactil": "resistivo"
+      },
+      "schematic_symbol": "display_grafico",
+      "typical_uses": [
+        "Consolas retro y terminales portátiles con Raspberry Pi",
+        "Paneles de domótica",
+        "Monitores de servidores caseros"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Pinout según la wiki de Waveshare 3.5\" RPi LCD (A), al que se apegan clones como el MPI3501; los pines no listados quedan libres. No es para Arduino UNO (para eso existe dsp-tft-35-shield). Disponibilidad en tiendas mexicanas no verificada en línea."
+    },
+    {
+      "id": "dsp-tft-redondo-gc9a01",
+      "name": "Display TFT IPS redondo 1.28\" 240x240 GC9A01 (SPI)",
+      "aliases": [
+        "GC9A01",
+        "GC9A01A",
+        "TFT redondo 1.28",
+        "round display 240x240",
+        "pantalla circular"
+      ],
+      "category": "displays",
+      "subcategory": "tft_spi",
+      "description": "Pantalla IPS circular de 240x240 con controlador GC9A01 por SPI de 4 hilos; usada para relojes, carátulas de instrumentos y ojos animados.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Módulo redondo con header 1x7 paso 2.54 mm",
+          "pins": 7,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "PCB circular; diámetro y barrenos no verificados. Algunas versiones traen 8 pines (BLK)."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "VCC",
+          "function": "Alimentación 3.3 V (algunas placas aceptan 5 V por regulador)"
+        },
+        {
+          "pin": "2",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "3",
+          "name": "SCL",
+          "function": "Reloj SPI (SCK)"
+        },
+        {
+          "pin": "4",
+          "name": "SDA",
+          "function": "Datos SPI (MOSI)"
+        },
+        {
+          "pin": "5",
+          "name": "DC",
+          "function": "Selección comando/datos"
+        },
+        {
+          "pin": "6",
+          "name": "CS",
+          "function": "Chip select"
+        },
+        {
+          "pin": "7",
+          "name": "RST",
+          "function": "Reset"
+        }
+      ],
+      "common_values": [
+        "1.28\" 240x240",
+        "Con pin BLK (8 pines)"
+      ],
+      "specs": {
+        "resolucion": "240x240 (área visible circular)",
+        "controlador": "GC9A01",
+        "interfaz": "SPI 4 hilos",
+        "logica": "3.3 V"
+      },
+      "schematic_symbol": "display_grafico",
+      "typical_uses": [
+        "Relojes y medidores tipo carátula",
+        "Ojos animados para robots",
+        "Indicadores con ESP32"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "El orden de pines varía entre fabricantes; verificar la serigrafía. Librerías TFT_eSPI y Adafruit_GC9A01A. Con Arduino de 5 V usar convertidor de nivel si la placa no lo trae. Disponibilidad en tiendas mexicanas no verificada en línea."
+    },
+    {
+      "id": "dsp-modulo-semaforo",
+      "name": "Módulo semáforo LED (rojo, amarillo y verde) para Arduino",
+      "aliases": [
+        "traffic light module",
+        "módulo semáforo",
+        "semáforo LED 5V 10mm",
+        "módulo LED RYG",
+        "semáforo didáctico"
+      ],
+      "category": "displays",
+      "subcategory": "modulos_led",
+      "description": "Placa pequeña con tres LEDs (rojo, amarillo y verde) y sus resistencias, con cátodo común a GND; se conecta directo a tres pines digitales del microcontrolador.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Módulo con header 1x4 paso 2.54 mm",
+          "pins": 4,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Versión con LEDs difusos de 10 mm (UNIT) y versiones mini con LEDs de 5 u 8 mm. Medidas de la placa no verificadas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "R",
+          "function": "LED rojo (se enciende con nivel alto)"
+        },
+        {
+          "pin": "2",
+          "name": "Y",
+          "function": "LED amarillo (se enciende con nivel alto)"
+        },
+        {
+          "pin": "3",
+          "name": "G",
+          "function": "LED verde (se enciende con nivel alto)"
+        },
+        {
+          "pin": "4",
+          "name": "GND",
+          "function": "Cátodo común / tierra"
+        }
+      ],
+      "common_values": [
+        "LEDs de 10 mm",
+        "LEDs de 5 mm (mini)",
+        "LEDs de 8 mm"
+      ],
+      "specs": {
+        "voltaje": "3.3–5 V",
+        "corriente": "≈ 20 mA por LED",
+        "resistencias": "integradas"
+      },
+      "schematic_symbol": "led",
+      "typical_uses": [
+        "Práctica clásica del semáforo con Arduino",
+        "Cruces peatonales y maquetas viales",
+        "Indicadores de estado (ok/alerta/falla)"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT ('semáforo LED 5V 10mm': 3 LEDs difusos de 10 mm, 4 pines, resistencias integradas, 20 mA). El orden del header varía (R-Y-G-GND o GND-R-Y-G): seguir la serigrafía."
+    },
+    {
+      "id": "dsp-ws2811-pixel-12mm",
+      "name": "Pixeles LED WS2811 de 12 mm (cadena tipo bala) y tira WS2811 12 V",
+      "aliases": [
+        "WS2811",
+        "pixel 12mm",
+        "pixeles navideños",
+        "string pixel WS2811",
+        "bullet pixel",
+        "tira WS2811 12V",
+        "LED pixel 12mm"
+      ],
+      "category": "displays",
+      "subcategory": "led_direccionable",
+      "description": "LEDs RGB direccionables con controlador WS2811 (protocolo de un hilo como el WS2812B): en cadena de pixeles de 12 mm a prueba de agua o en tira de 12 V donde cada chip controla un grupo de 3 LEDs.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Cadena de pixeles Ø12 mm (normalmente 50 piezas)",
+          "pins": 3,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Pixel Ø12 mm (entra a presión en barreno de 12 mm)",
+          "lead_diameter_mm": null,
+          "notes": "Conector JST-SM de 3 vías en entrada y salida; la separación entre pixeles varía según modelo."
+        },
+        {
+          "name": "Tira WS2811 12 V 5050 (30 o 60 LED/m)",
+          "pins": 3,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Se corta cada 3 LEDs (un WS2811 por segmento); pads +12V, DIN/DO y GND."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "V+",
+          "function": "5 V o 12 V según versión (cable rojo, típico)"
+        },
+        {
+          "pin": "2",
+          "name": "DIN",
+          "function": "Entrada de datos (cable verde o blanco; respetar la flecha de dirección)"
+        },
+        {
+          "pin": "3",
+          "name": "GND",
+          "function": "Tierra (común con el microcontrolador)"
+        }
+      ],
+      "common_values": [
+        "5 V",
+        "12 V",
+        "Cadena de 50 pixeles",
+        "Tira 30 LED/m",
+        "Tira 60 LED/m",
+        "IP68 (pixel tipo bala)"
+      ],
+      "specs": {
+        "protocolo": "una línea de datos a 800 kHz (FastLED / Adafruit NeoPixel / WLED)",
+        "voltaje": "5 V o 12 V",
+        "control": "cada WS2811 maneja un pixel RGB (o grupo de 3 LEDs en la tira 12 V)"
+      },
+      "schematic_symbol": "led_direccionable",
+      "typical_uses": [
+        "Decoración navideña y fachadas",
+        "Letreros y anuncios luminosos",
+        "Proyectos con ESP32 y WLED"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Los colores de cables varían por fabricante: identificar por la serigrafía o la flecha. Usar resistencia de 330 Ω en la línea de datos y unir GND con el microcontrolador; con 12 V nunca alimentar el pixel desde el pin de 5 V. El orden de color puede ser RGB, GRB o BRG (configurar en la librería). Dato no verificado en sitio de tienda."
+    },
+    {
+      "id": "act-celda-peltier-tec1",
+      "name": "Celda Peltier termoeléctrica TEC1-12706 (40 x 40 mm, 12 V)",
+      "aliases": [
+        "TEC1-12706",
+        "Peltier",
+        "celda termoeléctrica",
+        "módulo termoeléctrico",
+        "thermoelectric cooler",
+        "TEC1-12705",
+        "TEC1-12710",
+        "TEC1-12715"
+      ],
+      "category": "actuadores_y_audio",
+      "subcategory": "termoelectricos",
+      "description": "Placa cerámica con 127 pares semiconductores que bombea calor de una cara a la otra al circular corriente DC: una cara enfría y la otra calienta; también genera voltaje si hay diferencia de temperatura (efecto Seebeck).",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Placa 40 x 40 mm con 2 cables",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "40 x 40 x 3.6–3.9 mm",
+          "lead_diameter_mm": null,
+          "notes": "Se prensa entre un disipador (cara caliente) y un bloque frío con pasta térmica y presión uniforme."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "+ (rojo)",
+          "function": "Positivo; con esta polaridad la cara con la leyenda impresa suele ser la fría"
+        },
+        {
+          "pin": "2",
+          "name": "− (negro)",
+          "function": "Negativo (invertir la polaridad intercambia cara fría y caliente)"
+        }
+      ],
+      "common_values": [
+        "TEC1-12703 (3 A)",
+        "TEC1-12705 (5 A)",
+        "TEC1-12706 (6 A)",
+        "TEC1-12710 (10 A)",
+        "TEC1-12715 (15 A)"
+      ],
+      "specs": {
+        "voltaje_max": "≈ 15 V (uso típico 12 V)",
+        "corriente_max": "6 A (TEC1-12706)",
+        "corriente_a_12v": "≈ 4.3–4.6 A",
+        "potencia_enfriamiento_max": "≈ 50–60 W (varía según fabricante)",
+        "pares": "127"
+      },
+      "schematic_symbol": "peltier",
+      "typical_uses": [
+        "Mini refrigeradores y enfriadores de bebidas",
+        "Deshumidificadores y cámaras de niebla",
+        "Control de temperatura en incubadoras",
+        "Generador termoeléctrico demostrativo"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "UNIT la vende (familia TEC1) y advierte no encenderla más de un par de segundos sin disipador: se destruye por sobrecalentamiento. La cara caliente necesita disipador con ventilador. Conmutar con MOSFET o relevador (PWM lento). Código: TEC1 = una etapa, 127 = pares, 06 = corriente máxima. Comprobar la cara fría al tacto antes de montar."
+    },
+    {
+      "id": "act-atomizador-ultrasonico",
+      "name": "Módulo atomizador ultrasónico / humidificador 5 V (disco piezo de 16–20 mm)",
+      "aliases": [
+        "atomizador ultrasónico",
+        "mist maker",
+        "humidificador USB",
+        "nebulizador piezoeléctrico",
+        "disco atomizador 16 mm",
+        "Grove Water Atomization (similar)",
+        "módulo de niebla"
+      ],
+      "category": "actuadores_y_audio",
+      "subcategory": "transductores_piezo",
+      "description": "Placa driver que hace vibrar un disco piezoeléctrico a unos 105–113 kHz para convertir agua en niebla fría; se alimenta con 5 V (USB) y el disco se mantiene húmedo con una mecha de esponja.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa driver + disco piezo Ø16 o Ø20 mm",
+          "pins": 4,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Entrada por micro-USB/USB-C o por 2 pads (5 V y GND); el disco va con 2 hilos a la placa. Algunas placas traen botón de encendido y modo intermitente."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "VIN (+5V)",
+          "function": "Alimentación 5 V (USB o pad)"
+        },
+        {
+          "pin": "2",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "3",
+          "name": "P1",
+          "function": "Hilo 1 del disco piezo (sin polaridad)"
+        },
+        {
+          "pin": "4",
+          "name": "P2",
+          "function": "Hilo 2 del disco piezo"
+        }
+      ],
+      "common_values": [
+        "Disco 16 mm",
+        "Disco 20 mm",
+        "Kit USB con esponja",
+        "Fogger de 24 V para estanques (otra versión)"
+      ],
+      "specs": {
+        "voltaje": "5 V",
+        "potencia": "≈ 2 W",
+        "frecuencia": "≈ 105–113 kHz (según disco)",
+        "caudal": "≈ 30–40 ml/h"
+      },
+      "schematic_symbol": "transductor_piezo",
+      "typical_uses": [
+        "Humidificadores caseros",
+        "Invernaderos y germinadores",
+        "Efectos de niebla en maquetas y difusores"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "El disco y la placa deben ser de la misma frecuencia: el disco suelto no funciona conectado directo a 5 V. No operar en seco. Para controlarlo con Arduino se conmuta la alimentación con un MOSFET o se simula el botón. Datos de Sigmanortec, Probots y Seeed; disponibilidad en tiendas mexicanas no verificada en línea."
+    },
+    {
+      "id": "act-cerradura-electromagnetica",
+      "name": "Cerradura electromagnética para puerta 12 V (180–280 kg)",
+      "aliases": [
+        "chapa magnética",
+        "cerradura magnética",
+        "magnetic lock",
+        "maglock",
+        "electroimán de puerta",
+        "MAG600 (280 kg)",
+        "Steren SEG-035 (190 kg)",
+        "cerradura 600 lb"
+      ],
+      "category": "actuadores_y_audio",
+      "subcategory": "solenoides_valvulas",
+      "description": "Electroimán de barra que retiene una placa de armadura atornillada a la puerta mientras está energizado (fail-safe: abre al cortar la corriente); se usa en control de acceso.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Barra de aluminio con placa de armadura y 2 cables",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Dimensiones según capacidad (las de 280 kg son más largas); se instala en el marco con escuadra en L o Z."
+        },
+        {
+          "name": "Barra con sensor de estado de puerta (5 cables: +, −, COM, NO, NC)",
+          "pins": 5,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Versión con contacto de estado (pines 3–5 del pinout); colores de cable según fabricante. Dimensiones según capacidad."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "+ (rojo)",
+          "function": "+12 V DC"
+        },
+        {
+          "pin": "2",
+          "name": "− (negro)",
+          "function": "Tierra"
+        },
+        {
+          "pin": "3",
+          "name": "COM",
+          "function": "Común del contacto de estado de puerta (solo en modelos con sensor)"
+        },
+        {
+          "pin": "4",
+          "name": "NO",
+          "function": "Contacto normalmente abierto del sensor de estado (solo en modelos con sensor)"
+        },
+        {
+          "pin": "5",
+          "name": "NC",
+          "function": "Contacto normalmente cerrado del sensor de estado (solo en modelos con sensor)"
+        }
+      ],
+      "common_values": [
+        "180 kg (350 lb)",
+        "190 kg (Steren SEG-035)",
+        "280 kg (600 lb)",
+        "Con LED de estado",
+        "Con sensor de puerta",
+        "12 / 24 V seleccionable"
+      ],
+      "specs": {
+        "voltaje": "12 V DC (algunas 12/24 V)",
+        "corriente": "≈ 0.3–0.5 A a 12 V según modelo (ver etiqueta)",
+        "fuerza_retencion": "180–280 kg",
+        "tipo": "fail-safe"
+      },
+      "schematic_symbol": "solenoide",
+      "typical_uses": [
+        "Control de acceso con RFID, huella o teclado",
+        "Puertas de laboratorio y oficinas",
+        "Sistemas con botón de salida y fuente de respaldo"
+      ],
+      "stores": [
+        "Steren",
+        "Syscom",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Steren vende la SEG-035 (190 kg) según el distribuidor Abasteo; Syscom y Cyberpuerta venden modelos de 280 kg (AccessPRO MAG600). Con un corte de luz la puerta queda abierta: usar fuente con batería de respaldo. Conmutar con relevador o MOSFET y poner diodo o varistor contra el pico inductivo. Corriente y medidas según modelo."
+    },
+    {
+      "id": "act-actuador-lineal-12v",
+      "name": "Actuador lineal eléctrico 12 V DC (carrera 50–300 mm)",
+      "aliases": [
+        "actuador lineal",
+        "linear actuator",
+        "pistón eléctrico",
+        "actuador de husillo 12V"
+      ],
+      "category": "actuadores_y_audio",
+      "subcategory": "actuadores_lineales",
+      "description": "Motor DC con reductor y husillo que extiende o retrae un vástago con fuerza considerable; trae finales de carrera internos y se invierte cambiando la polaridad.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Cuerpo con orejas de montaje y 2 cables",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Se fija con pernos en ambos extremos (orejas tipo clevis); la longitud depende de la carrera."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "M1 (rojo)",
+          "function": "Con + extiende (típico)"
+        },
+        {
+          "pin": "2",
+          "name": "M2 (negro)",
+          "function": "Con + retrae (invertir polaridad)"
+        }
+      ],
+      "common_values": [
+        "Carrera 50 mm",
+        "Carrera 100 mm",
+        "Carrera 150 mm",
+        "Carrera 200 mm",
+        "Carrera 300 mm",
+        "Fuerza 200–1500 N",
+        "Con retroalimentación (potenciómetro o Hall)",
+        "24 V"
+      ],
+      "specs": {
+        "voltaje": "12 V DC (también 24 V)",
+        "control": "inversión de polaridad (puente H o 2 relevadores)",
+        "finales_de_carrera": "internos"
+      },
+      "schematic_symbol": "motor",
+      "typical_uses": [
+        "Abrir ventanas y compuertas en domótica",
+        "Seguidores solares",
+        "Elevadores de TV y muebles",
+        "Proyectos de mecatrónica"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Velocidad, fuerza y corriente varían mucho por modelo (ver etiqueta). Para manejarlo usar un puente H de alta corriente (BTS7960) o dos relevadores en configuración de inversión. Datos generales; no verificado en sitio de tienda mexicana."
+    },
+    {
+      "id": "act-motorreductor-sinfin-jgy370",
+      "name": "Motorreductor de tornillo sinfín JGY-370 12 V (autobloqueante)",
+      "aliases": [
+        "JGY-370",
+        "JGY370",
+        "motor sinfín 12V",
+        "worm gear motor",
+        "motorreductor de sinfín",
+        "GW370"
+      ],
+      "category": "actuadores_y_audio",
+      "subcategory": "motorreductores",
+      "description": "Motor DC tamaño 370 con caja de tornillo sinfín que da pocas rpm, alto par y bloqueo mecánico (el eje no gira al empujarlo); eje de salida a 90° del motor.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Caja reductora de sinfín con eje D",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Eje de salida perpendicular al motor, tipo D de Ø6 mm (típico de catálogo). Barrenos roscados en la caja; dimensiones exactas según proveedor."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "+",
+          "function": "Terminal 1 (invertir polaridad invierte el giro)"
+        },
+        {
+          "pin": "2",
+          "name": "−",
+          "function": "Terminal 2"
+        }
+      ],
+      "common_values": [
+        "6 V",
+        "12 V",
+        "24 V",
+        "2–150 rpm (según reducción)"
+      ],
+      "specs": {
+        "voltaje": "6 / 12 / 24 V",
+        "eje": "D Ø6 mm (típico)",
+        "autobloqueo": "sí, por el sinfín"
+      },
+      "schematic_symbol": "motor",
+      "typical_uses": [
+        "Volteo de huevos en incubadoras",
+        "Cortinas y persianas motorizadas",
+        "Mecanismos que deben sostener posición sin energía",
+        "Asadores y exhibidores giratorios"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Par y corriente dependen de la reducción (ver etiqueta). Datos de catálogos de proveedores; no verificado en sitio de tienda mexicana. Con driver L298N o BTS7960 según corriente."
+    },
+    {
+      "id": "act-servo-ds3218",
+      "name": "Servo digital DS3218 de 20 kg·cm (engranes metálicos, 180°/270°)",
+      "aliases": [
+        "DS3218",
+        "DS3218MG",
+        "servo 20 kg",
+        "servo 20kg",
+        "DSSERVO DS3218",
+        "DS3225 (25 kg, mismo tamaño)"
+      ],
+      "category": "actuadores_y_audio",
+      "subcategory": "servomotores",
+      "description": "Servo digital de tamaño estándar con engranes de metal y par alto (~20 kg·cm), común en brazos robóticos y robots bípedos; mismo formato de montaje y conexión que el MG996R.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Servo estándar con cable de 3 hilos y conector hembra 2.54 mm",
+          "pins": 3,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": "aprox. 40 x 20 x 40.5 mm (tamaño estándar)",
+          "lead_diameter_mm": null,
+          "notes": "Orejas de montaje como servo estándar; cuerno metálico de 25 dientes (25T). Medidas aproximadas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "GND (negro o marrón)",
+          "function": "Tierra"
+        },
+        {
+          "pin": "2",
+          "name": "V+ (rojo)",
+          "function": "Alimentación 4.8–6.8 V"
+        },
+        {
+          "pin": "3",
+          "name": "Señal (blanco o naranja)",
+          "function": "PWM 50 Hz, pulso de 500 a 2500 µs"
+        }
+      ],
+      "common_values": [
+        "DS3218 180°",
+        "DS3218 270°",
+        "DS3225 (25 kg)"
+      ],
+      "specs": {
+        "voltaje": "4.8–6.8 V",
+        "par": "≈ 19–21 kg·cm según voltaje (dato del fabricante)",
+        "pulso": "500–2500 µs",
+        "engranes": "metálicos"
+      },
+      "schematic_symbol": "servo",
+      "typical_uses": [
+        "Brazos robóticos",
+        "Robots bípedos y hexápodos",
+        "Mecanismos de dirección y compuertas"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Requiere fuente externa de 5–6 V capaz de varios amperes (no alimentar desde el Arduino) y unir GND con el microcontrolador. Varios servos: usar PCA9685. Colores de cable según lote. Datos de hoja de DSSERVO; disponibilidad en tiendas mexicanas no verificada en línea."
+    },
+    {
+      "id": "act-transductor-ultrasonico-40khz",
+      "name": "Transductor ultrasónico 40 kHz Ø16 mm (emisor T / receptor R)",
+      "aliases": [
+        "TCT40-16T",
+        "TCT40-16R",
+        "T40-16",
+        "R40-16",
+        "transductor piezo 40kHz",
+        "40kHz ultrasonic transducer",
+        "cápsula ultrasónica"
+      ],
+      "category": "actuadores_y_audio",
+      "subcategory": "transductores_piezo",
+      "description": "Cápsula piezoeléctrica abierta resonante a 40 kHz que emite (T) o recibe (R) ultrasonido; es la misma que lleva el HC-SR04 y se usa en levitadores acústicos y medidores de distancia.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "Cápsula metálica Ø16 mm con 2 pines",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Ø16 mm x ≈12 mm de alto (aprox.)",
+          "lead_diameter_mm": null,
+          "notes": "Separación de pines no verificada: medir antes de diseñar la huella. Una pata está unida a la carcasa."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "+",
+          "function": "Pata aislada (señal)"
+        },
+        {
+          "pin": "2",
+          "name": "GND",
+          "function": "Pata unida a la carcasa metálica (tierra)"
+        }
+      ],
+      "common_values": [
+        "Emisor (T)",
+        "Receptor (R)",
+        "Par T + R"
+      ],
+      "specs": {
+        "frecuencia": "40 ± 1 kHz",
+        "excitacion": "onda cuadrada de 40 kHz (voltaje máximo según hoja del fabricante)"
+      },
+      "schematic_symbol": "transductor_piezo",
+      "typical_uses": [
+        "Levitador acústico casero (arreglo de transductores + L298N)",
+        "Medidores de distancia con 555 o PIC",
+        "Barreras ultrasónicas",
+        "Repelentes ultrasónicos"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Emisor y receptor se ven iguales: identificar por la letra T o R impresa. En levitadores se excitan en fase con un puente H a 40 kHz. Medidas aproximadas; disponibilidad no verificada en sitio de tienda."
+    },
+    {
+      "id": "act-chasis-robot-2wd-4wd",
+      "name": "Kit chasis de carrito robot 2WD / 4WD (acrílico, con motores TT)",
+      "aliases": [
+        "chasis 2WD",
+        "chasis 4WD",
+        "smart car kit",
+        "kit carrito robot",
+        "chasis seguidor de línea",
+        "robot car chassis",
+        "kit robot 2 llantas con rueda loca"
+      ],
+      "category": "actuadores_y_audio",
+      "subcategory": "robotica_movil",
+      "description": "Kit de placas de acrílico con 2 o 4 motorreductores TT, llantas de 65 mm, rueda loca (en 2WD), portapilas y tornillería; base típica de seguidores de línea, evasores de obstáculos y carritos por Bluetooth.",
+      "mounting": "n/a",
+      "packages": [
+        {
+          "name": "Terminales de cada motor TT",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Lengüetas para soldar cables (ver act-motor-tt). Las medidas del chasis y la posición de barrenos varían entre proveedores."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "M+",
+          "name": "Motor +",
+          "function": "Terminal 1 de cada motor (a la salida del driver)"
+        },
+        {
+          "pin": "M−",
+          "name": "Motor −",
+          "function": "Terminal 2 de cada motor"
+        },
+        {
+          "pin": "BAT+",
+          "name": "Portapilas + (rojo)",
+          "function": "Alimentación del driver/placa"
+        },
+        {
+          "pin": "BAT−",
+          "name": "Portapilas − (negro)",
+          "function": "Tierra"
+        }
+      ],
+      "common_values": [
+        "2WD (2 motores + rueda loca)",
+        "4WD (4 motores)",
+        "Portapilas 4 x AA",
+        "Con discos de encoder",
+        "Chasis de 2 niveles"
+      ],
+      "specs": {
+        "motores": "TT 3–6 V reducción 1:48",
+        "llantas": "Ø65 mm",
+        "alimentacion_tipica": "4 x AA (6 V) o 2 x 18650 (7.4 V)"
+      },
+      "schematic_symbol": "motor",
+      "typical_uses": [
+        "Robot seguidor de línea",
+        "Carrito evasor de obstáculos con HC-SR04",
+        "Carrito controlado por Bluetooth (HC-05)"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Electrónica 5Hz",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "No incluye electrónica: se complementa con driver L298N / L9110S / TB6612FNG, sensores TCRT5000 y una placa Arduino. Soldar un capacitor de 100 nF en cada motor. Contenido exacto del kit varía por proveedor; no verificado en sitio de tienda."
+    },
+    {
+      "id": "act-motor-sincrono-127v",
+      "name": "Motor síncrono de CA 127 V de baja velocidad (tipo 49TYJ / 50TYJ, 2–10 rpm)",
+      "aliases": [
+        "motor síncrono",
+        "motor de microondas",
+        "50TYJ",
+        "49TYJ",
+        "TYJ50",
+        "motor de plato giratorio",
+        "synchronous motor 110V"
+      ],
+      "category": "actuadores_y_audio",
+      "subcategory": "motores_ac",
+      "description": "Motor de imán permanente con reductor integrado que gira a velocidad fija sincronizada con la red de 60 Hz; es el del plato de los hornos de microondas y sirve para mecanismos lentos.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Cuerpo redondo con brida de 2 barrenos y 2 cables o terminales",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Ø ≈ 49–50 mm (el número de la serie indica el diámetro)",
+          "lead_diameter_mm": null,
+          "notes": "Eje con muesca o tipo D; largo del eje y separación de barrenos según modelo."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "L",
+          "function": "Fase 127 VAC (sin polaridad)"
+        },
+        {
+          "pin": "2",
+          "name": "N",
+          "function": "Neutro"
+        }
+      ],
+      "common_values": [
+        "2.5 rpm",
+        "5/6 rpm",
+        "10 rpm",
+        "127 VAC",
+        "24 VAC",
+        "12 V (versiones especiales)"
+      ],
+      "specs": {
+        "voltaje": "127 VAC 60 Hz (también 220 V, 24 V)",
+        "potencia": "≈ 4 W (típico)",
+        "sentido": "en muchos modelos arranca al azar en CW o CCW"
+      },
+      "schematic_symbol": "motor",
+      "typical_uses": [
+        "Volteo de huevos en incubadoras",
+        "Exhibidores y letreros giratorios",
+        "Bolas de espejos y adornos",
+        "Mezcladores lentos"
+      ],
+      "stores": [
+        "Tiendas Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre",
+        "Refaccionarias de electrodomésticos"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Trabaja con voltaje de red: aislar terminales, usar fusible y conmutar con relevador o SSR (G3MB-202P). Potencia y rpm según la etiqueta. Datos generales; no verificado en sitio de tienda."
+    },
+    {
+      "id": "act-bomba-peristaltica-12v",
+      "name": "Bomba peristáltica 12 V DC (dosificadora, manguera de silicón)",
+      "aliases": [
+        "bomba peristáltica",
+        "peristaltic pump",
+        "bomba dosificadora",
+        "bomba de dosificación 12V"
+      ],
+      "category": "actuadores_y_audio",
+      "subcategory": "bombas",
+      "description": "Bomba en la que unos rodillos aprietan una manguera de silicón: mueve volúmenes pequeños y repetibles, es autocebante y el líquido no toca el mecanismo.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Cabezal de rodillos con motor DC y 2 terminales",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Se fija con 2 tornillos en el cabezal; diámetro de manguera según modelo."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "+",
+          "function": "Terminal 1 (invertir polaridad invierte el flujo)"
+        },
+        {
+          "pin": "2",
+          "name": "−",
+          "function": "Terminal 2"
+        }
+      ],
+      "common_values": [
+        "6 V",
+        "12 V",
+        "24 V",
+        "Con motor DC",
+        "Con motor a pasos (más precisa)"
+      ],
+      "specs": {
+        "voltaje": "12 V DC (típico)",
+        "control": "relevador o MOSFET con PWM; polaridad define el sentido"
+      },
+      "schematic_symbol": "motor",
+      "typical_uses": [
+        "Dosificadores de nutrientes para hidroponía",
+        "Despachadores de bebidas",
+        "Acuarios y experimentos de química"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Caudal y corriente varían por modelo: calibrar midiendo el volumen por segundo. Datos generales; no verificado en sitio de tienda mexicana."
+    },
+    {
+      "id": "mod-tb6600",
+      "name": "Driver de motor a pasos TB6600 (9–42 V, hasta 3.5–4 A)",
+      "aliases": [
+        "TB6600",
+        "driver TB6600",
+        "stepper driver 4A",
+        "driver NEMA 23",
+        "HY-DIV268N-5A (similar)"
+      ],
+      "category": "modulos_potencia",
+      "subcategory": "drivers_motor_paso",
+      "description": "Driver en caja de aluminio para motores a pasos bipolares NEMA 17/23, con entradas optoacopladas PUL/DIR/ENA y selección de micropasos y corriente por 6 DIP switches.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Caja de aluminio con 2 borneras de tornillo (6 + 6)",
+          "pins": 12,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "96 x 56 x 33 mm (UNIT)",
+          "lead_diameter_mm": null,
+          "notes": "Bornera de señales y bornera de potencia/motor; se fija con 2 tornillos laterales y requiere ventilación."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "ENA−",
+          "function": "Habilitación (cátodo del optoacoplador)"
+        },
+        {
+          "pin": "2",
+          "name": "ENA+",
+          "function": "Habilitación (ánodo)"
+        },
+        {
+          "pin": "3",
+          "name": "DIR−",
+          "function": "Dirección (cátodo)"
+        },
+        {
+          "pin": "4",
+          "name": "DIR+",
+          "function": "Dirección (ánodo)"
+        },
+        {
+          "pin": "5",
+          "name": "PUL−",
+          "function": "Pulsos de paso (cátodo)"
+        },
+        {
+          "pin": "6",
+          "name": "PUL+",
+          "function": "Pulsos de paso (ánodo)"
+        },
+        {
+          "pin": "7",
+          "name": "B−",
+          "function": "Bobina B −"
+        },
+        {
+          "pin": "8",
+          "name": "B+",
+          "function": "Bobina B +"
+        },
+        {
+          "pin": "9",
+          "name": "A−",
+          "function": "Bobina A −"
+        },
+        {
+          "pin": "10",
+          "name": "A+",
+          "function": "Bobina A +"
+        },
+        {
+          "pin": "11",
+          "name": "GND",
+          "function": "Tierra de la fuente"
+        },
+        {
+          "pin": "12",
+          "name": "VCC",
+          "function": "Alimentación 9–42 V DC"
+        }
+      ],
+      "common_values": [
+        "Corriente 0.5–3.5 A (8 niveles)",
+        "Micropasos 1, 2/A, 2/B, 4, 8, 16, 32"
+      ],
+      "specs": {
+        "voltaje": "9–42 V DC",
+        "corriente": "0.5–3.5 A ajustable (4 A pico)",
+        "micropasos": "1, 2/A, 2/B, 4, 8, 16, 32",
+        "entradas": "optoacopladas para señales de 5 V",
+        "protecciones": "polaridad inversa, sobretemperatura, sobrecorriente y corto"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "CNC y routers caseros",
+        "Grabadoras láser",
+        "Ejes lineales y mesas con NEMA 23"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Geek Factory",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT (9–42 VDC, 0.5–3.5 A, 7 modos de micropasos, 96 x 56 x 33 mm, ≈ 200 g). Conexión típica de ánodo común: PUL+, DIR+ y ENA+ a 5 V y PUL−, DIR−, ENA− a los pines del Arduino (o al revés, cátodo común). Para señales de 12/24 V agregar resistencia en serie. Orden de bornes según la serigrafía de la caja."
+    },
+    {
+      "id": "mod-relevador-wifi-esp01s",
+      "name": "Módulo relevador Wi-Fi para ESP-01S (5 V, 1 canal)",
+      "aliases": [
+        "ESP-01S relay",
+        "relevador con interfaz para ESP8266",
+        "ESP8266 relay module",
+        "relé WiFi ESP-01",
+        "módulo relé ESP-01S"
+      ],
+      "category": "modulos_potencia",
+      "subcategory": "relevadores",
+      "description": "Placa con relevador de 10 A, regulador de 3.3 V y zócalo para insertar un ESP-01S; el GPIO0 del ESP acciona el relevador, formando un interruptor Wi-Fi económico para domótica.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Zócalo hembra 2x4 para ESP-01S",
+          "pins": 8,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": 2.54,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "El ESP-01S se inserta con la antena hacia fuera de la placa."
+        },
+        {
+          "name": "Alimentación + bornera del relevador",
+          "pins": 5,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Header o pads VCC/GND y bornera de 3 tornillos NO/COM/NC; algunas versiones agregan un pin IN."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "VCC",
+          "name": "VCC",
+          "function": "Alimentación 5 V"
+        },
+        {
+          "pin": "GND",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "NO",
+          "name": "NO",
+          "function": "Contacto normalmente abierto"
+        },
+        {
+          "pin": "COM",
+          "name": "COM",
+          "function": "Común del relevador"
+        },
+        {
+          "pin": "NC",
+          "name": "NC",
+          "function": "Contacto normalmente cerrado"
+        },
+        {
+          "pin": "GPIO0",
+          "name": "GPIO0 (interno)",
+          "function": "Señal del ESP-01S que activa el transistor del relevador"
+        }
+      ],
+      "common_values": [
+        "5 V 1 canal",
+        "Con o sin ESP-01S incluido"
+      ],
+      "specs": {
+        "voltaje": "5 V DC",
+        "contactos": "10 A 250 VAC / 30 VDC",
+        "control": "GPIO0 del ESP-01S",
+        "extras": "LED indicador y botón de reset"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Encender focos o bombas desde el celular",
+        "Domótica con ESPHome, Tasmota o Blynk",
+        "Timbres y portones Wi-Fi"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT ('relevador con interfaz para ESP8266': 5 V, 10 A, GPIO0, botón de reset; el ESP-01S se vende aparte). Según la versión el relevador se activa con nivel alto o bajo (en ESPHome usar 'inverted' si hace falta). Programar el ESP-01S fuera del módulo. Las pistas de la placa no soportan 10 A continuos en la práctica."
+    },
+    {
+      "id": "mod-optoacoplador-pc817-multicanal",
+      "name": "Módulo aislador con optoacopladores PC817 (2/4/8 canales, 3.6–30 V)",
+      "aliases": [
+        "módulo optoacoplador PC817",
+        "optocoupler isolation board",
+        "aislador de señales 24V a 5V",
+        "convertidor de nivel 24V para PLC",
+        "EL817 4 canales"
+      ],
+      "category": "modulos_potencia",
+      "subcategory": "aisladores",
+      "description": "Placa con varios PC817, resistencias y LEDs que aísla y convierte señales digitales entre circuitos de distinto voltaje (por ejemplo sensores de 12/24 V hacia un Arduino de 5 V) sin unir sus tierras.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa de 4 canales con header o bornera en cada lado",
+          "pins": 11,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Disposición típica: entrada IN1–IN4 + G1; salida V2, G2, OUT1–OUT4. Hay versiones con borneras de tornillo y de 2 u 8 canales."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "IN1–IN4",
+          "name": "IN1–IN4",
+          "function": "Entradas del lado A (LED del optoacoplador con resistencia; 3.6–30 V según versión)"
+        },
+        {
+          "pin": "G1",
+          "name": "G1",
+          "function": "Tierra del lado de entrada"
+        },
+        {
+          "pin": "V2",
+          "name": "V2",
+          "function": "Alimentación del lado de salida (3.3–5 V o la de la carga)"
+        },
+        {
+          "pin": "G2",
+          "name": "G2",
+          "function": "Tierra del lado de salida"
+        },
+        {
+          "pin": "OUT1–OUT4",
+          "name": "OUT1–OUT4",
+          "function": "Salidas (activas alto o bajo según versión)"
+        }
+      ],
+      "common_values": [
+        "2 canales",
+        "4 canales",
+        "8 canales",
+        "Con borneras",
+        "Con headers"
+      ],
+      "specs": {
+        "optoacoplador": "PC817 / EL817",
+        "voltaje_entrada": "≈ 3.6–30 V (según resistencias de la versión)",
+        "velocidad": "baja (PC817: unos kHz)"
+      },
+      "schematic_symbol": "optoacoplador",
+      "typical_uses": [
+        "Leer sensores, botones o salidas de PLC de 12/24 V con Arduino",
+        "Interfaces tipo PLC en mecatrónica",
+        "Aislar señales de tableros eléctricos"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Para conservar el aislamiento no unir G1 con G2. No sirve para señales rápidas (encoders rápidos, PWM de alta frecuencia): usar 6N137. Distribución de pines típica no verificada en tienda; revisar la serigrafía. Ver opt-pc817 para el CI."
+    },
+    {
+      "id": "mod-carga-inalambrica-5v",
+      "name": "Módulo de transmisión de energía inalámbrica 5 V (transmisor + receptor con bobinas, XKT-510)",
+      "aliases": [
+        "carga inalámbrica módulo",
+        "wireless charging module",
+        "XKT-510",
+        "transmisor receptor inductivo 5V",
+        "wireless power 5V 1A",
+        "bobinas de carga inalámbrica"
+      ],
+      "category": "modulos_potencia",
+      "subcategory": "cargadores",
+      "description": "Par de placas con bobina: el transmisor, alimentado con 5 V (o 12 V según versión), induce energía en la bobina receptora, que entrega 5 V a pocos milímetros de distancia para alimentar o cargar sin contactos.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa transmisora + bobina plana",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Entrada VIN+/GND por pads o cables."
+        },
+        {
+          "name": "Placa receptora + bobina plana",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Salida 5 V por pads o cables."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "TX+",
+          "name": "VIN+ (transmisor)",
+          "function": "Entrada 5 V o 12 V según versión"
+        },
+        {
+          "pin": "TX−",
+          "name": "GND (transmisor)",
+          "function": "Tierra"
+        },
+        {
+          "pin": "RX+",
+          "name": "OUT+ (receptor)",
+          "function": "Salida 5 V"
+        },
+        {
+          "pin": "RX−",
+          "name": "OUT− (receptor)",
+          "function": "Tierra de salida"
+        }
+      ],
+      "common_values": [
+        "5 V 1 A",
+        "5 V 2 A",
+        "Entrada 12 V"
+      ],
+      "specs": {
+        "voltaje_salida": "5 V",
+        "distancia": "≈ 2–20 mm (la corriente baja con la distancia)",
+        "controlador_tx": "XKT-510 (en la versión más común)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Cargadores inalámbricos caseros (lámparas, cepillos, robots)",
+        "Alimentar circuitos dentro de cajas selladas",
+        "Demostraciones de inducción electromagnética"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "No es un cargador Qi para celulares (salvo módulos marcados como Qi). La corriente máxima se logra solo con bobinas alineadas y muy cercanas. Datos de listados de proveedores; no verificado en sitio de tienda mexicana."
+    },
+    {
+      "id": "mod-usb-pd-trigger",
+      "name": "Módulo disparador USB-C PD (PD trigger / decoy) 9–20 V",
+      "aliases": [
+        "PD trigger",
+        "USB PD decoy",
+        "ZY12PDN",
+        "IP2721 (chip)",
+        "activador PD",
+        "USB-C a 12V",
+        "trigger 9V 12V 15V 20V"
+      ],
+      "category": "modulos_potencia",
+      "subcategory": "fuentes_dc",
+      "description": "Placa con conector USB-C que negocia con un cargador Power Delivery para obtener un voltaje fijo (9, 12, 15 o 20 V) y lo entrega en pads o bornera; sustituye eliminadores en proyectos.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa mini con USB-C y pads/bornera de salida",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Unas versiones fijan el voltaje con puente de soldadura o resistencia y otras (ZY12PDN) con botón y LED."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "V+ / OUT+",
+          "function": "Salida del voltaje negociado"
+        },
+        {
+          "pin": "2",
+          "name": "GND / OUT−",
+          "function": "Tierra"
+        }
+      ],
+      "common_values": [
+        "9 V",
+        "12 V",
+        "15 V",
+        "20 V",
+        "Seleccionable con botón (ZY12PDN)",
+        "Con puentes de soldadura"
+      ],
+      "specs": {
+        "voltajes": "5, 9, 12, 15 o 20 V (según soporte del cargador)",
+        "corriente": "hasta 3 A (5 A solo con cable e-marker y cargador compatible)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Alimentar cautines portátiles (TS100, Pinecil)",
+        "Tiras LED de 12 V desde un cargador de laptop",
+        "Fuentes portátiles para proyectos"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "El cargador debe ser USB-C PD y soportar el voltaje pedido; con cargadores comunes solo entrega 5 V. Medir con multímetro antes de conectar la carga. No verificado en sitio de tienda mexicana."
+    },
+    {
+      "id": "mod-kit-fuente-0-30v-3a",
+      "name": "Kit fuente regulada ajustable 0–30 V / 2 mA–3 A (para armar)",
+      "aliases": [
+        "kit fuente 0-30V",
+        "fuente de laboratorio para armar",
+        "DIY power supply kit 0-30V 3A",
+        "fuente regulable con TL081",
+        "kit fuente ajustable 30V 3A"
+      ],
+      "category": "modulos_potencia",
+      "subcategory": "fuentes_lineales",
+      "description": "Kit de PCB y componentes (sin transformador) para armar una fuente lineal de laboratorio con voltaje ajustable de 0 a 30 V y límite de corriente ajustable con LED indicador.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "PCB del kit con componentes THT",
+          "pins": null,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Tamaño de la PCB variable entre clones. El transistor de potencia va en un disipador grande, fuera o al borde de la placa."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "AC1",
+          "name": "AC",
+          "function": "Entrada del transformador 24 VAC"
+        },
+        {
+          "pin": "AC2",
+          "name": "AC",
+          "function": "Entrada del transformador 24 VAC"
+        },
+        {
+          "pin": "OUT+",
+          "name": "+",
+          "function": "Salida positiva 0–30 V"
+        },
+        {
+          "pin": "OUT−",
+          "name": "−",
+          "function": "Salida negativa"
+        },
+        {
+          "pin": "P1",
+          "name": "Potenciómetro de voltaje",
+          "function": "3 terminales al potenciómetro de ajuste de voltaje"
+        },
+        {
+          "pin": "P2",
+          "name": "Potenciómetro de corriente",
+          "function": "3 terminales al potenciómetro de límite de corriente"
+        },
+        {
+          "pin": "LED",
+          "name": "LED",
+          "function": "Indicador de limitación de corriente"
+        }
+      ],
+      "common_values": [
+        "0–30 V 2 mA–3 A",
+        "0–15 V (versiones pequeñas)"
+      ],
+      "specs": {
+        "entrada": "transformador de 24 VAC ≥ 3 A",
+        "salida": "0–30 V DC, 2 mA–3 A",
+        "componentes_principales": "3 amplificadores TL081 y transistor de potencia 2SD1047 (según versión)"
+      },
+      "schematic_symbol": "regulador",
+      "typical_uses": [
+        "Fuente de laboratorio casera",
+        "Práctica de armado y soldadura",
+        "Cargar baterías con límite de corriente"
+      ],
+      "stores": [
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Requiere transformador de 24 VAC 3 A, disipador grande y gabinete; los TL081 trabajan cerca de su voltaje máximo, así que no usar un transformador mayor al indicado. Pinout funcional: la serigrafía y la lista de componentes varían entre clones. No verificado en sitio de tienda."
+    },
+    {
+      "id": "mod-fuente-simetrica",
+      "name": "Módulo fuente simétrica ±V (LM317/LM337 ajustable o 78xx/79xx fija)",
+      "aliases": [
+        "fuente simétrica",
+        "fuente dual",
+        "fuente bipolar",
+        "módulo LM317 LM337",
+        "módulo 7812 7912",
+        "dual power supply ±15V"
+      ],
+      "category": "modulos_potencia",
+      "subcategory": "fuentes_lineales",
+      "description": "Placa con puente rectificador, capacitores de filtro y reguladores positivo y negativo que entrega +V, 0 y −V a partir de un transformador con derivación central; indispensable para prácticas con amplificadores operacionales.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa con borneras de entrada AC y salida +V / 0 / −V",
+          "pins": 6,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Reguladores TO-220 con o sin disipador; la versión ajustable trae potenciómetros (multivuelta en algunas)."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "AC1",
+          "name": "AC1",
+          "function": "Extremo 1 del secundario del transformador"
+        },
+        {
+          "pin": "0",
+          "name": "CT / 0",
+          "function": "Derivación central del transformador"
+        },
+        {
+          "pin": "AC2",
+          "name": "AC2",
+          "function": "Extremo 2 del secundario"
+        },
+        {
+          "pin": "+V",
+          "name": "+V",
+          "function": "Salida positiva"
+        },
+        {
+          "pin": "GND",
+          "name": "GND",
+          "function": "Tierra (0 V)"
+        },
+        {
+          "pin": "−V",
+          "name": "−V",
+          "function": "Salida negativa"
+        }
+      ],
+      "common_values": [
+        "Ajustable ±1.25 V a ±(entrada − 3) V (LM317 + LM337)",
+        "±5 V (7805/7905)",
+        "±12 V (7812/7912)",
+        "±15 V (7815/7915)"
+      ],
+      "specs": {
+        "entrada": "transformador con derivación central (p. ej. 15-0-15 VAC) o DC simétrica",
+        "corriente": "≈ 1 A por rama con disipador (según reguladores y transformador)",
+        "reguladores": "LM317 + LM337 o 78xx + 79xx"
+      },
+      "schematic_symbol": "regulador",
+      "typical_uses": [
+        "Alimentar amplificadores operacionales (TL081, LM741) en prácticas",
+        "Preamplificadores y filtros de audio",
+        "Fuente dual de laboratorio"
+      ],
+      "stores": [
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)",
+        "UNIT Electronics"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "El LM337 y los 79xx tienen distinto orden de pines que sus equivalentes positivos: revisar al reponerlos. La corriente real depende del transformador y los disipadores. Datos generales; no verificado en sitio de tienda."
+    },
+    {
+      "id": "mod-controlador-carga-solar-pwm",
+      "name": "Controlador de carga solar PWM 10–30 A 12/24 V (con pantalla y USB)",
+      "aliases": [
+        "controlador de carga solar",
+        "regulador de carga solar",
+        "solar charge controller",
+        "controlador solar PWM 10A",
+        "controlador solar 20A",
+        "controlador solar 30A",
+        "EPEVER LS1024 (similar)"
+      ],
+      "category": "modulos_potencia",
+      "subcategory": "cargadores",
+      "description": "Regulador que carga una batería de plomo (o de litio en modelos que lo indiquen) desde un panel solar mediante PWM, la protege contra sobrecarga y descarga profunda, y maneja una salida de carga con temporizador o modo crepuscular.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Caja plástica con 6 bornes de tornillo y puerto USB",
+          "pins": 6,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Bornes en grupos panel, batería y carga, identificados con íconos; se atornilla a la pared con 2 orejas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "PV+",
+          "name": "Panel +",
+          "function": "Positivo del panel solar"
+        },
+        {
+          "pin": "PV−",
+          "name": "Panel −",
+          "function": "Negativo del panel solar"
+        },
+        {
+          "pin": "BAT+",
+          "name": "Batería +",
+          "function": "Positivo de la batería"
+        },
+        {
+          "pin": "BAT−",
+          "name": "Batería −",
+          "function": "Negativo de la batería"
+        },
+        {
+          "pin": "LOAD+",
+          "name": "Carga +",
+          "function": "Salida a la carga (controlada)"
+        },
+        {
+          "pin": "LOAD−",
+          "name": "Carga −",
+          "function": "Retorno de la carga"
+        },
+        {
+          "pin": "USB",
+          "name": "USB 5 V",
+          "function": "Salida para cargar dispositivos (en modelos con USB)"
+        }
+      ],
+      "common_values": [
+        "10 A",
+        "20 A",
+        "30 A",
+        "12/24 V automático",
+        "Con USB 5 V",
+        "Con pantalla LCD"
+      ],
+      "specs": {
+        "voltaje_sistema": "12 V o 24 V (detección automática)",
+        "tipo": "PWM (MPPT en modelos más caros)",
+        "baterias": "plomo-ácido sellada / AGM / gel; litio solo si el modelo lo indica",
+        "protecciones": "sobrecarga, descarga profunda, cortocircuito y polaridad inversa (según modelo)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Sistemas solares aislados con batería de 12 V",
+        "Iluminación solar, cámaras y bombas",
+        "Proyectos escolares de energía renovable"
+      ],
+      "stores": [
+        "Syscom",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Conectar primero la batería (para que detecte 12/24 V) y después el panel; desconectar en orden inverso. Algunos modelos son de positivo común (EPEVER LS-1024, según Syscom) y otros de negativo común: no unir tierras con otros equipos sin revisarlo. Syscom vende el EPEVER LS-1024 (10 A, 12/24 V, USB)."
+    },
+    {
+      "id": "mod-driver-led-corriente-constante",
+      "name": "Driver LED de corriente constante para LEDs de potencia (127 VAC → 300 / 600 mA)",
+      "aliases": [
+        "driver LED",
+        "LED driver 1-3x1W",
+        "LED driver 4-7x1W",
+        "LED driver 8-12x1W",
+        "fuente para LED de potencia",
+        "balastro LED",
+        "driver 300mA"
+      ],
+      "category": "modulos_potencia",
+      "subcategory": "drivers_led",
+      "description": "Pequeña fuente conmutada que entrega corriente constante (por ejemplo 300 mA para LEDs de 1 W o 600 mA para LEDs de 3 W) a una serie de LEDs de potencia directamente desde la red de 127 V.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa abierta o en caja plástica con 4 cables",
+          "pins": 4,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Entrada AC por 2 cables y salida DC por 2 cables (rojo + y negro −, típico)."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "L",
+          "name": "AC",
+          "function": "Entrada de red 127 VAC"
+        },
+        {
+          "pin": "N",
+          "name": "AC",
+          "function": "Entrada de red 127 VAC"
+        },
+        {
+          "pin": "DC+",
+          "name": "+ (rojo)",
+          "function": "Al ánodo del primer LED de la serie"
+        },
+        {
+          "pin": "DC−",
+          "name": "− (negro)",
+          "function": "Al cátodo del último LED de la serie"
+        }
+      ],
+      "common_values": [
+        "1–3 x 1 W (300 mA)",
+        "4–7 x 1 W (300 mA)",
+        "8–12 x 1 W (300 mA)",
+        "1–3 x 3 W (600 mA)",
+        "Para COB 10–50 W"
+      ],
+      "specs": {
+        "entrada": "≈ 85–265 VAC (típico de etiqueta)",
+        "salida": "corriente constante 300 o 600 mA; voltaje según número de LEDs"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Lámparas caseras con LEDs de 1 W / 3 W",
+        "Reparación de focos y reflectores LED",
+        "Iluminación de acuarios y vitrinas"
+      ],
+      "stores": [
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)",
+        "UNIT Electronics"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Respetar el rango de LEDs de la etiqueta (fuera de rango el driver no regula o se daña). No conectar ni desconectar los LEDs con el driver energizado. La versión de placa abierta tiene partes con voltaje de red. Para alimentación de 12 V DC existen drivers tipo PT4115 (no incluidos aquí). Ver opt-led-potencia-1w-3w y opt-led-cob."
+    },
+    {
+      "id": "mod-vnh2sp30",
+      "name": "Driver de motor VNH2SP30 (Monster Moto Shield, ≈14 A continuos)",
+      "aliases": [
+        "VNH2SP30",
+        "Monster Moto Shield",
+        "driver 30A",
+        "shield de motores VNH2SP30",
+        "VNH5019 (similar)"
+      ],
+      "category": "modulos_potencia",
+      "subcategory": "drivers_motor_dc",
+      "description": "Puente H integrado de alta corriente con sensor de corriente; se vende como shield de 2 canales para Arduino UNO o placa de 1 canal, para motores DC grandes de robots y vehículos.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Shield de 2 canales formato Arduino UNO",
+          "pins": null,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Borneras para alimentación de motores (VIN/GND) y para cada motor (A1/B1, A2/B2)."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "D7",
+          "name": "INA1",
+          "function": "Dirección motor 1 (entrada A)"
+        },
+        {
+          "pin": "D8",
+          "name": "INB1",
+          "function": "Dirección motor 1 (entrada B)"
+        },
+        {
+          "pin": "D4",
+          "name": "INA2",
+          "function": "Dirección motor 2 (entrada A)"
+        },
+        {
+          "pin": "D9",
+          "name": "INB2",
+          "function": "Dirección motor 2 (entrada B)"
+        },
+        {
+          "pin": "D5",
+          "name": "PWM1",
+          "function": "Velocidad motor 1"
+        },
+        {
+          "pin": "D6",
+          "name": "PWM2",
+          "function": "Velocidad motor 2"
+        },
+        {
+          "pin": "A2",
+          "name": "CS1",
+          "function": "Sensado de corriente motor 1 (analógico)"
+        },
+        {
+          "pin": "A3",
+          "name": "CS2",
+          "function": "Sensado de corriente motor 2 (analógico)"
+        },
+        {
+          "pin": "A0",
+          "name": "EN/DIAG1",
+          "function": "Habilitación / diagnóstico motor 1"
+        },
+        {
+          "pin": "A1",
+          "name": "EN/DIAG2",
+          "function": "Habilitación / diagnóstico motor 2"
+        }
+      ],
+      "common_values": [
+        "Shield 2 canales",
+        "Placa de 1 canal"
+      ],
+      "specs": {
+        "voltaje_motor": "5.5–16 V",
+        "corriente": "≈ 14 A continuos, 30 A pico (con buena disipación)",
+        "pwm": "hasta 20 kHz",
+        "sensado_corriente": "salida CS analógica"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Robots de sumo y de combate",
+        "Carritos y vehículos con motores RS-555/775",
+        "Plataformas móviles pesadas"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Pinout del shield según el código de ejemplo de SparkFun (Monster Moto). Sin disipación adicional la corriente continua real es bastante menor. Alternativa más común y económica: BTS7960 (mod-bts7960). Disponibilidad en tiendas mexicanas no verificada en línea."
+    },
+    {
+      "id": "mod-tda2030a",
+      "name": "Módulo amplificador de audio TDA2030A mono (≈ 18 W)",
+      "aliases": [
+        "módulo TDA2030A",
+        "TDA2030 amplifier board",
+        "amplificador TDA2030 12V",
+        "módulo amplificador mono 18W"
+      ],
+      "category": "modulos_varios",
+      "subcategory": "amplificadores_audio",
+      "description": "Placa con el TDA2030A en disipador, capacitores y en muchas versiones potenciómetro de volumen, lista para alimentar con fuente sencilla y conectar una bocina de 4–8 Ω.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa con TDA2030A en disipador, header/borneras de entrada y salida",
+          "pins": 6,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Header 1x3 o bornera para entrada y alimentación, bornera de 2 polos para la bocina; medidas no verificadas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "VCC",
+          "name": "VCC",
+          "function": "Alimentación (fuente sencilla, rango según la serigrafía del módulo)"
+        },
+        {
+          "pin": "GND",
+          "name": "GND",
+          "function": "Tierra de alimentación"
+        },
+        {
+          "pin": "IN",
+          "name": "IN",
+          "function": "Entrada de audio"
+        },
+        {
+          "pin": "GND_IN",
+          "name": "GND",
+          "function": "Tierra de la señal"
+        },
+        {
+          "pin": "OUT+",
+          "name": "OUT+",
+          "function": "Bocina +"
+        },
+        {
+          "pin": "OUT−",
+          "name": "OUT−",
+          "function": "Bocina − (tierra en fuente sencilla)"
+        }
+      ],
+      "common_values": [
+        "Mono con potenciómetro",
+        "Mono sin potenciómetro",
+        "Estéreo (2 x TDA2030A)"
+      ],
+      "specs": {
+        "potencia": "≈ 14–18 W según voltaje y bocina (hoja del TDA2030A)",
+        "impedancia": "4–8 Ω",
+        "alimentacion": "fuente sencilla en las placas comunes (el CI admite hasta ±22 V)"
+      },
+      "schematic_symbol": "amp_op",
+      "typical_uses": [
+        "Bocinas activas caseras",
+        "Amplificador para PC o guitarra",
+        "Prácticas de amplificadores de potencia"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Ver ic-tda2030a para el CI suelto. La aleta del TDA2030A está a −VS (en fuente sencilla, a GND). No exceder el voltaje de los capacitores de la placa. Distribución de pines del módulo varía entre fabricantes; no verificado en sitio de tienda."
+    },
+    {
+      "id": "mod-ka2284-vumetro",
+      "name": "Módulo indicador de nivel KA2284 (vúmetro de audio / nivel de batería, 5 LEDs)",
+      "aliases": [
+        "KA2284",
+        "vúmetro 5 LED",
+        "indicador de nivel de audio",
+        "VU meter module",
+        "indicador de batería KA2284"
+      ],
+      "category": "modulos_varios",
+      "subcategory": "audio_indicadores",
+      "description": "Placa con el CI KA2284 y 5 LEDs que encienden en escala logarítmica según el nivel de la señal; mide audio (modo AC) o voltaje de una batería (modo DC).",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Mini placa con 5 LEDs, potenciómetro y 3 pads/pines",
+          "pins": 3,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Jumper o puente para modo AC/DC; potenciómetro para ajustar la sensibilidad."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "VCC",
+          "function": "Alimentación (≈ 3.5–12 V)"
+        },
+        {
+          "pin": "2",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "3",
+          "name": "IN",
+          "function": "Señal de audio o voltaje a medir"
+        }
+      ],
+      "common_values": [
+        "Mono",
+        "Estéreo (2 x KA2284)",
+        "Modo AC (audio)",
+        "Modo DC (batería)"
+      ],
+      "specs": {
+        "voltaje": "≈ 3.5–12 V (algunas fichas indican 5–16 V)",
+        "escala": "logarítmica (≈ −10, −5, 0, +3, +6 dB)",
+        "leds": "5 (verdes, amarillo y rojo)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Luces rítmicas y vúmetros para bocinas caseras",
+        "Indicador de carga de batería",
+        "Prácticas de audio"
+      ],
+      "stores": [
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Rango de alimentación distinto según la ficha; no verificado en sitio de tienda mexicana. Para vúmetros de 10 LEDs se usa el LM3915 (ver ic-lm3914)."
+    },
+    {
+      "id": "mod-max98357a",
+      "name": "Módulo amplificador I2S MAX98357A de 3 W (clase D)",
+      "aliases": [
+        "MAX98357A",
+        "MAX98357",
+        "amplificador I2S",
+        "I2S DAC amplifier",
+        "Adafruit 3006 (similar)"
+      ],
+      "category": "modulos_varios",
+      "subcategory": "amplificadores_audio",
+      "description": "Amplificador clase D mono con DAC integrado que recibe audio digital I2S directamente de un ESP32 o una Raspberry Pi y mueve una bocina de 4–8 Ω sin DAC externo.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa con header 1x7 paso 2.54 mm y salida a bocina",
+          "pins": 7,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Salida a bocina por bornera de 2 polos o pads (+/−). Medidas no verificadas."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "LRC",
+          "function": "Reloj de palabra I2S (WS / LRCLK)"
+        },
+        {
+          "pin": "2",
+          "name": "BCLK",
+          "function": "Reloj de bit I2S"
+        },
+        {
+          "pin": "3",
+          "name": "DIN",
+          "function": "Datos de audio I2S"
+        },
+        {
+          "pin": "4",
+          "name": "GAIN",
+          "function": "Selección de ganancia (3–15 dB; 9 dB si se deja libre)"
+        },
+        {
+          "pin": "5",
+          "name": "SD",
+          "function": "Apagado / selección de canal (izquierdo, derecho o mezcla)"
+        },
+        {
+          "pin": "6",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "7",
+          "name": "Vin",
+          "function": "Alimentación 2.7–5.5 V"
+        }
+      ],
+      "common_values": [
+        "Placa genérica 7 pines",
+        "Adafruit 3006"
+      ],
+      "specs": {
+        "voltaje": "2.7–5.5 V",
+        "potencia": "≈ 3.2 W en 4 Ω a 5 V",
+        "muestreo": "8–96 kHz",
+        "mclk": "no requiere"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Audio y voz para ESP32 (radio por internet, alarmas habladas)",
+        "Bocinas para Raspberry Pi",
+        "Asistentes de voz caseros"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Orden de pines según la placa de Adafruit; los clones suelen respetarlo. Salida en puente (BTL): no conectar la bocina a GND. Disponibilidad en tiendas mexicanas no verificada en línea."
+    },
+    {
+      "id": "mod-tca9548a",
+      "name": "Módulo multiplexor I2C de 8 canales TCA9548A",
+      "aliases": [
+        "TCA9548A",
+        "multiplexor I2C",
+        "I2C mux",
+        "CJMCU-9548",
+        "PCA9548A"
+      ],
+      "category": "modulos_varios",
+      "subcategory": "expansores_bus",
+      "description": "Conmutador I2C que permite conectar hasta 8 dispositivos con la misma dirección (por ejemplo varias OLED o sensores VL53L0X) a un solo bus, seleccionando el canal por software.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Placa con 2 filas de 12 pines paso 2.54 mm",
+          "pins": 24,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Separación entre filas no verificada. Un lado: VIN, GND, SDA, SCL, RST, A0–A2 y parte de los canales; otro lado: resto de SDx/SCx."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "VIN",
+          "name": "VIN",
+          "function": "Alimentación 1.65–5.5 V"
+        },
+        {
+          "pin": "GND",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "SDA",
+          "name": "SDA",
+          "function": "Datos del bus principal"
+        },
+        {
+          "pin": "SCL",
+          "name": "SCL",
+          "function": "Reloj del bus principal"
+        },
+        {
+          "pin": "RST",
+          "name": "RST",
+          "function": "Reset (activo en bajo)"
+        },
+        {
+          "pin": "A0–A2",
+          "name": "A0, A1, A2",
+          "function": "Dirección 0x70–0x77"
+        },
+        {
+          "pin": "SD0–SD7",
+          "name": "SD0…SD7",
+          "function": "Datos de cada canal"
+        },
+        {
+          "pin": "SC0–SC7",
+          "name": "SC0…SC7",
+          "function": "Reloj de cada canal"
+        }
+      ],
+      "common_values": [
+        "Placa azul CJMCU",
+        "Placa Adafruit"
+      ],
+      "specs": {
+        "voltaje": "1.65–5.5 V",
+        "direccion": "0x70–0x77",
+        "canales": "8"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Varios sensores con la misma dirección I2C",
+        "Varias pantallas OLED",
+        "Separar buses de 3.3 V y 5 V"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Se selecciona el canal escribiendo un byte al registro de control (un bit por canal). Cada canal necesita pull-ups (la mayoría de módulos de sensores ya las traen). Orden físico de pines varía entre clones; disponibilidad en tiendas mexicanas no verificada en línea."
+    },
+    {
+      "id": "mod-termostato-stc-1000",
+      "name": "Controlador de temperatura STC-1000 (calentar y enfriar, sonda NTC)",
+      "aliases": [
+        "STC-1000",
+        "termostato STC1000",
+        "controlador de temperatura para incubadora",
+        "termostato digital de panel",
+        "STC-1000 110V",
+        "STC-1000 12V"
+      ],
+      "category": "modulos_varios",
+      "subcategory": "control_temperatura",
+      "description": "Termostato digital de panel con display, sonda NTC y dos relevadores (calefacción y refrigeración) que mantiene una temperatura con histéresis ajustable; muy usado en incubadoras y fermentadores.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Caja de panel con bornera trasera de 8 terminales",
+          "pins": 8,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "frente ≈ 75 x 34.5 mm, profundidad ≈ 85 mm; recorte ≈ 71 x 29 mm (aprox.)",
+          "lead_diameter_mm": null,
+          "notes": "Medidas de fichas de proveedores, no verificadas. Incluye sonda NTC con cable."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "L",
+          "function": "Alimentación (127/220 VAC en la versión de CA)"
+        },
+        {
+          "pin": "2",
+          "name": "N",
+          "function": "Alimentación"
+        },
+        {
+          "pin": "3",
+          "name": "COOL NO",
+          "function": "Relevador de refrigeración, contacto NA"
+        },
+        {
+          "pin": "4",
+          "name": "COOL COM",
+          "function": "Relevador de refrigeración, común"
+        },
+        {
+          "pin": "5",
+          "name": "HEAT NO",
+          "function": "Relevador de calefacción, contacto NA"
+        },
+        {
+          "pin": "6",
+          "name": "HEAT COM",
+          "function": "Relevador de calefacción, común"
+        },
+        {
+          "pin": "7",
+          "name": "SENSOR",
+          "function": "Sonda NTC (sin polaridad)"
+        },
+        {
+          "pin": "8",
+          "name": "SENSOR",
+          "function": "Sonda NTC"
+        }
+      ],
+      "common_values": [
+        "110–220 VAC",
+        "12 V DC",
+        "24 V"
+      ],
+      "specs": {
+        "rango": "≈ −50 a 99 °C (según ficha)",
+        "salidas": "2 relevadores de ≈ 10 A",
+        "sensor": "NTC con cable",
+        "funciones": "histéresis, retardo de compresor y calibración"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Incubadoras de huevos",
+        "Fermentadores y cuartos de cultivo",
+        "Refrigeradores y peceras con control"
+      ],
+      "stores": [
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Distribución de terminales más común (1-2 alimentación, 3-4 frío, 5-6 calor, 7-8 sensor); hay clones y la versión de 12 V con otra disposición: verificar la etiqueta antes de conectar a la red. Los relevadores son contactos secos (no entregan voltaje). Rango y medidas tomados de fichas de proveedores. Versión pequeña de 12 V: mod-termostato-w1209."
+    },
+    {
+      "id": "mod-controlador-pid-rex-c100",
+      "name": "Controlador de temperatura PID REX-C100 (48 x 48 mm, termopar K, salida SSR o relevador)",
+      "aliases": [
+        "REX-C100",
+        "REX C100",
+        "controlador PID",
+        "pirómetro digital",
+        "termostato REX-C100 con SSR-40DA",
+        "REX-C100FK02-V*AN",
+        "REX-C100FK02-M*AN"
+      ],
+      "category": "modulos_varios",
+      "subcategory": "control_temperatura",
+      "description": "Controlador digital de panel que lee un termopar tipo K y controla un calefactor por ON/OFF o PID mediante un SSR o un relevador; incluye alarma y autoajuste (AT).",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Caja de panel 48 x 48 mm (1/16 DIN) con bornera trasera numerada",
+          "pins": null,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "frente 48 x 48 mm",
+          "lead_diameter_mm": null,
+          "notes": "Profundidad, recorte y número de terminales según versión; consultar la etiqueta lateral."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "AC",
+          "name": "Alimentación L/N",
+          "function": "100–240 VAC"
+        },
+        {
+          "pin": "OUT",
+          "name": "SSR + / − (o relevador)",
+          "function": "Salida de control al SSR (pulso DC) o contacto de relevador según versión"
+        },
+        {
+          "pin": "TC",
+          "name": "Termopar K + / −",
+          "function": "Entrada del termopar (respetar polaridad)"
+        },
+        {
+          "pin": "AL",
+          "name": "Alarma",
+          "function": "Contacto de alarma"
+        }
+      ],
+      "common_values": [
+        "Salida SSR (código V)",
+        "Salida relevador (código M)",
+        "Kit con SSR-40DA, disipador y termopar K"
+      ],
+      "specs": {
+        "sensor": "termopar tipo K, 0–400 °C (kit de UNIT)",
+        "alimentacion": "100–240 VAC",
+        "control": "ON/OFF, PID por pasos y PID continuo",
+        "alarma": "7 tipos (según UNIT)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Hornos y muflas pequeñas",
+        "Planchas para sublimar o estampar playeras",
+        "Extrusoras de filamento y selladoras",
+        "Calentadores de laboratorio"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT (termostato REX-C100 con SSR40DA y disipador; termopar K 0–400 °C; 100/240 VAC; ON/OFF y PID). La numeración de terminales cambia entre clones y versiones (un desarme publicado muestra 1-2 alimentación, 4-5 SSR, 6-7 alarma, 9-10 termopar): seguir el diagrama impreso en la carcasa. Ejecutar AT para ajustar el PID. Ver mod-ssr-fotek y sen-termopar-k."
+    },
+    {
+      "id": "mod-rf433-control-4ch",
+      "name": "Control remoto RF 433/315 MHz de 4 botones con receptor decodificador (YK04 / M4, L4, T4)",
+      "aliases": [
+        "control remoto RF 4 canales",
+        "receptor RF 4 canales",
+        "YK04",
+        "llavero RF 433MHz",
+        "receptor M4",
+        "receptor PT2272",
+        "RF remote 4 channel",
+        "EV1527 receptor"
+      ],
+      "category": "modulos_varios",
+      "subcategory": "control_remoto",
+      "description": "Llavero transmisor de 4 botones (codificador PT2262 o EV1527) y placa receptora con decodificador que pone en alto una salida por botón (momentánea M4, enclavada L4 o alterna T4); base de portones, alarmas y domótica sencilla.",
+      "mounting": "modulo",
+      "packages": [
+        {
+          "name": "Receptor con header 1x7 paso 2.54 mm",
+          "pins": 7,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Hay versiones con relevadores (1 a 4 canales, 12 V) y borneras."
+        },
+        {
+          "name": "Llavero transmisor de 4 botones",
+          "pins": null,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Usa pila 27A de 12 V (típico)."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "GND",
+          "function": "Tierra"
+        },
+        {
+          "pin": "2",
+          "name": "+5V",
+          "function": "Alimentación 5 V"
+        },
+        {
+          "pin": "3",
+          "name": "D0",
+          "function": "Salida del botón 1"
+        },
+        {
+          "pin": "4",
+          "name": "D1",
+          "function": "Salida del botón 2"
+        },
+        {
+          "pin": "5",
+          "name": "D2",
+          "function": "Salida del botón 3"
+        },
+        {
+          "pin": "6",
+          "name": "D3",
+          "function": "Salida del botón 4"
+        },
+        {
+          "pin": "7",
+          "name": "VT",
+          "function": "Dato válido: alto mientras se recibe cualquier botón"
+        }
+      ],
+      "common_values": [
+        "433 MHz",
+        "315 MHz",
+        "M4 (momentáneo)",
+        "L4 (enclavado entre canales)",
+        "T4 (alterna / toggle)",
+        "Con relevadores 12 V"
+      ],
+      "specs": {
+        "voltaje_receptor": "5 V",
+        "salidas": "4 digitales activas en alto",
+        "codificacion": "PT2262/PT2272 o EV1527 (aprendizaje)"
+      },
+      "schematic_symbol": "modulo",
+      "typical_uses": [
+        "Abrir portones y chapas eléctricas",
+        "Armar y desarmar alarmas",
+        "Controlar relevadores a distancia sin microcontrolador"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre",
+        "Tiendas Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Control y receptor deben coincidir en frecuencia y codificación (PT2262/PT2272 con los mismos puentes de dirección, o EV1527 con aprendizaje). El orden del header y la asignación de botones a D0–D3 varían: verificar la serigrafía. La pila 27A es dato típico, no verificado. Complementa com-rf433-fs1000a-tx / com-rf433-xy-mk-5v-rx e ic-pt2272."
+    }
+  ]
+}

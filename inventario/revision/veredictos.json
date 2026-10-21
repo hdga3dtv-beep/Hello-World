@@ -1,0 +1,458 @@
+[
+  {
+    "lote": "01-02-pasivos-proteccion--1",
+    "index": 0,
+    "id": "cap-ceramico-disco-alto-voltaje",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "El valor actual pone SL como clase 2, y eso es un error: SL (JIS, +350 a −1000 ppm/°C) es un dieléctrico clase 1 de compensación de temperatura, igual que en la serie de discos HV de Murata. La propuesta lo corrige, deja intacto el campo voltaje y respeta el formato clave→texto; los rangos pF/nF entre paréntesis son una simplificación aceptable y NP0 sí existe en discos HV."
+  },
+  {
+    "lote": "03-discretos-opto--1",
+    "index": 0,
+    "id": "dio-puente-linea-kbp-kbl",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "Los puentes en línea KBP/KBL tienen las patas en el orden + ~ ~ − con el + en la esquina biselada, como ya dicen las notas del propio elemento; la propuesta numera los pines 1–4 en ese orden físico, quita los ids '~' duplicados, respeta el formato del esquema y no pierde información."
+  },
+  {
+    "lote": "03-discretos-opto--1",
+    "index": 1,
+    "id": "dio-puente-linea-gbu-kbu-gbj",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "GBU, KBU y GBJ usan el mismo orden en línea + ~ ~ − con el + en la esquina biselada; la propuesta numera los pines según su posición física, elimina los ids duplicados y es coherente con las notas de los paquetes."
+  },
+  {
+    "lote": "03-discretos-opto--1",
+    "index": 2,
+    "id": "tir-diac-db3",
+    "field": "packages",
+    "aceptada": true,
+    "razon": "El DB3/DB4 es bidireccional y no tiene cátodo, así que 'Banda negra = cátodo' era un error copiado de los diodos; la propuesta solo cambia esa nota y deja intactas las medidas del DO-35."
+  },
+  {
+    "lote": "03-discretos-opto--1",
+    "index": 3,
+    "id": "opt-led-smd-plcc-3528-2835-5050",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "Separa los rangos '1-3'/'4-6' en seis pines con la misma asignación original (K1–K3, A3–A1, con cada chip entre pads opuestos 1–6, 2–5 y 3–4) y conserva el aviso de que varía por fabricante; no agrega ni quita información, solo la hace utilizable para una huella."
+  },
+  {
+    "lote": "03-discretos-opto--1",
+    "index": 4,
+    "id": "opt-barra-led-10-segmentos",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "Separa los rangos en 20 pines que siguen fielmente el texto original (pin n = ánodo del segmento n, pin 21−n = cátodo del segmento n, igual que en las hojas de datos de Kingbright), coincide con la geometría del DIP-20 y mantiene el aviso 'verificar' sobre qué lado lleva los ánodos."
+  },
+  {
+    "lote": "04-ic-analogicos--1",
+    "index": 0,
+    "id": "ic-mcp6002",
+    "field": "packages",
+    "aceptada": true,
+    "razon": "El MCP6002 doble solo se fabrica en 8 pines (PDIP, SOIC, MSOP, TDFN); el SOT-23-5 es del MCP6001, así que quitarlo evita una huella equivocada y deja intactos el DIP-8 y el SOIC-8, que eran correctos y siguen en el formato del esquema."
+  },
+  {
+    "lote": "04-ic-analogicos--1",
+    "index": 1,
+    "id": "ic-lm317l",
+    "field": "packages",
+    "aceptada": true,
+    "razon": "El pinout SOIC-8 propuesto (1 IN; 2, 3, 6 y 7 OUT; 4 ADJ; 5 y 8 NC) coincide con las hojas de TI, onsemi (caso 751) y Motorola y con otras copias compatibles con ST; además, conserva sin cambios el TO-92 y el formato del objeto, y aclara que el pinout de 3 pines solo vale para el TO-92."
+  },
+  {
+    "lote": "04-ic-analogicos--2",
+    "index": 0,
+    "id": "ic-a4988-drv8825",
+    "field": "mounting",
+    "aceptada": true,
+    "razon": "La huella principal y el pinout son del módulo StepStick de 2x8 pines a 2.54 mm y schematic_symbol ya es 'modulo'; 'modulo' sigue el esquema y la convención del inventario (p. ej. opt-laser-650nm-ky008, que también lista pieza suelta y módulo), y los paquetes QFN/HTSSOP del chip siguen listados."
+  },
+  {
+    "lote": "04-ic-analogicos--2",
+    "index": 1,
+    "id": "ic-w25q32",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "Según la hoja de datos de Microchip, la serie 25LCxxx opera a 2.5–5.5 V y la 25AAxxx a 1.8–5.5 V; la propuesta corrige solo esa cadena y deja las demás claves iguales, con el formato de objeto del esquema."
+  },
+  {
+    "lote": "05-ic-logica-mcu--1",
+    "index": 0,
+    "id": "ic-74xx121",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "Coincide con la hoja de datos TI SN74121 (35 ns típ. con Rint; 40 ns a 28 s con Rext/Cext; tw = ln2·RT·Cext; Rext 1.4–40 kΩ), corrige el '30 ns a 40 s' y respeta el formato de specs como objeto."
+  },
+  {
+    "lote": "05-ic-logica-mcu--1",
+    "index": 1,
+    "id": "ic-74xx123",
+    "field": "specs",
+    "aceptada": false,
+    "razon": "K depende del fabricante: NXP y TI CD74HC123 usan K≈0.45, pero el MM74HC123A de Fairchild/onsemi da PW = REXT·CEXT (K≈1), así que el 'tw ≈ R·C' actual vale para ese fabricante; la propuesta cambia un valor de un fabricante por el de otro y afirma sin razón que K≈1 es solo de LV/AHC."
+  },
+  {
+    "lote": "05-ic-logica-mcu--1",
+    "index": 2,
+    "id": "ic-74xx173",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "El LS173A tiene salidas de 3 estados tipo driver de bus (IOL 24 mA / IOH −2.6 mA en SN74) y el HC/HCT173 tiene salidas de bus de ±6 mA; es más exacto que el valor genérico 8 mA/±4 mA y conserva las demás claves."
+  },
+  {
+    "lote": "05-ic-logica-mcu--1",
+    "index": 3,
+    "id": "ic-74xx83",
+    "field": "specs",
+    "aceptada": false,
+    "razon": "Refutada: sí existió versión CMOS, el HD74HC83 de Hitachi/Renesas (2–6 V), así que la afirmación absoluta 'no hay versión HC/HCT' es falsa."
+  },
+  {
+    "lote": "05-ic-logica-mcu--1",
+    "index": 4,
+    "id": "ic-74xx90",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "No encontré ningún 74HC90/HCT90 de TI, Nexperia, Renesas/Hitachi, ST, Toshiba ni onsemi (el sustituto CMOS es el 74HC390), lo que coincide con las notas del elemento ('Solo LS'); los datos LS (8 mA / −0.4 mA, niveles TTL) son correctos y se conserva frecuencia_max."
+  },
+  {
+    "lote": "05-ic-logica-mcu--1",
+    "index": 5,
+    "id": "ic-74xx92",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "Las búsquedas solo dan versiones LS/TTL del 7492 y ningún 74HC92/HCT92 de ningún fabricante; quitar las familias HC/HCT con niveles CMOS corrige un error y los datos LS son correctos."
+  },
+  {
+    "lote": "05-ic-logica-mcu--1",
+    "index": 6,
+    "id": "ic-74xx93",
+    "field": "specs",
+    "aceptada": false,
+    "razon": "Refutada: existen el CD74HC93 y el CD74HCT93 de TI (activos, 2–6 V) y el 74HC93 de Philips/NXP, así que 'no hay versión HC/HCT' es falso y la propuesta borraría información correcta."
+  },
+  {
+    "lote": "05-ic-logica-mcu--2",
+    "index": 0,
+    "id": "ic-74xx373",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "Solo cambia corriente_salida; SN74LS373 especifica IOL 24 mA / IOH −2.6 mA y 74HC/HCT373 tienen salidas de bus de ±6 mA a 4.5 V, mientras que el valor actual (8 mA/−0.4 mA, ±4 mA) es el de salidas estándar y estaba mal."
+  },
+  {
+    "lote": "05-ic-logica-mcu--2",
+    "index": 1,
+    "id": "ic-74xx374",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "Solo cambia corriente_salida; SN74LS374 especifica IOL 24 mA / IOH −2.6 mA y 74HC/HCT374 tienen salidas de 3 estados de ±6 mA a 4.5 V; el resto de las claves de specs no cambia."
+  },
+  {
+    "lote": "05-ic-logica-mcu--2",
+    "index": 2,
+    "id": "ic-74xx573",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "La hoja del DM74LS573 de Fairchild da IOH −2.6 mA / IOL 24 mA y la del 74HC573 da ±6 mA a 4.5 V; el valor actual de salidas estándar era incorrecto y el formato se conserva."
+  },
+  {
+    "lote": "05-ic-logica-mcu--2",
+    "index": 3,
+    "id": "ic-74xx574",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "La hoja del DM74LS574 confirma IOH −2.6 mA / IOL 24 mA, y el 74HC/HCT574 tiene salidas de bus de ±6 mA a 4.5 V; solo se corrige corriente_salida y no se pierde información correcta."
+  },
+  {
+    "lote": "05-ic-logica-mcu--3",
+    "index": 0,
+    "id": "ic-pic16f88",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "En el PIC16F87/88 (DS30487), CONFIG1 bit 12 CCPMX vale 1 = CCP1 en RB0 y 0 = CCP1 en RB3, así que sin programar CCP1 sale por RB0 (pin 6); la corrección solo cambia el texto de función de los pines 6 y 9 y deja intactos los otros 16 y el formato pin/name/function."
+  },
+  {
+    "lote": "05-ic-logica-mcu--3",
+    "index": 1,
+    "id": "ic-atmega2560",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "La hoja de datos fija para el ATmega2560V 0–2 MHz a 1.8–5.5 V y 0–8 MHz a 2.7–5.5 V, y para el ATmega2560 0–16 MHz a 4.5–5.5 V; el valor actual '1.8–5.5 V a 8 MHz' era incorrecto y solo cambia la clave voltaje."
+  },
+  {
+    "lote": "05-ic-logica-mcu--3",
+    "index": 2,
+    "id": "ic-attiny84",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "El elemento es el ATtiny84A, que funciona a 1.8–5.5 V (4/10/20 MHz a 1.8/2.7/4.5 V) y no tiene versión V; el valor actual describía el ATtiny84 antiguo, la propuesta lo deja aclarado como variante distinta y solo cambia voltaje."
+  },
+  {
+    "lote": "05-ic-logica-mcu--3",
+    "index": 3,
+    "id": "ic-attiny44",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "Mismo caso que el ATtiny84A: el ATtiny44A funciona a 1.8–5.5 V según la hoja Atmel-8183, el 2.7–5.5 V/versión V corresponde al ATtiny44 sin A, y la propuesta solo cambia voltaje sin borrar otros datos."
+  },
+  {
+    "lote": "06-placas-comunicacion--1",
+    "index": 0,
+    "id": "brd-arduino-nano-every",
+    "field": "packages",
+    "aceptada": true,
+    "razon": "La Nano Every (ABX00028) no tiene header ICSP 2x3 porque el ATmega4809 se programa por UPDI a través del SAMD11; el cambio solo corrige la nota y no toca ninguna medida."
+  },
+  {
+    "lote": "06-placas-comunicacion--1",
+    "index": 1,
+    "id": "brd-arduino-nano-esp32",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "El artículo de soporte de Arduino y el cheat sheet confirman que B0 es GPIO46 y B1 es GPIO0, en las posiciones de AREF y del 2.º RESET, y que conviene usarlos solo como salidas; el pin rotulado VBUS también está bien, y el resto del pinout no cambia."
+  },
+  {
+    "lote": "06-placas-comunicacion--1",
+    "index": 2,
+    "id": "brd-arduino-nano-esp32",
+    "field": "packages",
+    "aceptada": true,
+    "razon": "La Nano ESP32 no tiene header ICSP 2x3 (se programa por el USB nativo del ESP32-S3); la nueva nota quita los barrenos que no existen y documenta bien B0, B1 y VBUS sin alterar dimensiones."
+  },
+  {
+    "lote": "06-placas-comunicacion--1",
+    "index": 3,
+    "id": "brd-arduino-nano-33-iot",
+    "field": "packages",
+    "aceptada": true,
+    "razon": "La Nano 33 IoT no tiene header ICSP 2x3, solo pads SWD en la cara inferior para el SAMD21; el cambio solo corrige la nota y conserva las medidas."
+  },
+  {
+    "lote": "06-placas-comunicacion--1",
+    "index": 4,
+    "id": "brd-arduino-leonardo",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "En la Leonardo con ATmega32U4, SDA/SCL son D2/D3 y el SPI sale solo por el header ICSP, no por D11–D13; la propuesta quita equivalencias copiadas del UNO que eran falsas y deja intactos los demás pines."
+  },
+  {
+    "lote": "06-placas-comunicacion--1",
+    "index": 5,
+    "id": "brd-esp32-cam-mb",
+    "field": "pinout",
+    "aceptada": false,
+    "razon": "Según reportes de foros, en muchas ESP32-CAM un pin rotulado GND es en realidad GND/R (conectado a EN por una resistencia 0R) y el botón RST de la MB actúa sobre él; la propuesta borra el RST y marca los tres GND como tierra, un error que en un PCB dejaría la placa en reset."
+  },
+  {
+    "lote": "06-placas-comunicacion--1",
+    "index": 6,
+    "id": "brd-esp32-s3-devkitc-1",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "El orden de J1 y J3 coincide con la guía de usuario de Espressif del DevKitC-1 (4,5,6,7,15,16,17,18,8,3,46,9–14 y 43,44,1,2,42–35,0,45,48,47,21,20,19), y las funciones de ADC, touch, JTAG, USB y LED RGB son correctas; sustituye un resumen ambiguo que no servía para dibujar."
+  },
+  {
+    "lote": "06-placas-comunicacion--2",
+    "index": 0,
+    "id": "com-rs485-max485",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "El módulo MAX485 común sí trae bornera 2P de 5.08 mm en paralelo con A/B; la propuesta conserva intactos los 8 pines originales, hace que el pinout cuadre con pins: 10 del paquete y sigue la convención del inventario para terminales de bornera con etiquetas no numéricas (relevadores, BTS7960)."
+  },
+  {
+    "lote": "06-placas-comunicacion--2",
+    "index": 1,
+    "id": "brd-usb-serial-pl2303",
+    "field": "specs",
+    "aceptada": false,
+    "razon": "Atribuye el máximo de 6 Mbaud a 'PL2303HX rev D', pero la rev D es el PL2303HXD, que llega a 12 Mbaud (como admite la propia evidencia; el driver pl2303 de Linux pone HX/TA en 6M y HXD en 12M). Además agrega una afirmación práctica sin fuente ('≤1 Mbaud fiable con cables largos'), así que no es técnicamente correcta."
+  },
+  {
+    "lote": "06-placas-comunicacion--2",
+    "index": 2,
+    "id": "com-xbee-s2c",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "Los 250 kb/s son la tasa RF de 802.15.4; las especificaciones de Digi que reproducen DFRobot y Littlebird dan UART hasta 1 Mb/s y SPI hasta 5 Mb/s (en ráfaga). La propuesta corrige esa confusión y deja los demás campos de specs sin cambios."
+  },
+  {
+    "lote": "07-sensores--1",
+    "index": 0,
+    "id": "sen-lm335",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "Varias fuentes independientes coinciden en el orden ADJ, V+, V- con la cara plana al frente: la tabla de pines TO-92 de TI (ADJ=1, V+=2, V-=3), la ficha de UNIT, Random Nerd Tutorials y un hilo del foro de Arduino. El valor actual no seguía el orden físico, y la propuesta respeta el formato {pin,name,function} del esquema."
+  },
+  {
+    "lote": "07-sensores--1",
+    "index": 1,
+    "id": "sen-lm335",
+    "field": "notes",
+    "aceptada": true,
+    "razon": "La nota nueva concuerda con el pinout corregido, conserva el aviso 'Tiendas no verificadas' y añade una prueba válida: a 25 °C, 298 K × 10 mV/K ≈ 2.98 V."
+  },
+  {
+    "lote": "07-sensores--1",
+    "index": 2,
+    "id": "sen-mlx90614",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "En el código de temperatura de Melexis, E = −40…85 °C y K = −40…125 °C. Las variantes listadas son ESF (grado E, como las del GY-906), y la propuesta solo cambia rango_ambiente, manteniendo la nota sobre el grado K y los demás campos sin cambios."
+  },
+  {
+    "lote": "08-displays-actuadores-modulos--1",
+    "index": 0,
+    "id": "dsp-oled-caracteres-16x2",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "En el WEH001602 (WS0010) los pines 3, 15 y 16 son NC; el valor actual (V0 y ánodo/cátodo de retroiluminación) se copió del LCD HD44780 y contradice las propias notas del elemento, y la propuesta respeta el formato {pin,name,function}."
+  },
+  {
+    "lote": "08-displays-actuadores-modulos--1",
+    "index": 1,
+    "id": "dsp-tft-18-st7735",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "El paquete declara 12 pines (8 + 4 de SD) y las notas ya listan SD_CS/MOSI/MISO/SCK; agregar esos 4 pines con el orden de la serigrafía del módulo rojo V1.1 completa la huella sin cambiar los 8 pines del display."
+  },
+  {
+    "lote": "08-displays-actuadores-modulos--1",
+    "index": 2,
+    "id": "dsp-max7219-8digitos",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "El módulo común de 8 dígitos con MAX7219 trae un header de salida VCC, GND, DOUT, CS, CLK para encadenar, coherente con pins=10 y las notas del paquete; la propuesta conserva los 5 pines de entrada y su formato."
+  },
+  {
+    "lote": "08-displays-actuadores-modulos--1",
+    "index": 3,
+    "id": "dsp-pl9823",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "Ninguna fuente respalda la afirmación actual de que VDD es la pata más larga, y las mediciones de LED direccionables THT comparables (Pololu, orden RGB) apuntan a GND; la propuesta conserva el orden 1 DIN, 2 VDD, 3 GND, 4 DOUT y deja la nota sobre la pata larga como algo a verificar, no como un hecho."
+  },
+  {
+    "lote": "08-displays-actuadores-modulos--2",
+    "index": 0,
+    "id": "mod-l9110s",
+    "field": "packages",
+    "aceptada": true,
+    "razon": "El módulo HG7881/L9110S tiene un header de 6 pines y 2 borneras de 2 terminales (10 en total); en el lote los pines de las borneras sí se cuentan (L298N=13, IRF520=7), así que 6 era incoherente con las propias notas del paquete."
+  },
+  {
+    "lote": "08-displays-actuadores-modulos--2",
+    "index": 1,
+    "id": "mod-l9110s",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "Agrega las 4 terminales de motor que faltaban sin tocar los 6 pines correctos del header, mantiene el formato {pin,name,function} y cuadra con cómo el lote documenta las borneras del L298N."
+  },
+  {
+    "lote": "08-displays-actuadores-modulos--2",
+    "index": 2,
+    "id": "mod-mx1508",
+    "field": "packages",
+    "aceptada": true,
+    "razon": "Un puente H necesita 2 salidas por motor, así que el módulo tiene 4 entradas + 2 de alimentación + 2x2 pads de motor = 10; el valor actual (8) contradice su propio pinout, que dice '2 pads'."
+  },
+  {
+    "lote": "08-displays-actuadores-modulos--2",
+    "index": 3,
+    "id": "mod-mx1508",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "Separa cada salida de motor en sus 2 pads reales sin cambiar las entradas ni la alimentación, y queda coherente con pins=10 y con el formato del esquema."
+  },
+  {
+    "lote": "08-displays-actuadores-modulos--2",
+    "index": 4,
+    "id": "mod-pca9685",
+    "field": "packages",
+    "aceptada": true,
+    "razon": "La placa tipo Adafruit tiene 2 headers de 6 + 16x3 salidas + bornera V+ de 2, es decir 62 terminales; 70 no sale de la descripción de las propias notas y el resto de los campos se conserva."
+  },
+  {
+    "lote": "08-displays-actuadores-modulos--2",
+    "index": 5,
+    "id": "mod-xl4015",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "La hoja de datos XLSEMI del XL4015 especifica entrada de 8 a 36 V y salida de 1.25 a 32 V; la propuesta conserva entre paréntesis lo que anuncian los vendedores y deja igual la corriente y la frecuencia."
+  },
+  {
+    "lote": "08-displays-actuadores-modulos--2",
+    "index": 6,
+    "id": "mod-mt3608",
+    "field": "specs",
+    "aceptada": true,
+    "razon": "La hoja de datos del MT3608 indica un límite interno de corriente del interruptor de 4 A (2 A es lo que anuncian los vendedores como salida del módulo); el resto de los specs sigue correcto y la nueva redacción distingue las dos cifras."
+  },
+  {
+    "lote": "09-electromecanicos-conectores-cables--1",
+    "index": 19,
+    "id": "emc-rocker-kcd1",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "En los balancines SPDT de 3 terminales en línea (KCD1-102/103) el común es el terminal central. El valor actual, con 'entrada' en el pin 1 y 'salida' en el pin 2, lleva a cablear mal; la propuesta conserva el caso de 2 pines y respeta el formato pin/name/function."
+  },
+  {
+    "lote": "09-electromecanicos-conectores-cables--1",
+    "index": 87,
+    "id": "con-xt60",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "La búsqueda lo confirma (done.land y foros de RC): el lado plano o recto es el + y el chaflanado el −. El valor actual era contradictorio, con un 'lado redondeado' que no existe y el − descrito como 'chaflanado/recto', así que la corrección arregla una ambigüedad que podía invertir la batería en la XT60PW."
+  },
+  {
+    "lote": "09-electromecanicos-conectores-cables--1",
+    "index": 88,
+    "id": "con-xt30",
+    "field": "pinout",
+    "aceptada": true,
+    "razon": "El XT30 usa la misma forma y la misma convención que el XT60 (+ en el lado plano, − en el chaflanado). La propuesta sustituye la referencia a un 'lado redondeado', que no existe, y mantiene el formato."
+  },
+  {
+    "lote": "09-electromecanicos-conectores-cables--1",
+    "index": 96,
+    "id": "con-rj45-hr911105a",
+    "field": "pinout",
+    "aceptada": false,
+    "razon": "No pude comprobarlo en la hoja de datos de Hanrun porque el sitio de LCSC no responde. La propuesta invierte los colores de los LED respecto al valor actual y les asigna ánodo y cátodo apoyándose solo en un esquema de terceros sin verificar. Como la asignación varía entre variantes y clones, ante la duda lo rechazo."
+  },
+  {
+    "lote": "09-electromecanicos-conectores-cables--1",
+    "index": 114,
+    "id": "con-sma",
+    "field": "schematic_symbol",
+    "aceptada": true,
+    "razon": "El SMA hembra es un conector coaxial de 2 polos (RF + GND), no una antena. 'conector' está en la lista del esquema, coincide con el BNC del mismo lote y no deja la tierra sin conectar."
+  },
+  {
+    "lote": "09-electromecanicos-conectores-cables--1",
+    "index": 115,
+    "id": "con-ufl-ipex",
+    "field": "schematic_symbol",
+    "aceptada": true,
+    "razon": "El U.FL es un receptáculo coaxial de 3 pads (RF + 2 GND), como dice su propio pinout. 'conector' es el símbolo correcto y coherente con el BNC; 'antena' tiene un solo pin y dejaría las tierras sin conectar."
+  },
+  {
+    "lote": "10-materiales-herramientas-energia--1",
+    "index": 0,
+    "id": "her-generador-funciones-modulo",
+    "field": "packages",
+    "aceptada": true,
+    "razon": "El módulo AD9833 común (CJMCU-9833/HiLetgo) trae una tira 1x7 a 2.54 mm con VCC, DGND, SDATA, SCLK, FSYNC, AGND y OUT, igual que el pinout ya registrado; el objeto sigue el esquema, no inventa medidas del cuerpo (body_mm null), usa 0.64 mm como en el resto del inventario y aclara en notes que el kit XR2206 no tiene huella."
+  },
+  {
+    "lote": "10-materiales-herramientas-energia--1",
+    "index": 1,
+    "id": "her-generador-funciones-modulo",
+    "field": "schematic_symbol",
+    "aceptada": true,
+    "razon": "Es una placa armada (mounting 'modulo') con 7 pines que se conecta por SPI, así que 'modulo' de la lista de ESQUEMA.md es mejor que 'ninguno' y coincide con el MB102 del mismo lote."
+  }
+]

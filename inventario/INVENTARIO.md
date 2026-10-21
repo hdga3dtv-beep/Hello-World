@@ -2,32 +2,32 @@
 
 Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 
-**Total: 1176 componentes** en 22 categorías.
+**Total: 1331 componentes** en 22 categorías.
 
 | Categoría | Elementos |
 |---|---:|
 | [Resistores, potenciómetros y afines](#resistores) | 43 |
-| [Capacitores](#capacitores) | 21 |
+| [Capacitores](#capacitores) | 23 |
 | [Inductores, transformadores y cristales](#inductivos_y_frecuencia) | 23 |
 | [Protección (fusibles, varistores, TVS)](#proteccion) | 19 |
-| [Semiconductores discretos (diodos, transistores, tiristores)](#semiconductores_discretos) | 86 |
-| [Optoelectrónica (LEDs, optoacopladores, displays de LED)](#optoelectronica) | 30 |
-| [Circuitos integrados](#circuitos_integrados) | 264 |
-| [Placas de desarrollo (Arduino, ESP, Raspberry Pi) y programadores](#placas_desarrollo) | 70 |
-| [Módulos de comunicación](#modulos_comunicacion) | 36 |
-| [Sensores](#sensores) | 112 |
-| [Displays y pantallas](#displays) | 37 |
-| [Actuadores y audio (motores, servos, buzzers, bocinas)](#actuadores_y_audio) | 37 |
-| [Módulos de potencia y control](#modulos_potencia) | 42 |
-| [Módulos varios (RTC, SD, audio, ADC...)](#modulos_varios) | 25 |
-| [Electromecánicos (botones, interruptores, relevadores)](#electromecanicos) | 41 |
-| [Conectores, bases y portapilas](#conectores) | 75 |
-| [Cables y alambres](#cables) | 23 |
-| [Mecánicos (disipadores, separadores, gabinetes)](#mecanicos) | 23 |
-| [Materiales para fabricar PCB](#materiales_pcb) | 37 |
+| [Semiconductores discretos (diodos, transistores, tiristores)](#semiconductores_discretos) | 103 |
+| [Optoelectrónica (LEDs, optoacopladores, displays de LED)](#optoelectronica) | 37 |
+| [Circuitos integrados](#circuitos_integrados) | 299 |
+| [Placas de desarrollo (Arduino, ESP, Raspberry Pi) y programadores](#placas_desarrollo) | 81 |
+| [Módulos de comunicación](#modulos_comunicacion) | 44 |
+| [Sensores](#sensores) | 133 |
+| [Displays y pantallas](#displays) | 42 |
+| [Actuadores y audio (motores, servos, buzzers, bocinas)](#actuadores_y_audio) | 47 |
+| [Módulos de potencia y control](#modulos_potencia) | 52 |
+| [Módulos varios (RTC, SD, audio, ADC...)](#modulos_varios) | 32 |
+| [Electromecánicos (botones, interruptores, relevadores)](#electromecanicos) | 46 |
+| [Conectores, bases y portapilas](#conectores) | 81 |
+| [Cables y alambres](#cables) | 24 |
+| [Mecánicos (disipadores, separadores, gabinetes)](#mecanicos) | 25 |
+| [Materiales para fabricar PCB](#materiales_pcb) | 38 |
 | [Soldadura y consumibles](#soldadura_y_consumibles) | 29 |
-| [Herramientas e instrumentos](#herramientas) | 70 |
-| [Energía (pilas, baterías, fuentes)](#energia) | 33 |
+| [Herramientas e instrumentos](#herramientas) | 76 |
+| [Energía (pilas, baterías, fuentes)](#energia) | 34 |
 
 <a id="resistores"></a>
 ## Resistores, potenciómetros y afines
@@ -93,6 +93,8 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Capacitor electrolítico axial**<br><sub>`cap-electrolitico-axial`</sub> | THT | Axial (cilindro horizontal) (2p) | 1 µF 50 V, 10 µF 50 V, 47 µF, 100 µF, 470 µF, 1000 µF, 2200 µF | media |
 | **Capacitor electrolítico de aluminio SMD (V-chip)**<br><sub>`cap-electrolitico-smd`</sub> | SMD | Ø4 x 5.4 mm (2p); Ø5 x 5.4 mm (2p); Ø6.3 x 5.4 / 7.7 mm (2p); Ø8 x 10.2 mm (2p); Ø10 x 10.2 mm (2p) | 1 µF 50–100 V, 4.7 µF, 10 µF 35 V, 22 µF, 47 µF, 100 µF 16 V, 220 µF 25/50 V, 470 µF 35 V | media |
 | **Capacitor electrolítico snap-in (gran capacidad / alto voltaje)**<br><sub>`cap-electrolitico-snap-in`</sub> | THT | Snap-in 2 pines (2p, 10.0 mm); Snap-in 3/4 pines (con pines de anclaje) (4p, 10.0 mm) | 100 µF 400 V, 150 µF 400 V, 220 µF 400 V, 330 µF 400 V, 470 µF 200 V, 680 µF 200 V, 4700 µF 63 V, 10000 µF 50–63 V | media |
+| **Kit / surtido de capacitores cerámicos (disco, multicapa y libro SMD)**<br><sub>`cap-kit-ceramicos`</sub> | THT/SMD | — | 2 pF, 5 pF, 10 pF, 15 pF, 18 pF, 20 pF, 22 pF, 27 pF, … (+17) | alta |
+| **Kit / surtido de capacitores electrolíticos (THT y SMD)**<br><sub>`cap-kit-electroliticos`</sub> | THT/SMD | — | 0.1 µF, 0.22 µF, 0.47 µF, 1 µF, 2.2 µF, 3.3 µF, 4.7 µF, 10 µF, … (+12) | alta |
 | **Capacitor de marcha/arranque para motor (CBB60/CBB61/CBB65/CD60)**<br><sub>`cap-motor-marcha-arranque`</sub> | panel | CBB61 (rectangular, 2 cables) (2p); CBB60 (cilíndrico, cables o terminales) (2p); CBB65 (lata de aluminio, dual C/HERM/FAN) (3p); CD60 (arranque, electrolítico AC) (2p) | 1.5 µF, 2 µF, 2.5 µF, 3 µF, 3.5 µF, 4 µF, 4.5 µF, 5 µF 450 VAC (CBB61), … (+3) | media |
 | **Capacitor de poliéster / mylar (película tipo lenteja)**<br><sub>`cap-poliester-mylar`</sub> | THT | Radial paso 5.0 mm (P5) (2p, 5.0 mm); Radial paso 10 mm (2p, 10.0 mm); Radial paso 15 mm (P15) (2p, 15.0 mm) | 1 nF (102), 2.2 nF (222), 4.7 nF (472), 10 nF (103), 22 nF (223), 47 nF (473), 100 nF (104), 220 nF (224), … (+4) | muy alta |
 | **Capacitor de polipropileno metalizado CBB21/CBB22/CBB81**<br><sub>`cap-polipropileno-cbb`</sub> | THT | Radial paso 10 mm (2p, 10.0 mm); Radial paso 15 mm (2p, 15.0 mm); Radial paso 22.5–27.5 mm (2p, 22.5 mm) | 1 nF 2 kV (CBB81), 4.7 nF 1.6–2 kV, 10 nF 630 V, 100 nF 400/630 V (104J), 220 nF 400 V, 470 nF 400 V, 1 µF 250/400 V, 2.2 µF 250 V | alta |
@@ -165,12 +167,16 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
 |---|---|---|---|---|
 | **Diodo de recuperación rápida 1 A (FR107 / UF4007 / HER108)**<br><sub>`dio-rapido-fr107-uf4007`</sub> | THT | DO-41 (DO-204AL) plástico (2p, 10.16 mm) | FR101–FR107 (50–1000 V, trr 150–500 ns), UF4001–UF4007 (50–1000 V, trr 50–75 ns), HER101–HER108 (50–1000 V, trr 50–75 ns) | alta |
+| **Diodo de recuperación ultrarrápida MUR (MUR160 / MUR460 / MUR860 / MUR1560 / MUR1620CT)**<br><sub>`dio-ultrarrapido-mur`</sub> | THT | DO-41 (DO-204AL) plástico (2p, 10.16 mm); DO-201AD (DO-27) (2p, 15.24 mm); TO-220AC (2 terminales, MUR860/MUR1560) (2p, 5.08 mm); TO-220AB (3 terminales, doble cátodo común CT: MUR1620CT) (3p, 2.54 mm) | MUR120 (1 A 200 V, DO-41), MUR160 (1 A 600 V, DO-41), MUR460 (4 A 600 V, DO-201AD), MUR860 (8 A 600 V, TO-220AC), MUR1560 (15 A 600 V, TO-220AC), MUR1620CT (2 x 8 A 200 V, TO-220AB cátodo común) | media |
 | **Diodo rápido 2–3 A (FR207 / FR307 / HER308 / UF5408)**<br><sub>`dio-rapido-fr207-fr307-uf5408`</sub> | THT | DO-15 (DO-204AC) (2p, 12.7 mm); DO-201AD (DO-27) (2p, 15.24 mm) | FR207 (2 A 1000 V, DO-15), HER208 (2 A 1000 V, DO-15), FR307 (3 A 1000 V, DO-201AD), HER308 (3 A 1000 V), UF5408 (3 A 1000 V, trr 75 ns) | media |
 | **Diodo rectificador 1N4001–1N4007 (1 A)**<br><sub>`dio-1n4001-1n4007`</sub> | THT | DO-41 (DO-204AL) plástico (2p, 10.16 mm) | 1N4001 (50 V), 1N4002 (100 V), 1N4003 (200 V), 1N4004 (400 V), 1N4005 (600 V), 1N4006 (800 V), 1N4007 (1000 V) | muy alta |
 | **Diodo rectificador 1N5400–1N5408 (3 A)**<br><sub>`dio-1n5400-1n5408`</sub> | THT | DO-201AD (DO-27) (2p, 15.24 mm) | 1N5400 (50 V), 1N5401 (100 V), 1N5402 (200 V), 1N5404 (400 V), 1N5406 (600 V), 1N5407 (800 V), 1N5408 (1000 V) | alta |
 | **Diodo rectificador 6A05–6A10 (6 A) / 10A10**<br><sub>`dio-6a10-r6`</sub> | THT | R-6 (P600) (2p, 20.32 mm) | 6A05 (50 V), 6A1 (100 V), 6A2 (200 V), 6A4 (400 V), 6A6 (600 V), 6A8 (800 V), 6A10 (1000 V), 10A10 (10 A, 1000 V) | media |
+| **Diodo rectificador de potencia de perno / rosca (stud) 6–70 A (12F, 1N1199–1N1206, 1N1183–1N1190, 40HF, 70HF)**<br><sub>`dio-potencia-perno`</sub> | panel | DO-4 (DO-203AA), rosca 10-32 UNF (2p); DO-5 (DO-203AB), rosca 1/4-28 UNF (2p) | 6F / 12F / 16F (6–16 A, DO-4), 1N1199–1N1206 (12 A, DO-4), 1N1183–1N1190 (≈35–40 A, DO-5), 40HF10 a 40HF120 (40 A, DO-5), 70HF (70 A, DO-5), versión R = ánodo al perno (40HFR, 1N1186RA) | media |
 | **Diodo Schottky 1N5817 / 1N5818 / 1N5819 (1 A)**<br><sub>`dio-schottky-1n5817-1n5819`</sub> | THT | DO-41 (DO-204AL) plástico (2p, 10.16 mm) | 1N5817 (20 V), 1N5818 (30 V), 1N5819 (40 V), SR160/SB160 (60 V), SR1100 (100 V) | muy alta |
 | **Diodo Schottky 3–5 A (1N5820–1N5822, SR540/SR560, SB560)**<br><sub>`dio-schottky-1n5822-sr560`</sub> | THT | DO-201AD (DO-27) (2p, 15.24 mm) | 1N5820 (3 A 20 V), 1N5821 (3 A 30 V), 1N5822 (3 A 40 V), SR540/SB540 (5 A 40 V), SR560/SB560 (5 A 60 V), SR5100 (5 A 100 V) | alta |
+| **Diodo Schottky de potencia MBR1045 / MBR1645 / MBR20100CT / MBR3045PT (TO-220 / TO-247)**<br><sub>`dio-schottky-mbr-to220`</sub> | THT | TO-220AC (2 terminales, MBR1045/MBR1645) (2p, 5.08 mm); TO-220AB (3 terminales, dobles CT: MBR2045CT/MBR20100CT) (3p, 2.54 mm); TO-247 / TO-3P (dobles PT: MBR3045PT) (3p, 5.45 mm) | MBR1045 (10 A 45 V, TO-220AC), MBR1060 (10 A 60 V, TO-220AC), MBR1645 (16 A 45 V, TO-220AC), MBR2045CT (2 x 10 A 45 V), MBR20100CT (2 x 10 A 100 V), MBR3045PT (2 x 15 A 45 V, TO-247/TO-3P) | media |
+| **Diodo Schottky de señal BAT85 / BAT43 / BAT46 / BAT54 (DO-35 y SOT-23)**<br><sub>`dio-schottky-bat85-bat54`</sub> | THT/SMD | DO-35 (DO-204AH) vidrio (BAT85/BAT43/BAT46) (2p, 7.62 mm); SOT-23 (BAT54, BAT54A/C/S) (3p, 0.95 mm) | BAT85 (30 V 200 mA, DO-35), BAT43 (30 V 200 mA, DO-35), BAT46 (100 V 150 mA, DO-35), BAT54 (30 V 200 mA, SOT-23), BAT54C (doble, cátodo común), BAT54A (doble, ánodo común), BAT54S (doble, en serie) | media |
 | **Diodo de señal/conmutación 1N4148 / 1N914**<br><sub>`dio-1n4148-1n914`</sub> | THT | DO-35 (DO-204AH) vidrio (2p, 7.62 mm) | 1N4148, 1N914, 1N4448 | muy alta |
 | **Diodo de germanio 1N34A / 1N60**<br><sub>`dio-germanio-1n34a-1n60`</sub> | THT | DO-7 / DO-35 vidrio (axial) (2p, 7.62 mm) | 1N34A, 1N60, OA90 (ocasional) | media |
 | **Diodo rectificador SMD M1–M7 / S1M (SMA)**<br><sub>`dio-smd-m7-s1m`</sub> | SMD | SMA (DO-214AC) (2p) | M1 (50 V), M4 (400 V), M7 (1000 V), S1M (1000 V), S2M (2 A, SMB) | alta |
@@ -179,9 +185,12 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Diodo Zener SMD (ZMM / MMSZ52xx / BZT52)**<br><sub>`dio-zener-smd`</sub> | SMD | MiniMELF (SOD-80 / LL-34) (2p); SOD-123 (2p) | 3.3 V, 5.1 V, 6.2 V, 9.1 V, 12 V, 15 V, 24 V | media |
 | **Diodo Zener 0.5 W (BZX55C / 1N52xxB / BZX79)**<br><sub>`dio-zener-05w`</sub> | THT | DO-35 (DO-204AH) vidrio (2p, 7.62 mm) | 2.7 V, 3.0 V, 3.3 V, 3.6 V, 3.9 V, 4.3 V, 4.7 V, 5.1 V, … (+36) | muy alta |
 | **Diodo Zener 1 W (1N4728A–1N4753A / BZX85C)**<br><sub>`dio-zener-1w`</sub> | THT | DO-41 (DO-204AL) plástico (2p, 10.16 mm) | 1N4728A=3.3 V, 1N4729A=3.6 V, 1N4730A=3.9 V, 1N4731A=4.3 V, 1N4732A=4.7 V, 1N4733A=5.1 V, 1N4734A=5.6 V, 1N4735A=6.2 V, … (+17) | alta |
+| **Diodo Zener 5 W (1N5333B–1N5388B)**<br><sub>`dio-zener-5w`</sub> | THT | Axial de 5 W (Case 017AA / T-18 de onsemi; otras marcas DO-201AE) (2p, 15.24 mm) | 3.3 V (1N5333B), 5.1 V (1N5338B), 5.6 V (1N5339B), 6.2 V (1N5341B), 6.8 V (1N5342B), 7.5 V (1N5343B), 9.1 V (1N5346B), 10 V (1N5347B), … (+6) | media |
 | **DIAC DB3 / DB4**<br><sub>`tir-diac-db3`</sub> | THT | DO-35 (DO-204AH) vidrio (2p, 7.62 mm) | DB3 (VBO 28–36 V), DB4 (≈35–45 V) | alta |
 | **Transistor uniunión (UJT) 2N2646 / 2N2647**<br><sub>`tir-ujt-2n2646`</sub> | THT | TO-18 (TO-206AA) metálico (3p) | 2N2646, 2N2647 | media |
 | **Transistor uniunión programable (PUT) 2N6027 / 2N6028**<br><sub>`tir-put-2n6027`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N6027, 2N6028 (más sensible) | media |
+| **Kit / surtido de diodos (rectificadores, señal, Schottky y Zener)**<br><sub>`dio-kit-surtido`</sub> | THT | — | 1N4001–1N4007, 1N5817–1N5819, 1N4148, 1N5399, 1N5408, 1N5822, FR107 / UF4007 (en algunos kits), Zener 0.5 W surtidos (≈3.3–30 V), … (+3) | alta |
+| **Kit / surtido de transistores TO-92**<br><sub>`trn-kit-to92`</sub> | THT | — | S8050, S8550, S9012, S9013, S9014, S9015, S9018, 2N2222A, … (+15) | alta |
 | **Puente rectificador cuadrado 10–50 A (KBPC1010 / KBPC2510 / KBPC3510)**<br><sub>`dio-puente-kbpc`</sub> | panel | KBPC (cuadrado, terminales faston 6.3 mm) (4p); KBPC-W (cuadrado, terminales de alambre) (4p); BR-10x (cuadrado pequeño) (4p) | KBPC1010 (10 A 1000 V), KBPC2510 (25 A 1000 V), KBPC3510 (35 A 1000 V), KBPC5010 (50 A), KBPC3510W (alambre), BR104 (10 A 400 V) | alta |
 | **Puente rectificador DIP-4 1 A (DB101–DB107)**<br><sub>`dio-puente-db107`</sub> | THT | DB-1 (DIP-4) (4p, 5.08 mm, filas 7.62 mm); DB-S / DBS (SMD, DB107S) (4p) | DB101 (50 V), DB102 (100 V), DB104 (400 V), DB106 (600 V), DB107 (1000 V), DB107S (SMD), DF10M (1 A 1000 V, DIP-4 pequeño) | alta |
 | **Puente rectificador en línea 2–4 A (KBP206/KBP307 / KBL04–KBL410)**<br><sub>`dio-puente-linea-kbp-kbl`</sub> | THT | KBP (en línea, 4 pines) (4p, 3.8 mm); KBL (en línea, 4 pines) (4p, 5.08 mm) | KBP206 (2 A 600 V), KBP210 (2 A 1000 V), KBP307 (3 A 1000 V), KBL04 (4 A 400 V), KBL406 (4 A 600 V), KBL410 (4 A 1000 V), KBL-4/200 (Steren, 4 A 200 V) | alta |
@@ -210,6 +219,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Transistor NPN BD135 / BD137 / BD139 (1.5 A, TO-126)**<br><sub>`trn-bd135-bd137-bd139`</sub> | THT | TO-126 (SOT-32 / TO-225AA) (3p, 2.29 mm) | BD135 (45 V), BD137 (60 V), BD139 (80 V), sufijos -10/-16 (grupo hFE) | alta |
 | **Transistor NPN de audio 2SC5200 (C5200)**<br><sub>`trn-2sc5200`</sub> | THT | TO-3PL / TO-264 (Toshiba 2-21F1A) (3p, 5.45 mm) | 2SC5200 (Toshiba/ISC) | alta |
 | **Transistor NPN de potencia 2N3055 (TO-3)**<br><sub>`trn-2n3055`</sub> | panel | TO-3 (TO-204AA) metálico (2p, 10.92 mm) | 2N3055, MJE3055T (versión TO-220, pinout B-C-E) | alta |
+| **Transistor NPN de potencia TIP35C (25 A, TO-247 / TO-3P)**<br><sub>`trn-tip35c`</sub> | THT | TO-247 (TO-247AC) (3p, 5.45 mm); TO-3P / TO-3PN (3p, 5.45 mm) | TIP35 (40 V), TIP35A (60 V), TIP35B (80 V), TIP35C (100 V) | alta |
 | **Transistor NPN japonés 2SC945 / 2SC1815 (C945, C1815)**<br><sub>`trn-2sc945-2sc1815`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | C945 (2SC945), C1815 (2SC1815, grupos O/Y/GR/BL) | alta |
 | **Transistor NPN S8050 / SS8050**<br><sub>`trn-s8050`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm); SOT-23 (TO-236AB) (3p, 0.95 mm) | S8050 (0.5 A), SS8050 (1.5 A), S8050 SMD SOT-23 (marcado J3Y), grados de hFE B/C/D | alta |
 | **Transistor NPN S9013 / S9014 / S9018**<br><sub>`trn-s9013-s9014`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | S9013 (500 mA), S9014 (100 mA bajo ruido), S9018 (RF, fT ≈700 MHz) | alta |
@@ -218,6 +228,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Transistor PNP BD136 / BD138 / BD140 (1.5 A, TO-126)**<br><sub>`trn-bd136-bd138-bd140`</sub> | THT | TO-126 (SOT-32 / TO-225AA) (3p, 2.29 mm) | BD136 (−45 V), BD138 (−60 V), BD140 (−80 V) | alta |
 | **Transistor PNP de audio 2SA1943 (A1943)**<br><sub>`trn-2sa1943`</sub> | THT | TO-3PL / TO-264 (Toshiba 2-21F1A) (3p, 5.45 mm) | 2SA1943 | alta |
 | **Transistor PNP de potencia TIP32C (3 A)**<br><sub>`trn-tip32c`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | TIP32 (−40 V), TIP32A, TIP32B, TIP32C (−100 V) | alta |
+| **Transistor PNP de potencia TIP36C (25 A, TO-247 / TO-3P)**<br><sub>`trn-tip36c`</sub> | THT | TO-247 (TO-247AC) (3p, 5.45 mm); TO-3P / TO-3PN (3p, 5.45 mm) | TIP36 (−40 V), TIP36A (−60 V), TIP36B (−80 V), TIP36C (−100 V) | alta |
 | **Transistor PNP de potencia TIP42C (6 A)**<br><sub>`trn-tip42c`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | TIP42 (−40 V), TIP42A, TIP42B, TIP42C (−100 V) | alta |
 | **Transistor PNP japonés 2SA733 / 2SA1015 (A733, A1015)**<br><sub>`trn-2sa733-2sa1015`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | A733 (2SA733), A1015 (2SA1015) | alta |
 | **Transistor PNP S8550 / SS8550**<br><sub>`trn-s8550`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm); SOT-23 (TO-236AB) (3p, 0.95 mm) | S8550 (0.5 A), SS8550 (1.5 A), SMD SOT-23 (marcado 2TY) | alta |
@@ -225,17 +236,24 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Transistor NPN 2N4401**<br><sub>`trn-2n4401`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N4401, MMBT4401 (SOT-23) | media |
 | **Transistor NPN 2SD882 (D882, 3 A)**<br><sub>`trn-d882`</sub> | THT | TO-126 (SOT-32 / TO-225AA) (3p, 2.29 mm); TO-92L / TO-92NL (3p, 1.27 mm) | D882 (TO-126), 2SD882 en SOT-89/TO-252 (pinout distinto) | media |
 | **Transistor NPN alta ganancia 2N5088 / 2N5089**<br><sub>`trn-2n5088-2n5089`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N5088 (hFE 300–900), 2N5089 (hFE 400–1200) | media |
+| **Transistor NPN alto voltaje MJE13001 / MJE13003 (TO-92 / TO-126)**<br><sub>`trn-mje13001-mje13003`</sub> | THT | TO-126 (SOT-32 / TO-225AA) (3p, 2.29 mm); TO-92 (TO-226AA) (3p, 1.27 mm) | MJE13001 / 13001 (TO-92, ≈0.2–0.5 A según marca), MJE13003 / 13003 (TO-126, 1–1.5 A según marca) | media |
 | **Transistor NPN alto voltaje MJE13005 / MJE13007 (TO-220)**<br><sub>`trn-mje13005-mje13007`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm); TO-220F / ITO-220 (plástico aislado) (3p, 2.54 mm) | MJE13005 (4 A), MJE13007 (8 A), MJE13009 (12 A) | media |
+| **Transistor NPN alto voltaje MJE340 / KSE340 (300 V, 0.5 A, TO-126)**<br><sub>`trn-mje340`</sub> | THT | TO-126 (SOT-32 / TO-225AA) (3p, 2.29 mm) | MJE340 (ST, onsemi MJE340G), KSE340 (Fairchild/onsemi) | media |
 | **Transistor NPN alto voltaje MPSA42 / MPSA43**<br><sub>`trn-mpsa42`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | MPSA42 (300 V), MPSA43 (200 V), KSP42 | media |
+| **Transistor NPN de potencia de audio MJ15003 / MJ15022 / MJ15024 (TO-3)**<br><sub>`trn-mj15003-mj15024`</sub> | panel | TO-3 (TO-204AA) metálico (2p, 10.92 mm) | MJ15003 (140 V 20 A 250 W), MJ15022 (200 V 16 A 250 W), MJ15024 (250 V 16 A 250 W) | media |
 | **Transistor NPN de potencia TIP3055 (15 A)**<br><sub>`trn-tip3055`</sub> | THT | TO-247 (TO-247AC) (3p, 5.45 mm) | TIP3055 | media |
 | **Transistor PNP 2N4403**<br><sub>`trn-2n4403`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N4403 | media |
 | **Transistor PNP 2SB772 (B772, 3 A)**<br><sub>`trn-b772`</sub> | THT | TO-126 (SOT-32 / TO-225AA) (3p, 2.29 mm) | B772 (TO-126) | media |
+| **Transistor PNP alto voltaje MJE350 / KSE350 (300 V, 0.5 A, TO-126)**<br><sub>`trn-mje350`</sub> | THT | TO-126 (SOT-32 / TO-225AA) (3p, 2.29 mm) | MJE350 (ST, onsemi MJE350G), KSE350 (Fairchild/onsemi) | media |
 | **Transistor PNP alto voltaje MPSA92 / MPSA93**<br><sub>`trn-mpsa92`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | MPSA92 (−300 V), MPSA93 (−200 V) | media |
 | **Transistor PNP BC327 / BC328 (800 mA)**<br><sub>`trn-bc327`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | BC327-16, BC327-25, BC327-40, BC328 (−25 V) | media |
+| **Transistor PNP de potencia de audio MJ15004 / MJ15023 / MJ15025 (TO-3)**<br><sub>`trn-mj15004-mj15025`</sub> | panel | TO-3 (TO-204AA) metálico (2p, 10.92 mm) | MJ15004 (−140 V −20 A 250 W), MJ15023 (−200 V −16 A 250 W), MJ15025 (−250 V −16 A 250 W) | media |
 | **Transistor PNP de potencia MJ2955 (TO-3)**<br><sub>`trn-mj2955`</sub> | panel | TO-3 (TO-204AA) metálico (2p, 10.92 mm) | MJ2955, MJE2955T (TO-220) | media |
 | **Transistor PNP de potencia TIP2955 (15 A)**<br><sub>`trn-tip2955`</sub> | THT | TO-247 (TO-247AC) (3p, 5.45 mm) | TIP2955 | media |
 | **Transistor Darlington NPN TIP120 / TIP121 / TIP122 (5 A)**<br><sub>`trn-tip120-tip122`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | TIP120 (60 V), TIP121 (80 V), TIP122 (100 V) | muy alta |
 | **Transistor Darlington PNP TIP125 / TIP126 / TIP127 (5 A)**<br><sub>`trn-tip125-tip127`</sub> | THT | TO-220 (TO-220AB) (3p, 2.54 mm) | TIP125 (−60 V), TIP126 (−80 V), TIP127 (−100 V) | alta |
+| **Transistor Darlington NPN de pequeña señal MPSA13 / MPSA14 (TO-92)**<br><sub>`trn-mpsa13-mpsa14`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | MPSA13 (hFE ≥5000 a 10 mA), MPSA14 (hFE ≥10000 a 10 mA) | media |
+| **IGBT de potencia TO-247 / TO-3P (FGA25N120ANTD / H20R1203 / FGH40N60SFD / IRG4PC50UD)**<br><sub>`trn-igbt-to247`</sub> | THT | TO-247 (TO-247AC) (3p, 5.45 mm); TO-3P / TO-3PN (3p, 5.45 mm) | FGA25N120ANTD (1200 V 25 A, TO-3PN; cocinas de inducción), H20R1203 = IHW20N120R3 (1200 V 20 A, TO-247, conducción inversa), FGH40N60SFD (600 V 40 A, TO-247; soldadoras inversoras), IRG4PC50UD (600 V ≈27 A a 100 °C, TO-247) | media |
 | **JFET canal N 2N3819 (TO-92)**<br><sub>`trn-jfet-2n3819`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N3819 | media |
 | **JFET canal N 2N5457 / MPF102 / J201 (TO-92)**<br><sub>`trn-jfet-2n5457-mpf102-j201`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | 2N5457 (IDSS 1–5 mA), 2N5458 (2–9 mA), 2N5459 (4–16 mA), MPF102 (2–20 mA), J201 (0.2–1 mA), J113, J310 (RF) | media |
 | **JFET canal N BF245A / BF245B / BF245C**<br><sub>`trn-jfet-bf245`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | BF245A (IDSS 2–6.5 mA), BF245B (6–15 mA), BF245C (12–25 mA) | media |
@@ -250,6 +268,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **MOSFET canal N BS170 (TO-92)**<br><sub>`trn-bs170`</sub> | THT | TO-92 (TO-226AA) (3p, 1.27 mm) | BS170 | media |
 | **MOSFET canal N TO-247 IRFP250N / IRFP260N / IRFP460**<br><sub>`trn-irfp250-irfp260`</sub> | THT | TO-247 (TO-247AC) (3p, 5.45 mm) | IRFP250N (200 V 30 A, 0.075 Ω), IRFP260N (200 V 50 A, 0.04 Ω), IRFP460 (500 V 20 A, 0.27 Ω) | media |
 | **MOSFET canal P SMD AO3401 (SOT-23)**<br><sub>`trn-ao3401`</sub> | SMD | SOT-23 (TO-236AB) (3p, 0.95 mm) | AO3401A (−30 V −4 A, marcado A19T), SI2301 (−20 V) | media |
+| **MOSFET canal P TO-247 IRFP9240 / IRFP9140N (complemento del IRFP240)**<br><sub>`trn-irfp9240`</sub> | THT | TO-247 (TO-247AC) (3p, 5.45 mm) | IRFP9240 (−200 V −12 A, 0.5 Ω, 150 W), IRFP9140N (−100 V −23 A, 0.117 Ω), complemento N: IRFP240 (200 V 20 A, 0.18 Ω; misma huella que trn-irfp250-irfp260) | media |
 
 <a id="optoelectronica"></a>
 ## Optoelectrónica (LEDs, optoacopladores, displays de LED)
@@ -262,9 +281,12 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Barra de LED de 10 segmentos (bargraph DIP-20)**<br><sub>`opt-barra-led-10-segmentos`</sub> | THT | DIP-20 (bargraph) (20p, 2.54 mm, filas 7.62 mm) | rojo, verde, amarillo, azul, multicolor (verde/amarillo/rojo) | media |
 | **Fototransistor (PT333-3C / 3DU5C / L14G1)**<br><sub>`opt-fototransistor`</sub> | THT | LED 5 mm (T-1¾) radial (2p, 2.54 mm); LED 3 mm (T-1) radial (2p, 2.54 mm); TO-18 con lente (L14G1/L14G2), 3 patas (3p) | 5 mm transparente (luz visible/IR), 5 mm negro (solo IR), 3 mm, L14G1 (TO-18) | alta |
 | **Fotodiodo (BPW34 / 5 mm IR negro / PD333)**<br><sub>`opt-fotodiodo`</sub> | THT | LED 5 mm (T-1¾) radial (2p, 2.54 mm); BPW34 (plano, 2 patas) (2p, 5.08 mm) | BPW34, 5 mm negro 940 nm, 5 mm transparente, PD333-3C | media |
+| **Luz piloto / indicador de panel (LED 22 mm AD16-22D, LED metálico 6–16 mm y neón 127 VAC)**<br><sub>`opt-piloto-indicador-panel`</sub> | panel | Piloto LED AD16-22D / AD16-22DS (agujero de 22 mm) (2p); Indicador LED metálico de rosca 6 / 8 / 10 / 12 / 16 mm (2p); Foco neón de panel en encapsulado redondo (117 VAC) (2p) | AD16-22D 12 V, AD16-22DS 24 V, AD16-22D 110 V, AD16-22D 220 V, rojo, verde, amarillo, azul, … (+4) | alta |
 | **LED infrarrojo emisor 940 nm / 850 nm (3 y 5 mm)**<br><sub>`opt-led-ir-940nm`</sub> | THT | LED 5 mm (T-1¾) radial (2p, 2.54 mm); LED 3 mm (T-1) radial (2p, 2.54 mm) | 940 nm transparente, 940 nm azulado, 850 nm, 5 mm, 3 mm | muy alta |
 | **Receptor infrarrojo 38 kHz VS1838B / HS0038 / TL1838**<br><sub>`opt-receptor-ir-vs1838b`</sub> | THT | Receptor IR 3 pines con domo (3p, 2.54 mm) | VS1838B, HS0038B, TL1838, 38 kHz | muy alta |
 | **Receptor infrarrojo Vishay TSOP4838 / TSOP1738**<br><sub>`opt-receptor-ir-tsop4838`</sub> | THT | Receptor IR Vishay 3 pines (3p, 2.54 mm) | TSOP4838 (OUT-GND-VS), TSOP38238 (OUT-GND-VS), TSOP1738 (GND-VS-OUT, obsoleto) | media |
+| **Kit / surtido de LEDs de 3 mm y 5 mm**<br><sub>`opt-kit-leds`</sub> | THT | — | rojo, verde, amarillo, azul, blanco, 3 mm difuso, 5 mm difuso, 5 mm transparente (alto brillo), … (+2) | alta |
+| **Foco miniatura incandescente de bajo voltaje (rosca E10, tipo gota y tipo arroz)**<br><sub>`opt-foco-miniatura-incandescente`</sub> | THT | Base de rosca miniatura E10 (MES) — No. 46, No. 222 y similares (2p); Tipo arroz / grano de trigo con alambres (2p) | 1.5 V (una pila), 2.2–2.5 V (No. 222, linterna de 2 pilas), 3 V, 4.8 V, 6 V / 6.3 V (No. 46: 250 mA, 1.57 W), 12 V, tipo arroz 12 V 100 mA (Steren) | alta |
 | **Diodo láser rojo 650 nm 5 mW (cabezal Ø6 mm / módulo KY-008)**<br><sub>`opt-laser-650nm-ky008`</sub> | modulo | Cabezal láser Ø6 mm con cables (2p); Módulo KY-008 (header 3 pines) (3p, 2.54 mm) | 650 nm 5 mW punto, 650 nm línea, 650 nm cruz, 3 V y 5 V | media |
 | **LED 3 mm (colores estándar y alta luminosidad)**<br><sub>`opt-led-3mm`</sub> | THT | LED 3 mm (T-1) radial (2p, 2.54 mm) | rojo, verde, amarillo, naranja, azul, blanco, difuso, transparente (alto brillo), … (+1) | muy alta |
 | **LED 5 mm (difuso, transparente y ultrabrillante)**<br><sub>`opt-led-5mm`</sub> | THT | LED 5 mm (T-1¾) radial (2p, 2.54 mm); LED 5 mm 'sombrero de paja' (straw hat) (2p, 2.54 mm) | rojo, verde, amarillo, naranja, azul, blanco, blanco cálido, violeta/UV 395 nm, … (+3) | muy alta |
@@ -274,14 +296,18 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **LED bicolor 5 mm (2 y 3 patas)**<br><sub>`opt-led-bicolor`</sub> | THT | LED 5 mm bicolor 2 patas (2p, 2.54 mm); LED 5 mm bicolor 3 patas (3p, 2.54 mm) | rojo/verde 2 patas, rojo/verde 3 patas cátodo común, rojo/verde 3 patas ánodo común, 3 mm | alta |
 | **LED RGB 5 mm de 4 patas, cátodo común**<br><sub>`opt-led-rgb-catodo-comun`</sub> | THT | LED 5 mm RGB 4 patas (4p, 1.27 mm) | difuso, transparente | alta |
 | **LED rectangular, cuadrado y triangular (2x5x7, 3x4)**<br><sub>`opt-led-formas`</sub> | THT | LED rectangular 2x5x7 mm (2p, 2.54 mm) | rojo, verde, amarillo, azul, blanco, bicolor | media |
+| **LED COB de potencia 10–100 W (chip cuadrado de 2 terminales)**<br><sub>`opt-led-cob`</sub> | panel | COB cuadrado 10–100 W (2p) | 10 W (≈9–12 V, ≈900 mA), 20 W (≈30–34 V, ≈600 mA), 30 W (≈30–34 V, ≈900 mA), 50 W (≈30–34 V, ≈1.5 A), 100 W (≈30–34 V, ≈3 A), blanco frío 6000–6500 K, blanco cálido ≈3000 K, versiones de 12 V y 'DOB' con driver integrado para línea de CA | alta |
 | **LED de potencia 1 W / 3 W (con estrella de aluminio)**<br><sub>`opt-led-potencia-1w-3w`</sub> | THT/SMD | Emisor de potencia (tipo Lumileds/Bridgelux genérico) (2p); Estrella de aluminio (MCPCB) 20 mm (2p) | 1 W blanco frío/cálido, 3 W blanco, rojo, verde, azul, UV 395 nm, RGB 3 W (6 pads) | alta |
 | **LED SMD 0603 / 0805 / 1206**<br><sub>`opt-led-smd-0805-1206`</sub> | SMD | 0603 (1608 métrico) (2p); 0805 (2012 métrico) (2p); 1206 (3216 métrico) (2p) | rojo, verde, amarillo, azul, blanco, naranja | alta |
 | **LED SMD PLCC 3528 / 2835 / 5050**<br><sub>`opt-led-smd-plcc-3528-2835-5050`</sub> | SMD | 3528 (PLCC-2) (2p); 2835 (2p); 5050 (PLCC-6) (6p) | 3528 blanco/colores (≈20 mA), 2835 blanco 0.2–0.5 W, 5050 blanco (≈60 mA, 3 chips), 5050 RGB | alta |
+| **LED superflux / piraña de 4 patas (domo de 3 mm y 5 mm)**<br><sub>`opt-led-piranha-superflux`</sub> | THT | Superflux / piraña 7.6 x 7.6 mm (4 patas) (4p, 5.08 mm, filas 5.08 mm) | rojo, ámbar / amarillo, blanco frío, blanco cálido, azul, verde, domo 3 mm, domo 5 mm, … (+3) | media |
 | **Optoacoplador con salida TRIAC MOC3010/3011/3020/3021/3023 (fase aleatoria)**<br><sub>`opt-moc3021-moc3011`</sub> | THT | DIP-6 (6p, 2.54 mm, filas 7.62 mm) | MOC3010 (250 V, IFT 15 mA), MOC3011 (250 V, 10 mA), MOC3012 (5 mA), MOC3020 (400 V, 30 mA), MOC3021 (400 V, 15 mA), MOC3022 (10 mA), MOC3023 (5 mA) | muy alta |
 | **Optoacoplador PC817 / EL817 / LTV-817 / TLP521-1 (DIP-4)**<br><sub>`opt-pc817`</sub> | THT | DIP-4 (4p, 2.54 mm, filas 7.62 mm); SOP-4 / SMD-4 (PC817 SMD) (4p, 2.54 mm) | PC817 (rangos A, B, C, D de CTR), EL817, LTV-817, TLP521-1, PC817 SMD | muy alta |
 | **Optoacoplador 4N25 / 4N26 / 4N35 / 4N33 (DIP-6)**<br><sub>`opt-4n25-4n35`</sub> | THT | DIP-6 (6p, 2.54 mm, filas 7.62 mm) | 4N25 (CTR ≥20 %), 4N26, 4N28, 4N35 (CTR ≥100 %), 4N37, 4N33 (Darlington, CTR ≥500 %) | alta |
 | **Optoacoplador con TRIAC y cruce por cero MOC3041/3042/3043 y MOC3061/3062/3063**<br><sub>`opt-moc3041-moc3063`</sub> | THT | DIP-6 (6p, 2.54 mm, filas 7.62 mm) | MOC3041 (400 V, IFT 15 mA), MOC3042 (10 mA), MOC3043 (5 mA), MOC3061 (600 V, 15 mA), MOC3062 (10 mA), MOC3063 (600 V, 5 mA) | alta |
+| **Optoacoplador de entrada de CA PC814 / EL814 / H11AA1 (detección de cruce por cero)**<br><sub>`opt-pc814-h11aa1`</sub> | THT | DIP-4 (PC814 / EL814 / LTV-814) (4p, 2.54 mm, filas 7.62 mm); DIP-6 (H11AA1) (6p, 2.54 mm, filas 7.62 mm) | PC814 (DIP-4), EL814, LTV-814, PC814 SMD, H11AA1 (DIP-6) | media |
 | **Optoacoplador digital rápido 6N137 (10 Mbit/s)**<br><sub>`opt-6n137`</sub> | THT | DIP-8 (8p, 2.54 mm, filas 7.62 mm) | 6N137, HCPL-2601, HCPL-2631 (doble) | media |
+| **Optoacoplador driver de compuerta TLP250 / HCPL-3120 (A3120) (DIP-8)**<br><sub>`opt-tlp250`</sub> | THT | DIP-8 (8p, 2.54 mm, filas 7.62 mm) | TLP250 (Toshiba, ±1.5 A pico), HCPL-3120 / A3120 (Broadcom/Avago, 2.5 A pico) | media |
 | **Optoacoplador multicanal TLP521-2 / TLP521-4 / PC827 / PC847**<br><sub>`opt-tlp521-multicanal`</sub> | THT | DIP-8 (8p, 2.54 mm, filas 7.62 mm); DIP-16 (16p, 2.54 mm, filas 7.62 mm) | TLP521-2 / PC827 (2 canales, DIP-8), TLP521-4 / PC847 (4 canales, DIP-16) | media |
 | **Sensor óptico reflectivo TCRT5000 / TCRT5000L (suelto)**<br><sub>`opt-tcrt5000`</sub> | THT | TCRT5000 4 pines (4p) | TCRT5000, TCRT5000L (patas largas) | alta |
 | **Interruptor óptico ranurado H21A1 / ITR9608 / TCST2103**<br><sub>`opt-interruptor-ranurado`</sub> | THT | Optointerruptor ranurado 4 pines (4p) | H21A1, ITR9608, TCST2103, MOC70T2 | media |
@@ -302,7 +328,9 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Amplificador operacional BiMOS CA3140**<br><sub>`ic-ca3140`</sub> | THT | DIP-8 (8p, 2.54 mm, filas 7.62 mm) | CA3140EZ, CA3140E | media |
 | **Amplificador operacional cuádruple JFET TL074 / TL084**<br><sub>`ic-tl074`</sub> | THT/SMD | DIP-14 (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (14p, 1.27 mm, filas 5.4 mm) | TL074CN, TL084CN | media |
 | **Amplificador operacional de precisión OP07**<br><sub>`ic-op07`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | OP07CP, OP07DP | media |
-| **Amplificador operacional doble rail-to-rail MCP6002**<br><sub>`ic-mcp6002`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm); SOT-23-5 (MCP6001, sencillo) (5p, 0.95 mm) | MCP6002-I/P (DIP-8), MCP6002-I/SN (SOIC-8), MCP6004 (cuádruple DIP-14, pinout tipo LM324) | media |
+| **Amplificador operacional doble MC1458 (dos 741)**<br><sub>`ic-mc1458`</sub> | THT/SMD | DIP-8 (PDIP, 300 mil) (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (150 mil) (8p, 1.27 mm) | MC1458P (DIP-8), LM1458N (DIP-8) | media |
+| **Amplificador operacional doble rail-to-rail MCP6002**<br><sub>`ic-mcp6002`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | MCP6002-I/P (DIP-8), MCP6002-I/SN (SOIC-8), MCP6004 (cuádruple DIP-14, pinout tipo LM324) | media |
+| **Amplificador operacional sencillo de bajo ruido NE5534**<br><sub>`ic-ne5534`</sub> | THT/SMD | DIP-8 (PDIP, 300 mil) (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (150 mil) (8p, 1.27 mm) | NE5534P / NE5534AP (DIP-8), NE5534D (SOIC-8) | media |
 | **Amplificador operacional sencillo JFET TL071 / TL081**<br><sub>`ic-tl071`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | TL071CP, TL081CP | media |
 | **Amplificador de audio de baja potencia LM386**<br><sub>`ic-lm386`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | LM386N-1 (4–12 V), LM386N-3 (4–12 V, más potencia), LM386N-4 (5–18 V, ≈1 W) | muy alta |
 | **Amplificador clase D estéreo 3 W PAM8403 (chip)**<br><sub>`ic-pam8403`</sub> | SMD | SOP-16 (150 mil) (16p, 1.27 mm, filas 5.4 mm) | PAM8403DR-H (chip SOP-16), Módulo PAM8403 con potenciómetro | alta |
@@ -313,11 +341,14 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Amplificador clase D 2x50 W TPA3116D2 (chip)**<br><sub>`ic-tpa3116d2`</sub> | SMD | HTSSOP-32 (DAD, PowerPAD arriba) (32p, 0.65 mm) | TPA3116D2DAD, Módulos 2×50 W, 100 W mono, 2.1 | media |
 | **Amplificador cuádruple para auto TDA7388**<br><sub>`ic-tda7388`</sub> | THT | Flexiwatt-25 (25p, 1.0 mm) | TDA7388, TDA7386 / TDA7384 (familia, pinout similar) | media |
 | **Amplificador de audio 20 W LM1875**<br><sub>`ic-lm1875`</sub> | THT | TO-220-5 (5p, 1.7 mm) | LM1875T | media |
+| **Amplificador de audio 20 W puente/estéreo TDA2005**<br><sub>`ic-tda2005`</sub> | THT | Multiwatt-11 V (11p, 1.7 mm) | TDA2005 (Multiwatt-11), TDA2005R, TDA2005S | media |
 | **Amplificador de audio 68 W LM3886**<br><sub>`ic-lm3886`</sub> | THT | TO-220-11 (TF aislado / T no aislado) (11p, 1.7 mm) | LM3886TF, LM3886T | media |
 | **Amplificador de audio estéreo 2x15 W TDA7297**<br><sub>`ic-tda7297`</sub> | THT | Multiwatt-15 V (15p, 1.27 mm) | TDA7297 | media |
 | **Amplificador de audio estéreo de bajo voltaje TDA2822**<br><sub>`ic-tda2822`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | TDA2822M | media |
 | **Amplificador de audio estéreo LA4440**<br><sub>`ic-la4440`</sub> | THT | SIP-14H (con aleta) (14p) | LA4440 | media |
 | **Amplificador de audio para auto TDA7377**<br><sub>`ic-tda7377`</sub> | THT | Multiwatt-15 V (15p, 1.27 mm) | TDA7377 | media |
+| **Generador de melodía UM66 (TO-92)**<br><sub>`ic-um66`</sub> | THT | TO-92 (3p, 1.27 mm) | UM66T-19L (Für Elise), Otras melodías según el sufijo UM66T-xxL | media |
+| **Generador de sonidos de sirena UM3561 (DIP-8)**<br><sub>`ic-um3561`</sub> | THT | DIP-8 (PDIP, 300 mil) (8p, 2.54 mm, filas 7.62 mm) | UM3561 (DIP-8) | media |
 | **Comparador doble LM393**<br><sub>`ic-lm393`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | LM393P, LM393N, LM2903 | muy alta |
 | **Comparador cuádruple LM339**<br><sub>`ic-lm339`</sub> | THT/SMD | DIP-14 (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (14p, 1.27 mm, filas 5.4 mm) | LM339N, LM2901N | alta |
 | **Comparador rápido LM311**<br><sub>`ic-lm311`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | LM311P, LM311N | media |
@@ -327,7 +358,10 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Controlador de displays/matriz de LEDs MAX7219**<br><sub>`ic-max7219`</sub> | THT/SMD | DIP-24 angosto (300 mil) (24p, 2.54 mm, filas 7.62 mm); SOIC-24 ancho (300 mil) (24p, 1.27 mm, filas 9.4 mm) | MAX7219CNG (DIP-24), MAX7219CWG (SOIC-24) | alta |
 | **Doble puente H de 2 A L298N**<br><sub>`ic-l298n`</sub> | THT | Multiwatt-15 V (15p, 1.27 mm) | L298N (Multiwatt-15 V), L298HN (horizontal) | alta |
 | **Driver de medio puente alto/bajo IR2110**<br><sub>`ic-ir2110`</sub> | THT/SMD | DIP-14 (14p, 2.54 mm, filas 7.62 mm); SOIC-16 ancho (300 mil) (16p, 1.27 mm, filas 9.4 mm) | IR2110PBF (500 V), IR2113PBF (600 V, mismo pinout) | alta |
-| **Drivers de motor a pasos A4988 / DRV8825**<br><sub>`ic-a4988-drv8825`</sub> | SMD | Módulo StepStick/Pololu (2 filas x 8 pines) (16p, 2.54 mm, filas 12.7 mm); QFN-28 5x5 mm (chip A4988 ET) (28p, 0.5 mm); HTSSOP-28 PowerPAD (chip DRV8825 PWP) (28p, 0.65 mm) | Módulo A4988 (8–35 V, 1/16 paso), Módulo DRV8825 (8.2–45 V, 1/32 paso) | alta |
+| **Drivers de motor a pasos A4988 / DRV8825**<br><sub>`ic-a4988-drv8825`</sub> | modulo | Módulo StepStick/Pololu (2 filas x 8 pines) (16p, 2.54 mm, filas 12.7 mm); QFN-28 5x5 mm (chip A4988 ET) (28p, 0.5 mm); HTSSOP-28 PowerPAD (chip DRV8825 PWP) (28p, 0.65 mm) | Módulo A4988 (8–35 V, 1/16 paso), Módulo DRV8825 (8.2–45 V, 1/32 paso) | alta |
+| **Arreglo de 8 drivers tipo fuente (high-side) UDN2981 / TD62783**<br><sub>`ic-udn2981`</sub> | THT/SMD | DIP-18 (PDIP, 300 mil) (18p, 2.54 mm, filas 7.62 mm); SOIC-18 ancho (300 mil) (18p, 1.27 mm) | UDN2981A (DIP-18, Allegro, descontinuado), TD62783APG (DIP-18, Toshiba), MIC2981 (Microchip/Micrel) | media |
+| **Control de ángulo de fase TCA785 (disparo de SCR/TRIAC)**<br><sub>`ic-tca785`</sub> | THT | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm) | TCA785 (DIP-16) | media |
+| **Controlador de motor a pasos L297**<br><sub>`ic-l297`</sub> | THT/SMD | DIP-20 (PDIP, 300 mil) (20p, 2.54 mm, filas 7.62 mm); SOIC-20 ancho (300 mil) (20p, 1.27 mm) | L297 (DIP-20), L297D (SO-20) | media |
 | **Doble puente H MOSFET TB6612FNG (chip)**<br><sub>`ic-tb6612fng`</sub> | SMD | SSOP-24 (24p, 0.65 mm) | TB6612FNG (chip SSOP-24), Módulo TB6612FNG | media |
 | **Driver alto/bajo independiente IR2101**<br><sub>`ic-ir2101`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | IR2101PBF | media |
 | **Driver autooscilante de medio puente IR2153**<br><sub>`ic-ir2153`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | IR2153PBF, IR2153D (con diodo bootstrap interno) | media |
@@ -338,11 +372,14 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Controladores de barra de LEDs LM3914 / LM3915 / LM3916**<br><sub>`ic-lm3914`</sub> | THT | DIP-18 (18p, 2.54 mm, filas 7.62 mm) | LM3914N-1 (lineal), LM3915N (logarítmico), LM3916 (VU) | alta |
 | **Convertidor A/D de 3½ dígitos ICL7107 / ICL7106**<br><sub>`ic-icl7107`</sub> | THT | DIP-40 ancho (600 mil) (40p, 2.54 mm, filas 15.24 mm) | ICL7107CPL (LED), ICL7106CPL (LCD), TC7107 / TC7106 | alta |
 | **Convertidor A/D de 8 bits ADC0804**<br><sub>`ic-adc0804`</sub> | THT | DIP-20 (20p, 2.54 mm, filas 7.62 mm) | ADC0804LCN | alta |
+| **Amplificador de muestreo y retención LF398**<br><sub>`ic-lf398`</sub> | THT | DIP-8 (PDIP, 300 mil) (8p, 2.54 mm, filas 7.62 mm) | LF398N (DIP-8) | media |
 | **Amplificador de transconductancia doble LM13700**<br><sub>`ic-lm13700`</sub> | THT/SMD | DIP-16 (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (16p, 1.27 mm, filas 5.4 mm) | LM13700N, NJM13700D | media |
 | **Codificador remoto HT12E**<br><sub>`ic-ht12e`</sub> | THT/SMD | DIP-18 (18p, 2.54 mm, filas 7.62 mm); SOP-20 (300 mil) (20p, 1.27 mm, filas 9.4 mm) | HT12E (DIP-18) | media |
 | **Codificador remoto PT2262**<br><sub>`ic-pt2262`</sub> | THT/SMD | DIP-18 (18p, 2.54 mm, filas 7.62 mm) | PT2262 (DIP-18) | media |
 | **Convertidor A/D de 8 bits y 8 canales ADC0808 / ADC0809**<br><sub>`ic-adc0808`</sub> | THT | DIP-28 ancho (600 mil) (28p, 2.54 mm, filas 15.24 mm) | ADC0808CCN, ADC0809CCN | media |
 | **Convertidor A/D SPI de 10 bits y 8 canales MCP3008**<br><sub>`ic-mcp3008`</sub> | THT/SMD | DIP-16 (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (16p, 1.27 mm, filas 5.4 mm) | MCP3008-I/P (DIP-16), MCP3208 (12 bits, mismo pinout) | media |
+| **Convertidor A/D y D/A I2C de 8 bits PCF8591**<br><sub>`ic-pcf8591`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 ancho (300 mil) (16p, 1.27 mm) | PCF8591P (DIP-16), PCF8591T (SO-16), Módulo YL-40 con LDR, termistor y potenciómetro | media |
+| **Convertidor D/A de 8 bits con doble latch DAC0832**<br><sub>`ic-dac0832`</sub> | THT/SMD | DIP-20 (PDIP, 300 mil) (20p, 2.54 mm, filas 7.62 mm); SOIC-20 ancho (300 mil) (20p, 1.27 mm) | DAC0832LCN (DIP-20), DAC0830 (mayor linealidad), DAC0832LCWM (SOIC-20) | media |
 | **Convertidor D/A de 8 bits DAC0808**<br><sub>`ic-dac0808`</sub> | THT | DIP-16 (16p, 2.54 mm, filas 7.62 mm) | DAC0808LCN, MC1408P8 | media |
 | **Convertidor voltaje-frecuencia LM331**<br><sub>`ic-lm331`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | LM331N, LM331AN | media |
 | **Decodificador de tonos LM567 / NE567**<br><sub>`ic-lm567`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | LM567CN, NE567N | media |
@@ -351,6 +388,11 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Generador de funciones ICL8038**<br><sub>`ic-icl8038`</sub> | THT | DIP-14 (14p, 2.54 mm, filas 7.62 mm) | ICL8038CCPD, 8038C (Steren) | media |
 | **Generador de funciones XR2206**<br><sub>`ic-xr2206`</sub> | THT | DIP-16 (16p, 2.54 mm, filas 7.62 mm) | XR2206CP | media |
 | **Grabador/reproductor de voz ISD1820**<br><sub>`ic-isd1820`</sub> | modulo | Módulo ISD1820 (chip COB en placa) (2.54 mm) | Módulo ISD1820 con micrófono y bocina | media |
+| **Lazo de seguimiento de fase (PLL) LM565 / NE565**<br><sub>`ic-lm565`</sub> | THT | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm) | LM565CN (DIP-14), NE565N (DIP-14) | media |
+| **Modulador/demodulador balanceado MC1496 / LM1496**<br><sub>`ic-mc1496`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | MC1496P (DIP-14), LM1496N (DIP-14), MC1496D (SOIC-14) | media |
+| **Multiplicador analógico de 4 cuadrantes AD633**<br><sub>`ic-ad633`</sub> | THT/SMD | DIP-8 (PDIP, 300 mil) (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (150 mil) (8p, 1.27 mm) | AD633JNZ (DIP-8), AD633ARZ / AD633JRZ (SOIC-8) | media |
+| **Potenciómetro digital SPI MCP41010 / MCP41050 / MCP41100**<br><sub>`ic-mcp41xxx`</sub> | THT/SMD | DIP-8 (PDIP, 300 mil) (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (150 mil) (8p, 1.27 mm) | MCP41010 (10 kΩ), MCP41050 (50 kΩ), MCP41100 (100 kΩ), MCP42010 (doble 10 kΩ) | media |
+| **Potenciómetro digital X9C102 / X9C103 / X9C104 / X9C503**<br><sub>`ic-x9c10x`</sub> | THT/SMD | DIP-8 (PDIP, 300 mil) (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (150 mil) (8p, 1.27 mm) | X9C102 (1 kΩ), X9C103 (10 kΩ), X9C503 (50 kΩ), X9C104 (100 kΩ), Módulo X9C103S | media |
 | **Cargador lineal de baterías Li-ion TP4056 (chip)**<br><sub>`ic-tp4056`</sub> | SMD | ESOP-8 / SOP-8 con pad térmico (8p, 1.27 mm, filas 5.4 mm) | TP4056 (chip ESOP-8), Módulo TP4056 con protección DW01A + FS8205A | alta |
 | **Protector de batería Li-ion DW01A**<br><sub>`ic-dw01a`</sub> | SMD | SOT-23-6 (6p, 0.95 mm) | DW01A (SOT-23-6) | media |
 | **Convertidor de niveles RS-232 MAX232 / MAX3232**<br><sub>`ic-max232`</sub> | THT/SMD | DIP-16 (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (16p, 1.27 mm, filas 5.4 mm) | MAX232 (5 V, capacitores 1 µF), MAX232A (0.1 µF), MAX3232 (3–5.5 V, 0.1 µF) | alta |
@@ -358,9 +400,11 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Convertidor USB a UART FT232RL**<br><sub>`ic-ft232rl`</sub> | SMD | SSOP-28 (28p, 0.65 mm) | FT232RL (SSOP-28), Módulos FTDI USB-TTL | alta |
 | **Expansor de E/S I2C de 8 bits PCF8574**<br><sub>`ic-pcf8574`</sub> | THT/SMD | DIP-16 (16p, 2.54 mm, filas 7.62 mm); SOIC-16 ancho (300 mil) (16p, 1.27 mm, filas 9.4 mm) | PCF8574P (DIP-16), PCF8574T (SO-16), PCF8574A (direcciones 0x38–0x3F) | alta |
 | **Transceptor RS-485 MAX485**<br><sub>`ic-max485`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | MAX485CPA (DIP-8), MAX485ESA (SOIC-8), MAX3485 (3.3 V), SN75176 (mismo pinout) | alta |
+| **Codificador de teclado matricial de 16 teclas MM74C922**<br><sub>`ic-mm74c922`</sub> | THT | DIP-18 (PDIP, 300 mil) (18p, 2.54 mm, filas 7.62 mm) | MM74C922N (DIP-18, 16 teclas), MM74C923N (DIP-20, 20 teclas, pinout distinto) | media |
 | **Controlador CAN con interfaz SPI MCP2515**<br><sub>`ic-mcp2515`</sub> | THT/SMD | DIP-18 (18p, 2.54 mm, filas 7.62 mm); SOIC-18 ancho (300 mil) (18p, 1.27 mm, filas 9.4 mm) | MCP2515-I/P (DIP-18), MCP2515-I/SO (SOIC-18) | media |
 | **Controlador Ethernet SPI ENC28J60**<br><sub>`ic-enc28j60`</sub> | THT/SMD | DIP-28 angosto (300 mil) (28p, 2.54 mm, filas 7.62 mm); SOIC-28 ancho (300 mil) (28p, 1.27 mm, filas 9.4 mm) | ENC28J60-I/SP (DIP-28), Módulo ENC28J60 con RJ45 (HR911105A) | media |
 | **Convertidor USB a UART CP2102**<br><sub>`ic-cp2102`</sub> | SMD | QFN-28 5x5 mm (28p, 0.5 mm) | CP2102 (QFN-28), CP2102N (QFN-24/28, pinout distinto) | media |
+| **Decodificador DTMF MT8870 / CM8870**<br><sub>`ic-mt8870`</sub> | THT/SMD | DIP-18 (PDIP, 300 mil) (18p, 2.54 mm, filas 7.62 mm); SOIC-18 ancho (300 mil) (18p, 1.27 mm) | MT8870DE (DIP-18), CM8870PI (DIP-18), Módulo decodificador DTMF MT8870 con jack de 3.5 mm y LEDs | media |
 | **Expansor de E/S I2C de 16 bits MCP23017**<br><sub>`ic-mcp23017`</sub> | THT/SMD | DIP-28 angosto (300 mil) (28p, 2.54 mm, filas 7.62 mm); SOIC-28 ancho (300 mil) (28p, 1.27 mm, filas 9.4 mm) | MCP23017-E/SP (DIP-28), MCP23S17 (SPI) | media |
 | **Transceptor CAN TJA1050 / MCP2551**<br><sub>`ic-tja1050`</sub> | THT/SMD | SOIC-8 (8p, 1.27 mm, filas 5.4 mm); DIP-8 (8p, 2.54 mm, filas 7.62 mm) | TJA1050T (SO-8), MCP2551-I/P (DIP-8) | media |
 | **Contador de décadas Johnson con 10 salidas decodificadas CD4017**<br><sub>`ic-cd4017`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | CD4017BE (DIP, TI), HEF4017BP (DIP, NXP/Nexperia), MC14017B (onsemi), CD4017BM (SOIC), 74HC4017 (2–6 V, mismo pinout) | muy alta |
@@ -403,11 +447,15 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Decodificador BCD a decimal (1 de 10) CD4028**<br><sub>`ic-cd4028`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | CD4028BE (DIP, TI), HEF4028BP (DIP, NXP/Nexperia), MC14028B (onsemi), CD4028BM (SOIC) | media |
 | **Decodificador/demultiplexor 4 a 16 con latch (salidas en alto) CD4514**<br><sub>`ic-cd4514`</sub> | THT/SMD | DIP-24 (PDIP, 600 mil) (24p, 2.54 mm, filas 15.24 mm); SOIC-24 ancho (300 mil) (24p, 1.27 mm) | CD4514BE (DIP, TI), HEF4514BP (DIP, NXP/Nexperia), MC14514B (onsemi), CD4514BM (SOIC), CD4515 (salidas activas en bajo, mismo pinout) | media |
 | **Decodificador/latch/driver BCD a 7 segmentos para LCD CD4543**<br><sub>`ic-cd4543`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | CD4543BE (DIP, TI), HEF4543BP (DIP, NXP/Nexperia), MC14543B (onsemi), CD4543BM (SOIC) | media |
+| **Doble compuerta AND de 4 entradas CD4082**<br><sub>`ic-cd4082`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | CD4082BE (DIP, TI), HEF4082BP (DIP, Nexperia), MC14082B (onsemi), CD4082BM (SOIC) | media |
 | **Doble compuerta NAND de 4 entradas CD4012**<br><sub>`ic-cd4012`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | CD4012BE (DIP, TI), HEF4012BP (DIP, NXP/Nexperia), MC14012B (onsemi), CD4012BM (SOIC) | media |
+| **Doble compuerta NOR de 4 entradas CD4002**<br><sub>`ic-cd4002`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | CD4002BE (DIP, TI), HEF4002BP (DIP, Nexperia), MC14002B (onsemi) | media |
 | **Doble compuerta OR de 4 entradas CD4072**<br><sub>`ic-cd4072`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | CD4072BE (DIP, TI), HEF4072BP (DIP, NXP/Nexperia), MC14072B (onsemi), CD4072BM (SOIC) | media |
 | **Doble contador binario síncrono ascendente de 4 bits CD4520**<br><sub>`ic-cd4520`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | CD4520BE (DIP, TI), HEF4520BP (DIP, NXP/Nexperia), MC14520B (onsemi), CD4520BM (SOIC), 74HC4520 | media |
 | **Doble multivibrador monoestable CD4098**<br><sub>`ic-cd4098`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | CD4098BE (DIP, TI), HEF4098BP (DIP, NXP/Nexperia), MC14098B (onsemi), CD4098BM (SOIC) | media |
 | **Doble multivibrador monoestable de precisión CD4538**<br><sub>`ic-cd4538`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | CD4538BE (DIP, TI), HEF4538BP (DIP, NXP/Nexperia), MC14538B (onsemi), CD4538BM (SOIC), 74HC4538 | media |
+| **Doble par complementario MOSFET más inversor CD4007**<br><sub>`ic-cd4007`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | CD4007UBE (DIP-14, TI), HEF4007UBP (DIP-14, Nexperia), MC14007UBCP (onsemi) | media |
+| **Doble registro de desplazamiento de 4 etapas CD4015**<br><sub>`ic-cd4015`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | CD4015BE (DIP-16, TI), HEF4015BP (Nexperia), MC14015BCP (onsemi) | media |
 | **Lazo de seguimiento de fase (PLL) con VCO CD4046**<br><sub>`ic-cd4046`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | CD4046BE (DIP, TI), HEF4046BP (DIP, NXP/Nexperia), MC14046B (onsemi), CD4046BM (SOIC), 74HC4046 (pin 15 = PC3 OUT, sin zener) | media |
 | **Registro de desplazamiento de 8 bits con latch y 3 estados CD4094**<br><sub>`ic-cd4094`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | CD4094BE (DIP, TI), HEF4094BP (DIP, NXP/Nexperia), MC14094B (onsemi), CD4094BM (SOIC), 74HC4094 | media |
 | **Registro de desplazamiento de 8 etapas entrada paralelo/serie CD4021**<br><sub>`ic-cd4021`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | CD4021BE (DIP, TI), HEF4021BP (DIP, NXP/Nexperia), MC14021B (onsemi), CD4021BM (SOIC) | media |
@@ -417,6 +465,8 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Triple compuerta NAND de 3 entradas CD4023**<br><sub>`ic-cd4023`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | CD4023BE (DIP, TI), HEF4023BP (DIP, NXP/Nexperia), MC14023B (onsemi), CD4023BM (SOIC) | media |
 | **Triple compuerta NOR de 3 entradas CD4025**<br><sub>`ic-cd4025`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | CD4025BE (DIP, TI), HEF4025BP (DIP, NXP/Nexperia), MC14025B (onsemi), CD4025BM (SOIC) | media |
 | **Triple compuerta OR de 3 entradas CD4075**<br><sub>`ic-cd4075`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | CD4075BE (DIP, TI), HEF4075BP (DIP, NXP/Nexperia), MC14075B (onsemi), CD4075BM (SOIC) | media |
+| **Lógica programable GAL16V8 / ATF16V8B (PLD de 20 pines)**<br><sub>`ic-gal16v8`</sub> | THT/SMD | DIP-20 (PDIP, 300 mil) (20p, 2.54 mm, filas 7.62 mm); PLCC-20 (20p, 1.27 mm); SOIC-20 ancho (300 mil) (20p, 1.27 mm) | GAL16V8D-15LP (Lattice, DIP-20), GAL16V8D-25LP, ATF16V8B-15PU (Microchip, DIP-20), GAL20V8 (variante de 24 pines) | media |
+| **Lógica programable GAL22V10 / ATF22V10C (PLD de 24 pines)**<br><sub>`ic-gal22v10`</sub> | THT/SMD | DIP-24 (PDIP, 300 mil) (24p, 2.54 mm, filas 7.62 mm); PLCC-28 (28p, 1.27 mm); SOIC-24 ancho (300 mil) (24p, 1.27 mm) | GAL22V10D-15LP (Lattice, DIP-24), GAL22V10D-25LP, ATF22V10C-15PU (Microchip, DIP-24), ATF22V10CQZ-20PU (bajo consumo) | media |
 | **Contador de décadas asíncrono (÷2 y ÷5) 7490**<br><sub>`ic-74xx90`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | 74LS90, SN74LS90N, 74HC390 (alternativa CMOS doble) | muy alta |
 | **Cuádruple compuerta AND de 2 entradas 7408**<br><sub>`ic-74xx08`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | 74LS08, 74HC08, 74HCT08, SN74LS08N (DIP), SN74HC08N (DIP), 74HC08D (SOIC) | muy alta |
 | **Cuádruple compuerta NAND de 2 entradas 7400**<br><sub>`ic-74xx00`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | 74LS00, 74HC00, 74HCT00, SN74LS00N (DIP), SN74HC00N (DIP), 74HC00D (SOIC) | muy alta |
@@ -464,9 +514,11 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Contador divisor entre 12 (÷2 y ÷6) 7492**<br><sub>`ic-74xx92`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | 74LS92 | media |
 | **Contador síncrono ascendente/descendente BCD (década) 74190**<br><sub>`ic-74xx190`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | 74LS190, 74HC190, SN74LS190N (DIP), SN74HC190N (DIP), 74HC190D (SOIC) | media |
 | **Contador síncrono ascendente/descendente binario de 4 bits 74191**<br><sub>`ic-74xx191`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | 74LS191, 74HC191, SN74LS191N (DIP), SN74HC191N (DIP), 74HC191D (SOIC) | media |
+| **Contador síncrono de década (BCD) con carga 74160 / 74162**<br><sub>`ic-74xx160`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | 74LS160, 74HC160, 74LS162, SN74LS160AN (DIP) | media |
 | **Cuádruple buffer de 3 estados (habilitación en alto) 74126**<br><sub>`ic-74xx126`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | 74LS126, 74HC126, SN74LS126N (DIP), SN74HC126N (DIP), 74HC126D (SOIC) | media |
 | **Cuádruple compuerta XNOR de 2 entradas 74266 / 74HC7266**<br><sub>`ic-74xx266`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | 74LS266 (colector abierto), 74HC7266 (totem-pole), CD4077 (equivalente CMOS 4000) | media |
 | **Cuádruple flip-flop D con clear (salidas Q y /Q) 74175**<br><sub>`ic-74xx175`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | 74LS175, 74HC175, SN74LS175N (DIP), SN74HC175N (DIP), 74HC175D (SOIC) | media |
+| **Cuádruple latch /S-/R 74279**<br><sub>`ic-74xx279`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | 74LS279, 74HC279, SN74LS279AN (DIP) | media |
 | **Cuádruple latch biestable tipo D 7475**<br><sub>`ic-74xx75`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | 74LS75, SN74LS75N, 74HC75 | media |
 | **Decodificador BCD a decimal (1 de 10) 7442**<br><sub>`ic-74xx42`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | 74LS42, 74HC42, SN74LS42N (DIP), SN74HC42N (DIP), 74HC42D (SOIC) | media |
 | **Decodificador/demultiplexor 4 a 16 líneas 74154**<br><sub>`ic-74xx154`</sub> | THT/SMD | DIP-24 (PDIP, 600 mil) (24p, 2.54 mm, filas 15.24 mm); SOIC-24 ancho (300 mil) (24p, 1.27 mm) | 74LS154, 74HC154, SN74LS154N (DIP), SN74HC154N (DIP), 74HC154D (SOIC) | media |
@@ -478,8 +530,10 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Flip-flop D octal con clear 74273**<br><sub>`ic-74xx273`</sub> | THT/SMD | DIP-20 (PDIP, 300 mil) (20p, 2.54 mm, filas 7.62 mm); SOIC-20 ancho (300 mil) (20p, 1.27 mm) | 74LS273, 74HC273, SN74LS273N (DIP), SN74HC273N (DIP), 74HC273D (SOIC) | media |
 | **Flip-flop D octal de 3 estados (pinout de flujo) 74574**<br><sub>`ic-74xx574`</sub> | THT/SMD | DIP-20 (PDIP, 300 mil) (20p, 2.54 mm, filas 7.62 mm); SOIC-20 ancho (300 mil) (20p, 1.27 mm) | 74LS574, 74HC574, 74HCT574, SN74LS574N (DIP), SN74HC574N (DIP), 74HC574D (SOIC) | media |
 | **Flip-flop D octal de 3 estados 74374**<br><sub>`ic-74xx374`</sub> | THT/SMD | DIP-20 (PDIP, 300 mil) (20p, 2.54 mm, filas 7.62 mm); SOIC-20 ancho (300 mil) (20p, 1.27 mm) | 74LS374, 74HC374, 74HCT374, SN74LS374N (DIP), SN74HC374N (DIP), 74HC374D (SOIC) | media |
+| **Generador/verificador de paridad de 9 bits 74280**<br><sub>`ic-74xx280`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | 74LS280, 74HC280, SN74LS280N (DIP) | media |
 | **Multivibrador monoestable 74121**<br><sub>`ic-74xx121`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | SN74121N (TTL estándar), 74LS121 (raro) | media |
 | **Registro D de 4 bits con salidas de 3 estados 74173**<br><sub>`ic-74xx173`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | 74LS173, 74HC173, SN74LS173N (DIP), SN74HC173N (DIP), 74HC173D (SOIC) | media |
+| **Registro de desplazamiento de 4 bits con acceso paralelo 7495**<br><sub>`ic-74xx95`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | 74LS95 (SN74LS95BN / DM74LS95BN, DIP-14) | media |
 | **Registro de desplazamiento de 8 bits PISO síncrono con clear 74166**<br><sub>`ic-74xx166`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | 74LS166, 74HC166, SN74LS166N (DIP), SN74HC166N (DIP), 74HC166D (SOIC) | media |
 | **Registro de desplazamiento universal bidireccional de 4 bits 74194**<br><sub>`ic-74xx194`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | 74LS194, 74HC194, SN74LS194N (DIP), SN74HC194N (DIP), 74HC194D (SOIC) | media |
 | **Sumador binario completo de 4 bits 7483**<br><sub>`ic-74xx83`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | 74LS83A | media |
@@ -491,6 +545,8 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **EPROM borrable por UV 27C256**<br><sub>`ic-27c256`</sub> | THT | DIP-28 ancho (600 mil) (28p, 2.54 mm, filas 15.24 mm) | 27C256 (32 KB), 27C512 (64 KB: pin 1 = A15, pin 22 = /OE/VPP), 27C64 (8 KB) | media |
 | **Memoria EEPROM Microwire 93C46**<br><sub>`ic-93c46`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | 93C46 (1 Kbit), 93C56 (2 Kbit), 93C66 (4 Kbit), 93C86 (16 Kbit) | media |
 | **Memoria flash SPI W25Qxx / EEPROM SPI 25LCxxx**<br><sub>`ic-w25q32`</sub> | THT/SMD | SOIC-8 (150 mil, sufijo SN) (8p, 1.27 mm, filas 5.4 mm); SOIC-8 ancho (208 mil, sufijo SS) (8p, 1.27 mm); DIP-8 (8p, 2.54 mm, filas 7.62 mm) | W25Q16 (2 MB), W25Q32 (4 MB), W25Q64 (8 MB), W25Q128 (16 MB), 25LC256 (EEPROM 32 KB) | media |
+| **Memoria SRAM 6116 (2K x 8)**<br><sub>`ic-6116`</sub> | THT | DIP-24 ancho (600 mil) (24p, 2.54 mm, filas 15.24 mm) | HM6116P-2 (120 ns), HM6116P-3 (150 ns), HM6116P-4 (200 ns), HM6116LP (bajo consumo) | media |
+| **Memoria SRAM 62256 (32K x 8) / 6264 (8K x 8)**<br><sub>`ic-62256`</sub> | THT/SMD | DIP-28 ancho (600 mil) (28p, 2.54 mm, filas 15.24 mm); DIP-28 (PDIP, 300 mil) (28p, 2.54 mm, filas 7.62 mm) | 62256 / HM62256LP (32K x 8, DIP-28 ancho), AS6C62256-55PCN (Alliance, DIP-28 ancho), 6264 / HM6264 (8K x 8, DIP-28: pin 1 = NC, pin 26 = CE2) | media |
 | **Microcontrolador AVR ATmega328P-PU (28 pines, el del Arduino UNO)**<br><sub>`ic-atmega328p`</sub> | THT/SMD | DIP-28 (PDIP, 300 mil) (28p, 2.54 mm, filas 7.62 mm); TQFP-32 (32p, 0.8 mm); QFN/MLF-32 (32p, 0.5 mm) | ATmega328P-PU (DIP-28) sin bootloader, ATmega328P-PU con bootloader Arduino precargado, ATmega328P-AU (TQFP-32), ATmega168A/88PA (pin-compatibles, menos memoria) | muy alta |
 | **Microcontrolador AVR ATtiny85-20PU (8 pines)**<br><sub>`ic-attiny85`</sub> | THT/SMD | DIP-8 (PDIP, 300 mil) (8p, 2.54 mm, filas 7.62 mm); SOIC-8 ancho (208 mil, -SU) (8p, 1.27 mm); QFN/MLF-20 (20p, 0.5 mm) | ATtiny85-20PU (DIP-8), ATtiny85-20SU (SOIC-8 ancho), ATtiny85V-10PU | muy alta |
 | **Microcontrolador AVR ATmega32A-PU (40 pines)**<br><sub>`ic-atmega32a`</sub> | THT/SMD | DIP-40 (PDIP, 600 mil) (40p, 2.54 mm, filas 15.24 mm); TQFP-44 (44p, 0.8 mm); QFN/MLF-44 (44p, 0.5 mm) | ATmega32A-PU (DIP-40) | alta |
@@ -506,6 +562,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Microcontrolador 8051 AT89C2051 (20 pines)**<br><sub>`ic-at89c2051`</sub> | THT/SMD | DIP-20 (PDIP, 300 mil) (20p, 2.54 mm, filas 7.62 mm); SOIC-20 ancho (300 mil) (20p, 1.27 mm) | AT89C2051-24PU (DIP-20), AT89C4051 (4 KB) | media |
 | **Microcontrolador 8051 AT89C51 / AT89S51 (40 pines)**<br><sub>`ic-at89c51`</sub> | THT/SMD | DIP-40 (PDIP, 600 mil) (40p, 2.54 mm, filas 15.24 mm); PLCC-44 (44p, 1.27 mm); TQFP-44 (44p, 0.8 mm) | AT89S51-24PU (reemplazo actual), AT89C51-24PC/PI (existencias viejas) | media |
 | **Microcontrolador ARM Cortex-M3 STM32F103C8T6 (LQFP-48) — referencia**<br><sub>`ic-stm32f103c8t6`</sub> | SMD | LQFP-48 (48p, 0.5 mm) | STM32F103C8T6 (64 KB declarados), STM32F103CBT6 (128 KB), Clones CKS32/CS32/APM32/GD32F103C8T6 | media |
+| **Microcontrolador MSP430G2553 (20 pines, ultra bajo consumo)**<br><sub>`ic-msp430g2553`</sub> | THT/SMD | DIP-20 (PDIP, 300 mil) (20p, 2.54 mm, filas 7.62 mm); TSSOP-20 (20p, 0.65 mm); TSSOP-28 (28p, 0.65 mm) | MSP430G2553IN20 (DIP-20), MSP430G2553IPW20 (TSSOP-20), MSP430G2553IPW28 (TSSOP-28) | media |
 | **Microcontrolador RISC-V CH32V003 (WCH) — referencia**<br><sub>`ic-ch32v003`</sub> | SMD | TSSOP-20 (20p, 0.65 mm); SOP-8 (8p, 1.27 mm); SOP-16 (16p, 1.27 mm); QFN-20 (20p, 0.4 mm) | CH32V003F4P6 (TSSOP-20, el más común), CH32V003J4M6 (SOP-8) | media |
 | **Microcontrolador RP2040 (Raspberry Pi, QFN-56) — referencia**<br><sub>`ic-rp2040`</sub> | SMD | QFN-56 (56p, 0.4 mm) | RP2040 (chip suelto, raro en México), RP2350A/B (sucesor, QFN-60/80) | media |
 | **Microcontrolador PIC16F628A (18 pines)**<br><sub>`ic-pic16f628a`</sub> | THT/SMD | DIP-18 (PDIP, 300 mil) (18p, 2.54 mm, filas 7.62 mm); SOIC-18 ancho (300 mil) (18p, 1.27 mm) | PIC16F628A-I/P (DIP-18), PIC16F627A (1K palabras), PIC16F628A-I/SO (SOIC-18) | muy alta |
@@ -523,6 +580,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Microcontrolador PIC16F676 (14 pines, ADC de 8 canales)**<br><sub>`ic-pic16f676`</sub> | THT/SMD | DIP-14 (PDIP, 300 mil) (14p, 2.54 mm, filas 7.62 mm); SOIC-14 (150 mil) (14p, 1.27 mm) | PIC16F676-I/P (DIP-14) | media |
 | **Microcontrolador PIC16F690 (20 pines)**<br><sub>`ic-pic16f690`</sub> | THT/SMD | DIP-20 (PDIP, 300 mil) (20p, 2.54 mm, filas 7.62 mm); SOIC-20 ancho (300 mil) (20p, 1.27 mm) | PIC16F690-I/P (DIP-20) | media |
 | **Microcontrolador PIC16F873A (28 pines)**<br><sub>`ic-pic16f873a`</sub> | THT/SMD | DIP-28 (PDIP, 300 mil) (28p, 2.54 mm, filas 7.62 mm); SOIC-28 ancho (300 mil) (28p, 1.27 mm) | PIC16F873A-I/SP (DIP-28 angosto) | media |
+| **Microcontrolador PIC16F886 (28 pines, oscilador interno)**<br><sub>`ic-pic16f886`</sub> | THT/SMD | DIP-28 (PDIP, 300 mil) (28p, 2.54 mm, filas 7.62 mm); SOIC-28 ancho (300 mil) (28p, 1.27 mm) | PIC16F886-I/SP (DIP-28), PIC16F883 (4K palabras), PIC16F882 (2K palabras) | media |
 | **Microcontrolador PIC18F4520 / PIC18F452 (40 pines)**<br><sub>`ic-pic18f4520`</sub> | THT/SMD | DIP-40 (PDIP, 600 mil) (40p, 2.54 mm, filas 15.24 mm); TQFP-44 (44p, 0.8 mm); PLCC-44 / QFN-44 (44p) | PIC18F4520-I/P (DIP-40), PIC18F452-I/P (obsoleto, aún en tiendas) | media |
 | **Referencia de voltaje ajustable TL431**<br><sub>`ic-tl431`</sub> | THT/SMD | TO-92 (3p, 1.27 mm); SOT-23-3 (3p, 0.95 mm) | TL431A (TO-92), TL431 SOT-23 | alta |
 | **Referencia de micropotencia LM385 (1.2 V / 2.5 V)**<br><sub>`ic-lm385`</sub> | THT/SMD | TO-92 (3p, 1.27 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | LM385Z-1.2, LM385Z-2.5 | media |
@@ -531,10 +589,13 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Controlador PWM TL494**<br><sub>`ic-tl494`</sub> | THT/SMD | DIP-16 (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (16p, 1.27 mm, filas 5.4 mm) | TL494CN, KA7500B (equivalente) | alta |
 | **Convertidor DC-DC MC34063 (buck/boost/inversor)**<br><sub>`ic-mc34063`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | MC34063AP (DIP-8), MC34063A SOP-8 | alta |
 | **Regulador conmutado reductor LM2596 (3 A)**<br><sub>`ic-lm2596`</sub> | THT/SMD | TO-220-5 (5p, 1.7 mm); TO-263-5 (D2PAK-5) (5p, 1.7 mm) | LM2596T-ADJ (TO-220-5), LM2596S-ADJ, LM2596S-5.0, LM2596S-3.3, LM2596S-12 | alta |
+| **Controlador PWM SG3524 / LM3524**<br><sub>`ic-sg3524`</sub> | THT/SMD | DIP-16 (PDIP, 300 mil) (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (150 mil) (16p, 1.27 mm) | SG3524N (DIP-16), LM3524N, KA3524 | media |
 | **Controlador PWM SG3525**<br><sub>`ic-sg3525`</sub> | THT/SMD | DIP-16 (16p, 2.54 mm, filas 7.62 mm); SOIC-16 (16p, 1.27 mm, filas 5.4 mm) | SG3525AN | media |
 | **Convertidor elevador MT3608 (chip SOT-23-6)**<br><sub>`ic-mt3608`</sub> | SMD | SOT-23-6 (6p, 0.95 mm) | MT3608 (marcado B628) | media |
 | **Convertidor elevador XL6009 (chip TO-263-5)**<br><sub>`ic-xl6009`</sub> | SMD | TO-263-5 (D2PAK-5) (5p, 1.7 mm) | XL6009E1 | media |
+| **Convertidor offline VIPer22A / VIPer12A (fuente conmutada)**<br><sub>`ic-viper22a`</sub> | THT/SMD | DIP-8 (PDIP, 300 mil) (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (150 mil) (8p, 1.27 mm) | VIPer22A (DIP-8), VIPer12A (DIP-8, menor corriente, mismo pinout), VIPer22AS (SO-8) | media |
 | **Convertidor reductor 5 A XL4015 (chip TO-263-5)**<br><sub>`ic-xl4015`</sub> | SMD | TO-263-5 (D2PAK-5) (5p, 1.7 mm) | XL4015E1 | media |
+| **Interruptor offline para fuente conmutada TNY264 / TNY266 / TNY268 (TinySwitch-II)**<br><sub>`ic-tny26x`</sub> | THT/SMD | DIP-8B (PDIP de 8 posiciones sin pin 6) (7p, 2.54 mm, filas 7.62 mm); SMD-8B (sufijo G/GN) (7p, 2.54 mm) | TNY264PN, TNY266PN, TNY267PN, TNY268PN | media |
 | **Inversor de voltaje por bomba de carga ICL7660**<br><sub>`ic-icl7660`</sub> | THT/SMD | DIP-8 (8p, 2.54 mm, filas 7.62 mm); SOIC-8 (8p, 1.27 mm, filas 5.4 mm) | ICL7660 (1.5–10 V), ICL7660S (hasta 12 V), MAX1044 | media |
 | **Reguladores conmutados reductores LM2576 (3 A) / LM2575 (1 A)**<br><sub>`ic-lm2576-lm2575`</sub> | THT/SMD | TO-220-5 (5p, 1.7 mm); TO-263-5 (D2PAK-5) (5p, 1.7 mm) | LM2575-5.0 / -ADJ (1 A), LM2576-5.0 / -12 / -ADJ (3 A), LM2576HV (hasta 60 V) | media |
 | **Regulador ajustable positivo LM317 (TO-220)**<br><sub>`ic-lm317t`</sub> | THT/SMD | TO-220-3 (3p, 2.54 mm); SOT-223 (4p, 2.3 mm, filas 6.3 mm) | LM317T (TO-220, 1.5 A), LM317 en SOT-223 / D2PAK | muy alta |
@@ -566,6 +627,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Adaptador USB a TTL serie CP2102**<br><sub>`brd-usb-serial-cp2102`</sub> | modulo | Header 1x6 (6p, 2.54 mm) | USB-A, Micro-USB | alta |
 | **Adaptador USB a TTL serie FT232RL (FTDI)**<br><sub>`brd-usb-serial-ft232rl`</sub> | modulo | Header 1x6 (orden FTDI) (6p, 2.54 mm) | Mini-USB, USB-C | alta |
 | **Adaptador / cable USB a TTL PL2303HX**<br><sub>`brd-usb-serial-pl2303`</sub> | modulo | Header 1x5 o cable de 4 hilos (5p, 2.54 mm) | Módulo USB-A, Cable de 4 hilos | media |
+| **Adaptador USB para XBee (XBee Explorer / XBee USB Adapter)**<br><sub>`brd-xbee-explorer-usb`</sub> | modulo | Zócalo para XBee 2x 1x10 hembra paso 2.0 mm (20p, 2.0 mm, filas 22.0 mm) | Con FT232RL / FT231X, Con CH340, Con botón de reset | media |
 | **Arduino Mega 2560 R3 compatible (clon CH340)**<br><sub>`brd-arduino-mega-2560-clon-ch340`</sub> | modulo | Placa formato Arduino Mega (86p, 2.54 mm, filas 48.26 mm) | CH340G, Con cable USB | muy alta |
 | **Arduino Nano V3 compatible (clon CH340, mini-USB)**<br><sub>`brd-arduino-nano-clon-ch340`</sub> | modulo | Nano DIP-30 (2x15) (30p, 2.54 mm, filas 15.24 mm) | Headers soldados, Headers sin soldar, Con cable mini-USB | muy alta |
 | **Arduino UNO R3 compatible (clon CH340, ATmega328P DIP)**<br><sub>`brd-arduino-uno-r3-clon-ch340-dip`</sub> | modulo | Placa formato Arduino UNO R3 (32p, 2.54 mm, filas 48.26 mm) | CH340G + cristal 12 MHz, Con cable USB-B | muy alta |
@@ -588,6 +650,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Base de expansión para ESP32 DevKit 30 pines**<br><sub>`brd-base-esp32-30p`</sub> | modulo | Zócalo hembra 2x15 + tiras G-V-S (30p, 2.54 mm, filas 25.4 mm) | 30 pines, 38 pines, Con borneras de tornillo | alta |
 | **Base de expansión para NodeMCU v3 (Lolin)**<br><sub>`brd-base-nodemcu-v3`</sub> | modulo | Zócalo hembra 2x15 + tiras G-V-S (30p, 2.54 mm, filas 27.94 mm) | Para v3 (Lolin), Doble zócalo v2/v3 | alta |
 | **Nano I/O Shield / placa de expansión para Arduino Nano**<br><sub>`brd-shield-nano-io`</sub> | modulo | Zócalo hembra 2x15 (30p, 2.54 mm, filas 15.24 mm) | Con tiras G-V-S, Con borneras de tornillo | alta |
+| **Placa de extensión GPIO T-Cobbler de 40 pines para Raspberry Pi (con cable plano)**<br><sub>`brd-rpi-t-cobbler`</sub> | modulo | Placa en T: conector IDC macho 2x20 + 2 filas de pines 1x20 hacia el protoboard (40p, 2.54 mm) | Tipo T 40 pines con cable, Tipo recto (Cobbler) 40 pines, Versión de 26 pines (Raspberry Pi 1) | alta |
 | **ESP32 DevKit V1 30 pines (DOIT)**<br><sub>`brd-esp32-devkit-v1-30p`</sub> | modulo | 2x15 pines (30p, 2.54 mm, filas 25.4 mm) | Micro-USB + CP2102, USB-C + CH340C, Headers soldados | muy alta |
 | **ESP32 DevKitC 38 pines (ESP32-WROOM-32)**<br><sub>`brd-esp32-devkitc-38p`</sub> | modulo | 2x19 pines (38p, 2.54 mm, filas 25.4 mm) | CP2102, CH340C, Micro-USB, USB-C, WROOM-32 / WROOM-32U (antena externa) | alta |
 | **ESP32-C3 SuperMini**<br><sub>`brd-esp32-c3-supermini`</sub> | modulo | 2x8 pines (16p, 2.54 mm, filas 15.24 mm) | Con headers, Sin headers | alta |
@@ -595,11 +658,16 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **ESP32-S3 DevKitC-1 (N8R2 / N16R8)**<br><sub>`brd-esp32-s3-devkitc-1`</sub> | modulo | 2x22 pines (44p, 2.54 mm) | N8R2, N8R8, N16R8, Clones con CH343/CH340 | alta |
 | **ESP32-C6 (DevKitC-1 / SuperMini)**<br><sub>`brd-esp32-c6-devkit`</sub> | modulo | Headers 2.54 mm (según placa) (2.54 mm) | DevKitC-1 (N8), SuperMini | media |
 | **Heltec WiFi LoRa 32 V3 (ESP32-S3 + SX1262 + OLED)**<br><sub>`brd-heltec-wifi-lora-32-v3`</sub> | modulo | 2x18 pines (36p, 2.54 mm) | 863–928 MHz (usar 915 MHz en México), 433–510 MHz | media |
+| **LILYGO TTGO T-Display ESP32 (pantalla IPS 1.14" ST7789)**<br><sub>`brd-ttgo-t-display`</sub> | modulo | Placa con dos filas de pines a 2.54 mm (2.54 mm) | 4 MB flash, 16 MB flash, Versión con CH9102 o CP2104 | media |
 | **Wemos D1 R32 (ESP32 en formato UNO)**<br><sub>`brd-wemos-d1-r32`</sub> | modulo | Placa formato UNO R3 (D1 R32) (32p, 2.54 mm, filas 48.26 mm) | CH340G | media |
 | **NodeMCU v2 ESP8266 (Amica, CP2102)**<br><sub>`brd-nodemcu-v2-cp2102`</sub> | modulo | 2x15 pines (30p, 2.54 mm, filas 22.86 mm) | CP2102, ESP-12E o ESP-12F | muy alta |
 | **NodeMCU v3 ESP8266 (Lolin, CH340)**<br><sub>`brd-nodemcu-v3-lolin-ch340`</sub> | modulo | 2x15 pines (30p, 2.54 mm, filas 27.94 mm) | CH340G, ESP-12E/F | muy alta |
 | **Wemos / LOLIN D1 mini (ESP8266)**<br><sub>`brd-wemos-d1-mini`</sub> | modulo | 2x8 pines (16p, 2.54 mm, filas 22.86 mm) | v3 (CH340G), v4 (USB-C), D1 mini Pro (16 MB, antena externa), Clones | alta |
 | **Wemos D1 R2 (ESP8266 en formato UNO)**<br><sub>`brd-wemos-d1-r2`</sub> | modulo | Placa formato UNO R3 (D1 R2) (32p, 2.54 mm, filas 48.26 mm) | CH340G, Clones | media |
+| **Tarjeta de desarrollo FPGA Altera Cyclone IV EP4CE6 (placa mínima / kit de prácticas)**<br><sub>`brd-fpga-cyclone-iv-ep4ce6`</sub> | modulo | Placa con headers de E/S a 2.54 mm (distribución variable según fabricante) (2.54 mm) | Placa mínima (FPGA + reloj + EPCS + headers), Kit con periféricos (LEDs, botones, 4 dígitos, VGA, PS/2, RS-232), Kit con caja, USB Blaster y control remoto IR | media |
+| **Kit de inicio para Arduino UNO R3 (genérico: básico, Super Starter y RFID)**<br><sub>`brd-kit-inicio-arduino-uno`</sub> | n/a | — | Kit básico (UNO, protoboard 400/830, LEDs, resistencias, botones, buzzer, potenciómetro, LDR), Super Starter Kit (además LCD 1602, servo SG90, 28BYJ-48 + ULN2003, HC-SR04, DHT11, control y receptor IR, display de 7 segmentos, 74HC595, relevador, teclado 4x4, joystick), Kit RFID (agrega lector RC522 con tarjeta y llavero), Versión con Mega 2560 (Mega starter kit) | muy alta |
+| **Kit chasis de robot (carro inteligente) 2WD / 4WD para Arduino**<br><sub>`brd-kit-robot-chasis-2wd-4wd`</sub> | n/a | — | 2WD acrílico (2 motores TT + rueda loca), 4WD acrílico de 2 niveles, Kit completo (chasis + UNO + L298N + HC-SR04 + sensores de línea + HC-05) | alta |
+| **Arduino Starter Kit oficial (UNO + libro de 15 proyectos)**<br><sub>`brd-arduino-starter-kit-oficial`</sub> | n/a | — | Edición en inglés (K000007), Edición en español (K040007), Edición R4 (con UNO R4) | media |
 | **BBC micro:bit V2**<br><sub>`brd-microbit-v2`</sub> | modulo | Conector de borde (edge) 25 pistas (25p, 1.27 mm) | V2.2, Kit con portapilas | media |
 | **Digispark ATtiny85 (USB)**<br><sub>`brd-digispark-attiny85`</sub> | modulo | 1x6 E/S + 1x3 alimentación (9p, 2.54 mm) | USB en PCB, Micro-USB | media |
 | **Seeed Studio XIAO (ESP32-C3 / ESP32-S3 / RP2040 / SAMD21)**<br><sub>`brd-seeed-xiao`</sub> | modulo | 2x7 castellated (14p, 2.54 mm, filas 15.24 mm) | XIAO SAMD21, XIAO RP2040, XIAO ESP32C3, XIAO ESP32S3 (Sense con cámara), XIAO nRF52840, XIAO ESP32C6 | media |
@@ -613,6 +681,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Programador PICkit 2 (clon)**<br><sub>`brd-prog-pickit2-clon`</sub> | modulo | Header ICSP 1x6 hembra (6p, 2.54 mm) | Solo programador, Con base de programación ZIF | media |
 | **Programador PICkit 3 (clon)**<br><sub>`brd-prog-pickit3-clon`</sub> | modulo | Header ICSP 1x6 hembra (6p, 2.54 mm) | Clon, Con adaptador ZIF | media |
 | **Programador universal XGecu TL866II Plus**<br><sub>`brd-prog-tl866ii-plus`</sub> | modulo | Zócalo ZIF 40 + ICSP (40p, 2.54 mm, filas 15.24 mm) | TL866II Plus, T48, Kit con adaptadores | media |
+| **Programador USB Blaster (clon) para FPGA/CPLD Intel-Altera**<br><sub>`brd-prog-usb-blaster`</sub> | modulo | Caja con cable USB y cable plano IDC hembra 2x5 (10p, 2.54 mm, filas 2.54 mm) | Clon económico (caja de plástico), Versión 'Rev. C' de alta velocidad | media |
 | **Programador/depurador PICkit 4 (MPLAB)**<br><sub>`brd-prog-pickit4`</sub> | modulo | Header 1x8 hembra (8p, 2.54 mm) | Original | media |
 | **Raspberry Pi Pico (RP2040)**<br><sub>`brd-rpi-pico`</sub> | modulo | Pico 2x20 castellated/through-hole (40p, 2.54 mm, filas 17.78 mm) | Pico, Pico H (headers soldados y conector de depuración JST) | alta |
 | **Raspberry Pi Pico W / WH (RP2040 + Wi-Fi)**<br><sub>`brd-rpi-pico-w`</sub> | modulo | Pico 2x20 castellated/through-hole (40p, 2.54 mm, filas 17.78 mm) | Pico W, Pico WH (headers soldados) | alta |
@@ -628,16 +697,21 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Shield de prototipos (Proto Shield) para UNO**<br><sub>`brd-shield-protoshield-uno`</sub> | modulo | Shield formato UNO R3 (32p, 2.54 mm, filas 48.26 mm) | Con mini protoboard 170 puntos, Sin protoboard, Versión para Mega | alta |
 | **Data Logger Shield (SD + RTC DS1307)**<br><sub>`brd-shield-data-logger`</sub> | modulo | Shield formato UNO R3 (32p, 2.54 mm, filas 48.26 mm) | DS1307 (clon Adafruit v1 / Deek-Robot), PCF8523 (Adafruit rev B) | media |
 | **Ethernet Shield W5100 (con microSD)**<br><sub>`brd-shield-ethernet-w5100`</sub> | modulo | Shield formato UNO R3 (32p, 2.54 mm, filas 48.26 mm) | W5100 R3 clon, W5500 (versión moderna) | media |
+| **Joystick Shield para UNO (Funduino V1.A: joystick + 6 botones)**<br><sub>`brd-shield-joystick`</sub> | modulo | Shield formato UNO R3 (32p, 2.54 mm, filas 48.26 mm) | V1.A | media |
+| **Motor Shield L298P para UNO (Arduino Motor Shield Rev3 y clones)**<br><sub>`brd-shield-motor-l298p`</sub> | modulo | Shield formato UNO R3 (32p, 2.54 mm, filas 48.26 mm) | Oficial Arduino Motor Shield Rev3, Clon L298P (pines D10/D12 y D11/D13) | media |
 | **Multi-function Shield (display 4 dígitos, botones, buzzer)**<br><sub>`brd-shield-multifuncion`</sub> | modulo | Shield formato UNO R3 (32p, 2.54 mm, filas 48.26 mm) | — | media |
 | **RAMPS 1.4 (shield para Mega 2560)**<br><sub>`brd-shield-ramps-14`</sub> | modulo | Shield formato Mega (86p, 2.54 mm, filas 48.26 mm) | RAMPS 1.4, Kit con Mega + LCD 12864 + drivers | media |
 | **STM32 Blue Pill (STM32F103C8T6)**<br><sub>`brd-stm32-blue-pill`</sub> | modulo | 2x20 pines + SWD 1x4 (44p, 2.54 mm, filas 15.24 mm) | STM32F103C8T6 (64 KB), Clones con CKS32/CS32F103 o STM32F103C6 | alta |
 | **STM32 Black Pill (STM32F401/F411, WeAct)**<br><sub>`brd-stm32-black-pill`</sub> | modulo | 2x20 pines + SWD 1x4 (44p, 2.54 mm, filas 15.24 mm) | STM32F401CCU6 (84 MHz, 256 KB / 64 KB), STM32F411CEU6 (100 MHz, 512 KB / 128 KB), Con flash SPI opcional | media |
+| **STM32 Nucleo-64 (NUCLEO-F401RE / F411RE / F446RE / L476RG)**<br><sub>`brd-stm32-nucleo-64`</sub> | modulo | Placa Nucleo-64: headers Arduino UNO R3 hembra + 2 conectores ST morpho macho 2x19 (2.54 mm, filas 2.54 mm) | NUCLEO-F401RE, NUCLEO-F411RE, NUCLEO-F446RE, NUCLEO-L476RG, NUCLEO-G431RB | media |
 
 <a id="modulos_comunicacion"></a>
 ## Módulos de comunicación
 
 | Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
 |---|---|---|---|---|
+| **Antena de 2.4 GHz con conector SMA / RP-SMA (Wi-Fi, Bluetooth, nRF24, Zigbee)**<br><sub>`com-antena-2-4ghz-sma`</sub> | panel | Antena con conector SMA o RP-SMA macho (1p) | 2 dBi, 3 dBi, 5 dBi, SMA macho, RP-SMA macho, Recta o articulada, Con pigtail U.FL (IPEX) a SMA hembra | alta |
+| **Antena helicoidal de resorte 315 / 433 / 868 / 915 MHz (para soldar)**<br><sub>`com-antena-helicoidal-433`</sub> | THT | Resorte con terminal recta para soldar (1p) | 315 MHz, 433 MHz, 868 MHz, 915 MHz, Versión con conector SMA (antena de goma corta) | alta |
 | **Módulo Bluetooth HC-05 (maestro/esclavo)**<br><sub>`com-bt-hc05`</sub> | modulo | Header 1x6 (placa base ZS-040) (6p, 2.54 mm) | HC-05 ZS-040, HC-05 de 6 pines con botón | muy alta |
 | **Módulo Bluetooth HC-06 (esclavo)**<br><sub>`com-bt-hc06`</sub> | modulo | Header 1x4 (4p, 2.54 mm) | 4 pines, 6 pines | alta |
 | **Módulo Bluetooth JDY-31 (SPP, compatible HC-06)**<br><sub>`com-bt-jdy31`</sub> | modulo | Header 1x6 (6p, 2.54 mm) | — | media |
@@ -653,11 +727,15 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Módulo LoRa 915 MHz RFM95W / Ra-01H (SX1276)**<br><sub>`com-lora-rfm95w-915`</sub> | modulo | SMD 16 pads (16p, 2.0 mm) | RFM95W 915 MHz, Ra-01H, Breakout con SMA | media |
 | **Módulo LoRa Ra-02 (SX1278, 433 MHz)**<br><sub>`com-lora-ra02-sx1278`</sub> | modulo | SMD medio-barreno 16 pads (16p, 2.0 mm) | Ra-02 (433 MHz), Ra-01 (antena resorte) | media |
 | **Módulo LoRa UART EBYTE E32 (433/915 MHz)**<br><sub>`com-lora-e32`</sub> | modulo | Header 1x7 + SMA (7p, 2.54 mm) | E32-433T20D, E32-915T20D, E220 (LLCC68, nueva generación) | media |
+| **Módulo receptor de radio FM TEA5767 / RDA5807M (I2C)**<br><sub>`com-fm-tea5767`</sub> | modulo | Placa TEA5767 con header 1x4 y dos jacks de 3.5 mm (4p, 2.54 mm); Módulo RDA5807M (RRD-102) de castellaciones (10p) | TEA5767 en placa con jacks, RDA5807M (RRD-102) | media |
 | **Transceptor 2.4 GHz nRF24L01+ (antena PCB)**<br><sub>`com-nrf24l01`</sub> | modulo | Header 2x4 (8p, 2.54 mm, filas 2.54 mm) | Antena PCB, Versión SMD mini | muy alta |
 | **Adaptador de 5 V a 3.3 V para nRF24L01**<br><sub>`com-nrf24l01-adaptador`</sub> | modulo | Zócalo 2x4 + header 1x8 (16p, 2.54 mm, filas 2.54 mm) | — | alta |
+| **Control inalámbrico tipo PS2 (2.4 GHz) con receptor para Arduino**<br><sub>`com-control-ps2-inalambrico`</sub> | modulo | Receptor con conector PS2 de 9 contactos o con header de pines a 2.54 mm (2.54 mm) | Control + receptor, Con adaptador a pines dupont | alta |
 | **Transceptor nRF24L01+PA+LNA (antena SMA)**<br><sub>`com-nrf24l01-pa-lna`</sub> | modulo | Header 2x4 (8p, 2.54 mm, filas 2.54 mm) | Con antena 2 dBi, Con blindaje metálico | alta |
 | **Receptor RF 433 MHz XY-MK-5V**<br><sub>`com-rf433-xy-mk-5v-rx`</sub> | modulo | Header 1x4 (4p, 2.54 mm) | 433 MHz, 315 MHz | muy alta |
 | **Transmisor RF 433 MHz FS1000A**<br><sub>`com-rf433-fs1000a-tx`</sub> | modulo | Header 1x3 (3p, 2.54 mm) | 433 MHz, 315 MHz | muy alta |
+| **Kit control remoto RF de 4 canales con receptor decodificador (PT2262/PT2272, 315/433 MHz)**<br><sub>`com-rf-control-4ch-pt2272`</sub> | modulo | Receptor con header macho 1x7 a 2.54 mm (7p, 2.54 mm) | 315 MHz, 433 MHz, M4 (momentáneo), L4 (enclavado), T4 (conmutado, SC2272) | alta |
+| **Receptor RF 433 MHz con relevador (1/2/4 canales, código de aprendizaje EV1527) y control**<br><sub>`com-rf433-receptor-relevador`</sub> | modulo | Placa con borneras de tornillo | 1 canal 12 V, 2 canales 12 V, 4 canales 12 V, 1 canal 5 V, 1 canal 127/220 V AC | alta |
 | **Kit transmisor/receptor RF 315 MHz**<br><sub>`com-rf315-kit`</sub> | modulo | TX 1x3 / RX 1x4 (7p, 2.54 mm) | 315 MHz | media |
 | **Receptor superheterodino 433 MHz RXB6**<br><sub>`com-rf433-rxb6`</sub> | modulo | Header 1x8 (8p, 2.54 mm) | 433 MHz, 315 MHz | media |
 | **Transceptor serie HC-12 (SI4463, 433 MHz)**<br><sub>`com-hc12-433`</sub> | modulo | Header 1x5 + IPEX/antena resorte (5p, 2.54 mm) | Antena resorte, Antena SMA por IPEX | media |
@@ -667,11 +745,13 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Lector RFID 125 kHz RDM6300**<br><sub>`com-rfid-rdm6300`</sub> | modulo | Headers P1 1x5, P2 1x2, P3 1x3 (10p, 2.54 mm) | — | media |
 | **Módulo NFC/RFID PN532 V3**<br><sub>`com-nfc-pn532`</sub> | modulo | Header 1x4 (I2C/HSU) + 1x8 (SPI) (12p, 2.54 mm) | V3 rojo, Mini PN532 azul | media |
 | **Tarjetas y llaveros RFID 125 kHz (EM4100 / T5577)**<br><sub>`com-rfid-tags-125khz`</sub> | n/a | — | Tarjeta CR80, Llavero, T5577 regrabable | media |
+| **Adaptador USB a RS-485 (CH340 / FT232 / CP2102)**<br><sub>`com-usb-rs485`</sub> | modulo | Dongle USB-A con bornera de 2 o 3 tornillos | CH340, FT232RL, CP2102, Con o sin terminal GND, Versión aislada | alta |
 | **Módulo RS-485 MAX485 (TTL a RS-485)**<br><sub>`com-rs485-max485`</sub> | modulo | Headers 1x4 + 1x4 en extremos + bornera 2 (10p, 2.54 mm) | MAX485, Versión automática sin DE/RE (XY-017/HW-519) | alta |
 | **Módulo CAN bus MCP2515 + TJA1050**<br><sub>`com-can-mcp2515`</sub> | modulo | Header 1x7 + bornera 2 + jumper J1 (7p, 2.54 mm) | Cristal 8 MHz, Cristal 16 MHz | media |
 | **Módulo TTL a RS-232 MAX3232 (DB9)**<br><sub>`com-rs232-max3232`</sub> | modulo | Header 1x4 + DB9 (4p, 2.54 mm) | DB9 hembra, DB9 macho | media |
 | **Módulo Wi-Fi ESP-01 / ESP-01S (ESP8266)**<br><sub>`com-esp-01`</sub> | modulo | Header 2x4 macho (8p, 2.54 mm, filas 2.54 mm) | ESP-01 (azul, 512 KB–1 MB), ESP-01S (negro, 1 MB, pull-ups integrados) | muy alta |
 | **Módulo ESP-12E / ESP-12F (ESP8266)**<br><sub>`com-esp-12f`</sub> | modulo | SMD castellated 22 pads (22p, 2.0 mm, filas 16.0 mm) | ESP-12E, ESP-12F (antena mejorada), Placa adaptadora blanca | alta |
+| **Módulo relevador Wi-Fi para ESP-01 / ESP-01S (ESP8266 Relay)**<br><sub>`com-esp01-relevador`</sub> | modulo | Zócalo hembra 2x4 para ESP-01 + pines de alimentación + bornera de 3 tornillos (2.54 mm, filas 2.54 mm) | ESP-01S Relay v1.0 (GPIO0, directo), ESP8266 Relay con STC15F104 (comandos serie A0 01 01 A2 / A0 01 00 A1), Placas de 2 y 4 relevadores con ESP-01 o ESP-12F | alta |
 | **Módulo ESP32-WROOM-32 / WROOM-32E (suelto)**<br><sub>`com-esp32-wroom-32`</sub> | modulo | SMD castellated 38 pads + pad térmico (39p, 1.27 mm) | WROOM-32E 4 MB, WROOM-32E 8/16 MB, WROOM-32UE (conector IPEX) | media |
 | **Módulo Digi XBee S2C (Zigbee / 802.15.4)**<br><sub>`com-xbee-s2c`</sub> | modulo | THT 2x10 paso 2.0 mm (20p, 2.0 mm, filas 22.0 mm) | XBee S2C, XBee Pro S2C, Antena PCB / wire / RP-SMA / U.FL | media |
 
@@ -687,6 +767,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Sensor de lluvia FC-37 / YL-83 (placa detectora + LM393)**<br><sub>`sen-lluvia-fc37`</sub> | modulo | Placa de control con header 1x4 (VCC, GND, DO, AO) + 2 pines a la placa detectora (4p, 2.54 mm); Placa detectora con 2 pines (2p, 2.54 mm) | FC-37, YL-83, con relevador (UNIT) | alta |
 | **Sensor de nivel de agua tipo tira (Water Sensor)**<br><sub>`sen-nivel-agua-tira`</sub> | modulo | Módulo con header 1x3 a 2.54 mm (3p, 2.54 mm) | Water Sensor rojo | alta |
 | **Módulo sensor de pH PH-4502C con electrodo BNC**<br><sub>`sen-ph-4502c`</sub> | modulo | Placa con header 1x6 a 2.54 mm + conector BNC (6p, 2.54 mm) | PH-4502C + E-201-C | media |
+| **Sensor de nivel de líquido sin contacto XKC-Y25 (capacitivo, adhesivo)**<br><sub>`sen-nivel-xkc-y25`</sub> | panel | Cuerpo plástico con cara adhesiva y cable de 4 hilos (o conector) (4p) | XKC-Y25-V (salida de voltaje), XKC-Y25-NPN, XKC-Y25-PNP, XKC-Y25-T12V (5–12 V) | media |
 | **Sensor de turbidez del agua (sonda + placa adaptadora)**<br><sub>`sen-turbidez`</sub> | modulo | Placa adaptadora con header 1x3 a 2.54 mm + cable a la sonda (3p, 2.54 mm) | SEN0189 | media |
 | **Sensor TDS de calidad de agua (sólidos disueltos totales)**<br><sub>`sen-tds`</sub> | modulo | Placa con header 1x3 (o conector PH2.0) + sonda con conector de 2 pines (3p, 2.54 mm) | TDS v1.0 | media |
 | **Lector de huella dactilar óptico AS608 / R307 / FPM10A**<br><sub>`sen-huella-as608`</sub> | modulo | Módulo con conector de 6 pines de paso pequeño (≈1.0–1.25 mm) y cable (6p) | AS608, R307, FPM10A | alta |
@@ -694,25 +775,35 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Sensor de pulso cardiaco óptico (Pulse Sensor / XD-58C)**<br><sub>`sen-pulso-cardiaco`</sub> | modulo | Disco Ø16 mm con 3 cables o pines (3p, 2.54 mm) | XD-58C, XD-58D | alta |
 | **Módulo de electrocardiograma (ECG) AD8232**<br><sub>`sen-ad8232`</sub> | modulo | Módulo con header 1x6 a 2.54 mm + jack 3.5 mm para electrodos (6p, 2.54 mm) | AD8232 + cable 3 electrodos | media |
 | **Oxímetro y sensor de pulso MAX30100 (GY-MAX30100)**<br><sub>`sen-max30100`</sub> | modulo | Módulo con header 1x7 a 2.54 mm (7p, 2.54 mm) | GY-MAX30100 | media |
+| **Sensor muscular EMG (Muscle Sensor V3 / MyoWare) con electrodos**<br><sub>`sen-emg-muscular`</sub> | modulo | Placa con pines/borneras de alimentación y señal + cable de electrodos (2.54 mm) | Muscle Sensor V3 (alimentación ±), MyoWare (alimentación sencilla), Electrodos desechables de repuesto | media |
+| **Módulo de cámara para Raspberry Pi (OV5647 v1.3, Camera Module 2 IMX219, Camera Module 3 IMX708)**<br><sub>`sen-camara-rpi`</sub> | modulo | Placa de cámara con conector FFC de 15 contactos a 1.0 mm (15p, 1.0 mm) | OV5647 5 MP (genérica v1.3), Camera Module 2 (IMX219, 8 MP), Camera Module 3 (IMX708, 12 MP, autofoco), Versiones NoIR, Gran angular / lente M12 | alta |
+| **Módulo de cámara VGA OV7670 (sin FIFO / con FIFO AL422B)**<br><sub>`sen-camara-ov7670`</sub> | modulo | Sin FIFO: header 2x9 a 2.54 mm (18p, 2.54 mm, filas 2.54 mm); Con FIFO AL422B: header 2x11 a 2.54 mm (22p, 2.54 mm, filas 2.54 mm) | Sin FIFO (18 pines), Con FIFO AL422B (22 pines) | media |
 | **Sensor de corriente por efecto Hall ACS712 (5 A / 20 A / 30 A)**<br><sub>`sen-acs712`</sub> | modulo | Módulo con header 1x3 a 2.54 mm + bornera de tornillo de 2 posiciones (3p, 2.54 mm); IC SOIC-8 (SMD) (8p, 1.27 mm) | 5 A (185 mV/A), 20 A (100 mV/A), 30 A (66 mV/A) | muy alta |
 | **Medidor de energía AC PZEM-004T v3.0 (UART/Modbus)**<br><sub>`sen-pzem-004t`</sub> | modulo | Placa con header TTL 1x4 + borneras de línea AC y transformador de corriente (4p, 2.54 mm) | 100 A con TC, 10 A con shunt interno | alta |
 | **Módulo sensor de voltaje DC 0–25 V (divisor resistivo)**<br><sub>`sen-voltaje-0-25v`</sub> | modulo | Módulo con bornera de 2 posiciones (VCC, GND de entrada) + header 1x3 a 2.54 mm (3p, 2.54 mm) | 0–25 V | alta |
 | **Sensor de corriente AC no invasivo SCT-013 (pinza)**<br><sub>`sen-sct-013`</sub> | n/a | Pinza de núcleo partido con cable ≈1 m y plug de 3.5 mm (2p) | SCT-013-000 (100 A : 50 mA), SCT-013-030 (30 A / 1 V), SCT-013-050 (50 A / 1 V) | alta |
 | **Sensor de corriente, voltaje y potencia INA219 (I2C)**<br><sub>`sen-ina219`</sub> | modulo | Módulo con header 1x6 a 2.54 mm + bornera de 2 posiciones (VIN+, VIN−) (6p, 2.54 mm) | shunt 0.1 Ω (R100) | alta |
+| **Módulo sensor de corriente AC ZMCT103C (5 A, transformador de corriente)**<br><sub>`sen-zmct103c`</sub> | modulo | Módulo con header 1x3 a 2.54 mm y transformador con orificio pasacable (3p, 2.54 mm) | Módulo 5 A con LM358, Transformador ZMCT103C suelto | media |
 | **Módulo sensor de voltaje AC ZMPT101B**<br><sub>`sen-zmpt101b`</sub> | modulo | Módulo con header 1x4 a 2.54 mm + bornera de 2 posiciones para la línea AC (4p, 2.54 mm) | ZMPT101B | media |
 | **Sensor de corriente y voltaje INA226 (I2C, 16 bits, hasta 36 V)**<br><sub>`sen-ina226`</sub> | modulo | Módulo con header de 2.54 mm (8p, 2.54 mm) | shunt R100 (0.1 Ω), shunt R010 (0.01 Ω) | media |
 | **Sensor de movimiento PIR HC-SR501**<br><sub>`sen-pir-hc-sr501`</sub> | modulo | Módulo con header macho 1x3 a 2.54 mm (3p, 2.54 mm) | HC-SR501 | muy alta |
 | **Sensor infrarrojo de obstáculos FC-51 (y KY-032)**<br><sub>`sen-ir-obstaculo-fc51`</sub> | modulo | Módulo FC-51 con header 1x3 a 2.54 mm (3p, 2.54 mm); Módulo KY-032 con header 1x4 (GND, +, OUT, EN) (4p, 2.54 mm) | FC-51, KY-032 | muy alta |
 | **Sensor ultrasónico de distancia HC-SR04**<br><sub>`sen-hc-sr04`</sub> | modulo | Módulo con header macho 1x4 a 2.54 mm (centrado en el borde inferior) (4p, 2.54 mm) | HC-SR04 (5 V) | muy alta |
 | **Sensor óptico reflectivo TCRT5000 (módulo y suelto)**<br><sub>`sen-tcrt5000`</sub> | modulo | Módulo LM393 con header 1x4 a 2.54 mm (4p, 2.54 mm); TCRT5000 suelto (THT 4 patas) (4p) | módulo 4 pines, TCRT5000 suelto | muy alta |
+| **Arreglo de 8 sensores de reflectancia QTR-8A / QTR-8RC (Pololu y compatibles)**<br><sub>`sen-qtr-8a-8rc`</sub> | modulo | Barra con header 1x11 a 2.54 mm (11p, 2.54 mm) | QTR-8A (analógica), QTR-8RC (digital RC), Clones de 8 canales | alta |
 | **Módulo seguidor de línea de 3 y 5 canales (TCRT5000)**<br><sub>`sen-seguidor-linea-multicanal`</sub> | modulo | Módulo de 5 canales con header 1x7 a 2.54 mm (7p, 2.54 mm); Módulo de 3 canales con header 1x5 a 2.54 mm (5p, 2.54 mm) | 3 canales, 5 canales | alta |
 | **Sensor de distancia láser ToF VL53L0X**<br><sub>`sen-vl53l0x`</sub> | modulo | Módulo con header 1x6 a 2.54 mm (6p, 2.54 mm) | GY-530, GY-VL53L0XV2 | alta |
 | **Sensor de movimiento por microondas (radar Doppler) RCWL-0516**<br><sub>`sen-rcwl-0516`</sub> | modulo | Módulo con 5 pines a 2.54 mm (fila en un extremo) (5p, 2.54 mm) | RCWL-0516 | alta |
+| **Sensor de proximidad inductivo LJ12A3-4-Z/BX (NPN) / LJ12A3-4-Z/BY (PNP), M12**<br><sub>`sen-inductivo-lj12a3`</sub> | panel | Cuerpo roscado M12 con 2 tuercas y cable de 3 hilos (3p) | LJ12A3-4-Z/BX (NPN NO), LJ12A3-4-Z/BY (PNP NO), LJ12A3-4-Z/AX (NPN NC), LJ18A3-8-Z/BX (M18, 8 mm) | alta |
+| **Sensor fotoeléctrico infrarrojo ajustable E18-D80NK (3–80 cm)**<br><sub>`sen-fotoelectrico-e18-d80nk`</sub> | panel | Cuerpo cilíndrico roscado de 18 mm con cable de 3 hilos (3p) | E18-D80NK (3–80 cm), E18-D50NK (3–50 cm), E3F-DS30C4 (6–36 V, M18) | alta |
 | **Sensor ultrasónico HC-SR04P (3.3–5 V)**<br><sub>`sen-hc-sr04p`</sub> | modulo | Módulo con header macho 1x4 a 2.54 mm (4p, 2.54 mm) | HC-SR04P | alta |
 | **Sensor ultrasónico impermeable JSN-SR04T**<br><sub>`sen-jsn-sr04t`</sub> | modulo | Placa de control con header/bornera 1x4 a 2.54 mm + transductor con cable (4p, 2.54 mm) | v2.0, v3.0 | alta |
+| **Mini sensor de movimiento PIR HC-SR505**<br><sub>`sen-hc-sr505`</sub> | modulo | Módulo cilíndrico con 3 pines a 2.54 mm (3p, 2.54 mm) | HC-SR505 | media |
 | **Mini sensor PIR AM312**<br><sub>`sen-am312`</sub> | modulo | Módulo con 3 pines a 2.54 mm (3p, 2.54 mm) | AM312 | media |
 | **Sensor de distancia infrarrojo Sharp GP2Y0A21YK0F (10–80 cm)**<br><sub>`sen-sharp-gp2y0a21`</sub> | modulo | Cuerpo con conector JST PH de 3 pines (paso 2.0 mm) (3p, 2.0 mm) | GP2Y0A21YK0F (10–80 cm), GP2Y0A02YK0F (20–150 cm), GP2Y0A41SK0F (4–30 cm) | media |
 | **Sensor de distancia láser ToF VL53L1X (hasta 4 m)**<br><sub>`sen-vl53l1x`</sub> | modulo | Módulo con header 1x6 a 2.54 mm (6p, 2.54 mm) | VL53L1X | media |
+| **Sensor de presencia por radar 24 GHz HLK-LD2410 / LD2410B / LD2410C**<br><sub>`sen-ld2410`</sub> | modulo | LD2410C: header 1x5 a 2.54 mm (5p, 2.54 mm) | LD2410, LD2410B (con Bluetooth), LD2410C (con Bluetooth y pines de 2.54 mm) | media |
+| **Sensor de proximidad capacitivo LJC18A3-H-Z/BX (M18, NPN, 1–10 mm)**<br><sub>`sen-capacitivo-ljc18a3`</sub> | panel | Cuerpo roscado M18 con 2 tuercas y cable de 3 hilos (3p) | LJC18A3-H-Z/BX (NPN NO), LJC18A3-H-Z/AX (NPN NC), LJC18A3-H-Z/BY (PNP NO) | media |
 | **Módulo encoder rotativo KY-040**<br><sub>`sen-encoder-ky040`</sub> | modulo | Módulo con header 1x5 a 2.54 mm (a 90°) (5p, 2.54 mm) | KY-040 | muy alta |
 | **Módulo joystick analógico KY-023**<br><sub>`sen-joystick-ky023`</sub> | modulo | Módulo con header 1x5 a 2.54 mm (a 90°) (5p, 2.54 mm) | KY-023 | muy alta |
 | **Botón táctil capacitivo TTP223**<br><sub>`sen-touch-ttp223`</sub> | modulo | Módulo con header 1x3 a 2.54 mm (3p, 2.54 mm) | TTP223 rojo, TTP223 azul | alta |
@@ -738,10 +829,12 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Sensor de gas MQ-6 (módulo)**<br><sub>`sen-mq-6`</sub> | modulo | Módulo MQ con header macho 1x4 a 2.54 mm (4p, 2.54 mm); Sensor MQ suelto de 6 patas (ver sen-mq-suelto) (6p) | MQ-6 módulo, MQ-6 suelto | media |
 | **Sensor de gas MQ-8 (módulo)**<br><sub>`sen-mq-8`</sub> | modulo | Módulo MQ con header macho 1x4 a 2.54 mm (4p, 2.54 mm); Sensor MQ suelto de 6 patas (ver sen-mq-suelto) (6p) | MQ-8 módulo, MQ-8 suelto | media |
 | **Sensor de gas MQ-9 (módulo)**<br><sub>`sen-mq-9`</sub> | modulo | Módulo MQ con header macho 1x4 a 2.54 mm (4p, 2.54 mm); Sensor MQ suelto de 6 patas (ver sen-mq-suelto) (6p) | MQ-9 módulo, MQ-9 suelto | media |
+| **Sensor láser de partículas PM1.0 / PM2.5 / PM10 Plantower PMS5003 / PMS7003**<br><sub>`sen-pms5003`</sub> | modulo | PMS5003: conector de 8 pines a 1.27 mm (8p, 1.27 mm); PMS7003: conector 2x5 a 1.27 mm (10p, 1.27 mm, filas 1.27 mm) | PMS5003, PMS7003, PMSA003 | media |
 | **Sensor óptico de polvo Sharp GP2Y1010AU0F**<br><sub>`sen-polvo-gp2y1010`</sub> | modulo | Cuerpo con conector de 6 hilos (paso pequeño ≈1.5 mm, verificar) (6p) | GP2Y1010AU0F | media |
 | **Módulo sensor de luz con fotorresistencia LDR (KY-018 / LM393)**<br><sub>`sen-ldr-modulo`</sub> | modulo | Módulo serie KY-0xx, header macho 1x3 a 2.54 mm (3p, 2.54 mm); Módulo comparador LM393, header macho 1x4 a 2.54 mm (4p, 2.54 mm) | KY-018, módulo LM393 4 pines, módulo LM393 3 pines | muy alta |
 | **Sensor de color TCS3200 / TCS230 (módulo GY-31)**<br><sub>`sen-tcs3200`</sub> | modulo | Módulo con 2 tiras de 4 pines a 2.54 mm (a los lados) (8p, 2.54 mm) | TCS3200, TCS230 | alta |
 | **Sensor de intensidad luminosa BH1750 (GY-302)**<br><sub>`sen-bh1750`</sub> | modulo | Módulo GY-302 con header 1x5 a 2.54 mm (5p, 2.54 mm) | GY-302 | alta |
+| **Módulo receptor de láser (detector de haz láser, salida digital)**<br><sub>`sen-receptor-laser`</sub> | modulo | Módulo con header 1x3 a 2.54 mm (3p, 2.54 mm) | Receptor no modulado (5 V) | media |
 | **Sensor de color RGB TCS34725 (I2C)**<br><sub>`sen-tcs34725`</sub> | modulo | Módulo con header 1x7 a 2.54 mm (7p, 2.54 mm) | TCS34725 | media |
 | **Sensor de gestos, proximidad y color APDS-9960**<br><sub>`sen-apds9960`</sub> | modulo | Módulo con header 1x6 a 2.54 mm (6p, 2.54 mm) | GY-9960-3.3 | media |
 | **Sensor de luz ultravioleta GUVA-S12SD**<br><sub>`sen-uv-guva-s12sd`</sub> | modulo | Módulo con header 1x3 a 2.54 mm (3p, 2.54 mm) | GUVA-S12SD | media |
@@ -756,18 +849,23 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Interruptor de inclinación de bola SW-520D (suelto)**<br><sub>`sen-inclinacion-sw520d`</sub> | THT | Cilindro metálico con 2 patas (2p) | SW-520D, SW-200D | alta |
 | **Magnetómetro / brújula digital de 3 ejes HMC5883L / QMC5883L (GY-273)**<br><sub>`sen-hmc5883l-qmc5883l`</sub> | modulo | Módulo GY-273 con header 1x5 a 2.54 mm (5p, 2.54 mm) | HMC5883L (0x1E), QMC5883L (0x0D) | alta |
 | **Módulo sensor de inclinación (KY-020 / LM393 con SW-520D)**<br><sub>`sen-inclinacion-modulo`</sub> | modulo | Módulo serie KY-0xx, header macho 1x3 a 2.54 mm (3p, 2.54 mm); Módulo comparador LM393, header macho 1x3 a 2.54 mm (3p, 2.54 mm) | KY-020, módulo LM393 3 pines | alta |
+| **Módulo sensor de velocidad óptico de ranura (LM393, FC-03 / HC-020K) con disco encoder**<br><sub>`sen-velocidad-ranura-lm393`</sub> | modulo | Módulo FC-03 con header 1x4 a 2.54 mm (4p, 2.54 mm) | FC-03 (4 pines, LM393), HC-020K (3 pines, con disco de 20 ranuras), Disco encoder de 20 ranuras para motor TT | alta |
 | **Módulo sensor de vibración SW-420**<br><sub>`sen-vibracion-sw420`</sub> | modulo | Módulo comparador LM393, header macho 1x3 a 2.54 mm (3p, 2.54 mm) | SW-420 | alta |
 | **Acelerómetro analógico de 3 ejes ADXL335 (GY-61)**<br><sub>`sen-adxl335`</sub> | modulo | Módulo GY-61 con header 1x5 a 2.54 mm (5p, 2.54 mm) | GY-61 | media |
+| **Encoder óptico rotatorio incremental LPD3806 (360/600 P/R, fases A/B)**<br><sub>`sen-encoder-lpd3806`</sub> | panel | Cuerpo cilíndrico Ø38 mm con eje de 6 mm y cable de 4 hilos + malla (4p) | 360 P/R, 400 P/R, 600 P/R | media |
 | **IMU de 9 ejes MPU-9250 (GY-9250)**<br><sub>`sen-mpu9250`</sub> | modulo | Módulo con header 1x10 a 2.54 mm (10p, 2.54 mm) | GY-9250, GY-6500 (sin magnetómetro) | media |
 | **Interruptor de vibración de resorte SW-18010P (suelto)**<br><sub>`sen-vibracion-sw18010p`</sub> | THT | Cilindro con 2 patas (2p) | SW-18010P, SW-18015P, SW-18020P (distinta sensibilidad) | media |
 | **Módulo sensor de golpe KY-031 (knock sensor)**<br><sub>`sen-golpe-ky031`</sub> | modulo | Módulo serie KY-0xx, header macho 1x3 a 2.54 mm (3p, 2.54 mm) | KY-031 | media |
 | **Kit de 37 sensores (serie KY-0xx)**<br><sub>`sen-kit-37-sensores`</sub> | n/a | — | KY-001 DS18B20, KY-002 vibración, KY-003 Hall, KY-004 botón, KY-005 LED IR, KY-006 buzzer pasivo, KY-008 láser, KY-009 LED RGB SMD, … (+29) | alta |
 | **Módulo sensor de llama infrarrojo (760–1100 nm)**<br><sub>`sen-flama`</sub> | modulo | Módulo comparador LM393, header macho 1x4 a 2.54 mm (4p, 2.54 mm); Módulo KY-026 con header 1x4 (AO, G, +, DO) (4p, 2.54 mm) | 4 pines, 3 pines, 5 canales, KY-026 | alta |
 | **Kit de 45 sensores en 1**<br><sub>`sen-kit-45-sensores`</sub> | n/a | — | 45 módulos (variable) | media |
+| **Módulo sensor de presión de aire HX710B + MPS20N0040D (0–40 kPa)**<br><sub>`sen-hx710b-presion`</sub> | modulo | Módulo con header 1x4 a 2.54 mm y boquilla para manguera (4p, 2.54 mm) | 0–40 kPa (MPS20N0040D) | media |
+| **Transductor de presión 5 V con salida 0.5–4.5 V (rosca G1/4; agua, aire o aceite)**<br><sub>`sen-transductor-presion`</sub> | panel | Cuerpo roscado G1/4 con cable de 3 hilos (o conector) (3p) | 0–0.5 MPa, 0–1.2 MPa, 0–1.6 MPa, 0–30 psi, 0–100 psi, 0–150 psi | media |
 | **Micrófono electret (cápsula suelta de 2 pines)**<br><sub>`sen-microfono-electret`</sub> | THT | Cápsula Ø6 x 5 mm con 2 patas (2p); Cápsula Ø9.7 mm (alto 4.5–6.7 mm) con 2 patas o pads (2p) | Ø6 x 5 mm, Ø9.7 x 4.5 mm, Ø9.7 x 6.7 mm | muy alta |
 | **Módulo sensor de sonido KY-038 (micrófono pequeño + LM393)**<br><sub>`sen-ky-038`</sub> | modulo | Módulo con header 1x4 a 2.54 mm (4p, 2.54 mm) | KY-038 | muy alta |
 | **Módulo sensor de sonido KY-037 (micrófono grande, alta sensibilidad)**<br><sub>`sen-ky-037`</sub> | modulo | Módulo con header 1x4 a 2.54 mm (4p, 2.54 mm) | KY-037 | alta |
 | **Módulo sensor de sonido LM393 de 3 pines (salida digital)**<br><sub>`sen-sonido-lm393`</sub> | modulo | Módulo comparador LM393, header macho 1x3 a 2.54 mm (3p, 2.54 mm) | FC-04 | alta |
+| **Micrófono MEMS digital I2S INMP441 (módulo)**<br><sub>`sen-inmp441`</sub> | modulo | Placa redonda con 6 pines a 2.54 mm (6p, 2.54 mm) | INMP441 | media |
 | **Módulo amplificador de micrófono con AGC MAX9814**<br><sub>`sen-max9814`</sub> | modulo | Módulo con header 1x5 a 2.54 mm (5p, 2.54 mm) | MAX9814 | media |
 | **Módulo amplificador de micrófono MAX4466 (ganancia ajustable)**<br><sub>`sen-max4466`</sub> | modulo | Módulo con header 1x3 a 2.54 mm (3p, 2.54 mm) | MAX4466 | media |
 | **Módulo DHT11 de 3 pines (KY-015 y similares)**<br><sub>`sen-dht11-modulo`</sub> | modulo | Módulo con header macho 1x3 a 2.54 mm (3p, 2.54 mm) | KY-015, módulo azul 3 pines | muy alta |
@@ -782,16 +880,19 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Sensor ambiental BME280 (presión, temperatura y humedad)**<br><sub>`sen-bme280`</sub> | modulo | Módulo 3.3 V con header 1x6 (VCC, GND, SCL, SDA, CSB, SDO) (6p, 2.54 mm); Módulo 5 V con header 1x4 (VIN, GND, SCL, SDA) (4p, 2.54 mm); IC LGA-8 (SMD) (8p) | 3.3 V 6 pines, 5 V 4 pines | alta |
 | **Sensor de presión y temperatura BMP280 (módulo GY-BMP280)**<br><sub>`sen-bmp280`</sub> | modulo | Módulo GY-BMP280-3.3 con header 1x6 (6p, 2.54 mm); IC LGA-8 (SMD, tapa metálica) (8p, 0.65 mm) | módulo 3.3 V 6 pines, módulo 5 V 4 pines, IC suelto | alta |
 | **Sensor de temperatura analógico TMP36 (TO-92)**<br><sub>`sen-tmp36`</sub> | THT | TO-92 (3p, 1.27 mm) | TMP36GT9Z | alta |
+| **Sonda de temperatura NTC 10 kΩ impermeable (punta de acero con cable)**<br><sub>`sen-sonda-ntc-10k`</sub> | n/a | — | 10 kΩ B3950, 10 kΩ B3435, Cable 0.5 m / 1 m / 2 m, Con conector XH 2.54 mm (tipo W1209) | alta |
 | **Sonda termopar tipo K (rosca M6, bayoneta o gota)**<br><sub>`sen-termopar-k`</sub> | n/a | Sonda con 2 hilos o terminales de horquilla (2p) | M6 0–400 °C, gota de fibra de vidrio, −50 a 400 °C | alta |
 | **Termómetro infrarrojo sin contacto MLX90614 (GY-906)**<br><sub>`sen-mlx90614`</sub> | modulo | Módulo GY-906 con header 1x4 (4p, 2.54 mm) | MLX90614ESF-BAA (3 V, 90°), MLX90614ESF-AAA (5 V), MLX90614ESF-DCC/DCI (campo estrecho) | alta |
 | **Módulo AHT20 + BMP280 (humedad, temperatura y presión)**<br><sub>`sen-aht20-bmp280`</sub> | modulo | Módulo con header 1x4 (4p, 2.54 mm) | AHT20+BMP280 | media |
 | **Módulo MAX31855 para termopar (K) — y el IC SO-8**<br><sub>`sen-max31855`</sub> | modulo | Módulo con header 1x5 o 1x6 a 2.54 mm + bornera para termopar (6p, 2.54 mm); IC SO-8 (SMD) (8p, 1.27 mm) | MAX31855K (tipo K), MAX31855 J/T | media |
+| **Módulo MAX31865 para RTD PT100 / PT1000 (SPI)**<br><sub>`sen-max31865`</sub> | modulo | Módulo con header 1x8 a 2.54 mm + bornera de 4 posiciones (8p, 2.54 mm) | Para PT100 (Rref 430 Ω), Para PT1000 (Rref 4.3 kΩ) | media |
 | **Sensor de presión barométrica BMP180 (módulo GY-68)**<br><sub>`sen-bmp180`</sub> | modulo | Módulo GY-68 con header 1x4 (algunos 1x5 con salida 3.3 V) (4p, 2.54 mm) | GY-68 | media |
 | **Sensor de temperatura LM335 (zener de temperatura, TO-92)**<br><sub>`sen-lm335`</sub> | THT | TO-92 (3p, 1.27 mm) | LM335Z, LM335AZ | media |
 | **Sensor de temperatura y humedad AHT10 (módulo I2C)**<br><sub>`sen-aht10`</sub> | modulo | Módulo con header 1x4 (4p, 2.54 mm) | AHT10 | media |
 | **Sensor de temperatura y humedad HTU21D (módulo GY-21)**<br><sub>`sen-htu21d`</sub> | modulo | Módulo con header 1x4 (4p, 2.54 mm) | HTU21D, Si7021, SHT21 | media |
 | **Sensor de temperatura y humedad SHT31 (módulo GY-SHT31-D)**<br><sub>`sen-sht31`</sub> | modulo | Módulo con header 1x6 (6p, 2.54 mm) | SHT31, SHT30 | media |
 | **Sensor de temperatura y humedad SHT40 (IC SMD DFN-4)**<br><sub>`sen-sht40`</sub> | SMD | DFN-4 (4p) | SHT40-AD1B (0x44) | media |
+| **Sonda de temperatura PT100 (2 o 3 hilos; bulbo, rosca o termopozo)**<br><sub>`sen-sonda-pt100`</sub> | n/a | — | 2 hilos, 3 hilos, Bulbo liso Ø6 mm x 50/100 mm, Con rosca 1/4" o M8, Cable 1 m / 2 m | media |
 
 <a id="displays"></a>
 ## Displays y pantallas
@@ -818,9 +919,11 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **LED direccionable PL9823 THT (5 mm / 8 mm)**<br><sub>`dsp-pl9823`</sub> | THT | LED 5 mm (F5) 4 patas (4p); LED 8 mm (F8) 4 patas (4p) | 5 mm, 8 mm | media |
 | **LED WS2812B suelto 5050 SMD**<br><sub>`dsp-ws2812b-led`</sub> | SMD | 5050 de 4 pads (4p); En mini PCB redonda (~10 mm) (3p) | — | media |
 | **Matriz LED WS2812B 8x8 (64 LEDs)**<br><sub>`dsp-ws2812b-matriz-8x8`</sub> | modulo | Matriz rígida 8x8 (CJMCU) (3p); Matriz flexible 8x8 / 16x16 (3p) | 8x8 rígida, 8x8 flexible, 16x16 flexible, 8x32 flexible | media |
+| **Pixeles LED WS2811 de 12 mm (cadena tipo bala) y tira WS2811 12 V**<br><sub>`dsp-ws2811-pixel-12mm`</sub> | modulo | Cadena de pixeles Ø12 mm (normalmente 50 piezas) (3p); Tira WS2811 12 V 5050 (30 o 60 LED/m) (3p) | 5 V, 12 V, Cadena de 50 pixeles, Tira 30 LED/m, Tira 60 LED/m, IP68 (pixel tipo bala) | media |
 | **Módulo matriz LED 4 en 1 MAX7219 (32x8)**<br><sub>`dsp-max7219-4en1`</sub> | modulo | Módulo FC-16 4 en 1 (10p, 2.54 mm) | Rojo, Verde, Azul | alta |
 | **Módulo matriz LED 8x8 con MAX7219**<br><sub>`dsp-max7219-matriz-8x8`</sub> | modulo | Versión DIP (MAX7219 DIP-24, PCB larga) (10p, 2.54 mm); Versión SMD (FC-16, PCB cuadrada) (10p, 2.54 mm) | Rojo, Verde, Azul | alta |
 | **Módulo panel LED P10 32x16 (HUB12)**<br><sub>`dsp-panel-p10`</sub> | modulo | Panel P10 32x16 (16p, 2.54 mm, filas 2.54 mm) | Rojo, Bicolor, RGB (HUB75, otro conector), Interior / exterior | media |
+| **Módulo semáforo LED (rojo, amarillo y verde) para Arduino**<br><sub>`dsp-modulo-semaforo`</sub> | modulo | Módulo con header 1x4 paso 2.54 mm (4p, 2.54 mm) | LEDs de 10 mm, LEDs de 5 mm (mini), LEDs de 8 mm | alta |
 | **Display OLED 0.96" 128x64 SSD1306 I2C (4 pines)**<br><sub>`dsp-oled-096-i2c`</sub> | modulo | Módulo OLED 0.96" I2C (4p, 2.54 mm) | Blanco, Azul, Bicolor amarillo (16 filas superiores)/azul | muy alta |
 | **Display OLED 0.91" 128x32 SSD1306 I2C**<br><sub>`dsp-oled-091-128x32`</sub> | modulo | Módulo OLED 0.91" (4p, 2.54 mm) | Blanco, Azul | alta |
 | **Display OLED 0.96" 128x64 SSD1306 SPI (7 pines)**<br><sub>`dsp-oled-096-spi`</sub> | modulo | Módulo OLED 0.96" SPI (7p, 2.54 mm) | Blanco, Azul, Amarillo/azul | alta |
@@ -832,6 +935,9 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Display TFT 1.44" 128x128 ST7735 SPI**<br><sub>`dsp-tft-144-st7735`</sub> | modulo | Módulo TFT 1.44" (PCB roja) (8p, 2.54 mm) | — | media |
 | **Display TFT IPS 1.3"/1.54" 240x240 ST7789**<br><sub>`dsp-tft-ips-st7789`</sub> | modulo | Módulo IPS 1.3" (7 pines, sin CS) (7p, 2.54 mm) | 1.3" 240x240, 1.54" 240x240, 2.0" 240x320 | media |
 | **Shield TFT 3.5" 320x480 para Arduino UNO/Mega**<br><sub>`dsp-tft-35-shield`</sub> | modulo | Shield formato Arduino UNO/Mega (2.54 mm) | — | media |
+| **Pantalla HMI táctil Nextion 2.4"–7" (UART)**<br><sub>`dsp-nextion-hmi`</sub> | modulo | Conector de 4 pines paso 2.54 mm (cable a Dupont incluido) (4p, 2.54 mm) | 2.4" 320x240 (NX3224T024), 2.8" 320x240 (NX3224T028), 3.2" 400x240 (NX4024T032), 3.5" 480x320 (NX4832T035), 4.3" 480x272 (NX4827T043), 7" 800x480 (NX8048T070), Táctil resistivo (R) o sin táctil (N) | media |
+| **Display TFT IPS redondo 1.28" 240x240 GC9A01 (SPI)**<br><sub>`dsp-tft-redondo-gc9a01`</sub> | modulo | Módulo redondo con header 1x7 paso 2.54 mm (7p, 2.54 mm) | 1.28" 240x240, Con pin BLK (8 pines) | media |
+| **Pantalla TFT 3.5" táctil para Raspberry Pi (SPI, header de 26 pines)**<br><sub>`dsp-tft-35-raspberry-pi`</sub> | modulo | Header hembra 2x13 paso 2.54 mm (26p, 2.54 mm, filas 2.54 mm) | 3.5" 320x480 SPI (tipo A), 3.5" con entrada HDMI (MPI3508) | media |
 | **Controlador para tira LED RGB 12 V con control IR**<br><sub>`dsp-controlador-tira-rgb`</sub> | modulo | Controlador IR (4p) | 24 teclas, 44 teclas, Bluetooth/WiFi | alta |
 | **Tira LED 12 V monocolor (5050 / 2835)**<br><sub>`dsp-tira-led-12v`</sub> | modulo | 5050, 60 LED/m (2p); 2835, 60/120 LED/m (2p) | Blanco frío, Blanco cálido, Rojo, Verde, Azul, IP20, IP65 | alta |
 | **Tira LED RGB 12 V 5050 (ánodo común)**<br><sub>`dsp-tira-led-rgb-12v`</sub> | modulo | 5050 RGB 30/60 LED/m (4p) | 30 LED/m, 60 LED/m, IP20, IP65 | alta |
@@ -841,6 +947,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 
 | Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
 |---|---|---|---|---|
+| **Actuador lineal eléctrico 12 V DC (carrera 50–300 mm)**<br><sub>`act-actuador-lineal-12v`</sub> | panel | Cuerpo con orejas de montaje y 2 cables (2p) | Carrera 50 mm, Carrera 100 mm, Carrera 150 mm, Carrera 200 mm, Carrera 300 mm, Fuerza 200–1500 N, Con retroalimentación (potenciómetro o Hall), 24 V | media |
 | **Bocina miniatura 8 Ω 0.25–0.5 W (28–66 mm)**<br><sub>`act-bocina-miniatura-8ohm`</sub> | panel | Ø28 mm (2p); Ø36 mm (2p); Ø40 mm (2p); Ø50 mm (2p); Ø57 mm (2p); Ø66 mm (2p) | 8 Ω 0.25 W, 8 Ω 0.5 W, 8 Ω 1 W | muy alta |
 | **Bocina 2" y 4" 8 Ω (Steren)**<br><sub>`act-bocina-2-4-pulgadas`</sub> | panel | 2" (5 cm) (2p); 4" (10 cm) (2p) | 2" 1.5 W PMPO 8 Ω, 4" 7 W PMPO 8 Ω | alta |
 | **Bocina 2–3 W (4 Ω / 8 Ω) para módulos amplificadores**<br><sub>`act-bocina-2-3w`</sub> | panel | Redonda Ø40 mm (2p); Rectangular (tipo laptop/TV) (2p) | 4 Ω 3 W, 8 Ω 2 W, 8 Ω 3 W | alta |
@@ -848,11 +955,13 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Tweeter piezoeléctrico (bocina de agudos)**<br><sub>`act-tweeter-piezo`</sub> | panel | Corneta rectangular / redonda (2p) | — | media |
 | **Mini bomba de agua sumergible 3–6 V**<br><sub>`act-bomba-sumergible-3-6v`</sub> | panel | Bomba horizontal/vertical miniatura (2p) | Horizontal, Vertical | alta |
 | **Bomba de agua 12 V (diafragma R385 o sumergible)**<br><sub>`act-bomba-12v`</sub> | panel | Bomba de diafragma R385 (2p) | Diafragma R385, Sumergible brushless 12 V | media |
+| **Bomba peristáltica 12 V DC (dosificadora, manguera de silicón)**<br><sub>`act-bomba-peristaltica-12v`</sub> | panel | Cabezal de rodillos con motor DC y 2 terminales (2p) | 6 V, 12 V, 24 V, Con motor DC, Con motor a pasos (más precisa) | media |
 | **Buzzer activo 5 V / 12 V (12 mm)**<br><sub>`act-buzzer-activo`</sub> | THT | Ø12 x 9.5 mm (2p, 7.6 mm) | 5 V, 12 V, 3.3 V | muy alta |
 | **Buzzer pasivo (magnético) 12 mm**<br><sub>`act-buzzer-pasivo`</sub> | THT | Ø12 x 8.5 mm (2p, 7.6 mm) | 16 Ω, 42 Ω | alta |
 | **Disco piezoeléctrico (12–35 mm)**<br><sub>`act-disco-piezo`</sub> | panel | Ø27 mm (2p); Ø35 mm (2p); Ø20 mm / Ø12 mm (2p) | 12 mm, 20 mm, 27 mm, 35 mm | alta |
 | **Módulo buzzer (activo o pasivo) con transistor**<br><sub>`act-modulo-buzzer`</sub> | modulo | Módulo de 3 pines (3p, 2.54 mm) | Activo, Pasivo | alta |
 | **Zumbador piezoeléctrico con carcasa 3–24 V (SFM-27)**<br><sub>`act-zumbador-piezo-carcasa`</sub> | panel | Carcasa con orejas (SFM-27) (2p) | Tono continuo, Tono intermitente | media |
+| **Motor síncrono de CA 127 V de baja velocidad (tipo 49TYJ / 50TYJ, 2–10 rpm)**<br><sub>`act-motor-sincrono-127v`</sub> | panel | Cuerpo redondo con brida de 2 barrenos y 2 cables o terminales (2p) | 2.5 rpm, 5/6 rpm, 10 rpm, 127 VAC, 24 VAC, 12 V (versiones especiales) | media |
 | **Motor DC de juguete tamaño 130/140 (3–6 V)**<br><sub>`act-motor-dc-130`</sub> | panel | Carcasa tamaño 130 (FA-130) (2p) | 1.5–3 V, 3–6 V | muy alta |
 | **Motor brushless A2212 (1000/1400/2200 KV)**<br><sub>`act-motor-brushless-a2212`</sub> | panel | Outrunner A2212 (3p) | 1000 KV, 1400 KV, 2200 KV | media |
 | **Motor DC R260 (3–6 V)**<br><sub>`act-motor-dc-r260`</sub> | panel | Carcasa 260 (2p) | 3 V, 6 V | media |
@@ -864,17 +973,24 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Motor a pasos NEMA 23 (bipolar)**<br><sub>`act-nema23`</sub> | panel | NEMA 23 (4p) | 1.2 N·m, 1.9 N·m, 2.8–3 N·m | media |
 | **Motorreductor amarillo TT 3–6 V (recto y en L) con llanta**<br><sub>`act-motor-tt`</sub> | panel | TT recto (2p); TT en L (90°) (2p); Llanta 65 mm | Recto 1:48, En L 1:48, 1:120, Con llanta 65 mm, Con encoder de ranura (disco) | muy alta |
 | **Micromotorreductor N20 (3/6/12 V), con o sin encoder**<br><sub>`act-motor-n20`</sub> | panel | N20 sin encoder (2p); N20 con encoder (6p) | 3 V, 6 V, 12 V, 30, 50, 100, 200, 300, 500, 1000 rpm | alta |
+| **Motorreductor de tornillo sinfín JGY-370 12 V (autobloqueante)**<br><sub>`act-motorreductor-sinfin-jgy370`</sub> | panel | Caja reductora de sinfín con eje D (2p) | 6 V, 12 V, 24 V, 2–150 rpm (según reducción) | media |
 | **Motorreductor JGA25-370 12 V con encoder Hall**<br><sub>`act-motor-25ga370-encoder`</sub> | panel | Caja Ø25 mm + motor 370 (6p) | 6 V, 12 V, Varias rpm (e.g. 100–1000) | media |
 | **Motorreductor metálico 12 V JGB37-520 (37 mm)**<br><sub>`act-motorreductor-jgb37-520`</sub> | panel | Caja Ø37 mm (2p) | 12 V, 24 V, 10–1000 rpm | media |
+| **Kit chasis de carrito robot 2WD / 4WD (acrílico, con motores TT)**<br><sub>`act-chasis-robot-2wd-4wd`</sub> | n/a | Terminales de cada motor TT (2p) | 2WD (2 motores + rueda loca), 4WD (4 motores), Portapilas 4 x AA, Con discos de encoder, Chasis de 2 niveles | alta |
 | **Micro servo SG90 9 g**<br><sub>`act-servo-sg90`</sub> | panel | Servo micro 9 g (3p, 2.54 mm) | 180°, 360° (rotación continua) | muy alta |
 | **Servo MG996R (engranes metálicos, alto torque)**<br><sub>`act-servo-mg996r`</sub> | panel | Servo estándar (3p, 2.54 mm) | 180°, 360° | muy alta |
 | **Micro servo MG90S (engranes metálicos)**<br><sub>`act-servo-mg90s`</sub> | panel | Servo micro 13 g (3p, 2.54 mm) | 180°, 360° | alta |
 | **Servo MG995 estándar (engranes metálicos)**<br><sub>`act-servo-mg995`</sub> | panel | Servo estándar (3p, 2.54 mm) | 180°, 360° | alta |
 | **Servo de rotación continua 360° (FS90R / SG90-360 / MG995-360)**<br><sub>`act-servo-continuo`</sub> | panel | Micro (9 g) (3p, 2.54 mm); Estándar (MG995 360°) (3p, 2.54 mm) | Micro 360°, Estándar 360° | media |
+| **Servo digital DS3218 de 20 kg·cm (engranes metálicos, 180°/270°)**<br><sub>`act-servo-ds3218`</sub> | panel | Servo estándar con cable de 3 hilos y conector hembra 2.54 mm (3p, 2.54 mm) | DS3218 180°, DS3218 270°, DS3225 (25 kg) | media |
+| **Cerradura electromagnética para puerta 12 V (180–280 kg)**<br><sub>`act-cerradura-electromagnetica`</sub> | panel | Barra de aluminio con placa de armadura y 2 cables (2p); Barra con sensor de estado de puerta (5 cables: +, −, COM, NO, NC) (5p) | 180 kg (350 lb), 190 kg (Steren SEG-035), 280 kg (600 lb), Con LED de estado, Con sensor de puerta, 12 / 24 V seleccionable | media |
 | **Cerradura eléctrica de solenoide 12 V**<br><sub>`act-cerradura-solenoide-12v`</sub> | panel | Cerradura tipo pestillo (2p) | 12 V, Pestillo inclinado o recto | media |
 | **Electroimán de sujeción 12 V (KK-P20/15, KK-P25/20)**<br><sub>`act-electroiman-12v`</sub> | panel | KK-P20/15 (2p); KK-P25/20 (2p) | 2.5 kg, 5 kg, 10 kg | media |
 | **Electroválvula solenoide 12 V 1/2" (normalmente cerrada)**<br><sub>`act-electrovalvula-12v`</sub> | panel | Rosca 1/2" (2p) | 12 V NC, 24 V, 110 V AC, 1/2", 3/4" | media |
 | **Solenoide push-pull 12 V (JF-0530B)**<br><sub>`act-solenoide-push-pull-12v`</sub> | panel | JF-0530B (2p) | 5 V, 6 V, 12 V, 24 V, JF-0826B (más grande) | media |
+| **Celda Peltier termoeléctrica TEC1-12706 (40 x 40 mm, 12 V)**<br><sub>`act-celda-peltier-tec1`</sub> | panel | Placa 40 x 40 mm con 2 cables (2p) | TEC1-12703 (3 A), TEC1-12705 (5 A), TEC1-12706 (6 A), TEC1-12710 (10 A), TEC1-12715 (15 A) | alta |
+| **Módulo atomizador ultrasónico / humidificador 5 V (disco piezo de 16–20 mm)**<br><sub>`act-atomizador-ultrasonico`</sub> | modulo | Placa driver + disco piezo Ø16 o Ø20 mm (4p) | Disco 16 mm, Disco 20 mm, Kit USB con esponja, Fogger de 24 V para estanques (otra versión) | media |
+| **Transductor ultrasónico 40 kHz Ø16 mm (emisor T / receptor R)**<br><sub>`act-transductor-ultrasonico-40khz`</sub> | THT | Cápsula metálica Ø16 mm con 2 pines (2p) | Emisor (T), Receptor (R), Par T + R | media |
 | **Ventilador DC 5 V / 12 V (30–120 mm)**<br><sub>`act-ventilador-dc`</sub> | panel | 30 x 30 x 10 mm (2p); 40 x 40 x 10 mm (2p); 50 x 50 x 10/15 mm (2p); 60 x 60 x 15/25 mm (2p); 80 x 80 x 25 mm (3p); 92 / 120 mm (3p) | 5 V, 12 V, 24 V, 2 hilos, 3 hilos, 4 hilos PWM, Rodamiento de manga o de bolas | muy alta |
 | **Motor vibrador tipo moneda 10 mm**<br><sub>`act-vibrador-moneda`</sub> | panel | 1027 (Ø10 x 2.7 mm) (2p); 1030 (Ø10 x 3 mm) (2p) | Ø8 mm, Ø10 mm | alta |
 | **Motor vibrador cilíndrico (masa excéntrica) y módulo vibrador**<br><sub>`act-vibrador-cilindrico`</sub> | panel | Motor cilíndrico con contrapeso (2p); Módulo vibrador (3p, 2.54 mm) | — | media |
@@ -884,9 +1000,12 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 
 | Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
 |---|---|---|---|---|
+| **Módulo aislador con optoacopladores PC817 (2/4/8 canales, 3.6–30 V)**<br><sub>`mod-optoacoplador-pc817-multicanal`</sub> | modulo | Placa de 4 canales con header o bornera en cada lado (11p, 2.54 mm) | 2 canales, 4 canales, 8 canales, Con borneras, Con headers | media |
 | **Módulo cargador de litio TP4056 (con y sin protección DW01)**<br><sub>`mod-tp4056`</sub> | modulo | Sin protección (4 pads) (4p); Con protección DW01 (6 pads) (6p) | Micro-USB, USB-C, Con protección, Sin protección | muy alta |
 | **Módulo BMS / protección de litio 2S, 3S, 4S**<br><sub>`mod-bms-litio`</sub> | modulo | BMS 2S/3S/4S | 2S 7.4 V, 3S 11.1 V, 4S 14.8 V, 10 A, 20 A, 40 A, Con balanceo | alta |
 | **Porta batería 18650 con cargador y salida USB (Battery Shield V3/V8)**<br><sub>`mod-shield-18650-usb`</sub> | modulo | Shield 1 celda (V3) (2.54 mm); Shield 2 celdas (V8) (2.54 mm) | 1 celda, 2 celdas | media |
+| **Controlador de carga solar PWM 10–30 A 12/24 V (con pantalla y USB)**<br><sub>`mod-controlador-carga-solar-pwm`</sub> | panel | Caja plástica con 6 bornes de tornillo y puerto USB (6p) | 10 A, 20 A, 30 A, 12/24 V automático, Con USB 5 V, Con pantalla LCD | alta |
+| **Módulo de transmisión de energía inalámbrica 5 V (transmisor + receptor con bobinas, XKT-510)**<br><sub>`mod-carga-inalambrica-5v`</sub> | modulo | Placa transmisora + bobina plana (2p); Placa receptora + bobina plana (2p) | 5 V 1 A, 5 V 2 A, Entrada 12 V | media |
 | **Módulo detector de cruce por cero (AC)**<br><sub>`mod-cruce-por-cero`</sub> | modulo | Módulo detector (5p, 2.54 mm) | — | media |
 | **Módulo dimmer AC con TRIAC y detector de cruce por cero**<br><sub>`mod-dimmer-ac-triac`</sub> | modulo | Módulo RobotDyn (8p, 2.54 mm); Dimmer 2000 W con potenciómetro (4p) | 1 canal, 2 canales, Manual 2000 W | media |
 | **Módulo reductor DC-DC LM2596 (step-down ajustable)**<br><sub>`mod-lm2596`</sub> | modulo | Módulo azul LM2596 (4p) | Básico, Con display de voltaje, Con salida USB | muy alta |
@@ -896,21 +1015,27 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Convertidor DC-DC aislado B0505S-1W (5 V → 5 V)**<br><sub>`mod-b0505s`</sub> | THT | SIP-4 (4p, 2.54 mm) | B0505S (5→5 V), B0512S (5→12 V), B1205S (12→5 V) | media |
 | **Módulo DC-DC XL6009 (elevador o buck-boost)**<br><sub>`mod-xl6009`</sub> | modulo | Módulo XL6009 boost (4p); Módulo XL6009 buck-boost (4p) | Boost, Buck-boost | media |
 | **Módulo elevador a 5 V con salida USB**<br><sub>`mod-step-up-5v-usb`</sub> | modulo | Módulo con USB-A hembra (2p) | 600 mA, 1 A, 2 A | media |
+| **Driver LED de corriente constante para LEDs de potencia (127 VAC → 300 / 600 mA)**<br><sub>`mod-driver-led-corriente-constante`</sub> | modulo | Placa abierta o en caja plástica con 4 cables (4p) | 1–3 x 1 W (300 mA), 4–7 x 1 W (300 mA), 8–12 x 1 W (300 mA), 1–3 x 3 W (600 mA), Para COB 10–50 W | media |
 | **Módulo puente H L298N (driver doble de motores)**<br><sub>`mod-l298n`</sub> | modulo | Módulo rojo con disipador (13p, 2.54 mm) | — | muy alta |
 | **Controlador PWM de velocidad para motor DC (CCM5D / 10 A)**<br><sub>`mod-pwm-motor-dc`</sub> | modulo | Módulo con bornera y perilla (4p) | 3 A, 5 A, 10 A, 20 A | alta |
 | **Módulo driver de motor BTS7960 43 A (IBT-2)**<br><sub>`mod-bts7960`</sub> | modulo | Módulo con disipador (12p, 2.54 mm) | — | alta |
-| **Módulo driver L9110S (2 motores DC)**<br><sub>`mod-l9110s`</sub> | modulo | Módulo L9110S (6p, 2.54 mm) | — | alta |
+| **Módulo driver L9110S (2 motores DC)**<br><sub>`mod-l9110s`</sub> | modulo | Módulo L9110S (10p, 2.54 mm) | — | alta |
 | **Módulo driver TB6612FNG (2 motores DC, MOSFET)**<br><sub>`mod-tb6612fng`</sub> | modulo | Breakout 16 pines (16p, 2.54 mm) | — | alta |
 | **Shield de motores L293D para Arduino (Motor Shield v1)**<br><sub>`mod-l293d-shield`</sub> | modulo | Shield formato Arduino UNO (2.54 mm) | — | alta |
+| **Driver de motor VNH2SP30 (Monster Moto Shield, ≈14 A continuos)**<br><sub>`mod-vnh2sp30`</sub> | modulo | Shield de 2 canales formato Arduino UNO (2.54 mm) | Shield 2 canales, Placa de 1 canal | media |
 | **Módulo driver DRV8833 (2 motores DC)**<br><sub>`mod-drv8833`</sub> | modulo | Módulo DRV8833 (2.54 mm) | — | media |
-| **Módulo driver MX1508 (2 motores DC)**<br><sub>`mod-mx1508`</sub> | modulo | Módulo MX1508 (8p, 2.54 mm) | — | media |
+| **Módulo driver MX1508 (2 motores DC)**<br><sub>`mod-mx1508`</sub> | modulo | Módulo MX1508 (10p, 2.54 mm) | — | media |
 | **Variador ESC 30 A para motor brushless**<br><sub>`mod-esc-30a`</sub> | modulo | ESC en termoencogible (8p) | 20 A, 30 A, 40 A | media |
 | **Driver de motor a pasos A4988 (Pololu/StepStick)**<br><sub>`mod-a4988`</sub> | modulo | StepStick 16 pines (16p, 2.54 mm, filas 12.7 mm) | Verde/rojo (clones), Pololu original | muy alta |
 | **Placa driver ULN2003 para motor a pasos 28BYJ-48**<br><sub>`mod-uln2003-driver`</sub> | modulo | Placa ULN2003 (11p, 2.54 mm) | — | muy alta |
 | **CNC Shield V3 para Arduino UNO (4 drivers StepStick)**<br><sub>`mod-cnc-shield-v3`</sub> | modulo | Shield formato Arduino UNO (2.54 mm) | — | alta |
 | **Driver de motor a pasos DRV8825 (Pololu/StepStick)**<br><sub>`mod-drv8825`</sub> | modulo | StepStick 16 pines (16p, 2.54 mm, filas 12.7 mm) | — | alta |
 | **Driver de motor a pasos silencioso TMC2208 / TMC2209**<br><sub>`mod-tmc2208-tmc2209`</sub> | modulo | StepStick 16 pines (16p, 2.54 mm, filas 12.7 mm) | TMC2208 v3, TMC2209 v1.2, TMC2225 | alta |
+| **Driver de motor a pasos TB6600 (9–42 V, hasta 3.5–4 A)**<br><sub>`mod-tb6600`</sub> | panel | Caja de aluminio con 2 borneras de tornillo (6 + 6) (12p) | Corriente 0.5–3.5 A (8 niveles), Micropasos 1, 2/A, 2/B, 4, 8, 16, 32 | alta |
 | **Fuente AC-DC encapsulada HLK-PM01 (220 V → 5 V 3 W)**<br><sub>`mod-hlk-pm01`</sub> | THT | Encapsulado HLK-PM (4p) | HLK-PM01 5 V 600 mA, HLK-PM03 3.3 V, HLK-PM12 12 V, HLK-5M05 (5 W) | alta |
+| **Módulo disparador USB-C PD (PD trigger / decoy) 9–20 V**<br><sub>`mod-usb-pd-trigger`</sub> | modulo | Placa mini con USB-C y pads/bornera de salida (2p) | 9 V, 12 V, 15 V, 20 V, Seleccionable con botón (ZY12PDN), Con puentes de soldadura | media |
+| **Kit fuente regulada ajustable 0–30 V / 2 mA–3 A (para armar)**<br><sub>`mod-kit-fuente-0-30v-3a`</sub> | THT | PCB del kit con componentes THT | 0–30 V 2 mA–3 A, 0–15 V (versiones pequeñas) | media |
+| **Módulo fuente simétrica ±V (LM317/LM337 ajustable o 78xx/79xx fija)**<br><sub>`mod-fuente-simetrica`</sub> | modulo | Placa con borneras de entrada AC y salida +V / 0 / −V (6p) | Ajustable ±1.25 V a ±(entrada − 3) V (LM317 + LM337), ±5 V (7805/7905), ±12 V (7812/7912), ±15 V (7815/7915) | media |
 | **Voltímetro digital de panel (0.28" / 0.56")**<br><sub>`mod-voltimetro-panel`</sub> | panel | 0.28" 3 dígitos (3p); 0.56" 3 dígitos (3p) | 0–30 V (2 hilos), 0–100 V (3 hilos), Rojo, Azul, Verde | alta |
 | **Voltímetro/amperímetro digital de panel DC 100 V 10 A**<br><sub>`mod-voltamperimetro-panel`</sub> | panel | Panel 0.28" doble (5p) | 10 A, 50 A (shunt externo), 100 A (shunt externo) | alta |
 | **Indicador de capacidad de batería (litio 1S–4S / plomo 12 V)**<br><sub>`mod-indicador-bateria`</sub> | modulo | Módulo 4 LEDs (2p) | 1S, 2S, 3S, 4S, 12 V plomo-ácido | media |
@@ -919,6 +1044,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Fuente para protoboard MB102 (YwRobot) 3.3 V / 5 V**<br><sub>`mod-mb102-fuente-protoboard`</sub> | modulo | Módulo MB102 (2.54 mm) | — | muy alta |
 | **Módulo regulador AMS1117 3.3 V / 5 V**<br><sub>`mod-ams1117-33`</sub> | modulo | Módulo AMS1117 (3p, 2.54 mm) | 3.3 V, 5 V | alta |
 | **Módulo regulador ajustable LM317**<br><sub>`mod-lm317-ajustable`</sub> | modulo | Módulo LM317 (4p) | — | media |
+| **Módulo relevador Wi-Fi para ESP-01S (5 V, 1 canal)**<br><sub>`mod-relevador-wifi-esp01s`</sub> | modulo | Zócalo hembra 2x4 para ESP-01S (8p, 2.54 mm, filas 2.54 mm); Alimentación + bornera del relevador (5p) | 5 V 1 canal, Con o sin ESP-01S incluido | alta |
 | **Módulo relevador 1 canal 5 V / 12 V**<br><sub>`mod-relevador-1ch`</sub> | modulo | Módulo 1 canal (6p, 2.54 mm) | 5 V, 12 V, Con optoacoplador, Jumper disparo alto/bajo | muy alta |
 | **Módulo relevador 2 canales 5 V / 12 V con optoacoplador**<br><sub>`mod-relevador-2ch`</sub> | modulo | Módulo 2 canales (13p, 2.54 mm) | 5 V, 12 V | muy alta |
 | **Módulo relevador 4 canales 5 V / 12 V con optoacoplador**<br><sub>`mod-relevador-4ch`</sub> | modulo | Módulo 4 canales (21p, 2.54 mm) | 5 V, 12 V | muy alta |
@@ -936,23 +1062,30 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Módulo lector de tarjeta SD tamaño completo**<br><sub>`mod-sd`</sub> | modulo | Módulo SD doble fila (16p, 2.54 mm, filas 2.54 mm) | — | media |
 | **Módulo memoria EEPROM AT24C256 (I2C)**<br><sub>`mod-at24c256`</sub> | modulo | Módulo AT24C256 (4p, 2.54 mm) | — | media |
 | **Módulo amplificador PAM8403 2 x 3 W (5 V)**<br><sub>`mod-pam8403`</sub> | modulo | Mini módulo (pads) (9p); Con potenciómetro de volumen (9p, 2.54 mm) | Sin volumen, Con potenciómetro | muy alta |
+| **Módulo amplificador de audio TDA2030A mono (≈ 18 W)**<br><sub>`mod-tda2030a`</sub> | modulo | Placa con TDA2030A en disipador, header/borneras de entrada y salida (6p) | Mono con potenciómetro, Mono sin potenciómetro, Estéreo (2 x TDA2030A) | alta |
 | **Módulo amplificador LM386**<br><sub>`mod-lm386`</sub> | modulo | Módulo LM386 (6p, 2.54 mm) | — | alta |
 | **Módulo amplificador TPA3116D2 2 x 50 W (clase D)**<br><sub>`mod-tpa3116d2`</sub> | modulo | Módulo TPA3116D2 | 2 x 50 W, Mono 100 W, 2.1 (con subwoofer) | alta |
+| **Módulo amplificador I2S MAX98357A de 3 W (clase D)**<br><sub>`mod-max98357a`</sub> | modulo | Placa con header 1x7 paso 2.54 mm y salida a bocina (7p, 2.54 mm) | Placa genérica 7 pines, Adafruit 3006 | media |
 | **Módulo amplificador PAM8610 2 x 10 W (12 V)**<br><sub>`mod-pam8610`</sub> | modulo | Módulo PAM8610 (9p) | — | media |
 | **Módulo amplificador TDA7297 2 x 15 W**<br><sub>`mod-tda7297`</sub> | modulo | Módulo TDA7297 con disipador | — | media |
+| **Módulo indicador de nivel KA2284 (vúmetro de audio / nivel de batería, 5 LEDs)**<br><sub>`mod-ka2284-vumetro`</sub> | modulo | Mini placa con 5 LEDs, potenciómetro y 3 pads/pines (3p) | Mono, Estéreo (2 x KA2284), Modo AC (audio), Modo DC (batería) | media |
 | **Módulo reproductor MP3 DFPlayer Mini**<br><sub>`mod-dfplayer-mini`</sub> | modulo | Módulo DFPlayer (2 x 8 pines) (16p, 2.54 mm) | Original DFRobot, Clones (MP3-TF-16P) | muy alta |
 | **Decodificador MP3 de panel 12 V (USB/SD/FM/Bluetooth)**<br><sub>`mod-decodificador-mp3-panel`</sub> | panel | Panel rectangular | 5 V, 12 V, Con amplificador 2 x 3 W | alta |
 | **Módulo receptor de audio Bluetooth (estéreo)**<br><sub>`mod-receptor-bluetooth-audio`</sub> | modulo | Módulo receptor | Bluetooth 4.2, Bluetooth 5.0, Con amplificador integrado | alta |
 | **Módulo de reconocimiento de voz V3 (Elechouse)**<br><sub>`mod-reconocimiento-voz-v3`</sub> | modulo | Módulo VR3 (2.54 mm) | — | media |
 | **Módulo grabador/reproductor de voz ISD1820**<br><sub>`mod-isd1820`</sub> | modulo | Módulo ISD1820 (2.54 mm) | — | media |
+| **Control remoto RF 433/315 MHz de 4 botones con receptor decodificador (YK04 / M4, L4, T4)**<br><sub>`mod-rf433-control-4ch`</sub> | modulo | Receptor con header 1x7 paso 2.54 mm (7p, 2.54 mm); Llavero transmisor de 4 botones | 433 MHz, 315 MHz, M4 (momentáneo), L4 (enclavado entre canales), T4 (alterna / toggle), Con relevadores 12 V | alta |
+| **Controlador de temperatura STC-1000 (calentar y enfriar, sonda NTC)**<br><sub>`mod-termostato-stc-1000`</sub> | panel | Caja de panel con bornera trasera de 8 terminales (8p) | 110–220 VAC, 12 V DC, 24 V | alta |
 | **Termostato digital XH-W1209 con relevador (12 V)**<br><sub>`mod-termostato-w1209`</sub> | modulo | Módulo W1209 (6p) | 12 V, 5 V (versión W1209 5V), 24 V | alta |
+| **Controlador de temperatura PID REX-C100 (48 x 48 mm, termopar K, salida SSR o relevador)**<br><sub>`mod-controlador-pid-rex-c100`</sub> | panel | Caja de panel 48 x 48 mm (1/16 DIN) con bornera trasera numerada | Salida SSR (código V), Salida relevador (código M), Kit con SSR-40DA, disipador y termopar K | media |
+| **Módulo multiplexor I2C de 8 canales TCA9548A**<br><sub>`mod-tca9548a`</sub> | modulo | Placa con 2 filas de 12 pines paso 2.54 mm (24p, 2.54 mm) | Placa azul CJMCU, Placa Adafruit | media |
 | **Módulo expansor de E/S PCF8574 (I2C, 8 bits)**<br><sub>`mod-pcf8574-expansor`</sub> | modulo | Módulo azul (PCF8574 DIP-16) (17p, 2.54 mm) | PCF8574 (0x20–0x27), PCF8574A (0x38–0x3F) | media |
 | **Módulo multiplexor analógico 16 canales CD74HC4067**<br><sub>`mod-cd74hc4067`</sub> | modulo | Breakout 24 pines (24p, 2.54 mm) | — | media |
 | **Kit generador de funciones XR2206 (1 Hz – 1 MHz)**<br><sub>`mod-xr2206-generador`</sub> | THT | Kit THT | — | media |
 | **Módulo NE555 generador de pulsos de frecuencia ajustable**<br><sub>`mod-ne555-generador`</sub> | modulo | Módulo NE555 (3p, 2.54 mm) | — | media |
 | **Módulo relevador temporizador con retardo (programable)**<br><sub>`mod-relevador-temporizador`</sub> | modulo | Módulo con display (5p) | 5 V, 12 V, 24 V, Con display LED, NE555 con potenciómetro | media |
 | **Módulo ADC ADS1115 (16 bits) / ADS1015 (12 bits)**<br><sub>`mod-ads1115`</sub> | modulo | Módulo azul 10 pines (10p, 2.54 mm) | ADS1115 16 bits, ADS1015 12 bits | alta |
-| **Módulo PWM/servos 16 canales PCA9685 (I2C)**<br><sub>`mod-pca9685`</sub> | modulo | Módulo PCA9685 (70p, 2.54 mm) | — | alta |
+| **Módulo PWM/servos 16 canales PCA9685 (I2C)**<br><sub>`mod-pca9685`</sub> | modulo | Módulo PCA9685 (62p, 2.54 mm) | — | alta |
 | **Módulo DAC MCP4725 (12 bits, I2C)**<br><sub>`mod-mcp4725`</sub> | modulo | Módulo MCP4725 (6p, 2.54 mm) | — | media |
 | **Módulo reloj de tiempo real DS3231 (ZS-042)**<br><sub>`mod-rtc-ds3231`</sub> | modulo | Módulo ZS-042 (10p, 2.54 mm) | — | muy alta |
 | **Módulo RTC DS1307 (Tiny RTC)**<br><sub>`mod-rtc-ds1307`</sub> | modulo | Tiny RTC (12p, 2.54 mm) | — | alta |
@@ -965,6 +1098,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 |---|---|---|---|---|
 | **Interruptor de botón con enclavamiento 8x8 / 8.5x8.5 mm (6 pines)**<br><sub>`emc-selflock-8x8`</sub> | THT | THT 8x8 mm, 6 pines (2 filas de 3) (6p) | 8x8 mm, 8.5x8.5 mm, Con o sin capuchón | alta |
 | **Interruptor de enclavamiento miniatura 7x7 / 5.8x5.8 mm (6 pines)**<br><sub>`emc-selflock-7x7`</sub> | THT | THT 7x7 mm, 6 pines (6p); THT 5.8x5.8 mm, 6 pines (6p) | 7x7 con retención, 7x7 momentáneo, 5.8x5.8 | media |
+| **Selector rotativo industrial 22 mm de 2 o 3 posiciones (muletilla o llave)**<br><sub>`emc-selector-industrial-22mm`</sub> | panel | Cuerpo de 22 mm con bloques de contacto | 2 posiciones fijas (1NA), 3 posiciones fijas (2NA), 3 posiciones con retorno al centro, Con llave, Perilla corta o larga | media |
 | **Botón pulsador de panel miniatura (PBS-110 / PBS-11A / PBS-11B / PBS-33B)**<br><sub>`emc-boton-panel-mini-pbs`</sub> | panel | Panel, 2 terminales de soldar (2p) | NA (OFF-(ON)) rojo, NA negro, NA verde/amarillo/azul/blanco, NC ((ON)-OFF), Botón cuadrado NA | muy alta |
 | **Botón metálico antivandálico con LED (12/16/19/22 mm)**<br><sub>`emc-boton-metalico-led`</sub> | panel | Panel Ø16 mm, 4–5 terminales (5p); Panel Ø19 mm (5p); Panel Ø22 mm (5p) | Ø12 mm, Ø16 mm, Ø19 mm, Ø22 mm, LED 3–6 V / 12 V / 24 V / 110–220 V, Momentáneo o con retención, Anillo rojo/azul/verde/blanco | alta |
 | **Botón arcade 24/30 mm con microswitch**<br><sub>`emc-boton-arcade`</sub> | panel | Panel 30 mm (3p); Panel 24 mm (3p) | 24 mm, 30 mm, Con LED 5 V/12 V, Colores surtidos | media |
@@ -977,6 +1111,8 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Botón táctil SMD miniatura 3x4 / 4x4 / 5.1x5.1 mm**<br><sub>`emc-tact-smd-3x4`</sub> | SMD | SMD 3x4 mm, 4 pads (4p); SMD 5.1x5.1 mm, 4 pads (TS-1187A) (4p) | 3x4x2 mm, 4x4x1.5 mm, 5.1x5.1x1.5 mm, 3x6x2.5 mm (2 pads) | media |
 | **DIP switch de 1 a 12 posiciones (paso 2.54 mm)**<br><sub>`emc-dip-switch`</sub> | THT | DIP-2N (N posiciones) (2.54 mm, filas 7.62 mm); SMD (gull-wing) 2.54 mm (2.54 mm) | 1 posición, 2 posiciones, 3, 4, 5, 6, 8, 10, … (+2) | muy alta |
 | **Encoder rotativo incremental EC11 (5 pines, con botón)**<br><sub>`emc-encoder-ec11`</sub> | THT | THT, 3+2 pines + 2 patas de fijación (5p, 2.5 mm) | Eje 15 mm, Eje 20 mm, Eje 25 mm, Eje 30 mm, Eje D o estriado 18 dientes, 20 pulsos / 20 detenes, 15 pulsos / 30 detenes | alta |
+| **Interruptor de cuchilla (de navaja) didáctico sobre base**<br><sub>`emc-interruptor-cuchilla`</sub> | n/a | — | 1 polo 1 tiro, 1 polo 2 tiros, 2 polos 1 tiro, 2 polos 2 tiros | media |
+| **Interruptor de llave (key switch) ON/OFF de panel 12–19 mm**<br><sub>`emc-interruptor-llave`</sub> | panel | S1203 (barril roscado de 12 mm, 2 terminales) (2p); Barril de 16 / 19 mm | S1203 12 mm 2 posiciones, 16 mm, 19 mm, Llave extraíble solo en OFF o en ambas posiciones (según modelo) | media |
 | **Interruptor de balancín KCD1 (2 o 3 pines)**<br><sub>`emc-rocker-kcd1`</sub> | panel | Panel a presión, 2 terminales (KCD1-101) (2p); Panel a presión, 3 terminales (KCD1-102/103) (3p) | KCD1-101 SPST negro, Rojo, Blanco, KCD1-102 SPDT, Versión redonda Ø20 mm | muy alta |
 | **Interruptor de balancín KCD3 / KCD4 con luz (127 V)**<br><sub>`emc-rocker-kcd3-kcd4-luz`</sub> | panel | Panel a presión, 3 terminales (SPST iluminado) (3p); Panel a presión, 4 terminales (DPST iluminado) (4p) | KCD3 rojo 3 pines, KCD3 4 pines DPST, KCD4, Lámpara 127 V / 250 V / 12 V | alta |
 | **Interruptor deslizable SS12D00 (SPDT, 3 pines)**<br><sub>`emc-slide-ss12d00`</sub> | THT | THT vertical, 3 pines en línea (3p, 2.54 mm) | SS12D00G2, SS12D00G3, SS12D00G4, SS12D00G5 | muy alta |
@@ -992,8 +1128,10 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Micro switch miniatura KW10 / KW12 (tipo SS, 20 x 10 mm)**<br><sub>`emc-microswitch-kw10-mini`</sub> | THT | Cuerpo tipo SS, 3 terminales (3p) | Botón, Palanca recta, Palanca con rodillo, Palanca de arco | alta |
 | **Interruptor de límite industrial (ME-8104 / ME-8108 / TZ-8108)**<br><sub>`emc-limit-switch-industrial`</sub> | panel | Caja metálica, 4 terminales de tornillo (4p) | ME-8104 (palanca rodillo), ME-8108 (rodillo ajustable), ME-8107 (varilla) | media |
 | **Reed switch de vidrio (ampolla 2 x 14 mm)**<br><sub>`emc-reed-switch`</sub> | THT | Axial (ampolla de vidrio) (2p) | 2x14 mm NA, 2.5x14 mm, 3x20 mm, Versión NC / conmutada (3 terminales) | alta |
+| **Sensor magnético de puerta/ventana alámbrico MC-38 (reed switch + imán)**<br><sub>`emc-sensor-magnetico-mc38`</sub> | panel | MC-38 de superficie (sensor + imán) (2p) | MC-38 blanco de superficie, MC-31 / empotrable cilíndrico, Para puerta metálica o cortina (de piso, tipo HO-03) | alta |
 | **Relevador Songle SRD-05VDC-SL-C (bobina 5 V, 10 A)**<br><sub>`emc-relevador-srd-05vdc`</sub> | THT | THT 5 pines (cuerpo T73) (5p, filas 12.0 mm) | SRD-05VDC-SL-C, SRD-03VDC, SRD-06VDC, SRD-09VDC | muy alta |
 | **Relevador automotriz 12 V 30/40 A (4 o 5 terminales)**<br><sub>`emc-relevador-automotriz`</sub> | panel | Cubo ISO mini, terminales faston (5p) | 12 V 30 A 4 pines, 12 V 40 A 5 pines, 24 V, Con base y cables | alta |
+| **Relevador enchufable de uso general tipo Omron MY2N / MY4N / LY2N (terminales planas)**<br><sub>`emc-relevador-enchufable-my`</sub> | panel | MY2 / HH52P (2 polos, 8 terminales planas) (8p); MY4 / HH54P (4 polos, 14 terminales planas) (14p); LY2 / HH62P (2 polos, 8 terminales, 10 A) (8p) | MY2N 12 VCC, MY2N 24 VCC, MY2N 24 VCA, MY2N 120 VCA (para 127 V), MY4N 12/24 VCC y 120 VCA, LY2N 12/24 VCC y 120 VCA, Con LED indicador, MK2P-I octal (8 pines redondos, base PF083A) | alta |
 | **Relevador Songle SRD-12VDC-SL-C (bobina 12 V, 10 A)**<br><sub>`emc-relevador-srd-12vdc`</sub> | THT | THT 5 pines (cuerpo T73) (5p, filas 12.0 mm) | SRD-12VDC-SL-C, SRD-24VDC-SL-C | alta |
 | **Relevador de 2 polos HK19F (DPDT, 8 pines tipo DIP)**<br><sub>`emc-relevador-hk19f-dpdt`</sub> | THT | THT 8 pines (patrón DIP) (8p, 2.54 mm, filas 7.62 mm) | HK19F-DC5V-SHG, HK19F-DC12V-SHG, HK19F-DC3V-SHG | media |
 | **Relevador de estado sólido de panel SSR-25DA (tipo Fotek)**<br><sub>`emc-ssr-fotek-25da`</sub> | panel | Cuerpo estándar 'hockey puck', 4 tornillos (4p) | SSR-10DA, SSR-25DA, SSR-40DA, SSR-25AA (control AC), SSR-25DD (salida DC) | media |
@@ -1010,6 +1148,8 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 
 | Componente | Montaje | Encapsulado / huella | Valores o variantes comunes | Popularidad |
 |---|---|---|---|---|
+| **Clavija (enchufe macho) armable de 127 V, de 2 o 3 patas**<br><sub>`con-clavija-127v`</sub> | n/a | — | 2 patas polarizada, 2 patas no polarizada, 3 patas con tierra, De uso rudo (hule), De ángulo (90°) | alta |
+| **Entrada de alimentación IEC C14 de panel (simple, con portafusible o con interruptor)**<br><sub>`con-iec-c14-panel`</sub> | panel | C14 simple (de encastre o con tornillos) (3p); C14 con portafusible 5x20 (3p); C14 con interruptor de balancín (y portafusible en algunos) | Simple, Con portafusible 5x20, Con interruptor negro o rojo (250 VCA 10 A), Con interruptor y portafusible | alta |
 | **Jack DC 5.5 x 2.1 mm para PCB (DC-005, 3 pines)**<br><sub>`con-dc-jack-pcb-2.1`</sub> | THT | DC-005 horizontal, 3 pines tipo pala (3p) | DC-005 negro 2.1 mm, DC-005 2.5 mm, Versión SMD, Versión con tuerca (panel) | muy alta |
 | **Plug DC macho 5.5 x 2.1 / 2.5 mm (para soldar o con cable / bornera)**<br><sub>`con-dc-plug`</sub> | n/a | — | 5.5x2.1 para soldar, 5.5x2.5, Con bornera de tornillo, Cable con plug 1 m, Adaptadores 3.5x1.35, 4.0x1.7 | muy alta |
 | **Jack DC de panel 5.5 x 2.1 / 2.5 mm con tuerca (DC-022 / DC-099)**<br><sub>`con-dc-jack-panel`</sub> | panel | Panel roscado (3p) | DC-022 plástico, DC-099 metálico, 5.5x2.1, 5.5x2.5 | alta |
@@ -1021,9 +1161,11 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Plug de audio 3.5 mm macho para soldar (mono/estéreo)**<br><sub>`con-plug-3.5`</sub> | n/a | — | Mono TS, Estéreo TRS, TRRS (4 polos, micrófono), Metálico, Plástico | alta |
 | **Plug RCA macho para soldar**<br><sub>`con-rca-macho`</sub> | n/a | — | Plástico rojo/negro, Metálico, Dorado | alta |
 | **Conector XLR 3 pines (macho y hembra)**<br><sub>`con-xlr`</sub> | panel | XLR de panel (tipo D) (3p); XLR de cable (3p) | Macho de cable, Hembra de cable, Macho de panel, Hembra de panel, XLR 4/5 pines (DMX) | media |
+| **Terminal de bocina de presión (resorte) de 2 o 4 posiciones, para PCB o chasis**<br><sub>`con-terminal-bocina-resorte`</sub> | THT | 2 posiciones (mono) para PCB (2p); 4 posiciones (estéreo) para PCB (4p) | 2 posiciones (mono), 4 posiciones (estéreo), Para PCB a 90°, De chasis con tornillos | media |
 | **Base / socket para CI DIP de lámina (6 a 40 pines)**<br><sub>`con-base-dip-lamina`</sub> | THT | Angosta 7.62 mm (DIP-6/8/14/16/18/20/24N/28N) (2.54 mm, filas 7.62 mm); Ancha 15.24 mm (DIP-24/28/40) (2.54 mm, filas 15.24 mm) | DIP-6, DIP-8, DIP-14, DIP-16, DIP-18, DIP-20, DIP-24 angosta/ancha, DIP-28 angosta/ancha, … (+1) | muy alta |
 | **Base / socket DIP maquinada (pines torneados)**<br><sub>`con-base-dip-maquinada`</sub> | THT | Angosta 7.62 mm (2.54 mm, filas 7.62 mm); Ancha 15.24 mm (2.54 mm, filas 15.24 mm) | DIP-8, DIP-14, DIP-16, DIP-18, DIP-20, DIP-28, DIP-40 | media |
 | **Zócalo ZIF 28 / 40 pines (tipo Textool)**<br><sub>`con-zif`</sub> | THT | ZIF-28 (28p, 2.54 mm, filas 15.24 mm); ZIF-40 (40p, 2.54 mm, filas 15.24 mm) | ZIF-28, ZIF-40, ZIF-14/16/20/24, ZIF-48 (programadores universales) | media |
+| **Base (socket) para relevador enchufable MY2 / MY4 / LY2 (PYF08A, PYF14A, PTF08A)**<br><sub>`con-base-relevador-enchufable`</sub> | panel | PYF08A (para MY2, 8 bornes de tornillo, riel DIN) (8p); PYF14A (para MY4, 14 bornes de tornillo, riel DIN) (14p); PTF08A (para LY2, 8 bornes) (8p); Base para PCB PY08-02 / PY14-02 | PYF08A, PYF14A, PTF08A, PF083A (octal de 8 pines, para MK2P), Con clip metálico de retención | alta |
 | **Bornera de tornillo para PCB KF301, paso 5.0 mm (2/3 pines, apilable)**<br><sub>`con-bornera-kf301-5mm`</sub> | THT | KF301-2P (2p, 5.0 mm); KF301-3P (3p, 5.0 mm) | 2P azul, 3P azul, 2P verde, Paquetes de 10 | muy alta |
 | **Regleta de clemas de plástico tipo 'chocolate' (12 polos)**<br><sub>`con-clema-chocolate`</sub> | n/a | — | 3 A, 6 A, 10 A, 16 A, 25 A, 12 polos blanco/negro | muy alta |
 | **Bornera de tornillo para PCB paso 3.5 mm (KF350 / DG350)**<br><sub>`con-bornera-3.5mm`</sub> | THT | KF350-2P (2p, 3.5 mm); KF350-3P (3p, 3.5 mm) | 2P, 3P, 4P | alta |
@@ -1046,6 +1188,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Conector IDC hembra para cable plano (FC-6 a FC-40)**<br><sub>`con-idc-hembra-cable-plano`</sub> | n/a | — | FC-6, FC-8, FC-10, FC-14, FC-16, FC-20, FC-26, FC-34, … (+1) | alta |
 | **Ranura / socket microSD para PCB (push-push o bisagra)**<br><sub>`con-microsd-socket`</sub> | SMD | microSD push-push SMD (9p, 1.1 mm) | Push-push, Bisagra (hinge), Push-pull | media |
 | **Ranura / socket SD tamaño completo para PCB**<br><sub>`con-sd-socket`</sub> | SMD | SD SMD/THT (11p) | Push-push, Normal | media |
+| **Portalámparas (socket): E10 miniatura para prácticas y E27 de 127 V**<br><sub>`con-portalampara`</sub> | panel | E10 miniatura con base para atornillar (2p); E27 de porcelana o baquelita (de sobreponer o colgante) (2p) | E10 de lámina, E10 de plástico con base, E27 de porcelana de sobreponer, E27 de baquelita colgante | alta |
 | **Broche para pila de 9 V (con cables o con terminales para PCB)**<br><sub>`con-broche-9v`</sub> | n/a | Broche con terminales para PCB (2p) | Suave con cables 15 cm, Rígido tipo T, Con plug DC 5.5x2.1 (Arduino), Portapila 9V con tapa e interruptor | muy alta |
 | **Portapilas AA (x1, x2, x3, x4, x6, x8; con cables, con tapa e interruptor)**<br><sub>`con-portapilas-aa`</sub> | n/a | Portapilas con cables (2p); Portapilas para PCB (1xAA, 2xAA) (2p) | 1xAA (1.5 V), 2xAA (3 V), 3xAA (4.5 V), 4xAA (6 V), 6xAA (9 V), 8xAA (12 V), Con tapa e interruptor, Con broche 9 V | muy alta |
 | **Portapila para batería de botón CR2032 (THT / SMD)**<br><sub>`con-portapila-cr2032`</sub> | THT/SMD | THT horizontal (2 pines) (2p); SMD (2p) | CR2032 THT, CR2032 SMD, CR2025/CR2016, CR1220 (12 mm), Con cables | alta |
@@ -1062,6 +1205,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Conector RJ11 / RJ12 hembra para PCB (6P4C / 6P6C)**<br><sub>`con-rj11`</sub> | THT | RJ11 90° THT (4p, 1.02 mm) | 6P4C, 6P6C, 4P4C (auricular) | media |
 | **Conector RJ45 con magnéticos y LEDs HR911105A**<br><sub>`con-rj45-hr911105a`</sub> | THT | RJ45 MagJack 90°, 12 pines + blindaje (14p) | HR911105A, HR911103A, HR911130C | media |
 | **Conector RJ45 hembra para PCB (sin magnéticos)**<br><sub>`con-rj45-pcb`</sub> | THT | RJ45 90° THT 8 pines (8p, 1.02 mm) | 90° sin blindaje, 90° con blindaje, Vertical | media |
+| **Conector coaxial tipo F (RG-6 / RG-59) y coples**<br><sub>`con-coaxial-tipo-f`</sub> | panel | Jack F de chasis o para PCB (2p) | Para RG-6 de compresión, Para RG-6 de rosca, Para RG-59, Cople F hembra-hembra (barril), Jack F de chasis, Adaptador F a RCA | alta |
 | **Conector BNC hembra (panel y PCB) y macho**<br><sub>`con-bnc`</sub> | panel | BNC hembra de panel (2p); BNC hembra PCB 90° (3p) | 50 Ω (RG-58), 75 Ω (RG-59 CCTV), Panel, PCB 90°, Macho de compresión/crimpar | media |
 | **Conector SMA hembra para PCB y de panel (antenas)**<br><sub>`con-sma`</sub> | THT | SMA vertical THT (5 pines) (5p); SMA de borde de placa (edge mount) (3p) | SMA hembra vertical, SMA de borde, SMA de panel con pigtail U.FL, RP-SMA (WiFi) | media |
 | **Conector U.FL / IPEX (MHF1) SMD**<br><sub>`con-ufl-ipex`</sub> | SMD | U.FL SMD (3p) | U.FL SMD, Pigtail U.FL a SMA 10–20 cm | media |
@@ -1094,6 +1238,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Tubo termocontráctil (termofit) 2:1, kits y por metro**<br><sub>`cab-tubo-termocontractil`</sub> | n/a | — | Ø 1, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10, 12, 20 mm, Kit 127/328/530 pzs, Negro, rojo, transparente, colores, Con adhesivo 3:1 | muy alta |
 | **Alambre de cobre desnudo / estañado para puentes (bus wire)**<br><sub>`cab-cobre-desnudo-estanado`</sub> | n/a | — | 18 AWG, 20 AWG, 22 AWG, 24 AWG, Carrete o por metro | media |
 | **Alambre magneto / alambre esmaltado (AWG 18 a 40)**<br><sub>`cab-alambre-magneto`</sub> | n/a | — | 18 AWG, 20 AWG, 22 AWG, 24 AWG, 26 AWG, 28 AWG, 30 AWG, 32 AWG, … (+7) | alta |
+| **Cable de alimentación 127 VCA con clavija (cordón de línea y cable de poder IEC C13)**<br><sub>`cab-cordon-alimentacion`</sub> | n/a | — | IEC C13 a clavija de 3 patas, 1.8 m, Cordón 2x18 AWG con clavija polarizada y punta libre, C7 'tipo 8' de 2 hilos, C5 'trébol' (laptop) | muy alta |
 | **Cable blindado de audio / micrófono (1 o 2 conductores + malla)**<br><sub>`cab-blindado-audio`</sub> | n/a | — | 1 conductor + malla (mono), 2 conductores + malla (balanceado/estéreo), Cable de micrófono negro por metro, Multipar | alta |
 | **Cable dúplex polarizado (cable de bocina rojo/negro)**<br><sub>`cab-duplex-polarizado`</sub> | n/a | — | 2x22 AWG, 2x20 AWG, 2x18 AWG, 2x16 AWG, 2x14 AWG, Rojo/negro, Transparente con traza, Por metro o rollo | muy alta |
 | **Cable flexible de conexión (cable de un conductor) 18–30 AWG**<br><sub>`cab-flexible-calibres`</sub> | n/a | — | 18 AWG, 20 AWG, 22 AWG, 24 AWG, 26 AWG, 28 AWG, 30 AWG, Colores rojo/negro/azul/verde/amarillo/blanco, … (+1) | muy alta |
@@ -1135,9 +1280,11 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Disipador para TO-247 / TO-3P**<br><sub>`mec-disipador-to247`</sub> | THT | Patrón TO-247 (3p, 5.45 mm) | Para 1 TO-247, Perfil para varios | media |
 | **Gabinetes / cajas de plástico para proyectos**<br><sub>`mec-gabinete-proyecto`</sub> | panel | Caja ABS | Chica (pila 9 V), Mediana, Grande, Negra, Gris, Transparente, Con tapa de aluminio | alta |
 | **Caja estanca IP65 (registro hermético)**<br><sub>`mec-caja-estanca-ip65`</sub> | panel | Caja IP65 | 83x58x33, 100x68x50, 115x90x55, 158x90x60, 200x120x75, Tapa transparente | media |
+| **Imanes de neodimio (disco, cilindro y bloque)**<br><sub>`mec-iman-neodimio`</sub> | n/a | — | Disco 5 x 2 mm, Disco 10 x 2 mm, Disco 10 x 3 mm, Disco 12 x 3 mm, Bloque 10 x 5 x 2 mm, Grado N35 / N52 | media |
 | **Riel DIN 35 mm y accesorios (soportes para PCB en riel DIN)**<br><sub>`mec-riel-din`</sub> | panel | TS35 x 7.5 mm | TS35 7.5 mm, TS35 15 mm, Tope final, Soporte para PCB, Borneras para riel DIN (UK2.5B) | media |
 | **Perillas para potenciómetro (eje 6 mm estriado, liso o D)**<br><sub>`mec-perilla-potenciometro`</sub> | n/a | — | Para eje estriado 6 mm (18 dientes, a presión), Para eje liso 6 mm (con tornillo prisionero), Para eje D 6 mm, Para eje 1/4" (6.35 mm), Ø 15–40 mm, Negra con marcador, Aluminio, Tipo Davies (plástico) | alta |
 | **Porta LED / bisel para LED de 3 y 5 mm**<br><sub>`mec-portaled-bisel`</sub> | panel | Plástico 2 piezas; Metálico cromado con tuerca | 3 mm negro, 5 mm negro, Metálico 3 mm, Metálico 5 mm | media |
+| **Rueda loca (ball caster) de bola metálica o de nylon para robots**<br><sub>`mec-rueda-loca`</sub> | n/a | CY-15A metálica (bola de 15 mm); Mini rueda W420 (bola de acero de 15 mm); Rueda con bola de nylon de 1 in | Metálica, bola de 15 mm (CY-15A), Mini W420, Bola de nylon de 1 in, Con separadores para ajustar la altura | alta |
 | **Separadores / postes hexagonales de latón M3 (macho-hembra y hembra-hembra)**<br><sub>`mec-separador-laton-m3`</sub> | n/a | Hexagonal M3 | M3 x 5, M3 x 6, M3 x 8, M3 x 10, M3 x 12, M3 x 15, M3 x 20, M3 x 25, … (+5) | alta |
 | **Separadores de nylon M2.5 / M3 (kits para Raspberry Pi)**<br><sub>`mec-separador-nylon`</sub> | n/a | Hexagonal M2.5 / M3 nylon | Kit M2.5 (300 pzs), Kit M3, Negro, Blanco | alta |
 | **Soportes plásticos para PCB (snap-in y autoadheribles)**<br><sub>`mec-soporte-pcb-plastico`</sub> | n/a | Snap-in con base adhesiva | 6 mm, 10 mm, 12 mm, 16 mm, 20 mm, 25 mm, Con adhesivo, Doble snap-in | media |
@@ -1169,6 +1316,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Placa de fibra de vidrio (FR-4) con cobre a una cara**<br><sub>`mat-placa-fr4-1-cara`</sub> | n/a | Varios tamaños UNIT | 5 x 7 cm, 10 x 10 cm, 10 x 15 cm, 15 x 20 cm, 20 x 30 cm | alta |
 | **Placa fenólica (FR-2) con cobre a dos caras**<br><sub>`mat-placa-fenolica-2-caras`</sub> | n/a | Medidas típicas | 10 x 10 cm, 10 x 15 cm | media |
 | **Placa fotosensible (presensibilizada) positiva**<br><sub>`mat-placa-presensibilizada`</sub> | n/a | — | 10 x 10 cm, 10 x 15 cm, una cara, doble cara | media |
+| **Placa adaptadora SMD a DIP (SOIC/SOP-8, SOP/TSSOP-28, SOT-23, QFP) para protoboard**<br><sub>`mat-placa-adaptadora-smd-dip`</sub> | THT/SMD | SOIC-8 / SOP-8 / MSOP-8 / TSSOP-8 a DIP-8 (8p, 2.54 mm); SOP-28 / TSSOP-28 a DIP-28 (28p, 2.54 mm); SOT-23 / SOT-23-6 a DIP (2.54 mm); QFP / LQFP multiusos (paso 0.5 / 0.8 mm) (2.54 mm) | SOP-8 a DIP-8, SOP-16 / 20 / 24 / 28 a DIP, TSSOP a DIP, SOT-23 a DIP, QFP 32 / 44 / 48 / 64, Kit surtido de 30–35 placas | alta |
 | **Protoboard de 400 puntos (media)**<br><sub>`mat-protoboard-400`</sub> | n/a | 400 puntos (2.54 mm, filas 7.62 mm) | Steren 509-003, Steren 509-005 (400 puntos, 2 líneas terminales), genérica 400 | muy alta |
 | **Protoboard de 830 puntos**<br><sub>`mat-protoboard-830`</sub> | n/a | 830 puntos (2.54 mm, filas 7.62 mm) | Steren 509-010, Steren 509-015 (deslizable), Steren a presión 1 bloque 2 tiras, MB-102 genérica | muy alta |
 | **Mini protoboard de 170 puntos**<br><sub>`mat-protoboard-170`</sub> | n/a | 170 puntos (2.54 mm) | blanca, colores surtidos | alta |
@@ -1256,10 +1404,12 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Fuente para protoboard MB102 (3.3 V / 5 V)**<br><sub>`her-fuente-protoboard-mb102`</sub> | modulo | Módulo para riel de protoboard (2.54 mm) | MB102 | alta |
 | **Fuente de alimentación de laboratorio 0–30 V 0–10 A**<br><sub>`her-fuente-laboratorio-30v-10a`</sub> | n/a | — | 30 V 10 A | media |
 | **Generador de funciones DDS FeelElec FY6900**<br><sub>`her-generador-fy6900`</sub> | n/a | — | FY6900-20M, FY6900-60M, FY6900-100M | media |
-| **Generador de funciones en módulo/kit (XR2206, AD9833)**<br><sub>`her-generador-funciones-modulo`</sub> | modulo | — | kit XR2206, módulo AD9833 | media |
+| **Generador de funciones en módulo/kit (XR2206, AD9833)**<br><sub>`her-generador-funciones-modulo`</sub> | modulo | Módulo AD9833 (tipo CJMCU-9833) con tira de pines 1x7 (7p, 2.54 mm) | kit XR2206, módulo AD9833 | media |
 | **Cutter de precisión / navaja tipo bisturí**<br><sub>`her-cutter-precision`</sub> | n/a | — | tipo X-Acto #11, cutter 9 mm, cutter 18 mm | muy alta |
+| **Desarmadores (destornilladores) plano y de cruz de tamaño estándar**<br><sub>`her-desarmadores-estandar`</sub> | n/a | — | Plano 1/8 in, Plano 3/16 in, Plano 1/4 in, Cruz PH1, Cruz PH2, Juego de 6 piezas, Aislados 1000 V | muy alta |
 | **Juego de desarmadores de precisión**<br><sub>`her-desarmadores-precision`</sub> | n/a | — | 6 pzs, kit de puntas 24–60 pzs | muy alta |
 | **Pinzas de corte diagonal y de corte al ras**<br><sub>`her-pinzas-corte-diagonal`</sub> | n/a | — | 4.5 in, 5 in, corte al ras tipo 170 | muy alta |
+| **Pinzas de electricista (universales / de liniero)**<br><sub>`her-pinzas-electricista`</sub> | n/a | — | 7 in, 8 in, 9 in, Mango aislado 1000 V | muy alta |
 | **Pinzas de punta (punta larga)**<br><sub>`her-pinzas-punta`</sub> | n/a | — | 5 in, 6 in, punta curva | muy alta |
 | **Pinzas pelacables manuales (con calibres)**<br><sub>`her-pinzas-pelacables-manuales`</sub> | n/a | — | 10–22 AWG, 20–30 AWG | muy alta |
 | **Pistola de silicón caliente**<br><sub>`her-pistola-silicon`</sub> | n/a | — | chica 7 mm, grande 11 mm | muy alta |
@@ -1267,9 +1417,13 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Pinzas de crimpeo Dupont / JST (SN-28B)**<br><sub>`her-crimpeadora-dupont`</sub> | n/a | — | SN-28B, SN-01BM | alta |
 | **Pinzas de precisión antiestáticas (tweezers ESD)**<br><sub>`her-pinzas-tweezers-esd`</sub> | n/a | — | recta, curva, kit 6 pzs | alta |
 | **Pinzas pelacables automáticas**<br><sub>`her-pinzas-pelacables-automaticas`</sub> | n/a | — | — | alta |
+| **Pinzas ponchadoras para terminales aisladas (ojillo, horquilla, faston) y punteras**<br><sub>`her-crimpeadora-terminales-aisladas`</sub> | n/a | — | Sencilla con pelacables y corta-tornillos (22–10 AWG), De matraca para aisladas rojo/azul/amarillo, De matraca para punteras (ferrules) 0.25–6 mm² | alta |
 | **Extractor e insertor de circuitos integrados**<br><sub>`her-extractor-insertor-ci`</sub> | n/a | — | — | media |
 | **Lupa con luz (de escritorio, de mano o de diadema)**<br><sub>`her-lupa-con-luz`</sub> | n/a | — | de escritorio, de mano, de diadema | alta |
 | **Microscopio digital USB**<br><sub>`her-microscopio-usb`</sub> | n/a | — | USB, con pantalla LCD | media |
+| **Detector de voltaje sin contacto (pluma NCV) y desarmador probador de corriente**<br><sub>`her-detector-voltaje-sin-contacto`</sub> | n/a | — | Pluma NCV 12–1000 VCA (doble sensibilidad), Pluma NCV 90–1000 VCA, Desarmador probador de neón, Multímetro con NCV integrado | alta |
+| **Medidor USB de voltaje y corriente (USB tester / 'USB doctor')**<br><sub>`her-medidor-usb`</sub> | n/a | — | Básico USB-A ('USB doctor'), KWS-V20 con pantalla LCD, UM25C con Bluetooth, FNIRSI FNB48 / C1 con USB-C y PD | media |
+| **Punta (sonda) de osciloscopio pasiva x1/x10 con BNC (tipo 6100)**<br><sub>`her-sonda-osciloscopio`</sub> | n/a | — | 60 MHz, 100 MHz, 200 MHz, x1/x10, x100 (alto voltaje), Par de puntas | alta |
 | **Kit de herramientas Steren para electrónica**<br><sub>`her-kit-herramientas-steren`</sub> | n/a | — | — | media |
 | **Multímetro digital económico DT830B**<br><sub>`her-multimetro-dt830b`</sub> | n/a | — | DT830B, DT830D, DT832 | muy alta |
 | **Analizador lógico USB de 8 canales (24 MHz)**<br><sub>`her-analizador-logico-24mhz`</sub> | n/a | — | 24 MHz 8 canales | alta |
@@ -1332,6 +1486,7 @@ Catálogo generado por `build.py` a partir de `datos/`. No editar a mano.
 | **Pilas recargables NiMH AA y AAA 1.2 V**<br><sub>`ene-pila-aa-aaa-nimh`</sub> | n/a | AA (2p); AAA (2p) | AA 2000 mAh, AA 2500 mAh, AAA 800 mAh, AAA 1000 mAh | alta |
 | **Pila AA de litio recargable 1.5 V con USB**<br><sub>`ene-pila-aa-litio-usb`</sub> | n/a | AA (2p) | AA, AAA | media |
 | **Pilas C y D alcalinas 1.5 V**<br><sub>`ene-pila-c-d`</sub> | n/a | C (LR14) (2p); D (LR20) (2p) | C (LR14), D (LR20) | media |
+| **Pila alcalina de 12 V A23 / A27 (controles remotos)**<br><sub>`ene-pila-a23-a27-12v`</sub> | n/a | A23 (23A) (2p); A27 (27A) (2p) | A23 12 V, A27 12 V | alta |
 | **Batería de plomo-ácido sellada 12 V 7 Ah**<br><sub>`ene-bateria-plomo-12v-7ah`</sub> | n/a | 12 V 7 Ah (2p) | 12 V 7 Ah, 12 V 9 Ah | alta |
 | **Batería de plomo-ácido sellada 12 V 1.2 Ah**<br><sub>`ene-bateria-plomo-12v-1-2ah`</sub> | n/a | 12 V 1.2 Ah (2p) | 12 V 1.2 Ah, 12 V 1.3 Ah | media |
 | **Batería de plomo-ácido sellada 6 V 4.5 Ah**<br><sub>`ene-bateria-plomo-6v-4-5ah`</sub> | n/a | 6 V 4.5 Ah (2p) | 6 V 4.5 Ah, 6 V 4 Ah | media |

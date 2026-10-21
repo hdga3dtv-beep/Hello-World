@@ -1405,24 +1405,24 @@
       ],
       "pinout": [
         {
-          "pin": "+",
+          "pin": "1",
           "name": "+",
-          "function": "Salida positiva DC"
+          "function": "Salida positiva DC (junto a la esquina biselada/marca +)"
         },
         {
-          "pin": "−",
+          "pin": "2",
+          "name": "AC1",
+          "function": "Entrada de corriente alterna (~)"
+        },
+        {
+          "pin": "3",
+          "name": "AC2",
+          "function": "Entrada de corriente alterna (~)"
+        },
+        {
+          "pin": "4",
           "name": "−",
           "function": "Salida negativa DC"
-        },
-        {
-          "pin": "~",
-          "name": "AC1",
-          "function": "Entrada de corriente alterna"
-        },
-        {
-          "pin": "~",
-          "name": "AC2",
-          "function": "Entrada de corriente alterna"
         }
       ],
       "common_values": [
@@ -1507,24 +1507,24 @@
       ],
       "pinout": [
         {
-          "pin": "+",
+          "pin": "1",
           "name": "+",
-          "function": "Salida positiva DC"
+          "function": "Salida positiva DC (junto a la esquina biselada/marca +)"
         },
         {
-          "pin": "−",
+          "pin": "2",
+          "name": "AC1",
+          "function": "Entrada de corriente alterna (~)"
+        },
+        {
+          "pin": "3",
+          "name": "AC2",
+          "function": "Entrada de corriente alterna (~)"
+        },
+        {
+          "pin": "4",
           "name": "−",
           "function": "Salida negativa DC"
-        },
-        {
-          "pin": "~",
-          "name": "AC1",
-          "function": "Entrada de corriente alterna"
-        },
-        {
-          "pin": "~",
-          "name": "AC2",
-          "function": "Entrada de corriente alterna"
         }
       ],
       "common_values": [
@@ -6122,7 +6122,7 @@
           "row_spacing_mm": null,
           "body_mm": "≈3.0–4.5 x 1.5–2.0 (largo x diámetro)",
           "lead_diameter_mm": 0.5,
-          "notes": "Paso de huella 7.62 mm (0.3 in) o 10.16 mm; vertical 2.54 mm. Terminal Ø0.46–0.56 mm, taladro 0.8 mm. Banda negra = cátodo."
+          "notes": "Paso de huella 7.62 mm (0.3 in) o 10.16 mm; vertical 2.54 mm. Terminal Ø0.46–0.56 mm, taladro 0.8 mm. Sin polaridad: si trae banda, NO indica cátodo (no marcar polaridad en la serigrafía)."
         }
       ],
       "pinout": [
@@ -7029,14 +7029,34 @@
       ],
       "pinout": [
         {
-          "pin": "1-3",
-          "name": "K1–K3",
-          "function": "Cátodos de los 3 chips (5050; varía)"
+          "pin": "1",
+          "name": "K1",
+          "function": "Cátodo del chip 1 (5050; la asignación ánodo/cátodo varía por fabricante)"
         },
         {
-          "pin": "4-6",
-          "name": "A3–A1",
-          "function": "Ánodos de los 3 chips (5050; varía)"
+          "pin": "2",
+          "name": "K2",
+          "function": "Cátodo del chip 2 (5050; la asignación ánodo/cátodo varía por fabricante)"
+        },
+        {
+          "pin": "3",
+          "name": "K3",
+          "function": "Cátodo del chip 3 (5050; la asignación ánodo/cátodo varía por fabricante)"
+        },
+        {
+          "pin": "4",
+          "name": "A3",
+          "function": "Ánodo del chip 3 (5050; opuesto al pin 3; varía por fabricante)"
+        },
+        {
+          "pin": "5",
+          "name": "A2",
+          "function": "Ánodo del chip 2 (5050; opuesto al pin 2; varía por fabricante)"
+        },
+        {
+          "pin": "6",
+          "name": "A1",
+          "function": "Ánodo del chip 1 (5050; opuesto al pin 1; varía por fabricante)"
         }
       ],
       "common_values": [
@@ -8765,14 +8785,104 @@
       ],
       "pinout": [
         {
-          "pin": "1–10",
-          "name": "A1–A10",
-          "function": "Ánodos de los segmentos 1–10 (lado marcado, típico)"
+          "pin": "1",
+          "name": "A1",
+          "function": "Ánodo del segmento 1 (lado de ánodos típico; verificar)"
         },
         {
-          "pin": "11–20",
-          "name": "K10–K1",
-          "function": "Cátodos de los segmentos 10–1 (pin 20 = cátodo del segmento 1)"
+          "pin": "2",
+          "name": "A2",
+          "function": "Ánodo del segmento 2 (lado de ánodos típico; verificar)"
+        },
+        {
+          "pin": "3",
+          "name": "A3",
+          "function": "Ánodo del segmento 3 (lado de ánodos típico; verificar)"
+        },
+        {
+          "pin": "4",
+          "name": "A4",
+          "function": "Ánodo del segmento 4 (lado de ánodos típico; verificar)"
+        },
+        {
+          "pin": "5",
+          "name": "A5",
+          "function": "Ánodo del segmento 5 (lado de ánodos típico; verificar)"
+        },
+        {
+          "pin": "6",
+          "name": "A6",
+          "function": "Ánodo del segmento 6 (lado de ánodos típico; verificar)"
+        },
+        {
+          "pin": "7",
+          "name": "A7",
+          "function": "Ánodo del segmento 7 (lado de ánodos típico; verificar)"
+        },
+        {
+          "pin": "8",
+          "name": "A8",
+          "function": "Ánodo del segmento 8 (lado de ánodos típico; verificar)"
+        },
+        {
+          "pin": "9",
+          "name": "A9",
+          "function": "Ánodo del segmento 9 (lado de ánodos típico; verificar)"
+        },
+        {
+          "pin": "10",
+          "name": "A10",
+          "function": "Ánodo del segmento 10 (lado de ánodos típico; verificar)"
+        },
+        {
+          "pin": "11",
+          "name": "K10",
+          "function": "Cátodo del segmento 10"
+        },
+        {
+          "pin": "12",
+          "name": "K9",
+          "function": "Cátodo del segmento 9"
+        },
+        {
+          "pin": "13",
+          "name": "K8",
+          "function": "Cátodo del segmento 8"
+        },
+        {
+          "pin": "14",
+          "name": "K7",
+          "function": "Cátodo del segmento 7"
+        },
+        {
+          "pin": "15",
+          "name": "K6",
+          "function": "Cátodo del segmento 6"
+        },
+        {
+          "pin": "16",
+          "name": "K5",
+          "function": "Cátodo del segmento 5"
+        },
+        {
+          "pin": "17",
+          "name": "K4",
+          "function": "Cátodo del segmento 4"
+        },
+        {
+          "pin": "18",
+          "name": "K3",
+          "function": "Cátodo del segmento 3"
+        },
+        {
+          "pin": "19",
+          "name": "K2",
+          "function": "Cátodo del segmento 2"
+        },
+        {
+          "pin": "20",
+          "name": "K1",
+          "function": "Cátodo del segmento 1"
         }
       ],
       "common_values": [

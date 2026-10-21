@@ -1,0 +1,48 @@
+[
+ {
+  "index": 0,
+  "id": "dio-ultrarrapido-mur",
+  "field": "packages",
+  "new_value": [
+   {
+    "name": "DO-41 (DO-204AL) plástico",
+    "pins": 2,
+    "pitch_mm": 10.16,
+    "row_spacing_mm": null,
+    "body_mm": "≈4.1–5.2 x 2.0–2.7 (largo x diámetro)",
+    "lead_diameter_mm": 0.8,
+    "notes": "Paso típico de huella 10.16 mm (0.4 in) horizontal (mín. ≈7.62 mm); vertical 2.54–5.08 mm. Terminal Ø0.71–0.86 mm, taladro 1.0–1.1 mm. Banda = cátodo."
+   },
+   {
+    "name": "DO-201AD (DO-27)",
+    "pins": 2,
+    "pitch_mm": 15.24,
+    "row_spacing_mm": null,
+    "body_mm": "≈7.2–9.5 x 4.8–5.3 (largo x diámetro)",
+    "lead_diameter_mm": 1.25,
+    "notes": "Paso de huella típico 15.24 mm (0.6 in); vertical 5.08 mm. Terminal Ø1.2–1.3 mm, taladro 1.4–1.6 mm. Banda = cátodo."
+   },
+   {
+    "name": "TO-220AC (2 terminales, MUR860/MUR1560)",
+    "pins": 2,
+    "pitch_mm": 5.08,
+    "row_spacing_mm": null,
+    "body_mm": "≈10.0 x 15.0 (con pestaña) x 4.5 (aprox., como TO-220)",
+    "lead_diameter_mm": null,
+    "notes": "Dos patas en las posiciones exteriores de un TO-220 (separadas 5.08 mm, sin pata central). Pestaña = cátodo. Medidas aproximadas."
+   },
+   {
+    "name": "TO-220AB (3 terminales, doble cátodo común CT: MUR1620CT)",
+    "pins": 3,
+    "pitch_mm": 2.54,
+    "row_spacing_mm": null,
+    "body_mm": "≈10.0 x 15.0 (con pestaña) x 4.5; parte plástica ≈10 x 9",
+    "lead_diameter_mm": null,
+    "notes": "Terminales rectangulares ≈0.8 x 0.5 mm (taladro 1.0–1.2 mm, pad ≥1.8 mm). Pestaña metálica con agujero Ø≈3.6–3.8 mm unida al pin central. Vista: de frente a la leyenda, patas abajo, pin 1 a la izquierda. Medidas aproximadas (varían por fabricante)."
+   }
+  ],
+  "problem": "Los nombres de los encapsulados TO-220AC y TO-220AB citan piezas MBR (MBR1045/MBR1645, MBR2045CT/MBR20100CT) copiadas del Schottky; en esta ficha MUR corresponden a MUR860/MUR1560 (TO-220AC) y MUR1620CT (TO-220AB). Las medidas se conservan.",
+  "evidence": "Hojas onsemi: MUR860 y MUR1560 en TO-220 de 2 terminales (Case 221B, TO-220AC); MUR1620CT en TO-220AB (Case 221A), doble con cátodo común. Los propios common_values y pinout de la ficha usan esas piezas.",
+  "confidence": "alta"
+ }
+]

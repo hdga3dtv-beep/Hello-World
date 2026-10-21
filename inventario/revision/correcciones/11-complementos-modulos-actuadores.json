@@ -1,0 +1,72 @@
+[
+  {
+    "index": 0,
+    "id": "dsp-tft-35-raspberry-pi",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "1", "name": "3.3V", "function": "Alimentación 3.3 V"},
+      {"pin": "2", "name": "5V", "function": "Alimentación 5 V"},
+      {"pin": "4", "name": "5V", "function": "Alimentación 5 V"},
+      {"pin": "6", "name": "GND", "function": "Tierra"},
+      {"pin": "9", "name": "GND", "function": "Tierra"},
+      {"pin": "11", "name": "TP_IRQ", "function": "Interrupción del táctil (GPIO17)"},
+      {"pin": "14", "name": "GND", "function": "Tierra"},
+      {"pin": "17", "name": "3.3V", "function": "Alimentación 3.3 V"},
+      {"pin": "18", "name": "LCD_RS", "function": "Selección comando/datos (GPIO24)"},
+      {"pin": "19", "name": "LCD_SI / TP_SI", "function": "MOSI del SPI (GPIO10)"},
+      {"pin": "20", "name": "GND", "function": "Tierra"},
+      {"pin": "21", "name": "TP_SO", "function": "MISO del táctil (GPIO9)"},
+      {"pin": "22", "name": "RST", "function": "Reset del LCD (GPIO25)"},
+      {"pin": "23", "name": "LCD_SCK / TP_SCK", "function": "Reloj SPI (GPIO11)"},
+      {"pin": "24", "name": "LCD_CS", "function": "Chip select del LCD (CE0, GPIO8)"},
+      {"pin": "25", "name": "GND", "function": "Tierra"},
+      {"pin": "26", "name": "TP_CS", "function": "Chip select del táctil (CE1, GPIO7)"}
+    ],
+    "problem": "Falta el pin 17 (3.3 V) y las tierras 9, 14, 20 y 25 solo se mencionan en el texto del pin 6; como las notas dicen que los pines no listados quedan libres, la app dejaría el pin 17 (alimentación) y las GND como NC.",
+    "evidence": "Tabla de interfaz de la wiki de Waveshare 3.5inch RPi LCD (A): 1 y 17 = 3.3V; 2 y 4 = 5V; 6, 9, 14, 20, 25 = GND; 3, 5, 7, 8, 10, 12, 13, 15, 16 = NC. En el header GPIO de la Raspberry Pi el pin 17 también es 3.3 V.",
+    "confidence": "alta"
+  },
+  {
+    "index": 1,
+    "id": "act-cerradura-electromagnetica",
+    "field": "pinout",
+    "new_value": [
+      {"pin": "1", "name": "+ (rojo)", "function": "+12 V DC"},
+      {"pin": "2", "name": "− (negro)", "function": "Tierra"},
+      {"pin": "3", "name": "COM", "function": "Común del contacto de estado de puerta (solo en modelos con sensor)"},
+      {"pin": "4", "name": "NO", "function": "Contacto normalmente abierto del sensor de estado (solo en modelos con sensor)"},
+      {"pin": "5", "name": "NC", "function": "Contacto normalmente cerrado del sensor de estado (solo en modelos con sensor)"}
+    ],
+    "problem": "El pin 3 'COM / NO / NC' agrupa en una sola entrada tres terminales físicas distintas, y además no cuadra con el encapsulado de 2 pines; la app dibujaría un solo punto de conexión en lugar de tres.",
+    "evidence": "Las cerraduras magnéticas con salida de estado (p. ej. modelos de 280 kg con 'signal output' o sensor Hall/reed) traen 5 hilos: alimentación +/− y un contacto seco de conmutación con COM, NO y NC separados.",
+    "confidence": "media"
+  },
+  {
+    "index": 2,
+    "id": "act-cerradura-electromagnetica",
+    "field": "packages",
+    "new_value": [
+      {
+        "name": "Barra de aluminio con placa de armadura y 2 cables",
+        "pins": 2,
+        "pitch_mm": null,
+        "row_spacing_mm": null,
+        "body_mm": null,
+        "lead_diameter_mm": null,
+        "notes": "Dimensiones según capacidad (las de 280 kg son más largas); se instala en el marco con escuadra en L o Z."
+      },
+      {
+        "name": "Barra con sensor de estado de puerta (5 cables: +, −, COM, NO, NC)",
+        "pins": 5,
+        "pitch_mm": null,
+        "row_spacing_mm": null,
+        "body_mm": null,
+        "lead_diameter_mm": null,
+        "notes": "Versión con contacto de estado (pines 3–5 del pinout); colores de cable según fabricante. Dimensiones según capacidad."
+      }
+    ],
+    "problem": "El único encapsulado declara 2 pines, pero el pinout incluye el contacto de estado de los modelos con sensor; falta la variante de 5 terminales.",
+    "evidence": "Coherencia con el pinout corregido: modelo básico de 2 hilos y modelo con sensor de 5 hilos (alimentación + contacto COM/NO/NC).",
+    "confidence": "media"
+  }
+]

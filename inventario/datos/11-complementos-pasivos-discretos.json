@@ -16,7 +16,33 @@
     "https://components101.com/igbts/fga25n120antd-1200v-npt-trench-igbt",
     "https://au.element14.com/onsemi/fga25n120antdtu/igbt-npt-1-2kv-25a-to-3p/dp/1095025",
     "https://besomi.com/jo_en/h20r1203igbt-to-247-31200v-20a.html",
-    "https://www.vishay.com/en/product/96266/"
+    "https://www.vishay.com/en/product/96266/",
+    "https://www.agelectronica.com/detalle.php?p=LMS-S3MM-W5-7814P",
+    "https://www.agelectronica.com/detalle.php?p=LMS-S3MM-W3-4812P",
+    "https://www.steren.com.mx/foco-miniatura-de-rosca-de-6-3-volts-y-1-57-watts.html",
+    "https://www.steren.com.mx/porta-foco-de-rosca-metalico.html",
+    "https://www.steren.com.mx/proyectos-de-electronica/focos-y-refacciones",
+    "https://www.steren.com.mx/foco-neon-en-encapsulado-redondo-color-rojo-de-117-vca.html",
+    "https://uelectronics.com/producto/ad16-22d-indicador-de-luz-verde-rojo-amarillo-12v/",
+    "https://uelectronics.com/producto/ad16-22d-indicador-de-luz-verde-rojo-amarillo-24v/",
+    "https://uelectronics.com/producto/ad16-22d-indicador-de-luz-verde-rojo-amarillo-110v/",
+    "https://www.agelectronica.com/detalle?busca=1N5338BG*",
+    "https://www.agelectronica.com/detalle.php?p=CZRB5349B-HF*",
+    "https://agelectronica.com/detalle?busca=MUR460",
+    "https://agelectronica.com/detalle?busca=MUR860",
+    "https://agelectronica.com/detalle.php?p=MUR+1560G",
+    "https://agelectronica.com/detalle.php?p=MUR+1620CTRG",
+    "https://agelectronica.com/detalle.php?p=40HF80",
+    "https://agelectronica.com/detalle?busca=1N+1186RA",
+    "https://agelectronica.com/detalle?busca=1N+3766R",
+    "https://www.agelectronica.com/detalle.php?p=MJE340*",
+    "https://uelectronics.com/producto/kse350-transistor-pnp-300v-0-5a-to-126/",
+    "https://uelectronics.com/producto/mje13003-transistor-npn-400v-1a-to-126/",
+    "https://uelectronics.com/wp-content/uploads/2024/02/AR4039-MJE13003-Transistor-NPN-400V-1A-TO-126-Datasheet.pdf",
+    "https://agelectronica.com/detalle?busca=MJE+13003G",
+    "https://agelectronica.com/detalle?busca=MJE%2013001",
+    "https://agelectronica.com/detalle.php?p=MPSA14",
+    "https://agelectronica.com/detalle?busca=MPSA+13-AP"
   ],
   "items": [
     {
@@ -1225,6 +1251,857 @@
       "popularity": "media",
       "price_mxn_approx": null,
       "notes": "Poner un capacitor cerámico de 0.1 µF (o mayor) entre VCC (8) y GND (5) lo más cerca posible del encapsulado. Cada driver de lado alto necesita su propia fuente aislada de ≈15 V. Con el LED encendido la salida va a VCC. Hay versión TLP250H y versiones SMD: verificar su hoja antes de usar esta huella/pinout. Disponibilidad por tienda no verificada individualmente."
+    },
+    {
+      "id": "opt-led-piranha-superflux",
+      "name": "LED superflux / piraña de 4 patas (domo de 3 mm y 5 mm)",
+      "aliases": [
+        "LED piraña",
+        "LED piranha",
+        "LED superflux",
+        "super flux LED",
+        "LED de 4 patas",
+        "LED cuadrado 7.6 mm",
+        "LED para calaveras de auto",
+        "LMS-S3MM (AG)"
+      ],
+      "category": "optoelectronica",
+      "subcategory": "leds_tht",
+      "description": "LED de alto brillo con base cuadrada de ≈7.6 mm, domo de 3 o 5 mm y 4 patas (dos por polaridad) que reparten mejor el calor y la corriente; muy usado en calaveras y luces de auto, letreros, módulos para anuncios y lámparas caseras.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "Superflux / piraña 7.6 x 7.6 mm (4 patas)",
+          "pins": 4,
+          "pitch_mm": 5.08,
+          "row_spacing_mm": 5.08,
+          "body_mm": "≈7.6 x 7.6 (base cuadrada) con domo Ø3 o Ø5 (aprox.)",
+          "lead_diameter_mm": null,
+          "notes": "Patas en cuadrado de 5.08 x 5.08 mm (0.2 in) en la mayoría de las hojas de datos; confirmar con la pieza. Terminales delgadas de ≈0.5 mm (taladro 0.8–0.9 mm). Las dos patas de un mismo lado tienen la misma polaridad y van unidas internamente. Medidas aproximadas: varían por fabricante."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "K1",
+          "name": "K",
+          "function": "Cátodo (−); lado marcado con esquina recortada o muesca en muchas marcas: confirmar con multímetro en modo diodo"
+        },
+        {
+          "pin": "K2",
+          "name": "K",
+          "function": "Cátodo (−), unido internamente a K1"
+        },
+        {
+          "pin": "A1",
+          "name": "A",
+          "function": "Ánodo (+)"
+        },
+        {
+          "pin": "A2",
+          "name": "A",
+          "function": "Ánodo (+), unido internamente a A1"
+        }
+      ],
+      "common_values": [
+        "rojo",
+        "ámbar / amarillo",
+        "blanco frío",
+        "blanco cálido",
+        "azul",
+        "verde",
+        "domo 3 mm",
+        "domo 5 mm",
+        "ángulo ≈30° (AG) o ≈90–120° según modelo",
+        "RGB de 4 patas (ánodo común, distinto pinout)",
+        "módulos de 3 y 5 LEDs superflux para anuncios (AG)"
+      ],
+      "specs": {
+        "vf": "≈1.8–2.4 V (rojo/ámbar) / ≈2.8–3.4 V (blanco, azul, verde)",
+        "corriente": "20–50 mA según hoja (más que un LED de 5 mm normal)",
+        "angulo": "≈30° a 120° según el lente"
+      },
+      "schematic_symbol": "led",
+      "typical_uses": [
+        "Calaveras, cuartos y luces de freno de auto/moto caseros",
+        "Letreros y módulos LED para anuncios",
+        "Lámparas y linternas de bajo voltaje",
+        "Indicadores de alto brillo visibles a la luz del día"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Mercado Libre",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Verificado en AG Electrónica: LEDs 'superflux' de 3 y 5 mm (serie LMS-S3MM, 30°) en blanco, rojo, amarillo, azul y verde, además de módulos de 3 y 5 LEDs. Siempre con resistencia en serie (o driver de corriente); al ser LED de mayor corriente conviene calcularla con la If de la hoja. Sensibles al calor del cautín: soldar rápido. En las versiones RGB de 4 patas una esquina marcada indica el pin común: revisar su hoja."
+    },
+    {
+      "id": "opt-foco-miniatura-incandescente",
+      "name": "Foco miniatura incandescente de bajo voltaje (rosca E10, tipo gota y tipo arroz)",
+      "aliases": [
+        "foco miniatura",
+        "foquito",
+        "foco de linterna",
+        "lamparita",
+        "foco de 6 V",
+        "foco No. 46",
+        "foco No. 222",
+        "foco tipo arroz",
+        "lámpara de grano de trigo",
+        "miniature lamp E10",
+        "MES bulb"
+      ],
+      "category": "optoelectronica",
+      "subcategory": "lamparas",
+      "description": "Pequeña lámpara de filamento de 1.5 a 12 V con base de rosca E10 (o con alambres en la versión 'tipo arroz'); clásica en las prácticas escolares de circuitos serie y paralelo, linternas, maquetas y como indicador o carga de prueba.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "Base de rosca miniatura E10 (MES) — No. 46, No. 222 y similares",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Rosca E10 (Ø≈10 mm); foco No. 46 de Steren Ø9.9 mm; largo total ≈23–25 mm (aprox.)",
+          "lead_diameter_mm": null,
+          "notes": "No se suelda: se enrosca en un portafoco E10 (de lámina con terminales para soldar/atornillar o de PCB). La huella es la del portafoco elegido; medir el que se compre."
+        },
+        {
+          "name": "Tipo arroz / grano de trigo con alambres",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Bulbo de vidrio pequeño con dos alambres flexibles; se suelda directo a la placa, a una bornera o a cables. Medidas no verificadas: tomar las de la pieza."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "Rosca",
+          "function": "Casquillo roscado (un extremo del filamento); sin polaridad"
+        },
+        {
+          "pin": "2",
+          "name": "Centro",
+          "function": "Contacto central de la base (otro extremo del filamento)"
+        }
+      ],
+      "common_values": [
+        "1.5 V (una pila)",
+        "2.2–2.5 V (No. 222, linterna de 2 pilas)",
+        "3 V",
+        "4.8 V",
+        "6 V / 6.3 V (No. 46: 250 mA, 1.57 W)",
+        "12 V",
+        "tipo arroz 12 V 100 mA (Steren)"
+      ],
+      "specs": {
+        "no_46_steren": "6.3 V, 250 mA, 1.57 W, Ø9.9 mm, vida ≈3000 h",
+        "polaridad": "ninguna (funciona en CA o CD)",
+        "arranque": "en frío el filamento tiene mucha menor resistencia: la corriente de encendido es varias veces la nominal",
+        "base": "rosca miniatura E10 (MES)"
+      },
+      "schematic_symbol": "lampara",
+      "typical_uses": [
+        "Prácticas de circuitos serie y paralelo y ley de Ohm (primaria, secundaria técnica)",
+        "Linternas y maquetas escolares",
+        "Indicador o carga resistiva de prueba para transistores, relevadores y SCR de CD",
+        "Reemplazo en tableros y juguetes antiguos"
+      ],
+      "stores": [
+        "Steren",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Verificado en Steren: 'Foco miniatura de rosca, de 6.3 V y 1.57 W' (No. 46: 250 mA, 9 cd, Ø9.9 mm, 3000 h), foco miniatura tipo gota de 2.2 V (No. 222), lámpara tipo arroz de 12 V 100 mA y 'Porta foco de rosca metálico'. Elegir el voltaje del foco igual al de la fuente (con más voltaje se funde). Para prácticas de TRIAC/SCR en 127 VAC se usa un foco doméstico con socket de línea, no esta pieza. Existen reemplazos LED con base E10 (con polaridad)."
+    },
+    {
+      "id": "opt-piloto-indicador-panel",
+      "name": "Luz piloto / indicador de panel (LED 22 mm AD16-22D, LED metálico 6–16 mm y neón 127 VAC)",
+      "aliases": [
+        "luz piloto",
+        "foco piloto",
+        "lámpara piloto",
+        "indicador de panel",
+        "AD16-22D",
+        "AD16-22DS",
+        "foco neón",
+        "indicador LED metálico",
+        "pilot lamp",
+        "panel indicator light"
+      ],
+      "category": "optoelectronica",
+      "subcategory": "indicadores_panel",
+      "description": "Indicadores luminosos que se montan en un agujero del gabinete o tablero: pilotos LED de 22 mm (AD16-22D) para 12/24/110/220 V, indicadores LED metálicos de 6–16 mm con resistencia integrada y focos de neón de 117 VAC para señalizar encendido o falla.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Piloto LED AD16-22D / AD16-22DS (agujero de 22 mm)",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Cuello Ø22 mm, frente Ø29 mm (UNIT); fondo no verificado",
+          "lead_diameter_mm": null,
+          "notes": "Se fija con tuerca en un agujero de 22 mm (el mismo de los botones industriales de 22 mm). Dos terminales traseras de tornillo o lengüeta para cable."
+        },
+        {
+          "name": "Indicador LED metálico de rosca 6 / 8 / 10 / 12 / 16 mm",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Cuerpo metálico roscado con tuerca; el agujero del panel es el diámetro nominal. Salida con cables o terminales para soldar. Muchos traen resistencia para 3–6 V, 12 V, 24 V o 220 V: revisar la etiqueta. Medidas variables por modelo."
+        },
+        {
+          "name": "Foco neón de panel en encapsulado redondo (117 VAC)",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Ø13.8 x 40.5 mm (Steren)",
+          "lead_diameter_mm": null,
+          "notes": "Trae resistencia interna (56 kΩ en el de Steren) y se conecta directo a la línea con sus cables."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "+ / L",
+          "function": "Positivo (indicadores LED de CD) o línea (CA)"
+        },
+        {
+          "pin": "2",
+          "name": "− / N",
+          "function": "Negativo o neutro; los AD16-22D de CA/CD y los de neón no tienen polaridad"
+        }
+      ],
+      "common_values": [
+        "AD16-22D 12 V",
+        "AD16-22DS 24 V",
+        "AD16-22D 110 V",
+        "AD16-22D 220 V",
+        "rojo",
+        "verde",
+        "amarillo",
+        "azul",
+        "blanco",
+        "LED metálico 8 mm 12 V",
+        "LED metálico 12 / 16 mm",
+        "neón rojo 117 VAC (Steren)"
+      ],
+      "specs": {
+        "consumo_ad16_22d": "≈20 mA (UNIT)",
+        "voltajes_ad16_22d": "12, 24, 110 o 220 V; la versión de UNIT acepta CA o CD",
+        "neon_steren": "117 VAC, resistencia interna 56 kΩ, vida ≈25 000 h",
+        "agujero_panel": "22 mm (AD16) o el diámetro nominal (metálicos)"
+      },
+      "schematic_symbol": "lampara",
+      "typical_uses": [
+        "Indicador de encendido en fuentes de laboratorio y gabinetes",
+        "Tableros de control y prácticas de electromecánica (CONALEP, CECyT)",
+        "Indicar presencia de 127 VAC en extensiones, dimmers y cajas de control",
+        "Señalización de falla o alarma en domótica"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Steren",
+        "AG Electrónica",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT: AD16-22D (verde/rojo/amarillo) en 12, 24, 110 y 220 V, cuello de 22 mm, frente de 29 mm, ≈20 mA, CA o CD. Verificado en Steren: 'Foco neón en encapsulado redondo, color rojo, de 117 Vca' (56 kΩ interna, Ø13.8 x 40.5 mm). Comprar el piloto del voltaje exacto del circuito (uno de 12 V en 127 V se destruye). El piloto no va en la PCB: se cablea. Posible traslape con el grupo de electromecánicos (botones e interruptores con luz); aquí solo el indicador."
+    },
+    {
+      "id": "dio-zener-5w",
+      "name": "Diodo Zener 5 W (1N5333B–1N5388B)",
+      "aliases": [
+        "zener 5 W",
+        "zener de 5 watts",
+        "1N5338B",
+        "1N5342B",
+        "1N5349B",
+        "1N5352B",
+        "1N53xxB",
+        "1N5338BG",
+        "CZRB53xxB (versión SMD)"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "diodos_zener",
+      "description": "Zener de potencia de 5 W en cuerpo axial grueso para reguladores en derivación de mayor corriente, protección contra sobrevoltaje y referencias en fuentes donde un zener de 1 W se calienta.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "Axial de 5 W (Case 017AA / T-18 de onsemi; otras marcas DO-201AE)",
+          "pins": 2,
+          "pitch_mm": 15.24,
+          "row_spacing_mm": null,
+          "body_mm": "≈8.4–8.9 x 3.3–3.7 (largo x diámetro; Case 017AA, aprox.)",
+          "lead_diameter_mm": 1.0,
+          "notes": "Terminal Ø≈0.95–1.1 mm (taladro 1.3 mm). Algunos fabricantes lo encapsulan en DO-201AE, de tamaño parecido al DO-201AD del 1N5408: una huella con paso de 15.24 mm y taladro de 1.3–1.5 mm sirve para ambos. Banda = cátodo. Medidas aproximadas: verificar con la hoja del fabricante."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "A",
+          "function": "Ánodo"
+        },
+        {
+          "pin": "2",
+          "name": "K",
+          "function": "Cátodo (banda); en uso normal va al positivo"
+        }
+      ],
+      "common_values": [
+        "3.3 V (1N5333B)",
+        "5.1 V (1N5338B)",
+        "5.6 V (1N5339B)",
+        "6.2 V (1N5341B)",
+        "6.8 V (1N5342B)",
+        "7.5 V (1N5343B)",
+        "9.1 V (1N5346B)",
+        "10 V (1N5347B)",
+        "12 V (1N5349B)",
+        "15 V (1N5352B)",
+        "18 V (1N5355B)",
+        "24 V (1N5359B)",
+        "30 V (1N5363B)",
+        "33 V (1N5364B)"
+      ],
+      "specs": {
+        "potencia": "5 W (a 25 °C con terminales cortas; reducir con la temperatura según hoja)",
+        "tolerancia": "±5 % (sufijo B)",
+        "rango": "3.3–200 V (1N5333B a 1N5388B)"
+      },
+      "schematic_symbol": "diodo_zener",
+      "typical_uses": [
+        "Regulador zener en derivación de varios cientos de mA",
+        "Protección contra sobrevoltaje (crowbar con SCR, sujeción de líneas de 12 V)",
+        "Referencia para transistor de paso en fuentes lineales",
+        "Limitar voltaje de bobinas y de entradas de alimentación de auto"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Verificado en AG Electrónica: 1N5338BG (onsemi, 5.1 V 5 W) y equivalentes SMD CZRB5338B / CZRB5349B (5.1 V y 12 V, 5 W). La numeración 1N53xxB sigue la serie E24 desde 3.3 V (1N5333B). Para disipar los 5 W necesita terminales cortas y cobre amplio en los pads; separarlo del plástico de otros componentes. Disponibilidad en 5Hz y Centro no verificada individualmente."
+    },
+    {
+      "id": "dio-ultrarrapido-mur",
+      "name": "Diodo de recuperación ultrarrápida MUR (MUR160 / MUR460 / MUR860 / MUR1560 / MUR1620CT)",
+      "aliases": [
+        "MUR160",
+        "MUR120",
+        "MUR460",
+        "MUR860",
+        "MUR1560",
+        "MUR1560G",
+        "MUR1620CT",
+        "MUR1620CTRG",
+        "diodo ultrarrápido",
+        "ultrafast rectifier"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "diodos_rapidos",
+      "description": "Rectificadores de recuperación ultrarrápida (decenas de ns) de 1 a 16 A para fuentes conmutadas, inversores, drivers ZVS, PFC y snubbers, en cápsulas axiales (DO-41, DO-201AD) o TO-220 para disipador.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "DO-41 (DO-204AL) plástico",
+          "pins": 2,
+          "pitch_mm": 10.16,
+          "row_spacing_mm": null,
+          "body_mm": "≈4.1–5.2 x 2.0–2.7 (largo x diámetro)",
+          "lead_diameter_mm": 0.8,
+          "notes": "Paso típico de huella 10.16 mm (0.4 in) horizontal (mín. ≈7.62 mm); vertical 2.54–5.08 mm. Terminal Ø0.71–0.86 mm, taladro 1.0–1.1 mm. Banda = cátodo."
+        },
+        {
+          "name": "DO-201AD (DO-27)",
+          "pins": 2,
+          "pitch_mm": 15.24,
+          "row_spacing_mm": null,
+          "body_mm": "≈7.2–9.5 x 4.8–5.3 (largo x diámetro)",
+          "lead_diameter_mm": 1.25,
+          "notes": "Paso de huella típico 15.24 mm (0.6 in); vertical 5.08 mm. Terminal Ø1.2–1.3 mm, taladro 1.4–1.6 mm. Banda = cátodo."
+        },
+        {
+          "name": "TO-220AC (2 terminales, MUR860/MUR1560)",
+          "pins": 2,
+          "pitch_mm": 5.08,
+          "row_spacing_mm": null,
+          "body_mm": "≈10.0 x 15.0 (con pestaña) x 4.5 (aprox., como TO-220)",
+          "lead_diameter_mm": null,
+          "notes": "Dos patas en las posiciones exteriores de un TO-220 (separadas 5.08 mm, sin pata central). Pestaña = cátodo. Medidas aproximadas."
+        },
+        {
+          "name": "TO-220AB (3 terminales, doble cátodo común CT: MUR1620CT)",
+          "pins": 3,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": "≈10.0 x 15.0 (con pestaña) x 4.5; parte plástica ≈10 x 9",
+          "lead_diameter_mm": null,
+          "notes": "Terminales rectangulares ≈0.8 x 0.5 mm (taladro 1.0–1.2 mm, pad ≥1.8 mm). Pestaña metálica con agujero Ø≈3.6–3.8 mm unida al pin central. Vista: de frente a la leyenda, patas abajo, pin 1 a la izquierda. Medidas aproximadas (varían por fabricante)."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "A",
+          "name": "A",
+          "function": "Axiales (DO-41 / DO-201AD): ánodo, lado sin banda"
+        },
+        {
+          "pin": "K",
+          "name": "K",
+          "function": "Axiales: cátodo, lado de la banda"
+        },
+        {
+          "pin": "AC1",
+          "name": "K",
+          "function": "TO-220AC (MUR860, MUR1560): pata izquierda = cátodo, unida a la pestaña"
+        },
+        {
+          "pin": "AC2",
+          "name": "A",
+          "function": "TO-220AC: pata derecha = ánodo"
+        },
+        {
+          "pin": "1",
+          "name": "A1",
+          "function": "TO-220AB doble CT (MUR1620CT): ánodo del diodo 1"
+        },
+        {
+          "pin": "2",
+          "name": "K",
+          "function": "TO-220AB doble CT: cátodo común (pestaña)"
+        },
+        {
+          "pin": "3",
+          "name": "A2",
+          "function": "TO-220AB doble CT: ánodo del diodo 2"
+        }
+      ],
+      "common_values": [
+        "MUR120 (1 A 200 V, DO-41)",
+        "MUR160 (1 A 600 V, DO-41)",
+        "MUR460 (4 A 600 V, DO-201AD)",
+        "MUR860 (8 A 600 V, TO-220AC)",
+        "MUR1560 (15 A 600 V, TO-220AC)",
+        "MUR1620CT (2 x 8 A 200 V, TO-220AB cátodo común)"
+      ],
+      "specs": {
+        "trr": "≈25–75 ns según modelo y voltaje (ver hoja)",
+        "vrrm": "200–600 V en los modelos listados",
+        "vf": "≈0.9–1.5 V a corriente nominal según modelo"
+      },
+      "schematic_symbol": "diodo",
+      "typical_uses": [
+        "Rectificador de salida y snubber en fuentes conmutadas (flyback, forward)",
+        "Drivers ZVS y calentadores por inducción caseros",
+        "Inversores y diodos de rueda libre para MOSFET/IGBT",
+        "Reparación de fuentes de PC, TV y soldadoras inversoras"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Verificado en AG Electrónica: MUR460 (600 V 4 A, DO-201A), MUR860 (600 V 8 A, TO-220AC), MUR1560G (600 V 15 A, TO-220) y MUR1620CTRG. Los de 1–3 A de uso común (FR107, UF4007, HER308, UF5408) están en dio-rapido-fr107-uf4007 y dio-rapido-fr207-fr307-uf5408. En TO-220 la pestaña es cátodo (viva): aislar con mica si el disipador es común. Pinout TO-220AC/AB según convención JEDEC habitual: confirmar con la hoja del fabricante concreto."
+    },
+    {
+      "id": "dio-potencia-perno",
+      "name": "Diodo rectificador de potencia de perno / rosca (stud) 6–70 A (12F, 1N1199–1N1206, 1N1183–1N1190, 40HF, 70HF)",
+      "aliases": [
+        "diodo de perno",
+        "diodo de rosca",
+        "diodo de tornillo",
+        "stud diode",
+        "40HF80",
+        "40HFR80",
+        "1N1186RA",
+        "1N1183",
+        "1N1190",
+        "1N1204",
+        "12F",
+        "70HF",
+        "diodo para cargador de baterías"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "diodos_rectificadores",
+      "description": "Rectificadores de alta corriente en cápsula metálica hexagonal con perno roscado que se atornilla al disipador y funciona como una de sus terminales; clásicos en cargadores de baterías de auto, soldadoras y fuentes de muchos amperes.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "DO-4 (DO-203AA), rosca 10-32 UNF",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Hexágono ≈11.1 mm (7/16 in) entre caras; perno 10-32 UNF (Ø≈4.8 mm) (aprox.)",
+          "lead_diameter_mm": null,
+          "notes": "Para 6–16 A (6F, 12F, 16F, 1N1199–1N1206). El perno con su tuerca y rondana se fija al disipador; la terminal superior es una lengüeta u ojillo para soldar cable. Medidas JEDEC aproximadas: verificar con la pieza."
+        },
+        {
+          "name": "DO-5 (DO-203AB), rosca 1/4-28 UNF",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Hexágono ≈17.5 mm (11/16 in) entre caras; perno 1/4-28 UNF (Ø≈6.35 mm) (aprox.)",
+          "lead_diameter_mm": null,
+          "notes": "Para 35–70 A (1N1183–1N1190, 40HF, 70HF). Misma forma de montaje que el DO-4. Medidas JEDEC aproximadas: verificar con la pieza."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "Perno",
+          "name": "K / A",
+          "function": "Cuerpo roscado: cátodo en la versión normal; ánodo en la versión 'R' (reversa, p. ej. 40HFR, 1N1186RA)"
+        },
+        {
+          "pin": "Terminal",
+          "name": "A / K",
+          "function": "Terminal superior (lengüeta u ojillo): ánodo en la versión normal; cátodo en la versión 'R'"
+        }
+      ],
+      "common_values": [
+        "6F / 12F / 16F (6–16 A, DO-4)",
+        "1N1199–1N1206 (12 A, DO-4)",
+        "1N1183–1N1190 (≈35–40 A, DO-5)",
+        "40HF10 a 40HF120 (40 A, DO-5)",
+        "70HF (70 A, DO-5)",
+        "versión R = ánodo al perno (40HFR, 1N1186RA)"
+      ],
+      "specs": {
+        "if_promedio": "6–70 A según modelo (con disipador adecuado)",
+        "vrrm": "50–1200 V según el número/sufijo",
+        "vf": "≈1–1.4 V a corriente nominal (según hoja)",
+        "polaridad": "normal = cátodo al perno; sufijo R = ánodo al perno"
+      },
+      "schematic_symbol": "diodo",
+      "typical_uses": [
+        "Cargadores de baterías de auto (transformador con tap central y dos diodos)",
+        "Soldadoras de arco y fuentes de electrólisis/galvanoplastia caseras",
+        "Rectificadores de alta corriente para motores de CD",
+        "Reparación de equipo industrial"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Verificado en AG Electrónica: 40HF80 (800 V 40 A, cátodo al tornillo, DO-5), 1N1186RA (200 V, ánodo al tornillo, DO-203AB) y 1N3766R (Vishay, ánodo al tornillo, ≈$204 MXN con IVA). Con un par normal + un par 'R' se arma un puente sobre dos disipadores sin aislar: cada disipador queda al potencial de su perno (¡vivo!). No va en la PCB: se cablea con terminal de ojillo. Usar pasta térmica y apretar sin exceso."
+    },
+    {
+      "id": "trn-mje340",
+      "name": "Transistor NPN alto voltaje MJE340 / KSE340 (300 V, 0.5 A, TO-126)",
+      "aliases": [
+        "MJE340",
+        "MJE340G",
+        "KSE340",
+        "MJE 340",
+        "transistor driver de audio",
+        "par MJE340/MJE350"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "transistores_bjt",
+      "description": "NPN de 300 V y 0.5 A (20 W) en TO-126; se usa como etapa excitadora (VAS/driver) en amplificadores de audio discretos y en amplificadores de video y fuentes de alto voltaje de poca corriente. Complemento del MJE350.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "TO-126 (SOT-32 / TO-225AA)",
+          "pins": 3,
+          "pitch_mm": 2.29,
+          "row_spacing_mm": null,
+          "body_mm": "≈7.4–8.0 x 10.5–11.1 x 2.4–2.8 (ancho x alto x grosor)",
+          "lead_diameter_mm": null,
+          "notes": "Paso 2.28–2.29 mm (0.09 in); entra en huella de 2.54 mm abriendo ligeramente las patas. Terminales planas ≈0.75 x 0.5 mm (taladro 1.0 mm). Agujero de montaje Ø≈3.1 mm. Vista: de frente a la cara con leyenda, patas abajo, pin 1 a la izquierda. La cara metálica trasera suele ir conectada al pin central."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "E",
+          "function": "Emisor"
+        },
+        {
+          "pin": "2",
+          "name": "C",
+          "function": "Colector (unido a la cara metálica)"
+        },
+        {
+          "pin": "3",
+          "name": "B",
+          "function": "Base"
+        }
+      ],
+      "common_values": [
+        "MJE340 (ST, onsemi MJE340G)",
+        "KSE340 (Fairchild/onsemi)"
+      ],
+      "specs": {
+        "tipo": "NPN",
+        "vceo": "300 V",
+        "ic_max": "0.5 A",
+        "potencia": "20 W (Tc = 25 °C, con disipador)",
+        "hfe": "30–240 a 50 mA"
+      },
+      "schematic_symbol": "transistor_npn",
+      "typical_uses": [
+        "Etapa de amplificación de voltaje (VAS) y driver en amplificadores de audio clase AB",
+        "Amplificador de video / manejo de CRT",
+        "Fuentes y drivers de alto voltaje de baja corriente (tubos nixie, osciladores)"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "UNIT Electronics",
+        "Electrónica 5Hz",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Pinout E-C-B igual que el BD139 (de frente a la cara con leyenda, patas abajo). Verificado en AG Electrónica (MJE340, ST, marcado como descontinuado en esa ficha; también MJE340G de onsemi). En UNIT se encontró el complementario KSE350. Cara metálica = colector a alto voltaje: aislar del disipador."
+    },
+    {
+      "id": "trn-mje350",
+      "name": "Transistor PNP alto voltaje MJE350 / KSE350 (300 V, 0.5 A, TO-126)",
+      "aliases": [
+        "MJE350",
+        "MJE350G",
+        "KSE350",
+        "MJE 350",
+        "par MJE340/MJE350"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "transistores_bjt",
+      "description": "PNP de −300 V y −0.5 A (20 W) en TO-126, complemento del MJE340 en etapas excitadoras de amplificadores de audio y circuitos de alto voltaje de poca corriente.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "TO-126 (SOT-32 / TO-225AA)",
+          "pins": 3,
+          "pitch_mm": 2.29,
+          "row_spacing_mm": null,
+          "body_mm": "≈7.4–8.0 x 10.5–11.1 x 2.4–2.8 (ancho x alto x grosor)",
+          "lead_diameter_mm": null,
+          "notes": "Paso 2.28–2.29 mm (0.09 in); entra en huella de 2.54 mm abriendo ligeramente las patas. Terminales planas ≈0.75 x 0.5 mm (taladro 1.0 mm). Agujero de montaje Ø≈3.1 mm. Vista: de frente a la cara con leyenda, patas abajo, pin 1 a la izquierda. La cara metálica trasera suele ir conectada al pin central."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "E",
+          "function": "Emisor"
+        },
+        {
+          "pin": "2",
+          "name": "C",
+          "function": "Colector (unido a la cara metálica)"
+        },
+        {
+          "pin": "3",
+          "name": "B",
+          "function": "Base"
+        }
+      ],
+      "common_values": [
+        "MJE350 (ST, onsemi MJE350G)",
+        "KSE350 (Fairchild/onsemi)"
+      ],
+      "specs": {
+        "tipo": "PNP",
+        "vceo": "−300 V",
+        "ic_max": "−0.5 A",
+        "potencia": "20 W (Tc = 25 °C, con disipador)",
+        "hfe": "30–240 a 50 mA"
+      },
+      "schematic_symbol": "transistor_pnp",
+      "typical_uses": [
+        "Par diferencial/driver complementario en amplificadores de audio discretos",
+        "Fuentes de corriente de alto voltaje",
+        "Desplazadores de nivel de alto voltaje"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Mismo pinout E-C-B que el MJE340 y el BD140. Verificado en UNIT (KSE350, PNP −300 V −0.5 A, TO-126) y en AG (MJE350G). Cara metálica = colector: usar mica si comparte disipador."
+    },
+    {
+      "id": "trn-mje13001-mje13003",
+      "name": "Transistor NPN alto voltaje MJE13001 / MJE13003 (TO-92 / TO-126)",
+      "aliases": [
+        "13001",
+        "13003",
+        "MJE13001",
+        "MJE13003",
+        "MJE13003G",
+        "E13003",
+        "KSE13003",
+        "transistor de cargador de celular",
+        "transistor de foco ahorrador"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "transistores_bjt",
+      "description": "NPN de conmutación de 400 V y baja corriente (13001 en TO-92, 13003 en TO-126), hermano menor del MJE13005/13007; es el transistor de los cargadores de celular autooscilantes, focos ahorradores y fuentes conmutadas pequeñas.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "TO-126 (SOT-32 / TO-225AA)",
+          "pins": 3,
+          "pitch_mm": 2.29,
+          "row_spacing_mm": null,
+          "body_mm": "≈7.4–8.0 x 10.5–11.1 x 2.4–2.8 (ancho x alto x grosor)",
+          "lead_diameter_mm": null,
+          "notes": "Paso 2.28–2.29 mm (0.09 in); entra en huella de 2.54 mm abriendo ligeramente las patas. Terminales planas ≈0.75 x 0.5 mm (taladro 1.0 mm). Agujero de montaje Ø≈3.1 mm. Vista: de frente a la cara con leyenda, patas abajo, pin 1 a la izquierda. ¡Ojo! En el 13003 el orden es B-C-E, distinto del BD139 (E-C-B)."
+        },
+        {
+          "name": "TO-92 (TO-226AA)",
+          "pins": 3,
+          "pitch_mm": 1.27,
+          "row_spacing_mm": null,
+          "body_mm": "≈4.5–5.2 x 3.5–4.2 x 4.3–5.3 (ancho x fondo x alto, rango JEDEC)",
+          "lead_diameter_mm": 0.45,
+          "notes": "Patas a 1.27 mm (a veces preformadas a 2.54 mm). El orden de pines del 13001 en TO-92 cambia entre fabricantes (B-C-E es frecuente, pero hay E-C-B): identificar con multímetro o con la hoja de la marca antes de diseñar la huella."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "B",
+          "function": "Base (13003 en TO-126)"
+        },
+        {
+          "pin": "2",
+          "name": "C",
+          "function": "Colector (unido a la cara metálica del TO-126)"
+        },
+        {
+          "pin": "3",
+          "name": "E",
+          "function": "Emisor"
+        }
+      ],
+      "common_values": [
+        "MJE13001 / 13001 (TO-92, ≈0.2–0.5 A según marca)",
+        "MJE13003 / 13003 (TO-126, 1–1.5 A según marca)"
+      ],
+      "specs": {
+        "tipo": "NPN",
+        "vceo": "400 V (VCBO ≈600–700 V)",
+        "ic_max": "13003: 1 A (UNIT) / 1.5 A (onsemi); 13001: ≈0.2–0.5 A según fabricante",
+        "hfe": "≈20–30 a 200 mA (13003, hoja de UNIT)",
+        "ft": "≈5 MHz (13003)"
+      },
+      "schematic_symbol": "transistor_npn",
+      "typical_uses": [
+        "Reparación de cargadores de celular y eliminadores conmutados pequeños",
+        "Focos ahorradores (CFL) y balastros electrónicos pequeños",
+        "Fuentes flyback de pocos watts y drivers de LED de CA",
+        "Osciladores de alto voltaje (matamoscas, ionizadores)"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT: MJE13003 NPN 400 V 1 A en TO-126 (su hoja indica 1 Base, 2 Colector, 3 Emisor; VCBO 600 V; 1.25 W sin disipador). En AG aparecen MJE13003G (onsemi, 1.5 A) y MJE13001. Los de 4–8 A en TO-220 están en trn-mje13005-mje13007. Trabaja conectado a ≈170 V de CD rectificada: ¡peligro! El pinout del 13001 en TO-92 no es uniforme: verificar."
+    },
+    {
+      "id": "trn-mpsa13-mpsa14",
+      "name": "Transistor Darlington NPN de pequeña señal MPSA13 / MPSA14 (TO-92)",
+      "aliases": [
+        "MPSA13",
+        "MPSA14",
+        "MPSA13-AP",
+        "KSP13",
+        "KSP14",
+        "Darlington TO-92",
+        "MMBTA14 (SMD)",
+        "BC517 (similar, pinout C-B-E)"
+      ],
+      "category": "semiconductores_discretos",
+      "subcategory": "transistores_darlington",
+      "description": "Darlington NPN en TO-92 de 30 V y 500 mA con ganancia de miles a decenas de miles; amplifica corrientes diminutas, por lo que se usa en interruptores de toque, detectores de humedad y para manejar relevadores pequeños desde señales muy débiles.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "TO-92 (TO-226AA)",
+          "pins": 3,
+          "pitch_mm": 1.27,
+          "row_spacing_mm": null,
+          "body_mm": "≈4.5–5.2 x 3.5–4.2 x 4.3–5.3 (ancho x fondo x alto, rango JEDEC)",
+          "lead_diameter_mm": 0.45,
+          "notes": "Patas rectas a 1.27 mm; muchas piezas vienen con patas preformadas a 2.54 mm. Huella práctica casera: 3 pads en línea a 2.54 mm (doblando las patas) o en triángulo. Terminal de sección ≈0.4–0.5 mm, taladro 0.8 mm. Vista: de frente a la cara plana (con leyenda), patas hacia abajo; pines 1-2-3 de izquierda a derecha."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "E",
+          "function": "Emisor"
+        },
+        {
+          "pin": "2",
+          "name": "B",
+          "function": "Base"
+        },
+        {
+          "pin": "3",
+          "name": "C",
+          "function": "Colector"
+        }
+      ],
+      "common_values": [
+        "MPSA13 (hFE ≥5000 a 10 mA)",
+        "MPSA14 (hFE ≥10000 a 10 mA)"
+      ],
+      "specs": {
+        "tipo": "NPN Darlington",
+        "vces": "30 V",
+        "ic_max": "500 mA (algunas hojas: 1.2 A)",
+        "potencia": "625 mW",
+        "vbe_on": "≈1.2–2 V (dos uniones en serie)",
+        "vce_sat": "≈1–1.5 V (no se satura tan bien como un BJT simple)"
+      },
+      "schematic_symbol": "darlington_npn",
+      "typical_uses": [
+        "Interruptor de toque (touch) y detector de agua/humedad caseros",
+        "Alarmas con sensores de alta impedancia",
+        "Manejar relevadores pequeños, buzzers o LEDs desde salidas débiles",
+        "Amplificadores de muy alta impedancia de entrada"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Electrónica 5Hz",
+        "Tiendas de la Rep. del Salvador (Centro CDMX)",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Pinout E-B-C (igual que 2N3904) en las versiones onsemi/MCC/Fairchild. Verificado en AG Electrónica: MPSA14 (MCC, 30 V 500 mA, TO-92) y MPSA13-AP. El BC517 cumple la misma función pero con pinout europeo C-B-E. Complementario PNP: MPSA63/MPSA64 (no listados). Para cargas de más de ≈300 mA usar TIP120 (trn-tip120-tip122)."
     }
   ]
 }

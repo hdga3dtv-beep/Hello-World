@@ -1,0 +1,1478 @@
+{
+  "group": "11-complementos-fisicos-taller",
+  "sources": [
+    "https://uelectronics.com/producto/sensor-magnetico-mc-38/",
+    "https://uelectronics.com/producto/s1203-interruptor-de-llave-on-off-de-12mm-2p-0-5a/",
+    "https://uelectronics.com/producto/rueda-loca-metal-15mm-rodillo-de-transferencia-universal/",
+    "https://uelectronics.com/producto/mini-rueda-universal-w420/",
+    "https://uelectronics.com/producto/mini-rueda-universal-con-bola-de-nylon/",
+    "https://www.geekfactory.mx/categoria-de-producto/robotica/",
+    "https://uelectronics.com/producto/puntas-de-osciloscopio-x10-x1/",
+    "https://agelectronica.com/detalle?busca=UT-P04",
+    "https://uelectronics.com/producto/modulo-de-entrada-iec320-c14-ac-250v-10a-con-interruptor-negro-o-rojo/",
+    "https://uelectronics.com/producto/cable-de-alimentacion-universal-ac-de-3-clavijas-1-8m/",
+    "https://uelectronics.com/producto/pcb-smd-dip-8/",
+    "https://uelectronics.com/producto/placa-pcb-multi-uso-64-pin-separacion-0-5-0-8-mm/",
+    "https://www.agelectronica.com/detalle?busca=SKU3047",
+    "https://www.cyberpuerta.mx/Seguridad-y-Vigilancia/Sistemas-de-Alarma/Detectores-y-Sensores/Unidades-Magneticas/Steren-Contacto-Magnetico-ALA-010-para-Puerta-Ventana-Inalambrico.html",
+    "https://cdn.tvc.mx/media/2233978/HO-03_Ficha_Técnica_español.pdf",
+    "https://www.steren.com.mx/herramientas"
+  ],
+  "items": [
+    {
+      "id": "emc-relevador-enchufable-my",
+      "name": "Relevador enchufable de uso general tipo Omron MY2N / MY4N / LY2N (terminales planas)",
+      "aliases": [
+        "MY2N",
+        "MY4N",
+        "MY2",
+        "MY4",
+        "LY2N",
+        "HH52P",
+        "HH54P",
+        "HH62P",
+        "relevador de 8 patas",
+        "relevador de 14 patas",
+        "relevador de control",
+        "relé enchufable",
+        "relevador de base"
+      ],
+      "category": "electromecanicos",
+      "subcategory": "relevadores",
+      "description": "Relevador electromecánico de 2 o 4 polos con terminales planas que se enchufa en una base atornillable o de riel DIN; es el relevador típico de tableros de control y de las prácticas de control eléctrico junto con botones de 22 mm. Muchos traen LED indicador y botón de prueba.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "MY2 / HH52P (2 polos, 8 terminales planas)",
+          "pins": 8,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "≈21.5 x 28 x 36 (aprox., sin terminales)",
+          "lead_diameter_mm": null,
+          "notes": "No se suelda a la PCB en uso normal: va en base PYF08A (riel DIN) o en base para PCB tipo PY08-02. Medidas aproximadas; verificar con la hoja de datos del modelo comprado."
+        },
+        {
+          "name": "MY4 / HH54P (4 polos, 14 terminales planas)",
+          "pins": 14,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "≈21.5 x 28 x 36 (aprox., sin terminales)",
+          "lead_diameter_mm": null,
+          "notes": "Mismo cuerpo que el MY2; base PYF14A (riel DIN) o PY14-02 (PCB)."
+        },
+        {
+          "name": "LY2 / HH62P (2 polos, 8 terminales, 10 A)",
+          "pins": 8,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Cuerpo y distribución de terminales distintos al MY2; base PTF08A. Medidas no verificadas: tomar las de la hoja de datos."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "13",
+          "name": "Bobina",
+          "function": "Bobina (A1/A2). En versiones de CD con diodo o LED tiene polaridad, pero depende del modelo: Omron vende MY□N-D2 (polaridad estándar) y MY□N1-D2 (polaridad invertida), y los clones varían. Tomar la polaridad del diagrama impreso en el relevador"
+        },
+        {
+          "pin": "14",
+          "name": "Bobina",
+          "function": "Bobina (A1/A2). Polaridad según el diagrama impreso del modelo (ver pin 13); en CA no hay polaridad"
+        },
+        {
+          "pin": "9",
+          "name": "COM1",
+          "function": "Común del polo 1 (MY2)"
+        },
+        {
+          "pin": "1",
+          "name": "NC1",
+          "function": "Normalmente cerrado del polo 1 (MY2)"
+        },
+        {
+          "pin": "5",
+          "name": "NA1",
+          "function": "Normalmente abierto del polo 1 (MY2)"
+        },
+        {
+          "pin": "12",
+          "name": "COM2",
+          "function": "Común del polo 2 (MY2)"
+        },
+        {
+          "pin": "4",
+          "name": "NC2",
+          "function": "Normalmente cerrado del polo 2 (MY2)"
+        },
+        {
+          "pin": "8",
+          "name": "NA2",
+          "function": "Normalmente abierto del polo 2 (MY2)"
+        },
+        {
+          "pin": "MY4",
+          "name": "9–12 / 1–4 / 5–8",
+          "function": "En MY4: comunes 9, 10, 11, 12; NC 1, 2, 3, 4; NA 5, 6, 7, 8 (polos 1 a 4); bobina 13–14"
+        }
+      ],
+      "common_values": [
+        "MY2N 12 VCC",
+        "MY2N 24 VCC",
+        "MY2N 24 VCA",
+        "MY2N 120 VCA (para 127 V)",
+        "MY4N 12/24 VCC y 120 VCA",
+        "LY2N 12/24 VCC y 120 VCA",
+        "Con LED indicador",
+        "MK2P-I octal (8 pines redondos, base PF083A)"
+      ],
+      "specs": {
+        "configuracion": "MY2 y LY2: 2 polos 2 tiros (DPDT); MY4: 4 polos 2 tiros (4PDT)",
+        "contactos": "MY2 ≈5 A, MY4 ≈3–5 A, LY2 ≈10 A a 250 VCA, carga resistiva (aprox.; confirmar en el rótulo del modelo)",
+        "bobina": "6/12/24 VCC o 24/120/220 VCA según modelo"
+      },
+      "schematic_symbol": "relevador",
+      "typical_uses": [
+        "Prácticas de control eléctrico (arranque-paro con enclavamiento) con botones de 22 mm",
+        "Interfaz entre PLC o Arduino (vía transistor o módulo) y cargas de 127 V",
+        "Tableros de automatización y domótica cableada"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Tiendas Rep. del Salvador / Centro CDMX",
+        "Distribuidores de material eléctrico industrial",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "La base se compra aparte (ver con-base-relevador-enchufable). En las versiones de CD con LED o diodo interno la bobina (13–14) tiene polaridad, pero la terminal positiva depende del modelo: Omron fabrica versiones de polaridad estándar (MY□N-D2) y de polaridad invertida (MY□N1-D2), y los clones varían. Conectarla al revés pone la fuente en corto a través del diodo, así que siempre se toma la polaridad del diagrama impreso en el relevador. Ese diagrama, en un costado del relevador, también hay que revisarlo porque LY2 y MK2P usan otra numeración. Medidas y capacidades aproximadas; no se verificó existencia en el sitio de una tienda en esta sesión."
+    },
+    {
+      "id": "emc-sensor-magnetico-mc38",
+      "name": "Sensor magnético de puerta/ventana alámbrico MC-38 (reed switch + imán)",
+      "aliases": [
+        "MC-38",
+        "contacto magnético",
+        "sensor de puerta",
+        "door sensor",
+        "magnetic contact",
+        "sensor magnético para alarma",
+        "MC-31 (empotrable)",
+        "HO-03 (similar, para puerta metálica)"
+      ],
+      "category": "electromecanicos",
+      "subcategory": "reed",
+      "description": "Par de piezas de plástico: una lleva un reed switch con dos cables y la otra un imán. Con el imán junto (puerta cerrada) el contacto queda cerrado y se abre al separarlos; se conecta en serie al lazo de una alarma o a una entrada digital con pull-up.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "MC-38 de superficie (sensor + imán)",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "27 x 13 x 7 por pieza (ficha de UNIT Electronics)",
+          "lead_diameter_mm": null,
+          "notes": "Trae 2 cables de ≈25 cm; en la PCB solo se necesita una bornera o un header de 2 pines. Se fija con tornillos o adhesivo."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "Cable 1",
+          "function": "Contacto (sin polaridad)"
+        },
+        {
+          "pin": "2",
+          "name": "Cable 2",
+          "function": "Contacto (sin polaridad)"
+        }
+      ],
+      "common_values": [
+        "MC-38 blanco de superficie",
+        "MC-31 / empotrable cilíndrico",
+        "Para puerta metálica o cortina (de piso, tipo HO-03)"
+      ],
+      "specs": {
+        "contacto": "Cerrado con el imán presente (en alarmas se le llama 'NC' porque está cerrado con la puerta cerrada)",
+        "distancia_accionamiento": "15–25 mm",
+        "capacidad": "0.5 A, 100 V, 3 W máx.",
+        "cable": "≈25 cm"
+      },
+      "schematic_symbol": "interruptor",
+      "typical_uses": [
+        "Alarma casera de puertas y ventanas con Arduino o ESP32",
+        "Domótica: avisar si quedó una puerta abierta",
+        "Contar aperturas de puerta o cajón"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Tiendas Rep. del Salvador / Centro CDMX",
+        "Distribuidores de equipo de alarmas",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": "$25 aprox. (UNIT Electronics)",
+      "notes": "Datos de la ficha de UNIT Electronics (SKU AR1246). En Arduino se lee con digitalRead() y INPUT_PULLUP: con la puerta cerrada el pin queda en LOW y al abrirla pasa a HIGH. Steren vende contactos magnéticos inalámbricos (ALA-010, SHOME-148) que no sirven para cablearse a un circuito propio."
+    },
+    {
+      "id": "emc-interruptor-llave",
+      "name": "Interruptor de llave (key switch) ON/OFF de panel 12–19 mm",
+      "aliases": [
+        "key switch",
+        "interruptor de llave",
+        "switch con llave",
+        "S1203",
+        "interruptor de llave para alarma",
+        "chapa eléctrica de 2 posiciones"
+      ],
+      "category": "electromecanicos",
+      "subcategory": "interruptores",
+      "description": "Interruptor de panel que se acciona con una llave para alternar entre dos posiciones (ON/OFF), con tuerca para gabinete y terminales para soldar. Se usa para armar o desarmar alarmas y para bloquear el encendido de un equipo.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "S1203 (barril roscado de 12 mm, 2 terminales)",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Barril roscado Ø12 mm; largo del cuerpo no verificado",
+          "lead_diameter_mm": null,
+          "notes": "Perforación de panel de ≈12 mm. Datos de UNIT Electronics: 2 terminales, 0.5 A."
+        },
+        {
+          "name": "Barril de 16 / 19 mm",
+          "pins": null,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Modelos más grandes; algunos de 3 terminales (SPDT) o de 3 posiciones. Medir la pieza."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "Contacto",
+          "function": "Terminal del interruptor (sin polaridad)"
+        },
+        {
+          "pin": "2",
+          "name": "Contacto",
+          "function": "Terminal del interruptor (sin polaridad)"
+        }
+      ],
+      "common_values": [
+        "S1203 12 mm 2 posiciones",
+        "16 mm",
+        "19 mm",
+        "Llave extraíble solo en OFF o en ambas posiciones (según modelo)"
+      ],
+      "specs": {
+        "contactos": "SPST ON/OFF (S1203)",
+        "capacidad": "0.5 A (S1203, UNIT Electronics)"
+      },
+      "schematic_symbol": "interruptor",
+      "typical_uses": [
+        "Armar y desarmar alarmas caseras",
+        "Bloquear el encendido de una máquina o un tablero",
+        "Proyectos escolares de seguridad"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Tiendas Rep. del Salvador / Centro CDMX",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Su capacidad es baja (0.5 A): para cargas mayores, que el interruptor active un relevador o una entrada del microcontrolador."
+    },
+    {
+      "id": "emc-interruptor-cuchilla",
+      "name": "Interruptor de cuchilla (de navaja) didáctico sobre base",
+      "aliases": [
+        "interruptor de navaja",
+        "knife switch",
+        "interruptor de cuchilla",
+        "interruptor de laboratorio",
+        "apagador de cuchilla"
+      ],
+      "category": "electromecanicos",
+      "subcategory": "interruptores",
+      "description": "Interruptor abierto con una cuchilla metálica que entra en unas mordazas sobre una base aislante, con bornes de tornillo. Es el interruptor clásico de las prácticas de circuitos de secundaria y bachillerato porque se ve claramente si el circuito está abierto o cerrado.",
+      "mounting": "n/a",
+      "packages": [],
+      "pinout": [
+        {
+          "pin": "1",
+          "name": "Pivote",
+          "function": "Borne de la cuchilla"
+        },
+        {
+          "pin": "2",
+          "name": "Mordaza",
+          "function": "Borne de la mordaza (posición 1)"
+        },
+        {
+          "pin": "3",
+          "name": "Mordaza 2",
+          "function": "Segunda mordaza (solo en 1 polo 2 tiros)"
+        }
+      ],
+      "common_values": [
+        "1 polo 1 tiro",
+        "1 polo 2 tiros",
+        "2 polos 1 tiro",
+        "2 polos 2 tiros"
+      ],
+      "specs": {
+        "uso": "Solo bajo voltaje (pilas o fuente de laboratorio): los contactos quedan expuestos",
+        "capacidad": "No verificada (depende del modelo)"
+      },
+      "schematic_symbol": "interruptor",
+      "typical_uses": [
+        "Prácticas de circuitos serie y paralelo con focos miniatura y pilas",
+        "Demostrar circuitos abiertos y cerrados",
+        "Conmutar entre dos ramas de un circuito (1 polo 2 tiros)"
+      ],
+      "stores": [
+        "Tiendas de material didáctico y de laboratorio escolar",
+        "Tiendas Rep. del Salvador / Centro CDMX",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "No se verificó en los catálogos de Steren, AG o UNIT en esta sesión. Como los contactos quedan expuestos, nunca se debe usar con 127 V."
+    },
+    {
+      "id": "emc-selector-industrial-22mm",
+      "name": "Selector rotativo industrial 22 mm de 2 o 3 posiciones (muletilla o llave)",
+      "aliases": [
+        "selector de 2 posiciones",
+        "selector de 3 posiciones",
+        "selector de muletilla",
+        "selector con llave 22 mm",
+        "XB2-BD21",
+        "XB2-BD33",
+        "LAY5-BD21",
+        "selector LA38"
+      ],
+      "category": "electromecanicos",
+      "subcategory": "botones_industriales",
+      "description": "Selector de perilla (muletilla) o de llave para tablero, con perforación de 22 mm y bloques de contactos de tornillo. Sirve para elegir modos como manual/automático o encendido/apagado en prácticas de control y tableros.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Cuerpo de 22 mm con bloques de contacto",
+          "pins": null,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Perforación de panel Ø22 mm",
+          "lead_diameter_mm": null,
+          "notes": "Cada bloque aporta 1NA o 1NC con 2 bornes de tornillo; la cantidad depende del modelo."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "x3-x4",
+          "name": "NA",
+          "function": "Bloque normalmente abierto (numeración IEC: 13-14, 23-24)"
+        },
+        {
+          "pin": "x1-x2",
+          "name": "NC",
+          "function": "Bloque normalmente cerrado (numeración IEC: 11-12, 21-22)"
+        }
+      ],
+      "common_values": [
+        "2 posiciones fijas (1NA)",
+        "3 posiciones fijas (2NA)",
+        "3 posiciones con retorno al centro",
+        "Con llave",
+        "Perilla corta o larga"
+      ],
+      "specs": {
+        "perforacion": "22 mm",
+        "contactos": "Bloques 1NA / 1NC; corriente térmica ≈10 A según fabricante (aprox.)"
+      },
+      "schematic_symbol": "interruptor_conmutado",
+      "typical_uses": [
+        "Selector manual/automático en prácticas de PLC y control de motores",
+        "Encendido de tableros didácticos",
+        "Elegir el modo de operación de una bomba o una alarma"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Tiendas Rep. del Salvador / Centro CDMX",
+        "Distribuidores de material eléctrico industrial",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Complementa emc-boton-industrial-22mm y emc-boton-paro-emergencia. Antes de cablear, confirmar en el bloque de contactos qué posición cierra cada contacto."
+    },
+    {
+      "id": "con-base-relevador-enchufable",
+      "name": "Base (socket) para relevador enchufable MY2 / MY4 / LY2 (PYF08A, PYF14A, PTF08A)",
+      "aliases": [
+        "PYF08A",
+        "PYF14A",
+        "PTF08A",
+        "PF083A",
+        "base para relevador",
+        "socket de relevador",
+        "base de riel DIN para relé",
+        "PY08-02 (para PCB)",
+        "PY14-02 (para PCB)"
+      ],
+      "category": "conectores",
+      "subcategory": "bases_relevador",
+      "description": "Base con bornes de tornillo para enchufar relevadores de uso general de 8 o 14 terminales planas. Se monta en riel DIN de 35 mm o con tornillos, y también hay versiones para soldar en PCB.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "PYF08A (para MY2, 8 bornes de tornillo, riel DIN)",
+          "pins": 8,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Bornes numerados igual que el relevador (1, 4, 5, 8, 9, 12, 13, 14)."
+        },
+        {
+          "name": "PYF14A (para MY4, 14 bornes de tornillo, riel DIN)",
+          "pins": 14,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Bornes 1 a 14."
+        },
+        {
+          "name": "PTF08A (para LY2, 8 bornes)",
+          "pins": 8,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "No sirve para MY2: la distribución de terminales es otra."
+        },
+        {
+          "name": "Base para PCB PY08-02 / PY14-02",
+          "pins": null,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Huella no verificada: tomarla de la hoja de datos del fabricante."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1..14",
+          "name": "Bornes",
+          "function": "Repiten la numeración de terminales del relevador; verificar el diagrama impreso en la base"
+        }
+      ],
+      "common_values": [
+        "PYF08A",
+        "PYF14A",
+        "PTF08A",
+        "PF083A (octal de 8 pines, para MK2P)",
+        "Con clip metálico de retención"
+      ],
+      "specs": {
+        "montaje": "Riel DIN 35 mm o 2 tornillos",
+        "corriente": "≈7–10 A según modelo (verificar)"
+      },
+      "schematic_symbol": "conector",
+      "typical_uses": [
+        "Montar relevadores MY/LY en tableros de riel DIN",
+        "Prácticas de control eléctrico",
+        "Cambiar un relevador dañado sin desconectar cables"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Tiendas Rep. del Salvador / Centro CDMX",
+        "Distribuidores de material eléctrico industrial",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Se usa con emc-relevador-enchufable-my y con el riel DIN (mec-riel-din). Revisar la compatibilidad base–relevador: PYF14A (MY4) no sirve para LY4 y PTF08A (LY2) no sirve para MY2."
+    },
+    {
+      "id": "con-iec-c14-panel",
+      "name": "Entrada de alimentación IEC C14 de panel (simple, con portafusible o con interruptor)",
+      "aliases": [
+        "IEC 320 C14",
+        "IEC320 C14",
+        "conector de poder de chasis",
+        "entrada para cable de PC",
+        "AC inlet",
+        "power entry module",
+        "módulo de entrada IEC con interruptor"
+      ],
+      "category": "conectores",
+      "subcategory": "alimentacion_ca",
+      "description": "Entrada macho de 3 terminales (fase, neutro y tierra) que se monta en el gabinete y recibe el cable de poder tipo computadora (IEC C13). Hay versiones simples, con portafusible 5x20 integrado y con interruptor de balancín (con o sin portafusible).",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "C14 simple (de encastre o con tornillos)",
+          "pins": 3,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Terminales faston o para soldar. El tamaño de la ventana del panel depende del modelo: medir o usar la plantilla del fabricante."
+        },
+        {
+          "name": "C14 con portafusible 5x20",
+          "pins": 3,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Cajón portafusible bajo las patas; lleva fusible de vidrio de 5x20 mm."
+        },
+        {
+          "name": "C14 con interruptor de balancín (y portafusible en algunos)",
+          "pins": null,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Además de L/N/PE tiene las terminales del interruptor (el de UNIT es basculante de 4 pines). El cableado interno cambia según el modelo: seguir el diagrama del fabricante."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "L",
+          "name": "Fase (línea)",
+          "function": "Debe pasar por el fusible y el interruptor"
+        },
+        {
+          "pin": "N",
+          "name": "Neutro",
+          "function": "Retorno"
+        },
+        {
+          "pin": "PE",
+          "name": "Tierra física",
+          "function": "Terminal central; conectar al chasis metálico"
+        }
+      ],
+      "common_values": [
+        "Simple",
+        "Con portafusible 5x20",
+        "Con interruptor negro o rojo (250 VCA 10 A)",
+        "Con interruptor y portafusible"
+      ],
+      "specs": {
+        "capacidad": "10 A 250 VCA (rótulo típico)",
+        "estandar": "IEC 60320 C14 (recibe cable C13)"
+      },
+      "schematic_symbol": "conector",
+      "typical_uses": [
+        "Entrada de 127 V en fuentes reguladas y de laboratorio caseras",
+        "Amplificadores de audio en gabinete",
+        "Equipos con cable de poder desmontable"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Tiendas Rep. del Salvador / Centro CDMX",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": "$38 aprox. con interruptor (UNIT Electronics)",
+      "notes": "Verificado en UNIT Electronics: 'Módulo de entrada IEC320 C14 AC 250V 10A con interruptor negro o rojo'. En México la red es de 127 VCA: el fusible y el interruptor van en la fase, y las terminales se aíslan con termofit."
+    },
+    {
+      "id": "con-clavija-127v",
+      "name": "Clavija (enchufe macho) armable de 127 V, de 2 o 3 patas",
+      "aliases": [
+        "clavija",
+        "enchufe",
+        "plug de corriente",
+        "clavija polarizada",
+        "clavija aterrizada",
+        "NEMA 1-15P",
+        "NEMA 5-15P",
+        "clavija de uso rudo"
+      ],
+      "category": "conectores",
+      "subcategory": "alimentacion_ca",
+      "description": "Enchufe macho desarmable con tornillos para fijar los conductores de un cable de 127 V. Existe de 2 patas (polarizada, con la pata de neutro más ancha) y de 3 patas con tierra.",
+      "mounting": "n/a",
+      "packages": [],
+      "pinout": [
+        {
+          "pin": "Pata angosta",
+          "name": "Fase (L)",
+          "function": "Tornillo de latón"
+        },
+        {
+          "pin": "Pata ancha",
+          "name": "Neutro (N)",
+          "function": "Tornillo plateado"
+        },
+        {
+          "pin": "Pata redonda",
+          "name": "Tierra (PE)",
+          "function": "Tornillo verde (solo en la de 3 patas)"
+        }
+      ],
+      "common_values": [
+        "2 patas polarizada",
+        "2 patas no polarizada",
+        "3 patas con tierra",
+        "De uso rudo (hule)",
+        "De ángulo (90°)"
+      ],
+      "specs": {
+        "capacidad": "15 A 125 VCA típico (NEMA 1-15P / 5-15P)"
+      },
+      "schematic_symbol": "conector",
+      "typical_uses": [
+        "Armar el cordón de una fuente con transformador",
+        "Reparar extensiones y cables de cautín",
+        "Tableros didácticos de 127 V"
+      ],
+      "stores": [
+        "Ferreterías y tlapalerías (Truper, Urrea, Pretul)",
+        "Tiendas de material eléctrico",
+        "Tiendas Rep. del Salvador / Centro CDMX",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Complementa cab-uso-rudo para armar un cordón a la medida. Apretar la abrazadera del cable para que un jalón no afloje los tornillos."
+    },
+    {
+      "id": "con-portalampara",
+      "name": "Portalámparas (socket): E10 miniatura para prácticas y E27 de 127 V",
+      "aliases": [
+        "portafoco",
+        "socket para foco",
+        "sóquet",
+        "receptáculo E27",
+        "portalámpara de porcelana",
+        "portalámpara de baquelita",
+        "portafoco E10",
+        "base para foco miniatura",
+        "lamp holder"
+      ],
+      "category": "conectores",
+      "subcategory": "portalamparas",
+      "description": "Base roscada con terminales para enroscar un foco. La E10 miniatura (de lámina o plástico, con tornillos o patas para soldar) se usa con focos de 1.5–12 V en prácticas de circuitos; la E27 de porcelana o baquelita es la de focos de 127 V que se usa en luces rítmicas, dimmers y probadores.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "E10 miniatura con base para atornillar",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Rosca E10 (Ø≈10 mm)",
+          "lead_diameter_mm": null,
+          "notes": "Algunos modelos traen 2 patas para soldar en PCB; la separación no está estandarizada, así que hay que medir la pieza."
+        },
+        {
+          "name": "E27 de porcelana o baquelita (de sobreponer o colgante)",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Rosca E27 (Ø≈27 mm)",
+          "lead_diameter_mm": null,
+          "notes": "Terminales de tornillo; se fija con 2 tornillos a la base o al gabinete."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "Centro",
+          "name": "Contacto central",
+          "function": "En E27: fase (después del interruptor)"
+        },
+        {
+          "pin": "Rosca",
+          "name": "Casquillo",
+          "function": "En E27: neutro"
+        }
+      ],
+      "common_values": [
+        "E10 de lámina",
+        "E10 de plástico con base",
+        "E27 de porcelana de sobreponer",
+        "E27 de baquelita colgante"
+      ],
+      "specs": {
+        "rosca": "E10 (MES) o E27 (Edison)",
+        "voltaje_e27": "127 VCA"
+      },
+      "schematic_symbol": "conector",
+      "typical_uses": [
+        "Prácticas de circuitos serie y paralelo con focos miniatura",
+        "Luces rítmicas y secuenciales de 127 V con TRIAC",
+        "Foco en serie como carga de prueba para dimmers y fuentes"
+      ],
+      "stores": [
+        "Steren",
+        "Ferreterías y tlapalerías (Truper, Urrea, Pretul)",
+        "Tiendas Rep. del Salvador / Centro CDMX",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Complementa opt-foco-miniatura-incandescente. En la E27, la fase va al contacto central y el neutro a la rosca, para reducir el riesgo de choque al cambiar el foco. Disponibilidad en Steren no verificada en esta sesión."
+    },
+    {
+      "id": "con-terminal-bocina-resorte",
+      "name": "Terminal de bocina de presión (resorte) de 2 o 4 posiciones, para PCB o chasis",
+      "aliases": [
+        "terminal de bocina",
+        "speaker terminal",
+        "push terminal",
+        "bornera de bocina de presión",
+        "clip de bocina",
+        "WP2",
+        "WP4"
+      ],
+      "category": "conectores",
+      "subcategory": "audio",
+      "description": "Bloque con palancas de resorte (roja y negra) que sujetan el cable de la bocina al soltarlas. Se monta atrás de amplificadores y bafles, en versión para soldar en PCB o para atornillar al chasis.",
+      "mounting": "THT",
+      "packages": [
+        {
+          "name": "2 posiciones (mono) para PCB",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Huella y separación no estandarizadas entre fabricantes: medir la pieza. Suele traer patas o pestañas de anclaje adicionales."
+        },
+        {
+          "name": "4 posiciones (estéreo) para PCB",
+          "pins": 4,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Igual que la de 2 posiciones: medir antes de diseñar la huella."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "+",
+          "name": "Rojo",
+          "function": "Positivo de la bocina"
+        },
+        {
+          "pin": "-",
+          "name": "Negro",
+          "function": "Negativo de la bocina (tierra solo en salidas que no son puente)"
+        }
+      ],
+      "common_values": [
+        "2 posiciones (mono)",
+        "4 posiciones (estéreo)",
+        "Para PCB a 90°",
+        "De chasis con tornillos"
+      ],
+      "specs": {
+        "calibre": "Cable de bocina delgado o mediano (aprox. 24–16 AWG según modelo)"
+      },
+      "schematic_symbol": "conector",
+      "typical_uses": [
+        "Salida de amplificadores TDA2030, TDA7297 o TPA3116",
+        "Bafles y bocinas caseras",
+        "Módulos amplificadores montados en gabinete"
+      ],
+      "stores": [
+        "AG Electrónica",
+        "Tiendas Rep. del Salvador / Centro CDMX",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "En amplificadores en puente (BTL, p. ej. TPA3116 o TDA7297) el negativo de la bocina NO es tierra: no se deben unir los negativos de los canales ni conectarlos al chasis."
+    },
+    {
+      "id": "con-coaxial-tipo-f",
+      "name": "Conector coaxial tipo F (RG-6 / RG-59) y coples",
+      "aliases": [
+        "conector F",
+        "F connector",
+        "conector de cable de TV",
+        "conector de compresión RG-6",
+        "conector de rosca RG-59",
+        "cople F hembra-hembra",
+        "jack F de chasis"
+      ],
+      "category": "conectores",
+      "subcategory": "rf",
+      "description": "Conector roscado de 75 Ω para cable coaxial RG-6 y RG-59 (antenas de TV, cable, satélite), en el que el vivo del cable funciona como pin central. Hay de rosca, de engargolar (crimp) y de compresión, además de coples y jacks F de chasis.",
+      "mounting": "panel",
+      "packages": [
+        {
+          "name": "Jack F de chasis o para PCB",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Pin central más el cuerpo a tierra; huella según fabricante (no verificada)."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "Centro",
+          "name": "Señal",
+          "function": "Conductor central del coaxial"
+        },
+        {
+          "pin": "Cuerpo",
+          "name": "Tierra",
+          "function": "Malla o blindaje"
+        }
+      ],
+      "common_values": [
+        "Para RG-6 de compresión",
+        "Para RG-6 de rosca",
+        "Para RG-59",
+        "Cople F hembra-hembra (barril)",
+        "Jack F de chasis",
+        "Adaptador F a RCA"
+      ],
+      "specs": {
+        "impedancia": "75 Ω",
+        "rosca": "3/8-32 UNEF (estándar F)"
+      },
+      "schematic_symbol": "conector",
+      "typical_uses": [
+        "Antenas de TV digital y divisores de señal",
+        "Conectar sintonizadores y receptores",
+        "Proyectos de RF con cable de 75 Ω"
+      ],
+      "stores": [
+        "Steren",
+        "AG Electrónica",
+        "Tiendas Rep. del Salvador / Centro CDMX",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Complementa cab-coaxial-rg6 y cab-coaxial-rg59. Para 50 Ω (radio, Wi-Fi, LoRa) usar BNC o SMA con RG-58 o RG-174."
+    },
+    {
+      "id": "cab-cordon-alimentacion",
+      "name": "Cable de alimentación 127 VCA con clavija (cordón de línea y cable de poder IEC C13)",
+      "aliases": [
+        "cable de poder",
+        "cable de corriente",
+        "cordón de línea",
+        "cable de PC",
+        "cable IEC C13",
+        "power cord",
+        "cable de alimentación universal de 3 clavijas",
+        "cable tipo 8 (C7)"
+      ],
+      "category": "cables",
+      "subcategory": "alimentacion_ca",
+      "description": "Cordón flexible con clavija moldeada para contacto de 127 V. El otro extremo puede venir libre (para soldar o atornillar dentro del gabinete), con conector IEC C13 para entradas C14 o con conector C7 'tipo 8' de dos hilos.",
+      "mounting": "n/a",
+      "packages": [],
+      "pinout": [
+        {
+          "pin": "L",
+          "name": "Fase",
+          "function": "Negro o café; va a la pata angosta de la clavija"
+        },
+        {
+          "pin": "N",
+          "name": "Neutro",
+          "function": "Blanco o azul; va a la pata ancha"
+        },
+        {
+          "pin": "PE",
+          "name": "Tierra",
+          "function": "Verde o verde/amarillo; solo en cables de 3 hilos"
+        }
+      ],
+      "common_values": [
+        "IEC C13 a clavija de 3 patas, 1.8 m",
+        "Cordón 2x18 AWG con clavija polarizada y punta libre",
+        "C7 'tipo 8' de 2 hilos",
+        "C5 'trébol' (laptop)"
+      ],
+      "specs": {
+        "calibre": "18 AWG típico (≈10 A)",
+        "largo": "1.5–1.8 m típico",
+        "clavija": "NEMA 1-15P (2 patas) o 5-15P (con tierra)"
+      },
+      "schematic_symbol": "conector",
+      "typical_uses": [
+        "Alimentar fuentes reguladas caseras con transformador",
+        "Cautines, cargadores y equipos de laboratorio",
+        "Reemplazar cables dañados"
+      ],
+      "stores": [
+        "Steren",
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Tiendas Rep. del Salvador / Centro CDMX",
+        "Mercado Libre"
+      ],
+      "popularity": "muy_alta",
+      "price_mxn_approx": null,
+      "notes": "Verificado en UNIT Electronics: 'Cable de alimentación universal AC de 3 clavijas 1.8 m'. Los colores pueden variar: antes de conectar, confirmar con el multímetro en continuidad qué hilo va a cada pata. Para corrientes altas, usar cable de calibre mayor (cab-uso-rudo)."
+    },
+    {
+      "id": "mec-rueda-loca",
+      "name": "Rueda loca (ball caster) de bola metálica o de nylon para robots",
+      "aliases": [
+        "rueda loca",
+        "ball caster",
+        "rueda universal",
+        "rodamiento de transferencia",
+        "CY-15A",
+        "W420",
+        "rueda de bola"
+      ],
+      "category": "mecanicos",
+      "subcategory": "robotica",
+      "description": "Soporte con una bola que gira libre en cualquier dirección; es el tercer punto de apoyo de los robots de 2 ruedas motrices (seguidores de línea, evasores de obstáculos).",
+      "mounting": "n/a",
+      "packages": [
+        {
+          "name": "CY-15A metálica (bola de 15 mm)",
+          "pins": null,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Altura 20 mm; bola Ø15 mm; 2 agujeros Ø4 mm a 40 mm entre centros (UNIT Electronics)",
+          "lead_diameter_mm": null,
+          "notes": "Carga máxima ≈10 kg según la tienda."
+        },
+        {
+          "name": "Mini rueda W420 (bola de acero de 15 mm)",
+          "pins": null,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Viene en algunos chasis de aluminio 2WD; medidas no verificadas."
+        },
+        {
+          "name": "Rueda con bola de nylon de 1 in",
+          "pins": null,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Bola Ø25.4 mm; resto no verificado",
+          "lead_diameter_mm": null,
+          "notes": "Más alta; útil con llantas grandes."
+        }
+      ],
+      "pinout": [],
+      "common_values": [
+        "Metálica, bola de 15 mm (CY-15A)",
+        "Mini W420",
+        "Bola de nylon de 1 in",
+        "Con separadores para ajustar la altura"
+      ],
+      "specs": {
+        "carga_max": "≈10 kg (CY-15A, UNIT Electronics)",
+        "montaje": "2 tornillos M3 o M4"
+      },
+      "schematic_symbol": "ninguno",
+      "typical_uses": [
+        "Robot seguidor de línea 2WD",
+        "Robots evasores de obstáculos",
+        "Carritos controlados por Bluetooth"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Geek Factory",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": "$17 aprox. (CY-15A, Geek Factory)",
+      "notes": "La altura de la rueda loca debe nivelar el chasis con las llantas motrices, para que los sensores de línea (TCRT5000, QTR) queden a la distancia que pide su hoja de datos; ajustar con separadores M3 si hace falta."
+    },
+    {
+      "id": "mec-iman-neodimio",
+      "name": "Imanes de neodimio (disco, cilindro y bloque)",
+      "aliases": [
+        "imán de neodimio",
+        "neodymium magnet",
+        "imán NdFeB",
+        "imán N35",
+        "imán N52",
+        "imán de disco",
+        "imán para reed switch"
+      ],
+      "category": "mecanicos",
+      "subcategory": "imanes",
+      "description": "Imanes permanentes muy potentes y pequeños. Se usan para accionar reed switches y sensores de efecto Hall, en sensores de puerta caseros, para medir RPM y para cerrar tapas de gabinetes.",
+      "mounting": "n/a",
+      "packages": [],
+      "pinout": [],
+      "common_values": [
+        "Disco 5 x 2 mm",
+        "Disco 10 x 2 mm",
+        "Disco 10 x 3 mm",
+        "Disco 12 x 3 mm",
+        "Bloque 10 x 5 x 2 mm",
+        "Grado N35 / N52"
+      ],
+      "specs": {
+        "material": "NdFeB niquelado",
+        "temperatura_max": "≈80 °C en grados N estándar (con más calor pierde magnetismo)"
+      },
+      "schematic_symbol": "ninguno",
+      "typical_uses": [
+        "Accionar un reed switch o un sensor Hall (A3144, SS49E, KY-003)",
+        "Tacómetro con un imán en la rueda o el eje",
+        "Cierres de gabinetes y montajes desmontables"
+      ],
+      "stores": [
+        "Tiendas Rep. del Salvador / Centro CDMX",
+        "Tiendas de manualidades",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Son frágiles: se despostillan al chocar entre sí. No acercarlos a tarjetas magnéticas ni a marcapasos, y son peligrosos si un niño los traga. No soldar ni calentar sobre ellos. Disponibilidad en UNIT, AG o Geek Factory no verificada en esta sesión."
+    },
+    {
+      "id": "mat-placa-adaptadora-smd-dip",
+      "name": "Placa adaptadora SMD a DIP (SOIC/SOP-8, SOP/TSSOP-28, SOT-23, QFP) para protoboard",
+      "aliases": [
+        "adaptador SOP8 a DIP8",
+        "SOIC to DIP adapter",
+        "PCB SMD a DIP",
+        "breakout SMD",
+        "placa convertidora SOP a DIP",
+        "adaptador TSSOP",
+        "placa PCB multiusos 0.5/0.8 mm",
+        "adaptador SOT-23 a DIP"
+      ],
+      "category": "materiales_pcb",
+      "subcategory": "placas_adaptadoras",
+      "description": "PCB pequeña con pads para un encapsulado de montaje superficial (a veces otro tamaño por el reverso) y agujeros a paso de 2.54 mm en los bordes para soldar tira de pines. Permite usar circuitos integrados SMD en protoboard o en placa perforada.",
+      "mounting": "THT/SMD",
+      "packages": [
+        {
+          "name": "SOIC-8 / SOP-8 / MSOP-8 / TSSOP-8 a DIP-8",
+          "pins": 8,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Doble cara: SOIC/SOP-8 de un lado y MSOP/TSSOP-8 del otro (UNIT AR0421). Muchas tienen las filas de pines a 7.62 mm (0.3 in), pero hay que medir el modelo; se usa tira de pines macho de 2.54 mm."
+        },
+        {
+          "name": "SOP-28 / TSSOP-28 a DIP-28",
+          "pins": 28,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "La separación entre filas varía por fabricante: medir."
+        },
+        {
+          "name": "SOT-23 / SOT-23-6 a DIP",
+          "pins": null,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "Suelen ser tiras con varias posiciones SOT-23."
+        },
+        {
+          "name": "QFP / LQFP multiusos (paso 0.5 / 0.8 mm)",
+          "pins": null,
+          "pitch_mm": 2.54,
+          "row_spacing_mm": null,
+          "body_mm": null,
+          "lead_diameter_mm": null,
+          "notes": "P. ej. la 'Placa PCB multiusos 0.5/0.8 mm' de 64 pines de UNIT Electronics."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "1..N",
+          "name": "Pn",
+          "function": "Cada pad SMD va al pin DIP del mismo número (verificar la serigrafía)"
+        }
+      ],
+      "common_values": [
+        "SOP-8 a DIP-8",
+        "SOP-16 / 20 / 24 / 28 a DIP",
+        "TSSOP a DIP",
+        "SOT-23 a DIP",
+        "QFP 32 / 44 / 48 / 64",
+        "Kit surtido de 30–35 placas"
+      ],
+      "specs": {
+        "paso_salida": "2.54 mm",
+        "material": "FR-4, a menudo de doble cara con agujeros metalizados"
+      },
+      "schematic_symbol": "ninguno",
+      "typical_uses": [
+        "Probar en protoboard integrados que solo vienen en SMD (CH340, drivers, sensores, memorias)",
+        "Sustituir con una versión SMD un CI DIP descontinuado",
+        "Prototipos en placa perforada con CI SMD"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Verificado: UNIT Electronics 'PCB SMD DIP 8' (AR0421) y 'Placa PCB multiusos 0.5/0.8 mm'; AG Electrónica, adaptador SOP8/SOIC8 a DIP8 (SKU3047). Las medidas exactas cambian entre fabricantes."
+    },
+    {
+      "id": "her-pinzas-electricista",
+      "name": "Pinzas de electricista (universales / de liniero)",
+      "aliases": [
+        "pinzas de electricista",
+        "pinzas universales",
+        "pinzas de liniero",
+        "lineman pliers",
+        "alicate universal",
+        "pinzas mecánicas"
+      ],
+      "category": "herramientas",
+      "subcategory": "herramienta_mano",
+      "description": "Pinzas robustas con mordaza plana estriada y corte lateral para sujetar, doblar, torcer y cortar cable grueso. Son herramienta básica en las listas de taller de electricidad y electrónica.",
+      "mounting": "n/a",
+      "packages": [],
+      "pinout": [],
+      "common_values": [
+        "7 in",
+        "8 in",
+        "9 in",
+        "Mango aislado 1000 V"
+      ],
+      "specs": {
+        "corte": "Cable de cobre grueso (no para alambre de acero templado)",
+        "aislamiento": "Mango de vinil (no aísla) o aislado certificado a 1000 V"
+      },
+      "schematic_symbol": "ninguno",
+      "typical_uses": [
+        "Cortar y torcer cable de uso rudo",
+        "Sujetar y doblar lámina o piezas",
+        "Prácticas de instalaciones de 127 V"
+      ],
+      "stores": [
+        "Steren",
+        "Ferreterías y tlapalerías (Truper, Urrea, Pretul)",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
+      "popularity": "muy_alta",
+      "price_mxn_approx": null,
+      "notes": "Para terminales finas de componentes usar mejor her-pinzas-punta y her-pinzas-corte-diagonal."
+    },
+    {
+      "id": "her-desarmadores-estandar",
+      "name": "Desarmadores (destornilladores) plano y de cruz de tamaño estándar",
+      "aliases": [
+        "desarmador plano",
+        "desarmador de cruz",
+        "destornillador Phillips",
+        "desarmador de paleta",
+        "screwdriver",
+        "juego de desarmadores"
+      ],
+      "category": "herramientas",
+      "subcategory": "herramienta_mano",
+      "description": "Desarmadores de tamaño normal para tornillos de borneras, gabinetes, contactos y tableros; complementan al juego de precisión.",
+      "mounting": "n/a",
+      "packages": [],
+      "pinout": [],
+      "common_values": [
+        "Plano 1/8 in",
+        "Plano 3/16 in",
+        "Plano 1/4 in",
+        "Cruz PH1",
+        "Cruz PH2",
+        "Juego de 6 piezas",
+        "Aislados 1000 V"
+      ],
+      "specs": {
+        "puntas": "Plana (paleta) y Phillips; algunas imantadas"
+      },
+      "schematic_symbol": "ninguno",
+      "typical_uses": [
+        "Apretar borneras de tornillo y clemas",
+        "Abrir gabinetes y equipos",
+        "Apretar bornes de relevadores, bases y riel DIN"
+      ],
+      "stores": [
+        "Steren",
+        "Ferreterías y tlapalerías (Truper, Urrea, Pretul)",
+        "Mercado Libre"
+      ],
+      "popularity": "muy_alta",
+      "price_mxn_approx": null,
+      "notes": "Para borneras de PCB de 3.5–5 mm conviene un desarmador plano angosto (≈2.5–3 mm). Ver también her-desarmadores-precision."
+    },
+    {
+      "id": "her-sonda-osciloscopio",
+      "name": "Punta (sonda) de osciloscopio pasiva x1/x10 con BNC (tipo 6100)",
+      "aliases": [
+        "punta de osciloscopio",
+        "sonda de osciloscopio",
+        "P6100",
+        "punta x10",
+        "punta x1/x10",
+        "oscilloscope probe",
+        "UT-P04"
+      ],
+      "category": "herramientas",
+      "subcategory": "instrumentos_accesorios",
+      "description": "Punta pasiva con conector BNC, selector de atenuación x1/x10, gancho retráctil, caimán de tierra y trimmer de compensación. Viene con los osciloscopios y se vende como repuesto.",
+      "mounting": "n/a",
+      "packages": [],
+      "pinout": [],
+      "common_values": [
+        "60 MHz",
+        "100 MHz",
+        "200 MHz",
+        "x1/x10",
+        "x100 (alto voltaje)",
+        "Par de puntas"
+      ],
+      "specs": {
+        "atenuacion": "x1 / x10 conmutable",
+        "ancho_banda": "20–100 MHz según modelo (en x1 es mucho menor que en x10)",
+        "resistencia_entrada": "≈10 MΩ en x10 con osciloscopio de 1 MΩ",
+        "conector": "BNC macho",
+        "compensacion": "Trimmer que se ajusta con la señal cuadrada de 1 kHz del osciloscopio"
+      },
+      "schematic_symbol": "ninguno",
+      "typical_uses": [
+        "Repuesto para osciloscopios de banco (Rigol, Owon, Hantek)",
+        "Mejor punta para DSO138 u osciloscopios de bolsillo con BNC",
+        "Medir PWM, osciladores 555 y fuentes conmutadas"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": "$204–283 aprox. (UNIT Electronics; AG Electrónica UT-P04)",
+      "notes": "Verificado: UNIT Electronics 'Puntas de osciloscopio x10 x1' (20–100 MHz) y AG Electrónica UT-P04 (100 MHz). Compensar la punta antes de medir. El caimán de tierra está unido a la tierra física del osciloscopio: conectarlo a un circuito conectado a 127 V sin aislamiento (fuentes sin transformador, dimmers) provoca un corto."
+    },
+    {
+      "id": "her-detector-voltaje-sin-contacto",
+      "name": "Detector de voltaje sin contacto (pluma NCV) y desarmador probador de corriente",
+      "aliases": [
+        "detector de voltaje sin contacto",
+        "NCV",
+        "pluma detectora de voltaje",
+        "probador de voltaje tipo pluma",
+        "desarmador probador de corriente",
+        "desarmador con neón",
+        "voltage tester pen"
+      ],
+      "category": "herramientas",
+      "subcategory": "instrumentos",
+      "description": "Probadores de bolsillo para saber si un cable o contacto tiene 127 V. La pluma NCV detecta el campo eléctrico sin tocar el conductor y avisa con luz y sonido; el desarmador probador enciende un foquito de neón al tocar la fase.",
+      "mounting": "n/a",
+      "packages": [],
+      "pinout": [],
+      "common_values": [
+        "Pluma NCV 12–1000 VCA (doble sensibilidad)",
+        "Pluma NCV 90–1000 VCA",
+        "Desarmador probador de neón",
+        "Multímetro con NCV integrado"
+      ],
+      "specs": {
+        "rango": "Corriente alterna de ≈12/48/90 a 1000 VCA según modelo; no detecta CD",
+        "alimentacion": "2 pilas AAA (pluma NCV); el desarmador de neón no usa pilas"
+      },
+      "schematic_symbol": "ninguno",
+      "typical_uses": [
+        "Identificar fase y neutro al armar cordones y entradas de 127 V",
+        "Verificar que un circuito de luces rítmicas o un dimmer esté desenergizado",
+        "Localizar el corte en una extensión o una tira de luces"
+      ],
+      "stores": [
+        "Steren",
+        "Ferreterías y tlapalerías (Truper, Urrea, Pretul)",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Que no detecte voltaje no garantiza que no lo haya (pila baja, cable blindado): confirmar con multímetro. El probador de continuidad (her-probador-continuidad, que lleva el alias 'buscapolos') no detecta voltaje de red. Steren lista un 'probador de voltaje tipo pluma' VCA-500; no se confirmó si es sin contacto."
+    },
+    {
+      "id": "her-crimpeadora-terminales-aisladas",
+      "name": "Pinzas ponchadoras para terminales aisladas (ojillo, horquilla, faston) y punteras",
+      "aliases": [
+        "ponchadora de terminales",
+        "pinza para terminales",
+        "crimpeadora de zapatas",
+        "crimping pliers",
+        "pinza de engargolar",
+        "crimpeadora de punteras",
+        "ponchadora de matraca"
+      ],
+      "category": "herramientas",
+      "subcategory": "herramienta_mano",
+      "description": "Pinzas para engargolar terminales de ojillo, horquilla, faston y conectores de empalme aislados, con código de color rojo, azul y amarillo. Las de matraca dan una presión pareja; las sencillas incluyen pelacables y cortador de tornillos.",
+      "mounting": "n/a",
+      "packages": [],
+      "pinout": [],
+      "common_values": [
+        "Sencilla con pelacables y corta-tornillos (22–10 AWG)",
+        "De matraca para aisladas rojo/azul/amarillo",
+        "De matraca para punteras (ferrules) 0.25–6 mm²"
+      ],
+      "specs": {
+        "codigo_colores": "Rojo 22–16 AWG, azul 16–14 AWG, amarillo 12–10 AWG"
+      },
+      "schematic_symbol": "ninguno",
+      "typical_uses": [
+        "Ponchar terminales de ojillo y faston en fuentes y gabinetes",
+        "Cablear borneras de relevadores y riel DIN con punteras",
+        "Arneses de baterías y automotrices"
+      ],
+      "stores": [
+        "Steren",
+        "Ferreterías y tlapalerías (Truper, Urrea, Pretul)",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Para usarse con con-terminal-ojillo-horquilla, con-faston-hembra, con-faston-macho y con-puntera-ferrule. Para Dupont/JST está her-crimpeadora-dupont y para RJ45, her-crimpeadora-rj45."
+    },
+    {
+      "id": "her-medidor-usb",
+      "name": "Medidor USB de voltaje y corriente (USB tester / 'USB doctor')",
+      "aliases": [
+        "USB tester",
+        "USB doctor",
+        "medidor de corriente USB",
+        "amperímetro USB",
+        "KWS-V20",
+        "UM25C",
+        "FNIRSI FNB48",
+        "FNIRSI C1"
+      ],
+      "category": "herramientas",
+      "subcategory": "instrumentos",
+      "description": "Medidor que se conecta entre el cargador y el dispositivo USB y muestra voltaje, corriente, potencia y capacidad acumulada (mAh/Wh). Los modelos con USB-C detectan protocolos de carga rápida (PD/QC).",
+      "mounting": "n/a",
+      "packages": [],
+      "pinout": [],
+      "common_values": [
+        "Básico USB-A ('USB doctor')",
+        "KWS-V20 con pantalla LCD",
+        "UM25C con Bluetooth",
+        "FNIRSI FNB48 / C1 con USB-C y PD"
+      ],
+      "specs": {
+        "rango_tipico": "≈3–20 V y 0–3 A (hasta 5 A en USB-C), según modelo"
+      },
+      "schematic_symbol": "ninguno",
+      "typical_uses": [
+        "Medir el consumo de un Arduino, ESP32 o Raspberry Pi alimentado por USB",
+        "Comprobar cargadores, cables USB y power banks",
+        "Medir la capacidad real de baterías con un módulo de carga"
+      ],
+      "stores": [
+        "UNIT Electronics",
+        "Tiendas Rep. del Salvador / Centro CDMX",
+        "Mercado Libre"
+      ],
+      "popularity": "media",
+      "price_mxn_approx": null,
+      "notes": "Modelos y rangos no verificados en el sitio de una tienda en esta sesión. El propio medidor consume unos mA y agrega una pequeña caída de voltaje."
+    },
+    {
+      "id": "ene-pila-a23-a27-12v",
+      "name": "Pila alcalina de 12 V A23 / A27 (controles remotos)",
+      "aliases": [
+        "A23",
+        "23A",
+        "MN21",
+        "V23GA",
+        "8LR932",
+        "A27",
+        "27A",
+        "MN27",
+        "8LR732",
+        "pila de control de portón",
+        "pila de 12 V chica"
+      ],
+      "category": "energia",
+      "subcategory": "pilas_especiales",
+      "description": "Pilas cilíndricas pequeñas de 12 V (8 celdas alcalinas en serie) que usan los controles remotos de portones, alarmas de auto y transmisores RF de 315/433 MHz.",
+      "mounting": "n/a",
+      "packages": [
+        {
+          "name": "A23 (23A)",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Ø10.3 x 28.5 (aprox.)",
+          "lead_diameter_mm": null,
+          "notes": "Necesita un portapila de resorte específico; en los controles va entre dos lengüetas."
+        },
+        {
+          "name": "A27 (27A)",
+          "pins": 2,
+          "pitch_mm": null,
+          "row_spacing_mm": null,
+          "body_mm": "Ø8 x 28 (aprox.)",
+          "lead_diameter_mm": null,
+          "notes": "Más delgada que la A23: no son intercambiables en el mismo portapila."
+        }
+      ],
+      "pinout": [
+        {
+          "pin": "+",
+          "name": "Positivo",
+          "function": "Extremo con botón"
+        },
+        {
+          "pin": "-",
+          "name": "Negativo",
+          "function": "Extremo plano"
+        }
+      ],
+      "common_values": [
+        "A23 12 V",
+        "A27 12 V"
+      ],
+      "specs": {
+        "voltaje_nominal": "12 V",
+        "capacidad_aprox": "A23 ≈50–55 mAh; A27 ≈20 mAh (aprox., según fabricante)",
+        "quimica": "Alcalina (8 celdas de botón en serie)"
+      },
+      "schematic_symbol": "bateria",
+      "typical_uses": [
+        "Controles RF de 315/433 MHz (PT2262, EV1527) de alarmas y portones",
+        "Transmisores RF caseros a 12 V",
+        "Timbres inalámbricos"
+      ],
+      "stores": [
+        "Steren",
+        "Autoservicios y farmacias",
+        "AG Electrónica",
+        "Mercado Libre"
+      ],
+      "popularity": "alta",
+      "price_mxn_approx": null,
+      "notes": "Solo dan corrientes bajas (unos pocos mA continuos): no sirven para motores ni LEDs de potencia. Antes de diseñar el portapila, distinguir la A23 (más gruesa) de la A27 (más delgada)."
+    }
+  ]
+}
