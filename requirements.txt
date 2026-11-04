@@ -1,0 +1,2 @@
+# Motor de voz "google" (por defecto, necesita internet)
+gTTS>=2.5
