@@ -20,5 +20,5 @@ if ! .venv/bin/python -c "import gtts" >/dev/null 2>&1; then
     salir_con_error "No se pudo instalar gTTS. Revisa tu conexión a internet."
 fi
 
-echo "No cierres esta ventana mientras uses la aplicación."
-.venv/bin/python texto_a_mp3.py --web
+echo "Abriendo Texto a MP3... (no cierres esta ventana mientras la uses)"
+.venv/bin/python texto_a_mp3.py --ventana

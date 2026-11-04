@@ -2,9 +2,10 @@
 """Texto a MP3: convierte cualquier texto en un archivo de audio MP3.
 
 Uso rápido:
+    python texto_a_mp3.py                            # abre la ventana de la app
     python texto_a_mp3.py "Hola, mundo" -o hola.mp3
     python texto_a_mp3.py -a cuento.txt              # crea cuento.mp3
-    python texto_a_mp3.py --web                      # interfaz en el navegador
+    python texto_a_mp3.py --web                      # versión en el navegador
 
 Motores de voz:
     google   (por defecto) Voz natural de Google. Necesita internet y la
@@ -21,11 +22,13 @@ import io
 import json
 import multiprocessing
 import os
+import re
 import shutil
 import subprocess
 import sys
 import tempfile
 import threading
+import unicodedata
 import webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
@@ -156,6 +159,8 @@ def _mp3_offline(texto, ruta_mp3, idioma, lento, carpeta):
         [ffmpeg, "-y", "-loglevel", "error", "-i", ruta_wav,
          "-codec:a", "libmp3lame", "-q:a", "4", ruta_mp3],
         capture_output=True, text=True,
+        # En Windows, evita que aparezca una ventana negra desde la app.
+        creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0),
     )
     if resultado.returncode != 0:
         raise ErrorConversion(
@@ -501,6 +506,363 @@ def iniciar_web(puerto=8000, abrir_navegador=True):
 
 
 # --------------------------------------------------------------------------
+# Ventana de escritorio (como cualquier programa, sin navegador)
+# --------------------------------------------------------------------------
+
+CARPETA_APP = os.path.dirname(os.path.abspath(__file__))
+ICONO = os.path.join(CARPETA_APP, "icono.ico")
+NOMBRES_MOTOR = {"google": "Google (con internet)", "offline": "Sistema (sin internet)"}
+_COLOR_SUAVE, _COLOR_ERROR, _COLOR_EXITO = "#5b6475", "#b3261e", "#1e7b34"
+
+
+def nombre_sugerido(texto):
+    """Nombre de archivo a partir de las primeras palabras: 'hola-mundo.mp3'."""
+    sin_tildes = unicodedata.normalize("NFD", texto).encode("ascii", "ignore").decode()
+    palabras = sin_tildes.lower().split()[:5]
+    base = re.sub(r"[^a-z0-9]+", "-", " ".join(palabras)).strip("-")
+    return (base or "audio") + ".mp3"
+
+
+def _carpeta_inicial():
+    """Carpeta donde se propone guardar: Música, si existe; si no, Documentos."""
+    inicio = os.path.expanduser("~")
+    for nombre in ("Music", "Documents"):
+        ruta = os.path.join(inicio, nombre)
+        if os.path.isdir(ruta):
+            return ruta
+    return inicio
+
+
+def _abrir_con_sistema(ruta, mostrar_en_carpeta=False):
+    """Abre un archivo con su programa (o muestra la carpeta que lo contiene)."""
+    if sys.platform == "win32":
+        if mostrar_en_carpeta:
+            subprocess.Popen(f'explorer /select,"{os.path.normpath(ruta)}"')
+        else:
+            os.startfile(ruta)
+    elif sys.platform == "darwin":
+        subprocess.Popen(["open", "-R", ruta] if mostrar_en_carpeta else ["open", ruta])
+    else:
+        subprocess.Popen(["xdg-open", os.path.dirname(ruta) if mostrar_en_carpeta else ruta])
+
+
+class VentanaApp:
+    """Ventana principal de la aplicación, hecha con tkinter."""
+
+    def __init__(self, raiz):
+        import tkinter as tk
+        from tkinter import font as tkfont
+        from tkinter import ttk
+
+        self.raiz = raiz
+        self.ultimo_mp3 = None
+        self.carpeta_guardado = _carpeta_inicial()
+        self._nombre_desde_txt = None
+        self._resultado = None
+        self._ocupada = False
+
+        raiz.title("Texto a MP3")
+        escala = raiz.winfo_fpixels("1i") / 96  # pantallas con zoom (125 %, 150 %...)
+        raiz.geometry(f"{int(720 * escala)}x{int(600 * escala)}")
+        raiz.minsize(int(560 * escala), int(460 * escala))
+        if sys.platform == "win32" and os.path.exists(ICONO):
+            try:
+                raiz.iconbitmap(default=ICONO)
+            except tk.TclError:
+                pass
+        raiz.report_callback_exception = self._error_inesperado
+
+        estilo = ttk.Style(raiz)
+        for tema in ("vista", "aqua", "clam"):
+            if tema in estilo.theme_names():
+                estilo.theme_use(tema)
+                break
+        familia = tkfont.nametofont("TkDefaultFont").actual("family")
+        estilo.configure("TLabel", font=(familia, 10))
+        estilo.configure("TCheckbutton", font=(familia, 10))
+        estilo.configure("TButton", font=(familia, 10), padding=(10, 6))
+
+        marco = ttk.Frame(raiz, padding=(24, 18))
+        marco.pack(fill="both", expand=True)
+        marco.columnconfigure(0, weight=1)
+        marco.rowconfigure(2, weight=1)
+
+        ttk.Label(marco, text="Texto a MP3", font=(familia, 18, "bold")).grid(
+            row=0, column=0, sticky="w")
+        cabecera = ttk.Frame(marco)
+        cabecera.grid(row=1, column=0, sticky="ew", pady=(2, 8))
+        ttk.Label(cabecera, text="Escribe o pega el texto que quieres convertir en audio:",
+                  foreground=_COLOR_SUAVE).pack(side="left")
+        ttk.Button(cabecera, text="Abrir archivo .txt…", command=self.abrir_txt).pack(side="right")
+
+        caja = ttk.Frame(marco)
+        caja.grid(row=2, column=0, sticky="nsew")
+        caja.columnconfigure(0, weight=1)
+        caja.rowconfigure(0, weight=1)
+        self.texto = tk.Text(caja, wrap="word", undo=True, font=(familia, 12),
+                             relief="solid", borderwidth=1, padx=10, pady=8,
+                             highlightthickness=0)
+        barra = ttk.Scrollbar(caja, orient="vertical", command=self.texto.yview)
+        self.texto.configure(yscrollcommand=barra.set)
+        self.texto.grid(row=0, column=0, sticky="nsew")
+        barra.grid(row=0, column=1, sticky="ns")
+
+        self.contador = ttk.Label(marco, text="0 caracteres", foreground=_COLOR_SUAVE)
+        self.contador.grid(row=3, column=0, sticky="e", pady=(4, 0))
+
+        opciones = ttk.Frame(marco)
+        opciones.grid(row=4, column=0, sticky="ew", pady=(6, 16))
+        ttk.Label(opciones, text="Idioma").grid(row=0, column=0, sticky="w")
+        ttk.Label(opciones, text="Motor de voz").grid(row=0, column=1, sticky="w", padx=(16, 0))
+        self.idioma = ttk.Combobox(opciones, state="readonly", width=14,
+                                   values=list(IDIOMAS.values()), font=(familia, 10))
+        self.idioma.current(0)
+        self.idioma.grid(row=1, column=0, sticky="w", pady=(3, 0))
+        self.motor = ttk.Combobox(opciones, state="readonly", width=24,
+                                  values=list(NOMBRES_MOTOR.values()), font=(familia, 10))
+        self.motor.current(0)
+        self.motor.grid(row=1, column=1, sticky="w", padx=(16, 0), pady=(3, 0))
+        self.lento = tk.BooleanVar(value=False)
+        ttk.Checkbutton(opciones, text="Leer más despacio", variable=self.lento).grid(
+            row=1, column=2, sticky="w", padx=(20, 0), pady=(3, 0))
+
+        botones = ttk.Frame(marco)
+        botones.grid(row=5, column=0, sticky="ew")
+        botones.columnconfigure(0, weight=1)
+        self.boton = tk.Button(
+            botones, text="Convertir y guardar MP3…", command=self.convertir_y_guardar,
+            font=(familia, 12, "bold"), bg="#2f6fed", fg="white",
+            activebackground="#2459c4", activeforeground="white",
+            disabledforeground="#dfe7ff", relief="flat", borderwidth=0,
+            cursor="hand2", padx=12, pady=9)
+        self.boton.grid(row=0, column=0, sticky="ew")
+        self.boton_escuchar = ttk.Button(botones, text="▶  Escuchar",
+                                         command=self.escuchar, state="disabled")
+        self.boton_escuchar.grid(row=0, column=1, sticky="ns", padx=(10, 0))
+        self.boton_carpeta = ttk.Button(botones, text="Abrir carpeta",
+                                        command=self.abrir_carpeta, state="disabled")
+        self.boton_carpeta.grid(row=0, column=2, sticky="ns", padx=(8, 0))
+
+        self.progreso = ttk.Progressbar(marco, mode="indeterminate")
+        self.progreso.grid(row=6, column=0, sticky="ew", pady=(14, 0))
+        self.progreso.grid_remove()
+        self.estado = ttk.Label(marco, justify="left")
+        self.estado.grid(row=7, column=0, sticky="ew", pady=(12, 0))
+        marco.bind("<Configure>",
+                   lambda e: self.estado.configure(wraplength=max(200, e.width - 48)))
+        self._mostrar_estado("Atajo: Ctrl + Enter para convertir.")
+
+        self.texto.bind("<<Modified>>", self._al_modificar)
+        self.texto.bind("<Control-a>", self._seleccionar_todo)
+        self.texto.bind("<Control-Return>", self._atajo_convertir)
+        raiz.bind("<Control-Return>", self._atajo_convertir)
+        self.texto.focus_set()
+
+    # --- acciones -------------------------------------------------------
+
+    def abrir_txt(self):
+        from tkinter import filedialog
+
+        ruta = filedialog.askopenfilename(
+            parent=self.raiz, title="Abrir archivo de texto",
+            filetypes=[("Archivos de texto", "*.txt"), ("Todos los archivos", "*.*")])
+        if not ruta:
+            return
+        try:
+            contenido = leer_archivo(ruta)
+        except ErrorConversion as e:
+            self._mostrar_estado(str(e), color=_COLOR_ERROR)
+            return
+        self.texto.delete("1.0", "end")
+        self.texto.insert("1.0", contenido)
+        self._nombre_desde_txt = os.path.splitext(os.path.basename(ruta))[0] + ".mp3"
+        self._mostrar_estado(f"Texto cargado de «{os.path.basename(ruta)}».")
+
+    def convertir_y_guardar(self):
+        from tkinter import filedialog
+
+        if self._ocupada:
+            return
+        texto = self.texto.get("1.0", "end-1c").strip()
+        if not texto:
+            self._mostrar_estado("Escribe algún texto primero.", color=_COLOR_ERROR)
+            self.texto.focus_set()
+            return
+        ruta = filedialog.asksaveasfilename(
+            parent=self.raiz, title="Guardar el audio como",
+            defaultextension=".mp3", filetypes=[("Audio MP3", "*.mp3")],
+            initialdir=self.carpeta_guardado,
+            initialfile=self._nombre_desde_txt or nombre_sugerido(texto))
+        if not ruta:
+            return
+        if not ruta.lower().endswith(".mp3"):
+            ruta += ".mp3"
+        self.carpeta_guardado = os.path.dirname(ruta)
+        opciones = {
+            "idioma": self._codigo(self.idioma.get(), IDIOMAS, "es"),
+            "motor": self._codigo(self.motor.get(), NOMBRES_MOTOR, "google"),
+            "lento": self.lento.get(),
+        }
+        self._ocupar(True)
+        self._resultado = None
+        threading.Thread(target=self._trabajar, args=(texto, ruta, opciones),
+                         daemon=True).start()
+        self.raiz.after(150, self._revisar)
+
+    def escuchar(self):
+        self._abrir(self.ultimo_mp3)
+
+    def abrir_carpeta(self):
+        self._abrir(self.ultimo_mp3, mostrar_en_carpeta=True)
+
+    # --- detalles internos ----------------------------------------------
+
+    def _trabajar(self, texto, ruta, opciones):
+        # Se ejecuta en otro hilo para que la ventana no se congele.
+        try:
+            self._resultado = ("ok", convertir(texto, ruta, **opciones))
+        except ErrorConversion as e:
+            self._resultado = ("error", str(e))
+        except Exception as e:
+            self._resultado = ("error", f"Error inesperado: {e}")
+
+    def _revisar(self):
+        if self._resultado is None:
+            self.raiz.after(150, self._revisar)
+            return
+        tipo, valor = self._resultado
+        self._ocupar(False)
+        if tipo == "ok":
+            self.ultimo_mp3 = valor
+            self.boton_escuchar.configure(state="normal")
+            self.boton_carpeta.configure(state="normal")
+            self._mostrar_estado(f"✔  Listo. Guardado en: {valor}", color=_COLOR_EXITO)
+        else:
+            self._mostrar_estado(valor, color=_COLOR_ERROR)
+
+    def _ocupar(self, ocupada):
+        self._ocupada = ocupada
+        self.boton.configure(
+            state="disabled" if ocupada else "normal",
+            text="Convirtiendo…" if ocupada else "Convertir y guardar MP3…")
+        if ocupada:
+            self.progreso.grid()
+            self.progreso.start(12)
+            self._mostrar_estado("Convirtiendo… puede tardar unos segundos.")
+        else:
+            self.progreso.stop()
+            self.progreso.grid_remove()
+
+    def _abrir(self, ruta, mostrar_en_carpeta=False):
+        if not ruta or not os.path.exists(ruta):
+            self._mostrar_estado("No encuentro el archivo MP3. ¿Lo moviste o borraste?",
+                                 color=_COLOR_ERROR)
+            return
+        try:
+            _abrir_con_sistema(ruta, mostrar_en_carpeta)
+        except OSError as e:
+            self._mostrar_estado(f"No se pudo abrir: {e}", color=_COLOR_ERROR)
+
+    def _mostrar_estado(self, mensaje, color=_COLOR_SUAVE):
+        self.estado.configure(text=mensaje, foreground=color)
+
+    def _al_modificar(self, _evento=None):
+        n = len(self.texto.get("1.0", "end-1c"))
+        self.contador.configure(text=f"{n} carácter" if n == 1 else f"{n} caracteres")
+        self.texto.edit_modified(False)
+
+    def _seleccionar_todo(self, _evento=None):
+        self.texto.tag_add("sel", "1.0", "end-1c")
+        return "break"
+
+    def _atajo_convertir(self, _evento=None):
+        self.convertir_y_guardar()
+        return "break"
+
+    @staticmethod
+    def _codigo(nombre, tabla, defecto):
+        return next((c for c, n in tabla.items() if n == nombre), defecto)
+
+    def _error_inesperado(self, tipo, valor, rastro):
+        from tkinter import messagebox
+
+        messagebox.showerror("Texto a MP3", f"Ocurrió un error inesperado:\n\n{valor}",
+                             parent=self.raiz)
+
+
+def iniciar_ventana():
+    """Abre la aplicación en su propia ventana (o la versión web si no se puede)."""
+    try:
+        import tkinter as tk
+    except ImportError:
+        print("Este Python no incluye tkinter (las ventanas). Abro la versión web.")
+        return iniciar_web()
+    if sys.platform == "win32":
+        import ctypes
+        try:  # que la barra de tareas muestre nuestro ícono y no el de Python
+            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("TextoAMP3")
+        except Exception:
+            pass
+        try:  # texto nítido en pantallas con zoom
+            ctypes.windll.shcore.SetProcessDpiAwareness(1)
+        except Exception:
+            pass
+    try:
+        raiz = tk.Tk()
+    except tk.TclError as e:
+        print(f"No se pudo abrir la ventana ({e}). Abro la versión web.")
+        return iniciar_web()
+    VentanaApp(raiz)
+    raiz.mainloop()
+
+
+def _script_acceso_directo(programa, script, carpeta, icono=None):
+    """Script de PowerShell que crea el ícono "Texto a MP3" en el escritorio.
+
+    No usa comillas dobles para que pasarlo por la línea de comandos sea seguro.
+    """
+    def texto_ps(valor):
+        return "'" + valor.replace("'", "''") + "'"
+
+    lineas = [
+        "$ErrorActionPreference = 'Stop'",
+        "$escritorio = [Environment]::GetFolderPath('Desktop')",
+        "$ruta = Join-Path $escritorio 'Texto a MP3.lnk'",
+        "$acceso = (New-Object -ComObject WScript.Shell).CreateShortcut($ruta)",
+        "$comilla = [string][char]34",
+        f"$acceso.TargetPath = {texto_ps(programa)}",
+        f"$acceso.Arguments = $comilla + {texto_ps(script)} + $comilla + ' --ventana'",
+        f"$acceso.WorkingDirectory = {texto_ps(carpeta)}",
+        "$acceso.Description = 'Convierte texto en audio MP3'",
+    ]
+    if icono:
+        lineas.append(f"$acceso.IconLocation = {texto_ps(icono)}")
+    lineas += ["$acceso.Save()", "Write-Output $ruta"]
+    return "; ".join(lineas)
+
+
+def crear_acceso_directo():
+    """Crea (o actualiza) el ícono "Texto a MP3" en el escritorio de Windows.
+
+    El ícono abre la ventana con pythonw.exe, así no aparece la ventana negra.
+    """
+    if sys.platform != "win32":
+        raise ErrorConversion("Crear el ícono del escritorio solo funciona en Windows.")
+    pythonw = os.path.join(os.path.dirname(sys.executable), "pythonw.exe")
+    if not os.path.exists(pythonw):
+        pythonw = sys.executable
+    script = _script_acceso_directo(pythonw, os.path.abspath(__file__), CARPETA_APP,
+                                    ICONO if os.path.exists(ICONO) else None)
+    resultado = subprocess.run(
+        ["powershell", "-NoProfile", "-NonInteractive", "-Command", script],
+        capture_output=True, text=True, errors="replace")
+    if resultado.returncode != 0:
+        raise ErrorConversion(
+            f"No se pudo crear el ícono del escritorio: {resultado.stderr.strip()}")
+    return resultado.stdout.strip()
+
+
+# --------------------------------------------------------------------------
 # Línea de comandos
 # --------------------------------------------------------------------------
 
@@ -509,9 +871,9 @@ EJEMPLOS = """ejemplos:
   python texto_a_mp3.py -a cuento.txt                 (crea cuento.mp3)
   python texto_a_mp3.py "Good morning" -l en --lento
   python texto_a_mp3.py "Sin internet" -m offline
-  python texto_a_mp3.py --web                         (abre el navegador)
+  python texto_a_mp3.py --web                         (versión en el navegador)
 
-Si lo ejecutas sin texto, se abre la interfaz en el navegador.
+Si lo ejecutas sin texto, se abre la ventana de la aplicación.
 """
 
 
@@ -532,13 +894,17 @@ def _crear_parser():
     p.add_argument("-m", "--motor", choices=MOTORES, default="google",
                    help="google (con internet, por defecto) u offline (voces del sistema)")
     p.add_argument("--lento", action="store_true", help="leer más despacio")
-    p.add_argument("--web", action="store_true", help="abrir la interfaz en el navegador")
+    p.add_argument("--ventana", action="store_true",
+                   help="abrir la aplicación en su ventana (lo normal sin texto)")
+    p.add_argument("--web", action="store_true", help="abrir la versión en el navegador")
     p.add_argument("--puerto", type=int, default=8000,
                    help="puerto de la interfaz web (por defecto: 8000)")
     p.add_argument("--no-abrir", action="store_true",
                    help="con --web, no abrir el navegador automáticamente")
     p.add_argument("--idiomas", action="store_true",
                    help="mostrar los idiomas que admite Google y salir")
+    p.add_argument("--crear-acceso-directo", action="store_true",
+                   help="(Windows) crear el ícono «Texto a MP3» en el escritorio")
     return p
 
 
@@ -571,13 +937,19 @@ def main(argv=None):
         if args.idiomas:
             _mostrar_idiomas()
             return 0
+        if args.crear_acceso_directo:
+            print(f"Ícono listo en el escritorio: {crear_acceso_directo()}")
+            return 0
 
         if args.archivo and args.texto:
             parser.error("usa un texto o --archivo, pero no ambos a la vez")
 
-        sin_texto = not (args.archivo or args.texto)
-        if args.web or (sin_texto and (sys.stdin is None or sys.stdin.isatty())):
+        if args.web:
             iniciar_web(args.puerto, abrir_navegador=not args.no_abrir)
+            return 0
+        sin_texto = not (args.archivo or args.texto)
+        if args.ventana or (sin_texto and (sys.stdin is None or sys.stdin.isatty())):
+            iniciar_ventana()
             return 0
 
         if args.archivo:

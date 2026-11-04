@@ -190,6 +190,92 @@ class PruebasWeb(unittest.TestCase):
         self.assertEqual(codigo, 415)
 
 
+class PruebasEscritorio(unittest.TestCase):
+    def test_nombre_sugerido(self):
+        self.assertEqual(app.nombre_sugerido("¡Hola, mamá! ¿Cómo estás hoy?"),
+                         "hola-mama-como-estas-hoy.mp3")
+        self.assertEqual(app.nombre_sugerido("¿¡!?"), "audio.mp3")
+
+    def test_script_acceso_directo_escapa_rutas(self):
+        script = app._script_acceso_directo(
+            r"C:\Users\O'Brien\Texto a MP3\.venv\Scripts\pythonw.exe",
+            r"C:\Users\O'Brien\Texto a MP3\texto_a_mp3.py",
+            r"C:\Users\O'Brien\Texto a MP3",
+            r"C:\Users\O'Brien\Texto a MP3\icono.ico")
+        self.assertNotIn('"', script)  # sin comillas dobles: seguro en la línea de comandos
+        self.assertIn(r"'C:\Users\O''Brien\Texto a MP3\texto_a_mp3.py'", script)
+        self.assertIn("' --ventana'", script)
+        self.assertIn("IconLocation", script)
+        self.assertTrue(script.endswith("Write-Output $ruta"))
+
+    @unittest.skipIf(sys.platform == "win32", "solo aplica fuera de Windows")
+    def test_acceso_directo_solo_en_windows(self):
+        with self.assertRaises(app.ErrorConversion):
+            app.crear_acceso_directo()
+
+
+def _hay_pantalla():
+    try:
+        import tkinter
+        tkinter.Tk().destroy()
+        return True
+    except Exception:
+        return False
+
+
+@unittest.skipUnless(_hay_pantalla(), "tkinter o la pantalla no están disponibles")
+class PruebasVentana(unittest.TestCase):
+    def setUp(self):
+        import tkinter
+        self.carpeta = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, self.carpeta)
+        self.raiz = tkinter.Tk()
+        self.addCleanup(self.raiz.destroy)
+        self.ventana = app.VentanaApp(self.raiz)
+
+    def esperar(self):
+        while self.ventana._ocupada:
+            self.raiz.update()
+
+    def test_texto_vacio_avisa(self):
+        self.ventana.convertir_y_guardar()
+        self.assertIn("Escribe algún texto", self.ventana.estado.cget("text"))
+
+    def test_convierte_y_guarda(self):
+        destino = os.path.join(self.carpeta, "prueba.mp3")
+        self.ventana.texto.insert("1.0", "Good morning")
+        self.ventana.idioma.set("Inglés")
+        self.ventana.lento.set(True)
+        with mock.patch("tkinter.filedialog.asksaveasfilename", return_value=destino), \
+             mock.patch.object(app, "generar_mp3", return_value=MP3_FALSO) as gen:
+            self.ventana.convertir_y_guardar()
+            self.esperar()
+        gen.assert_called_once_with("Good morning", idioma="en", lento=True, motor="google")
+        with open(destino, "rb") as f:
+            self.assertEqual(f.read(), MP3_FALSO)
+        self.assertIn("Listo", self.ventana.estado.cget("text"))
+        self.assertEqual(str(self.ventana.boton_escuchar.cget("state")), "normal")
+
+    def test_error_se_muestra(self):
+        self.ventana.texto.insert("1.0", "hola")
+        with mock.patch("tkinter.filedialog.asksaveasfilename",
+                        return_value=os.path.join(self.carpeta, "x.mp3")), \
+             mock.patch.object(app, "generar_mp3",
+                               side_effect=app.ErrorConversion("Sin conexión")):
+            self.ventana.convertir_y_guardar()
+            self.esperar()
+        self.assertEqual(self.ventana.estado.cget("text"), "Sin conexión")
+        self.assertEqual(str(self.ventana.boton_escuchar.cget("state")), "disabled")
+
+    def test_cancelar_dialogo_no_hace_nada(self):
+        self.ventana.texto.insert("1.0", "hola")
+        with mock.patch("tkinter.filedialog.asksaveasfilename", return_value=""), \
+             mock.patch.object(app, "generar_mp3") as gen:
+            self.ventana.convertir_y_guardar()
+        gen.assert_not_called()
+        self.assertFalse(self.ventana._ocupada)
+
+
 @unittest.skipUnless(shutil.which("ffmpeg"), "ffmpeg no está instalado")
 class PruebaOfflineReal(unittest.TestCase):
     """Prueba de verdad con las voces del sistema (si están disponibles)."""

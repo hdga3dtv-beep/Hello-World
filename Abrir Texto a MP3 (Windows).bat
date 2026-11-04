@@ -1,5 +1,5 @@
 @echo off
-rem Doble clic para abrir Texto a MP3 (Windows).
+rem Doble clic para preparar Texto a MP3 y crear su icono en el escritorio (Windows).
 cd /d "%~dp0"
 if exist ".venv\Scripts\python.exe" goto preparar
 
@@ -13,14 +13,18 @@ if errorlevel 1 goto error
 
 :preparar
 ".venv\Scripts\python.exe" -c "import gtts" >nul 2>nul
-if not errorlevel 1 goto abrir
+if not errorlevel 1 goto icono
+echo Instalando lo necesario, espera un momento...
 ".venv\Scripts\python.exe" -m pip install --quiet --disable-pip-version-check -r requirements.txt
 if errorlevel 1 goto error
 
-:abrir
-echo No cierres esta ventana mientras uses la aplicacion.
-".venv\Scripts\python.exe" texto_a_mp3.py --web
+:icono
+rem Crea (o actualiza) el icono "Texto a MP3" del escritorio.
+".venv\Scripts\python.exe" texto_a_mp3.py --crear-acceso-directo
 if errorlevel 1 pause
+
+rem Abre la ventana de la aplicacion sin la ventana negra.
+start "" ".venv\Scripts\pythonw.exe" texto_a_mp3.py --ventana
 exit /b
 
 :sinpython
