@@ -133,7 +133,7 @@ def _mp3_offline(texto, ruta_mp3, idioma, lento, carpeta):
         import pyttsx3  # noqa: F401  (solo comprobamos que esté instalado)
     except ImportError:
         raise ErrorConversion(
-            "El motor offline necesita pyttsx3. Instálalo con:  pip install pyttsx3"
+            f"El motor offline necesita pyttsx3. Instálalo con:  {_comando_pip('pyttsx3')}"
         ) from None
     ffmpeg = shutil.which("ffmpeg")
     if not ffmpeg:
@@ -161,6 +161,13 @@ def _mp3_offline(texto, ruta_mp3, idioma, lento, carpeta):
         raise ErrorConversion(
             f"ffmpeg no pudo crear el MP3: {resultado.stderr.strip()}"
         )
+
+
+def _comando_pip(paquete):
+    """Comando para instalar ``paquete`` en el Python que ejecuta la app."""
+    if sys.prefix != sys.base_prefix:  # entorno propio (p. ej. el del lanzador)
+        return f'"{sys.executable}" -m pip install {paquete}'
+    return f"pip install {paquete}"
 
 
 def _sintetizar_wav(texto, ruta_wav, idioma, lento):

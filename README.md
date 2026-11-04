@@ -6,16 +6,31 @@ Este es mi primer cambio en GitHub
 Aplicación sencilla en Python que convierte cualquier texto en un archivo de
 audio **MP3**. Se puede usar desde el navegador o desde la terminal.
 
-## Instalación
+## Ponerla en el escritorio (doble clic)
 
 1. Instala [Python 3](https://www.python.org/downloads/) (3.8 o más reciente).
-2. Instala la librería de voz:
+   En Windows, marca la casilla **"Add python.exe to PATH"** al instalar.
+2. Descarga la carpeta de la aplicación y déjala en tu escritorio.
+3. Abre la carpeta y haz doble clic en:
+   - **Windows:** `Abrir Texto a MP3 (Windows).bat`
+   - **Mac:** `Abrir Texto a MP3 (Mac).command`. La primera vez macOS puede
+     bloquearlo: haz clic derecho sobre el archivo, elige **Abrir** y
+     confirma.
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+La primera vez tarda un poco, porque prepara la aplicación e instala lo
+necesario (hace falta internet). Después se abre directamente en el navegador.
+No cierres la ventana negra mientras uses la aplicación: al cerrarla, la
+aplicación se apaga.
 
-## Uso desde el navegador (lo más fácil)
+## Instalación manual
+
+Si prefieres usar la terminal, instala la librería de voz:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Uso desde el navegador
 
 ```bash
 python texto_a_mp3.py
