@@ -1,2 +1,7 @@
-# Motor de voz "google" (por defecto, necesita internet)
+# Voz natural sin internet (motor "offline", el predeterminado) y su MP3
+piper-tts>=1.3
+lameenc>=1.7
+# Abrir PDF
+pymupdf>=1.24
+# Motor de voz "google" (necesita internet)
 gTTS>=2.5

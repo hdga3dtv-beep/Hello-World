@@ -15,9 +15,10 @@ if [ ! -x .venv/bin/python ]; then
   python3 -m venv .venv || salir_con_error "No se pudo preparar la aplicación."
 fi
 
-if ! .venv/bin/python -c "import gtts" >/dev/null 2>&1; then
+if ! .venv/bin/python -c "import gtts, piper, lameenc, pymupdf" >/dev/null 2>&1; then
+  echo "Instalando lo necesario (la primera vez tarda unos minutos)..."
   .venv/bin/python -m pip install --quiet --disable-pip-version-check -r requirements.txt ||
-    salir_con_error "No se pudo instalar gTTS. Revisa tu conexión a internet."
+    salir_con_error "No se pudo instalar lo necesario. Revisa tu conexión a internet."
 fi
 
 echo "Abriendo Texto a MP3... (no cierres esta ventana mientras la uses)"

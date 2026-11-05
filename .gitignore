@@ -1,4 +1,7 @@
 __pycache__/
 *.pyc
 *.mp3
+*.mp3.parcial
 .venv/
+# Voces de Piper: se descargan solas la primera vez (unos 60 MB cada una)
+voces/

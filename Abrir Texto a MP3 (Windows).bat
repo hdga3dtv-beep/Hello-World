@@ -12,9 +12,9 @@ echo Preparando la aplicacion por primera vez, espera un momento...
 if errorlevel 1 goto error
 
 :preparar
-".venv\Scripts\python.exe" -c "import gtts" >nul 2>nul
+".venv\Scripts\python.exe" -c "import gtts, piper, lameenc, pymupdf" >nul 2>nul
 if not errorlevel 1 goto icono
-echo Instalando lo necesario, espera un momento...
+echo Instalando lo necesario (la primera vez tarda unos minutos)...
 ".venv\Scripts\python.exe" -m pip install --quiet --disable-pip-version-check -r requirements.txt
 if errorlevel 1 goto error
 
